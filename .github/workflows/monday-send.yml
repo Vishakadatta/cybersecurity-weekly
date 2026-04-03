@@ -34,8 +34,8 @@ jobs:
       - name: Monday emergency check
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-2.5-flash-lite
-          GEMINI_DELAY_SECONDS: "15"
+          GEMINI_MODEL: gemini-2.0-flash-lite
+          GEMINI_DELAY_SECONDS: "30"
         run: python scripts/monday_check.py
 
       - name: Commit any emergency updates

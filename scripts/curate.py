@@ -9,7 +9,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from gemini_client import create_client, generate_json, throttle
+from gemini_client import ProjectError, create_client, generate_json, throttle
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
@@ -50,7 +50,7 @@ def get_current_week() -> tuple[str, str]:
     return year, week
 
 
-def chunk_articles(articles: list[dict], chunk_size: int = 15) -> list[list[dict]]:
+def chunk_articles(articles: list[dict], chunk_size: int = 10) -> list[list[dict]]:
     return [articles[i:i + chunk_size] for i in range(0, len(articles), chunk_size)]
 
 
@@ -75,7 +75,7 @@ def main():
     failed_batches = 0
 
     for i, chunk in enumerate(chunks):
-        print(f"Processing batch {i + 1}/{len(chunks)} ({len(chunk)} articles)...")
+        print(f"\nProcessing batch {i + 1}/{len(chunks)} ({len(chunk)} articles)...")
 
         input_data = [{
             "id": a["id"],
@@ -86,7 +86,13 @@ def main():
         } for a in chunk]
 
         prompt = SUMMARIZE_PROMPT + json.dumps(input_data, indent=2)
-        result = generate_json(client, prompt, temperature=0.3)
+
+        try:
+            result = generate_json(client, prompt, temperature=0.3)
+        except ProjectError as e:
+            print(f"\nABORTING: Unrecoverable project error — {e}", file=sys.stderr)
+            print("Fix your API key / project, then re-run.", file=sys.stderr)
+            sys.exit(1)
 
         if result:
             if isinstance(result, dict) and "articles" in result:

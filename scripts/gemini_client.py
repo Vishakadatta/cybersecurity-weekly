@@ -1,29 +1,36 @@
 """
-Shared Gemini API client with model fallback, rate limiting, and retry.
-Rotates through free-tier models to maximize available quota.
+Shared Gemini API client — ultra-conservative, slow-and-steady approach.
+
+We have 3 full days (Friday-Sunday) to make ~20 API calls total.
+There is zero reason to rush. Generous delays, smart error handling,
+and fail-fast on unrecoverable errors.
 """
 
 import json
 import os
+import re
 import sys
 import time
 
 from google import genai
 from google.genai import types
 
-FALLBACK_MODELS = [
-    "gemini-2.0-flash-lite",   # Unlimited RPD, 4K RPM
-    "gemini-3.1-flash-lite",   # 150K RPD, 4K RPM
-    "gemini-2.5-flash-lite",   # Unlimited RPD, 4K RPM
-    "gemini-2.0-flash",        # Unlimited RPD, 2K RPM
-    "gemini-3-flash",          # 10K RPD, 1K RPM
-    "gemini-2.5-flash",        # 10K RPD, 1K RPM
+# Models ordered by free-tier generosity (highest quota first).
+# All have Unlimited RPD except the last two.
+PREFERRED_MODELS = [
+    "gemini-2.0-flash-lite",
+    "gemini-2.5-flash-lite",
+    "gemini-2.0-flash",
+    "gemini-2.5-flash",
 ]
 
-REQUEST_DELAY = int(os.environ.get("GEMINI_DELAY_SECONDS", "15"))
+DEFAULT_DELAY = 30  # seconds between API calls — we have days, not minutes
+REQUEST_DELAY = int(os.environ.get("GEMINI_DELAY_SECONDS", str(DEFAULT_DELAY)))
 MAX_RETRIES = int(os.environ.get("GEMINI_MAX_RETRIES", "2"))
 
-_current_model_index = 0
+
+class ProjectError(Exception):
+    """Unrecoverable project-level error (bad key, spending cap, disabled project)."""
 
 
 def create_client() -> genai.Client:
@@ -34,8 +41,38 @@ def create_client() -> genai.Client:
     return genai.Client(api_key=api_key)
 
 
+def _classify_error(e: Exception) -> str:
+    """
+    Classify an API error into one of:
+      'project'     — unrecoverable (bad key, spending cap, disabled project)
+      'rate_limit'  — temporary, can be retried after waiting
+      'model_404'   — model doesn't exist, skip to next model
+      'transient'   — unknown/temporary, retry a couple times
+    """
+    msg = str(e).lower()
+
+    if any(phrase in msg for phrase in [
+        "spending cap",
+        "api key expired",
+        "api_key_invalid",
+        "api key not valid",
+        "permission denied",
+        "project has been deleted",
+        "billing",
+        "account is inactive",
+    ]):
+        return "project"
+
+    if "429" in msg or "resource_exhausted" in msg:
+        return "rate_limit"
+
+    if "404" in msg or "not found" in msg:
+        return "model_404"
+
+    return "transient"
+
+
 def _try_generate(client: genai.Client, model: str, prompt: str, temperature: float):
-    """Single attempt to generate content with a specific model."""
     return client.models.generate_content(
         model=model,
         contents=prompt,
@@ -46,6 +83,18 @@ def _try_generate(client: genai.Client, model: str, prompt: str, temperature: fl
     )
 
 
+def _parse_json(text: str) -> dict | list | None:
+    """Extract JSON from response, handling markdown fences."""
+    cleaned = text.strip()
+    fence = re.match(r"^```(?:json)?\s*\n?(.*?)```\s*$", cleaned, re.DOTALL)
+    if fence:
+        cleaned = fence.group(1).strip()
+    try:
+        return json.loads(cleaned)
+    except json.JSONDecodeError:
+        return None
+
+
 def generate_json(
     client: genai.Client,
     prompt: str,
@@ -53,55 +102,73 @@ def generate_json(
     temperature: float = 0.3,
 ) -> dict | list | None:
     """
-    Call Gemini with model fallback and retry on 429 errors.
-    Tries each model in the fallback list before giving up.
+    Call Gemini with conservative retry strategy.
+
+    Priority: gemini-2.0-flash-lite → gemini-2.5-flash-lite → gemini-2.0-flash → gemini-2.5-flash
+
+    Fail-fast on project-level errors (bad key, spending cap).
+    Retry with backoff only on genuine rate limits.
+    Skip to next model on 404.
     """
-    global _current_model_index
+    env_model = os.environ.get("GEMINI_MODEL", "").strip()
+    if env_model:
+        models = [env_model] + [m for m in PREFERRED_MODELS if m != env_model]
+    else:
+        models = list(PREFERRED_MODELS)
 
-    models_to_try = FALLBACK_MODELS[_current_model_index:] + FALLBACK_MODELS[:_current_model_index]
-
-    for model in models_to_try:
+    for model in models:
         for attempt in range(MAX_RETRIES + 1):
             try:
-                print(f"  [model={model}, attempt={attempt + 1}]", end=" ")
+                print(f"  [{model} attempt {attempt + 1}/{MAX_RETRIES + 1}]", end=" ", flush=True)
                 response = _try_generate(client, model, prompt, temperature)
-                result = json.loads(response.text)
-                _current_model_index = FALLBACK_MODELS.index(model)
-                print("OK")
+                result = _parse_json(response.text)
+                if result is None:
+                    print("JSON parse failed, retrying...", flush=True)
+                    if attempt < MAX_RETRIES:
+                        time.sleep(15)
+                        continue
+                    else:
+                        print("JSON parse failed after all attempts", flush=True)
+                        break
+                print("OK", flush=True)
                 return result
 
             except Exception as e:
-                error_str = str(e)
-                is_rate_limit = "429" in error_str or "RESOURCE_EXHAUSTED" in error_str
-                is_not_found = "404" in error_str or "not found" in error_str.lower()
+                error_type = _classify_error(e)
+                error_preview = str(e)[:150]
 
-                if is_not_found:
-                    print(f"model not available, skipping")
+                if error_type == "project":
+                    print(f"\n  FATAL: Project-level error — {error_preview}", flush=True)
+                    print("  This is unrecoverable. Check your API key and project settings.", flush=True)
+                    print("  Ensure the key is from a FREE TIER project with NO billing linked.", flush=True)
+                    raise ProjectError(str(e)) from e
+
+                if error_type == "model_404":
+                    print(f"model not available, trying next", flush=True)
                     break
 
-                if is_rate_limit:
+                if error_type == "rate_limit":
                     if attempt < MAX_RETRIES:
-                        wait = 60 * (attempt + 1)
-                        print(f"rate-limited, waiting {wait}s...")
+                        wait = 90 * (attempt + 1)
+                        print(f"rate-limited, waiting {wait}s...", flush=True)
                         time.sleep(wait)
                     else:
-                        print(f"exhausted after {MAX_RETRIES + 1} attempts, trying next model")
+                        print(f"still rate-limited after {MAX_RETRIES + 1} tries, trying next model", flush=True)
+                        time.sleep(30)
                         break
                 else:
-                    if "JSONDecodeError" in error_str or isinstance(e, (json.JSONDecodeError, TypeError)):
-                        print(f"JSON parse error")
-                        return None
-                    print(f"error: {error_str[:100]}")
+                    print(f"error: {error_preview}", flush=True)
                     if attempt < MAX_RETRIES:
-                        time.sleep(10)
+                        time.sleep(15)
                     else:
                         break
 
-    print("  [ERROR] All models exhausted", file=sys.stderr)
+    print("  WARNING: All models exhausted, returning None", file=sys.stderr, flush=True)
     return None
 
 
-def throttle():
-    """Sleep between API calls to stay under RPM limits."""
-    print(f"  [throttle {REQUEST_DELAY}s]")
-    time.sleep(REQUEST_DELAY)
+def throttle(extra_delay: int = 0):
+    """Sleep between API calls. We have 3 days for ~20 calls. No rush."""
+    total = REQUEST_DELAY + extra_delay
+    print(f"  [throttle {total}s]", flush=True)
+    time.sleep(total)

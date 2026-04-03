@@ -10,7 +10,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from gemini_client import create_client, generate_json
+from gemini_client import ProjectError, create_client, generate_json
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
@@ -93,7 +93,11 @@ def main():
         new_json=json.dumps(new_summary, indent=2),
     )
 
-    result = generate_json(client, prompt, temperature=0.2)
+    try:
+        result = generate_json(client, prompt, temperature=0.2)
+    except ProjectError:
+        print("[WARN] Project-level error, proceeding with existing newsletter")
+        return
 
     if not result:
         print("[WARN] Gemini check failed, proceeding with existing newsletter")

@@ -12,7 +12,7 @@ from pathlib import Path
 
 from jinja2 import Template
 
-from gemini_client import create_client, generate_json
+from gemini_client import ProjectError, create_client, generate_json
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
@@ -114,7 +114,12 @@ def main():
     } for a in top_articles]
 
     prompt = RANKING_PROMPT.format(articles_json=json.dumps(articles_for_prompt, indent=2))
-    result = generate_json(client, prompt, temperature=0.4)
+
+    try:
+        result = generate_json(client, prompt, temperature=0.4)
+    except ProjectError as e:
+        print(f"\nABORTING: Unrecoverable project error — {e}", file=sys.stderr)
+        sys.exit(1)
 
     if not result:
         print("ERROR: Gemini ranking failed after retries", file=sys.stderr)
