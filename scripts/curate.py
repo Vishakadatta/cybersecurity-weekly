@@ -5,14 +5,11 @@ and categorization, saves the enriched dataset.
 """
 
 import json
-import os
 import sys
-import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from google import genai
-from google.genai import types
+from gemini_client import create_client, generate_json, throttle
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
@@ -20,8 +17,6 @@ CONTENT_DIR = ROOT_DIR / "content"
 RAW_DIR = CONTENT_DIR / "raw"
 
 PT = timezone(timedelta(hours=-7))
-
-MODEL = "gemini-2.5-flash"
 
 SUMMARIZE_PROMPT = """You are a cybersecurity news editor. I will give you a list of raw articles scraped from security news sources this week.
 
@@ -59,45 +54,8 @@ def chunk_articles(articles: list[dict], chunk_size: int = 15) -> list[list[dict
     return [articles[i:i + chunk_size] for i in range(0, len(articles), chunk_size)]
 
 
-def summarize_batch(client: genai.Client, articles: list[dict]) -> list[dict]:
-    input_data = []
-    for a in articles:
-        input_data.append({
-            "id": a["id"],
-            "title": a["title"],
-            "raw_summary": a.get("summary_raw", "")[:500],
-            "source": a["source"],
-            "url": a["url"],
-        })
-
-    prompt = SUMMARIZE_PROMPT + json.dumps(input_data, indent=2)
-
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.3,
-        ),
-    )
-
-    try:
-        results = json.loads(response.text)
-        if isinstance(results, dict) and "articles" in results:
-            results = results["articles"]
-        return results
-    except (json.JSONDecodeError, TypeError):
-        print(f"  [WARN] Failed to parse Gemini response, skipping batch", file=sys.stderr)
-        return []
-
-
 def main():
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        print("ERROR: GEMINI_API_KEY environment variable not set", file=sys.stderr)
-        sys.exit(1)
-
-    client = genai.Client(api_key=api_key)
+    client = create_client()
 
     year, week = get_current_week()
     cumulative_file = RAW_DIR / f"{year}-{week}-cumulative.json"
@@ -114,17 +72,40 @@ def main():
     articles_by_id = {a["id"]: a for a in articles}
     chunks = chunk_articles(articles)
     all_summaries = []
+    failed_batches = 0
 
     for i, chunk in enumerate(chunks):
         print(f"Processing batch {i + 1}/{len(chunks)} ({len(chunk)} articles)...")
-        try:
-            summaries = summarize_batch(client, chunk)
-            all_summaries.extend(summaries)
-            print(f"  Got {len(summaries)} summaries")
-        except Exception as e:
-            print(f"  [ERROR] Batch {i + 1} failed: {e}", file=sys.stderr)
+
+        input_data = [{
+            "id": a["id"],
+            "title": a["title"],
+            "raw_summary": a.get("summary_raw", "")[:500],
+            "source": a["source"],
+            "url": a["url"],
+        } for a in chunk]
+
+        prompt = SUMMARIZE_PROMPT + json.dumps(input_data, indent=2)
+        result = generate_json(client, prompt, temperature=0.3)
+
+        if result:
+            if isinstance(result, dict) and "articles" in result:
+                result = result["articles"]
+            if isinstance(result, list):
+                all_summaries.extend(result)
+                print(f"  Got {len(result)} summaries")
+            else:
+                print(f"  [WARN] Unexpected response format, skipping batch")
+                failed_batches += 1
+        else:
+            failed_batches += 1
+
         if i < len(chunks) - 1:
-            time.sleep(2)
+            throttle()
+
+    if failed_batches == len(chunks):
+        print("ERROR: All batches failed. Check API key and quota.", file=sys.stderr)
+        sys.exit(1)
 
     for summary in all_summaries:
         aid = summary.get("id")
@@ -142,6 +123,7 @@ def main():
         json.dump(enriched, f, indent=2)
 
     print(f"\nSaved {len(enriched)} curated articles to {curated_file.name}")
+    print(f"Batches: {len(chunks) - failed_batches} succeeded, {failed_batches} failed")
     print(f"Top 5 by relevance:")
     for a in enriched[:5]:
         print(f"  [{a.get('relevance_score', '?')}] {a.get('title', 'Untitled')}")

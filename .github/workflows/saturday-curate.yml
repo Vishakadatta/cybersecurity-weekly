@@ -11,6 +11,7 @@ permissions:
 jobs:
   curate:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -31,6 +32,8 @@ jobs:
       - name: Curate and summarize with Gemini
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash-lite
+          GEMINI_DELAY_SECONDS: "15"
         run: python scripts/curate.py
 
       - name: Commit curated data

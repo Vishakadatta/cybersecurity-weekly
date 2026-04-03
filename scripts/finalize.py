@@ -10,9 +10,9 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from google import genai
-from google.genai import types
 from jinja2 import Template
+
+from gemini_client import create_client, generate_json
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
@@ -21,8 +21,6 @@ RAW_DIR = CONTENT_DIR / "raw"
 TEMPLATES_DIR = ROOT_DIR / "templates"
 
 PT = timezone(timedelta(hours=-7))
-
-MODEL = "gemini-2.5-flash"
 
 RANKING_PROMPT = """You are the editor-in-chief of "Cybersecurity Weekly", a premium cybersecurity newsletter. You must select and rank the TOP stories from this week.
 
@@ -69,41 +67,6 @@ def get_current_week() -> tuple[str, str]:
     return year, week
 
 
-def run_tournament(client: genai.Client, articles: list[dict]) -> dict:
-    top_articles = articles[:40]
-
-    articles_for_prompt = []
-    for a in top_articles:
-        articles_for_prompt.append({
-            "id": a["id"],
-            "title": a.get("title", "Untitled"),
-            "summary": a.get("summary", a.get("summary_raw", ""))[:300],
-            "source": a.get("source", "Unknown"),
-            "url": a.get("url", ""),
-            "relevance_score": a.get("relevance_score", 5),
-            "tags": a.get("tags", []),
-            "publishedDate": a.get("publishedDate", ""),
-        })
-
-    prompt = RANKING_PROMPT.format(articles_json=json.dumps(articles_for_prompt, indent=2))
-
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.4,
-        ),
-    )
-
-    try:
-        return json.loads(response.text)
-    except (json.JSONDecodeError, TypeError):
-        print("[ERROR] Failed to parse Gemini ranking response", file=sys.stderr)
-        print(f"Raw response: {response.text[:500]}", file=sys.stderr)
-        sys.exit(1)
-
-
 def generate_email_html(content: dict) -> str:
     template_path = TEMPLATES_DIR / "email.html"
     with open(template_path) as f:
@@ -123,12 +86,7 @@ def generate_email_html(content: dict) -> str:
 
 
 def main():
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        print("ERROR: GEMINI_API_KEY environment variable not set", file=sys.stderr)
-        sys.exit(1)
-
-    client = genai.Client(api_key=api_key)
+    client = create_client()
 
     year, week = get_current_week()
 
@@ -143,7 +101,24 @@ def main():
     print(f"Loaded {len(articles)} curated articles")
     print("Running tournament ranking via Gemini...")
 
-    result = run_tournament(client, articles)
+    top_articles = articles[:40]
+    articles_for_prompt = [{
+        "id": a["id"],
+        "title": a.get("title", "Untitled"),
+        "summary": a.get("summary", a.get("summary_raw", ""))[:300],
+        "source": a.get("source", "Unknown"),
+        "url": a.get("url", ""),
+        "relevance_score": a.get("relevance_score", 5),
+        "tags": a.get("tags", []),
+        "publishedDate": a.get("publishedDate", ""),
+    } for a in top_articles]
+
+    prompt = RANKING_PROMPT.format(articles_json=json.dumps(articles_for_prompt, indent=2))
+    result = generate_json(client, prompt, temperature=0.4)
+
+    if not result:
+        print("ERROR: Gemini ranking failed after retries", file=sys.stderr)
+        sys.exit(1)
 
     content = {
         "week": week,

@@ -10,8 +10,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from google import genai
-from google.genai import types
+from gemini_client import create_client, generate_json
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
@@ -19,8 +18,6 @@ CONTENT_DIR = ROOT_DIR / "content"
 RAW_DIR = CONTENT_DIR / "raw"
 
 PT = timezone(timedelta(hours=-7))
-
-MODEL = "gemini-2.5-flash"
 
 EMERGENCY_CHECK_PROMPT = """You are a cybersecurity news editor. Here is a list of articles scraped this Monday morning. Compare them against the already-finalized newsletter articles below.
 
@@ -52,12 +49,7 @@ def get_current_week() -> tuple[str, str]:
 
 
 def main():
-    api_key = os.environ.get("GEMINI_API_KEY")
-    if not api_key:
-        print("ERROR: GEMINI_API_KEY environment variable not set", file=sys.stderr)
-        sys.exit(1)
-
-    client = genai.Client(api_key=api_key)
+    client = create_client()
 
     year, week = get_current_week()
     content_file = CONTENT_DIR / year / f"{week}.json"
@@ -101,19 +93,10 @@ def main():
         new_json=json.dumps(new_summary, indent=2),
     )
 
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.2,
-        ),
-    )
+    result = generate_json(client, prompt, temperature=0.2)
 
-    try:
-        result = json.loads(response.text)
-    except (json.JSONDecodeError, TypeError):
-        print("[WARN] Couldn't parse Gemini response, proceeding with existing newsletter")
+    if not result:
+        print("[WARN] Gemini check failed, proceeding with existing newsletter")
         return
 
     if not result.get("inject"):

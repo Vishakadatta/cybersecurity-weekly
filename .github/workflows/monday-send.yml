@@ -34,6 +34,8 @@ jobs:
       - name: Monday emergency check
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: gemini-2.5-flash-lite
+          GEMINI_DELAY_SECONDS: "15"
         run: python scripts/monday_check.py
 
       - name: Commit any emergency updates
@@ -56,7 +58,7 @@ jobs:
       - name: Checkout private data store
         uses: actions/checkout@v4
         with:
-          repository: ${{ secrets.PRIVATE_REPO }}
+          repository: ${{ github.repository_owner }}/cybersecurity-weekly-private
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: private-data
 
