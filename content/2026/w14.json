@@ -1,9 +1,54 @@
 {
   "week": "w14",
   "year": "2026",
-  "generatedAt": "2026-04-03T07:08:38.019839+00:00",
-  "subjectLine": "Nation-State Espionage Escalates: China Targets Telcos, North Korea Hits DeFi, and Quantum Threats Loom",
+  "generatedAt": "2026-04-03T07:09:59.627906+00:00",
+  "subjectLine": "BREAKING: CERT-EU: European Commission hack exposes data of 30 EU enti + Nation-State Espionage Escalates: China Targets Telcos, North Korea Hits DeFi, and Quantum Threats Loom",
   "articles": [
+    {
+      "id": "3b31c7e781fd08df",
+      "title": "Attempts to Exploit Exposed \"Vite\" Installs (CVE-2025-30208), (Thu, Apr 2nd)",
+      "summary": "From its GitHub repo: \"Vite (French word for \"quick\", pronounced /vi&#x3f;t/, like \"veet\") is a new breed of frontend build tooling that significantly improves the frontend development experience\" &#x",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/32860",
+      "tier": 2,
+      "publishedDate": "2026-04-02T14:49:00+00:00"
+    },
+    {
+      "id": "8174785d36cc833c",
+      "title": "New Rowhammer attacks give complete control of machines running Nvidia GPUs",
+      "summary": "Both GDDRHammer and GeForge hammer GPU memory in ways that compromise the CPU.",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/",
+      "tier": 2,
+      "publishedDate": "2026-04-02T17:00:11+00:00"
+    },
+    {
+      "id": "f2538220d6586118",
+      "title": "Medtech giant Stryker fully operational after data-wiping attack",
+      "summary": "Stryker Corporation, one of the world's leading medical technology companies, says it's fully operational three weeks after many of its systems were wiped out in a cyberattack claimed by the Iranian-l",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/medtech-giant-stryker-fully-operational-after-data-wiping-attack/",
+      "tier": 1,
+      "publishedDate": "2026-04-02T09:28:39-04:00"
+    },
+    {
+      "id": "e65e829b37d81da7",
+      "title": "Drift loses $280 million North Korean hackers seize Security Council powers",
+      "summary": "The Drift Protocol lost at least $280 million after a threat actor took control of its Security Council administrative powers in a planned, sophisticated operation. [...]",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/drift-loses-280-million-north-korean-hackers-seize-security-council-powers/",
+      "tier": 1,
+      "publishedDate": "2026-04-02T15:03:39-04:00"
+    },
+    {
+      "id": "b8ada83bae187db7",
+      "title": "CERT-EU: European Commission hack exposes data of 30 EU entities",
+      "summary": "The European Union's Cybersecurity Service (CERT-EU) has attributed the European Commission cloud hack to the TeamPCP threat group, saying the resulting breach exposed the data of at least 29 other Un",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cert-eu-european-commission-hack-exposes-data-of-30-eu-entities/",
+      "tier": 1,
+      "publishedDate": "2026-04-03T02:33:34-04:00"
+    },
     {
       "id": "bcbf906e56432420",
       "title": "North Korean Group UNC1069 Linked to Axios npm Supply Chain Attack",
