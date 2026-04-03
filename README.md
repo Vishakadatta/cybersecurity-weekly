@@ -38,6 +38,12 @@ No servers. No databases. No costs. Just a cron job and good taste in sources.
 
 ---
 
+## Documentation
+
+**[Functional Specification](docs/FUNCTIONAL_SPEC.md)** — Complete technical specification covering architecture diagrams, code flow, data schemas, AI integration, subscription system, error handling, and more.
+
+---
+
 ## How It Works
 
 ```
@@ -383,4 +389,8 @@ This project is designed to be forkable. If you want to run your own cybersecuri
 
 ## License
 
-MIT — fork it, run it, make it yours.
+**Source Available — free for non-commercial use, commercial use requires a paid license.**
+
+You can read, use, modify, and share this code for personal, academic, or nonprofit purposes at no cost. If you or your organization make money from it (selling it, running it as a service, using it in a commercial product), you need a commercial license agreement with revenue sharing. See [LICENSE](LICENSE) for the full legal text.
+
+Copyright (c) 2026 Vishaka Datta Jamba Ehebbar
