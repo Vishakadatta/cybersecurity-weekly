@@ -76,6 +76,7 @@ jobs:
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           PRIVATE_DATA_PATH: ${{ github.workspace }}/private-data
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
         run: python scripts/send_newsletter.py
 
   deploy-site:

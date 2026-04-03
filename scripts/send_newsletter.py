@@ -21,7 +21,7 @@ RAW_DIR = CONTENT_DIR / "raw"
 PT = timezone(timedelta(hours=-7))
 
 SENDER_NAME = "Cybersecurity Weekly"
-SENDER_EMAIL = "noreply@cybersecurity-weekly.dev"
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "vishakadj@gmail.com")
 
 
 def get_current_week() -> tuple[str, str]:
