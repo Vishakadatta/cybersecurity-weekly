@@ -1150,5 +1150,14 @@
     "url": "https://www.sophos.com/en-us/blog/incident-responders-s-il-vous-plait",
     "publishedDate": "2026-03-30T00:00:00+00:00",
     "scrapedAt": "2026-04-03T05:19:15.410683+00:00"
+  },
+  {
+    "id": "e65e829b37d81da7",
+    "title": "Drift loses $280 million North Korean hackers seize Security Council powers",
+    "summary_raw": "The Drift Protocol lost at least $280 million after a threat actor took control of its Security Council administrative powers in a planned, sophisticated operation. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/drift-loses-280-million-north-korean-hackers-seize-security-council-powers/",
+    "publishedDate": "2026-04-02T15:03:39-04:00",
+    "scrapedAt": "2026-04-03T06:04:16.898279+00:00"
   }
 ]
