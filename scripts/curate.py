@@ -67,10 +67,38 @@ def main():
     with open(cumulative_file) as f:
         articles = json.load(f)
 
-    print(f"Loaded {len(articles)} articles for summarization")
+    print(f"Loaded {len(articles)} total articles")
+
+    curated_file = RAW_DIR / f"{year}-{week}-curated.json"
+    already_curated = {}
+    if curated_file.exists():
+        with open(curated_file) as f:
+            for a in json.load(f):
+                if a.get("summary"):
+                    already_curated[a["id"]] = a
 
     articles_by_id = {a["id"]: a for a in articles}
-    chunks = chunk_articles(articles)
+    if already_curated:
+        for aid, curated in already_curated.items():
+            if aid in articles_by_id:
+                articles_by_id[aid].update({
+                    k: curated[k] for k in ("title", "summary", "relevance_score", "tags")
+                    if k in curated
+                })
+
+    uncurated = [a for a in articles if not a.get("summary")]
+    print(f"  Already curated: {len(already_curated)}, need curation: {len(uncurated)}")
+
+    if not uncurated:
+        print("All articles already curated, nothing to do.")
+        enriched = list(articles_by_id.values())
+        enriched.sort(key=lambda a: a.get("relevance_score", 0), reverse=True)
+        with open(curated_file, "w") as f:
+            json.dump(enriched, f, indent=2)
+        print(f"Saved {len(enriched)} curated articles to {curated_file.name}")
+        return
+
+    chunks = chunk_articles(uncurated)
     all_summaries = []
     failed_batches = 0
 
@@ -124,7 +152,6 @@ def main():
     enriched = list(articles_by_id.values())
     enriched.sort(key=lambda a: a.get("relevance_score", 0), reverse=True)
 
-    curated_file = RAW_DIR / f"{year}-{week}-curated.json"
     with open(curated_file, "w") as f:
         json.dump(enriched, f, indent=2)
 

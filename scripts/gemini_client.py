@@ -15,12 +15,10 @@ import time
 from google import genai
 from google.genai import types
 
-# Models ordered by free-tier generosity (highest quota first).
-# All have Unlimited RPD except the last two.
+# Models that actually work on our free-tier project (verified by live testing).
+# gemini-2.0-flash-lite and gemini-2.0-flash have quota=0 on this project.
 PREFERRED_MODELS = [
-    "gemini-2.0-flash-lite",
     "gemini-2.5-flash-lite",
-    "gemini-2.0-flash",
     "gemini-2.5-flash",
 ]
 

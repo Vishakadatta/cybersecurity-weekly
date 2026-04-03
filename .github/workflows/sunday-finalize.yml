@@ -11,7 +11,7 @@ permissions:
 jobs:
   finalize:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 60
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,14 +32,14 @@ jobs:
       - name: Re-curate with new articles
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-2.0-flash-lite
+          GEMINI_MODEL: gemini-2.5-flash-lite
           GEMINI_DELAY_SECONDS: "30"
         run: python scripts/curate.py
 
       - name: Tournament ranking and finalize
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-2.0-flash-lite
+          GEMINI_MODEL: gemini-2.5-flash-lite
           GEMINI_DELAY_SECONDS: "30"
         run: python scripts/finalize.py
 
