@@ -62,7 +62,7 @@ def send_email(api_instance, to_email: str, subject: str, html_content: str) -> 
         return True
     except ApiException as e:
         masked = to_email[:3] + "***@" + to_email.split("@")[1] if "@" in to_email else "***"
-        print(f"  [ERROR] Failed to send to {masked}: {e}", file=sys.stderr)
+        print(f"  [ERROR] Failed to send to {masked}: status={e.status} body={e.body}", file=sys.stderr)
         return False
 
 
@@ -104,6 +104,7 @@ def main():
         print("No subscribers found. Skipping email send.")
         return
 
+    print(f"Sender: {SENDER_EMAIL}")
     print(f"Sending newsletter to {len(subscribers)} subscribers")
     print(f"Subject: {subject}")
 
