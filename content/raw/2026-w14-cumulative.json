@@ -1168,5 +1168,14 @@
     "url": "https://www.bleepingcomputer.com/news/security/cert-eu-european-commission-hack-exposes-data-of-30-eu-entities/",
     "publishedDate": "2026-04-03T02:33:34-04:00",
     "scrapedAt": "2026-04-03T07:08:23.017498+00:00"
+  },
+  {
+    "id": "d911d51e9df26164",
+    "title": "Microsoft now force upgrades unmanaged Windows 11 24H2 PCs",
+    "summary_raw": "Starting this week, Microsoft has begun force-upgrading unmanaged devices running Windows 11 24H2 Home and Pro editions to Windows 11 25H2. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-force-upgrades-unmanaged-windows-11-24h2-pcs/",
+    "publishedDate": "2026-04-03T03:55:40-04:00",
+    "scrapedAt": "2026-04-03T07:56:15.910454+00:00"
   }
 ]
