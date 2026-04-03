@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/feed/",
+    "type": "rss"
+  },
+  {
+    "name": "The Hacker News",
+    "url": "https://feeds.feedburner.com/TheHackersNews",
+    "type": "rss"
+  },
+  {
+    "name": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/feed/",
+    "type": "rss"
+  },
+  {
+    "name": "Dark Reading",
+    "url": "https://www.darkreading.com/rss.xml",
+    "type": "rss"
+  },
+  {
+    "name": "CISA Advisories",
+    "url": "https://www.cisa.gov/news.xml",
+    "type": "rss"
+  },
+  {
+    "name": "Ars Technica Security",
+    "url": "https://feeds.arstechnica.com/arstechnica/security",
+    "type": "rss"
+  },
+  {
+    "name": "Security Now (GRC)",
+    "url": "https://feeds.twit.tv/sn.xml",
+    "type": "rss"
+  },
+  {
+    "name": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/blog/feed/",
+    "type": "rss"
+  },
+  {
+    "name": "Google Threat Intelligence",
+    "url": "https://cloud.google.com/blog/topics/threat-intelligence/rss/",
+    "type": "rss"
+  },
+  {
+    "name": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/feed/",
+    "type": "rss"
+  },
+  {
+    "name": "Sophos News",
+    "url": "https://news.sophos.com/en-us/feed/",
+    "type": "rss"
+  },
+  {
+    "name": "Recorded Future",
+    "url": "https://www.recordedfuture.com/feed",
+    "type": "rss"
+  },
+  {
+    "name": "Schneier on Security",
+    "url": "https://www.schneier.com/feed/atom/",
+    "type": "rss"
+  },
+  {
+    "name": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/rssfeed.xml",
+    "type": "rss"
+  }
+]

@@ -1,0 +1,18 @@
+name: Unsubscribe from Newsletter
+description: Remove your email from the Cybersecurity Weekly mailing list
+title: "Unsubscribe"
+labels: ["unsubscribe"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sorry to see you go! Enter the email address you want to remove.
+        Your email will be redacted from this issue within minutes for privacy.
+  - type: input
+    id: email
+    attributes:
+      label: Email Address
+      description: The email address you want to unsubscribe
+      placeholder: you@example.com
+    validations:
+      required: true

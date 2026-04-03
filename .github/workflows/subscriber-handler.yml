@@ -1,0 +1,35 @@
+name: "Handle Subscribe/Unsubscribe"
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+
+jobs:
+  process:
+    if: contains(github.event.issue.title, 'Subscribe') || contains(github.event.issue.title, 'Unsubscribe')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Process subscription
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          PUBLIC_REPO: ${{ github.event.repository.name }}
+          PRIVATE_REPO: cybersecurity-weekly-private
+        run: python scripts/subscriber_handler.py

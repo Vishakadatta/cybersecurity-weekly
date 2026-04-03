@@ -1,0 +1,64 @@
+{
+  "week": "w14",
+  "year": "2026",
+  "generatedAt": "2026-04-06T09:00:00Z",
+  "subjectLine": "Iran-Backed Hackers Hit Medical Devices + Critical 5G Indoor Cell Flaw Exposed",
+  "articles": [
+    {
+      "title": "Iran-Linked APT Group Compromises Medical Device Manufacturer",
+      "summary": "A sophisticated threat actor with ties to Iran's IRGC breached a major medical device company, gaining access to firmware update systems. The attack could potentially affect thousands of connected hospital devices across North America and Europe.",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/example",
+      "tier": 1,
+      "publishedDate": "2026-04-03"
+    },
+    {
+      "title": "CISA Issues Emergency Directive for Critical Infrastructure Zero-Day",
+      "summary": "CISA has released an emergency directive ordering all federal agencies to patch a critical zero-day vulnerability actively exploited in the wild. The flaw affects a widely-deployed network management platform used across government and private sectors.",
+      "source": "CISA",
+      "url": "https://www.cisa.gov/example",
+      "tier": 1,
+      "publishedDate": "2026-04-04"
+    },
+    {
+      "title": "Critical Vulnerability Found in 5G Indoor Small Cell Controllers",
+      "summary": "Security researchers discovered a critical remote code execution vulnerability in a popular 5G indoor small cell controller used by multiple telecom carriers. The flaw allows unauthenticated attackers to gain root access to the cell management interface.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/example",
+      "tier": 2,
+      "publishedDate": "2026-04-02"
+    },
+    {
+      "title": "NMS Platform Vulnerability Exposes Thousands of Network Devices",
+      "summary": "A newly disclosed SQL injection vulnerability in a leading network management system could allow attackers to extract credentials for managed devices. Patches are available and immediate updating is recommended.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/example",
+      "tier": 2,
+      "publishedDate": "2026-04-05"
+    },
+    {
+      "title": "New Ransomware Gang Targets Healthcare with Double Extortion",
+      "summary": "A new ransomware group dubbed 'MedusaLock' has emerged, specifically targeting healthcare organizations with a double extortion model — encrypting systems while threatening to leak patient data on their dark web portal.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/example",
+      "tier": 3,
+      "publishedDate": "2026-04-03"
+    },
+    {
+      "title": "Google Patches Actively Exploited Chrome Zero-Day",
+      "summary": "Google released an emergency update for Chrome to patch a type confusion vulnerability in the V8 JavaScript engine that was being actively exploited. Users should update to version 135.0.6998.88 immediately.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/example2",
+      "tier": 3,
+      "publishedDate": "2026-04-04"
+    },
+    {
+      "title": "Security Now Episode 972: The State of Post-Quantum Cryptography",
+      "summary": "Steve Gibson covers the latest NIST post-quantum cryptography standards and their real-world implementation challenges. Gibson explains why organizations need to start planning their quantum-safe migration strategy now.",
+      "source": "Security Now (GRC)",
+      "url": "https://www.grc.com/sn/example",
+      "tier": 3,
+      "publishedDate": "2026-04-01"
+    }
+  ]
+}

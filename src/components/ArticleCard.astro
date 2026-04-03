@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  summary: string;
+  source: string;
+  url: string;
+  tier: 1 | 2 | 3;
+  publishedDate?: string;
+}
+
+const { title, summary, source, url, tier, publishedDate } = Astro.props;
+
+const tierConfig = {
+  1: { label: 'BREAKING', color: 'bg-red-500/10 text-red-400 ring-red-500/30' },
+  2: { label: 'FOCUS', color: 'bg-amber-500/10 text-amber-400 ring-amber-500/30' },
+  3: { label: 'NOTABLE', color: 'bg-dark-700 text-dark-300 ring-dark-600' },
+};
+
+const { label, color } = tierConfig[tier];
+---
+
+<article class="group rounded-xl border border-dark-800 bg-dark-900/50 p-6 transition hover:border-dark-700 hover:bg-dark-900">
+  <div class="mb-3 flex items-center gap-3">
+    <span class={`inline-flex items-center rounded-md px-2 py-1 text-xs font-semibold ring-1 ring-inset ${color}`}>
+      {label}
+    </span>
+    <span class="text-xs text-dark-500">{source}</span>
+    {publishedDate && <span class="text-xs text-dark-600">&middot; {publishedDate}</span>}
+  </div>
+  <h3 class="mb-2 text-lg font-semibold leading-snug text-white transition group-hover:text-cyber-400">
+    <a href={url} target="_blank" rel="noopener">{title}</a>
+  </h3>
+  <p class="mb-4 text-sm leading-relaxed text-dark-300">{summary}</p>
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener"
+    class="inline-flex items-center gap-1 text-sm font-medium text-cyber-400 transition hover:text-cyber-300"
+  >
+    Read full story
+    <svg class="h-4 w-4 transition group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+    </svg>
+  </a>
+</article>

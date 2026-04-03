@@ -1,0 +1,106 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import ArchiveSidebar from '../../components/ArchiveSidebar.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  const contentDir = path.join(process.cwd(), 'content');
+  const paths: { params: { week: string } }[] = [];
+
+  if (fs.existsSync(contentDir)) {
+    const years = fs.readdirSync(contentDir).filter((f) => /^\d{4}$/.test(f));
+    for (const year of years) {
+      const yearDir = path.join(contentDir, year);
+      const files = fs.readdirSync(yearDir).filter((f) => f.endsWith('.json'));
+      for (const file of files) {
+        const week = file.replace('.json', '');
+        paths.push({ params: { week: `${year}-${week}` } });
+      }
+    }
+  }
+
+  return paths;
+}
+
+const { week } = Astro.params;
+const [year, weekNum] = week!.split('-');
+const filePath = path.join(process.cwd(), 'content', year, `${weekNum}.json`);
+
+const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+const tier1 = content.articles.filter((a: any) => a.tier === 1);
+const tier2 = content.articles.filter((a: any) => a.tier === 2);
+const tier3 = content.articles.filter((a: any) => a.tier === 3);
+---
+
+<BaseLayout title={`${content.subjectLine} — Cybersecurity Weekly`}>
+  <Header />
+
+  <main class="py-10">
+    <div class="flex flex-col gap-10 lg:flex-row">
+      <div class="min-w-0 flex-1">
+        <div class="mb-8">
+          <p class="mb-1 text-sm font-medium text-cyber-400">
+            Week {weekNum.replace('w', '')} &middot; {year}
+          </p>
+          <h2 class="text-3xl font-extrabold tracking-tight text-white">
+            {content.subjectLine}
+          </h2>
+          <p class="mt-2 text-dark-400">
+            Generated on {new Date(content.generatedAt).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+          </p>
+        </div>
+
+        {tier1.length > 0 && (
+          <section class="mb-10">
+            <h3 class="mb-4 flex items-center gap-2 text-lg font-bold text-red-400">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+              </svg>
+              Breaking Stories
+            </h3>
+            <div class="grid gap-4">
+              {tier1.map((article: any) => <ArticleCard {...article} />)}
+            </div>
+          </section>
+        )}
+
+        {tier2.length > 0 && (
+          <section class="mb-10">
+            <h3 class="mb-4 flex items-center gap-2 text-lg font-bold text-amber-400">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.75H6A2.25 2.25 0 0 0 3.75 6v1.5M16.5 3.75H18A2.25 2.25 0 0 1 20.25 6v1.5m0 9V18A2.25 2.25 0 0 1 18 20.25h-1.5m-9 0H6A2.25 2.25 0 0 1 3.75 18v-1.5M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+              </svg>
+              Focus: 5G, Indoor Cells &amp; NMS
+            </h3>
+            <div class="grid gap-4">
+              {tier2.map((article: any) => <ArticleCard {...article} />)}
+            </div>
+          </section>
+        )}
+
+        {tier3.length > 0 && (
+          <section class="mb-10">
+            <h3 class="mb-4 flex items-center gap-2 text-lg font-bold text-dark-300">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 0 1-2.25 2.25M16.5 7.5V18a2.25 2.25 0 0 0 2.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 0 0 2.25 2.25h13.5" />
+              </svg>
+              Also Noteworthy
+            </h3>
+            <div class="grid gap-4">
+              {tier3.map((article: any) => <ArticleCard {...article} />)}
+            </div>
+          </section>
+        )}
+      </div>
+
+      <ArchiveSidebar />
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
