@@ -1,9 +1,9 @@
 """
-Shared Gemini API client — ultra-conservative, slow-and-steady approach.
+Shared Gemini API client — slow-and-steady, free-tier safe.
 
-We have 3 full days (Friday-Sunday) to make ~20 API calls total.
-There is zero reason to rush. Generous delays, smart error handling,
-and fail-fast on unrecoverable errors.
+We have 3 full days (Friday-Sunday) to process ~20 API calls.
+Gemini 2.5 Pro: 150 RPM, 1K RPD, 2M TPM on free tier.
+With 20-second delays between calls, we use < 3 RPM. Plenty of headroom.
 """
 
 import json
@@ -15,14 +15,13 @@ import time
 from google import genai
 from google.genai import types
 
-# Models that actually work on our free-tier project (verified by live testing).
-# gemini-2.0-flash-lite and gemini-2.0-flash have quota=0 on this project.
 PREFERRED_MODELS = [
+    "gemini-2.5-pro",
     "gemini-2.5-flash-lite",
     "gemini-2.5-flash",
 ]
 
-DEFAULT_DELAY = 30  # seconds between API calls — we have days, not minutes
+DEFAULT_DELAY = 20
 REQUEST_DELAY = int(os.environ.get("GEMINI_DELAY_SECONDS", str(DEFAULT_DELAY)))
 MAX_RETRIES = int(os.environ.get("GEMINI_MAX_RETRIES", "2"))
 
@@ -41,15 +40,9 @@ def create_client() -> genai.Client:
 
 def _classify_error(e: Exception) -> str:
     """
-    Classify an API error into one of:
-      'project'     — unrecoverable (bad key, spending cap, disabled project)
-      'rate_limit'  — temporary, can be retried after waiting
-      'model_404'   — model doesn't exist, skip to next model
-      'transient'   — unknown/temporary, retry a couple times
-
-    Be very careful: Google's 429 errors often include generic text like
-    "check your plan and billing details" even for normal rate limits.
-    Only classify as 'project' for truly fatal errors.
+    Classify API errors. Google's 429 errors always include generic text
+    like "check your plan and billing details" — do NOT treat that as fatal.
+    Only truly unrecoverable errors (bad key, spending cap) are 'project'.
     """
     msg = str(e).lower()
 
@@ -89,7 +82,6 @@ def _try_generate(client: genai.Client, model: str, prompt: str, temperature: fl
 
 
 def _parse_json(text: str) -> dict | list | None:
-    """Extract JSON from response, handling markdown fences."""
     cleaned = text.strip()
     fence = re.match(r"^```(?:json)?\s*\n?(.*?)```\s*$", cleaned, re.DOTALL)
     if fence:
@@ -106,15 +98,6 @@ def generate_json(
     *,
     temperature: float = 0.3,
 ) -> dict | list | None:
-    """
-    Call Gemini with conservative retry strategy.
-
-    Priority: gemini-2.0-flash-lite → gemini-2.5-flash-lite → gemini-2.0-flash → gemini-2.5-flash
-
-    Fail-fast on project-level errors (bad key, spending cap).
-    Retry with backoff only on genuine rate limits.
-    Skip to next model on 404.
-    """
     env_model = os.environ.get("GEMINI_MODEL", "").strip()
     if env_model:
         models = [env_model] + [m for m in PREFERRED_MODELS if m != env_model]
@@ -143,22 +126,20 @@ def generate_json(
                 error_preview = str(e)[:150]
 
                 if error_type == "project":
-                    print(f"\n  FATAL: Project-level error — {error_preview}", flush=True)
-                    print("  This is unrecoverable. Check your API key and project settings.", flush=True)
-                    print("  Ensure the key is from a FREE TIER project with NO billing linked.", flush=True)
+                    print(f"\n  FATAL: {error_preview}", flush=True)
                     raise ProjectError(str(e)) from e
 
                 if error_type == "model_404":
-                    print(f"model not available (quota=0 or 404), trying next", flush=True)
+                    print(f"not available, trying next model", flush=True)
                     break
 
                 if error_type == "rate_limit":
                     if attempt < MAX_RETRIES:
-                        wait = 90 * (attempt + 1)
+                        wait = 60 * (attempt + 1)
                         print(f"rate-limited, waiting {wait}s...", flush=True)
                         time.sleep(wait)
                     else:
-                        print(f"still rate-limited after {MAX_RETRIES + 1} tries, trying next model", flush=True)
+                        print(f"exhausted retries, trying next model", flush=True)
                         time.sleep(30)
                         break
                 else:
@@ -173,7 +154,6 @@ def generate_json(
 
 
 def throttle(extra_delay: int = 0):
-    """Sleep between API calls. We have 3 days for ~20 calls. No rush."""
     total = REQUEST_DELAY + extra_delay
     print(f"  [throttle {total}s]", flush=True)
     time.sleep(total)

@@ -115,7 +115,7 @@ def main():
 
     if new_articles:
         top_title = new_articles[0].get("title", "")
-        content["subjectLine"] = f"BREAKING: {top_title[:60]} + {content['subjectLine']}"
+        content["subjectLine"] = f"BREAKING: {top_title[:60]} + More Inside"
 
     content["generatedAt"] = datetime.now(timezone.utc).isoformat()
 
