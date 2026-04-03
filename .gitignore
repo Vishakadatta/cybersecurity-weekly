@@ -6,4 +6,3 @@ dist/
 __pycache__/
 *.pyc
 .venv/
-content/raw/
