@@ -26,7 +26,7 @@
   },
   {
     "name": "Ars Technica Security",
-    "url": "https://feeds.arstechnica.com/arstechnica/security",
+    "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
     "type": "rss"
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "name": "Sophos News",
-    "url": "https://news.sophos.com/en-us/feed/",
+    "url": "https://news.sophos.com/en-us/category/threat-research/feed/",
     "type": "rss"
   },
   {

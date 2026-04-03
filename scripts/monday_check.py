@@ -55,7 +55,7 @@ def main():
         sys.exit(1)
 
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-2.5-flash")
 
     year, week = get_current_week()
     content_file = CONTENT_DIR / year / f"{week}.json"
