@@ -1,64 +1,116 @@
 {
   "week": "w14",
   "year": "2026",
-  "generatedAt": "2026-04-06T09:00:00Z",
-  "subjectLine": "Iran-Backed Hackers Hit Medical Devices + Critical 5G Indoor Cell Flaw Exposed",
+  "generatedAt": "2026-04-03T07:08:38.019839+00:00",
+  "subjectLine": "Nation-State Espionage Escalates: China Targets Telcos, North Korea Hits DeFi, and Quantum Threats Loom",
   "articles": [
     {
-      "title": "Iran-Linked APT Group Compromises Medical Device Manufacturer",
-      "summary": "A sophisticated threat actor with ties to Iran's IRGC breached a major medical device company, gaining access to firmware update systems. The attack could potentially affect thousands of connected hospital devices across North America and Europe.",
-      "source": "Krebs on Security",
-      "url": "https://krebsonsecurity.com/example",
-      "tier": 1,
-      "publishedDate": "2026-04-03"
-    },
-    {
-      "title": "CISA Issues Emergency Directive for Critical Infrastructure Zero-Day",
-      "summary": "CISA has released an emergency directive ordering all federal agencies to patch a critical zero-day vulnerability actively exploited in the wild. The flaw affects a widely-deployed network management platform used across government and private sectors.",
-      "source": "CISA",
-      "url": "https://www.cisa.gov/example",
-      "tier": 1,
-      "publishedDate": "2026-04-04"
-    },
-    {
-      "title": "Critical Vulnerability Found in 5G Indoor Small Cell Controllers",
-      "summary": "Security researchers discovered a critical remote code execution vulnerability in a popular 5G indoor small cell controller used by multiple telecom carriers. The flaw allows unauthenticated attackers to gain root access to the cell management interface.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/example",
-      "tier": 2,
-      "publishedDate": "2026-04-02"
-    },
-    {
-      "title": "NMS Platform Vulnerability Exposes Thousands of Network Devices",
-      "summary": "A newly disclosed SQL injection vulnerability in a leading network management system could allow attackers to extract credentials for managed devices. Patches are available and immediate updating is recommended.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/example",
-      "tier": 2,
-      "publishedDate": "2026-04-05"
-    },
-    {
-      "title": "New Ransomware Gang Targets Healthcare with Double Extortion",
-      "summary": "A new ransomware group dubbed 'MedusaLock' has emerged, specifically targeting healthcare organizations with a double extortion model — encrypting systems while threatening to leak patient data on their dark web portal.",
+      "id": "bcbf906e56432420",
+      "title": "North Korean Group UNC1069 Linked to Axios npm Supply Chain Attack",
+      "summary": "Google has attributed the compromise of the popular Axios npm package to a North Korean financially motivated threat group known as UNC1069. This incident underscores the persistent threat of supply chain attacks originating from nation-state actors targeting widely used software components.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/example",
-      "tier": 3,
-      "publishedDate": "2026-04-03"
+      "url": "https://thehackernews.com/2026/04/google-attributes-axios-npm-supply.html",
+      "tier": 1,
+      "publishedDate": "2026-04-01T13:14:00+05:30"
     },
     {
-      "title": "Google Patches Actively Exploited Chrome Zero-Day",
-      "summary": "Google released an emergency update for Chrome to patch a type confusion vulnerability in the V8 JavaScript engine that was being actively exploited. Users should update to version 135.0.6998.88 immediately.",
+      "id": "3d36a39e4cab1736",
+      "title": "China-Linked Red Menshen Uses Stealthy BPFDoor Implants in Telecom Networks for Espionage",
+      "summary": "A China-nexus threat actor, identified as Red Menshen, is conducting long-term espionage by embedding stealthy BPFDoor implants within critical telecom networks. This sophisticated operation allows for persistent access and spying against government networks, underscoring nation-state cyber threats.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/china-linked-red-menshen-uses-stealthy.html",
+      "tier": 1,
+      "publishedDate": "2026-03-26T23:10:00+05:30"
+    },
+    {
+      "id": "700c2357ce181f6e",
+      "title": "China's APT Red Menshen Upgrades BPFdoor Malware for Global Telco Espionage",
+      "summary": "Chinese APT group Red Menshen has reportedly upgraded its sophisticated BPFdoor malware, designed to spy on telecommunications companies worldwide. This advanced backdoor evades traditional security measures, forcing telcos into a constant hunt for its presence.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/china-upgrades-backdoor-spy-telcos",
+      "tier": 1,
+      "publishedDate": "2026-03-27T16:48:49+00:00"
+    },
+    {
+      "id": "cb80fc5a0fcaa722",
+      "title": "Quantum Computing Advances Threaten Encryption Sooner Than Expected",
+      "summary": "New advancements in quantum computing suggest that breaking vital encryption, particularly elliptic curve cryptosystems, will require significantly fewer resources than previously estimated. This development accelerates the timeline for 'Q Day,' when quantum computers could undermine current cryptog",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/03/new-quantum-computing-advances-heighten-threat-to-elliptic-curve-cryptosystems/",
+      "tier": 1,
+      "publishedDate": "2026-03-31T18:25:33+00:00"
+    },
+    {
+      "id": "3100a14f20dd5678",
+      "title": "Citrix NetScaler Under Active Recon for Critical Memory Overread Bug (CVE-2026-3055)",
+      "summary": "Active reconnaissance is underway for a critical vulnerability (CVE-2026-3055) in Citrix NetScaler ADC and Gateway, which has a CVSS score of 9.3. The flaw involves insufficient input validation leading to a memory overread, potentially allowing attackers to leak sensitive information. Exploitation ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/citrix-netscaler-under-active-recon-for.html",
+      "tier": 2,
+      "publishedDate": "2026-03-28T14:41:00+05:30"
+    },
+    {
+      "id": "58e88d4f91c2af82",
+      "title": "Cisco Patches Critical 9.8 CVSS Flaw in IMC Allowing Remote System Compromise",
+      "summary": "Cisco has released updates to fix a critical vulnerability (CVE-2026-20093) in its Integrated Management Controller (IMC) with a CVSS score of 9.8. This flaw allows unauthenticated, remote attackers to bypass authentication and gain elevated privileges, posing a severe risk to network infrastructure",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/cisco-patches-98-cvss-imc-and-ssm-flaws.html",
+      "tier": 2,
+      "publishedDate": "2026-04-02T20:51:00+05:30"
+    },
+    {
+      "id": "09769448efd4666e",
+      "title": "Critical Cisco IMC Authentication Bypass Vulnerability Disclosed",
+      "summary": "Cisco has patched a critical authentication bypass vulnerability in its Integrated Management Controller (IMC) that could allow attackers to gain administrative access to affected systems. This vulnerability poses a severe risk to network infrastructure management.",
       "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/example2",
-      "tier": 3,
-      "publishedDate": "2026-04-04"
+      "url": "https://www.bleepingcomputer.com/news/security/critical-cisco-imc-auth-bypass-gives-attackers-admin-access/",
+      "tier": 2,
+      "publishedDate": "2026-04-02T07:01:14-04:00"
     },
     {
-      "title": "Security Now Episode 972: The State of Post-Quantum Cryptography",
-      "summary": "Steve Gibson covers the latest NIST post-quantum cryptography standards and their real-world implementation challenges. Gibson explains why organizations need to start planning their quantum-safe migration strategy now.",
-      "source": "Security Now (GRC)",
-      "url": "https://www.grc.com/sn/example",
+      "id": "e9867e2edc3f2878",
+      "title": "US Bans Foreign-Made Consumer Routers",
+      "summary": "The US has banned all new foreign-made consumer routers, citing supply chain vulnerabilities and severe cybersecurity risks that could disrupt critical infrastructure and national defense. This policy aims to mitigate potential threats posed by compromised network devices.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/us-bans-all-foreign-made-consumer-routers.html",
+      "tier": 2,
+      "publishedDate": "2026-04-02T17:28:27+00:00"
+    },
+    {
+      "id": "c07d44cae33ffdf3",
+      "title": "New Chrome Zero-Day CVE-2026-5281 Under Active Exploitation",
+      "summary": "Google has released updates for Chrome to address 21 vulnerabilities, including a zero-day flaw (CVE-2026-5281) that has already been exploited in the wild. This use-after-free bug in the Dawn component highlights the ongoing risks associated with web browser security and the rapid exploitation of n",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/new-chrome-zero-day-cve-2026-5281-under.html",
       "tier": 3,
-      "publishedDate": "2026-04-01"
+      "publishedDate": "2026-04-01T17:12:00+05:30"
+    },
+    {
+      "id": "f4b57f9aa08eddf1",
+      "title": "TrueConf Zero-Day Exploited in Attacks on Government Networks",
+      "summary": "A zero-day vulnerability (CVE-2026-3502) in TrueConf video conferencing software has been exploited in the wild, targeting government entities in Southeast Asia. The flaw allows attackers to distribute tampered updates, highlighting critical security risks in widely used communication platforms.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
+      "tier": 3,
+      "publishedDate": "2026-03-31T21:33:00+05:30"
+    },
+    {
+      "id": "61bc3bc246e66ac7",
+      "title": "Iran-Linked Hackers Breach FBI Director's Personal Email, Hit Stryker With Wiper Attack",
+      "summary": "Hackers with ties to Iran have successfully breached the personal email account of the FBI Director, leaking sensitive documents and photos. The group, Handala Hack Team, also claimed responsibility for a wiper attack against Stryker. This incident demonstrates the capabilities of Iran-linked threat",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/iran-linked-hackers-breach-fbi.html",
+      "tier": 3,
+      "publishedDate": "2026-03-28T21:10:00+05:30"
+    },
+    {
+      "id": "21bf828553563147",
+      "title": "Coruna iOS Kit Reuses 2023 Triangulation Exploit Code",
+      "summary": "The Coruna iOS exploit kit, recently uncovered, utilizes an updated version of the kernel exploit code from the 2023 Operation Triangulation campaign. This reuse of sophisticated exploit code indicates a persistent threat actor leveraging previously successful attack methods against Apple's mobile o",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/coruna-ios-kit-reuses-2023.html",
+      "tier": 3,
+      "publishedDate": "2026-03-26T16:37:00+05:30"
     }
   ]
 }
