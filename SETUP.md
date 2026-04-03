@@ -2,17 +2,17 @@
 
 Complete setup instructions for Cybersecurity Weekly.
 
-## 1. Create the Private Repo
+## 1. Create the Private Data Store
 
 Run the automated setup script (requires `gh` CLI):
 
 ```bash
-bash scripts/setup_private_repo.sh
+bash scripts/setup_private_repo.sh <your-repo-name>
 ```
 
 Or manually:
 1. Go to https://github.com/new
-2. Create a **private** repo named `cybersecurity-weekly-private`
+2. Create a **private** repo (name it whatever you want)
 3. Add a file `subscribers/emails.json` with content: `{"emails": []}`
 
 ## 2. Get API Keys
@@ -39,13 +39,15 @@ Or manually:
 Go to your **public** repo's settings:
 `https://github.com/YOUR_USERNAME/cybersecurity-weekly/settings/secrets/actions`
 
-Add these three repository secrets:
+Add these repository secrets:
 
 | Secret Name | Value |
 |-------------|-------|
 | `GEMINI_API_KEY` | Your Google Gemini API key |
 | `BREVO_API_KEY` | Your Brevo transactional email API key |
 | `PRIVATE_REPO_TOKEN` | Your GitHub PAT with `repo` scope |
+| `PRIVATE_REPO` | Full private repo name (e.g. `youruser/my-data-repo`) |
+| `PRIVATE_REPO_NAME` | Just the repo name (e.g. `my-data-repo`) |
 
 ## 4. Enable GitHub Pages
 

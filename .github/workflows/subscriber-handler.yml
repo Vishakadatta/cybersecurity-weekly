@@ -31,5 +31,5 @@ jobs:
           PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
           REPO_OWNER: ${{ github.repository_owner }}
           PUBLIC_REPO: ${{ github.event.repository.name }}
-          PRIVATE_REPO: cybersecurity-weekly-private
+          PRIVATE_REPO: ${{ secrets.PRIVATE_REPO_NAME }}
         run: python scripts/subscriber_handler.py

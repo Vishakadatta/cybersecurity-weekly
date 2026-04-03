@@ -99,17 +99,12 @@ No servers. No databases. No costs. Just a cron job and good taste in sources.
                     │
                     ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                        PRIVATE REPO                                     │
-│                cybersecurity-weekly-private                              │
+│                     PRIVATE DATA STORE                                  │
+│              (separate private GitHub repo)                              │
 │                                                                         │
 │  Only stores subscriber email addresses.                                │
 │  Accessed via GitHub PAT from the public repo's Actions.                │
-│                                                                         │
-│  subscribers/                                                           │
-│    emails.json          ← encrypted list of subscriber emails           │
-│                                                                         │
-│  This repo has NO code, NO workflows, NO secrets beyond what the        │
-│  public repo needs to read from it.                                     │
+│  Name and location configured via GitHub Secrets.                       │
 └─────────────────────────────────────────────────────────────────────────┘
 
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -131,10 +126,11 @@ No servers. No databases. No costs. Just a cron job and good taste in sources.
 |---|---|---|
 | All source code, scripts, site | **Public repo** | Open source, transparent, forkable |
 | Architecture, pipeline docs | **Public repo** | Not sensitive — the code *is* the architecture |
-| Subscriber email addresses | **Private repo** | PII must never be in a public repo |
+| Subscriber email addresses | **Separate private repo** | PII must never be in a public repo |
 | API keys (Gemini, Brevo, PAT) | **GitHub Secrets** | Never committed to *any* repo |
+| Private repo name & location | **GitHub Secrets** | Not exposed in code or docs |
 
-The private repo is intentionally minimal — it's a dumb data store for emails, nothing else. If you fork this project, you just create your own private repo and point a PAT at it.
+The private data store is intentionally minimal — just a file with email addresses, nothing else. If you fork this project, you create your own private repo (name it whatever you want) and configure it via GitHub Secrets.
 
 ---
 
@@ -208,9 +204,9 @@ The newsletter template gives Tier 1 stories full summaries with analysis, Tier 
 
 ```
 ┌──────────────┐     ┌──────────────────────┐     ┌───────────────────┐
-│ User opens a │     │ subscribe.yml        │     │ Private repo:     │
-│ GitHub Issue │────▶│ workflow triggers     │────▶│ appends email to  │
-│ with email   │     │                      │     │ emails.json       │
+│ User opens a │     │ subscribe.yml        │     │ Private data      │
+│ GitHub Issue │────▶│ workflow triggers     │────▶│ store: appends    │
+│ with email   │     │                      │     │ email to list     │
 │ in body      │     │ 1. Extract email     │     └───────────────────┘
 └──────────────┘     │ 2. Push to private   │
                      │    repo via PAT      │
@@ -220,7 +216,7 @@ The newsletter template gives Tier 1 stories full summaries with analysis, Tier 
                      └──────────────────────┘
 ```
 
-The user's email is **never visible** in the public repo — the workflow redacts the issue body immediately and replaces it with a "You're subscribed!" message. The actual email is written only to the private repo.
+The user's email is **never visible** in the public repo — the workflow redacts the issue body immediately and replaces it with a "You're subscribed!" message. The actual email is written only to the private data store.
 
 ---
 
@@ -234,7 +230,7 @@ The user's email is **never visible** in the public repo — the workflow redact
 | **Email delivery** | [Brevo](https://brevo.com) (free tier) | 300 emails/day free, REST API, no credit card required |
 | **Hosting** | [GitHub Pages](https://pages.github.com) | Free, auto-deploys from Actions, custom domain support |
 | **Automation** | [GitHub Actions](https://github.com/features/actions) | 2,000 free minutes/month, cron scheduling, secrets management |
-| **Subscriber storage** | Private GitHub repo | Free, version-controlled, no database needed |
+| **Subscriber storage** | Separate private GitHub repo | Free, version-controlled, no database needed |
 
 **Total running cost: $0/month** (within free tier limits for a newsletter under 300 subscribers).
 
@@ -319,12 +315,14 @@ Set these in the public repo under **Settings → Secrets and variables → Acti
 |---|---|
 | `GEMINI_API_KEY` | Google Gemini API key from AI Studio |
 | `BREVO_API_KEY` | Brevo REST API key |
-| `PRIVATE_REPO_TOKEN` | GitHub Personal Access Token with `repo` scope, granting access to the private subscriber repo |
+| `PRIVATE_REPO_TOKEN` | GitHub PAT with `repo` scope, granting access to the private data repo |
+| `PRIVATE_REPO` | Full name of your private repo (e.g. `youruser/my-data-repo`) |
+| `PRIVATE_REPO_NAME` | Just the repo name portion (e.g. `my-data-repo`) |
 
-### Private Repo Setup
+### Private Data Store Setup
 
-1. Create a new **private** repository named `cybersecurity-weekly-private`
-2. Add a single file:
+1. Create a new **private** GitHub repository (name it whatever you want — the name is never exposed in this codebase)
+2. Add a single file at `subscribers/emails.json`:
 
 ```json
 {
@@ -332,10 +330,17 @@ Set these in the public repo under **Settings → Secrets and variables → Acti
 }
 ```
 
-This file goes at `subscribers/emails.json` in the private repo.
-
 3. Generate a **Personal Access Token (classic)** with `repo` scope, or a **Fine-grained PAT** scoped to the private repo with Contents (Read and write)
-4. Add the PAT as `PRIVATE_REPO_TOKEN` in the public repo's secrets
+4. Add these secrets to the **public** repo:
+   - `PRIVATE_REPO_TOKEN` = the PAT
+   - `PRIVATE_REPO` = full repo name (e.g. `youruser/my-data-repo`)
+   - `PRIVATE_REPO_NAME` = just the repo name (e.g. `my-data-repo`)
+
+Or use the automated setup script:
+
+```bash
+bash scripts/setup_private_repo.sh <your-repo-name>
+```
 
 ---
 

@@ -12,11 +12,11 @@ from pathlib import Path
 
 import httpx
 
-GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN", "")
-PRIVATE_REPO_TOKEN = os.environ.get("PRIVATE_REPO_TOKEN", "")
-REPO_OWNER = os.environ.get("REPO_OWNER", "Vishakadatta")
-PUBLIC_REPO = os.environ.get("PUBLIC_REPO", "cybersecurity-weekly")
-PRIVATE_REPO = os.environ.get("PRIVATE_REPO", "cybersecurity-weekly-private")
+GITHUB_TOKEN = os.environ["GITHUB_TOKEN"]
+PRIVATE_REPO_TOKEN = os.environ["PRIVATE_REPO_TOKEN"]
+REPO_OWNER = os.environ["REPO_OWNER"]
+PUBLIC_REPO = os.environ["PUBLIC_REPO"]
+PRIVATE_REPO = os.environ["PRIVATE_REPO"]
 
 GITHUB_API = "https://api.github.com"
 

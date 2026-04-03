@@ -53,10 +53,10 @@ jobs:
         with:
           ref: main
 
-      - name: Checkout private repo for subscriber list
+      - name: Checkout private data store
         uses: actions/checkout@v4
         with:
-          repository: ${{ github.repository_owner }}/cybersecurity-weekly-private
+          repository: ${{ secrets.PRIVATE_REPO }}
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           path: private-data
 

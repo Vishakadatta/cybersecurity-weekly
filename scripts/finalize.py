@@ -107,8 +107,9 @@ def generate_email_html(content: dict) -> str:
     with open(template_path) as f:
         template = Template(f.read())
 
-    site_url = "https://vishakadatta.github.io/cybersecurity-weekly/"
-    unsubscribe_url = "https://github.com/Vishakadatta/cybersecurity-weekly/issues/new?template=unsubscribe.yml&title=Unsubscribe"
+    site_url = os.environ.get("SITE_URL", "")
+    repo_url = os.environ.get("REPO_URL", "")
+    unsubscribe_url = f"{repo_url}/issues/new?template=unsubscribe.yml&title=Unsubscribe" if repo_url else ""
 
     return template.render(
         subject_line=content["subjectLine"],
