@@ -38,12 +38,6 @@ No servers. No databases. No costs. Just a cron job and good taste in sources.
 
 ---
 
-## Documentation
-
-**[Functional Specification](docs/FUNCTIONAL_SPEC.md)** — Complete technical specification covering architecture diagrams, code flow, data schemas, AI integration, subscription system, error handling, and more.
-
----
-
 ## How It Works
 
 ```
@@ -283,8 +277,6 @@ cybersecurity-weekly/
 │   └── setup_private_repo.sh       # One-time private repo setup script
 ├── templates/
 │   └── email.html                  # Jinja2 email template
-├── docs/
-│   └── FUNCTIONAL_SPEC.md          # Full technical specification
 ├── astro.config.mjs
 ├── tailwind.config.mjs
 ├── tsconfig.json
