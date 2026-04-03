@@ -21,7 +21,7 @@ RAW_DIR = CONTENT_DIR / "raw"
 PT = timezone(timedelta(hours=-7))
 
 SENDER_NAME = "Cybersecurity Weekly"
-SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "vishakadj@gmail.com")
+SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "")
 
 
 def get_current_week() -> tuple[str, str]:
@@ -72,6 +72,10 @@ def main():
         print("ERROR: BREVO_API_KEY environment variable not set", file=sys.stderr)
         sys.exit(1)
 
+    if not SENDER_EMAIL:
+        print("ERROR: SENDER_EMAIL environment variable not set", file=sys.stderr)
+        sys.exit(1)
+
     configuration = sib_api_v3_sdk.Configuration()
     configuration.api_key["api-key"] = brevo_key
     api_instance = sib_api_v3_sdk.TransactionalEmailsApi(
@@ -119,6 +123,10 @@ def main():
             failed += 1
 
     print(f"\nDone: {sent} sent, {failed} failed out of {len(subscribers)} total")
+
+    if sent == 0 and failed > 0:
+        print("ERROR: All emails failed to send.", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":
