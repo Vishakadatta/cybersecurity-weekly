@@ -61,7 +61,8 @@ def send_email(api_instance, to_email: str, subject: str, html_content: str) -> 
         api_instance.send_transac_email(send_smtp_email)
         return True
     except ApiException as e:
-        print(f"  [ERROR] Failed to send to {to_email}: {e}", file=sys.stderr)
+        masked = to_email[:3] + "***@" + to_email.split("@")[1] if "@" in to_email else "***"
+        print(f"  [ERROR] Failed to send to {masked}: {e}", file=sys.stderr)
         return False
 
 
@@ -111,7 +112,8 @@ def main():
     for email in subscribers:
         if send_email(api_instance, email, subject, html_content):
             sent += 1
-            print(f"  [OK] {email}")
+            masked = email[:3] + "***@" + email.split("@")[1] if "@" in email else "***"
+            print(f"  [OK] {masked}")
         else:
             failed += 1
 
