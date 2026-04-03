@@ -48,22 +48,29 @@ def _classify_error(e: Exception) -> str:
       'rate_limit'  — temporary, can be retried after waiting
       'model_404'   — model doesn't exist, skip to next model
       'transient'   — unknown/temporary, retry a couple times
+
+    Be very careful: Google's 429 errors often include generic text like
+    "check your plan and billing details" even for normal rate limits.
+    Only classify as 'project' for truly fatal errors.
     """
     msg = str(e).lower()
 
     if any(phrase in msg for phrase in [
-        "spending cap",
         "api key expired",
         "api_key_invalid",
         "api key not valid",
         "permission denied",
         "project has been deleted",
-        "billing",
         "account is inactive",
     ]):
         return "project"
 
+    if "spending cap" in msg and "429" in msg:
+        return "project"
+
     if "429" in msg or "resource_exhausted" in msg:
+        if "limit: 0" in msg:
+            return "model_404"
         return "rate_limit"
 
     if "404" in msg or "not found" in msg:
@@ -144,7 +151,7 @@ def generate_json(
                     raise ProjectError(str(e)) from e
 
                 if error_type == "model_404":
-                    print(f"model not available, trying next", flush=True)
+                    print(f"model not available (quota=0 or 404), trying next", flush=True)
                     break
 
                 if error_type == "rate_limit":
