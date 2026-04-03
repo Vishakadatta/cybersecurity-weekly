@@ -10,7 +10,8 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
@@ -18,6 +19,8 @@ CONTENT_DIR = ROOT_DIR / "content"
 RAW_DIR = CONTENT_DIR / "raw"
 
 PT = timezone(timedelta(hours=-7))
+
+MODEL = "gemini-2.5-flash"
 
 EMERGENCY_CHECK_PROMPT = """You are a cybersecurity news editor. Here is a list of articles scraped this Monday morning. Compare them against the already-finalized newsletter articles below.
 
@@ -54,8 +57,7 @@ def main():
         print("ERROR: GEMINI_API_KEY environment variable not set", file=sys.stderr)
         sys.exit(1)
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    client = genai.Client(api_key=api_key)
 
     year, week = get_current_week()
     content_file = CONTENT_DIR / year / f"{week}.json"
@@ -67,7 +69,6 @@ def main():
     with open(content_file) as f:
         content = json.load(f)
 
-    # Run a quick scrape using the scrape module
     sys.path.insert(0, str(SCRIPTS_DIR))
     from scrape import load_sources, fetch_rss
 
@@ -100,9 +101,10 @@ def main():
         new_json=json.dumps(new_summary, indent=2),
     )
 
-    response = model.generate_content(
-        prompt,
-        generation_config=genai.GenerationConfig(
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=prompt,
+        config=types.GenerateContentConfig(
             response_mime_type="application/json",
             temperature=0.2,
         ),
@@ -110,7 +112,7 @@ def main():
 
     try:
         result = json.loads(response.text)
-    except json.JSONDecodeError:
+    except (json.JSONDecodeError, TypeError):
         print("[WARN] Couldn't parse Gemini response, proceeding with existing newsletter")
         return
 
@@ -134,7 +136,6 @@ def main():
         json.dump(content, f, indent=2)
     print(f"Updated {content_file} with emergency additions")
 
-    # Regenerate email HTML
     from finalize import generate_email_html
     email_html = generate_email_html(content)
     email_file = RAW_DIR / f"{year}-{week}-email.html"

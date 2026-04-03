@@ -10,7 +10,8 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 from jinja2 import Template
 
 SCRIPTS_DIR = Path(__file__).parent
@@ -20,6 +21,8 @@ RAW_DIR = CONTENT_DIR / "raw"
 TEMPLATES_DIR = ROOT_DIR / "templates"
 
 PT = timezone(timedelta(hours=-7))
+
+MODEL = "gemini-2.5-flash"
 
 RANKING_PROMPT = """You are the editor-in-chief of "Cybersecurity Weekly", a premium cybersecurity newsletter. You must select and rank the TOP stories from this week.
 
@@ -66,8 +69,7 @@ def get_current_week() -> tuple[str, str]:
     return year, week
 
 
-def run_tournament(model, articles: list[dict]) -> dict:
-    """Run the tournament ranking through Gemini."""
+def run_tournament(client: genai.Client, articles: list[dict]) -> dict:
     top_articles = articles[:40]
 
     articles_for_prompt = []
@@ -85,9 +87,10 @@ def run_tournament(model, articles: list[dict]) -> dict:
 
     prompt = RANKING_PROMPT.format(articles_json=json.dumps(articles_for_prompt, indent=2))
 
-    response = model.generate_content(
-        prompt,
-        generation_config=genai.GenerationConfig(
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=prompt,
+        config=types.GenerateContentConfig(
             response_mime_type="application/json",
             temperature=0.4,
         ),
@@ -95,21 +98,19 @@ def run_tournament(model, articles: list[dict]) -> dict:
 
     try:
         return json.loads(response.text)
-    except json.JSONDecodeError:
+    except (json.JSONDecodeError, TypeError):
         print("[ERROR] Failed to parse Gemini ranking response", file=sys.stderr)
         print(f"Raw response: {response.text[:500]}", file=sys.stderr)
         sys.exit(1)
 
 
 def generate_email_html(content: dict) -> str:
-    """Render the email template with finalized content."""
     template_path = TEMPLATES_DIR / "email.html"
     with open(template_path) as f:
         template = Template(f.read())
 
-    site_url = os.environ.get("SITE_URL", "")
-    repo_url = os.environ.get("REPO_URL", "")
-    unsubscribe_url = f"{repo_url}/issues/new?template=unsubscribe.yml&title=Unsubscribe" if repo_url else ""
+    site_url = "https://vishakadatta.github.io/cybersecurity-weekly/"
+    unsubscribe_url = "https://github.com/Vishakadatta/cybersecurity-weekly/issues/new?template=unsubscribe.yml&title=Unsubscribe"
 
     return template.render(
         subject_line=content["subjectLine"],
@@ -127,8 +128,7 @@ def main():
         print("ERROR: GEMINI_API_KEY environment variable not set", file=sys.stderr)
         sys.exit(1)
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    client = genai.Client(api_key=api_key)
 
     year, week = get_current_week()
 
@@ -143,7 +143,7 @@ def main():
     print(f"Loaded {len(articles)} curated articles")
     print("Running tournament ranking via Gemini...")
 
-    result = run_tournament(model, articles)
+    result = run_tournament(client, articles)
 
     content = {
         "week": week,

@@ -7,10 +7,12 @@ and categorization, saves the enriched dataset.
 import json
 import os
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-import google.generativeai as genai
+from google import genai
+from google.genai import types
 
 SCRIPTS_DIR = Path(__file__).parent
 ROOT_DIR = SCRIPTS_DIR.parent
@@ -18,6 +20,8 @@ CONTENT_DIR = ROOT_DIR / "content"
 RAW_DIR = CONTENT_DIR / "raw"
 
 PT = timezone(timedelta(hours=-7))
+
+MODEL = "gemini-2.5-flash"
 
 SUMMARIZE_PROMPT = """You are a cybersecurity news editor. I will give you a list of raw articles scraped from security news sources this week.
 
@@ -43,6 +47,7 @@ Here are the articles:
 
 """
 
+
 def get_current_week() -> tuple[str, str]:
     now = datetime.now(PT)
     year = str(now.year)
@@ -51,12 +56,10 @@ def get_current_week() -> tuple[str, str]:
 
 
 def chunk_articles(articles: list[dict], chunk_size: int = 15) -> list[list[dict]]:
-    """Split articles into chunks to stay within token limits."""
     return [articles[i:i + chunk_size] for i in range(0, len(articles), chunk_size)]
 
 
-def summarize_batch(model, articles: list[dict]) -> list[dict]:
-    """Send a batch of articles to Gemini for summarization."""
+def summarize_batch(client: genai.Client, articles: list[dict]) -> list[dict]:
     input_data = []
     for a in articles:
         input_data.append({
@@ -69,9 +72,10 @@ def summarize_batch(model, articles: list[dict]) -> list[dict]:
 
     prompt = SUMMARIZE_PROMPT + json.dumps(input_data, indent=2)
 
-    response = model.generate_content(
-        prompt,
-        generation_config=genai.GenerationConfig(
+    response = client.models.generate_content(
+        model=MODEL,
+        contents=prompt,
+        config=types.GenerateContentConfig(
             response_mime_type="application/json",
             temperature=0.3,
         ),
@@ -82,7 +86,7 @@ def summarize_batch(model, articles: list[dict]) -> list[dict]:
         if isinstance(results, dict) and "articles" in results:
             results = results["articles"]
         return results
-    except json.JSONDecodeError:
+    except (json.JSONDecodeError, TypeError):
         print(f"  [WARN] Failed to parse Gemini response, skipping batch", file=sys.stderr)
         return []
 
@@ -93,8 +97,7 @@ def main():
         print("ERROR: GEMINI_API_KEY environment variable not set", file=sys.stderr)
         sys.exit(1)
 
-    genai.configure(api_key=api_key)
-    model = genai.GenerativeModel("gemini-2.5-flash")
+    client = genai.Client(api_key=api_key)
 
     year, week = get_current_week()
     cumulative_file = RAW_DIR / f"{year}-{week}-cumulative.json"
@@ -114,9 +117,14 @@ def main():
 
     for i, chunk in enumerate(chunks):
         print(f"Processing batch {i + 1}/{len(chunks)} ({len(chunk)} articles)...")
-        summaries = summarize_batch(model, chunk)
-        all_summaries.extend(summaries)
-        print(f"  Got {len(summaries)} summaries")
+        try:
+            summaries = summarize_batch(client, chunk)
+            all_summaries.extend(summaries)
+            print(f"  Got {len(summaries)} summaries")
+        except Exception as e:
+            print(f"  [ERROR] Batch {i + 1} failed: {e}", file=sys.stderr)
+        if i < len(chunks) - 1:
+            time.sleep(2)
 
     for summary in all_summaries:
         aid = summary.get("id")
