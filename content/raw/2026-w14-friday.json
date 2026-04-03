@@ -1,12 +1,66 @@
 [
   {
+    "id": "4e718ba655225952",
+    "title": "China-Linked TA416 Targets European Governments with PlugX and OAuth-Based Phishing",
+    "summary_raw": "A China-aligned threat actor has set its sights on European government and diplomatic organizations since mid-2025,&nbsp;following a two-year&nbsp;period of minimal targeting in the&nbsp;region.\nThe campaign has been attributed&nbsp;to TA416, a cluster of activity that overlaps with DarkPeony, RedDelta, Red Lich, SmugX, UNC6384, and Vertigo&nbsp;Panda.\n\"This TA416 activity included multiple",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/china-linked-ta416-targets-european.html",
+    "publishedDate": "2026-04-03T23:04:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.520598+00:00"
+  },
+  {
+    "id": "c32575bb95606b8c",
+    "title": "Microsoft Details Cookie-Controlled PHP Web Shells Persisting via Cron on Linux Servers",
+    "summary_raw": "Threat&nbsp;actors are increasingly using HTTP cookies as a control channel for PHP-based web shells on Linux servers and to achieve remote code execution, according to findings from the Microsoft Defender Security Research&nbsp;Team.\n\"Instead of exposing command execution through URL parameters or request bodies, these web shells rely on threat actor-supplied cookie values to gate execution,",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/microsoft-details-cookie-controlled-php.html",
+    "publishedDate": "2026-04-03T21:02:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.520726+00:00"
+  },
+  {
+    "id": "3ea9b0c959774c01",
+    "title": "UNC1069 Social Engineering of Axios Maintainer Led to npm Supply Chain Attack",
+    "summary_raw": "The&nbsp;maintainer of the Axios npm package has confirmed that the supply chain compromise was the result of a highly-targeted social engineering campaign orchestrated by North Korean threat actors tracked&nbsp;as UNC1069.\nMaintainer Jason Saayman said the attackers tailored their social engineering efforts \"specifically to me\" by first approaching him under the guise of the founder of a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html",
+    "publishedDate": "2026-04-03T16:34:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.520837+00:00"
+  },
+  {
+    "id": "4023885f3def8d4f",
+    "title": "Why Third-Party Risk Is the Biggest Gap in Your Clients' Security Posture",
+    "summary_raw": "The next major&nbsp;breach hitting your clients probably won't come&nbsp;from inside their&nbsp;walls. It'll come through a vendor they trust, a SaaS tool their finance team signed up for, or a subcontractor nobody in IT knows about. That's the new attack surface, and most organizations are underprepared for&nbsp;it.\nCynomi's new&nbsp;guide, Securing the Modern Perimeter: The Rise of Third-Party",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/why-third-party-risk-is-biggest-gap-in.html",
+    "publishedDate": "2026-04-03T16:30:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.520941+00:00"
+  },
+  {
+    "id": "f4f12620f7979f46",
+    "title": "New SparkCat Variant in iOS, Android Apps Steals Crypto Wallet Recovery Phrase Images",
+    "summary_raw": "Cybersecurity researchers&nbsp;have discovered a new version of&nbsp;the SparkCat malware on the Apple App Store and Google Play Store, more than a year after the&nbsp;trojan was discovered targeting both the mobile operating&nbsp;systems.\nThe&nbsp;malware&nbsp;has&nbsp;been found to conceal itself within seemingly benign apps, such as enterprise messengers and food delivery services, while",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/new-sparkcat-variant-in-ios-android.html",
+    "publishedDate": "2026-04-03T14:40:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.521044+00:00"
+  },
+  {
+    "id": "6ca7b5bfa84bd5da",
+    "title": "Drift Loses $285 Million in Durable Nonce Social Engineering Attack Linked to DPRK",
+    "summary_raw": "Solana-based decentralized exchange Drift has confirmed that attackers drained about $285 million from the platform during a security incident that took place on April 1,&nbsp;2026.\n\"Earlier today, a malicious actor gained unauthorized access to Drift Protocol through a novel attack involving durable nonces, resulting in a rapid takeover of Drift\u2019s Security Council administrative powers,\" the&",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/drift-loses-285-million-in-durable.html",
+    "publishedDate": "2026-04-03T14:05:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.521147+00:00"
+  },
+  {
     "id": "5a9dcd752491baf7",
     "title": "Hackers Exploit CVE-2025-55182 to Breach 766 Next.js Hosts, Steal Credentials",
     "summary_raw": "A&nbsp;large-scale credential harvesting operation&nbsp;has been&nbsp;observed exploiting the React2Shell vulnerability as an initial infection vector to steal database credentials, SSH private keys, Amazon Web Services (AWS) secrets, shell command history, Stripe API keys, and GitHub tokens at&nbsp;scale.\nCisco&nbsp;Talos has attributed the operation to a threat cluster it tracks&nbsp;as",
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/hackers-exploit-cve-2025-55182-to.html",
     "publishedDate": "2026-04-03T01:00:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.833726+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.521249+00:00"
   },
   {
     "id": "58e88d4f91c2af82",
@@ -15,7 +69,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/cisco-patches-98-cvss-imc-and-ssm-flaws.html",
     "publishedDate": "2026-04-02T20:51:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.833851+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.521377+00:00"
   },
   {
     "id": "e372d77f674f7443",
@@ -24,7 +78,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/threatsday-bulletin-pre-auth-chains.html",
     "publishedDate": "2026-04-02T18:15:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.833960+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.521479+00:00"
   },
   {
     "id": "eb5d1b41f5ee0075",
@@ -33,7 +87,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/researchers-uncover-mining-operation.html",
     "publishedDate": "2026-04-02T17:12:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834090+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.521579+00:00"
   },
   {
     "id": "8690c4b7abf03583",
@@ -42,7 +96,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/the-state-of-trusted-open-source-report.html",
     "publishedDate": "2026-04-02T17:00:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834197+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.521687+00:00"
   },
   {
     "id": "805251aa0f2fc75d",
@@ -51,7 +105,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/whatsapp-alerts-200-users-after-fake.html",
     "publishedDate": "2026-04-02T15:21:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834298+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.521785+00:00"
   },
   {
     "id": "052d502b5aa0a94a",
@@ -60,7 +114,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/apple-expands-ios-1877-update-to-more.html",
     "publishedDate": "2026-04-02T12:39:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834398+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.521893+00:00"
   },
   {
     "id": "d3a3b72f9f645208",
@@ -69,7 +123,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/cert-ua-impersonation-campaign-spread.html",
     "publishedDate": "2026-04-01T21:40:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834496+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522087+00:00"
   },
   {
     "id": "3ceb58adb5cfc9c6",
@@ -78,7 +132,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/microsoft-warns-of-whatsapp-delivered.html",
     "publishedDate": "2026-04-01T19:40:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834593+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522205+00:00"
   },
   {
     "id": "e5fa9b9ab7f8a017",
@@ -87,7 +141,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/block-prompt-not-work-end-of-doctor-no.html",
     "publishedDate": "2026-04-01T18:16:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834692+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522345+00:00"
   },
   {
     "id": "e074e4776b92dd2a",
@@ -96,7 +150,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/casbaneiro-phishing-targets-latin.html",
     "publishedDate": "2026-04-01T18:06:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834789+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522451+00:00"
   },
   {
     "id": "c07d44cae33ffdf3",
@@ -105,7 +159,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/new-chrome-zero-day-cve-2026-5281-under.html",
     "publishedDate": "2026-04-01T17:12:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834892+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522550+00:00"
   },
   {
     "id": "9b5c7d78c3da74b0",
@@ -114,7 +168,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/3-reasons-attackers-are-using-your.html",
     "publishedDate": "2026-04-01T16:28:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.834987+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522656+00:00"
   },
   {
     "id": "bcbf906e56432420",
@@ -123,7 +177,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/google-attributes-axios-npm-supply.html",
     "publishedDate": "2026-04-01T13:14:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835120+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522755+00:00"
   },
   {
     "id": "941259e5f922de11",
@@ -132,7 +186,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/04/claude-code-tleaked-via-npm-packaging.html",
     "publishedDate": "2026-04-01T11:42:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835229+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522858+00:00"
   },
   {
     "id": "89187b02c9f5dffa",
@@ -141,7 +195,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/android-developer-verification-rollout.html",
     "publishedDate": "2026-03-31T23:58:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835324+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.522955+00:00"
   },
   {
     "id": "f4b57f9aa08eddf1",
@@ -150,7 +204,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
     "publishedDate": "2026-03-31T21:33:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835422+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523052+00:00"
   },
   {
     "id": "2fa7673cfe536cc8",
@@ -159,7 +213,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/vertex-ai-vulnerability-exposes-google.html",
     "publishedDate": "2026-03-31T18:39:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835525+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523148+00:00"
   },
   {
     "id": "dd94868bea6f2e3f",
@@ -168,7 +222,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/the-ai-arms-race-why-unified-exposure.html",
     "publishedDate": "2026-03-31T17:20:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835621+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523242+00:00"
   },
   {
     "id": "09209671b584e20b",
@@ -177,7 +231,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/silver-fox-expands-asia-cyber-campaign.html",
     "publishedDate": "2026-03-31T17:16:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835716+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523390+00:00"
   },
   {
     "id": "e45e53fb9982e3d0",
@@ -186,7 +240,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/axios-supply-chain-attack-pushes-cross.html",
     "publishedDate": "2026-03-31T11:38:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835812+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523491+00:00"
   },
   {
     "id": "6e82204822f85cfa",
@@ -195,7 +249,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/openai-patches-chatgpt-data.html",
     "publishedDate": "2026-03-30T23:35:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835906+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523588+00:00"
   },
   {
     "id": "e4e2c62e3f7377ad",
@@ -204,7 +258,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/deepload-malware-uses-clickfix-and-wmi.html",
     "publishedDate": "2026-03-30T21:17:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.835999+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523683+00:00"
   },
   {
     "id": "b75bd02d59e6b8f6",
@@ -213,7 +267,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/weekly-recap-telecom-sleeper-cells-llm.html",
     "publishedDate": "2026-03-30T19:26:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836119+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523783+00:00"
   },
   {
     "id": "b7ea608912fcadda",
@@ -222,7 +276,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/3-soc-process-fixes-that-unlock-tier-1.html",
     "publishedDate": "2026-03-30T18:30:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836213+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523881+00:00"
   },
   {
     "id": "0bff8c4ea452664a",
@@ -231,7 +285,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/russian-ctrl-toolkit-delivered-via.html",
     "publishedDate": "2026-03-30T17:48:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836306+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.523974+00:00"
   },
   {
     "id": "2577f52bcfa15c08",
@@ -240,7 +294,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/the-state-of-secrets-sprawl-2026-9.html",
     "publishedDate": "2026-03-30T17:00:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836401+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524068+00:00"
   },
   {
     "id": "2436e41221c1cb1c",
@@ -249,7 +303,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/three-china-linked-clusters-target.html",
     "publishedDate": "2026-03-30T12:30:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836494+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524161+00:00"
   },
   {
     "id": "61bc3bc246e66ac7",
@@ -258,7 +312,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/iran-linked-hackers-breach-fbi.html",
     "publishedDate": "2026-03-28T21:10:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836594+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524259+00:00"
   },
   {
     "id": "3100a14f20dd5678",
@@ -267,7 +321,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/citrix-netscaler-under-active-recon-for.html",
     "publishedDate": "2026-03-28T14:41:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836686+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524390+00:00"
   },
   {
     "id": "f3c27614cea70cdd",
@@ -276,7 +330,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/ta446-deploys-leaked-darksword-ios.html",
     "publishedDate": "2026-03-28T12:37:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836779+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524489+00:00"
   },
   {
     "id": "adf98943f8a5b761",
@@ -285,7 +339,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
     "publishedDate": "2026-03-28T12:37:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836871+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524585+00:00"
   },
   {
     "id": "81e28439bf9319c3",
@@ -294,7 +348,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/apple-sends-lock-screen-alerts-to.html",
     "publishedDate": "2026-03-27T22:52:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.836963+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524681+00:00"
   },
   {
     "id": "0bc9a4dd7e9b74c1",
@@ -303,7 +357,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/teampcp-pushes-malicious-telnyx.html",
     "publishedDate": "2026-03-27T22:23:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837078+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524775+00:00"
   },
   {
     "id": "618b9e23f5b23a3e",
@@ -312,7 +366,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/open-vsx-bug-let-malicious-vs-code.html",
     "publishedDate": "2026-03-27T19:27:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837177+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524875+00:00"
   },
   {
     "id": "af5793328338cfda",
@@ -321,7 +375,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/aitm-phishing-targets-tiktok-business.html",
     "publishedDate": "2026-03-27T17:33:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837278+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.524969+00:00"
   },
   {
     "id": "aa8bb3a73a856411",
@@ -330,7 +384,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/we-are-at-war.html",
     "publishedDate": "2026-03-27T16:30:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837377+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.525062+00:00"
   },
   {
     "id": "c64a82a49c965353",
@@ -339,7 +393,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/bearlyfy-hits-70-russian-firms-with.html",
     "publishedDate": "2026-03-27T15:34:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837471+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.525157+00:00"
   },
   {
     "id": "7885d7ddc153adc9",
@@ -348,61 +402,61 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/03/langchain-langgraph-flaws-expose-files.html",
     "publishedDate": "2026-03-27T13:37:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837563+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.525283+00:00"
   },
   {
-    "id": "3d36a39e4cab1736",
-    "title": "China-Linked Red Menshen Uses Stealthy BPFDoor Implants to Spy via Telecom Networks",
-    "summary_raw": "A long-term and ongoing campaign attributed to a China-nexus threat actor has embedded itself in telecom networks to conduct espionage against government networks.\nThe strategic positioning activity, which involves implanting and maintaining stealthy access mechanisms within critical environments, has been attributed to Red Menshen, a threat cluster that's also tracked as Earth Bluecrow,",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/03/china-linked-red-menshen-uses-stealthy.html",
-    "publishedDate": "2026-03-26T23:10:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837658+00:00"
+    "id": "35c2e6263d07a498",
+    "title": "LinkedIn secretely scans for 6,000+ Chrome extensions, collects data",
+    "summary_raw": "A new report dubbed \"BrowserGate\"\u00a0warns that Microsoft's LinkedIn is using hidden JavaScript scripts on its website to scan visitors' browsers for installed extensions and collect device data. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/linkedin-secretely-scans-for-6-000-plus-chrome-extensions-collects-data/",
+    "publishedDate": "2026-04-03T16:40:22-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624562+00:00"
   },
   {
-    "id": "ab29144bcf782028",
-    "title": "[Webinar] Stop Guessing. Learn to Validate Your Defenses Against Real Attacks",
-    "summary_raw": "Most teams have security tools in place. Alerts are firing, dashboards look clean, threat intel is flowing in. On the surface, everything feels under control.\nBut one question usually stays unanswered: Would your defenses actually stop a real attack?\nThat\u2019s where things get shaky. A control exists, so it\u2019s assumed to work. A detection rule is active, so it\u2019s expected to catch something. But very",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/03/webinar-stop-guessing-learn-to-validate.html",
-    "publishedDate": "2026-03-26T18:42:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837754+00:00"
+    "id": "950b935ebf5ff7e9",
+    "title": "Hims & Hers warns of data breach after Zendesk support ticket breach",
+    "summary_raw": "Telehealth giant Hims & Hers Health is warning that it suffered a data breach after support tickets were stolen from a third-party customer service platform. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hims-and-hers-warns-of-data-breach-after-zendesk-support-ticket-breach/",
+    "publishedDate": "2026-04-03T13:41:11-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624682+00:00"
   },
   {
-    "id": "533cd1a735e566ff",
-    "title": "Claude Extension Flaw Enabled Zero-Click XSS Prompt Injection via Any Website",
-    "summary_raw": "Cybersecurity researchers have disclosed a vulnerability in Anthropic's Claude Google Chrome Extension that could have been exploited to trigger malicious prompts simply by visiting a web page.\nThe flaw \"allowed any website to silently inject prompts into that assistant as if the user wrote them,\" Koi Security researcher Oren Yomtov said in a report shared with The Hacker News. \"No clicks, no",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/03/claude-extension-flaw-enabled-zero.html",
-    "publishedDate": "2026-03-26T18:41:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837847+00:00"
+    "id": "6639769897d38659",
+    "title": "Die Linke German political party confirms data stolen by Qilin ransomware",
+    "summary_raw": "The Qilin ransomware group has claimed responsibility for an attack against Die Linke ('The Left'), forcing an IT systems outage at the political party, and threatening sensitive data leak. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/die-linke-german-political-party-confirms-data-stolen-by-qilin-ransomware/",
+    "publishedDate": "2026-04-03T12:36:44-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624791+00:00"
   },
   {
-    "id": "81122d631b60de51",
-    "title": "Masters of Imitation: How Hackers and Art Forgers Perfect the Art of Deception",
-    "summary_raw": "Unmasking impostors is something the art world has faced for decades, and there are valuable lessons from the works of Elmyr de Hory that can apply to the world of defensive cybersecurity. During the 1960s, de Hory gained infamy as a premier forger, passing off counterfeit masterworks of Picasso, Matisse, and Renoir to unsuspecting collectors and renowned museums. Over the next several decades,",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/03/masters-of-imitation-how-hackers-and.html",
-    "publishedDate": "2026-03-26T17:28:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.837939+00:00"
+    "id": "f5c3121afbe77c19",
+    "title": "Evolution of Ransomware: Multi-Extortion Ransomware Attacks",
+    "summary_raw": "Multi-extortion ransomware relies on stolen data to pressure victims with public leaks. Penta Security explains how its D.AMO platform keeps exfiltrated files encrypted and useless to attackers. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/evolution-of-ransomware-multi-extortion-ransomware-attacks/",
+    "publishedDate": "2026-04-03T10:05:15-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624896+00:00"
   },
   {
-    "id": "ac03896d17cf8810",
-    "title": "ThreatsDay Bulletin: PQC Push, AI Vuln Hunting, Pirated Traps, Phishing Kits & 20 More Stories",
-    "summary_raw": "Some weeks in security feel loud. This one feels sneaky. Less big dramatic fireworks, more of that slow creeping sense that too many people are getting way too comfortable abusing things they probably shouldn&rsquo;t even be touching.\nThere&rsquo;s a little bit of everything in this one, too. Weird delivery tricks, old problems coming back in slightly worse forms, shady infrastructure doing",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/03/threatsday-bulletin-pqc-push-ai-vuln.html",
-    "publishedDate": "2026-03-26T17:15:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.838034+00:00"
+    "id": "caaae740747f7aa4",
+    "title": "Microsoft still working to fix Exchange Online mailbox access issues",
+    "summary_raw": "Microsoft is investigating and working to resolve Exchange Online mailbox access issues that have intermittently affected Outlook mobile and macOS users for weeks. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-still-working-to-fix-exchange-online-mailbox-access-issues/",
+    "publishedDate": "2026-04-03T07:25:20-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624998+00:00"
   },
   {
-    "id": "21bf828553563147",
-    "title": "Coruna iOS Kit Reuses 2023 Triangulation Exploit Code in Recent Mass Attacks",
-    "summary_raw": "The kernel exploit for two security vulnerabilities used in the recently uncovered Apple iOS exploit kit known as Coruna is an updated version of the same exploit that was used in the Operation Triangulation campaign back in 2023, according to new findings from Kaspersky.\n\"When Coruna was first reported, the public evidence wasn't sufficient to link its code to Triangulation \u2014 shared",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/03/coruna-ios-kit-reuses-2023.html",
-    "publishedDate": "2026-03-26T16:37:00+05:30",
-    "scrapedAt": "2026-04-03T07:56:15.838156+00:00"
+    "id": "755ddfa86f443768",
+    "title": "Man admits to locking thousands of Windows devices in extortion plot",
+    "summary_raw": "A former core infrastructure engineer has pleaded guilty to locking Windows admins out of 254 servers as part of a failed extortion plot targeting his employer, an industrial company headquartered in Somerset County, New Jersey. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/man-admits-to-extortion-plot-locking-coworkers-out-of-thousands-of-windows-devices/",
+    "publishedDate": "2026-04-03T05:04:54-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.625099+00:00"
   },
   {
     "id": "d911d51e9df26164",
@@ -411,7 +465,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-force-upgrades-unmanaged-windows-11-24h2-pcs/",
     "publishedDate": "2026-04-03T03:55:40-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.910454+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.625198+00:00"
   },
   {
     "id": "b8ada83bae187db7",
@@ -420,7 +474,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/cert-eu-european-commission-hack-exposes-data-of-30-eu-entities/",
     "publishedDate": "2026-04-03T02:33:34-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.910571+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.625324+00:00"
   },
   {
     "id": "9efc7dd2f8e2dbd2",
@@ -429,16 +483,16 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/claude-code-leak-used-to-push-infostealer-malware-on-github/",
     "publishedDate": "2026-04-02T16:30:55-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.910677+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.625427+00:00"
   },
   {
     "id": "e65e829b37d81da7",
-    "title": "Drift loses $280 million North Korean hackers seize Security Council powers",
+    "title": "Drift loses $280 million as North Korean hackers seize Security Council powers",
     "summary_raw": "The Drift Protocol lost at least $280 million after a threat actor took control of its Security Council administrative powers in a planned, sophisticated operation. [...]",
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/drift-loses-280-million-north-korean-hackers-seize-security-council-powers/",
     "publishedDate": "2026-04-02T15:03:39-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.910780+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.625525+00:00"
   },
   {
     "id": "22e0cbee853af83f",
@@ -447,7 +501,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/residential-proxies-evaded-ip-reputation-checks-in-78-percent-of-4b-sessions/",
     "publishedDate": "2026-04-02T11:21:02-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.910882+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.625624+00:00"
   },
   {
     "id": "57457630c5722c00",
@@ -456,7 +510,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/adversaries-exploit-vacant-homes-to-intercept-mail-in-hybrid-cybercrime/",
     "publishedDate": "2026-04-02T10:01:11-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.910984+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.625722+00:00"
   },
   {
     "id": "c75e646ee0168562",
@@ -465,7 +519,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-progress-sharefile-flaws-can-be-chained-in-pre-auth-rce-attacks/",
     "publishedDate": "2026-04-02T09:33:11-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911111+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.625822+00:00"
   },
   {
     "id": "f2538220d6586118",
@@ -474,7 +528,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/medtech-giant-stryker-fully-operational-after-data-wiping-attack/",
     "publishedDate": "2026-04-02T09:28:39-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911214+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.625919+00:00"
   },
   {
     "id": "09769448efd4666e",
@@ -483,61 +537,70 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/critical-cisco-imc-auth-bypass-gives-attackers-admin-access/",
     "publishedDate": "2026-04-02T07:01:14-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911311+00:00"
+    "scrapedAt": "2026-04-03T23:54:32.626015+00:00"
   },
   {
-    "id": "5c26a489371e3d59",
-    "title": "Microsoft links Classic Outlook issue to email delivery problems",
-    "summary_raw": "Microsoft is investigating a known issue that prevents some Classic Outlook users from sending emails via Outlook.com. [...]",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-links-classic-outlook-bug-to-email-delivery-issues/",
-    "publishedDate": "2026-04-02T05:12:12-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911408+00:00"
+    "id": "267088feb9d81275",
+    "title": "Inconsistent Privacy Labels Don't Tell Users What They Are Getting",
+    "summary_raw": "Data privacy labels are a great idea for mobile apps, but the current versions just aren't good enough.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/data-privacy/inconsistent-privacy-labels-not-enough",
+    "publishedDate": "2026-04-03T21:05:07+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046058+00:00"
   },
   {
-    "id": "9e517fc24ce9a150",
-    "title": "Over 14,000 F5 BIG-IP APM instances still exposed to RCE attacks",
-    "summary_raw": "Internet security watchdog Shadowserver has found over 14,000 BIG-IP APM instances exposed online amid ongoing attacks exploiting a critical-severity remote code execution (RCE) vulnerability. [...]",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/over-14-000-f5-big-ip-apm-instances-still-exposed-to-rce-attacks/",
-    "publishedDate": "2026-04-02T04:25:50-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911504+00:00"
+    "id": "3bc47dc99c6b8bdc",
+    "title": "Apple Breaks Precedent, Patches DarkSword for iOS 18",
+    "summary_raw": "Even organizations with users unwilling or unable to adopt iOS 26 can now protect themselves from a severe mobile OS-cracking tool.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/apple-patches-darksword-ios-18",
+    "publishedDate": "2026-04-03T17:08:57+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046170+00:00"
   },
   {
-    "id": "aa14b16c8c045a28",
-    "title": "New CrystalRAT malware adds RAT, stealer and prankware features",
-    "summary_raw": "A new malware-as-a-service called CrystalRAT is being promoted on Telegram, offering remote access, data theft, keylogging, and clipboard hijacking capabilities. [...]",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/new-crystalrat-malware-adds-rat-stealer-and-prankware-features/",
-    "publishedDate": "2026-04-01T19:17:09-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911597+00:00"
+    "id": "0e87efe1913ee88a",
+    "title": "Blast Radius of TeamPCP Attacks Expands Amid Hacker Infighting",
+    "summary_raw": "As organizations disclose breaches tied to TeamPCP's supply chain attacks, ShinyHunters and Lapsus$ are getting involved, taking credit, and creating a murky situation for enterprises.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/teampcp-attacks-hacker-infighting",
+    "publishedDate": "2026-04-03T15:11:16+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046295+00:00"
   },
   {
-    "id": "e12a8dc434306956",
-    "title": "Apple expands iOS 18 updates to more iPhones to block DarkSword attacks",
-    "summary_raw": "Apple has now made it possible for more iPhones still running iOS 18 to receive security updates that protect against the actively exploited DarkSword exploit kit. [...]",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/apple-expands-ios-18-updates-to-more-iphones-to-block-darksword-attacks/",
-    "publishedDate": "2026-04-01T17:50:49-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911691+00:00"
+    "id": "58e3330c8e6173ea",
+    "title": "Picking Up 'Skull Vibrations'? Could Be XR Headset Authentication",
+    "summary_raw": "&quot;Skull vibration harmonics generated by vital signs&quot; can be used to sign in to VR, AR, and MR headsets, according to emerging research.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/remote-workforce/skull-vibrations-could-be-xr-headset-authentication",
+    "publishedDate": "2026-04-03T13:30:00+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046400+00:00"
   },
   {
-    "id": "696f56c0697b500b",
-    "title": "Hackers exploit TrueConf zero-day to push malicious software updates",
-    "summary_raw": "Hackers have targeted TrueConf conference servers in attacks that exploit a zero-day vulnerability, allowing them to execute arbitrary files on all connected endpoints. [...]",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-trueconf-zero-day-to-push-malicious-software-updates/",
-    "publishedDate": "2026-04-01T17:35:47-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911786+00:00"
+    "id": "ca18455e4c31a077",
+    "title": "Claude Source Code Leak Highlights Big Supply Chain Missteps",
+    "summary_raw": "Or, why the software supply chain should be treated as critical infrastructure with guardrails built in at every layer.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/source-code-leaks-highlight-lack-supply-chain-oversight",
+    "publishedDate": "2026-04-03T13:00:00+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046499+00:00"
   },
   {
-    "id": "76339af1444787bd",
-    "title": "New EvilTokens service fuels Microsoft device code phishing attacks",
-    "summary_raw": "A new malicious kit called EvilTokens integrates device code phishing capabilities, allowing attackers to hijack Microsoft accounts and provide advanced features for business email compromise attacks. [...]",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/security/new-eviltokens-service-fuels-microsoft-device-code-phishing-attacks/",
-    "publishedDate": "2026-04-01T15:42:25-04:00",
-    "scrapedAt": "2026-04-03T07:56:15.911928+00:00"
+    "id": "d134803d843c5b9e",
+    "title": "Chainguard Unveils Factory 2.0 to Automate Hardening the Software Supply Chain",
+    "summary_raw": "The rebuilt Chainguard platform adds deeper security designed to continuously reconcile open source artifacts across containers, libraries, agent skills, and GitHub Actions.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/chainguard-factory-automate-hardening-software-supply-chain",
+    "publishedDate": "2026-04-03T12:57:28+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046593+00:00"
+  },
+  {
+    "id": "e5b046045ff16405",
+    "title": "CrowdStrike Next-Gen SIEM Can Now Ingest Microsoft Defender Telemetry",
+    "summary_raw": "Once CrowdStrike's nemesis, Microsoft is now a collaborator. A shared interest in Formula 1 helped thaw the years-long fierce rivalry.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/crowdstrike-falcon-ingest-microsoft-defender-telemetry",
+    "publishedDate": "2026-04-03T11:53:15+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046689+00:00"
   },
   {
     "id": "67e0973d7c4879d2",
@@ -546,16 +609,16 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cybersecurity-operations/geopolitics-ai-cybersecurity-insights-rsac-2026",
     "publishedDate": "2026-04-02T21:14:27+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.259879+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.046783+00:00"
   },
   {
     "id": "13c886195b7b0d34",
     "title": "Not Toying Around: Hasbro Attack May Take 'Weeks' to Remediate",
-    "summary_raw": "The company's 8-K filing notes &quot;unauthorized access&quot; and that it's activated business continuity plans and taken some systems offline.",
+    "summary_raw": "The company's 8-K filing notes &quot;unauthorized access&quot; and that it has activated business continuity plans and taken some systems offline.",
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/toying-around-hasbro-attack-remediate",
     "publishedDate": "2026-04-02T20:28:36+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.259989+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.046876+00:00"
   },
   {
     "id": "c14757db6967949c",
@@ -564,7 +627,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cybersecurity-operations/security-bosses-all-in-ai",
     "publishedDate": "2026-04-02T19:12:45+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260121+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.046976+00:00"
   },
   {
     "id": "cf032a3b9a9f1485",
@@ -573,7 +636,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cybersecurity-operations/rsac-2026-ai-dominates-community",
     "publishedDate": "2026-04-02T15:56:32+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260224+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047069+00:00"
   },
   {
     "id": "19b0e27ccb7d193a",
@@ -582,7 +645,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/bank-trojan-casbaneiro-worms-latin-america",
     "publishedDate": "2026-04-02T13:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260319+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047163+00:00"
   },
   {
     "id": "d8ec63c739f87251",
@@ -591,7 +654,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cybersecurity-operations/ransomware-hospitals-preparation-key-defense",
     "publishedDate": "2026-04-01T22:04:43+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260413+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047255+00:00"
   },
   {
     "id": "cb0d72c282b1a649",
@@ -600,7 +663,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/remote-workforce/latam-cyber-talent-overlooked-cyberattack-glut",
     "publishedDate": "2026-04-01T19:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260505+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047374+00:00"
   },
   {
     "id": "3b8376b6f51f6e32",
@@ -609,7 +672,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/cyberattacks-latin-american-governments",
     "publishedDate": "2026-04-01T16:52:54+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260596+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047466+00:00"
   },
   {
     "id": "7f2978c6ca4c4065",
@@ -618,7 +681,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/endpoint-security/venom-stealer-maas-commoditizes-clickfix-attacks",
     "publishedDate": "2026-04-01T14:54:23+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260686+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047556+00:00"
   },
   {
     "id": "40b7c3be24a4b93a",
@@ -627,7 +690,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cybersecurity-analytics/are-we-training-ai-too-late",
     "publishedDate": "2026-04-01T10:40:13+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260775+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047646+00:00"
   },
   {
     "id": "e40750100f674c6e",
@@ -636,7 +699,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/endpoint-security/forgotten-endpoint-security-risks-dormant-devices",
     "publishedDate": "2026-03-31T22:13:34+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260864+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047735+00:00"
   },
   {
     "id": "ed582504c0047162",
@@ -645,7 +708,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/axios-npm-package-compromised-precision-attack",
     "publishedDate": "2026-03-31T20:55:13+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.260954+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047830+00:00"
   },
   {
     "id": "c44e53b37a555586",
@@ -654,7 +717,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/googles-vertex-ai-over-privilege-problem",
     "publishedDate": "2026-03-31T20:26:33+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261063+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.047925+00:00"
   },
   {
     "id": "1920f8cb6244ac5e",
@@ -663,7 +726,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cloud-security/teampcp-breaches-cloud-saas-instances-stolen-credentials",
     "publishedDate": "2026-03-31T20:02:28+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261162+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048015+00:00"
   },
   {
     "id": "269af8b28e924ede",
@@ -672,7 +735,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cybersecurity-operations/ai-and-quantum-are-forcing-a-rethink-of-digital-trust",
     "publishedDate": "2026-03-31T15:29:11+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261254+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048104+00:00"
   },
   {
     "id": "ed09a8bd59155fc1",
@@ -681,7 +744,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/events/black-hat-usa",
     "publishedDate": "2026-08-01T11:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261357+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048206+00:00"
   },
   {
     "id": "db529364ef249109",
@@ -690,7 +753,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/threat-intelligence/iran-pseudo-ransomware-pay2key-operations",
     "publishedDate": "2026-03-31T13:31:33+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261453+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048329+00:00"
   },
   {
     "id": "cfe6a2d758b57895",
@@ -699,7 +762,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-powered-deepload-steals-credentials-evades-detection",
     "publishedDate": "2026-03-30T21:25:02+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261545+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048423+00:00"
   },
   {
     "id": "adad3e1c66c4366d",
@@ -708,7 +771,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/ai-driven-code-surge-is-forcing-a-rethink-of-appsec",
     "publishedDate": "2026-03-30T18:42:33+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261633+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048512+00:00"
   },
   {
     "id": "1b3806ea52b394ca",
@@ -717,7 +780,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/f5-big-ip-vulnerability-reclassified-rce-exploitation",
     "publishedDate": "2026-03-30T18:24:02+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261730+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048602+00:00"
   },
   {
     "id": "399be5d5e966cbc1",
@@ -726,7 +789,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/manufacturing-and-healthcare-share-struggles-with-passwords",
     "publishedDate": "2026-03-30T16:25:19+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261817+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048692+00:00"
   },
   {
     "id": "360665735290809c",
@@ -735,7 +798,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/storm-brews-critical-no-click-telegram-flaw",
     "publishedDate": "2026-03-30T15:01:59+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261905+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048782+00:00"
   },
   {
     "id": "700c2357ce181f6e",
@@ -744,7 +807,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/threat-intelligence/china-upgrades-backdoor-spy-telcos",
     "publishedDate": "2026-03-27T16:48:49+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.261993+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048869+00:00"
   },
   {
     "id": "7c193c16836762c1",
@@ -753,7 +816,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/wartime-usage-of-compromised-ip-cameras-highlight-their-danger",
     "publishedDate": "2026-03-27T16:21:48+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262107+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.048958+00:00"
   },
   {
     "id": "9a5594303e13bf84",
@@ -762,7 +825,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/threat-intelligence/infrastructure-attacks-physical-consequences-down",
     "publishedDate": "2026-03-27T13:30:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262197+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.049046+00:00"
   },
   {
     "id": "534727d0a597511e",
@@ -771,79 +834,25 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/google-2029-deadline-quantum-safe-cryptography",
     "publishedDate": "2026-03-27T13:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262286+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.049133+00:00"
   },
   {
-    "id": "d33808212f286622",
-    "title": "Coruna, DarkSword &amp; Democratizing Nation-State Exploit Kits",
-    "summary_raw": "Nation-state malware is being sold on the Dark Web and leaked to GitHub; and ordinary organizations might not stand much of a chance of defending themselves.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/endpoint-security/coruna-darksword-democratizing-nation-state-exploit-kits",
-    "publishedDate": "2026-03-26T19:56:41+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262374+00:00"
-  },
-  {
-    "id": "100db65a22a2404e",
-    "title": "Is the FCC's Router Ban the Wrong Fix?",
-    "summary_raw": "The agency put foreign-made consumer routers on its list of prohibited communications devices, but the ban could create more problems down the road.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/endpoint-security/fcc-router-ban-wrong-fix",
-    "publishedDate": "2026-03-26T19:48:32+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262461+00:00"
-  },
-  {
-    "id": "a29352fe44cd832b",
-    "title": "Automotive Cybersecurity Threats Grow in Era of Connected, Autonomous Vehicles",
-    "summary_raw": "More than a decade since the 2015 Jeep hack, the cybersecurity of vehicles remains of the utmost importance.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/vulnerabilities-threats/automotive-cybersecurity-threats-grow-connected-autonomous-vehicles",
-    "publishedDate": "2026-03-26T19:48:21+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262548+00:00"
-  },
-  {
-    "id": "d9187a7eecfe8ff9",
-    "title": "Critical Flaw in Langflow AI Platform Under Attack",
-    "summary_raw": "Threats actors pounced on the code injection vulnerability within hours of its disclosure, demonstrating that organizations have little time to address critical bugs.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/vulnerabilities-threats/critical-flaw-langflow-ai-platform-under-attack",
-    "publishedDate": "2026-03-26T19:14:05+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262634+00:00"
-  },
-  {
-    "id": "875d80284a779ebf",
-    "title": "How Organizations Can Use Mistakes to Level Up Their Security Programs",
-    "summary_raw": "Organizations repeatedly expose ports, reuse passwords, and skip patches, creating security gaps that attackers exploit for breaches. An industry veteran outlines ways to fix these common mistakes.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/cybersecurity-operations/blunders-level-up-security-programs",
-    "publishedDate": "2026-03-26T15:29:32+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262722+00:00"
-  },
-  {
-    "id": "e352b863e6b3e8a7",
-    "title": "AI-Powered Dependency Decisions Introduce, Ignore Security Bugs",
-    "summary_raw": "AI models often hallucinate or make costly mistakes when tasked with recommending software versions, upgrade paths, and security fixes \u2014 leading to significant technical debt.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/application-security/ai-powered-dependency-decisions-security-bugs",
-    "publishedDate": "2026-03-26T14:44:16+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262815+00:00"
-  },
-  {
-    "id": "60b370fdc1a16b7b",
-    "title": "Intermediaries Driving Global Spyware Market Expansion",
-    "summary_raw": "Third-party resellers and brokers foil transparency efforts and allow spyware to spread despite government restrictions, a study finds.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/cyber-risk/intermediaries-driving-global-spyware-market-expansion",
-    "publishedDate": "2026-03-26T12:04:31+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.262901+00:00"
+    "id": "50a808fdac3e4926",
+    "title": "OpenClaw gives users yet another reason to be freaked out about security",
+    "summary_raw": "The viral AI agentic tool let attackers silently gain admin unauthenticated access.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/",
+    "publishedDate": "2026-04-03T20:30:15+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.201713+00:00"
   },
   {
     "id": "8174785d36cc833c",
     "title": "New Rowhammer attacks give complete control of machines running Nvidia GPUs",
-    "summary_raw": "Both GDDRHammer and GeForge hammer GPU memory in ways that compromise the CPU.",
+    "summary_raw": "GDDRHammer, GeForge and GPUBreach hammer GPU memory in ways that hijack the CPU.",
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/",
     "publishedDate": "2026-04-02T17:00:11+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.491088+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.201829+00:00"
   },
   {
     "id": "cb80fc5a0fcaa722",
@@ -852,7 +861,7 @@
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/03/new-quantum-computing-advances-heighten-threat-to-elliptic-curve-cryptosystems/",
     "publishedDate": "2026-03-31T18:25:33+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.491213+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.201933+00:00"
   },
   {
     "id": "017f32d2d7d02989",
@@ -861,7 +870,7 @@
     "source": "Security Now (GRC)",
     "url": "https://twit.tv/shows/security-now/episodes/1072",
     "publishedDate": "2026-03-31T19:23:56+00:00",
-    "scrapedAt": "2026-04-03T07:56:16.664201+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.328167+00:00"
   },
   {
     "id": "61ef28621f72d7ff",
@@ -870,7 +879,7 @@
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/stardust-chollima-likely-compromises-axios-npm-package/",
     "publishedDate": "2026-04-01T00:00:00-05:00",
-    "scrapedAt": "2026-04-03T07:56:16.829892+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.469816+00:00"
   },
   {
     "id": "9bd35165ea38c36b",
@@ -879,7 +888,7 @@
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/falcon-for-it-supports-windows-secure-boot-certificate-lifecycle-management/",
     "publishedDate": "2026-04-01T00:00:00-05:00",
-    "scrapedAt": "2026-04-03T07:56:16.830011+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.469936+00:00"
   },
   {
     "id": "cf0b32a527431ade",
@@ -888,7 +897,16 @@
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/detecting-kerberos-relay-attack-via-dns-cname-abuse/",
     "publishedDate": "2026-03-31T00:00:00-05:00",
-    "scrapedAt": "2026-04-03T07:56:16.830181+00:00"
+    "scrapedAt": "2026-04-03T23:54:33.470044+00:00"
+  },
+  {
+    "id": "f9e9b32c0f3e7acc",
+    "title": "When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock's Multi-Agent Applications",
+    "summary_raw": "<p>Unit 42 research on multi-agent AI systems on Amazon Bedrock reveals new attack surfaces and prompt injection risks. Learn how to secure your AI applications.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/\">When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock&#039;s Multi-Agent Applications</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/",
+    "publishedDate": "2026-04-03T22:00:38+00:00",
+    "scrapedAt": "2026-04-03T23:54:34.803858+00:00"
   },
   {
     "id": "8225a29a67a885fb",
@@ -897,7 +915,7 @@
     "source": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/axios-supply-chain-attack/",
     "publishedDate": "2026-04-01T18:30:10+00:00",
-    "scrapedAt": "2026-04-03T07:56:17.764788+00:00"
+    "scrapedAt": "2026-04-03T23:54:34.803978+00:00"
   },
   {
     "id": "f5a6c36f9d1797cf",
@@ -906,7 +924,7 @@
     "source": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/teampcp-supply-chain-attacks/",
     "publishedDate": "2026-03-31T21:00:39+00:00",
-    "scrapedAt": "2026-04-03T07:56:17.764907+00:00"
+    "scrapedAt": "2026-04-03T23:54:34.804086+00:00"
   },
   {
     "id": "d3465d79cfb68db0",
@@ -915,25 +933,7 @@
     "source": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/double-agents-vertex-ai/",
     "publishedDate": "2026-03-31T10:00:56+00:00",
-    "scrapedAt": "2026-04-03T07:56:17.765014+00:00"
-  },
-  {
-    "id": "1959c0c81c5528e5",
-    "title": "Threat Brief: March 2026 Escalation of Cyber Risk Related to Iran (Updated March 26)",
-    "summary_raw": "<p>Unit 42 details recent Iranian cyberattack activity, sharing direct observations of phishing, hacktivist activity and cybercrime. We include recommendations for defenders.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/\">Threat Brief: March 2026 Escalation of Cyber Risk Related to Iran (Updated March 26)</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
-    "source": "Palo Alto Unit 42",
-    "url": "https://unit42.paloaltonetworks.com/iranian-cyberattacks-2026/",
-    "publishedDate": "2026-03-26T22:10:07+00:00",
-    "scrapedAt": "2026-04-03T07:56:17.765170+00:00"
-  },
-  {
-    "id": "e10ce6fcb85b312e",
-    "title": "Converging Interests: Analysis of Threat Clusters Targeting a Southeast Asian Government",
-    "summary_raw": "<p>Unit 42 uncovers multiple clusters of cyberespionage targeting a Southeast Asian government organization with USBFect, RATs and loaders.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/espionage-campaigns-target-se-asian-government-org/\">Converging Interests: Analysis of Threat Clusters Targeting a Southeast Asian Government</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
-    "source": "Palo Alto Unit 42",
-    "url": "https://unit42.paloaltonetworks.com/espionage-campaigns-target-se-asian-government-org/",
-    "publishedDate": "2026-03-26T22:00:32+00:00",
-    "scrapedAt": "2026-04-03T07:56:17.765280+00:00"
+    "scrapedAt": "2026-04-03T23:54:34.804191+00:00"
   },
   {
     "id": "33f18996464f9585",
@@ -942,7 +942,7 @@
     "source": "Sophos News",
     "url": "https://www.sophos.com/en-us/blog/axios-npm-package-compromised-to-deploy-malware",
     "publishedDate": "2026-03-31T00:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:17.862670+00:00"
+    "scrapedAt": "2026-04-03T23:54:34.921865+00:00"
   },
   {
     "id": "92c78c5b326856a5",
@@ -951,7 +951,16 @@
     "source": "Sophos News",
     "url": "https://www.sophos.com/en-us/blog/incident-responders-s-il-vous-plait",
     "publishedDate": "2026-03-30T00:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:17.862785+00:00"
+    "scrapedAt": "2026-04-03T23:54:34.921991+00:00"
+  },
+  {
+    "id": "858077a01fe5a65a",
+    "title": "The Iran War: What You Need to Know",
+    "summary_raw": "Insikt Group tracks the cyber, physical, and geopolitical components of the US-Israeli strikes on Iran \u2014 with continuously updated threat analysis and scenarios.",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/the-iran-war-what-you-need-to-know",
+    "publishedDate": "2026-04-03T00:00:00+00:00",
+    "scrapedAt": "2026-04-03T23:54:35.432029+00:00"
   },
   {
     "id": "12ad9e0fbc91dfe6",
@@ -960,7 +969,7 @@
     "source": "Recorded Future",
     "url": "https://www.recordedfuture.com/research/latin-america-and-the-caribbean-cybercrime-landscape",
     "publishedDate": "2026-04-02T00:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.347213+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.432142+00:00"
   },
   {
     "id": "cee15fb9041e5895",
@@ -969,7 +978,7 @@
     "source": "Recorded Future",
     "url": "https://www.recordedfuture.com/blog/industrialization-of-the-fraud-ecosystem-blog",
     "publishedDate": "2026-04-01T00:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.347322+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.432243+00:00"
   },
   {
     "id": "9367902d313f1f57",
@@ -978,7 +987,25 @@
     "source": "Recorded Future",
     "url": "https://www.recordedfuture.com/blog/the-shift-an-era-of-quantum-geopolitics",
     "publishedDate": "2026-04-01T00:00:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.347422+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.432396+00:00"
+  },
+  {
+    "id": "8ab49ac22b81fd38",
+    "title": "Friday Squid Blogging: Jurassic Fish Chokes on Squid",
+    "summary_raw": "<p>Here&#8217;s a <a href=\"https://timesofindia.indiatimes.com/etimes/animals/how-a-jurassic-fish-choked-to-death-on-a-floating-squid-150-million-years-ago/articleshow/129823852.cms\">fossil</a> of a 150-million year old fish that choked to death on a <i>belemnite rostrum</i>: the hard, internal shell of an extinct, squid-like animal.</p>\n<p>Original <a href=\"https://www.nature.com/articles/s41598-025-00163-7\">paper</a>.</p>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-jurassic-fish-chokes-on-squid.html",
+    "publishedDate": "2026-04-03T21:07:06+00:00",
+    "scrapedAt": "2026-04-03T23:54:35.555295+00:00"
+  },
+  {
+    "id": "376194ec9c388beb",
+    "title": "Company that Secretly Records and Publishes Zoom Meetings",
+    "summary_raw": "<p>WebinarTV searches the internet for public Zoom invites, joins the meetings, secretly records them, and <a href=\"https://www.404media.co/this-company-is-secretly-turning-your-zoom-calls-into-ai-podcasts/\">publishes</a> (alternate <a href=\"https://archive.ph/TYd4L\">link</a>) the recordings. It doesn&#8217;t use the Zoom record feature, so Zoom can&#8217;t do anything about it.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/company-that-secretly-records-and-publishes-zoom-meetings.html",
+    "publishedDate": "2026-04-03T11:08:17+00:00",
+    "scrapedAt": "2026-04-03T23:54:35.555387+00:00"
   },
   {
     "id": "e9867e2edc3f2878",
@@ -987,7 +1014,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/04/us-bans-all-foreign-made-consumer-routers.html",
     "publishedDate": "2026-04-02T17:28:27+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.492486+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.555465+00:00"
   },
   {
     "id": "fc99c4de7c7814ca",
@@ -996,7 +1023,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/04/possible-us-government-iphone-hacking-tool-leaked.html",
     "publishedDate": "2026-04-02T10:05:43+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.492573+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.555540+00:00"
   },
   {
     "id": "afa4abdefad93d50",
@@ -1005,7 +1032,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/04/is-hackback-official-us-cybersecurity-strategy.html",
     "publishedDate": "2026-04-01T16:57:35+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.492649+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.555626+00:00"
   },
   {
     "id": "0cfe07d75767cc1b",
@@ -1014,7 +1041,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/04/a-taxonomy-of-cognitive-security.html",
     "publishedDate": "2026-04-01T09:59:07+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.492722+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.555699+00:00"
   },
   {
     "id": "6eee17fa9c211d83",
@@ -1023,7 +1050,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/03/inventors-of-quantum-cryptography-win-turing-award.html",
     "publishedDate": "2026-03-31T11:05:32+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.492791+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.555770+00:00"
   },
   {
     "id": "750e75b3d5e36b42",
@@ -1032,7 +1059,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/03/apples-camera-indicator-lights.html",
     "publishedDate": "2026-03-30T11:08:24+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.492861+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.555840+00:00"
   },
   {
     "id": "4763a721f130a6ed",
@@ -1041,16 +1068,16 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/03/friday-squid-blogging-bioluminescent-bacteria-in-squid.html",
     "publishedDate": "2026-03-27T20:18:54+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.492931+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.555908+00:00"
   },
   {
-    "id": "4597dd8955f097d6",
-    "title": "As the US Midterms Approach, AI Is Going to Emerge as a Key Issue Concerning Voters",
-    "summary_raw": "<p>In December, the Trump administration signed an executive order that <a href=\"https://www.nytimes.com/2025/12/11/technology/ai-trump-executive-order.html\">neutered</a> states&#8217; ability to regulate AI by ordering his administration to both sue and withhold funds from states that try to do so. This action pointedly supported <a href=\"https://www.nytimes.com/2025/12/08/us/politics/trump-executive-order-ai-laws.html\">industry lobbyists</a> keen to avoid any constraints and consequences on their deployment of AI, while undermining the efforts of consumers, advocates, and industry associations concerned about AI&#8217;s harms who have spent years pushing for state regulation.</p>\n<p>Trump&#8217;s actions have clarified the ideological alignments around AI within America&#8217;s electoral factions. They set down lines on a new playing field for the midterm elections, prompting members of his party, the opposition, and all of us to consider where we stand in the debate over how and where to let AI transform our lives...</p>",
-    "source": "Schneier on Security",
-    "url": "https://www.schneier.com/blog/archives/2026/03/as-the-us-midterms-approach-ai-is-going-to-emerge-as-a-key-issue-concerning-voters.html",
-    "publishedDate": "2026-03-26T11:06:39+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.493000+00:00"
+    "id": "b1b779501c6e1480",
+    "title": "TeamPCP Supply Chain Campaign: Update 006 - CERT-EU Confirms European Commission Cloud Breach, Sportradar Details Emerge, and Mandiant Quantifies Campaign at 1,000&#x2b; SaaS Environments, (Fri, Apr 3rd)",
+    "summary_raw": "This is the sixth update to the TeamPCP supply chain campaign threat intelligence report,&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;\"When the Security Scanner Became the Weapon\"&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;(v3.0, March 25, 2026).&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;Update 005&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;covered developments through April 1, including the first confirmed victim disclosure (Mercor AI), Wiz&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s post-compromise cloud enumeration findings, DPRK attribution of the axios compromise, and LiteLLM&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s release resumption after Mandiant&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s forensic audit. This update covers intelligence from April 1 through April 3, 2026.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32864",
+    "publishedDate": "2026-04-03T13:18:01+00:00",
+    "scrapedAt": "2026-04-03T23:54:35.730618+00:00"
   },
   {
     "id": "0d491ff0004804cd",
@@ -1059,7 +1086,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32862",
     "publishedDate": "2026-04-03T02:00:02+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.585613+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.730732+00:00"
   },
   {
     "id": "3b31c7e781fd08df",
@@ -1068,7 +1095,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32860",
     "publishedDate": "2026-04-02T14:49:00+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.585722+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.730835+00:00"
   },
   {
     "id": "d31052daead4f84e",
@@ -1077,7 +1104,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32858",
     "publishedDate": "2026-04-02T02:00:02+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.585825+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.730935+00:00"
   },
   {
     "id": "e2062459f78527bf",
@@ -1086,7 +1113,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32854",
     "publishedDate": "2026-04-01T20:09:43+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.585922+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.731031+00:00"
   },
   {
     "id": "a8ea24fec6472789",
@@ -1095,7 +1122,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32856",
     "publishedDate": "2026-04-01T13:08:26+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.586015+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.731125+00:00"
   },
   {
     "id": "d87d9101bf9bbbed",
@@ -1104,7 +1131,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32852",
     "publishedDate": "2026-04-01T02:05:11+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.586143+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.731222+00:00"
   },
   {
     "id": "247dfa31d6bf9238",
@@ -1113,7 +1140,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32850",
     "publishedDate": "2026-03-31T07:31:45+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.586239+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.731344+00:00"
   },
   {
     "id": "97b03b760516b41f",
@@ -1122,7 +1149,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32848",
     "publishedDate": "2026-03-31T02:00:02+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.586335+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.731444+00:00"
   },
   {
     "id": "03bfa65cfa4a1d17",
@@ -1131,15 +1158,6 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/32846",
     "publishedDate": "2026-03-31T00:52:44+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.586426+00:00"
-  },
-  {
-    "id": "dac6a561e13a80d7",
-    "title": "DShield (Cowrie) Honeypot Stats and When Sessions Disconnect, (Mon, Mar 30th)",
-    "summary_raw": "A lot of the information seen on DShield honeypots &#x5b;1&#x5d; is repeated bot traffic, especially when looking at the Cowrie &#x5b;2&#x5d; telnet and SSH sessions. However, how long a session lasts, how many commands are run per session and what the last commands run before a session disconnects can vary. Some of this information could help indicate whether a session is automated and if a honeypot was fingerprinted. This information can also be used to find more interesting honeypot sessions.&#xd;",
-    "source": "SANS Internet Storm Center",
-    "url": "https://isc.sans.edu/diary/rss/32840",
-    "publishedDate": "2026-03-30T18:53:05+00:00",
-    "scrapedAt": "2026-04-03T07:56:18.586516+00:00"
+    "scrapedAt": "2026-04-03T23:54:35.731537+00:00"
   }
 ]
