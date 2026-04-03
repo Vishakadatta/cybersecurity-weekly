@@ -1,235 +1,386 @@
 # Cybersecurity Weekly
 
-A fully automated, zero-cost cybersecurity newsletter and web application. Every week it scrapes reputable security sources, uses AI to curate and rank the most important stories, publishes a beautiful website, and sends a concise newsletter — all without any human intervention.
+A fully automated, zero-cost cybersecurity newsletter and static website that curates, ranks, and delivers the week's most important security news every Monday morning — with zero manual intervention after initial setup.
+
+**Live site:** _coming soon via GitHub Pages_
+
+---
+
+## Table of Contents
+
+- [Why This Exists](#why-this-exists)
+- [How It Works](#how-it-works)
+- [Architecture](#architecture)
+- [The 4-Day Pipeline](#the-4-day-pipeline)
+- [News Sources](#news-sources)
+- [Content Priority Tiers](#content-priority-tiers)
+- [Subscription Flow](#subscription-flow)
+- [Tech Stack](#tech-stack)
+- [Repository Structure](#repository-structure)
+- [Setup & Configuration](#setup--configuration)
+- [Local Development](#local-development)
+- [Contributing](#contributing)
+- [License](#license)
+
+---
+
+## Why This Exists
+
+Keeping up with cybersecurity news is a firehose. Most newsletters are either manually curated (unsustainable for a solo operator) or AI-generated garbage with no editorial judgment. This project takes a different approach:
+
+- **Automated scraping** pulls from 15+ trusted security sources over a 3-day window
+- **AI-powered tournament ranking** (Google Gemini) compares articles head-to-head and tiers the best ones
+- **Focus areas** for 5G / indoor cells, NMS / webapp management, and other enterprise-relevant topics get priority
+- **Static site + email newsletter** means readers get it however they prefer
+- **Completely free to run** using GitHub Actions, GitHub Pages, Gemini free tier, and Brevo free tier
+
+No servers. No databases. No costs. Just a cron job and good taste in sources.
+
+---
 
 ## How It Works
 
 ```
-Friday 4:30 PM PT     Scrape all sources, collect raw articles
-Saturday 12:00 PM PT  Summarize + scrape again for new stories
-Sunday 6:00 PM PT     Final scrape + AI tournament ranking
-Monday 9:00 AM PT     Emergency check, build site, send newsletter
+┌─────────────────────────────────────────────────────────────────────┐
+│                        WEEKLY PIPELINE                              │
+│                                                                     │
+│  Friday 4:30 PM PT          Saturday 12:00 PM PT                    │
+│  ┌──────────────┐           ┌──────────────────┐                    │
+│  │ Initial      │           │ Mid-cycle scrape  │                    │
+│  │ Scrape       │──────────▶│ + AI summarize    │                    │
+│  │ (all sources)│           │ new articles      │                    │
+│  └──────────────┘           └────────┬─────────┘                    │
+│                                      │                              │
+│  Sunday 6:00 PM PT                   ▼          Monday 9:00 AM PT   │
+│  ┌──────────────────┐       ┌──────────────────┐                    │
+│  │ Final scrape +   │       │ Breaking news     │                    │
+│  │ Tournament rank  │──────▶│ check, build      │                    │
+│  │ (AI tiers best)  │       │ site, send email  │                    │
+│  └──────────────────┘       └──────────────────┘                    │
+└─────────────────────────────────────────────────────────────────────┘
 ```
 
-The pipeline runs entirely on GitHub Actions. No server, no laptop, no admin needed.
+---
 
 ## Architecture
 
 ```
-┌──────────────────────────────────────────────────────────┐
-│  PUBLIC REPO: cybersecurity-weekly                        │
-│                                                          │
-│  src/pages/index.astro         Main page                 │
-│  src/pages/archive/[week].astro Archive pages            │
-│  src/components/                Reusable UI pieces        │
-│  src/layouts/                   Page layouts              │
-│  content/2026/w16.json          Curated articles (weekly) │
-│  scripts/*.py                   Automation pipeline       │
-│  templates/email.html           Newsletter template       │
-│  .github/workflows/*.yml        Scheduled Actions         │
-└───────────────────────┬──────────────────────────────────┘
-                        │
-          GitHub Actions connects both repos
-                        │
-┌───────────────────────┴──────────────────────────────────┐
-│  PRIVATE REPO: cybersecurity-weekly-private               │
-│                                                          │
-│  subscribers/emails.json        Subscriber email list     │
-└──────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────┐
+│                         PUBLIC REPO                                     │
+│                   cybersecurity-weekly                                   │
+│                                                                         │
+│  ┌───────────┐  ┌───────────┐  ┌────────────┐  ┌───────────────────┐   │
+│  │  Astro    │  │  Python   │  │  Content   │  │  GitHub Actions   │   │
+│  │  Site     │  │  Scripts  │  │  (JSON)    │  │  Workflows        │   │
+│  │           │  │           │  │            │  │                   │   │
+│  │ src/      │  │ scripts/  │  │ content/   │  │ .github/          │   │
+│  │ layouts/  │  │ scrape.py │  │ weekly/    │  │  workflows/       │   │
+│  │ pages/    │  │ curate.py │  │  2026-W14/ │  │   scrape.yml      │   │
+│  │ comps/    │  │ finalize. │  │   raw.json │  │   curate.yml      │   │
+│  │           │  │   py      │  │   curated. │  │   finalize.yml    │   │
+│  │           │  │ send_     │  │    json    │  │   publish.yml     │   │
+│  │           │  │  news     │  │   final.   │  │   subscribe.yml   │   │
+│  │           │  │  letter.py│  │    json    │  │                   │   │
+│  └───────────┘  └─────┬─────┘  └─────┬──────┘  └────────┬──────────┘   │
+│                       │              │                   │              │
+│                       ▼              ▼                   │              │
+│              ┌─────────────────────────────┐             │              │
+│              │  GitHub Pages (static site) │             │              │
+│              └─────────────────────────────┘             │              │
+└─────────────────────────────────────────────────────────┬───────────────┘
+                                                          │
+                    ┌─────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        PRIVATE REPO                                     │
+│                cybersecurity-weekly-private                              │
+│                                                                         │
+│  Only stores subscriber email addresses.                                │
+│  Accessed via GitHub PAT from the public repo's Actions.                │
+│                                                                         │
+│  subscribers/                                                           │
+│    emails.json          ← encrypted list of subscriber emails           │
+│                                                                         │
+│  This repo has NO code, NO workflows, NO secrets beyond what the        │
+│  public repo needs to read from it.                                     │
+└─────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                       EXTERNAL SERVICES                                 │
+│                                                                         │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────────────┐   │
+│  │ Google       │  │ Brevo        │  │ RSS Feeds / Security Blogs   │   │
+│  │ Gemini API   │  │ (email)      │  │ (public internet)            │   │
+│  │ (free tier)  │  │ (free tier)  │  │                              │   │
+│  └──────────────┘  └──────────────┘  └──────────────────────────────┘   │
+│                                                                         │
+│  All API keys stored as GitHub Secrets — never in code.                 │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
-## Tech Stack
+### Why Two Repos?
 
-| Layer | Technology | Cost |
-|-------|-----------|------|
-| Static Site Generator | [Astro](https://astro.build) + Tailwind CSS | $0 |
-| Scraping & Curation | Python (feedparser, httpx, BeautifulSoup) | $0 |
-| AI Summarization | Google Gemini API (free tier — 1M tokens/day) | $0 |
-| Email Delivery | Brevo (free tier — 300 emails/day) | $0 |
-| Website Hosting | GitHub Pages | $0 |
-| Automation & Compute | GitHub Actions (scheduled cron workflows) | $0 |
-| Storage | Git repo (JSON files for content + archives) | $0 |
-| Subscriber Management | GitHub Issues → private repo | $0 |
-| **Total** | | **$0/month** |
+| Concern | Where It Lives | Why |
+|---|---|---|
+| All source code, scripts, site | **Public repo** | Open source, transparent, forkable |
+| Architecture, pipeline docs | **Public repo** | Not sensitive — the code *is* the architecture |
+| Subscriber email addresses | **Private repo** | PII must never be in a public repo |
+| API keys (Gemini, Brevo, PAT) | **GitHub Secrets** | Never committed to *any* repo |
+
+The private repo is intentionally minimal — it's a dumb data store for emails, nothing else. If you fork this project, you just create your own private repo and point a PAT at it.
+
+---
+
+## The 4-Day Pipeline
+
+Each week, four GitHub Actions workflows run on a fixed schedule:
+
+| # | When (Pacific) | When (UTC) | Workflow | What Happens |
+|---|---|---|---|---|
+| 1 | **Friday 4:30 PM** | Fri 23:30 | `scrape.yml` | Scrape all RSS feeds and source sites. Store raw articles in `content/weekly/YYYY-WNN/raw.json`. |
+| 2 | **Saturday 12:00 PM** | Sat 19:00 | `curate.yml` | Re-scrape for new articles. Send all articles to Gemini for summarization and relevance scoring. Output `curated.json`. |
+| 3 | **Sunday 6:00 PM** | Mon 01:00 | `finalize.yml` | Final scrape. Gemini runs **tournament ranking**: articles are compared head-to-head, then assigned to priority tiers. Output `final.json`. |
+| 4 | **Monday 9:00 AM** | Mon 16:00 | `publish.yml` | Emergency check for breaking news (last 12 hours). Build the Astro static site. Deploy to GitHub Pages. Send newsletter via Brevo. |
+
+All content at every stage is committed to the repo as JSON, so you can audit exactly what the AI saw, ranked, and published.
+
+### Tournament Ranking
+
+The Sunday finalization step uses a tournament-style comparison rather than asking the AI to score articles in isolation. Gemini compares pairs of articles and picks the stronger one based on:
+
+- Severity and real-world impact
+- Relevance to focus areas (5G, indoor cells, NMS/webapp management)
+- Novelty (is this actually new, or a rehash?)
+- Source credibility
+
+Winners advance. The final ranked list is split into tiers for the newsletter.
+
+---
 
 ## News Sources
 
-### Primary (RSS/Atom feeds preferred)
-- **Security Now (GRC)** — Steve Gibson's weekly podcast and show notes
-- **Krebs on Security** — Brian Krebs' investigative security journalism
-- **The Hacker News** — thehackernews.com daily security news
-- **BleepingComputer** — Breaking malware, vulnerability, and tech news
-- **Dark Reading** — Enterprise security news and analysis
-- **CISA Advisories** — US government cybersecurity alerts and advisories
-- **Ars Technica Security** — In-depth security reporting
+Feeds and sites scraped weekly:
 
-### Vendor & Research Blogs
-- **CrowdStrike Blog** — Threat intelligence and incident reports
-- **Google Threat Intelligence (Mandiant)** — APT research and analysis
-- **Palo Alto Unit 42** — Threat research and malware analysis
-- **Sophos News** — Threat research and security trends
-- **Recorded Future** — Threat intelligence insights
+| Source | Type | URL |
+|---|---|---|
+| **Security Now (GRC)** | Podcast show notes | grc.com |
+| **Krebs on Security** | Blog / RSS | krebsonsecurity.com |
+| **The Hacker News** | News / RSS | thehackernews.com |
+| **BleepingComputer** | News / RSS | bleepingcomputer.com |
+| **Dark Reading** | News / RSS | darkreading.com |
+| **CISA Advisories** | Government / RSS | cisa.gov |
+| **Ars Technica Security** | News / RSS | arstechnica.com/security |
+| **CrowdStrike Blog** | Vendor | crowdstrike.com/blog |
+| **Mandiant (Google Cloud)** | Vendor | cloud.google.com/blog/topics/threat-intelligence |
+| **Unit 42 (Palo Alto)** | Vendor | unit42.paloaltonetworks.com |
+| **Schneier on Security** | Blog / RSS | schneier.com |
+| **The Record (Recorded Future)** | News / RSS | therecord.media |
+| **Risky Business** | Podcast / RSS | risky.biz |
+| **SANS Internet Storm Center** | Diary / RSS | isc.sans.edu |
+| **Qualys Threat Research** | Vendor | blog.qualys.com |
+
+Adding a source is as simple as adding an entry to `scripts/sources.json`.
+
+---
 
 ## Content Priority Tiers
 
-Stories are ranked by AI using a tournament system where all articles from the week compete against each other.
+Every article that makes it past curation is assigned a tier:
 
-| Tier | Description | Examples |
-|------|-------------|---------|
-| **Tier 1** | Major breaking stories with widespread impact | Log4j-class vulnerabilities, nation-state attacks, critical zero-days |
-| **Tier 2** | Focus area stories (project niche) | 5G security, indoor small cells, NMS/webapp management vulnerabilities |
-| **Tier 3** | Other noteworthy security news | New malware families, data breaches, policy changes, tool releases |
+| Tier | What Goes Here | Examples |
+|---|---|---|
+| **Tier 1 — Breaking** | Major incidents, zero-days, mass exploits | SolarWinds-level supply chain attack, critical CVE actively exploited |
+| **Tier 2 — Focus Areas** | Stories relevant to 5G, indoor cells, NMS, webapp management platforms | New vulnerability in small cell firmware, RAN controller exploit, NMS auth bypass |
+| **Tier 3 — Noteworthy** | Important but not breaking or focus-specific | New ransomware variant, nation-state campaign, significant policy changes |
 
-## 4-Day Pipeline Detail
+The newsletter template gives Tier 1 stories full summaries with analysis, Tier 2 stories get focused summaries, and Tier 3 stories get brief one-liners with links.
 
-### Friday 4:30 PM PT — Initial Harvest
-- Scrape all RSS feeds and source websites
-- Store raw articles with metadata (title, source, URL, publish date, raw content)
-- Light Gemini pass: categorize articles, detect duplicates across sources
-- Output: `content/raw/{year}-w{week}-friday.json`
-
-### Saturday 12:00 PM PT — Summarize + Fresh Scrape
-- Generate AI summaries of Friday's articles (2-3 sentences each)
-- Scrape all sources again for newly published articles
-- Merge new finds into the article pool, deduplicate
-- Output: `content/raw/{year}-w{week}-saturday.json`
-
-### Sunday 6:00 PM PT — Final Scrape + Tournament Ranking
-- One last scrape for weekend-breaking news
-- **Tournament ranking**: Feed ALL collected articles to Gemini
-  - Compare articles against each other for importance and impact
-  - Select the top stories, assign priority tiers
-  - Generate polished summaries for each selected article
-  - Generate a catchy newsletter subject line
-  - Generate the HTML email body from template
-- Output: `content/{year}/w{week}.json` (finalized)
-
-### Monday 9:00 AM PT — Emergency Check + Ship
-- Quick scrape: check if anything massive broke overnight/early morning
-- If a major story is found, inject as the top story and re-rank
-- Build the Astro site with the finalized content
-- Deploy to GitHub Pages
-- Send newsletter to all subscribers via Brevo
-- Output: Live website + emails delivered
-
-## GitHub Actions Cron Schedule (UTC)
-
-| Workflow | Pacific Time | UTC Cron Expression |
-|----------|-------------|-------------------|
-| `friday-scrape.yml` | Fri 4:30 PM PT | `30 23 * * 5` |
-| `saturday-curate.yml` | Sat 12:00 PM PT | `0 19 * * 6` |
-| `sunday-finalize.yml` | Sun 6:00 PM PT | `0 1 * * 1` |
-| `monday-send.yml` | Mon 9:00 AM PT | `0 16 * * 1` |
-| `subscriber-handler.yml` | On issue open | `on: issues` |
+---
 
 ## Subscription Flow
 
-1. User clicks "Subscribe" on the website
-2. Link opens a GitHub Issue using a pre-filled template (email field)
-3. GitHub Action triggers on issue creation:
-   - Reads the email from the issue body
-   - Pushes it to `cybersecurity-weekly-private` repo's `subscribers/emails.json`
-   - Edits the issue body to redact the email for privacy
-   - Closes the issue with a confirmation comment
-4. Unsubscribe follows the same pattern with a different issue template
+```
+┌──────────────┐     ┌──────────────────────┐     ┌───────────────────┐
+│ User opens a │     │ subscribe.yml        │     │ Private repo:     │
+│ GitHub Issue │────▶│ workflow triggers     │────▶│ appends email to  │
+│ with email   │     │                      │     │ emails.json       │
+│ in body      │     │ 1. Extract email     │     └───────────────────┘
+└──────────────┘     │ 2. Push to private   │
+                     │    repo via PAT      │
+                     │ 3. Redact issue body │
+                     │ 4. Close issue with  │
+                     │    confirmation      │
+                     └──────────────────────┘
+```
 
-## Project Structure
+The user's email is **never visible** in the public repo — the workflow redacts the issue body immediately and replaces it with a "You're subscribed!" message. The actual email is written only to the private repo.
+
+---
+
+## Tech Stack
+
+| Layer | Technology | Why |
+|---|---|---|
+| **Static site** | [Astro](https://astro.build) + [Tailwind CSS](https://tailwindcss.com) | Fast, zero-JS by default, great for content sites |
+| **Scraping & curation** | Python 3.12+ | `feedparser` for RSS, `httpx` for HTTP, `beautifulsoup4` for HTML parsing |
+| **AI summarization & ranking** | [Google Gemini API](https://ai.google.dev) (free tier) | 15 RPM / 1M tokens/day free — more than enough for weekly curation |
+| **Email delivery** | [Brevo](https://brevo.com) (free tier) | 300 emails/day free, REST API, no credit card required |
+| **Hosting** | [GitHub Pages](https://pages.github.com) | Free, auto-deploys from Actions, custom domain support |
+| **Automation** | [GitHub Actions](https://github.com/features/actions) | 2,000 free minutes/month, cron scheduling, secrets management |
+| **Subscriber storage** | Private GitHub repo | Free, version-controlled, no database needed |
+
+**Total running cost: $0/month** (within free tier limits for a newsletter under 300 subscribers).
+
+---
+
+## Repository Structure
 
 ```
 cybersecurity-weekly/
 ├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── subscribe.yml          Subscribe form template
-│   │   └── unsubscribe.yml        Unsubscribe form template
 │   └── workflows/
-│       ├── friday-scrape.yml      Weekly scrape trigger
-│       ├── saturday-curate.yml    AI summarization pass
-│       ├── sunday-finalize.yml    Tournament ranking + finalize
-│       ├── monday-send.yml        Build site + send newsletter
-│       └── subscriber-handler.yml Process subscribe/unsubscribe issues
-├── src/
-│   ├── components/
-│   │   ├── ArticleCard.astro      Single article display card
-│   │   ├── Header.astro           Site header with branding
-│   │   ├── Footer.astro           Site footer
-│   │   ├── Newsletter.astro       Subscribe CTA section
-│   │   └── ArchiveSidebar.astro   Weekly archive navigation
+│       ├── scrape.yml              # Friday: initial scrape
+│       ├── curate.yml              # Saturday: re-scrape + AI summarize
+│       ├── finalize.yml            # Sunday: final scrape + tournament rank
+│       ├── publish.yml             # Monday: build site + send newsletter
+│       └── subscribe.yml           # On issue: handle new subscriber
+├── src/                            # Astro site source
 │   ├── layouts/
-│   │   └── BaseLayout.astro       Shared page layout (head, nav, footer)
-│   └── pages/
-│       ├── index.astro            Homepage — current week's curated news
-│       └── archive/
-│           └── [week].astro       Dynamic archive pages per week
-├── content/
-│   ├── raw/                       Raw scraped data (intermediate, per-day)
-│   ├── 2026/
-│   │   └── w{nn}.json             Finalized weekly content files
-│   └── latest.json                Pointer to the current week's file
-├── scripts/
-│   ├── requirements.txt           Python dependencies
-│   ├── scrape.py                  Source scraping (RSS + HTML fallback)
-│   ├── curate.py                  AI summarization and deduplication
-│   ├── finalize.py                Tournament ranking, email generation
-│   ├── send_newsletter.py         Brevo email dispatch
-│   ├── subscriber_handler.py      Process subscribe/unsubscribe issues
-│   └── sources.json               List of all news sources and their feed URLs
-├── templates/
-│   └── email.html                 HTML email template (inline CSS)
+│   │   └── BaseLayout.astro        # HTML shell, meta tags, Tailwind
+│   ├── pages/
+│   │   ├── index.astro             # Latest issue (homepage)
+│   │   └── archive/
+│   │       └── [...slug].astro     # Past issues by week
+│   └── components/
+│       ├── Header.astro
+│       ├── Footer.astro
+│       ├── ArticleCard.astro       # Single article display
+│       ├── TierSection.astro       # Group of articles by tier
+│       └── SubscribeForm.astro     # Links to GitHub Issue for subscribe
 ├── public/
-│   └── favicon.svg                Site favicon
-├── astro.config.mjs               Astro configuration
-├── tailwind.config.mjs            Tailwind CSS configuration
-├── package.json                   Node.js dependencies (Astro, Tailwind)
-└── README.md                      This file
+│   ├── favicon.svg
+│   └── og-image.png
+├── content/
+│   └── weekly/                     # Auto-generated by pipeline
+│       └── 2026-W14/              # ISO week number
+│           ├── raw.json            # Stage 1: raw scraped articles
+│           ├── curated.json        # Stage 2: summarized + scored
+│           └── final.json          # Stage 3: tournament-ranked + tiered
+├── scripts/
+│   ├── sources.json                # Feed URLs and source metadata
+│   ├── scrape.py                   # RSS/HTTP scraping logic
+│   ├── curate.py                   # Gemini summarization + scoring
+│   ├── finalize.py                 # Tournament ranking + tier assignment
+│   └── send_newsletter.py          # Brevo API email delivery
+├── templates/
+│   └── newsletter.html             # Jinja2 email template
+├── astro.config.mjs
+├── tailwind.config.mjs
+├── package.json
+├── requirements.txt                # Python dependencies
+├── .gitignore
+└── README.md                       # You are here
 ```
 
-## Setup Instructions
+---
+
+## Setup & Configuration
 
 ### Prerequisites
-- Node.js 18+ (for Astro)
-- Python 3.11+ (for scraping/curation scripts)
-- A GitHub account with two repositories:
-  - `cybersecurity-weekly` (public) — this repo
-  - `cybersecurity-weekly-private` (private) — subscriber data
 
-### API Keys & Secrets
+- Node.js 20+
+- Python 3.12+
+- A [Google AI Studio](https://aistudio.google.com) account (for Gemini API key)
+- A [Brevo](https://brevo.com) account (for email sending)
+- A second **private** GitHub repository (for subscriber storage)
 
-Add these as GitHub Actions secrets in the **public** repo:
+### GitHub Secrets Required
 
-| Secret Name | Description | Where to Get It |
-|-------------|-------------|----------------|
-| `GEMINI_API_KEY` | Google Gemini API key | [Google AI Studio](https://aistudio.google.com/apikey) |
-| `BREVO_API_KEY` | Brevo transactional email API key | [Brevo Dashboard](https://app.brevo.com/) |
-| `PRIVATE_REPO_TOKEN` | GitHub PAT with repo scope for private repo access | [GitHub Settings > Tokens](https://github.com/settings/tokens) |
+Set these in the public repo under **Settings → Secrets and variables → Actions**:
 
-### Local Development
+| Secret | Description |
+|---|---|
+| `GEMINI_API_KEY` | Google Gemini API key from AI Studio |
+| `BREVO_API_KEY` | Brevo REST API key |
+| `PRIVATE_REPO_PAT` | GitHub Personal Access Token with `repo` scope, granting access to the private subscriber repo |
+| `PRIVATE_REPO` | Full name of private repo, e.g. `youruser/cybersecurity-weekly-private` |
+| `FROM_EMAIL` | Verified sender email in Brevo |
+| `FROM_NAME` | Sender display name (e.g. "Cybersecurity Weekly") |
 
-```bash
-# Install Astro dependencies
-npm install
+### Private Repo Setup
 
-# Install Python dependencies
-pip install -r scripts/requirements.txt
+1. Create a new **private** repository named `cybersecurity-weekly-private`
+2. Add a single file:
 
-# Run the Astro dev server
-npm run dev
-
-# Run a scrape manually (for testing)
-python scripts/scrape.py
+```json
+// subscribers/emails.json
+{
+  "subscribers": []
+}
 ```
 
-## Gemini API Token Budget
+3. Generate a **Fine-grained Personal Access Token** with:
+   - Repository access: only the private repo
+   - Permissions: Contents (Read and write)
+4. Add the PAT as `PRIVATE_REPO_PAT` in the public repo's secrets
 
-The free tier provides 1M tokens/day. Our weekly usage:
+---
 
-| Day | Estimated Tokens | Task |
-|-----|-----------------|------|
-| Friday | ~200K | Categorization and deduplication |
-| Saturday | ~400K | Deep summarization of all articles |
-| Sunday | ~300K | Tournament ranking + email generation |
-| Monday | ~100K | Final QA check |
-| **Total** | **~1M of 4M available** | **75% headroom** |
+## Local Development
+
+### Site (Astro)
+
+```bash
+npm install
+npm run dev          # http://localhost:4321
+npm run build        # Production build to dist/
+```
+
+### Scripts (Python)
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+
+# Run individual pipeline stages
+python scripts/scrape.py
+python scripts/curate.py
+python scripts/finalize.py
+python scripts/send_newsletter.py --dry-run
+```
+
+Set environment variables locally for testing:
+
+```bash
+export GEMINI_API_KEY="your-key-here"
+export BREVO_API_KEY="your-key-here"
+```
+
+---
+
+## Contributing
+
+This project is designed to be forkable. If you want to run your own cybersecurity newsletter:
+
+1. Fork this repo
+2. Create your own private subscriber repo
+3. Set up the required GitHub Secrets
+4. Customize `scripts/sources.json` with your preferred feeds
+5. Edit the Astro templates to match your branding
+6. The pipeline runs itself every week
+
+### Ways to contribute to *this* instance:
+
+- **Add news sources**: Submit a PR adding entries to `scripts/sources.json`
+- **Improve ranking prompts**: The Gemini prompts in `scripts/curate.py` and `scripts/finalize.py` can always be tuned
+- **Site design**: UI/UX improvements to the Astro site
+- **Bug fixes**: If a feed parser breaks or an edge case appears in the pipeline
+- **Documentation**: Clarifications, typo fixes, better diagrams
+
+---
 
 ## License
 
-MIT
+MIT — fork it, run it, make it yours.
