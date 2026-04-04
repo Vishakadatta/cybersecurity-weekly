@@ -118,6 +118,26 @@
     ]
   },
   {
+    "id": "b1b779501c6e1480",
+    "title": "TeamPCP Supply Chain Campaign Update: European Commission Cloud Breach Confirmed",
+    "summary_raw": "This is the sixth update to the TeamPCP supply chain campaign threat intelligence report,&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;\"When the Security Scanner Became the Weapon\"&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;(v3.0, March 25, 2026).&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;Update 005&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;covered developments through April 1, including the first confirmed victim disclosure (Mercor AI), Wiz&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s post-compromise cloud enumeration findings, DPRK attribution of the axios compromise, and LiteLLM&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s release resumption after Mandiant&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s forensic audit. This update covers intelligence from April 1 through April 3, 2026.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32864",
+    "publishedDate": "2026-04-03T13:18:01+00:00",
+    "scrapedAt": "2026-04-03T23:54:35.730618+00:00",
+    "summary": "The latest update on the TeamPCP supply chain campaign confirms a breach affecting the European Commission's cloud environment and provides further details on the Sportradar compromise. Mandiant estimates the campaign has impacted over 1,000 SaaS environments, highlighting the widespread threat to cloud infrastructure.",
+    "relevance_score": 10,
+    "tags": [
+      "supply chain attack",
+      "cloud security",
+      "data breach",
+      "SaaS",
+      "APT",
+      "TeamPCP",
+      "European Commission"
+    ]
+  },
+  {
     "id": "58e88d4f91c2af82",
     "title": "Cisco Patches Critical 9.8 CVSS Flaw in IMC Allowing Remote System Compromise",
     "summary_raw": "Cisco&nbsp;has released updates to address a critical security flaw in the Integrated Management Controller (IMC) that, if successfully exploited, could allow an unauthenticated, remote attacker to bypass authentication and gain access to the system with elevated privileges.\nThe&nbsp;vulnerability, tracked as CVE-2026-20093, carries a CVSS score of 9.8&nbsp;out of a maximum of&nbsp;10.0.\n\"This",
@@ -590,6 +610,81 @@
       "CPU",
       "memory-corruption",
       "exploit"
+    ]
+  },
+  {
+    "id": "3ea9b0c959774c01",
+    "title": "North Korean Actors UNC1069 Behind Axios npm Supply Chain Attack",
+    "summary_raw": "The&nbsp;maintainer of the Axios npm package has confirmed that the supply chain compromise was the result of a highly-targeted social engineering campaign orchestrated by North Korean threat actors tracked&nbsp;as UNC1069.\nMaintainer Jason Saayman said the attackers tailored their social engineering efforts \"specifically to me\" by first approaching him under the guise of the founder of a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html",
+    "publishedDate": "2026-04-03T16:34:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.520837+00:00",
+    "summary": "The maintainer of the popular Axios npm package has confirmed that a supply chain compromise was orchestrated by North Korean threat actors, tracked as UNC1069. The attackers employed highly targeted social engineering tactics, impersonating a founder of a company to gain the maintainer's trust. This incident highlights the growing threat of supply chain attacks and the sophisticated social engineering methods used by nation-state actors.",
+    "relevance_score": 9,
+    "tags": [
+      "supply-chain-attack",
+      "npm",
+      "social-engineering",
+      "APT",
+      "North Korea"
+    ]
+  },
+  {
+    "id": "6ca7b5bfa84bd5da",
+    "title": "Drift Loses $285 Million in Durable Nonce Attack Linked to DPRK",
+    "summary_raw": "Solana-based decentralized exchange Drift has confirmed that attackers drained about $285 million from the platform during a security incident that took place on April 1,&nbsp;2026.\n\"Earlier today, a malicious actor gained unauthorized access to Drift Protocol through a novel attack involving durable nonces, resulting in a rapid takeover of Drift\u2019s Security Council administrative powers,\" the&",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/drift-loses-285-million-in-durable.html",
+    "publishedDate": "2026-04-03T14:05:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.521147+00:00",
+    "summary": "The Solana-based decentralized exchange Drift has suffered a massive $285 million loss due to a novel attack involving 'durable nonces' and social engineering, which granted attackers administrative control. This incident, linked to North Korean (DPRK) actors, highlights a sophisticated exploitation of DeFi protocols. The significant financial impact underscores the vulnerabilities within decentralized finance and the potential for nation-state actors to exploit them.",
+    "relevance_score": 9,
+    "tags": [
+      "defi",
+      "cryptocurrency",
+      "hack",
+      "social-engineering",
+      "APT",
+      "North Korea",
+      "DPRK"
+    ]
+  },
+  {
+    "id": "50a808fdac3e4926",
+    "title": "OpenClaw AI Agent Tool Allows Silent Admin Access, Posing Security Risks",
+    "summary_raw": "The viral AI agentic tool let attackers silently gain admin unauthenticated access.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/",
+    "publishedDate": "2026-04-03T20:30:15+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.201713+00:00",
+    "summary": "The viral AI agent tool OpenClaw has been found to allow attackers to gain silent, unauthenticated administrative access to systems. Users are advised to assume compromise due to the significant security risks this vulnerability presents.",
+    "relevance_score": 9,
+    "tags": [
+      "ai-security",
+      "vulnerability",
+      "unauthenticated-access",
+      "openclaw",
+      "threat-actor",
+      "critical-vulnerability"
+    ]
+  },
+  {
+    "id": "858077a01fe5a65a",
+    "title": "Recorded Future Tracks Cyber and Geopolitical Components of Iran Conflict",
+    "summary_raw": "Insikt Group tracks the cyber, physical, and geopolitical components of the US-Israeli strikes on Iran \u2014 with continuously updated threat analysis and scenarios.",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/the-iran-war-what-you-need-to-know",
+    "publishedDate": "2026-04-03T00:00:00+00:00",
+    "scrapedAt": "2026-04-03T23:54:35.432029+00:00",
+    "summary": "Insikt Group is providing continuous threat analysis on the cyber, physical, and geopolitical aspects of the US-Israeli strikes on Iran. This ongoing tracking is crucial for understanding the evolving threat landscape and potential ramifications in the region.",
+    "relevance_score": 9,
+    "tags": [
+      "geopolitics",
+      "cyber warfare",
+      "nation-state",
+      "threat intelligence",
+      "Iran"
     ]
   },
   {
@@ -1219,6 +1314,79 @@
     ]
   },
   {
+    "id": "4e718ba655225952",
+    "title": "China-Linked TA416 Targets European Governments with PlugX and OAuth-Based Phishing",
+    "summary_raw": "A China-aligned threat actor has set its sights on European government and diplomatic organizations since mid-2025,&nbsp;following a two-year&nbsp;period of minimal targeting in the&nbsp;region.\nThe campaign has been attributed&nbsp;to TA416, a cluster of activity that overlaps with DarkPeony, RedDelta, Red Lich, SmugX, UNC6384, and Vertigo&nbsp;Panda.\n\"This TA416 activity included multiple",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/china-linked-ta416-targets-european.html",
+    "publishedDate": "2026-04-03T23:04:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.520598+00:00",
+    "summary": "A China-aligned threat actor, TA416, has resumed targeting European government and diplomatic organizations with PlugX malware and OAuth-based phishing campaigns. This resurgence follows a two-year lull in activity in the region, indicating a renewed focus on these high-value targets. The campaign's attribution to TA416, which overlaps with several other known APT groups, suggests a sophisticated and coordinated effort.",
+    "relevance_score": 8,
+    "tags": [
+      "APT",
+      "phishing",
+      "malware",
+      "government",
+      "espionage"
+    ]
+  },
+  {
+    "id": "3bc47dc99c6b8bdc",
+    "title": "Apple Patches Critical DarkSword Vulnerability in iOS 18",
+    "summary_raw": "Even organizations with users unwilling or unable to adopt iOS 26 can now protect themselves from a severe mobile OS-cracking tool.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/apple-patches-darksword-ios-18",
+    "publishedDate": "2026-04-03T17:08:57+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046170+00:00",
+    "summary": "Apple has released a patch for iOS 18 to address the severe DarkSword vulnerability, a tool capable of cracking the mobile operating system. This proactive patching is crucial for protecting users, even those who haven't updated to the latest OS version, from sophisticated mobile threats.",
+    "relevance_score": 8,
+    "tags": [
+      "apple",
+      "ios",
+      "vulnerability",
+      "zero-day",
+      "mobile-security",
+      "patching"
+    ]
+  },
+  {
+    "id": "ca18455e4c31a077",
+    "title": "Claude Source Code Leak Highlights Major Supply Chain Security Gaps",
+    "summary_raw": "Or, why the software supply chain should be treated as critical infrastructure with guardrails built in at every layer.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/source-code-leaks-highlight-lack-supply-chain-oversight",
+    "publishedDate": "2026-04-03T13:00:00+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046499+00:00",
+    "summary": "The leak of Claude's source code underscores significant missteps in software supply chain security, emphasizing the need to treat it as critical infrastructure. Robust guardrails are essential at every layer to prevent such breaches and protect sensitive code.",
+    "relevance_score": 8,
+    "tags": [
+      "supply-chain-security",
+      "source-code-leak",
+      "critical-infrastructure",
+      "application-security",
+      "ai-security"
+    ]
+  },
+  {
+    "id": "376194ec9c388beb",
+    "title": "Company Secretly Records and Publishes Zoom Meetings Without Consent",
+    "summary_raw": "<p>WebinarTV searches the internet for public Zoom invites, joins the meetings, secretly records them, and <a href=\"https://www.404media.co/this-company-is-secretly-turning-your-zoom-calls-into-ai-podcasts/\">publishes</a> (alternate <a href=\"https://archive.ph/TYd4L\">link</a>) the recordings. It doesn&#8217;t use the Zoom record feature, so Zoom can&#8217;t do anything about it.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/company-that-secretly-records-and-publishes-zoom-meetings.html",
+    "publishedDate": "2026-04-03T11:08:17+00:00",
+    "scrapedAt": "2026-04-03T23:54:35.555387+00:00",
+    "summary": "A company named WebinarTV is reportedly scanning the internet for public Zoom invites, joining meetings, and secretly recording them for publication. This practice raises significant privacy concerns, as it bypasses Zoom's native recording features and operates without participant consent.",
+    "relevance_score": 8,
+    "tags": [
+      "privacy",
+      "data collection",
+      "Zoom",
+      "surveillance",
+      "ethical concerns"
+    ]
+  },
+  {
     "id": "e372d77f674f7443",
     "title": "ThreatsDay Bulletin: Pre-Auth Chains, Android Rootkits, CloudTrail Evasion & More",
     "summary_raw": "The&nbsp;latest ThreatsDay Bulletin is basically a cheat sheet for everything breaking on the internet right now. No&nbsp;corporate fluff or boring lectures here, just a quick and honest look at the messy reality of keeping systems safe this&nbsp;week.\nThings&nbsp;are moving fast. The&nbsp;list includes researchers chaining small bugs together to create massive backdoors, old software flaws",
@@ -1817,6 +1985,134 @@
     ]
   },
   {
+    "id": "c32575bb95606b8c",
+    "title": "Microsoft Details Cookie-Controlled PHP Web Shells on Linux Servers",
+    "summary_raw": "Threat&nbsp;actors are increasingly using HTTP cookies as a control channel for PHP-based web shells on Linux servers and to achieve remote code execution, according to findings from the Microsoft Defender Security Research&nbsp;Team.\n\"Instead of exposing command execution through URL parameters or request bodies, these web shells rely on threat actor-supplied cookie values to gate execution,",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/microsoft-details-cookie-controlled-php.html",
+    "publishedDate": "2026-04-03T21:02:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.520726+00:00",
+    "summary": "Microsoft's Defender Security Research Team has identified a new trend where threat actors are using HTTP cookies as a control channel for PHP web shells on Linux servers to achieve remote code execution. This technique bypasses traditional detection methods that focus on URL parameters or request bodies. The use of cookies for command execution represents a stealthier approach to maintaining persistence and control on compromised systems.",
+    "relevance_score": 7,
+    "tags": [
+      "web-shell",
+      "linux",
+      "remote-code-execution",
+      "malware",
+      "persistence"
+    ]
+  },
+  {
+    "id": "f4f12620f7979f46",
+    "title": "New SparkCat Malware Variant Steals Crypto Wallet Phrases from iOS and Android Apps",
+    "summary_raw": "Cybersecurity researchers&nbsp;have discovered a new version of&nbsp;the SparkCat malware on the Apple App Store and Google Play Store, more than a year after the&nbsp;trojan was discovered targeting both the mobile operating&nbsp;systems.\nThe&nbsp;malware&nbsp;has&nbsp;been found to conceal itself within seemingly benign apps, such as enterprise messengers and food delivery services, while",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/new-sparkcat-variant-in-ios-android.html",
+    "publishedDate": "2026-04-03T14:40:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.521044+00:00",
+    "summary": "Researchers have discovered a new variant of the SparkCat malware present in apps on both the Apple App Store and Google Play Store. This malware disguises itself within legitimate applications and specifically targets cryptocurrency users by stealing images of their wallet recovery phrases. The presence of such malware on official app stores poses a significant risk to mobile users, especially those managing digital assets.",
+    "relevance_score": 7,
+    "tags": [
+      "malware",
+      "mobile-security",
+      "cryptocurrency",
+      "ios",
+      "android",
+      "trojan"
+    ]
+  },
+  {
+    "id": "6639769897d38659",
+    "title": "Die Linke Political Party Hit by Qilin Ransomware",
+    "summary_raw": "The Qilin ransomware group has claimed responsibility for an attack against Die Linke ('The Left'), forcing an IT systems outage at the political party, and threatening sensitive data leak. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/die-linke-german-political-party-confirms-data-stolen-by-qilin-ransomware/",
+    "publishedDate": "2026-04-03T12:36:44-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624791+00:00",
+    "summary": "The German political party Die Linke ('The Left') has confirmed it was targeted by the Qilin ransomware group, leading to an IT systems outage and threats of sensitive data leaks. This attack highlights the ongoing threat of ransomware against critical infrastructure and political organizations. The incident serves as a reminder of the devastating impact ransomware can have on operations and data security.",
+    "relevance_score": 7,
+    "tags": [
+      "ransomware",
+      "political-party",
+      "data-leak",
+      "cyber-attack",
+      "germany"
+    ]
+  },
+  {
+    "id": "755ddfa86f443768",
+    "title": "Former Engineer Pleads Guilty to Extortion Plot Locking Thousands of Windows Devices",
+    "summary_raw": "A former core infrastructure engineer has pleaded guilty to locking Windows admins out of 254 servers as part of a failed extortion plot targeting his employer, an industrial company headquartered in Somerset County, New Jersey. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/man-admits-to-extortion-plot-locking-coworkers-out-of-thousands-of-windows-devices/",
+    "publishedDate": "2026-04-03T05:04:54-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.625099+00:00",
+    "summary": "A former infrastructure engineer has admitted to locking 254 Windows servers as part of an extortion scheme against his employer. This incident underscores the significant risks posed by insider threats and the potential for widespread disruption within corporate networks.",
+    "relevance_score": 7,
+    "tags": [
+      "insider-threat",
+      "extortion",
+      "ransomware",
+      "windows-servers",
+      "criminal-activity"
+    ]
+  },
+  {
+    "id": "0e87efe1913ee88a",
+    "title": "TeamPCP Attack Blast Radius Widens Amid Hacker Infighting",
+    "summary_raw": "As organizations disclose breaches tied to TeamPCP's supply chain attacks, ShinyHunters and Lapsus$ are getting involved, taking credit, and creating a murky situation for enterprises.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/teampcp-attacks-hacker-infighting",
+    "publishedDate": "2026-04-03T15:11:16+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046295+00:00",
+    "summary": "The impact of TeamPCP's supply chain attacks is expanding as infighting among hacking groups like ShinyHunters and Lapsus$ leads to further disclosures and confusion. This situation creates a complex and murky threat landscape for enterprises targeted by these evolving attacks.",
+    "relevance_score": 7,
+    "tags": [
+      "supply-chain-attack",
+      "teampcp",
+      "apt",
+      "nation-state",
+      "threat-intelligence",
+      "cybercrime"
+    ]
+  },
+  {
+    "id": "d134803d843c5b9e",
+    "title": "Chainguard Factory 2.0 Automates Software Supply Chain Hardening",
+    "summary_raw": "The rebuilt Chainguard platform adds deeper security designed to continuously reconcile open source artifacts across containers, libraries, agent skills, and GitHub Actions.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/chainguard-factory-automate-hardening-software-supply-chain",
+    "publishedDate": "2026-04-03T12:57:28+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046593+00:00",
+    "summary": "Chainguard has launched Factory 2.0, a platform designed to automate the hardening of software supply chains by continuously reconciling open-source artifacts across various components. This aims to improve security posture for containers, libraries, and development workflows.",
+    "relevance_score": 7,
+    "tags": [
+      "supply-chain-security",
+      "software-hardening",
+      "automation",
+      "devsecops",
+      "chainguard"
+    ]
+  },
+  {
+    "id": "f9e9b32c0f3e7acc",
+    "title": "New Attack Surfaces Found in Amazon Bedrock's Multi-Agent AI Systems",
+    "summary_raw": "<p>Unit 42 research on multi-agent AI systems on Amazon Bedrock reveals new attack surfaces and prompt injection risks. Learn how to secure your AI applications.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/\">When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock&#039;s Multi-Agent Applications</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/",
+    "publishedDate": "2026-04-03T22:00:38+00:00",
+    "scrapedAt": "2026-04-03T23:54:34.803858+00:00",
+    "summary": "Palo Alto Unit 42's research has uncovered significant attack surfaces and prompt injection risks within multi-agent AI applications built on Amazon Bedrock. This discovery highlights the need for enhanced security measures to protect these increasingly complex AI systems from potential exploitation.",
+    "relevance_score": 7,
+    "tags": [
+      "AI",
+      "Amazon Bedrock",
+      "prompt injection",
+      "attack surface",
+      "security research"
+    ]
+  },
+  {
     "id": "eb5d1b41f5ee0075",
     "title": "Operation REF1695 Uses ISO Lures to Spread RATs and Crypto Miners",
     "summary_raw": "A&nbsp;financially motivated operation&nbsp;codenamed REF1695&nbsp;has been&nbsp;observed leveraging fake installers to deploy remote access trojans (RATs) and cryptocurrency miners since November&nbsp;2023.\n\"Beyond cryptomining, the threat actor monetizes infections through CPA (Cost Per Action) fraud, directing victims to content locker pages under the guise of software registration,\" Elastic",
@@ -2023,6 +2319,97 @@
     ]
   },
   {
+    "id": "4023885f3def8d4f",
+    "title": "Third-Party Risk is the Biggest Security Gap for Organizations",
+    "summary_raw": "The next major&nbsp;breach hitting your clients probably won't come&nbsp;from inside their&nbsp;walls. It'll come through a vendor they trust, a SaaS tool their finance team signed up for, or a subcontractor nobody in IT knows about. That's the new attack surface, and most organizations are underprepared for&nbsp;it.\nCynomi's new&nbsp;guide, Securing the Modern Perimeter: The Rise of Third-Party",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/why-third-party-risk-is-biggest-gap-in.html",
+    "publishedDate": "2026-04-03T16:30:00+05:30",
+    "scrapedAt": "2026-04-03T23:54:32.520941+00:00",
+    "summary": "A new guide emphasizes that third-party risk represents the most significant security vulnerability for many organizations, with breaches often originating from trusted vendors or SaaS tools. The expanding attack surface through these external dependencies leaves most companies unprepared. Addressing this gap requires a comprehensive strategy for managing and securing the entire ecosystem of third-party relationships.",
+    "relevance_score": 6,
+    "tags": [
+      "third-party-risk",
+      "supply-chain-risk",
+      "vulnerability",
+      "security-posture",
+      "vendor-risk-management"
+    ]
+  },
+  {
+    "id": "950b935ebf5ff7e9",
+    "title": "Hims & Hers Data Breach Due to Zendesk Support Ticket Compromise",
+    "summary_raw": "Telehealth giant Hims & Hers Health is warning that it suffered a data breach after support tickets were stolen from a third-party customer service platform. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hims-and-hers-warns-of-data-breach-after-zendesk-support-ticket-breach/",
+    "publishedDate": "2026-04-03T13:41:11-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624682+00:00",
+    "summary": "Telehealth provider Hims & Hers has reported a data breach resulting from the compromise of support tickets within Zendesk, a third-party customer service platform. This incident underscores the risks associated with relying on third-party vendors for sensitive customer data handling. The breach potentially exposes customer information managed through the support channels.",
+    "relevance_score": 6,
+    "tags": [
+      "data-breach",
+      "third-party-risk",
+      "healthcare",
+      "zendesk"
+    ]
+  },
+  {
+    "id": "f5c3121afbe77c19",
+    "title": "Evolution of Ransomware: Multi-Extortion Tactics Explained",
+    "summary_raw": "Multi-extortion ransomware relies on stolen data to pressure victims with public leaks. Penta Security explains how its D.AMO platform keeps exfiltrated files encrypted and useless to attackers. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/evolution-of-ransomware-multi-extortion-ransomware-attacks/",
+    "publishedDate": "2026-04-03T10:05:15-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624896+00:00",
+    "summary": "The article discusses the evolution of ransomware attacks towards multi-extortion strategies, where attackers not only encrypt data but also threaten to leak stolen information to pressure victims. It introduces Penta Security's D.AMO platform, which aims to keep exfiltrated files encrypted and unusable to attackers. This trend signifies a more aggressive and damaging approach by ransomware groups, necessitating advanced defensive measures.",
+    "relevance_score": 6,
+    "tags": [
+      "ransomware",
+      "multi-extortion",
+      "data-leak",
+      "encryption",
+      "cyber-security-trends"
+    ]
+  },
+  {
+    "id": "58e3330c8e6173ea",
+    "title": "XR Headset Authentication Could Use 'Skull Vibrations'",
+    "summary_raw": "&quot;Skull vibration harmonics generated by vital signs&quot; can be used to sign in to VR, AR, and MR headsets, according to emerging research.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/remote-workforce/skull-vibrations-could-be-xr-headset-authentication",
+    "publishedDate": "2026-04-03T13:30:00+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046400+00:00",
+    "summary": "Emerging research suggests that unique 'skull vibration harmonics' generated by vital signs could be used for authentication on VR, AR, and MR headsets. This novel biometric approach could offer new security possibilities for immersive technologies.",
+    "relevance_score": 6,
+    "tags": [
+      "biometrics",
+      "xr",
+      "vr",
+      "ar",
+      "authentication",
+      "emerging-tech"
+    ]
+  },
+  {
+    "id": "e5b046045ff16405",
+    "title": "CrowdStrike SIEM Integrates Microsoft Defender Telemetry",
+    "summary_raw": "Once CrowdStrike's nemesis, Microsoft is now a collaborator. A shared interest in Formula 1 helped thaw the years-long fierce rivalry.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/crowdstrike-falcon-ingest-microsoft-defender-telemetry",
+    "publishedDate": "2026-04-03T11:53:15+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046689+00:00",
+    "summary": "CrowdStrike's next-generation SIEM can now ingest telemetry from Microsoft Defender, marking a significant collaboration between former rivals. This integration aims to provide a more comprehensive security view by combining data from different endpoint protection solutions.",
+    "relevance_score": 6,
+    "tags": [
+      "siem",
+      "crowdstrike",
+      "microsoft-defender",
+      "endpoint-security",
+      "threat-detection",
+      "integration"
+    ]
+  },
+  {
     "id": "8690c4b7abf03583",
     "title": "The State of Trusted Open Source Report Released",
     "summary_raw": "In December&nbsp;2025, we shared the first-ever The State of Trusted Open&nbsp;Source report, featuring insights from our product data and customer base on open source consumption across our catalog of container image projects, versions, images, language libraries, and builds. These&nbsp;insights shed light on what teams pull, deploy, and maintain day to day, alongside the vulnerabilities and",
@@ -2204,6 +2591,41 @@
     ]
   },
   {
+    "id": "35c2e6263d07a498",
+    "title": "LinkedIn Secretly Scans Chrome Extensions and Collects User Data",
+    "summary_raw": "A new report dubbed \"BrowserGate\"\u00a0warns that Microsoft's LinkedIn is using hidden JavaScript scripts on its website to scan visitors' browsers for installed extensions and collect device data. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/linkedin-secretely-scans-for-6-000-plus-chrome-extensions-collects-data/",
+    "publishedDate": "2026-04-03T16:40:22-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624562+00:00",
+    "summary": "A report reveals that LinkedIn is using hidden JavaScript scripts on its website to scan visitors' browsers for over 6,000 installed Chrome extensions and collect device data. This practice, dubbed 'BrowserGate,' raises significant privacy concerns about how user data is being gathered without explicit consent. The extent of data collection and its purpose remain unclear, highlighting potential privacy risks for LinkedIn users.",
+    "relevance_score": 5,
+    "tags": [
+      "privacy",
+      "data-collection",
+      "browser-extensions",
+      "javascript",
+      "linkedin"
+    ]
+  },
+  {
+    "id": "caaae740747f7aa4",
+    "title": "Microsoft Continues to Address Exchange Online Mailbox Access Issues",
+    "summary_raw": "Microsoft is investigating and working to resolve Exchange Online mailbox access issues that have intermittently affected Outlook mobile and macOS users for weeks. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-still-working-to-fix-exchange-online-mailbox-access-issues/",
+    "publishedDate": "2026-04-03T07:25:20-04:00",
+    "scrapedAt": "2026-04-03T23:54:32.624998+00:00",
+    "summary": "Microsoft is actively working to resolve ongoing intermittent mailbox access problems affecting Outlook mobile and macOS users on Exchange Online. The persistent issues have been impacting users for several weeks, highlighting ongoing challenges with cloud service reliability.",
+    "relevance_score": 5,
+    "tags": [
+      "microsoft",
+      "exchange-online",
+      "cloud-security",
+      "service-disruption"
+    ]
+  },
+  {
     "id": "e5fa9b9ab7f8a017",
     "title": "The End of \"Doctor No\": Embracing AI Tools Securely",
     "summary_raw": "There is a character that keeps appearing in enterprise security departments, and most CISOs know exactly who that is. It doesn&rsquo;t build. It doesn&rsquo;t enable. Its entire function is to say \"No.\"\nNo to ChatGPT.\nNo to DeepSeek.\nNo to the file-sharing tool the product team swears by.\nFor years, this looked like security. But in 2026, \"Doctor No\" is no longer just a management headache &",
@@ -2271,6 +2693,23 @@
     ]
   },
   {
+    "id": "267088feb9d81275",
+    "title": "Inconsistent Privacy Labels Fail to Inform Mobile App Users",
+    "summary_raw": "Data privacy labels are a great idea for mobile apps, but the current versions just aren't good enough.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/data-privacy/inconsistent-privacy-labels-not-enough",
+    "publishedDate": "2026-04-03T21:05:07+00:00",
+    "scrapedAt": "2026-04-03T23:54:33.046058+00:00",
+    "summary": "Current data privacy labels on mobile apps, while a good concept, are not sufficiently detailed or consistent to adequately inform users about data collection practices. This lack of clarity leaves users vulnerable and undermines the effectiveness of privacy transparency efforts.",
+    "relevance_score": 4,
+    "tags": [
+      "data-privacy",
+      "mobile-apps",
+      "transparency",
+      "user-awareness"
+    ]
+  },
+  {
     "id": "ed09a8bd59155fc1",
     "title": "Black Hat USA Event Coverage",
     "summary_raw": "",
@@ -2313,6 +2752,22 @@
     "tags": [
       "podcast",
       "cybersecurity-news"
+    ]
+  },
+  {
+    "id": "8ab49ac22b81fd38",
+    "title": "Friday Squid Blogging: Jurassic Fish Chokes on Squid",
+    "summary_raw": "<p>Here&#8217;s a <a href=\"https://timesofindia.indiatimes.com/etimes/animals/how-a-jurassic-fish-choked-to-death-on-a-floating-squid-150-million-years-ago/articleshow/129823852.cms\">fossil</a> of a 150-million year old fish that choked to death on a <i>belemnite rostrum</i>: the hard, internal shell of an extinct, squid-like animal.</p>\n<p>Original <a href=\"https://www.nature.com/articles/s41598-025-00163-7\">paper</a>.</p>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-jurassic-fish-chokes-on-squid.html",
+    "publishedDate": "2026-04-03T21:07:06+00:00",
+    "scrapedAt": "2026-04-03T23:54:35.555295+00:00",
+    "summary": "This post discusses a fossil of a 150-million-year-old fish that died choking on a belemnite rostrum, an extinct squid-like animal's shell. While seemingly unrelated to cybersecurity, the author uses it as a prompt for security discussions.",
+    "relevance_score": 1,
+    "tags": [
+      "humor",
+      "paleontology",
+      "off-topic"
     ]
   }
 ]

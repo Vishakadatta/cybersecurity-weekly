@@ -1,0 +1,116 @@
+{
+  "week": "w14",
+  "year": "2026",
+  "generatedAt": "2026-04-04T06:19:21.553162+00:00",
+  "subjectLine": "Nation-State iPhone Hacking Tool Leaked, EU Commission Breached, & Critical Zero-Days Under Attack",
+  "articles": [
+    {
+      "id": "fc99c4de7c7814ca",
+      "title": "Sophisticated US Government iPhone Hacking Tool 'Coruna' Leaked",
+      "summary": "A highly sophisticated iPhone hacking toolkit, dubbed 'Coruna,' allegedly developed for the US government, has been leaked. The toolkit reportedly contains five complete hacking techniques, raising concerns about its potential misuse and the security of iOS devices.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/possible-us-government-iphone-hacking-tool-leaked.html",
+      "tier": 1,
+      "publishedDate": "2026-04-02T10:05:43+00:00"
+    },
+    {
+      "id": "b1b779501c6e1480",
+      "title": "TeamPCP Supply Chain Campaign Update: European Commission Cloud Breach Confirmed",
+      "summary": "The latest update on the TeamPCP supply chain campaign confirms a breach affecting the European Commission's cloud environment and provides further details on the Sportradar compromise. Mandiant estimates the campaign has impacted over 1,000 SaaS environments, highlighting the widespread threat to c",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/32864",
+      "tier": 1,
+      "publishedDate": "2026-04-03T13:18:01+00:00"
+    },
+    {
+      "id": "6ca7b5bfa84bd5da",
+      "title": "Drift Loses $285 Million in Durable Nonce Attack Linked to DPRK",
+      "summary": "The Solana-based decentralized exchange Drift has suffered a massive $285 million loss due to a novel attack involving 'durable nonces' and social engineering, which granted attackers administrative control. This incident, linked to North Korean (DPRK) actors, highlights a sophisticated exploitation",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/drift-loses-285-million-in-durable.html",
+      "tier": 1,
+      "publishedDate": "2026-04-03T14:05:00+05:30"
+    },
+    {
+      "id": "f4b57f9aa08eddf1",
+      "title": "TrueConf Zero-Day Exploited in Attacks on Government Networks",
+      "summary": "A critical zero-day vulnerability (CVE-2026-3502) in TrueConf video conferencing software has been exploited in the wild against government entities in Southeast Asia. The flaw allows attackers to distribute tampered updates by bypassing integrity checks. This highlights the significant risk posed b",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
+      "tier": 1,
+      "publishedDate": "2026-03-31T21:33:00+05:30"
+    },
+    {
+      "id": "3d36a39e4cab1736",
+      "title": "China-Linked Red Menshen Uses BPFDoor to Spy on Telecom Networks",
+      "summary": "A China-nexus threat actor, identified as Red Menshen, is using stealthy BPFDoor implants to spy on government networks by embedding itself within telecom infrastructure. This sophisticated espionage campaign highlights the risks associated with critical infrastructure and nation-state cyber operati",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/china-linked-red-menshen-uses-stealthy.html",
+      "tier": 1,
+      "publishedDate": "2026-03-26T23:10:00+05:30"
+    },
+    {
+      "id": "3100a14f20dd5678",
+      "title": "Citrix NetScaler Under Active Recon for Critical Memory Overread Bug (CVE-2026-3055)",
+      "summary": "Active reconnaissance is underway for a critical memory overread vulnerability (CVE-2026-3055) in Citrix NetScaler ADC and Gateway, which carries a CVSS score of 9.3. This flaw could allow attackers to leak sensitive information, highlighting the immediate risk to organizations using these network d",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/citrix-netscaler-under-active-recon-for.html",
+      "tier": 2,
+      "publishedDate": "2026-03-28T14:41:00+05:30"
+    },
+    {
+      "id": "adf98943f8a5b761",
+      "title": "CISA Adds F5 BIG-IP APM Vulnerability to KEV Catalog After Active Exploitation",
+      "summary": "CISA has added CVE-2025-53521, a critical vulnerability in F5 BIG-IP Access Policy Manager (APM), to its Known Exploited Vulnerabilities catalog due to active exploitation. This flaw allows for remote code execution and poses a significant risk to organizations relying on F5's network access solutio",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
+      "tier": 2,
+      "publishedDate": "2026-03-28T12:37:00+05:30"
+    },
+    {
+      "id": "58e88d4f91c2af82",
+      "title": "Cisco Patches Critical 9.8 CVSS Flaw in IMC Allowing Remote System Compromise",
+      "summary": "Cisco has released updates to address a critical vulnerability (CVE-2026-20093) in its Integrated Management Controller (IMC) with a CVSS score of 9.8. This flaw allows unauthenticated, remote attackers to bypass authentication and gain elevated privileges, posing a severe risk to network infrastruc",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/cisco-patches-98-cvss-imc-and-ssm-flaws.html",
+      "tier": 2,
+      "publishedDate": "2026-04-02T20:51:00+05:30"
+    },
+    {
+      "id": "5a9dcd752491baf7",
+      "title": "Hackers Exploit CVE-2025-55182 to Breach 766 Next.js Hosts, Steal Credentials",
+      "summary": "A large-scale credential harvesting operation is exploiting the React2Shell vulnerability (CVE-2025-55182) to steal sensitive information from 766 Next.js hosts. The stolen data includes database credentials, SSH keys, AWS secrets, and API keys, indicating a significant risk to affected organization",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/hackers-exploit-cve-2025-55182-to.html",
+      "tier": 2,
+      "publishedDate": "2026-04-03T01:00:00+05:30"
+    },
+    {
+      "id": "c07d44cae33ffdf3",
+      "title": "New Chrome Zero-Day CVE-2026-5281 Under Active Exploitation",
+      "summary": "Google has released updates for Chrome to address 21 vulnerabilities, including a zero-day flaw, CVE-2026-5281, which is already being exploited in the wild. This use-after-free bug in the Dawn component affects the WebGPU standard implementation. The active exploitation of this zero-day underscores",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/new-chrome-zero-day-cve-2026-5281-under.html",
+      "tier": 3,
+      "publishedDate": "2026-04-01T17:12:00+05:30"
+    },
+    {
+      "id": "3ea9b0c959774c01",
+      "title": "North Korean Actors UNC1069 Behind Axios npm Supply Chain Attack",
+      "summary": "The maintainer of the popular Axios npm package has confirmed that a supply chain compromise was orchestrated by North Korean threat actors, tracked as UNC1069. The attackers employed highly targeted social engineering tactics, impersonating a founder of a company to gain the maintainer's trust. Thi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html",
+      "tier": 3,
+      "publishedDate": "2026-04-03T16:34:00+05:30"
+    },
+    {
+      "id": "8174785d36cc833c",
+      "title": "New Rowhammer Attacks Give Complete Control of Machines Running Nvidia GPUs",
+      "summary": "New Rowhammer attacks, named GDDRHammer and GeForge, have been discovered that can compromise the CPU by manipulating GPU memory. These attacks demonstrate a critical hardware-level vulnerability, allowing attackers to gain complete control over machines equipped with Nvidia GPUs.",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/",
+      "tier": 3,
+      "publishedDate": "2026-04-02T17:00:11+00:00"
+    }
+  ]
+}
