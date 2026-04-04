@@ -2113,6 +2113,23 @@
     ]
   },
   {
+    "id": "ece35b683fe646e7",
+    "title": "Device Code Phishing Attacks Surge 37x as New Kits Spread Online",
+    "summary_raw": "Device code phishing attacks that abuse the OAuth 2.0\u00a0Device Authorization Grant flow to hijack accounts have surged more than 37 times this year. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/device-code-phishing-attacks-surge-37x-as-new-kits-spread-online/",
+    "publishedDate": "2026-04-04T10:17:38-04:00",
+    "scrapedAt": "2026-04-04T19:25:39.257824+00:00",
+    "summary": "Phishing attacks exploiting the OAuth 2.0 Device Authorization Grant flow have seen a dramatic increase of over 37 times this year. These attacks hijack user accounts by tricking them into authorizing malicious applications. The proliferation of new phishing kits makes this a growing threat to account security.",
+    "relevance_score": 7,
+    "tags": [
+      "phishing",
+      "account-takeover",
+      "oauth",
+      "malware"
+    ]
+  },
+  {
     "id": "eb5d1b41f5ee0075",
     "title": "Operation REF1695 Uses ISO Lures to Spread RATs and Crypto Miners",
     "summary_raw": "A&nbsp;financially motivated operation&nbsp;codenamed REF1695&nbsp;has been&nbsp;observed leveraging fake installers to deploy remote access trojans (RATs) and cryptocurrency miners since November&nbsp;2023.\n\"Beyond cryptomining, the threat actor monetizes infections through CPA (Cost Per Action) fraud, directing victims to content locker pages under the guise of software registration,\" Elastic",
@@ -2407,6 +2424,23 @@
       "endpoint-security",
       "threat-detection",
       "integration"
+    ]
+  },
+  {
+    "id": "5624cba51c030cdf",
+    "title": "LinkedIn Secretly Scans for 6,000+ Chrome Extensions, Collects Data",
+    "summary_raw": "A new report dubbed \"BrowserGate\"\u00a0warns that Microsoft's LinkedIn is using hidden JavaScript scripts on its website to scan visitors' browsers for installed extensions and collect device data. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/linkedin-secretly-scans-for-6-000-plus-chrome-extensions-collects-data/",
+    "publishedDate": "2026-04-03T16:40:22-04:00",
+    "scrapedAt": "2026-04-04T19:25:39.257945+00:00",
+    "summary": "A new report reveals that LinkedIn is using hidden JavaScript scripts to scan users' browsers for installed Chrome extensions and collect device data. This practice, dubbed \"BrowserGate,\" raises significant privacy concerns about how user information is being gathered without explicit consent. The widespread use of LinkedIn makes this a notable privacy issue for many internet users.",
+    "relevance_score": 6,
+    "tags": [
+      "privacy",
+      "data-collection",
+      "browser-extensions",
+      "javascript"
     ]
   },
   {
