@@ -1,35 +1,35 @@
 {
   "week": "w14",
   "year": "2026",
-  "generatedAt": "2026-04-05T17:48:42.531970+00:00",
-  "subjectLine": "BREAKING: 36 Malicious npm Packages Exploited Redis, PostgreSQL to Dep + More Inside",
+  "generatedAt": "2026-04-06T03:52:29.257594+00:00",
+  "subjectLine": "Zero-Days Exploit Government & Enterprise Systems + Massive DeFi Heist Linked to North Korea",
   "articles": [
     {
-      "id": "10ee70a496fd1ebf",
-      "title": "Hackers exploit React2Shell in automated credential theft campaign",
-      "summary": "Hackers are running a large-scale campaign to steal credentials in an automated way after exploiting React2Shell (CVE-2025-55182) in vulnerable Next.js apps.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-react2shell-in-automated-credential-theft-campaign/",
-      "tier": 2,
-      "publishedDate": "2026-04-05T10:17:23-04:00"
-    },
-    {
-      "id": "ea48c77b90e90c85",
-      "title": "Fortinet Patches Actively Exploited CVE-2026-35616 in FortiClient EMS",
-      "summary": "Fortinet has released out-of-band patches for a critical security flaw impacting FortiClient EMS that it said has been exploited in the wild.",
+      "id": "f4b57f9aa08eddf1",
+      "title": "TrueConf Zero-Day Exploited in Attacks on Government Networks",
+      "summary": "A critical zero-day vulnerability (CVE-2026-3502) in TrueConf video conferencing software has been exploited in the wild against government entities in Southeast Asia. The flaw allows attackers to distribute tampered updates by bypassing integrity checks. This highlights the significant risk posed b",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
-      "tier": 2,
-      "publishedDate": "2026-04-05T10:02:00+05:30"
-    },
-    {
-      "id": "6c619c60f949c251",
-      "title": "36 Malicious npm Packages Exploited Redis, PostgreSQL to Deploy Persistent Implants",
-      "summary": "Cybersecurity researchers have discovered 36 malicious packages in the npm registry that are disguised as Strapi CMS plugins but come with different payloads to facilitate Redis and PostgreSQL exploit",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html",
+      "url": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
       "tier": 1,
-      "publishedDate": "2026-04-05T10:37:00+05:30"
+      "publishedDate": "2026-03-31T21:33:00+05:30"
+    },
+    {
+      "id": "e65e829b37d81da7",
+      "title": "Drift Protocol Loses $280 Million as North Korean Hackers Seize Security Council Powers",
+      "summary": "The Drift Protocol suffered a loss of at least $280 million after North Korean hackers successfully seized control of its Security Council administrative powers in a sophisticated operation. This incident highlights the severe risks associated with decentralized finance (DeFi) platforms and the pers",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/drift-loses-280-million-north-korean-hackers-seize-security-council-powers/",
+      "tier": 1,
+      "publishedDate": "2026-04-02T15:03:39-04:00"
+    },
+    {
+      "id": "b8ada83bae187db7",
+      "title": "CERT-EU: European Commission Hack Exposes Data of 30 EU Entities",
+      "summary": "CERT-EU has attributed a significant cloud hack targeting the European Commission to the TeamPCP threat group, resulting in the exposure of data from at least 30 EU entities. This widespread data breach impacting critical governmental organizations underscores the sophisticated capabilities of threa",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cert-eu-european-commission-hack-exposes-data-of-30-eu-entities/",
+      "tier": 1,
+      "publishedDate": "2026-04-03T02:33:34-04:00"
     },
     {
       "id": "fc99c4de7c7814ca",
@@ -41,42 +41,6 @@
       "publishedDate": "2026-04-02T10:05:43+00:00"
     },
     {
-      "id": "b1b779501c6e1480",
-      "title": "TeamPCP Supply Chain Campaign Update: European Commission Cloud Breach Confirmed",
-      "summary": "The latest update on the TeamPCP supply chain campaign confirms a breach affecting the European Commission's cloud environment and provides further details on the Sportradar compromise. Mandiant estimates the campaign has impacted over 1,000 SaaS environments, highlighting the widespread threat to c",
-      "source": "SANS Internet Storm Center",
-      "url": "https://isc.sans.edu/diary/rss/32864",
-      "tier": 1,
-      "publishedDate": "2026-04-03T13:18:01+00:00"
-    },
-    {
-      "id": "6ca7b5bfa84bd5da",
-      "title": "Drift Loses $285 Million in Durable Nonce Attack Linked to DPRK",
-      "summary": "The Solana-based decentralized exchange Drift has suffered a massive $285 million loss due to a novel attack involving 'durable nonces' and social engineering, which granted attackers administrative control. This incident, linked to North Korean (DPRK) actors, highlights a sophisticated exploitation",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/04/drift-loses-285-million-in-durable.html",
-      "tier": 1,
-      "publishedDate": "2026-04-03T14:05:00+05:30"
-    },
-    {
-      "id": "f4b57f9aa08eddf1",
-      "title": "TrueConf Zero-Day Exploited in Attacks on Government Networks",
-      "summary": "A critical zero-day vulnerability (CVE-2026-3502) in TrueConf video conferencing software has been exploited in the wild against government entities in Southeast Asia. The flaw allows attackers to distribute tampered updates by bypassing integrity checks. This highlights the significant risk posed b",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/03/trueconf-zero-day-exploited-in-attacks.html",
-      "tier": 1,
-      "publishedDate": "2026-03-31T21:33:00+05:30"
-    },
-    {
-      "id": "3d36a39e4cab1736",
-      "title": "China-Linked Red Menshen Uses BPFDoor to Spy on Telecom Networks",
-      "summary": "A China-nexus threat actor, identified as Red Menshen, is using stealthy BPFDoor implants to spy on government networks by embedding itself within telecom infrastructure. This sophisticated espionage campaign highlights the risks associated with critical infrastructure and nation-state cyber operati",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/03/china-linked-red-menshen-uses-stealthy.html",
-      "tier": 1,
-      "publishedDate": "2026-03-26T23:10:00+05:30"
-    },
-    {
       "id": "3100a14f20dd5678",
       "title": "Citrix NetScaler Under Active Recon for Critical Memory Overread Bug (CVE-2026-3055)",
       "summary": "Active reconnaissance is underway for a critical memory overread vulnerability (CVE-2026-3055) in Citrix NetScaler ADC and Gateway, which carries a CVSS score of 9.3. This flaw could allow attackers to leak sensitive information, highlighting the immediate risk to organizations using these network d",
@@ -84,15 +48,6 @@
       "url": "https://thehackernews.com/2026/03/citrix-netscaler-under-active-recon-for.html",
       "tier": 2,
       "publishedDate": "2026-03-28T14:41:00+05:30"
-    },
-    {
-      "id": "adf98943f8a5b761",
-      "title": "CISA Adds F5 BIG-IP APM Vulnerability to KEV Catalog After Active Exploitation",
-      "summary": "CISA has added CVE-2025-53521, a critical vulnerability in F5 BIG-IP Access Policy Manager (APM), to its Known Exploited Vulnerabilities catalog due to active exploitation. This flaw allows for remote code execution and poses a significant risk to organizations relying on F5's network access solutio",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/03/cisa-adds-cve-2025-53521-to-kev-after.html",
-      "tier": 2,
-      "publishedDate": "2026-03-28T12:37:00+05:30"
     },
     {
       "id": "58e88d4f91c2af82",
@@ -104,13 +59,31 @@
       "publishedDate": "2026-04-02T20:51:00+05:30"
     },
     {
-      "id": "5a9dcd752491baf7",
-      "title": "Hackers Exploit CVE-2025-55182 to Breach 766 Next.js Hosts, Steal Credentials",
-      "summary": "A large-scale credential harvesting operation is exploiting the React2Shell vulnerability (CVE-2025-55182) to steal sensitive information from 766 Next.js hosts. The stolen data includes database credentials, SSH keys, AWS secrets, and API keys, indicating a significant risk to affected organization",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/04/hackers-exploit-cve-2025-55182-to.html",
+      "id": "09769448efd4666e",
+      "title": "Critical Cisco IMC Authentication Bypass Vulnerability Patched",
+      "summary": "Cisco has addressed a critical authentication bypass vulnerability in its Integrated Management Controller (IMC) that allowed attackers to gain administrative access. This fix is crucial for securing network infrastructure management systems from unauthorized control.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-cisco-imc-auth-bypass-gives-attackers-admin-access/",
       "tier": 2,
-      "publishedDate": "2026-04-03T01:00:00+05:30"
+      "publishedDate": "2026-04-02T07:01:14-04:00"
+    },
+    {
+      "id": "ea48c77b90e90c85",
+      "title": "Fortinet Patches Actively Exploited FortiClient EMS Vulnerability",
+      "summary": "Fortinet has issued an out-of-band patch for a critical vulnerability (CVE-2026-35616) in its FortiClient Enterprise Management Server (EMS) that has been actively exploited in the wild. The flaw allows for pre-authentication API access bypass, leading to privilege escalation. This critical vulnerab",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
+      "tier": 2,
+      "publishedDate": "2026-04-05T10:02:00+05:30"
+    },
+    {
+      "id": "b0835d83ca4dddc3",
+      "title": "Emergency Patch Released for Exploited FortiClient EMS Flaw",
+      "summary": "Fortinet has released an emergency weekend update to address a critical vulnerability (CVE-2026-35616) in FortiClient Enterprise Management Server (EMS) that is already being exploited in attacks. The vulnerability allows for privilege escalation through an API access bypass. This rapid response und",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-fortinet-forticlient-ems-flaw-cve-2026-35616-exploited-in-attacks/",
+      "tier": 2,
+      "publishedDate": "2026-04-05T14:45:17-04:00"
     },
     {
       "id": "c07d44cae33ffdf3",
@@ -122,22 +95,22 @@
       "publishedDate": "2026-04-01T17:12:00+05:30"
     },
     {
-      "id": "3ea9b0c959774c01",
-      "title": "North Korean Actors UNC1069 Behind Axios npm Supply Chain Attack",
-      "summary": "The maintainer of the popular Axios npm package has confirmed that a supply chain compromise was orchestrated by North Korean threat actors, tracked as UNC1069. The attackers employed highly targeted social engineering tactics, impersonating a founder of a company to gain the maintainer's trust. Thi",
+      "id": "6e82204822f85cfa",
+      "title": "OpenAI Patches ChatGPT Data Exfiltration Flaw and Codex GitHub Token Vulnerability",
+      "summary": "OpenAI has addressed a critical vulnerability in ChatGPT that allowed sensitive conversation data to be exfiltrated through malicious prompts. This flaw posed a significant risk to user privacy and data security, demonstrating the ongoing challenges in securing AI-powered platforms.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html",
+      "url": "https://thehackernews.com/2026/03/openai-patches-chatgpt-data.html",
       "tier": 3,
-      "publishedDate": "2026-04-03T16:34:00+05:30"
+      "publishedDate": "2026-03-30T23:35:00+05:30"
     },
     {
-      "id": "8174785d36cc833c",
-      "title": "New Rowhammer Attacks Give Complete Control of Machines Running Nvidia GPUs",
-      "summary": "New Rowhammer attacks, named GDDRHammer and GeForge, have been discovered that can compromise the CPU by manipulating GPU memory. These attacks demonstrate a critical hardware-level vulnerability, allowing attackers to gain complete control over machines equipped with Nvidia GPUs.",
-      "source": "Ars Technica Security",
-      "url": "https://arstechnica.com/security/2026/04/new-rowhammer-attacks-give-complete-control-of-machines-running-nvidia-gpus/",
+      "id": "61bc3bc246e66ac7",
+      "title": "Iran-Linked Hackers Breach FBI Director's Personal Email, Hit Stryker With Wiper",
+      "summary": "Hackers linked to Iran have successfully breached the personal email account of the FBI Director, leaking sensitive documents. Additionally, the group targeted Stryker with a wiper attack, demonstrating a dual-pronged approach involving espionage and destructive capabilities.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/03/iran-linked-hackers-breach-fbi.html",
       "tier": 3,
-      "publishedDate": "2026-04-02T17:00:11+00:00"
+      "publishedDate": "2026-03-28T21:10:00+05:30"
     }
   ]
 }
