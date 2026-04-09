@@ -1,41 +1,28 @@
 """
 Monday sender.
-Optionally does a last-minute emergency scrape check,
-then sends the finalized newsletter via Brevo to all subscribers.
+Reads the latest finalized edition from content/latest.json
+and sends the newsletter via Brevo to all subscribers.
 """
 
 import json
 import os
 import sys
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import sib_api_v3_sdk
 from sib_api_v3_sdk.rest import ApiException
 
-SCRIPTS_DIR = Path(__file__).parent
-ROOT_DIR = SCRIPTS_DIR.parent
-CONTENT_DIR = ROOT_DIR / "content"
-RAW_DIR = CONTENT_DIR / "raw"
-
-PT = timezone(timedelta(hours=-7))
+from edition import CONTENT_DIR, RAW_DIR, get_edition
 
 SENDER_NAME = "Cybersecurity Weekly"
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "")
 
 
-def get_current_week() -> tuple[str, str]:
-    now = datetime.now(PT)
-    year = str(now.year)
-    week = f"w{now.isocalendar()[1]:02d}"
-    return year, week
-
-
 def load_subscribers(private_data_path: str | None = None) -> list[str]:
-    """Load subscriber emails from the private repo checkout."""
+    root = Path(__file__).parent.parent
     search_paths = [
         Path(private_data_path) / "subscribers" / "emails.json" if private_data_path else None,
-        ROOT_DIR / "private-data" / "subscribers" / "emails.json",
+        root / "private-data" / "subscribers" / "emails.json",
     ]
 
     for p in search_paths:
@@ -49,7 +36,6 @@ def load_subscribers(private_data_path: str | None = None) -> list[str]:
 
 
 def send_email(api_instance, to_email: str, subject: str, html_content: str) -> bool:
-    """Send a single email via Brevo."""
     send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(
         to=[{"email": to_email}],
         sender={"name": SENDER_NAME, "email": SENDER_EMAIL},
@@ -82,9 +68,11 @@ def main():
         sib_api_v3_sdk.ApiClient(configuration)
     )
 
-    year, week = get_current_week()
-    content_file = CONTENT_DIR / year / f"{week}.json"
-    email_file = RAW_DIR / f"{year}-{week}-email.html"
+    year, edition = get_edition()
+    content_file = CONTENT_DIR / year / f"{edition}.json"
+    email_file = RAW_DIR / f"{edition}-email.html"
+
+    print(f"Edition: {edition}")
 
     if not content_file.exists():
         print(f"ERROR: No finalized content at {content_file}", file=sys.stderr)

@@ -5,14 +5,23 @@ import path from 'node:path';
 const base = import.meta.env.BASE_URL;
 const contentDir = path.join(process.cwd(), 'content');
 
-interface WeekEntry {
+interface EditionEntry {
   year: string;
-  week: string;
+  edition: string;
   label: string;
   path: string;
 }
 
-const weeks: WeekEntry[] = [];
+function formatLabel(filename: string, year: string): string {
+  const edition = filename.replace('.json', '');
+  if (/^\d{4}-\d{2}-\d{2}$/.test(edition)) {
+    const d = new Date(edition + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+  }
+  return `${year} — ${edition.replace('w', 'Week ')}`;
+}
+
+const editions: EditionEntry[] = [];
 
 if (fs.existsSync(contentDir)) {
   const years = fs.readdirSync(contentDir).filter((f) => /^\d{4}$/.test(f)).sort().reverse();
@@ -20,12 +29,12 @@ if (fs.existsSync(contentDir)) {
     const yearDir = path.join(contentDir, year);
     const files = fs.readdirSync(yearDir).filter((f) => f.endsWith('.json')).sort().reverse();
     for (const file of files) {
-      const week = file.replace('.json', '');
-      weeks.push({
+      const edition = file.replace('.json', '');
+      editions.push({
         year,
-        week,
-        label: `${year} — Week ${week.replace('w', '')}`,
-        path: `${base}archive/${year}-${week}/`,
+        edition,
+        label: formatLabel(file, year),
+        path: `${base}archive/${edition}/`,
       });
     }
   }
@@ -35,17 +44,17 @@ if (fs.existsSync(contentDir)) {
 <aside class="w-full lg:w-72 shrink-0">
   <div class="sticky top-8 rounded-xl border border-dark-800 bg-dark-900/50 p-5">
     <h2 class="mb-4 text-sm font-semibold uppercase tracking-wider text-dark-400">Archive</h2>
-    {weeks.length === 0 ? (
+    {editions.length === 0 ? (
       <p class="text-sm text-dark-500 italic">No archives yet. Check back after the first week!</p>
     ) : (
       <ul class="space-y-1">
-        {weeks.map((w) => (
+        {editions.map((e) => (
           <li>
             <a
-              href={w.path}
+              href={e.path}
               class="block rounded-lg px-3 py-2 text-sm text-dark-300 transition hover:bg-dark-800 hover:text-cyber-400"
             >
-              {w.label}
+              {e.label}
             </a>
           </li>
         ))}

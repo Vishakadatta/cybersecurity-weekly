@@ -1,12 +1,11 @@
 """
 Friday + Saturday + Sunday scraper.
 Fetches articles from all configured RSS sources, deduplicates,
-and saves raw articles as JSON for the current week.
+and saves raw articles as JSON for the current edition.
 """
 
 import json
 import hashlib
-import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -15,20 +14,10 @@ import feedparser
 import httpx
 from dateutil import parser as dateparser
 
+from edition import RAW_DIR, compute_friday, set_edition
+
 SCRIPTS_DIR = Path(__file__).parent
-ROOT_DIR = SCRIPTS_DIR.parent
-CONTENT_DIR = ROOT_DIR / "content"
-RAW_DIR = CONTENT_DIR / "raw"
 SOURCES_FILE = SCRIPTS_DIR / "sources.json"
-
-PT = timezone(timedelta(hours=-7))
-
-
-def get_current_week() -> tuple[str, str]:
-    now = datetime.now(PT)
-    year = str(now.year)
-    week = f"w{now.isocalendar()[1]:02d}"
-    return year, week
 
 
 def load_sources() -> list[dict]:
@@ -41,7 +30,6 @@ def article_id(url: str) -> str:
 
 
 def fetch_rss(source: dict, cutoff: datetime) -> list[dict]:
-    """Fetch and parse an RSS feed, returning articles newer than cutoff."""
     articles = []
     try:
         resp = httpx.get(source["url"], timeout=30, follow_redirects=True)
@@ -90,7 +78,6 @@ def fetch_rss(source: dict, cutoff: datetime) -> list[dict]:
 
 
 def merge_articles(existing: list[dict], new: list[dict]) -> list[dict]:
-    """Merge new articles into existing, deduplicating by id."""
     seen = {a["id"] for a in existing}
     merged = list(existing)
     added = 0
@@ -104,16 +91,17 @@ def merge_articles(existing: list[dict], new: list[dict]) -> list[dict]:
 
 
 def main():
-    year, week = get_current_week()
-    day = datetime.now(PT).strftime("%A").lower()
+    edition = compute_friday()
+    set_edition(edition)
+    day = datetime.now(timezone(timedelta(hours=-7))).strftime("%A").lower()
     sources = load_sources()
 
     RAW_DIR.mkdir(parents=True, exist_ok=True)
 
     cutoff = datetime.now(timezone.utc) - timedelta(days=8)
 
-    raw_file = RAW_DIR / f"{year}-{week}-{day}.json"
-    cumulative_file = RAW_DIR / f"{year}-{week}-cumulative.json"
+    raw_file = RAW_DIR / f"{edition}-{day}.json"
+    cumulative_file = RAW_DIR / f"{edition}-cumulative.json"
 
     existing = []
     if cumulative_file.exists():

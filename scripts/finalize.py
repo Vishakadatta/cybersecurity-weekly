@@ -1,26 +1,20 @@
 """
 Sunday finalizer.
 Reads curated articles, runs tournament ranking via Gemini,
-generates the final weekly JSON and HTML email.
+generates the final edition JSON and HTML email.
 """
 
 import json
-import os
 import sys
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 
 from jinja2 import Template
 
 from gemini_client import ProjectError, create_client, generate_json
+from edition import CONTENT_DIR, RAW_DIR, get_edition, set_edition, date_label, date_range_label
 
-SCRIPTS_DIR = Path(__file__).parent
-ROOT_DIR = SCRIPTS_DIR.parent
-CONTENT_DIR = ROOT_DIR / "content"
-RAW_DIR = CONTENT_DIR / "raw"
-TEMPLATES_DIR = ROOT_DIR / "templates"
-
-PT = timezone(timedelta(hours=-7))
+TEMPLATES_DIR = Path(__file__).parent.parent / "templates"
 
 RANKING_PROMPT = """You are the editor-in-chief of "Cybersecurity Weekly", a premium cybersecurity newsletter. You must select and rank the TOP stories from this week.
 
@@ -60,13 +54,6 @@ Order articles: all tier 1 first, then tier 2, then tier 3.
 """
 
 
-def get_current_week() -> tuple[str, str]:
-    now = datetime.now(PT)
-    year = str(now.year)
-    week = f"w{now.isocalendar()[1]:02d}"
-    return year, week
-
-
 def generate_email_html(content: dict) -> str:
     template_path = TEMPLATES_DIR / "email.html"
     with open(template_path) as f:
@@ -77,7 +64,7 @@ def generate_email_html(content: dict) -> str:
 
     return template.render(
         subject_line=content["subjectLine"],
-        week_number=content["week"].replace("w", ""),
+        edition_label=content.get("editionLabel", content["edition"]),
         year=content["year"],
         articles=content["articles"],
         site_url=site_url,
@@ -88,9 +75,10 @@ def generate_email_html(content: dict) -> str:
 def main():
     client = create_client()
 
-    year, week = get_current_week()
+    year, edition = get_edition()
+    print(f"Edition: {edition} ({date_range_label(edition)})")
 
-    curated_file = RAW_DIR / f"{year}-{week}-curated.json"
+    curated_file = RAW_DIR / f"{edition}-curated.json"
     if not curated_file.exists():
         print(f"ERROR: No curated file found at {curated_file}", file=sys.stderr)
         sys.exit(1)
@@ -126,8 +114,9 @@ def main():
         sys.exit(1)
 
     content = {
-        "week": week,
+        "edition": edition,
         "year": year,
+        "editionLabel": date_range_label(edition),
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "subjectLine": result.get("subjectLine", "Cybersecurity Weekly"),
         "articles": result.get("articles", []),
@@ -145,17 +134,15 @@ def main():
 
     year_dir = CONTENT_DIR / year
     year_dir.mkdir(parents=True, exist_ok=True)
-    final_file = year_dir / f"{week}.json"
+    final_file = year_dir / f"{edition}.json"
     with open(final_file, "w") as f:
         json.dump(content, f, indent=2)
     print(f"\nSaved finalized content to {final_file}")
 
-    latest_file = CONTENT_DIR / "latest.json"
-    with open(latest_file, "w") as f:
-        json.dump({"year": year, "week": week}, f, indent=2)
+    set_edition(edition)
 
     email_html = generate_email_html(content)
-    email_file = RAW_DIR / f"{year}-{week}-email.html"
+    email_file = RAW_DIR / f"{edition}-email.html"
     with open(email_file, "w") as f:
         f.write(email_html)
     print(f"Saved email HTML to {email_file}")

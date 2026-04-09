@@ -9,7 +9,7 @@ import path from 'node:path';
 
 export function getStaticPaths() {
   const contentDir = path.join(process.cwd(), 'content');
-  const paths: { params: { week: string } }[] = [];
+  const paths: { params: { edition: string } }[] = [];
 
   if (fs.existsSync(contentDir)) {
     const years = fs.readdirSync(contentDir).filter((f) => /^\d{4}$/.test(f));
@@ -17,8 +17,8 @@ export function getStaticPaths() {
       const yearDir = path.join(contentDir, year);
       const files = fs.readdirSync(yearDir).filter((f) => f.endsWith('.json'));
       for (const file of files) {
-        const week = file.replace('.json', '');
-        paths.push({ params: { week: `${year}-${week}` } });
+        const edition = file.replace('.json', '');
+        paths.push({ params: { edition } });
       }
     }
   }
@@ -26,11 +26,22 @@ export function getStaticPaths() {
   return paths;
 }
 
-const { week } = Astro.params;
-const [year, weekNum] = week!.split('-');
-const filePath = path.join(process.cwd(), 'content', year, `${weekNum}.json`);
+const { edition } = Astro.params;
+const editionId = edition!;
+const year = editionId.slice(0, 4);
+const filePath = path.join(process.cwd(), 'content', year, `${editionId}.json`);
 
 const content = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+
+function formatEditionLabel(content: any): string {
+  if (content.editionLabel) return content.editionLabel;
+  const ed = content.edition || editionId;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(ed)) {
+    const d = new Date(ed + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  }
+  return ed.replace('w', 'Week ');
+}
 
 const tier1 = content.articles.filter((a: any) => a.tier === 1);
 const tier2 = content.articles.filter((a: any) => a.tier === 2);
@@ -45,7 +56,7 @@ const tier3 = content.articles.filter((a: any) => a.tier === 3);
       <div class="min-w-0 flex-1">
         <div class="mb-8">
           <p class="mb-1 text-sm font-medium text-cyber-400">
-            Week {weekNum.replace('w', '')} &middot; {year}
+            {formatEditionLabel(content)}
           </p>
           <h2 class="text-3xl font-extrabold tracking-tight text-white">
             {content.subjectLine}

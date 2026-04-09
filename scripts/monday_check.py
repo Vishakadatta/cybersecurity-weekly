@@ -5,19 +5,14 @@ If a high-impact story is found, injects it into the finalized content.
 """
 
 import json
-import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from gemini_client import ProjectError, create_client, generate_json
+from edition import CONTENT_DIR, RAW_DIR, get_edition
 
 SCRIPTS_DIR = Path(__file__).parent
-ROOT_DIR = SCRIPTS_DIR.parent
-CONTENT_DIR = ROOT_DIR / "content"
-RAW_DIR = CONTENT_DIR / "raw"
-
-PT = timezone(timedelta(hours=-7))
 
 EMERGENCY_CHECK_PROMPT = """You are a cybersecurity news editor. Here is a list of articles scraped this Monday morning. Compare them against the already-finalized newsletter articles below.
 
@@ -41,18 +36,11 @@ If NO (the existing newsletter is still comprehensive and up-to-date), respond w
 """
 
 
-def get_current_week() -> tuple[str, str]:
-    now = datetime.now(PT)
-    year = str(now.year)
-    week = f"w{now.isocalendar()[1]:02d}"
-    return year, week
-
-
 def main():
     client = create_client()
 
-    year, week = get_current_week()
-    content_file = CONTENT_DIR / year / f"{week}.json"
+    year, edition = get_edition()
+    content_file = CONTENT_DIR / year / f"{edition}.json"
 
     if not content_file.exists():
         print(f"No finalized content found at {content_file}, skipping emergency check")
@@ -60,6 +48,8 @@ def main():
 
     with open(content_file) as f:
         content = json.load(f)
+
+    print(f"Edition: {edition}")
 
     sys.path.insert(0, str(SCRIPTS_DIR))
     from scrape import load_sources, fetch_rss
@@ -125,7 +115,7 @@ def main():
 
     from finalize import generate_email_html
     email_html = generate_email_html(content)
-    email_file = RAW_DIR / f"{year}-{week}-email.html"
+    email_file = RAW_DIR / f"{edition}-email.html"
     with open(email_file, "w") as f:
         f.write(email_html)
     print(f"Regenerated email HTML at {email_file}")

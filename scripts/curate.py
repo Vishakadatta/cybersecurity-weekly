@@ -6,17 +6,10 @@ and categorization, saves the enriched dataset.
 
 import json
 import sys
-from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 from gemini_client import ProjectError, create_client, generate_json, throttle
-
-SCRIPTS_DIR = Path(__file__).parent
-ROOT_DIR = SCRIPTS_DIR.parent
-CONTENT_DIR = ROOT_DIR / "content"
-RAW_DIR = CONTENT_DIR / "raw"
-
-PT = timezone(timedelta(hours=-7))
+from edition import RAW_DIR, get_edition
 
 SUMMARIZE_PROMPT = """You are a cybersecurity news editor. I will give you a list of raw articles scraped from security news sources this week.
 
@@ -43,13 +36,6 @@ Here are the articles:
 """
 
 
-def get_current_week() -> tuple[str, str]:
-    now = datetime.now(PT)
-    year = str(now.year)
-    week = f"w{now.isocalendar()[1]:02d}"
-    return year, week
-
-
 def chunk_articles(articles: list[dict], chunk_size: int = 10) -> list[list[dict]]:
     return [articles[i:i + chunk_size] for i in range(0, len(articles), chunk_size)]
 
@@ -57,8 +43,8 @@ def chunk_articles(articles: list[dict], chunk_size: int = 10) -> list[list[dict
 def main():
     client = create_client()
 
-    year, week = get_current_week()
-    cumulative_file = RAW_DIR / f"{year}-{week}-cumulative.json"
+    year, edition = get_edition()
+    cumulative_file = RAW_DIR / f"{edition}-cumulative.json"
 
     if not cumulative_file.exists():
         print(f"ERROR: No cumulative file found at {cumulative_file}", file=sys.stderr)
@@ -67,9 +53,10 @@ def main():
     with open(cumulative_file) as f:
         articles = json.load(f)
 
+    print(f"Edition: {edition}")
     print(f"Loaded {len(articles)} total articles")
 
-    curated_file = RAW_DIR / f"{year}-{week}-curated.json"
+    curated_file = RAW_DIR / f"{edition}-curated.json"
     already_curated = {}
     if curated_file.exists():
         with open(curated_file) as f:

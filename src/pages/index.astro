@@ -20,11 +20,14 @@ interface Article {
 }
 
 interface WeeklyContent {
-  week: string;
+  edition: string;
   year: string;
+  editionLabel?: string;
   generatedAt: string;
   subjectLine: string;
   articles: Article[];
+  // Legacy compat
+  week?: string;
 }
 
 let content: WeeklyContent | null = null;
@@ -32,10 +35,21 @@ let content: WeeklyContent | null = null;
 if (fs.existsSync(latestPath)) {
   const raw = fs.readFileSync(latestPath, 'utf-8');
   const pointer = JSON.parse(raw);
-  const weekPath = path.join(process.cwd(), 'content', pointer.year, `${pointer.week}.json`);
-  if (fs.existsSync(weekPath)) {
-    content = JSON.parse(fs.readFileSync(weekPath, 'utf-8'));
+  const edition = pointer.edition || pointer.week;
+  const contentPath = path.join(process.cwd(), 'content', pointer.year, `${edition}.json`);
+  if (fs.existsSync(contentPath)) {
+    content = JSON.parse(fs.readFileSync(contentPath, 'utf-8'));
   }
+}
+
+function formatEditionLabel(content: WeeklyContent): string {
+  if (content.editionLabel) return content.editionLabel;
+  const ed = content.edition || content.week || '';
+  if (/^\d{4}-\d{2}-\d{2}$/.test(ed)) {
+    const d = new Date(ed + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  }
+  return ed.replace('w', 'Week ');
 }
 
 const tier1 = content?.articles.filter((a) => a.tier === 1) ?? [];
@@ -53,7 +67,7 @@ const tier3 = content?.articles.filter((a) => a.tier === 3) ?? [];
           <>
             <div class="mb-8">
               <p class="mb-1 text-sm font-medium text-cyber-400">
-                Week {content.week.replace('w', '')} &middot; {content.year}
+                {formatEditionLabel(content)}
               </p>
               <h2 class="text-3xl font-extrabold tracking-tight text-white">
                 {content.subjectLine}
