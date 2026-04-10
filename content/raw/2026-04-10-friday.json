@@ -1,0 +1,1190 @@
+[
+  {
+    "id": "a43422fe0f90da63",
+    "title": "Russia Hacked Routers to Steal Microsoft Office Tokens",
+    "summary_raw": "Hackers linked to Russia's military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. The spying campaign allowed state-backed Russian hackers to quietly siphon authentication tokens from users on more than 18,000 networks without deploying any malicious software or code.",
+    "source": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/",
+    "publishedDate": "2026-04-07T17:02:44+00:00",
+    "scrapedAt": "2026-04-10T23:56:21.634951+00:00"
+  },
+  {
+    "id": "3e73213b65c0a33f",
+    "title": "Germany Doxes \u201cUNKN,\u201d Head of RU Ransomware Gangs REvil, GandCrab",
+    "summary_raw": "An elusive hacker who went by the handle \"UNKN\" and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021.",
+    "source": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+    "publishedDate": "2026-04-06T02:07:17+00:00",
+    "scrapedAt": "2026-04-10T23:56:21.635096+00:00"
+  },
+  {
+    "id": "31e66c59ed0c2570",
+    "title": "GlassWorm Campaign Uses Zig Dropper to Infect Multiple Developer IDEs",
+    "summary_raw": "Cybersecurity researchers have flagged yet another evolution of the&nbsp;ongoing GlassWorm campaign, which employs a new Zig dropper that's designed to stealthily infect all integrated development environments (IDEs) on a developer's&nbsp;machine.\nThe technique has been discovered in an Open VSX extension named&nbsp;\"specstudio.code-wakatime-activity-tracker,\" which masquerades as WakaTime, a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/glassworm-campaign-uses-zig-dropper-to.html",
+    "publishedDate": "2026-04-10T18:53:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.934746+00:00"
+  },
+  {
+    "id": "481ccb2d05e08e5e",
+    "title": "Browser Extensions Are the New AI Consumption Channel That No One Is Talking About",
+    "summary_raw": "While&nbsp;much of the discussion on AI security centers around protecting&nbsp;\u2018shadow\u2019 AI and GenAI consumption, there's a wide-open&nbsp;window nobody's guarding: AI browser extensions.&nbsp;\nA&nbsp;new report from LayerX&nbsp;exposes just how deep this blind spot goes, and why AI extensions may be the most dangerous AI threat surface in your network&nbsp;that isn't&nbsp;on anyone's&nbsp;",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/browser-extensions-are-new-ai.html",
+    "publishedDate": "2026-04-10T16:30:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.934859+00:00"
+  },
+  {
+    "id": "cfb9854931ce0400",
+    "title": "Google Rolls Out DBSC in Chrome 146 to Block Session Theft on Windows",
+    "summary_raw": "Google has&nbsp;made Device Bound Session Credentials&nbsp;(DBSC) generally available to all Windows users of its Chrome web browser, months after&nbsp;it began&nbsp;testing the security feature in open&nbsp;beta.\nThe public availability is currently limited to Windows users on Chrome 146, with macOS expansion planned in an upcoming Chrome&nbsp;release.\n\"This project represents a significant",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/google-rolls-out-dbsc-in-chrome-146-to.html",
+    "publishedDate": "2026-04-10T13:28:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.934950+00:00"
+  },
+  {
+    "id": "270b5565490f14e6",
+    "title": "Marimo RCE Flaw CVE-2026-39987 Exploited Within 10 Hours of Disclosure",
+    "summary_raw": "A critical security vulnerability&nbsp;in Marimo, an open-source Python notebook for data science and analysis, has been exploited within 10 hours of public disclosure, according&nbsp;to findings from&nbsp;Sysdig.\nThe vulnerability in question&nbsp;is CVE-2026-39987 (CVSS score: 9.3), a pre-authenticated remote code execution vulnerability impacting all versions of Marimo prior to and including",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html",
+    "publishedDate": "2026-04-10T13:07:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935035+00:00"
+  },
+  {
+    "id": "e8d45ef6fa2e6d28",
+    "title": "Backdoored Smart Slider 3 Pro Update Distributed via Compromised Nextend Servers",
+    "summary_raw": "Unknown threat actors have hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla to push a poisoned version containing a\u00a0backdoor.\nThe\u00a0incident impacts Smart Slider 3 Pro version 3.5.1.35\u00a0for WordPress, per WordPress security company Patchstack. Smart\u00a0Slider 3 is a popular WordPress slider plugin with more than 800,000 active installations across its free and Pro",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/backdoored-smart-slider-3-pro-update.html",
+    "publishedDate": "2026-04-10T11:58:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935139+00:00"
+  },
+  {
+    "id": "5bbe08dbb1813a57",
+    "title": "EngageLab SDK Flaw Exposed 50M Android Users, Including 30M Crypto Wallet Installs",
+    "summary_raw": "Details have emerged about a now-patched security vulnerability in a widely used third-party Android software development kit&nbsp;(SDK) called&nbsp;EngageLab&nbsp;SDK that could have put millions of cryptocurrency wallet users at&nbsp;risk.\n\"This flaw allows apps on the same device to bypass Android security sandbox and gain unauthorized access to private&nbsp;data,\" the Microsoft Defender",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/engagelab-sdk-flaw-exposed-50m-android.html",
+    "publishedDate": "2026-04-09T22:56:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935221+00:00"
+  },
+  {
+    "id": "4317c7b1bcb59307",
+    "title": "UAT-10362 Targets Taiwanese NGOs with LucidRook Malware in Spear-Phishing Campaigns",
+    "summary_raw": "A previously undocumented threat cluster&nbsp;dubbed UAT-10362 has been attributed to spear-phishing campaigns targeting Taiwanese non-governmental organizations (NGOs) and suspected universities to deploy a new Lua-based malware called LucidRook.\n\"LucidRook is a sophisticated stager that embeds a Lua interpreter and Rust-compiled libraries within a dynamic-link library (DLL) to download and",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/uat-10362-targets-taiwanese-ngos-with.html",
+    "publishedDate": "2026-04-09T21:53:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935301+00:00"
+  },
+  {
+    "id": "d749c39bec9990c5",
+    "title": "ThreatsDay Bulletin: Hybrid P2P Botnet, 13-Year-Old Apache RCE and 18 More Stories",
+    "summary_raw": "Thursday. Another week, another batch of things that probably should've been caught sooner but&nbsp;weren't.\nThis&nbsp;one's got some range \u2014 old vulnerabilities getting new life, a few \"why was that even possible\" moments, attackers leaning on platforms and tools you'd normally trust without thinking twice. Quiet&nbsp;escalations more than loud zero-days, but the kind that matter more in",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/threatsday-bulletin-hybrid-p2p-botnet.html",
+    "publishedDate": "2026-04-09T18:27:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935377+00:00"
+  },
+  {
+    "id": "c42603b40d60acae",
+    "title": "The Hidden Security Risks of Shadow AI in Enterprises",
+    "summary_raw": "As&nbsp;AI tools become more accessible, employees are adopting them without formal approval from IT and security teams. While&nbsp;these tools may boost productivity, automate tasks, or fill gaps in existing workflows, they also operate outside the visibility of security teams, bypassing controls and creating new blind spots in what is known as shadow AI. While&nbsp;similar to the phenomenon of",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/the-hidden-security-risks-of-shadow-ai.html",
+    "publishedDate": "2026-04-09T17:01:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935451+00:00"
+  },
+  {
+    "id": "96766918cbd3828f",
+    "title": "Adobe Reader Zero-Day Exploited via Malicious PDFs Since December 2025",
+    "summary_raw": "Threat actors have been exploiting a previously unknown zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December&nbsp;2025.\nThe finding, detailed by EXPMON's Haifei Li, has&nbsp;been described as a highly-sophisticated PDF exploit.&nbsp;The artifact (\"Invoice540.pdf\") first appeared on the VirusTotal platform on November 28, 2025.&nbsp;A second&nbsp;",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html",
+    "publishedDate": "2026-04-09T16:45:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935524+00:00"
+  },
+  {
+    "id": "709f2eafef2fb38f",
+    "title": "Bitter-Linked Hack-for-Hire Campaign Targets Journalists Across MENA Region",
+    "summary_raw": "An&nbsp;apparent hack-for-hire campaign likely orchestrated by a threat actor with suspected ties to the Indian government targeted journalists, activists, and government officials across the Middle East and North Africa (MENA), according to findings&nbsp;from Access&nbsp;Now, Lookout,&nbsp;and SMEX.\nTwo&nbsp;of the targets included prominent Egyptian journalists and government critics, Mostafa",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/bitter-linked-hack-for-hire-campaign.html",
+    "publishedDate": "2026-04-09T16:10:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935598+00:00"
+  },
+  {
+    "id": "446f367d59efede5",
+    "title": "New Chaos Variant Targets Misconfigured Cloud Deployments, Adds SOCKS Proxy",
+    "summary_raw": "Cybersecurity researchers have flagged a new variant&nbsp;ofmalware&nbsp;called Chaosthat'scapable of&nbsp;hitting misconfigured cloud deployments, marking an expansion of the botnet's targeting infrastructure.\n\"Chaos malware is increasingly targeting misconfigured cloud deployments, expanding beyond its traditional focus on routers and edge devices,\"&nbsp;Darktrace said in a new&nbsp;report.",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/new-chaos-variant-targets-misconfigured.html",
+    "publishedDate": "2026-04-08T23:21:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935671+00:00"
+  },
+  {
+    "id": "7499d029ef6ab422",
+    "title": "Masjesu Botnet Emerges as DDoS-for-Hire Service Targeting Global IoT Devices",
+    "summary_raw": "Cybersecurity researchers have lifted the curtain on a stealthy botnet that's designed for distributed denial-of-service (DDoS)&nbsp;attacks.\nCalled Masjesu, the botnet has been advertised via Telegram as a DDoS-for-hire service since it first surfaced in 2023. It's capable of targeting a wide range of IoT devices, such as routers and gateways, spanning multiple architectures.\n\"Built for",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/masjesu-botnet-emerges-as-ddos-for-hire.html",
+    "publishedDate": "2026-04-08T22:00:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935744+00:00"
+  },
+  {
+    "id": "6b414d8e994298aa",
+    "title": "APT28 Deploys PRISMEX Malware in Campaign Targeting Ukraine and NATO Allies",
+    "summary_raw": "The Russian threat actor known&nbsp;as APT28 (aka Forest Blizzard and Pawn Storm) has been linked to a fresh spear-phishing campaign targeting Ukraine and its allies to deploy a previously undocumented malware suite&nbsp;codenamed PRISMEX.\n\"PRISMEX combines advanced steganography, component object model (COM) hijacking, and legitimate cloud service abuse for command-and-control,\" Trend Micro",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/apt28-deploys-prismex-malware-in.html",
+    "publishedDate": "2026-04-08T19:20:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935816+00:00"
+  },
+  {
+    "id": "119a7d5f49b95184",
+    "title": "Shrinking the IAM Attack Surface through Identity Visibility and Intelligence Platforms (IVIP)",
+    "summary_raw": "The Fragmented State of Modern Enterprise&nbsp;Identity\nEnterprise IAM is approaching a breaking point. As&nbsp;organizations scale, identity becomes increasingly fragmented across thousands of applications, decentralized teams, machine identities, and autonomous&nbsp;systems.&nbsp;\nThe result is Identity Dark Matter: identity activity that sits outside the visibility of centralized IAM and",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/shrinking-iam-attack-surface-through.html",
+    "publishedDate": "2026-04-08T17:00:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935889+00:00"
+  },
+  {
+    "id": "4ad28f84ee160a81",
+    "title": "Anthropic's Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems",
+    "summary_raw": "Artificial Intelligence (AI) company Anthropic announced a new cybersecurity initiative&nbsp;called Project&nbsp;Glasswing&nbsp;that&nbsp;will use a preview version of its new frontier model, Claude Mythos,&nbsp;to find and address security vulnerabilities.\nThe model will&nbsp;be used by&nbsp;a small&nbsp;set of organizations, including Amazon Web Services, Apple, Broadcom, Cisco, CrowdStrike,&",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html",
+    "publishedDate": "2026-04-08T14:46:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.935970+00:00"
+  },
+  {
+    "id": "dd7601c31a1ceda0",
+    "title": "N. Korean Hackers Spread 1,700 Malicious Packages Across npm, PyPI, Go, Rust",
+    "summary_raw": "The North Korea-linked persistent campaign known&nbsp;as Contagious&nbsp;Interview has spread its tentacles by publishing malicious packages targeting the Go, Rust, and PHP ecosystems.\n\"The threat actor's packages were designed to impersonate legitimate developer tooling [...], while quietly functioning as malware loaders, extending Contagious Interview\u2019s established playbook into a coordinated",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/n-korean-hackers-spread-1700-malicious.html",
+    "publishedDate": "2026-04-08T13:17:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936044+00:00"
+  },
+  {
+    "id": "0f7fdb279162bf93",
+    "title": "Iran-Linked Hackers Disrupt U.S. Critical Infrastructure by Targeting Internet-Exposed PLCs",
+    "summary_raw": "Iran-affiliated cyber actors are targeting internet-facing operational technology (OT) devices across critical infrastructures in the U.S., including programmable logic controllers (PLCs), cybersecurity and intelligence&nbsp;agencies warned&nbsp;Tuesday.\n\"These attacks have led to diminished PLC functionality, manipulation of display data and, in some cases, operational disruption and financial",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html",
+    "publishedDate": "2026-04-08T09:53:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936205+00:00"
+  },
+  {
+    "id": "61aa63dbe4d1a709",
+    "title": "Russian State-Linked APT28 Exploits SOHO Routers in Global DNS Hijacking Campaign",
+    "summary_raw": "The Russia-linked threat actor known&nbsp;as APT28 (aka Forest Blizzard) has been linked to a new campaign that has compromised insecure MikroTik and TP-Link routers and modified their settings to turn them into malicious infrastructure under their control as part of a cyber espionage campaign since at least May&nbsp;2025.\nThe large-scale exploitation campaign has&nbsp;been codenamed&nbsp;",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/russian-state-linked-apt28-exploits.html",
+    "publishedDate": "2026-04-07T22:18:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936303+00:00"
+  },
+  {
+    "id": "ef6163fa1720db91",
+    "title": "[Webinar] How to Close Identity Gaps in 2026 Before AI Exploits Enterprise Risk",
+    "summary_raw": "In&nbsp;the rapid evolution of&nbsp;the 2026 threat landscape, a frustrating paradox has emerged for CISOs and security&nbsp;leaders: Identity programs are maturing, yet the risk is actually increasing.\nAccording to new research from&nbsp;the Ponemon&nbsp;Institute, hundreds of applications within the typical enterprise remain disconnected from centralized identity systems.&nbsp;These&nbsp;\"dark",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/webinar-how-to-close-identity-gaps-in.html",
+    "publishedDate": "2026-04-07T21:59:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936386+00:00"
+  },
+  {
+    "id": "2dfa187bf1992857",
+    "title": "Docker CVE-2026-34040 Lets Attackers Bypass Authorization and Gain Host Access",
+    "summary_raw": "A high-severity security vulnerability has been disclosed in Docker Engine that could permit an attacker to bypass authorization plugins&nbsp;(AuthZ) under specific circumstances.\nThe vulnerability, tracked&nbsp;as CVE-2026-34040 (CVSS score: 8.8), stems from an incomplete fix&nbsp;for CVE-2024-41110, a maximum-severity vulnerability in the same component that came to light in July&nbsp;2024.\n\"",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/docker-cve-2026-34040-lets-attackers.html",
+    "publishedDate": "2026-04-07T20:45:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936462+00:00"
+  },
+  {
+    "id": "6e3d72f05d8399ad",
+    "title": "Over 1,000 Exposed ComfyUI Instances Targeted in Cryptomining Botnet Campaign",
+    "summary_raw": "An active campaign has been observed targeting internet-exposed instances running ComfyUI, a popular stable diffusion platform, to enlist them into a cryptocurrency mining and proxy&nbsp;botnet.\n\"A purpose-built Python scanner continuously sweeps major cloud IP ranges for vulnerable targets, automatically installing malicious nodes&nbsp;via ComfyUI-Manager if no exploitable node is already",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/over-1000-exposed-comfyui-instances.html",
+    "publishedDate": "2026-04-07T18:16:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936536+00:00"
+  },
+  {
+    "id": "8de9dc30c2f8729f",
+    "title": "The Hidden Cost of Recurring Credential Incidents",
+    "summary_raw": "When talking about credential security, the focus usually lands on breach prevention. This&nbsp;makes sense&nbsp;when IBM\u2019s 2025 Cost of a Data Breach&nbsp;Report puts the average cost of a breach at $4.4&nbsp;million. Avoiding even one major incident is enough to justify most security investments, but that headline figure obscures the more persistent problems caused by recurring credential",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/the-hidden-cost-of-recurring-credential.html",
+    "publishedDate": "2026-04-07T17:00:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936608+00:00"
+  },
+  {
+    "id": "38e7d8eecb4192d3",
+    "title": "New GPUBreach Attack Enables Full CPU Privilege Escalation via GDDR6 Bit-Flips",
+    "summary_raw": "New academic research has identified multiple RowHammer attacks against high-performance graphics processing units (GPUs) that could be exploited to escalate privileges and, in some cases, even take full control of a&nbsp;host.\nThe efforts have been&nbsp;codenamed GPUBreach, GDDRHammer,&nbsp;and GeForge.\nGPUBreach goes a step further&nbsp;than GPUHammer, demonstrating for the first time that",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/new-gpubreach-attack-enables-full-cpu.html",
+    "publishedDate": "2026-04-07T14:08:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936678+00:00"
+  },
+  {
+    "id": "ce89979ed276f023",
+    "title": "China-Linked Storm-1175 Exploits Zero-Days to Rapidly Deploy Medusa Ransomware",
+    "summary_raw": "A&nbsp;China-based threat actor known for deploying Medusa ransomware has been linked to the weaponization of a combination of zero-day and N-day vulnerabilities to orchestrate \"high-velocity\" attacks and break into susceptible internet-facing&nbsp;systems.\n\"The threat actor's high operational tempo and proficiency in identifying exposed perimeter assets have proven successful, with recent",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/china-linked-storm-1175-exploits-zero.html",
+    "publishedDate": "2026-04-07T12:05:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936748+00:00"
+  },
+  {
+    "id": "f3e2832baa07b2b8",
+    "title": "Flowise AI Agent Builder Under Active CVSS 10.0 RCE Exploitation; 12,000+ Instances Exposed",
+    "summary_raw": "Threat actors are exploiting a maximum-severity security flaw in Flowise, an open-source artificial intelligence (AI) platform, according to new findings from VulnCheck.\nThe vulnerability in question&nbsp;is CVE-2025-59528 (CVSS score: 10.0), a code injection vulnerability that could result in remote code execution.\n\"The CustomMCP node allows users to input configuration settings for connecting",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/flowise-ai-agent-builder-under-active.html",
+    "publishedDate": "2026-04-07T11:26:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936819+00:00"
+  },
+  {
+    "id": "b347323482451034",
+    "title": "Iran-Linked Password-Spraying Campaign Targets 300+ Israeli Microsoft 365 Organizations",
+    "summary_raw": "An&nbsp;Iran-nexus threat actor is suspected to be behind a password-spraying campaign targeting Microsoft 365 environments in Israel and the U.A.E. amid&nbsp;ongoing conflict in the Middle&nbsp;East.\nThe&nbsp;activity, assessed to be ongoing, was carried out in three distinct attack waves that took place on March 3, March 13, and March 23, 2026, per Check&nbsp;Point.\n\"The campaign is primarily",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/iran-linked-password-spraying-campaign.html",
+    "publishedDate": "2026-04-07T00:07:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936891+00:00"
+  },
+  {
+    "id": "c4d3dd18d6625eff",
+    "title": "DPRK-Linked Hackers Use GitHub as C2 in Multi-Stage Attacks Targeting South Korea",
+    "summary_raw": "Threat&nbsp;actors likely associated with the Democratic People's Republic of Korea (DPRK) have been observed using GitHub as command-and-control (C2) infrastructure in multi-stage attacks targeting organizations in South&nbsp;Korea.\nThe&nbsp;attack chain,&nbsp;per Fortinet FortiGuard&nbsp;Labs, involves obfuscated Windows shortcut (LNK) files acting as the starting point to drop a decoy PDF",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/dprk-linked-hackers-use-github-as-c2-in.html",
+    "publishedDate": "2026-04-06T21:54:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.936961+00:00"
+  },
+  {
+    "id": "e4657c85456a926c",
+    "title": "Multi-OS Cyberattacks: How SOCs Close a Critical Risk in 3 Steps",
+    "summary_raw": "Your attack surface no&nbsp;longer lives&nbsp;on one operating system, and neither do the campaigns targeting&nbsp;it. In enterprise environments, attackers move across Windows endpoints, executive MacBooks, Linux infrastructure, and mobile devices, taking advantage of the fact that many SOC&nbsp;workflows are still fragmented by&nbsp;platform.&nbsp;\nFor security leaders, this creates&nbsp;a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/multi-os-cyberattacks-how-socs-close.html",
+    "publishedDate": "2026-04-06T18:30:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937033+00:00"
+  },
+  {
+    "id": "2611bf1c3fbf84d1",
+    "title": "\u26a1 Weekly Recap: Axios Hack, Chrome 0-Day, Fortinet Exploits, Paragon Spyware and More",
+    "summary_raw": "This&nbsp;week had real hits. The&nbsp;key software got tampered with. Active&nbsp;bugs showed up in the tools people use every day. Some&nbsp;attacks didn\u2019t even need much effort because the path was already&nbsp;there.\nOne weak spot now spreads wider than before. What&nbsp;starts small can reach a lot of systems fast. New&nbsp;bugs, faster use, less time to&nbsp;react.\nThat\u2019s this week. Read&",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/weekly-recap-axios-hack-chrome-0-day.html",
+    "publishedDate": "2026-04-06T18:16:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937122+00:00"
+  },
+  {
+    "id": "35768df7e6244a52",
+    "title": "How LiteLLM Turned Developer Machines Into Credential Vaults for Attackers",
+    "summary_raw": "The&nbsp;most active piece of enterprise infrastructure in the company is the developer workstation. That&nbsp;laptop is where credentials are created, tested, cached, copied, and reused across services, bots, build tools, and now local AI&nbsp;agents.\nIn&nbsp;March 2026, the TeamPCP threat&nbsp;actor proved just how&nbsp;valuable developer&nbsp;machines are. Their&nbsp;supply chain attack on",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/how-litellm-turned-developer-machines.html",
+    "publishedDate": "2026-04-06T17:15:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937196+00:00"
+  },
+  {
+    "id": "100bdf733cba26a8",
+    "title": "Qilin and Warlock Ransomware Use Vulnerable Drivers to Disable 300+ EDR Tools",
+    "summary_raw": "Threat actors associated&nbsp;with Qilin&nbsp;and Warlock ransomware operations&nbsp;have been&nbsp;observed using the bring your own vulnerable driver&nbsp;(BYOVD) technique to silence security tools running on compromised hosts, according to findings from Cisco Talos and Trend&nbsp;Micro.\nQilin attacks analyzed by Talos&nbsp;have been&nbsp;found to deploy a malicious DLL named \"msimg32.dll,\"",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html",
+    "publishedDate": "2026-04-06T15:37:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937266+00:00"
+  },
+  {
+    "id": "8fa3b0e305709ecd",
+    "title": "BKA Identifies REvil Leaders Behind 130 German Ransomware Attacks",
+    "summary_raw": "Germany's Federal Criminal Police Office (aka BKA or the Bundeskriminalamt) has unmasked the real identities of two of the key figures associated with the now-defunct REvil (aka Sodinokibi) ransomware-as-a-service (RaaS) operation.\nOne of the threat actors, who went by the alias UNKN, functioned as a representative of the group, advertising the ransomware in June 2019 on the XSS cybercrime forum",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/bka-identifies-revil-leaders-behind-130.html",
+    "publishedDate": "2026-04-06T12:29:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937334+00:00"
+  },
+  {
+    "id": "db193bce1a8a02d0",
+    "title": "$285 Million Drift Hack Traced to Six-Month DPRK Social Engineering Operation",
+    "summary_raw": "Drift&nbsp;has revealed that the April 1, 2026, attack that led to&nbsp;the theft of $285&nbsp;million was the culmination of a months-long targeted and meticulously planned social engineering operation undertaken by the Democratic People's Republic of Korea (DPRK) that began in the fall of&nbsp;2025.\nThe&nbsp;Solana-based decentralized exchange described it as \"an attack six months in the",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/285-million-drift-hack-traced-to-six.html",
+    "publishedDate": "2026-04-05T23:55:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937402+00:00"
+  },
+  {
+    "id": "6c619c60f949c251",
+    "title": "36 Malicious npm Packages Exploited Redis, PostgreSQL to Deploy Persistent Implants",
+    "summary_raw": "Cybersecurity researchers have discovered 36 malicious packages in the npm registry that are disguised as Strapi CMS plugins but come with different payloads to facilitate Redis and PostgreSQL exploitation, deploy reverse shells, harvest credentials, and drop a persistent&nbsp;implant.\n\"Every package contains three files (package.json, index.js, postinstall.js), has no description, repository,",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/36-malicious-npm-packages-exploited.html",
+    "publishedDate": "2026-04-05T10:37:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937476+00:00"
+  },
+  {
+    "id": "ea48c77b90e90c85",
+    "title": "Fortinet Patches Actively Exploited CVE-2026-35616 in FortiClient EMS",
+    "summary_raw": "Fortinet has released out-of-band patches for a critical security flaw impacting FortiClient EMS that it said has been exploited in the&nbsp;wild.\nThe&nbsp;vulnerability, tracked&nbsp;as CVE-2026-35616 (CVSS score: 9.1), has been described as a pre-authentication API access bypass leading to privilege escalation.\n\"An improper access control vulnerability [CWE-284] in FortiClient EMS may allow an",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
+    "publishedDate": "2026-04-05T10:02:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937545+00:00"
+  },
+  {
+    "id": "4e718ba655225952",
+    "title": "China-Linked TA416 Targets European Governments with PlugX and OAuth-Based Phishing",
+    "summary_raw": "A China-aligned threat actor has set its sights on European government and diplomatic organizations since mid-2025,&nbsp;following a two-year&nbsp;period of minimal targeting in the&nbsp;region.\nThe campaign has been attributed&nbsp;to TA416, a cluster of activity that overlaps with DarkPeony, RedDelta, Red Lich, SmugX, UNC6384, and Vertigo&nbsp;Panda.\n\"This TA416 activity included multiple",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/china-linked-ta416-targets-european.html",
+    "publishedDate": "2026-04-03T23:04:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937617+00:00"
+  },
+  {
+    "id": "c32575bb95606b8c",
+    "title": "Microsoft Details Cookie-Controlled PHP Web Shells Persisting via Cron on Linux Servers",
+    "summary_raw": "Threat&nbsp;actors are increasingly using HTTP cookies as a control channel for PHP-based web shells on Linux servers and to achieve remote code execution, according to findings from the Microsoft Defender Security Research&nbsp;Team.\n\"Instead of exposing command execution through URL parameters or request bodies, these web shells rely on threat actor-supplied cookie values to gate execution,",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/microsoft-details-cookie-controlled-php.html",
+    "publishedDate": "2026-04-03T21:02:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937688+00:00"
+  },
+  {
+    "id": "3ea9b0c959774c01",
+    "title": "UNC1069 Social Engineering of Axios Maintainer Led to npm Supply Chain Attack",
+    "summary_raw": "The&nbsp;maintainer of the Axios npm package has confirmed that the supply chain compromise was the result of a highly-targeted social engineering campaign orchestrated by North Korean threat actors tracked&nbsp;as UNC1069.\nMaintainer Jason Saayman said the attackers tailored their social engineering efforts \"specifically to me\" by first approaching him under the guise of the founder of a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/unc1069-social-engineering-of-axios.html",
+    "publishedDate": "2026-04-03T16:34:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937757+00:00"
+  },
+  {
+    "id": "4023885f3def8d4f",
+    "title": "Why Third-Party Risk Is the Biggest Gap in Your Clients' Security Posture",
+    "summary_raw": "The next major&nbsp;breach hitting your clients probably won't come&nbsp;from inside their&nbsp;walls. It'll come through a vendor they trust, a SaaS tool their finance team signed up for, or a subcontractor nobody in IT knows about. That's the new attack surface, and most organizations are underprepared for&nbsp;it.\nCynomi's new&nbsp;guide, Securing the Modern Perimeter: The Rise of Third-Party",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/why-third-party-risk-is-biggest-gap-in.html",
+    "publishedDate": "2026-04-03T16:30:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937832+00:00"
+  },
+  {
+    "id": "f4f12620f7979f46",
+    "title": "New SparkCat Variant in iOS, Android Apps Steals Crypto Wallet Recovery Phrase Images",
+    "summary_raw": "Cybersecurity researchers&nbsp;have discovered a new version of&nbsp;the SparkCat malware on the Apple App Store and Google Play Store, more than a year after the&nbsp;trojan was discovered targeting both the mobile operating&nbsp;systems.\nThe&nbsp;malware&nbsp;has&nbsp;been found to conceal itself within seemingly benign apps, such as enterprise messengers and food delivery services, while",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/new-sparkcat-variant-in-ios-android.html",
+    "publishedDate": "2026-04-03T14:40:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937904+00:00"
+  },
+  {
+    "id": "6ca7b5bfa84bd5da",
+    "title": "Drift Loses $285 Million in Durable Nonce Social Engineering Attack Linked to DPRK",
+    "summary_raw": "Solana-based decentralized exchange Drift has confirmed that attackers drained about $285 million from the platform during a security incident that took place on April 1,&nbsp;2026.\n\"Earlier today, a malicious actor gained unauthorized access to Drift Protocol through a novel attack involving durable nonces, resulting in a rapid takeover of Drift\u2019s Security Council administrative powers,\" the&",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/drift-loses-285-million-in-durable.html",
+    "publishedDate": "2026-04-03T14:05:00+05:30",
+    "scrapedAt": "2026-04-10T23:56:21.937973+00:00"
+  },
+  {
+    "id": "bdb849dd443bb535",
+    "title": "Nearly 4,000 US industrial devices exposed to Iranian cyberattacks",
+    "summary_raw": "The attack surface targeted by Iranian-linked hackers in cyberattacks against U.S. critical infrastructure networks includes thousands of Internet-exposed programmable logic controllers (PLCs) manufactured by Rockwell Automation. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/nearly-4-000-us-industrial-devices-exposed-to-iranian-cyberattacks/",
+    "publishedDate": "2026-04-10T11:52:45-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.085334+00:00"
+  },
+  {
+    "id": "cc0ed71e7bf41ba8",
+    "title": "Analysis of one billion CISA KEV remediation records exposes limits of human-scale security",
+    "summary_raw": "Analysis of 1 billion CISA KEV remediation records reveal a breaking point for human-scale security. Qualys shows most critical flaws are exploited before defenders can patch them. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/analysis-of-one-billion-cisa-kev-remediation-records-exposes-limits-of-human-scale-security/",
+    "publishedDate": "2026-04-10T10:01:11-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.085443+00:00"
+  },
+  {
+    "id": "657026195ccdc958",
+    "title": "CPUID hacked to deliver malware via CPU-Z, HWMonitor downloads",
+    "summary_raw": "Hackers gained access to an API for the CPUID project and\u00a0changed the download links on the official website to serve malicious executables for the popular CPU-Z and HWMonitor tools. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/supply-chain-attack-at-cpuid-pushes-malware-with-cpu-z-hwmonitor/",
+    "publishedDate": "2026-04-10T09:12:42-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.085534+00:00"
+  },
+  {
+    "id": "6c04a4021eadf218",
+    "title": "Microsoft: Canadian employees targeted in payroll pirate attacks",
+    "summary_raw": "A financially motivated threat actor tracked as Storm-2755 is stealing Canadian employees' salary payments after hijacking their accounts in payroll pirate attacks. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-canadian-employees-targeted-in-payroll-pirate-attacks/",
+    "publishedDate": "2026-04-10T07:56:14-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.085618+00:00"
+  },
+  {
+    "id": "7e6599927f0ae8ce",
+    "title": "Google rolls out Gmail end-to-end encryption on mobile devices",
+    "summary_raw": "Google says Gmail end-to-end encryption (E2EE) is now available on all Android and iOS devices, allowing enterprise users to read and compose emails without additional tools. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/google/google-rolls-out-gmail-end-to-end-encryption-on-mobile-devices/",
+    "publishedDate": "2026-04-10T06:44:08-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.085698+00:00"
+  },
+  {
+    "id": "ec3bd017ede6ceaf",
+    "title": "New \u2018LucidRook\u2019 malware used in targeted attacks on NGOs, universities",
+    "summary_raw": "A new Lua-based malware, called LucidRook, is being used in spear-phishing campaigns targeting non-governmental organizations and universities in Taiwan. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-lucidrook-malware-used-in-targeted-attacks-on-ngos-universities/",
+    "publishedDate": "2026-04-09T18:04:31-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.085777+00:00"
+  },
+  {
+    "id": "4fa879a4fc5ddf18",
+    "title": "New VENOM phishing attacks steal senior executives' Microsoft logins",
+    "summary_raw": "Threat actors using a previously undocumented phishing-as-a-service (PhaaS) platform called \"VENOM\" are targeting credentials of C-suite executives across multiple industries. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-venom-phishing-attacks-steal-senior-executives-microsoft-logins/",
+    "publishedDate": "2026-04-09T17:37:04-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.085855+00:00"
+  },
+  {
+    "id": "28dd82d6463b5722",
+    "title": "Healthcare IT solutions provider ChipSoft hit by ransomware attack",
+    "summary_raw": "Dutch healthcare software vendor ChipSoft has been impacted by a ransomware attack that forced the company to take offline its website and digital services for patients and healthcare providers. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/healthcare-it-solutions-provider-chipsoft-hit-by-ransomware-attack/",
+    "publishedDate": "2026-04-09T15:46:44-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.085932+00:00"
+  },
+  {
+    "id": "2a9ae0687e859480",
+    "title": "Google Chrome adds infostealer protection against session cookie theft",
+    "summary_raw": "Google has rolled out Device Bound Session Credentials (DBSC) protection in Chrome 146 for Windows, designed to block info-stealing malware from harvesting session cookies. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/google-chrome-adds-infostealer-protection-against-session-cookie-theft/",
+    "publishedDate": "2026-04-09T14:33:29-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.086008+00:00"
+  },
+  {
+    "id": "1a5f6a62910b4da7",
+    "title": "Smart Slider updates hijacked to push malicious WordPress, Joomla versions",
+    "summary_raw": "Hackers hijacked the update system for the Smart Slider 3 Pro plugin for WordPress and Joomla, and pushed a malicious version with multiple backdoors. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/smart-slider-updates-hijacked-to-push-malicious-wordpress-joomla-versions/",
+    "publishedDate": "2026-04-09T12:15:26-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.086101+00:00"
+  },
+  {
+    "id": "73d243b380ff9459",
+    "title": "When attackers already have the keys, MFA is just another door to open",
+    "summary_raw": "Stolen credentials turn authentication systems into the attack surface. Token shows how wearable biometric authentication verifies the user\u2014not the session\u2014blocking phishing relays and MFA bypass. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/when-attackers-already-have-the-keys-mfa-is-just-another-door-to-open/",
+    "publishedDate": "2026-04-09T10:02:12-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.086181+00:00"
+  },
+  {
+    "id": "029aeb10a153ba83",
+    "title": "Webinar: From noise to signal - What threat actors are targeting next",
+    "summary_raw": "Threat actors often signal their intentions before launching attacks, from dark web chatter to access-broker listings and credential requests. Join our upcoming webinar with Flare Systems to learn how to turn those early warning signs into proactive defensive action before an intrusion begins. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/webinar-from-noise-to-signal-what-threat-actors-are-targeting-next/",
+    "publishedDate": "2026-04-09T08:20:28-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.086257+00:00"
+  },
+  {
+    "id": "8e793b4f519b56f8",
+    "title": "Eurail says December data breach impacts 300,000 individuals",
+    "summary_raw": "Eurail B.V., a European travel operator that provides digital passes covering 33 national railways, says attackers stole the personal information of over 300,000 individuals in a December 2025 data breach. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/eurail-says-december-data-breach-impacts-300-000-individuals/",
+    "publishedDate": "2026-04-09T06:31:54-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.086329+00:00"
+  },
+  {
+    "id": "ec05b0b387270cc0",
+    "title": "Hackers exploiting Acrobat Reader zero-day flaw since December",
+    "summary_raw": "Attackers have been exploiting a zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/",
+    "publishedDate": "2026-04-09T05:22:35-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.086402+00:00"
+  },
+  {
+    "id": "976cafdc026bbad6",
+    "title": "Hackers steal $3.6 million from crypto ATM giant Bitcoin Depot",
+    "summary_raw": "Bitcoin Depot, which operates one of the largest Bitcoin ATM networks, says attackers stole $3.665 million worth of Bitcoin from its crypto wallets after breaching its systems last month. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/crypto-atm-giant-bitcoin-depot-says-hackers-stole-36-million-from-its-wallets/",
+    "publishedDate": "2026-04-09T03:44:55-04:00",
+    "scrapedAt": "2026-04-10T23:56:22.086475+00:00"
+  },
+  {
+    "id": "0217706c843390e2",
+    "title": "Hims Breach Exposes the Most Sensitive Kinds of PHI",
+    "summary_raw": "Threat actors breached the telehealth brand, and now they may know who's bald, overweight, and impotent. What could they do with that information?",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/hims-breach-exposes-sensitive-phi",
+    "publishedDate": "2026-04-10T20:02:30+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469125+00:00"
+  },
+  {
+    "id": "f9de54e025ff462a",
+    "title": "Your Next Breach Will Look Like Business as Usual",
+    "summary_raw": "These are the fundamental detection model shifts cybersecurity teams need to make to keep up with the rising number of credential-based attacks.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/identity-access-management-security/your-next-breach-business-as-usual",
+    "publishedDate": "2026-04-10T19:21:55+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469228+00:00"
+  },
+  {
+    "id": "dc8442d17b438820",
+    "title": "FINRA Launches Financial Intelligence Fusion Center to Combat Cybersecurity and Fraud Threats",
+    "summary_raw": "",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/finra-launches-financial-intelligence-fusion-center",
+    "publishedDate": "2026-04-10T15:52:28+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469316+00:00"
+  },
+  {
+    "id": "8e4a1ba4f2f232cc",
+    "title": "Orange Business Reimagines Enterprise Voice Communications With Trust and AI",
+    "summary_raw": "",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/orange-business-enterprise-voice-comms",
+    "publishedDate": "2026-04-10T15:05:14+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469399+00:00"
+  },
+  {
+    "id": "0bd59563c48f1c1e",
+    "title": "Industrial Controllers Still Vulnerable As Conflicts Move to Cyber",
+    "summary_raw": "The US government warns programmable logic controllers are being targeted, and research turns up 179 vulnerable operational technology (OT) devices.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/ics-ot-security/industrial-controllers-vulnerable-conflicts-cyber",
+    "publishedDate": "2026-04-10T13:30:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469474+00:00"
+  },
+  {
+    "id": "b5198c96e0d6bb59",
+    "title": "Can Anthropic Keep Its Exploit-Writing AI Out of the Wrong Hands?",
+    "summary_raw": "Its Mythos Preview model, which can allegedly find and exploit critical zero-days, also comes with certain controls, the vendor said.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/anthropic-exploit-writing-mythos-ai-safe",
+    "publishedDate": "2026-04-10T13:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469547+00:00"
+  },
+  {
+    "id": "08efc780ad9e1f06",
+    "title": "Russia's 'Fancy Bear' APT Continues Its Global Onslaught",
+    "summary_raw": "Victims don't need to match the cyber espionage group's technical sophistication, experts say. But patching and some form of zero trust are now non-negotiable.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/russias-fancy-bear-apt-continues-global-onslaught",
+    "publishedDate": "2026-04-09T20:50:37+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469620+00:00"
+  },
+  {
+    "id": "53b2c471b61fb11b",
+    "title": "'BlueHammer' Windows Zero-Day Exploit Signals Microsoft Bug Disclosure Issues",
+    "summary_raw": "Under the alias 'Chaotic Eclipse,' a researcher released a PoC exploit for a zero-day flaw that allows for system takeover by a local user, citing an undisclosed beef with Microsoft.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/bluehammer-windows-exploit-microsoft-bug-disclosure-issues",
+    "publishedDate": "2026-04-09T20:13:34+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469690+00:00"
+  },
+  {
+    "id": "0dfaf9731297418f",
+    "title": "Do Ceasefires Slow Cyberattacks? History Suggests Not",
+    "summary_raw": "The cybersecurity community is waiting with bated breath to see if Iranian hackers will honor a ceasefire that doesn't actually name or directly involve them.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-analytics/ceasefires-slow-cyberattacks-history",
+    "publishedDate": "2026-04-09T18:15:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469761+00:00"
+  },
+  {
+    "id": "27aef779321df49a",
+    "title": "Russia's Forest Blizzard Nabs Rafts of Logins via SOHO Routers",
+    "summary_raw": "Heard of fileless malware? How about malwareless cyber espionage? Russia's APT28 is spying on global organizations by modifying just one DNS setting in vulnerable routers.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/russia-forest-blizzard-logins-soho-routers",
+    "publishedDate": "2026-04-09T01:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469829+00:00"
+  },
+  {
+    "id": "bc4f338bbfe92be3",
+    "title": "Threat Actors Get Crafty With Emojis to Escape Detection",
+    "summary_raw": "When \ud83e\udd16 means &quot;bot available,&quot; \ud83e\uddf0 signifies &quot;toolkit,&quot; or \ud83d\udcb0\ud83d\udcb0\ud83d\udcb0 translates to &quot;big ransom,&quot; bad actors can evade filters and keep it all on the down-low.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/emojis-power-covert-threat-actor-communications",
+    "publishedDate": "2026-04-08T20:21:32+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469898+00:00"
+  },
+  {
+    "id": "10eb6410dd166cbc",
+    "title": "AI-Led Remediation Crisis Prompts HackerOne to Pause Bug Bounties",
+    "summary_raw": "Discovery used to be the bottleneck for open source bugs, but with automated discovery, remediation's the bottleneck, which bounties don't fund.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/ai-led-remediation-crisis-prompts-hackerone-pause-bug-bounties",
+    "publishedDate": "2026-04-08T19:47:32+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.469966+00:00"
+  },
+  {
+    "id": "b57b90fd67886849",
+    "title": "Fraud Rockets Higher in Mobile-First Latin America",
+    "summary_raw": "Cyber-fraudsters move quickly from compromised devices to account takeover to funds transfer, shifting money before many financial institutions can react.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/fraud-mobile-first-latin-america",
+    "publishedDate": "2026-04-08T15:45:11+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470033+00:00"
+  },
+  {
+    "id": "f14c78a302657823",
+    "title": "Full Sail University to Open IBM Cyber Defense Range Powered by AWS and Cloud Range on Campus",
+    "summary_raw": "",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/full-sail-university-ibm-cyber-defense-range-aws-cloud-range",
+    "publishedDate": "2026-04-08T14:43:49+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470121+00:00"
+  },
+  {
+    "id": "13aa3573117506f2",
+    "title": "Niobium Introduces The Fog",
+    "summary_raw": "",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/niobium-introduces-the-fog",
+    "publishedDate": "2026-04-08T14:22:33+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470194+00:00"
+  },
+  {
+    "id": "5ff69ce05deb559d",
+    "title": "Pluralsight Launches SecureReady to Help Organizations Build Job-Ready Cybersecurity Teams",
+    "summary_raw": "",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/remote-workforce/pluralsight-launches-secureready-cybersecurity-teams",
+    "publishedDate": "2026-04-08T14:08:22+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470263+00:00"
+  },
+  {
+    "id": "cfe2ecbd919b639f",
+    "title": "Iranian Threat Actors Disrupt US Critical Infrastructure via Exposed PLCs",
+    "summary_raw": "Attackers compromised Internet-facing OT devices and caused file and display manipulation, operational disruption, and financial losses across sectors.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/ics-ot-security/iranian-threat-actors-us-critical-infrastructure-exposed-plcs",
+    "publishedDate": "2026-04-08T13:46:29+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470331+00:00"
+  },
+  {
+    "id": "f1f6f160f49c3c14",
+    "title": "Storm-1175 Deploys Medusa Ransomware at 'High Velocity'",
+    "summary_raw": "Microsoft says the financially motivated cybercrime group has exploited n-day and zero-day vulnerabilities in campaigns predicated on speed.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/storm-1175-medusa-ransomware-high-velocity",
+    "publishedDate": "2026-04-07T20:15:07+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470402+00:00"
+  },
+  {
+    "id": "5bc64802b3f02479",
+    "title": "Grafana Patches AI Bug That Could Have Leaked User Data",
+    "summary_raw": "By hiding malicious instructions on an attacker-controlled Web page, AI could ingest orders that appear benign but return sensitive data to the attacker's server.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/grafana-patches-ai-bug-leaked-user-data",
+    "publishedDate": "2026-04-07T19:52:26+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470469+00:00"
+  },
+  {
+    "id": "9f79e9e655807c4b",
+    "title": "RSAC 2026: How AI Is Reshaping Cybersecurity Faster Than Ever",
+    "summary_raw": "Dark Reading's Kelly Jackson Higgins shares insights on the past, present, and future of cybersecurity after attending RSAC 2026 Conference.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/rsac-2026-how-ai-is-reshaping-cybersecurity-faster-than-ever",
+    "publishedDate": "2026-04-07T14:57:16+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470535+00:00"
+  },
+  {
+    "id": "eb78829b259b1a31",
+    "title": "Human vs. AI: Debates Shape RSAC 2026 Cybersecurity Trends",
+    "summary_raw": "As AI dominated RSAC 2026, CISOs and industry leaders debated its role in security, from agentic applications to the challenges of scaling human involvement in decision-making.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/human-vs-ai-debates-shape-rsac-2026-cybersecurity-trends",
+    "publishedDate": "2026-04-07T14:36:44+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470602+00:00"
+  },
+  {
+    "id": "4ba8295cfdf25c13",
+    "title": "Lies, Damned Lies, and Cybersecurity Metrics",
+    "summary_raw": "A panel of five C-suite leaders discuss how cybersecurity success is measured and why it isn't improving results.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/lies-damned-lies-cybersecurity-metrics",
+    "publishedDate": "2026-04-07T14:26:02+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470671+00:00"
+  },
+  {
+    "id": "d673f045e564d7aa",
+    "title": "Focusing on the People in Cybersecurity at RSAC 2026 Conference",
+    "summary_raw": "AI dominated RSAC 2026 Conference, but it's still the humans in cybersecurity who matter most.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/focusing-people-cybersecurity-rsac2026",
+    "publishedDate": "2026-04-07T13:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470739+00:00"
+  },
+  {
+    "id": "51a2857628cf6960",
+    "title": "AI-Assisted Supply Chain Attack Targets GitHub",
+    "summary_raw": "PRT-scan is the second campaign in recent months where a threat actor appears to have leveraged AI for automated targeting of a widespread GitHub misconfiguration.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/ai-assisted-supply-chain-attack-targets-github",
+    "publishedDate": "2026-04-06T21:38:53+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470808+00:00"
+  },
+  {
+    "id": "e7ba873facc31a55",
+    "title": "Axios Attack Shows How Complex Social Engineering Is Industrialized",
+    "summary_raw": "The attack on the popular NPM package Axios is just one of many targeting maintainers and has shone a light on how threat actors can scale sophisticated social engineering campaigns.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/axios-attack-complex-social-engineering-industrialized",
+    "publishedDate": "2026-04-06T20:55:44+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470875+00:00"
+  },
+  {
+    "id": "1e1420129366c7e6",
+    "title": "Fortinet Issues Emergency Patch for FortiClient Zero-Day",
+    "summary_raw": "The authentication bypass flaw, tracked as CVE-2026-35616, is the latest in a series of Fortinet vulnerabilities that have been exploited in the wild.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/fortinet-emergency-patch-forticlient-zero-day",
+    "publishedDate": "2026-04-06T20:24:19+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.470941+00:00"
+  },
+  {
+    "id": "eef607bf4ec41cc9",
+    "title": "Automated Credential Harvesting Campaign Exploits React2Shell Flaw",
+    "summary_raw": "An emerging threat cluster tracked as UAT-10608 is exploiting vulnerable Web-exposed Next.js apps and using an automated tool to exfiltrate credentials, secrets, and other system data.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/automated-credential-harvesting-campaign-react2shell",
+    "publishedDate": "2026-04-06T15:31:09+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471007+00:00"
+  },
+  {
+    "id": "5fe351a06b5efc91",
+    "title": "Shadow AI in Healthcare Is Here to Stay",
+    "summary_raw": "Medical professionals are not going to stop using AI tools to manage growing workloads. Organizations should prioritize bolstering security protocols to limit their blast radius.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/shadow-ai-in-healthcare-is-here-to-stay",
+    "publishedDate": "2026-04-06T14:07:50+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471085+00:00"
+  },
+  {
+    "id": "b2213e0481ee3ce5",
+    "title": "OWASP GenAI Security Project Gets Update, New Tools Matrix",
+    "summary_raw": "In recognition of 21 generative AI risks, the standards group recommends that companies take separate but linked approaches to defending GenAI and agentic AI systems.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/owasp-genai-security-project-update-matrix",
+    "publishedDate": "2026-04-06T13:49:27+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471152+00:00"
+  },
+  {
+    "id": "267088feb9d81275",
+    "title": "Inconsistent Privacy Labels Don't Tell Users What They Are Getting",
+    "summary_raw": "Data privacy labels are a great idea for mobile apps, but the current versions just aren't good enough.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/data-privacy/inconsistent-privacy-labels-not-enough",
+    "publishedDate": "2026-04-03T21:05:07+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471217+00:00"
+  },
+  {
+    "id": "3bc47dc99c6b8bdc",
+    "title": "Apple Breaks Precedent, Patches DarkSword for iOS 18",
+    "summary_raw": "Even organizations with users unwilling or unable to adopt iOS 26 can now protect themselves from a severe mobile OS-cracking tool.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/apple-patches-darksword-ios-18",
+    "publishedDate": "2026-04-03T17:08:57+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471290+00:00"
+  },
+  {
+    "id": "0e87efe1913ee88a",
+    "title": "Blast Radius of TeamPCP Attacks Expands Amid Hacker Infighting",
+    "summary_raw": "As organizations disclose breaches tied to TeamPCP's supply chain attacks, ShinyHunters and Lapsus$ are getting involved, taking credit, and creating a murky situation for enterprises.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/teampcp-attacks-hacker-infighting",
+    "publishedDate": "2026-04-03T15:11:16+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471356+00:00"
+  },
+  {
+    "id": "58e3330c8e6173ea",
+    "title": "Picking Up 'Skull Vibrations'? Could Be XR Headset Authentication",
+    "summary_raw": "&quot;Skull vibration harmonics generated by vital signs&quot; can be used to sign in to VR, AR, and MR headsets, according to emerging research.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/remote-workforce/skull-vibrations-could-be-xr-headset-authentication",
+    "publishedDate": "2026-04-03T13:30:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471422+00:00"
+  },
+  {
+    "id": "ca18455e4c31a077",
+    "title": "Claude Source Code Leak Highlights Big Supply Chain Missteps",
+    "summary_raw": "Or, why the software supply chain should be treated as critical infrastructure with guardrails built in at every layer.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/source-code-leaks-highlight-lack-supply-chain-oversight",
+    "publishedDate": "2026-04-03T13:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471488+00:00"
+  },
+  {
+    "id": "d134803d843c5b9e",
+    "title": "Chainguard Unveils Factory 2.0 to Automate Hardening the Software Supply Chain",
+    "summary_raw": "The rebuilt Chainguard platform adds deeper security designed to continuously reconcile open source artifacts across containers, libraries, agent skills, and GitHub Actions.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/chainguard-factory-automate-hardening-software-supply-chain",
+    "publishedDate": "2026-04-03T12:57:28+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471557+00:00"
+  },
+  {
+    "id": "e5b046045ff16405",
+    "title": "CrowdStrike Next-Gen SIEM Can Now Ingest Microsoft Defender Telemetry",
+    "summary_raw": "Once CrowdStrike's nemesis, Microsoft is now a collaborator. A shared interest in Formula 1 helped thaw the years-long fierce rivalry.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/crowdstrike-falcon-ingest-microsoft-defender-telemetry",
+    "publishedDate": "2026-04-03T11:53:15+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.471624+00:00"
+  },
+  {
+    "id": "3625d9f9bc93143f",
+    "title": "\u201cNegative\u201d views of Broadcom driving thousands of VMware migrations, rival says",
+    "summary_raw": "Western Union exec says there were \"challenges\" working with Broadcom.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/information-technology/2026/04/nutanix-claims-it-has-poached-30000-vmware-customers/",
+    "publishedDate": "2026-04-09T19:44:31+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.743117+00:00"
+  },
+  {
+    "id": "5d6476e1d4c1a6fa",
+    "title": "Iran-linked hackers disrupt operations at US critical infrastructure sites",
+    "summary_raw": "As the US and Israel's war has ramped up, so too have hacks on US industrial sites.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/04/iran-linked-hackers-disrupt-operations-at-us-critical-infrastructure-sites/",
+    "publishedDate": "2026-04-08T20:49:11+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.743225+00:00"
+  },
+  {
+    "id": "4498a3a8d5880c4c",
+    "title": "Thousands of consumer routers hacked by Russia's military",
+    "summary_raw": "End-of-life routers in homes and small offices hacked in 120 countries.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/04/russias-military-hacks-thousands-of-consumer-routers-to-steal-credentials/",
+    "publishedDate": "2026-04-08T11:00:08+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.743316+00:00"
+  },
+  {
+    "id": "50a808fdac3e4926",
+    "title": "OpenClaw gives users yet another reason to be freaked out about security",
+    "summary_raw": "The viral AI agentic tool let attackers silently gain admin unauthenticated access.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/04/heres-why-its-prudent-for-openclaw-users-to-assume-compromise/",
+    "publishedDate": "2026-04-03T20:30:15+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.743401+00:00"
+  },
+  {
+    "id": "f692b561347655cc",
+    "title": "SN 1073: The FCC Bans New Consumer Routers - LinkedIn's JavaScript Bombshell",
+    "summary_raw": "<p>The FCC has banned all new consumer routers made outside the US, leaving networks stuck with aging, insecure hardware while blocking innovation. Find out why this sweeping move is raising eyebrows and lawsuits\u2014and why it makes zero sense for cybersecurity.</p><ul> \n<li>Apple's 26.4 age queries catches many by surprise.</li> \n<li>LinkedIn's 2.7 MB of privacy-invading javascript.</li> \n<li>Microsoft starts forcing Win11 24H2 to 25H2.</li> \n<li>Cisco loses source code to the Trivy supply-chain mess.</li> \n<li>Proton introduces privacy-first voice and video \"Meet.\"</li> \n<li>GitHub to fix lagging security of its Actions feature.</li> \n<li>Cloudflare reaffirms the privacy of its 1.1.1.1 DNS.</li> \n<li>Cloudflare uses AI to re-code better secure Wordpress.</li> \n<li>The FCC drops a ban on all new consumer-grade routers.</li></ul> \n<p>Show Notes - <a href=\"https://www.grc.com/sn/SN-1073-Notes.pdf\">https://www.grc.com/sn/SN-1073-Notes.pdf</a></p> \n<p><strong>Hosts:</strong> <a href=\"https://twit.tv/people/steve-gibson\">Steve Gibson</a> and <a href=\"https://twit.tv/people/leo-laporte\">Leo Laporte</a></p> \n<p>Download or subscribe to <em>Security Now</em> at <a href=\"https://twit.tv/shows/security-now\">https://twit.tv/shows/security-now</a>.</p> \n<p>You can submit a question to <em>Security Now</em> at the <a href=\"https://www.grc.com/feedback.htm\" target=\"_blank\">GRC Feedback Page</a>.</p> \n<p>For 16kbps versions, transcripts, and notes (including fixes), visit Steve's site: <a href=\"https://www.grc.com/securitynow.htm\" target=\"_blank\">grc.com</a>, also the home of the best disk maintenance and recovery utility ever written <a href=\"https://www.grc.com/sr/spinrite.htm\" target=\"_blank\">Spinrite 6</a>.</p> \n<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> \nSupport what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href=\"https://twit.tv/clubtwit\" rel=\"payment\">https://twit.tv/clubtwit</a><...",
+    "source": "Security Now (GRC)",
+    "url": "https://twit.tv/shows/security-now/episodes/1073",
+    "publishedDate": "2026-04-07T19:38:55+00:00",
+    "scrapedAt": "2026-04-10T23:56:22.951240+00:00"
+  },
+  {
+    "id": "10d62b316ff72d4b",
+    "title": "Anthropic Claude Mythos Preview: The More Capable AI Becomes, the More Security It Needs",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-founding-member-anthropic-mythos-frontier-model-to-secure-ai/",
+    "publishedDate": "2026-04-06T00:00:00-04:00",
+    "scrapedAt": "2026-04-10T23:56:23.122833+00:00"
+  },
+  {
+    "id": "77d791455915d40a",
+    "title": "How CrowdStrike Is Accelerating Exposure Evaluation as Adversaries Gain Speed",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/how-crowdstrike-accelerates-exposure-evaluation-against-threats/",
+    "publishedDate": "2026-04-05T00:00:00-07:00",
+    "scrapedAt": "2026-04-10T23:56:23.122956+00:00"
+  },
+  {
+    "id": "e0e92985af666924",
+    "title": "Cracks in the Bedrock: Agent God Mode",
+    "summary_raw": "<p>Unit 42 reveals \"Agent God Mode\" in Amazon Bedrock AgentCore. Broad IAM permissions lead to privilege escalation and data exfiltration risks.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/exploit-of-aws-agentcore-iam-god-mode/\">Cracks in the Bedrock: Agent God Mode</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/exploit-of-aws-agentcore-iam-god-mode/",
+    "publishedDate": "2026-04-08T22:00:51+00:00",
+    "scrapedAt": "2026-04-10T23:56:25.567926+00:00"
+  },
+  {
+    "id": "73dc36535d487882",
+    "title": "Cracks in the Bedrock: Escaping the AWS AgentCore Sandbox",
+    "summary_raw": "<p>Unit 42 uncovers critical vulnerabilities in Amazon Bedrock AgentCore's sandbox, demonstrating DNS tunneling and credential exposure. </p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/bypass-of-aws-sandbox-network-isolation-mode/\">Cracks in the Bedrock: Escaping the AWS AgentCore Sandbox</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/bypass-of-aws-sandbox-network-isolation-mode/",
+    "publishedDate": "2026-04-07T22:00:11+00:00",
+    "scrapedAt": "2026-04-10T23:56:25.568033+00:00"
+  },
+  {
+    "id": "7c528fa406ee1429",
+    "title": "Understanding Current Threats to Kubernetes Environments",
+    "summary_raw": "<p>Unit 42 uncovers escalating Kubernetes attacks, detailing how threat actors exploit identities and critical vulnerabilities to compromise cloud environments.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/modern-kubernetes-threats/\">Understanding Current Threats to Kubernetes Environments</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/modern-kubernetes-threats/",
+    "publishedDate": "2026-04-06T22:00:08+00:00",
+    "scrapedAt": "2026-04-10T23:56:25.568155+00:00"
+  },
+  {
+    "id": "f9e9b32c0f3e7acc",
+    "title": "When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock's Multi-Agent Applications",
+    "summary_raw": "<p>Unit 42 research on multi-agent AI systems on Amazon Bedrock reveals new attack surfaces and prompt injection risks. Learn how to secure your AI applications.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/\">When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock&#039;s Multi-Agent Applications</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/",
+    "publishedDate": "2026-04-03T22:00:38+00:00",
+    "scrapedAt": "2026-04-10T23:56:25.568242+00:00"
+  },
+  {
+    "id": "105248c2fcc71fdf",
+    "title": "We let OpenClaw loose on an internal network. Here\u2019s what it found",
+    "summary_raw": "<p>&lt;p&gt;Following our article on the challenges posed by agentic AI, we gave OpenClaw access to one of our legacy networks&lt;/p&gt;</p><p><strong>Categories:</strong> Threat Research</p><p><strong>Tags:</strong> OpenClaw, LLM, AI, penetration testing, Red Team, CISO, Sophos X-Ops</p>",
+    "source": "Sophos News",
+    "url": "https://www.sophos.com/en-us/blog/we-let-openclaw-loose-on-an-internal-network-heres-what-it-found",
+    "publishedDate": "2026-04-09T00:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:25.646771+00:00"
+  },
+  {
+    "id": "1fb13507ca751888",
+    "title": "Adobe Reader zero-day vulnerability in active exploitation",
+    "summary_raw": "<p><strong>Categories:</strong> Threat Research</p><p><strong>Tags:</strong> advisory, vulnerability, Adobe Reader</p>",
+    "source": "Sophos News",
+    "url": "https://www.sophos.com/en-us/blog/adobe-reader-zero-day-vulnerability-in-active-exploitation",
+    "publishedDate": "2026-04-09T00:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:25.646872+00:00"
+  },
+  {
+    "id": "a98f0d73846db0d8",
+    "title": "Third-Party Risk Is an Intelligence Operation. It's Time We Treated It Like One.",
+    "summary_raw": "Recorded Future sees its inclusion in the 2026 Forrester Wave\u2122 for Cybersecurity Risk Ratings Platforms as a reflection of a broader truth: the era of ratings-only vendor risk management is over.",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/recorded-future-sees-its-inclusion-in-the-2026-forrester-wave",
+    "publishedDate": "2026-04-09T00:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.138600+00:00"
+  },
+  {
+    "id": "afdd49532d0f0efc",
+    "title": "Understanding and Anticipating Venezuelan Government Actions",
+    "summary_raw": "Explore an in-depth analysis of Venezuela\u2019s political landscape following the January 2026 US operation to capture Nicol\u00e1s Maduro. This executive summary examines Acting President Delcy Rodr\u00edguez\u2019s transition strategy, her pragmatic re-engagement with Washington, and the internal threats posed by PSUV rivals like Diosdado Cabello. Gain insights into the \"three-phase\" US plan for stabilization, the 2026 Organic Hydrocarbons Law reforms, and the outlook for economic recovery versus the existential threat of competitive elections. Essential intelligence for organizations monitoring Latin American geopolitical risk and energy sector investments.",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/research/understanding-and-anticipating-venezuelan-government-actions",
+    "publishedDate": "2026-04-08T00:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.138700+00:00"
+  },
+  {
+    "id": "858077a01fe5a65a",
+    "title": "The Iran War: What You Need to Know",
+    "summary_raw": "Insikt Group tracks the cyber, physical, and geopolitical components of the US-Israeli strikes on Iran \u2014 with continuously updated threat analysis and scenarios.",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/the-iran-war-what-you-need-to-know",
+    "publishedDate": "2026-04-03T00:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.138783+00:00"
+  },
+  {
+    "id": "dffde459442559c6",
+    "title": "Day in the Life: Product Manager at Recorded Future",
+    "summary_raw": "VentureFizz interviews Senior Product Manager Kyle Kohler on his role at Recorded Future",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/kyle-kohler-product-manager",
+    "publishedDate": "2026-04-03T00:00:00+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.138865+00:00"
+  },
+  {
+    "id": "697a0fdeab732065",
+    "title": "Friday Squid Blogging: Squid Overfishing in the South Pacific",
+    "summary_raw": "<p>Regulation is <a href=\"https://news.mongabay.com/short-article/2026/03/the-squid-rush-in-the-south-pacific-is-forcing-regulators-to-act/\">hard</a>:</p>\n<blockquote><p>The South Pacific Regional Fisheries Management Organization (SPRFMO) oversees fishing across roughly 59 million square kilometers (22 million square miles) of the South Pacific high seas, trying to impose order on a region double the size of Africa, where distant-water fleets pursue species ranging from jack mackerel to jumbo flying squid. The latter dominated this year&#8217;s talks.</p>\n<p>Fishing for jumbo flying squid (Dosidicus gigas) has expanded rapidly over the past two decades. The number of squid-jigging vessels operating in SPRFMO waters rose from 14 in 2000 to more than 500 last year, almost all of them flying the Chinese flag. Meanwhile, reported catches have fallen markedly, from more than 1 million metric tons in 2014 to about 600,000 metric tons in 2024. Scientists worry that fishing pressure is outpacing knowledge of the stock. ...</p></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-squid-overfishing-in-the-south-pacific.html",
+    "publishedDate": "2026-04-10T21:03:27+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.243890+00:00"
+  },
+  {
+    "id": "f8d8410800f2e98d",
+    "title": "Sen. Sanders Talks to Claude About AI and Privacy",
+    "summary_raw": "<p>Claude is actually <a href=\"https://www.youtube.com/watch?v=h3AtWdeu_G0\">pretty good</a> on the issues.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/sen-sanders-talks-to-claude-about-ai-and-privacy.html",
+    "publishedDate": "2026-04-10T10:41:06+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.243968+00:00"
+  },
+  {
+    "id": "39c1545ebc6ce3c3",
+    "title": "On Microsoft\u2019s Lousy Cloud Security",
+    "summary_raw": "<p>ProPublica has a <a href=\"https://arstechnica.com/information-technology/2026/03/federal-cyber-experts-called-microsofts-cloud-a-pile-of-shit-approved-it-anyway/\">scoop</a>:</p>\n<blockquote><p>In late 2024, the federal government&#8217;s cybersecurity evaluators rendered a troubling verdict on one of Microsoft&#8217;s biggest cloud computing offerings.</p>\n<p>The tech giant&#8217;s &#8220;lack of proper detailed security documentation&#8221; left reviewers with a &#8220;lack of confidence in assessing the system&#8217;s overall security posture,&#8221; according to an internal government report reviewed by ProPublica.</p>\n<p>Or, as one member of the team put it: &#8220;The package is a pile of shit.&#8221;</p>\n<p>For years, reviewers said, Microsoft had tried and failed to fully explain how it protects sensitive information in the cloud as it hops from server to server across the digital terrain. Given that and other unknowns, government experts couldn&#8217;t vouch for the technology&#8217;s security...</p></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/on-microsofts-lousy-cloud-security.html",
+    "publishedDate": "2026-04-09T10:51:36+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.244033+00:00"
+  },
+  {
+    "id": "6af6058153e27ccb",
+    "title": "Python Supply-Chain Compromise",
+    "summary_raw": "<p>This is <a href=\"https://www.truesec.com/hub/blog/malicious-pypi-package-litellm-supply-chain-compromise\">news</a>:</p>\n<blockquote><p>A malicious supply chain compromise has been identified in the Python Package Index package litellm version 1.82.8. The published wheel contains a malicious .pth file (litellm_init.pth, 34,628 bytes) which is automatically executed by the Python interpreter on every startup, without requiring any explicit import of the litellm module.</p></blockquote>\n<p>There are a lot of really boring things we need to do to help secure all of these critical libraries: SBOMs, SLSA, SigStore. But we have to do them.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/python-supply-chain-compromise.html",
+    "publishedDate": "2026-04-08T10:25:53+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.244111+00:00"
+  },
+  {
+    "id": "95b914cfaa16ed0f",
+    "title": "Cybersecurity in the Age of Instant Software",
+    "summary_raw": "<p>AI is rapidly changing how software is written, deployed, and used. Trends point to a future where AIs can write custom software quickly and easily: \u201cinstant software.\u201d Taken to an extreme, it might become easier for a user to have an AI write an application on demand&#8212;a spreadsheet, for example&#8212;and delete it when you\u2019re done using it than to buy one commercially. Future systems could include a mix: both traditional long-term software and ephemeral instant software that is constantly being written, deployed, modified, and deleted.</p>\n<p>AI is changing cybersecurity as well. In particular, AI systems are getting better at finding and patching vulnerabilities in code. This has implications for both attackers and defenders, depending on the ways this and related technologies improve...</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/cybersecurity-in-the-age-of-instant-software.html",
+    "publishedDate": "2026-04-07T17:07:52+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.244171+00:00"
+  },
+  {
+    "id": "c5952e84cd03e900",
+    "title": "Hong Kong Police Can Force You to Reveal Your Encryption Keys",
+    "summary_raw": "<p>According to a new law, the Hong Kong police can <a href=\"https://www.msn.com/en-us/news/world/ar-AA1ZwfSE\">demand</a> that you reveal the encryption keys protecting your computer, phone, hard drives, etc.&#8212;even if you are just transiting the airport.</p>\n<blockquote><p>In a security alert dated March 26, the U.S. Consulate General said that, on March 23, 2026, Hong Kong authorities changed the rules governing enforcement of the National Security Law. Under the revised framework, police can require individuals to provide passwords or other assistance to access personal electronic devices, including cellphones and laptops.</p>\n...</blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/hong-kong-police-can-force-you-to-reveal-your-encryption-keys.html",
+    "publishedDate": "2026-04-07T09:45:33+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.244226+00:00"
+  },
+  {
+    "id": "880255debc54ca9e",
+    "title": "New Mexico\u2019s Meta Ruling and Encryption",
+    "summary_raw": "<p>Mike Masnick <a href=\"https://www.techdirt.com/2026/03/26/everyone-cheering-the-social-media-addiction-verdicts-against-meta-should-understand-what-theyre-actually-cheering-for/\">points out </a> that the recent New Mexico court ruling against Meta has some bad implications for end-to-end encryption, and security in general:</p>\n<blockquote><p>If the &#8220;design choices create liability&#8221; framework seems worrying in the abstract, the New Mexico case provides a concrete example of where it leads in practice.</p>\n<p>One of the key pieces of evidence the New Mexico attorney general used against Meta was the company\u2019s 2023 decision to add end-to-end encryption to Facebook Messenger. The argument went like this: predators used Messenger to groom minors and exchange child sexual abuse material. By encrypting those messages, Meta made it harder for law enforcement to access evidence of those crimes. Therefore, the encryption was a design choice that enabled harm...</p></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/new-mexicos-meta-ruling-and-encryption.html",
+    "publishedDate": "2026-04-06T19:09:58+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.244278+00:00"
+  },
+  {
+    "id": "5ad624c844a4f4b3",
+    "title": "Google Wants to Transition to Post-Quantum Cryptography by 2029",
+    "summary_raw": "<p>Google <a href=\"https://blog.google/innovation-and-ai/technology/safety-security/cryptography-migration-timeline/\">says</a> that it will fully transition to post-quantum cryptography by 2029. I think this is a good move, not because I think we will have a useful quantum computer anywhere near that year, but because crypto-agility is always a good thing.</p>\n<p>Slashdot <a href=\"https://it.slashdot.org/story/26/03/27/2123239/google-moves-post-quantum-encryption-timeline-up-to-2029\">thread</a>.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/google-wants-to-transition-to-post-quantum-cryptography-by-2029.html",
+    "publishedDate": "2026-04-06T10:52:32+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.244328+00:00"
+  },
+  {
+    "id": "8ab49ac22b81fd38",
+    "title": "Friday Squid Blogging: Jurassic Fish Chokes on Squid",
+    "summary_raw": "<p>Here&#8217;s a <a href=\"https://timesofindia.indiatimes.com/etimes/animals/how-a-jurassic-fish-choked-to-death-on-a-floating-squid-150-million-years-ago/articleshow/129823852.cms\">fossil</a> of a 150-million year old fish that choked to death on a <i>belemnite rostrum</i>: the hard, internal shell of an extinct, squid-like animal.</p>\n<p>Original <a href=\"https://www.nature.com/articles/s41598-025-00163-7\">paper</a>.</p>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-jurassic-fish-chokes-on-squid.html",
+    "publishedDate": "2026-04-03T21:07:06+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.244379+00:00"
+  },
+  {
+    "id": "376194ec9c388beb",
+    "title": "Company that Secretly Records and Publishes Zoom Meetings",
+    "summary_raw": "<p>WebinarTV searches the internet for public Zoom invites, joins the meetings, secretly records them, and <a href=\"https://www.404media.co/this-company-is-secretly-turning-your-zoom-calls-into-ai-podcasts/\">publishes</a> (alternate <a href=\"https://archive.ph/TYd4L\">link</a>) the recordings. It doesn&#8217;t use the Zoom record feature, so Zoom can&#8217;t do anything about it.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/company-that-secretly-records-and-publishes-zoom-meetings.html",
+    "publishedDate": "2026-04-03T11:08:17+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.244428+00:00"
+  },
+  {
+    "id": "97b694829fb3e775",
+    "title": "Obfuscated JavaScript or Nothing, (Thu, Apr 9th)",
+    "summary_raw": "I spotted an interesting piece of JavaScript code that was delivered via a phishing email in a RAR archive. The file was called &#xe2;&#x20ac;&#x153;cbmjlzan.JS&#xe2;&#x20ac;&#x9d; (SHA256:a8ba9ba93b4509a86e3d7dd40fd0652c2743e32277760c5f7942b788b74c5285) and is only identified as malicious by 15 AV&#x27s on VirusTotal&#x5b;1&#x5d;.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32884",
+    "publishedDate": "2026-04-10T06:40:46+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409176+00:00"
+  },
+  {
+    "id": "cddd45fa24e0395d",
+    "title": "ISC Stormcast For Thursday, April 9th, 2026 https://isc.sans.edu/podcastdetail/9886, (Thu, Apr 9th)",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32882",
+    "publishedDate": "2026-04-09T02:00:03+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409283+00:00"
+  },
+  {
+    "id": "6069fe72d8fa9234",
+    "title": "Number Usage in Passwords: Take Two, (Thu, Apr 9th)",
+    "summary_raw": "In a previous diary &#x5b;1&#x5d;, we looked to see how numbers were used within passwords submitted to honeypots. One of the items of interest was how dates, and more specifically years, were represented within the data and how that changed over time. It is often seen that years and seasons are used in passwords, especially when password change requirements include frequenty password changes. Some examples we might see today:&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32866",
+    "publishedDate": "2026-04-09T00:58:14+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409368+00:00"
+  },
+  {
+    "id": "af1c255bfdaf1984",
+    "title": "TeamPCP Supply Chain Campaign: Update 007 - Cisco Source Code Stolen via Trivy-Linked Breach, Google GTIG Tracks TeamPCP as UNC6780, and CISA KEV Deadline Arrives with No Standalone Advisory, (Wed, Apr 8th)",
+    "summary_raw": "This is the seventh update to the TeamPCP supply chain campaign threat intelligence report,&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;\"When the Security Scanner Became the Weapon\"&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;(v3.0, March 25, 2026).&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;Update 006&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xc2&#x3b;&&#x23&#x3b;x26&#x3b;&#x23&#x3b;xa0&#x3b;covered developments through April 3, including the CERT-EU European Commission breach disclosure, ShinyHunters&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b; confirmation of credential sharing, Sportradar breach details, and Mandiant&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s quantification of 1,000&#x2b; compromised SaaS environments. This update consolidates five days of intelligence from April 3 through April 8, 2026.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32880",
+    "publishedDate": "2026-04-08T17:15:05+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409445+00:00"
+  },
+  {
+    "id": "abc8fee95791727b",
+    "title": "More Honeypot Fingerprinting Scans, (Wed, Apr 8th)",
+    "summary_raw": "One question that often comes up when I talk about honeypots: Are attackers able to figure out if they are connected to a honeypot&#x3f; The answer is pretty simple: Yes&#x21;&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32878",
+    "publishedDate": "2026-04-08T14:23:28+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409520+00:00"
+  },
+  {
+    "id": "259b5d0c864cac18",
+    "title": "ISC Stormcast For Wednesday, April 8th, 2026 https://isc.sans.edu/podcastdetail/9884, (Wed, Apr 8th)",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32876",
+    "publishedDate": "2026-04-08T02:00:02+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409596+00:00"
+  },
+  {
+    "id": "57a7866d1e66298c",
+    "title": "A Little Bit Pivoting: What Web Shells are Attackers Looking for&#x3f;, (Tue, Apr 7th)",
+    "summary_raw": "Webshells remain a popular method for attackers to maintain persistence on a compromised web server. Many \"arbitrary file write\" and \"remote code execution\" vulnerabilities are used to drop small files on systems for later execution of additional payloads. The names of these files keep changing and are often chosen to \"fit in\" with other files. Webshells themselves are also often used by parasitic attacks to compromise a server. Sadly (&#x3f;), attackers are not always selecting good passwords either. In some cases, webshells come with pre-set backdoor credentials, which may be overlooked by a less sophisticated attacker. &#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32874",
+    "publishedDate": "2026-04-07T18:28:16+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409668+00:00"
+  },
+  {
+    "id": "e4e482165095683a",
+    "title": "ISC Stormcast For Tuesday, April 7th, 2026 https://isc.sans.edu/podcastdetail/9882, (Tue, Apr 7th)",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32872",
+    "publishedDate": "2026-04-07T02:00:02+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409745+00:00"
+  },
+  {
+    "id": "a07afbe3fc4c308b",
+    "title": "How often are redirects used in phishing in 2026&#x3f;, (Mon, Apr 6th)",
+    "summary_raw": "In one of his recent diaries, Johannes discussed how open redirects are actively being sought out by threat actors&#x5b;1&#x5d;, which made me wonder about how commonly these mechanisms are actually misused&#xe2;&#x20ac;&#xa6;&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32870",
+    "publishedDate": "2026-04-06T08:50:27+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409817+00:00"
+  },
+  {
+    "id": "2d3bedef5c1c4ba8",
+    "title": "ISC Stormcast For Monday, April 6th, 2026 https://isc.sans.edu/podcastdetail/9880, (Mon, Apr 6th)",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32868",
+    "publishedDate": "2026-04-06T02:00:02+00:00",
+    "scrapedAt": "2026-04-10T23:56:26.409892+00:00"
+  }
+]
