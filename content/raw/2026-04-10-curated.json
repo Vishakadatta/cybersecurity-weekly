@@ -582,6 +582,24 @@
     ]
   },
   {
+    "id": "30aef2bba1238c35",
+    "title": "Critical Marimo Pre-Auth RCE Flaw Under Active Exploitation",
+    "summary_raw": "A critical pre-authentication remote code execution (RCE) vulnerability in Marimo is now under active exploitation, leveraged for credential theft. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/critical-marimo-pre-auth-rce-flaw-now-under-active-exploitation/",
+    "publishedDate": "2026-04-12T10:20:31-04:00",
+    "scrapedAt": "2026-04-13T04:14:24.172158+00:00",
+    "summary": "A critical pre-authentication remote code execution (RCE) vulnerability in Marimo is now being actively exploited by attackers. The flaw is being leveraged to steal credentials, indicating a serious and immediate threat to organizations using the affected Marimo software. This highlights the danger of unpatched pre-auth vulnerabilities.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "zero-day",
+      "RCE",
+      "credential-theft",
+      "exploitation"
+    ]
+  },
+  {
     "id": "a43422fe0f90da63",
     "title": "Russia Hacked Routers to Steal Microsoft Office Tokens",
     "summary_raw": "Hackers linked to Russia's military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. The spying campaign allowed state-backed Russian hackers to quietly siphon authentication tokens from users on more than 18,000 networks without deploying any malicious software or code.",
@@ -1104,6 +1122,24 @@
       "fraud",
       "law-enforcement",
       "cybercrime"
+    ]
+  },
+  {
+    "id": "30e27c7923da9101",
+    "title": "Adobe Patches Actively Exploited Acrobat Reader Flaw",
+    "summary_raw": "Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader that&nbsp;has come under active exploitation in the&nbsp;wild.\nThe vulnerability, assigned the CVE identifier CVE-2026-34621, carries a CVSS score of 8.6 out of 10.0. Successful exploitation of the flaw could allow an attacker to run malicious code on affected installations.\nIt&nbsp;has been&nbsp;described as",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html",
+    "publishedDate": "2026-04-12T09:55:00+05:30",
+    "scrapedAt": "2026-04-13T04:14:24.090596+00:00",
+    "summary": "Adobe has released emergency updates to fix a critical security flaw in Acrobat Reader, identified as CVE-2026-34621. This vulnerability has a CVSS score of 8.6 and is already being actively exploited in the wild, posing a significant risk of remote code execution on affected systems.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "zero-day",
+      "patch",
+      "RCE",
+      "Adobe"
     ]
   },
   {
@@ -1739,6 +1775,23 @@
     ]
   },
   {
+    "id": "5df88131d4e4dcc3",
+    "title": "CPUID Breach Distributes STX RAT via Trojanized Software",
+    "summary_raw": "Unknown threat actors compromised CPUID (\"cpuid[.]com\"), a website&nbsp;that hosts popular hardware monitoring tools like CPU-Z, HWMonitor, HWMonitor Pro, and PerfMonitor, for less than 24 hours to serve malicious executables for the software and deploy a remote access trojan called STX&nbsp;RAT.\nThe incident lasted from approximately April 9, 15:00 UTC, to about April 10, 10:00&nbsp;UTC, with",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/04/cpuid-breach-distributes-stx-rat-via.html",
+    "publishedDate": "2026-04-12T11:24:00+05:30",
+    "scrapedAt": "2026-04-13T04:14:24.090462+00:00",
+    "summary": "Threat actors compromised the CPUID website, which hosts popular hardware monitoring tools like CPU-Z and HWMonitor. For less than 24 hours, they served malicious executables that deployed a remote access trojan (RAT) called STX RAT. This incident highlights the risk of supply chain attacks targeting trusted software download sites.",
+    "relevance_score": 7,
+    "tags": [
+      "malware",
+      "RAT",
+      "supply-chain",
+      "vulnerability"
+    ]
+  },
+  {
     "id": "481ccb2d05e08e5e",
     "title": "Browser Extensions Emerge as a New, Unaddressed AI Security Threat",
     "summary_raw": "While&nbsp;much of the discussion on AI security centers around protecting&nbsp;\u2018shadow\u2019 AI and GenAI consumption, there's a wide-open&nbsp;window nobody's guarding: AI browser extensions.&nbsp;\nA&nbsp;new report from LayerX&nbsp;exposes just how deep this blind spot goes, and why AI extensions may be the most dangerous AI threat surface in your network&nbsp;that isn't&nbsp;on anyone's&nbsp;",
@@ -2189,6 +2242,23 @@
       "ChatGPT",
       "Claude",
       "competition"
+    ]
+  },
+  {
+    "id": "c9f936e809addda2",
+    "title": "ISC Stormcast for Monday, April 13th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32890",
+    "publishedDate": "2026-04-13T02:00:02+00:00",
+    "scrapedAt": "2026-04-13T04:14:27.624020+00:00",
+    "summary": "This entry from the SANS Internet Storm Center provides a daily digest of cybersecurity news and events. While specific details are not provided in the raw summary, these podcasts typically cover a range of security topics, including vulnerabilities, malware, and threat intelligence.",
+    "relevance_score": 5,
+    "tags": [
+      "threat-intelligence",
+      "vulnerability",
+      "malware",
+      "news"
     ]
   },
   {

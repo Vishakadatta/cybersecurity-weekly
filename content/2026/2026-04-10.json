@@ -1,0 +1,369 @@
+{
+  "edition": "2026-04-10",
+  "year": "2026",
+  "editionLabel": "Apr 10 \u2013 16, 2026",
+  "generatedAt": "2026-04-13T04:14:53.605069+00:00",
+  "subjectLine": "Nation-State Attacks Escalate: APT28 Targets Ukraine, Iran Disrupts US Infrastructure, and Zero-Days Proliferate",
+  "articles": [
+    {
+      "id": "6b414d8e994298aa",
+      "title": "APT28 Deploys PRISMEX Malware in Campaign Targeting Ukraine and NATO Allies",
+      "summary": "The Russian state-sponsored threat actor APT28 has launched a new campaign targeting Ukraine and NATO allies, deploying a previously unknown malware suite named PRISMEX. This sophisticated malware utilizes steganography, COM hijacking, and cloud service abuse for command-and-control, indicating a si",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/apt28-deploys-prismex-malware-in.html",
+      "tier": 1,
+      "publishedDate": "2026-04-08T19:20:00+05:30"
+    },
+    {
+      "id": "0f7fdb279162bf93",
+      "title": "Iran-Linked Hackers Disrupt U.S. Critical Infrastructure by Targeting Internet-Exposed PLCs",
+      "summary": "Iran-affiliated cyber actors are targeting internet-facing operational technology (OT) devices, specifically programmable logic controllers (PLCs), within U.S. critical infrastructure. These attacks have resulted in diminished PLC functionality, data manipulation, and operational disruptions, posing",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/iran-linked-hackers-disrupt-us-critical.html",
+      "tier": 1,
+      "publishedDate": "2026-04-08T09:53:00+05:30"
+    },
+    {
+      "id": "ce89979ed276f023",
+      "title": "China-Linked Storm-1175 Uses Zero-Days for Rapid Medusa Ransomware Deployment",
+      "summary": "A China-based threat actor, Storm-1175, is rapidly deploying Medusa ransomware by exploiting a combination of zero-day and known vulnerabilities. The group targets internet-facing systems with high-velocity attacks, demonstrating proficiency in identifying and exploiting exposed assets.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/china-linked-storm-1175-exploits-zero.html",
+      "tier": 1,
+      "publishedDate": "2026-04-07T12:05:00+05:30"
+    },
+    {
+      "id": "db193bce1a8a02d0",
+      "title": "$285 Million Drift Hack Linked to Six-Month DPRK Social Engineering Operation",
+      "summary": "The $285 million theft from the Solana-based decentralized exchange Drift was the result of a meticulously planned, six-month social engineering operation orchestrated by North Korea (DPRK). The attack, which began in late 2025, highlights the sophisticated and long-term planning capabilities of nat",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/285-million-drift-hack-traced-to-six.html",
+      "tier": 1,
+      "publishedDate": "2026-04-05T23:55:00+05:30"
+    },
+    {
+      "id": "af1c255bfdaf1984",
+      "title": "China-Linked TA416 Targets European Governments with PlugX and OAuth Phishing",
+      "summary": "A China-aligned threat actor, TA416, has been targeting European government and diplomatic organizations since mid-2025 using PlugX malware and OAuth-based phishing. This campaign, linked to multiple known threat clusters, signifies a renewed focus on European entities by sophisticated nation-state ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/china-linked-ta416-targets-european.html",
+      "tier": 1,
+      "publishedDate": "2026-04-03T23:04:00+05:30"
+    },
+    {
+      "id": "1e1420129366c7e6",
+      "title": "Fortinet Issues Emergency Patch for Exploited FortiClient Zero-Day",
+      "summary": "Fortinet has released an emergency patch for a critical authentication bypass vulnerability (CVE-2026-35616) in FortiClient, which has already been exploited in the wild. This incident is part of a concerning trend of Fortinet vulnerabilities being actively targeted, emphasizing the need for prompt ",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/fortinet-emergency-patch-forticlient-zero-day",
+      "tier": 1,
+      "publishedDate": "2026-04-06T20:24:19+00:00"
+    },
+    {
+      "id": "af1c255bfdaf1984",
+      "title": "TeamPCP Supply Chain Campaign Update: Cisco Source Code Stolen via Trivy Breach",
+      "summary": "The latest update on the TeamPCP supply chain campaign reveals that Cisco source code was stolen through a breach linked to the Trivy security scanner. Google's GTIG tracks this activity as UNC6780, highlighting sophisticated nation-state-level threats targeting software development pipelines.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/32880",
+      "tier": 1,
+      "publishedDate": "2026-04-08T17:15:05+00:00"
+    },
+    {
+      "id": "270b5565490f14e6",
+      "title": "Critical Marimo RCE Vulnerability Exploited Within 10 Hours of Disclosure",
+      "summary": "A critical pre-authenticated remote code execution vulnerability (CVE-2026-39987) in the Marimo data science notebook was exploited within 10 hours of its public disclosure. The high CVSS score of 9.3 underscores the severe risk posed by this flaw to users of the open-source tool.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html",
+      "tier": 2,
+      "publishedDate": "2026-04-10T13:07:00+05:30"
+    },
+    {
+      "id": "4317c7b1bcb59307",
+      "title": "New Threat Cluster UAT-10362 Targets Taiwanese NGOs with LucidRook Malware",
+      "summary": "A new threat cluster, UAT-10362, is conducting spear-phishing campaigns against Taiwanese NGOs and universities, deploying a novel Lua-based malware named LucidRook. This sophisticated stager is designed to download and execute further payloads, indicating a targeted nation-state or advanced persist",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/uat-10362-targets-taiwanese-ngos-with.html",
+      "tier": 2,
+      "publishedDate": "2026-04-09T21:53:00+05:30"
+    },
+    {
+      "id": "96766918cbd3828f",
+      "title": "Adobe Reader Zero-Day Exploited via Malicious PDFs Since December 2025",
+      "summary": "A sophisticated zero-day vulnerability in Adobe Reader has been actively exploited through malicious PDF documents since at least December 2025. This exploit, first observed in late November 2025, highlights a critical and ongoing threat to users relying on Adobe Reader for document processing.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/adobe-reader-zero-day-exploited-via.html",
+      "tier": 2,
+      "publishedDate": "2026-04-09T16:45:00+05:30"
+    },
+    {
+      "id": "dd7601c31a1ceda0",
+      "title": "N. Korean Hackers Spread 1,700 Malicious Packages Across npm, PyPI, Go, Rust",
+      "summary": "North Korea-linked hackers have distributed over 1,700 malicious packages across popular developer ecosystems like npm, PyPI, Go, and Rust. These packages impersonate legitimate tools while functioning as malware loaders, extending the Contagious Interview campaign's reach into software development ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/n-korean-hackers-spread-1700-malicious.html",
+      "tier": 2,
+      "publishedDate": "2026-04-08T13:17:00+05:30"
+    },
+    {
+      "id": "61aa63dbe4d1a709",
+      "title": "APT28 Exploits SOHO Routers for Global DNS Hijacking",
+      "summary": "The Russian state-linked threat actor APT28 has been actively exploiting insecure MikroTik and TP-Link routers since May 2025 to hijack DNS traffic. This campaign turns compromised routers into malicious infrastructure for cyber espionage, highlighting a significant risk to global internet infrastru",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/russian-state-linked-apt28-exploits.html",
+      "tier": 2,
+      "publishedDate": "2026-04-07T22:18:00+05:30"
+    },
+    {
+      "id": "f3e2832baa07b2b8",
+      "title": "Flowise AI Agent Builder Exploited via CVSS 10.0 RCE Flaw",
+      "summary": "A critical code injection vulnerability (CVE-2025-59528) with a CVSS score of 10.0 is being actively exploited in the Flowise AI Agent Builder platform. Over 12,000 exposed instances are at risk of remote code execution, posing a severe threat to AI infrastructure.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/flowise-ai-agent-builder-under-active.html",
+      "tier": 2,
+      "publishedDate": "2026-04-07T11:26:00+05:30"
+    },
+    {
+      "id": "c4d3dd18d6625eff",
+      "title": "DPRK Hackers Use GitHub as C2 in Attacks on South Korea",
+      "summary": "North Korean-linked hackers are leveraging GitHub as a command-and-control infrastructure in multi-stage attacks targeting organizations in South Korea. The attack chain begins with obfuscated LNK files, leading to the deployment of further malicious payloads.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/dprk-linked-hackers-use-github-as-c2-in.html",
+      "tier": 2,
+      "publishedDate": "2026-04-06T21:54:00+05:30"
+    },
+    {
+      "id": "35768df7e6244a52",
+      "title": "LiteLLM Attack Highlights Developer Machines as Critical Credential Vaults",
+      "summary": "A recent supply chain attack on LiteLLM demonstrated how valuable developer workstations are as central repositories for credentials. Attackers can exploit these machines, where credentials are created, cached, and reused across various services and tools, including local AI agents. This underscores",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/how-litellm-turned-developer-machines.html",
+      "tier": 2,
+      "publishedDate": "2026-04-06T17:15:00+05:30"
+    },
+    {
+      "id": "100bdf733cba26a8",
+      "title": "Qilin and Warlock Ransomware Use Vulnerable Drivers to Evade EDR",
+      "summary": "The Qilin and Warlock ransomware groups are employing a 'bring your own vulnerable driver' (BYOVD) technique to disable over 300 Endpoint Detection and Response (EDR) tools. This method allows them to bypass security measures on compromised hosts, significantly increasing their operational effective",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/qilin-and-warlock-ransomware-use.html",
+      "tier": 2,
+      "publishedDate": "2026-04-06T15:37:00+05:30"
+    },
+    {
+      "id": "ea48c77b90e90c85",
+      "title": "Fortinet Patches Actively Exploited CVE-2026-35616 in FortiClient EMS",
+      "summary": "Fortinet has released urgent patches for CVE-2026-35616, a critical vulnerability in FortiClient EMS that has been actively exploited in the wild. The flaw allows for pre-authentication API access bypass and privilege escalation, posing a significant risk to organizations using the affected product.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/fortinet-patches-actively-exploited-cve.html",
+      "tier": 2,
+      "publishedDate": "2026-04-05T10:02:00+05:30"
+    },
+    {
+      "id": "6ca7b5bfa84bd5da",
+      "title": "Drift Protocol Loses $285 Million in Social Engineering Attack Linked to DPRK",
+      "summary": "The Solana-based decentralized exchange Drift has lost approximately $285 million due to a novel attack involving durable nonces and social engineering, which allowed attackers to gain administrative control. This incident highlights the vulnerability of DeFi platforms to sophisticated attacks and t",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/drift-loses-285-million-in-durable.html",
+      "tier": 2,
+      "publishedDate": "2026-04-03T14:05:00+05:30"
+    },
+    {
+      "id": "bdb849dd443bb535",
+      "title": "Nearly 4,000 US Industrial Devices Exposed to Iranian Cyberattacks",
+      "summary": "Thousands of internet-exposed industrial devices, specifically Rockwell Automation PLCs, in the U.S. are vulnerable to cyberattacks originating from Iran. This exposure poses a significant risk to critical infrastructure and highlights the need for better security for industrial control systems.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/nearly-4-000-us-industrial-devices-exposed-to-iranian-cyberattacks/",
+      "tier": 2,
+      "publishedDate": "2026-04-10T11:52:45-04:00"
+    },
+    {
+      "id": "ec05b0b387270cc0",
+      "title": "Hackers Exploiting Acrobat Reader Zero-Day Flaw Since December",
+      "summary": "Attackers have been actively exploiting a zero-day vulnerability in Adobe Reader using malicious PDF documents since at least December. This critical vulnerability poses a significant risk to users who open crafted PDFs, emphasizing the need for prompt patching and security awareness.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/",
+      "tier": 2,
+      "publishedDate": "2026-04-09T05:22:35-04:00"
+    },
+    {
+      "id": "b5198c96e0d6bb59",
+      "title": "Can Anthropic Keep Its Exploit-Writing AI Out of the Wrong Hands?",
+      "summary": "Anthropic's new Mythos Preview model reportedly possesses the capability to discover and exploit critical zero-day vulnerabilities. The company claims to have implemented controls to prevent misuse, but concerns remain about the potential for such powerful AI to fall into the wrong hands.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/anthropic-exploit-writing-mythos-ai-safe",
+      "tier": 2,
+      "publishedDate": "2026-04-10T13:00:00+00:00"
+    },
+    {
+      "id": "08efc780ad9e1f06",
+      "title": "Russia's 'Fancy Bear' APT Continues Its Global Onslaught",
+      "summary": "The Russian nation-state actor known as 'Fancy Bear' (APT) continues its widespread cyber espionage operations globally. Experts emphasize the need for robust patching and zero-trust architectures to defend against these sophisticated attacks, regardless of a victim's technical capabilities.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/russias-fancy-bear-apt-continues-global-onslaught",
+      "tier": 2,
+      "publishedDate": "2026-04-09T20:50:37+00:00"
+    },
+    {
+      "id": "53b2c471b61fb11b",
+      "title": "'BlueHammer' Windows Zero-Day Exploit Signals Microsoft Bug Disclosure Issues",
+      "summary": "A researcher, operating under the alias 'Chaotic Eclipse,' has released a proof-of-concept exploit for a Windows zero-day vulnerability dubbed 'BlueHammer.' This flaw allows local users to gain system control, and the researcher cited undisclosed issues with Microsoft's bug disclosure process.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/bluehammer-windows-exploit-microsoft-bug-disclosure-issues",
+      "tier": 2,
+      "publishedDate": "2026-04-09T20:13:34+00:00"
+    },
+    {
+      "id": "27aef779321df49a",
+      "title": "Russia's Forest Blizzard Nabs Rafts of Logins via SOHO Routers",
+      "summary": "The Russian APT group 'Forest Blizzard' (APT28) is compromising global organizations by exploiting vulnerabilities in SOHO routers. The group achieves this by subtly modifying a single DNS setting, enabling them to steal credentials and conduct espionage without deploying traditional malware.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/russia-forest-blizzard-logins-soho-routers",
+      "tier": 2,
+      "publishedDate": "2026-04-09T01:00:00+00:00"
+    },
+    {
+      "id": "cfe2ecbd919b639f",
+      "title": "Iranian Actors Disrupt US Critical Infrastructure Using Exposed PLCs",
+      "summary": "Iranian threat actors have targeted US critical infrastructure by exploiting internet-facing Operational Technology (OT) devices, specifically Programmable Logic Controllers (PLCs). The attacks resulted in file manipulation, operational disruptions, and financial losses across various sectors.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/ics-ot-security/iranian-threat-actors-us-critical-infrastructure-exposed-plcs",
+      "tier": 2,
+      "publishedDate": "2026-04-08T13:46:29+00:00"
+    },
+    {
+      "id": "51a2857628cf6960",
+      "title": "AI-Powered Supply Chain Attack Targets GitHub Misconfigurations",
+      "summary": "A new campaign, PRT-scan, is leveraging AI to automate the targeting of widespread GitHub misconfigurations, marking a significant escalation in AI-assisted supply chain attacks. This development signals a growing threat to software development pipelines and the integrity of code repositories.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/ai-assisted-supply-chain-attack-targets-github",
+      "tier": 2,
+      "publishedDate": "2026-04-06T21:38:53+00:00"
+    },
+    {
+      "id": "3bc47dc99c6b8bdc",
+      "title": "Apple Patches Critical DarkSword Flaw in iOS 18",
+      "summary": "Apple has released a patch for the DarkSword vulnerability in iOS 18, addressing a severe mobile OS-cracking tool that could impact users unable to update immediately. This proactive patching by Apple is significant, offering protection against a potent threat.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/endpoint-security/apple-patches-darksword-ios-18",
+      "tier": 2,
+      "publishedDate": "2026-04-03T17:08:57+00:00"
+    },
+    {
+      "id": "5d6476e1d4c1a6fa",
+      "title": "Iran-Linked Hackers Disrupt US Critical Infrastructure",
+      "summary": "Hackers linked to Iran have disrupted operations at US critical infrastructure sites, coinciding with increased geopolitical tensions. These attacks highlight the growing threat of nation-state actors targeting essential services.",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/04/iran-linked-hackers-disrupt-operations-at-us-critical-infrastructure-sites/",
+      "tier": 2,
+      "publishedDate": "2026-04-08T20:49:11+00:00"
+    },
+    {
+      "id": "1fb13507ca751888",
+      "title": "Adobe Reader Zero-Day Vulnerability Under Active Exploitation",
+      "summary": "A critical zero-day vulnerability in Adobe Reader is currently being actively exploited by attackers. This poses an immediate threat to users, highlighting the importance of timely patching and security updates.",
+      "source": "Sophos News",
+      "url": "https://www.sophos.com/en-us/blog/adobe-reader-zero-day-vulnerability-in-active-exploitation",
+      "tier": 2,
+      "publishedDate": "2026-04-09T00:00:00+00:00"
+    },
+    {
+      "id": "39c1545ebc6ce3c3",
+      "title": "Microsoft's Cloud Security Criticized by Federal Cyber Experts",
+      "summary": "Federal cybersecurity evaluators expressed significant concerns about Microsoft's cloud computing offerings, citing a lack of proper security documentation and a resulting lack of confidence. Despite these findings, the government proceeded with approval, raising questions about the vetting process ",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/on-microsofts-lousy-cloud-security.html",
+      "tier": 2,
+      "publishedDate": "2026-04-09T10:51:36+00:00"
+    },
+    {
+      "id": "8ee7479e66de98be",
+      "title": "Law Enforcement Used Webloc Surveillance Tool to Track 500 Million Devices",
+      "summary": "Citizen Lab reports that law enforcement agencies in multiple countries, including the US, have utilized a surveillance tool called Webloc, developed by Israeli company Cobwebs Technologies. Webloc leverages ad data to track hundreds of millions of devices globally, raising significant privacy conce",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html",
+      "tier": 3,
+      "publishedDate": "2026-04-11T11:32:00+05:30"
+    },
+    {
+      "id": "30aef2bba1238c35",
+      "title": "Critical Marimo Pre-Auth RCE Flaw Under Active Exploitation",
+      "summary": "A critical pre-authentication remote code execution (RCE) vulnerability in Marimo is now being actively exploited by attackers. The flaw is being leveraged to steal credentials, indicating a serious and immediate threat to organizations using the affected Marimo software. This highlights the danger ",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-marimo-pre-auth-rce-flaw-now-under-active-exploitation/",
+      "tier": 3,
+      "publishedDate": "2026-04-12T10:20:31-04:00"
+    },
+    {
+      "id": "a43422fe0f90da63",
+      "title": "Russia Hacked Routers to Steal Microsoft Office Tokens",
+      "summary": "Russian military intelligence has been exploiting vulnerabilities in older internet routers to steal Microsoft Office authentication tokens from over 18,000 networks. This sophisticated campaign allowed attackers to harvest sensitive data without deploying any malicious software, highlighting a sign",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/",
+      "tier": 3,
+      "publishedDate": "2026-04-07T17:02:44+00:00"
+    },
+    {
+      "id": "31e66c59ed0c2570",
+      "title": "GlassWorm Campaign Evolves with New Zig Dropper Targeting Developer IDEs",
+      "summary": "The GlassWorm campaign has been updated with a new Zig dropper designed to infect integrated development environments (IDEs) on developers' machines. This evolution, observed in a malicious Open VSX extension, poses a significant threat to the software supply chain by compromising development tools.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/glassworm-campaign-uses-zig-dropper-to.html",
+      "tier": 3,
+      "publishedDate": "2026-04-10T18:53:00+05:30"
+    },
+    {
+      "id": "5bbe08dbb1813a57",
+      "title": "EngageLab SDK Flaw Exposed 50 Million Android Users, Including Crypto Wallets",
+      "summary": "A security flaw in the EngageLab SDK, a widely used third-party Android development kit, has been patched after potentially exposing 50 million users, including many from cryptocurrency wallet applications. The vulnerability allowed apps on the same device to bypass Android's security sandbox and ac",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/engagelab-sdk-flaw-exposed-50m-android.html",
+      "tier": 3,
+      "publishedDate": "2026-04-09T22:56:00+05:30"
+    },
+    {
+      "id": "709f2eafef2fb38f",
+      "title": "Bitter-Linked Hack-for-Hire Campaign Targets Journalists Across MENA Region",
+      "summary": "A hack-for-hire campaign, suspected to be linked to the Indian government, has targeted journalists, activists, and government officials in the Middle East and North Africa (MENA). The campaign's focus on prominent critics underscores the use of cyber operations for political or state-sponsored surv",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/bitter-linked-hack-for-hire-campaign.html",
+      "tier": 3,
+      "publishedDate": "2026-04-09T16:10:00+05:30"
+    },
+    {
+      "id": "4ad28f84ee160a81",
+      "title": "Anthropic's Claude Mythos Finds Thousands of Zero-Day Flaws Across Major Systems",
+      "summary": "AI company Anthropic has launched Project Glasswing, utilizing its new frontier model, Claude Mythos, to discover security vulnerabilities. The initiative has already identified thousands of zero-day flaws across major systems from partners like AWS, Apple, and Cisco, demonstrating AI's potential in",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/anthropics-claude-mythos-finds.html",
+      "tier": 3,
+      "publishedDate": "2026-04-08T14:46:00+05:30"
+    },
+    {
+      "id": "2dfa187bf1992857",
+      "title": "Docker CVE-2026-34040 Allows Authorization Bypass and Host Access",
+      "summary": "A critical vulnerability, CVE-2026-34040, has been discovered in Docker Engine that allows attackers to bypass authorization plugins and gain host access. This flaw is an incomplete fix for a previous severe vulnerability, posing a significant risk to containerized environments.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/docker-cve-2026-34040-lets-attackers.html",
+      "tier": 3,
+      "publishedDate": "2026-04-07T20:45:00+05:30"
+    },
+    {
+      "id": "38e7d8eecb4192d3",
+      "title": "GPUBreach Attack Enables CPU Privilege Escalation via GDDR6 Bit-Flips",
+      "summary": "New research reveals the GPUBreach attack, which uses RowHammer techniques on GDDR6 memory to achieve full CPU privilege escalation. This novel attack method demonstrates a significant security risk for high-performance GPUs, potentially leading to complete system compromise.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/new-gpubreach-attack-enables-full-cpu.html",
+      "tier": 3,
+      "publishedDate": "2026-04-07T14:08:00+05:30"
+    },
+    {
+      "id": "b347323482451034",
+      "title": "Iran-Linked Group Targets Israeli Organizations with Password Spraying",
+      "summary": "An Iran-nexus threat actor is suspected of conducting a widespread password-spraying campaign against over 300 Israeli Microsoft 365 organizations, with targets also identified in the UAE. The attacks occurred in multiple waves amid ongoing geopolitical tensions.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/iran-linked-password-spraying-campaign.html",
+      "tier": 3,
+      "publishedDate": "2026-04-07T00:07:00+05:30"
+    }
+  ]
+}
