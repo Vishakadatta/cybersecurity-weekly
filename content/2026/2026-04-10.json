@@ -2,9 +2,81 @@
   "edition": "2026-04-10",
   "year": "2026",
   "editionLabel": "Apr 10 \u2013 16, 2026",
-  "generatedAt": "2026-04-13T04:14:53.605069+00:00",
-  "subjectLine": "Nation-State Attacks Escalate: APT28 Targets Ukraine, Iran Disrupts US Infrastructure, and Zero-Days Proliferate",
+  "generatedAt": "2026-04-13T17:12:54.080180+00:00",
+  "subjectLine": "BREAKING: Adobe rolls out emergency fix for Acrobat, Reader zero-day f + More Inside",
   "articles": [
+    {
+      "id": "37532a2d9a76c32a",
+      "title": "FBI and Indonesian Police Dismantle W3LL Phishing Network Behind $20M Fraud Attempts",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI), in partnership with the Indonesian National Police, has dismantled the infrastructure associated with a global phishing operation that leveraged an off-",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/fbi-and-indonesian-police-dismantle.html",
+      "tier": 2,
+      "publishedDate": "2026-04-13T20:16:00+05:30"
+    },
+    {
+      "id": "d0e02208d97a5e99",
+      "title": "The silent \u201cStorm\u201d: New infostealer hijacks sessions, decrypts server-side",
+      "summary": "New \"Storm\" infostealer skips local decryption, sending browser data to attacker servers. Varonis shows how server-side decryption enables session hijacking, bypassing passwords and MFA. [...]",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/the-silent-storm-new-infostealer-hijacks-sessions-decrypts-server-side/",
+      "tier": 2,
+      "publishedDate": "2026-04-13T10:05:15-04:00"
+    },
+    {
+      "id": "58fb044e431d1978",
+      "title": "OpenAI Revokes macOS App Certificate After Malicious Axios Supply Chain Incident",
+      "summary": "OpenAI revealed a GitHub Actions workflow used to sign its macOS apps led to the download of the malicious Axios library on March 31, but noted that no user data or internal system was compromised.\n\"O",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/openai-revokes-macos-app-certificate.html",
+      "tier": 2,
+      "publishedDate": "2026-04-13T12:20:00+05:30"
+    },
+    {
+      "id": "b0bd308076a4bcb3",
+      "title": "APT41 Delivers 'Zero-Detection' Backdoor to Harvest Cloud Credentials",
+      "summary": "The prolific China-backed threat group is targeting AWS, Google, Azure, and Alibaba cloud environments and using typosquatting to obscure C2 communication.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cloud-security/apt41-zero-detection-backdoor-harvest-cloud-credentials",
+      "tier": 2,
+      "publishedDate": "2026-04-13T15:08:12+00:00"
+    },
+    {
+      "id": "485ee17397254117",
+      "title": "On Anthropic\u2019s Mythos Preview and Project Glasswing",
+      "summary": "The cybersecurity industry is obsessing over Anthropic\u2019s new model, Claude Mythos Preview, and its effects on cybersecurity. Anthropic said that it is",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/on-anthropics-mythos-preview-and-project-glasswing.html",
+      "tier": 2,
+      "publishedDate": "2026-04-13T16:52:57+00:00"
+    },
+    {
+      "id": "72c59f7c36dd9490",
+      "title": "Your MTTD Looks Great. Your Post-Alert Gap Doesn't",
+      "summary": "Anthropic restricted its Mythos Preview model last week after it autonomously found and exploited zero-day vulnerabilities in every major operating system and browser. Palo Alto Networks' Wendi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/your-mttd-looks-great-your-post-alert.html",
+      "tier": 2,
+      "publishedDate": "2026-04-13T17:11:00+05:30"
+    },
+    {
+      "id": "e1221ad60fe2573b",
+      "title": "North Korea's APT37 Uses Facebook Social Engineering to Deliver RokRAT Malware",
+      "summary": "The North Korean hacking group tracked as APT37 (aka ScarCruft) has been attributed to a fresh multi-stage, social engineering campaign in which threat actors approached targets on Facebook and a",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/north-koreas-apt37-uses-facebook-social.html",
+      "tier": 1,
+      "publishedDate": "2026-04-13T14:45:00+05:30"
+    },
+    {
+      "id": "7b5869a584d6f1d4",
+      "title": "Adobe rolls out emergency fix for Acrobat, Reader zero-day flaw",
+      "summary": "Adobe has released an emergency security update for Acrobat Reader to fix a vulnerability, tracked as CVE-2026-34621, that has been exploited in zero-day attacks since at least December.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/adobe-rolls-out-emergency-fix-for-acrobat-reader-zero-day-flaw/",
+      "tier": 1,
+      "publishedDate": "2026-04-13T11:37:05-04:00"
+    },
     {
       "id": "6b414d8e994298aa",
       "title": "APT28 Deploys PRISMEX Malware in Campaign Targeting Ukraine and NATO Allies",
