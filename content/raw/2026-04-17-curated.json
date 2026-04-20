@@ -1060,6 +1060,23 @@
     ]
   },
   {
+    "id": "8279fe21dcdd9bec",
+    "title": "NIST to Stop Rating Non-Priority Vulnerabilities Due to Volume",
+    "summary_raw": "The National Institute of Standards and Technology will stop assigning severity scores to lower-priority vulnerabilities due to the growing workload from rising submission volumes. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/nist-to-stop-rating-non-priority-flaws-due-to-volume-increase/",
+    "publishedDate": "2026-04-19T10:17:43-04:00",
+    "scrapedAt": "2026-04-20T04:14:01.835555+00:00",
+    "summary": "The National Institute of Standards and Technology (NIST) will cease assigning severity scores to lower-priority vulnerabilities due to an overwhelming increase in submission volume. This decision aims to focus resources on more critical flaws, but may reduce visibility into less severe, yet potentially exploitable, weaknesses.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "NIST",
+      "policy",
+      "cybersecurity-management"
+    ]
+  },
+  {
     "id": "166e031489510565",
     "title": "NIST Limits CVE Enrichment Due to Surge in Vulnerability Submissions",
     "summary_raw": "The National Institute of Standards and Technology (NIST) has announced changes to the way it handles cybersecurity vulnerabilities and exposures (CVEs) listed in its National Vulnerability Database (NVD), stating it will only enrich those that fulfil certain conditions owing to an explosion in CVE submissions.\n\"CVEs that do not meet those criteria will still be listed in the NVD but will not",
@@ -1712,6 +1729,39 @@
     ]
   },
   {
+    "id": "99e3b0263f29bee8",
+    "title": "Vercel Confirms Data Breach After Hackers Claim to Sell Stolen Data",
+    "summary_raw": "Cloud development platform Vercel has disclosed a security incident after threat actors claimed to have breached its systems and are attempting to sell stolen data. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/vercel-confirms-breach-as-hackers-claim-to-be-selling-stolen-data/",
+    "publishedDate": "2026-04-19T13:32:45-04:00",
+    "scrapedAt": "2026-04-20T04:14:01.835321+00:00",
+    "summary": "Cloud development platform Vercel has confirmed a security incident following claims by threat actors that they breached its systems and are attempting to sell stolen data. This incident highlights the ongoing risks to cloud infrastructure and the potential impact on customer data.",
+    "relevance_score": 7,
+    "tags": [
+      "data-breach",
+      "cloud-security",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "fbc1de0c304798b6",
+    "title": "Microsoft Addresses 163 CVEs and 88 Advisories in April Patch Tuesday",
+    "summary_raw": "<p>Following a long-established pattern, the fourth month of the year is one of the cruelest</p><p><strong>Categories:</strong> X-ops, Threat Research</p><p><strong>Tags:</strong> Patch Tuesday</p>",
+    "source": "Sophos News",
+    "url": "https://www.sophos.com/en-us/blog/april-2026-microsoft-patch-tuesday",
+    "publishedDate": "2026-04-17T00:00:00+00:00",
+    "scrapedAt": "2026-04-20T04:14:05.969220+00:00",
+    "summary": "Microsoft has released its April Patch Tuesday updates, addressing a significant number of vulnerabilities across its product lines, including 163 CVEs and 88 advisories. This regular update cycle is crucial for organizations to patch known weaknesses and defend against active exploitation.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "Patch Tuesday",
+      "Microsoft",
+      "CVE"
+    ]
+  },
+  {
     "id": "1757b57a962ababe",
     "title": "Google Blocks 8.3 Billion Ads, Overhauls Android Privacy in 2025",
     "summary_raw": "Google this week announced a new set of Play policy updates to strengthen user privacy and protect businesses against fraud, even as it revealed it blocked or removed over 8.3 billion ads globally and suspended 24.9 million accounts in 2025.\nThe new policy updates relate to contact and location permissions in Android, allowing third-party apps to access the contact lists and a user's location in",
@@ -1958,6 +2008,23 @@
     ]
   },
   {
+    "id": "57b633935a93fc3a",
+    "title": "Apple Account Change Alerts Abused for iPhone Purchase Phishing Scams",
+    "summary_raw": "Apple account change notifications are being abused to send fake iPhone purchase phishing scams within legitimate emails sent from Apple's servers, increasing legitimacy and potentially allowing them to bypass spam filters. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/apple-account-change-alerts-abused-to-send-phishing-emails/",
+    "publishedDate": "2026-04-19T12:03:01-04:00",
+    "scrapedAt": "2026-04-20T04:14:01.835444+00:00",
+    "summary": "Threat actors are exploiting Apple's account change notification system to send convincing phishing emails that mimic legitimate purchase scams. This tactic leverages Apple's trusted email infrastructure to bypass spam filters and trick users into revealing sensitive information.",
+    "relevance_score": 6,
+    "tags": [
+      "phishing",
+      "scam",
+      "apple",
+      "vulnerability"
+    ]
+  },
+  {
     "id": "935973fd6ea63039",
     "title": "Underground Guide Details How Threat Actors Vet Stolen Credit Card Shops",
     "summary_raw": "In cybercrime markets, trust isn't assumed, it's verified. Flare reveals how underground guides teach actors to evaluate carding shops based on data quality, reputation, and survivability. [...]",
@@ -2024,6 +2091,22 @@
       "privacy",
       "policy",
       "LLM"
+    ]
+  },
+  {
+    "id": "2b299790fe300427",
+    "title": "ISC Stormcast for Monday, April 20th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32912",
+    "publishedDate": "2026-04-20T02:00:03+00:00",
+    "scrapedAt": "2026-04-20T04:14:06.894179+00:00",
+    "summary": "The SANS Internet Storm Center's podcast covers cybersecurity events and trends from April 20th, 2026. This episode provides a digest of recent security news and analysis, offering insights into the evolving threat landscape.",
+    "relevance_score": 5,
+    "tags": [
+      "cybersecurity-news",
+      "podcast",
+      "threat-intelligence"
     ]
   },
   {

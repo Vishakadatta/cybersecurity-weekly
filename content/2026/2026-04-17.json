@@ -1,0 +1,360 @@
+{
+  "edition": "2026-04-17",
+  "year": "2026",
+  "editionLabel": "Apr 17 \u2013 23, 2026",
+  "generatedAt": "2026-04-20T04:14:28.813575+00:00",
+  "subjectLine": "Microsoft Defender Zero-Days Exploited, AI's Exploit Generation & Nation-State Cloud Attacks Dominate Headlines",
+  "articles": [
+    {
+      "id": "753b14c11ee2e632",
+      "title": "Three Microsoft Defender Zero-Days Exploited, Two Remain Unpatched",
+      "summary": "Threat actors are actively exploiting three zero-day vulnerabilities in Microsoft Defender to elevate privileges on compromised systems. The flaws, codenamed BlueHammer, RedSun, and UnDefend, were disclosed by a researcher, and two of them are still unpatched, posing a significant risk to organizati",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html",
+      "tier": 1,
+      "publishedDate": "2026-04-17T18:51:00+05:30"
+    },
+    {
+      "id": "72c59f7c36dd9490",
+      "title": "AI Model Finds Zero-Days; Alerting Gaps Remain a Major Concern",
+      "summary": "An AI model autonomously discovered and exploited zero-day vulnerabilities across major operating systems and browsers, raising concerns about rapid proliferation of such capabilities. This event underscores the critical 'post-alert gap' where organizations struggle to respond effectively even after",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/your-mttd-looks-great-your-post-alert.html",
+      "tier": 1,
+      "publishedDate": "2026-04-13T17:11:00+05:30"
+    },
+    {
+      "id": "b0bd308076a4bcb3",
+      "title": "APT41 Uses 'Zero-Detection' Backdoor to Steal Cloud Credentials",
+      "summary": "The China-linked Advanced Persistent Threat group APT41 is deploying a sophisticated backdoor designed for 'zero-detection' to harvest credentials from cloud environments like AWS, Google, and Azure. The group employs typosquatting to mask its command-and-control communications, indicating a targete",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cloud-security/apt41-zero-detection-backdoor-harvest-cloud-credentials",
+      "tier": 1,
+      "publishedDate": "2026-04-13T15:08:12+00:00"
+    },
+    {
+      "id": "b5198c96e0d6bb59",
+      "title": "Can Anthropic Keep Its Exploit-Writing AI Out of the Wrong Hands?",
+      "summary": "Anthropic's new Mythos Preview model reportedly possesses the capability to discover and exploit critical zero-day vulnerabilities. The company claims to have implemented controls to prevent misuse, but questions remain about the AI's potential impact if it falls into the wrong hands.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/anthropic-exploit-writing-mythos-ai-safe",
+      "tier": 1,
+      "publishedDate": "2026-04-10T13:00:00+00:00"
+    },
+    {
+      "id": "a175b813e02dca04",
+      "title": "Recently Leaked Windows Zero-Days Now Exploited in Attacks",
+      "summary": "Three recently disclosed Windows security vulnerabilities, which were leaked, are now being actively exploited by threat actors to gain SYSTEM or elevated administrator privileges. The exploitation of these zero-days poses a severe risk to Windows environments, emphasizing the need for rapid patchin",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/recently-leaked-windows-zero-days-now-exploited-in-attacks/",
+      "tier": 1,
+      "publishedDate": "2026-04-17T02:14:52-04:00"
+    },
+    {
+      "id": "92369a098e9490",
+      "title": "Microsoft Patch Tuesday: 167 Vulnerabilities, SharePoint Zero-Day, and BlueHammer Flaw",
+      "summary": "Microsoft's April Patch Tuesday addresses a significant 167 security vulnerabilities across its products, including a critical zero-day in SharePoint Server and a publicly disclosed weakness in Windows Defender known as \"BlueHammer.\" Additionally, Google Chrome and Adobe Reader have released emergen",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/04/patch-tuesday-april-2026-edition/",
+      "tier": 2,
+      "publishedDate": "2026-04-14T21:47:59+00:00"
+    },
+    {
+      "id": "40ea1bec8d26b7a8",
+      "title": "Microsoft Patches SharePoint Zero-Day and 168 Other Vulnerabilities",
+      "summary": "Microsoft has released updates to fix a record 169 security flaws, including a zero-day vulnerability in SharePoint that has been actively exploited. Among the patched issues are 157 rated Important and eight rated Critical, underscoring the widespread impact of this patch cycle.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/microsoft-issues-patches-for-sharepoint.html",
+      "tier": 2,
+      "publishedDate": "2026-04-15T14:10:00+05:30"
+    },
+    {
+      "id": "dac1e17ff2444731",
+      "title": "Microsoft's Latest Patch Update Addresses 165 Vulnerabilities, Including Two Zero-Days",
+      "summary": "Microsoft has released a substantial update patching 165 vulnerabilities, with over half of them being privilege escalation flaws. Notably, this release includes fixes for two zero-day exploits that were actively being used in the wild, highlighting the ongoing threat of unpatched vulnerabilities.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/privilege-elevation-dominates-microsoft-patch-update",
+      "tier": 2,
+      "publishedDate": "2026-04-14T21:22:07+00:00"
+    },
+    {
+      "id": "6d5ef81c4cd68486",
+      "title": "April 2026 Patch Tuesday: Two Zero-Days and Eight Critical Vulnerabilities Among 164 CVEs",
+      "summary": "Microsoft's April 2026 Patch Tuesday addresses a significant number of vulnerabilities, including two zero-days and eight critical flaws among a total of 164 CVEs. This release underscores the ongoing challenges in software security and the importance of timely patching.",
+      "source": "CrowdStrike Blog",
+      "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-april-2026/",
+      "tier": 2,
+      "publishedDate": "2026-04-14T00:00:00-05:00"
+    },
+    {
+      "id": "fd5a03253786b736",
+      "title": "New Microsoft Defender Zero-Day PoC 'RedSun' Grants SYSTEM Privileges",
+      "summary": "A researcher has released a proof-of-concept exploit for a second Microsoft Defender zero-day, named 'RedSun,' within two weeks. This exploit allows attackers to gain SYSTEM privileges on affected systems. The researcher's actions highlight ongoing tensions between security researchers and vendors r",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/new-microsoft-defender-redsun-zero-day-poc-grants-system-privileges/",
+      "tier": 2,
+      "publishedDate": "2026-04-16T16:19:31-04:00"
+    },
+    {
+      "id": "4d957c21be6c4a78",
+      "title": "Apache ActiveMQ Vulnerability Added to CISA KEV Catalog Amid Active Exploitation",
+      "summary": "CISA has added a high-severity vulnerability in Apache ActiveMQ Classic (CVE-2026-34197) to its Known Exploited Vulnerabilities (KEV) catalog, indicating it is actively being exploited in the wild. The vulnerability carries a CVSS score of 8.8 and requires federal agencies to patch it immediately.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
+      "tier": 3,
+      "publishedDate": "2026-04-17T08:52:00+05:30"
+    },
+    {
+      "id": "4dab7386b31210ea",
+      "title": "Actively Exploited nginx-ui Flaw (CVE-2026-33032) Allows Full Nginx Server Takeover",
+      "summary": "A critical authentication bypass vulnerability (CVE-2026-33032) in the nginx-ui management tool is being actively exploited in the wild. This flaw allows attackers to gain full control of Nginx servers, posing a significant risk to web infrastructure. The vulnerability has a CVSS score of 9.8.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/critical-nginx-ui-vulnerability-cve.html",
+      "tier": 3,
+      "publishedDate": "2026-04-15T18:26:00+05:30"
+    },
+    {
+      "id": "26d08cce67fdb1ca",
+      "title": "Security Now 1074: What Mythos Means - Marketing or Mayhem",
+      "summary": "This episode discusses the potential impact of AI capable of autonomously chaining zero-day vulnerabilities into exploits, suggesting the 'ship it and patch it later' era of software development may be over. It explores whether this development represents marketing hype or genuine mayhem for cyberse",
+      "source": "Security Now (GRC)",
+      "url": "https://twit.tv/shows/security-now/episodes/1074",
+      "tier": 3,
+      "publishedDate": "2026-04-14T19:27:43+00:00"
+    },
+    {
+      "id": "17d1cb8a81ffea4b",
+      "title": "Report: Critical Security Risks Increased 4x Amidst 52% Rise in Findings",
+      "summary": "A recent analysis of 216 million security findings across 250 organizations revealed a staggering 400% increase in critical risks, despite a 52% rise in overall alert volume. This 'velocity gap' is attributed to AI-assisted development, where high-impact vulnerabilities are emerging faster than they",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/analysis-of-216m-security-findings.html",
+      "tier": 3,
+      "publishedDate": "2026-04-14T15:30:00+05:30"
+    },
+    {
+      "id": "0e9a1cd652c8e5e4",
+      "title": "Critical ShowDoc RCE Flaw (CVE-2025-0520) Actively Exploited on Unpatched Servers",
+      "summary": "A critical remote code execution (RCE) vulnerability, CVE-2025-0520, affecting the popular ShowDoc document management service, is being actively exploited in the wild. With a CVSS score of 9.4, the flaw stems from unrestricted file uploads due to improper validation. Unpatched servers are at high r",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/showdoc-rce-flaw-cve-2025-0520-actively.html",
+      "tier": 3,
+      "publishedDate": "2026-04-14T11:20:00+05:30"
+    },
+    {
+      "id": "30e27c7923da9101",
+      "title": "Adobe Patches Actively Exploited Acrobat Reader Vulnerability",
+      "summary": "Adobe has released emergency updates to address CVE-2026-34621, a critical vulnerability in Acrobat Reader that was actively being exploited in the wild. The flaw, with a CVSS score of 8.6, could allow attackers to execute malicious code on affected systems. This rapid patching is crucial given the ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/adobe-patches-actively-exploited.html",
+      "tier": 3,
+      "publishedDate": "2026-04-12T09:55:00+05:30"
+    },
+    {
+      "id": "270b5565490f14e6",
+      "title": "Marimo RCE Vulnerability Exploited Within Hours of Disclosure",
+      "summary": "A critical pre-authenticated remote code execution vulnerability (CVE-2026-39987) in the Marimo data science notebook was exploited within 10 hours of its public disclosure. With a CVSS score of 9.3, this rapid exploitation highlights the danger of unpatched critical vulnerabilities in widely used t",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/marimo-rce-flaw-cve-2026-39987.html",
+      "tier": 3,
+      "publishedDate": "2026-04-10T13:07:00+05:30"
+    },
+    {
+      "id": "61bbb2b4848c210b",
+      "title": "ZionSiphon Malware Designed to Sabotage Water Treatment Systems",
+      "summary": "A new malware named ZionSiphon has been identified, specifically engineered to target and sabotage operational technology (OT) in water treatment and desalination facilities. The development of such specialized malware poses a critical threat to essential infrastructure and public safety.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/zionsiphon-malware-designed-to-sabotage-water-treatment-systems/",
+      "tier": 3,
+      "publishedDate": "2026-04-16T18:04:53-04:00"
+    },
+    {
+      "id": "670fb697cb4ac149",
+      "title": "Critical NGINX Flaw Allows Configuration File Manipulation",
+      "summary": "A critical vulnerability in nginx-ui allows attackers to abuse a near-maximum severity flaw to restart, create, modify, and delete NGINX configuration files. This could lead to complete server compromise and disruption of web services.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/critical-mcp-integration-flaw-nginx-risk",
+      "tier": 3,
+      "publishedDate": "2026-04-15T21:45:18+00:00"
+    },
+    {
+      "id": "475d0423a96174b7",
+      "title": "Microsoft and Salesforce Patch AI Agent Data Leak Flaws",
+      "summary": "Microsoft and Salesforce have addressed critical prompt injection vulnerabilities in their AI agents, Copilot and Agentforce, respectively. These flaws could have allowed external attackers to exfiltrate sensitive data, underscoring the security challenges associated with AI integrations.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cloud-security/microsoft-salesforce-patch-ai-agent-data-leak-flaws",
+      "tier": 3,
+      "publishedDate": "2026-04-15T12:00:00+00:00"
+    },
+    {
+      "id": "24dbf966092046fd",
+      "title": "Adobe Patches Actively Exploited Zero-Day in Acrobat and Reader",
+      "summary": "Adobe has issued a patch for a critical zero-day vulnerability in its Acrobat and Reader software that has been actively exploited for at least four months. Attackers were using specially crafted PDF files to compromise systems, emphasizing the danger of unpatched, exploited vulnerabilities.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/adobe-patches-actively-exploited-zero-day",
+      "tier": 3,
+      "publishedDate": "2026-04-13T20:52:38+00:00"
+    },
+    {
+      "id": "0bd59563c48f1c1e",
+      "title": "Industrial Controllers Still Vulnerable as Conflicts Move to Cyber",
+      "summary": "The US government has issued a warning regarding the ongoing vulnerability of programmable logic controllers (PLCs) in industrial settings. Research has identified 179 vulnerable operational technology (OT) devices, highlighting the increasing cyber threat to critical infrastructure.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/ics-ot-security/industrial-controllers-vulnerable-conflicts-cyber",
+      "tier": 3,
+      "publishedDate": "2026-04-10T13:30:00+00:00"
+    },
+    {
+      "id": "d250d0d25379a60b",
+      "title": "Supply Chain Attack by TeamPCP Harvests Credentials for Fraud and Ransomware",
+      "summary": "TeamPCP executed a supply chain attack, compromising trusted software tools to steal credentials at scale. These stolen credentials were then used for payroll fraud, logistics theft, and ransomware extortion. This incident highlights the significant risks associated with software supply chain compro",
+      "source": "Recorded Future",
+      "url": "https://www.recordedfuture.com/blog/your-supply-chain-breach-is-someone-else-payday",
+      "tier": 3,
+      "publishedDate": "2026-04-15T00:00:00+00:00"
+    },
+    {
+      "id": "5938549753a30657",
+      "title": "How Hackers Are Thinking About AI",
+      "summary": "A new paper examines how hackers perceive and discuss Artificial Intelligence, suggesting AI is seen as a significant innovation for cybercrime. The research indicates AI could amplify the scale and sophistication of attacks, impacting both novice and experienced cybercriminals.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/how-hackers-are-thinking-about-ai.html",
+      "tier": 3,
+      "publishedDate": "2026-04-14T10:49:50+00:00"
+    },
+    {
+      "id": "c96c03573ddea255",
+      "title": "Critical RCE Flaw in Protobuf.js Library Enables JavaScript Code Execution",
+      "summary": "A critical remote code execution (RCE) vulnerability has been discovered in protobuf.js, a widely used JavaScript implementation of Google's Protocol Buffers. Proof-of-concept exploit code is now publicly available, posing a significant risk to web applications and services that rely on this library",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-flaw-in-protobuf-library-enables-javascript-code-execution/",
+      "tier": 3,
+      "publishedDate": "2026-04-18T11:09:44-04:00"
+    },
+    {
+      "id": "2b337b942bcf76c5",
+      "title": "Operation PowerOFF Dismantles DDoS Services, Seizes 53 Domains",
+      "summary": "An international law enforcement effort, dubbed Operation PowerOFF, has successfully disrupted commercial distributed denial-of-service (DDoS) operations by taking down 53 domains and arresting four individuals. The operation impacted services used by over 75,000 cybercriminals and seized infrastruc",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/operation-poweroff-seizes-53-ddos.html",
+      "tier": 3,
+      "publishedDate": "2026-04-17T11:16:00+05:30"
+    },
+    {
+      "id": "a21e720ee0072cd4",
+      "title": "ThreatsDay Bulletin: Defender 0-Day, SonicWall Brute-Force, and Old Excel RCE",
+      "summary": "This week's security news roundup highlights several critical issues, including zero-day exploits in Microsoft Defender, brute-force attacks against SonicWall devices, and a 17-year-old Excel vulnerability still being exploited. The bulletin underscores the persistent threats from both new and old v",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/threatsday-bulletin-17-year-old-excel.html",
+      "tier": 3,
+      "publishedDate": "2026-04-16T18:35:00+05:30"
+    },
+    {
+      "id": "5902e40e60b2e44f",
+      "title": "Cisco Patches Four Critical Flaws in Identity and Webex Services",
+      "summary": "Cisco has released patches for four critical security vulnerabilities affecting its Identity Services and Webex Services, which could allow for arbitrary code execution and user impersonation. One of the flaws, CVE-2026-20184, has a CVSS score of 9.8 and relates to improper certificate validation in",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/cisco-patches-four-critical-identity.html",
+      "tier": 3,
+      "publishedDate": "2026-04-16T16:57:00+05:30"
+    },
+    {
+      "id": "72b459230ae6ea5f",
+      "title": "UAC-0247 Targets Ukrainian Clinics and Government with Data-Theft Malware",
+      "summary": "The Computer Emergencies Response Team of Ukraine (CERT-UA) has detailed a campaign by UAC-0247 targeting Ukrainian government and healthcare institutions. The attackers are using malware designed to steal sensitive data from Chromium-based browsers and WhatsApp, impacting critical infrastructure.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/uac-0247-targets-ukrainian-clinics-and.html",
+      "tier": 3,
+      "publishedDate": "2026-04-16T11:50:00+05:30"
+    },
+    {
+      "id": "01304a86d36bcbce",
+      "title": "April Patch Tuesday Fixes Critical Flaws in SAP, Adobe, Microsoft, and Fortinet",
+      "summary": "Microsoft's April Patch Tuesday addresses numerous critical vulnerabilities, including a high-severity SQL injection flaw in SAP Business Planning and Consolidation (CVE-2026-27681) with a CVSS score of 9.9. Updates are also available for Adobe, Microsoft, and Fortinet products, emphasizing the ongo",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/april-patch-tuesday-fixes-critical.html",
+      "tier": 3,
+      "publishedDate": "2026-04-15T18:07:00+05:30"
+    },
+    {
+      "id": "b900c39f1815dd5d",
+      "title": "New PHP Composer Flaws Enable Arbitrary Command Execution; Patches Released",
+      "summary": "Two high-severity vulnerabilities have been discovered in the PHP package manager Composer, specifically affecting its Perforce VCS driver. These flaws could allow for arbitrary command execution, and patches have been released to address CVE-2026-40176 and another related issue.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/new-php-composer-flaws-enable-arbitrary.html",
+      "tier": 3,
+      "publishedDate": "2026-04-14T21:27:00+05:30"
+    },
+    {
+      "id": "5619cd3efd44e211",
+      "title": "Mirax Android RAT Targets 220,000 Users via Meta Ads, Turns Devices into Proxies",
+      "summary": "The Mirax Android Remote Access Trojan (RAT) has been actively targeting Spanish-speaking countries, reaching over 220,000 accounts through Meta platforms. This malware allows attackers to fully control compromised devices and use them as SOCKS5 proxies. The widespread reach via social media ads is ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/mirax-android-rat-turns-devices-into.html",
+      "tier": 3,
+      "publishedDate": "2026-04-14T15:50:00+05:30"
+    },
+    {
+      "id": "3e11903e5ad4ca9a",
+      "title": "CISA Adds 6 Exploited Vulnerabilities in Fortinet, Microsoft, and Adobe to KEV Catalog",
+      "summary": "CISA has added six security flaws to its Known Exploited Vulnerabilities (KEV) catalog, indicating active exploitation. The list includes an SQL injection vulnerability in Fortinet FortiClient EMS (CVE-2026-21643) and other flaws in Microsoft and Adobe products. Organizations are urged to patch thes",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/cisa-adds-6-known-exploited-flaws-in.html",
+      "tier": 3,
+      "publishedDate": "2026-04-14T11:09:00+05:30"
+    },
+    {
+      "id": "a66474a8174fc52e",
+      "title": "JanelaRAT Malware Targets Latin American Banks, Conducting 14,739 Attacks in Brazil",
+      "summary": "The JanelaRAT malware has been targeting banks in Latin America, with over 14,739 attacks recorded in Brazil during 2025. This malware variant is designed to steal financial and cryptocurrency data, log keystrokes, take screenshots, and collect system metadata. Financial institutions in the region r",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/janelarat-malware-targets-latin.html",
+      "tier": 3,
+      "publishedDate": "2026-04-13T22:45:00+05:30"
+    },
+    {
+      "id": "401af785e1093fa9",
+      "title": "Weekly Recap: Fiber Optic Spying, Windows Rootkit, AI Vulnerability Hunting",
+      "summary": "This week's security news includes a critical zero-day vulnerability in PDFs, aggressive state-sponsored meddling in infrastructure, and advancements in AI-driven vulnerability hunting. The recap also touches on fiber optic spying and a Windows rootkit, highlighting diverse and evolving threats.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/weekly-recap-fiber-optic-spying-windows.html",
+      "tier": 3,
+      "publishedDate": "2026-04-13T18:31:00+05:30"
+    },
+    {
+      "id": "e1221ad60fe2573b",
+      "title": "North Korea's APT37 Uses Facebook Social Engineering for RokRAT Malware Delivery",
+      "summary": "North Korean hacking group APT37 has been observed using Facebook to build trust with targets before delivering its RokRAT malware. This social engineering tactic leverages friendships on the platform to facilitate the deployment of the remote access trojan. The campaign highlights the continued use",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/north-koreas-apt37-uses-facebook-social.html",
+      "tier": 3,
+      "publishedDate": "2026-04-13T14:45:00+05:30"
+    },
+    {
+      "id": "8ee7479e66de98be",
+      "title": "Law Enforcement Used Webloc Surveillance Tool on 500 Million Devices",
+      "summary": "Citizen Lab reports that law enforcement agencies in Hungary, El Salvador, and the US utilized Webloc, an advertising-based geolocation surveillance system, to track approximately 500 million devices. Developed by Cobwebs Technologies, this tool raises significant privacy concerns regarding mass sur",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/citizen-lab-law-enforcement-used-webloc.html",
+      "tier": 3,
+      "publishedDate": "2026-04-11T11:32:00+05:30"
+    },
+    {
+      "id": "31e66c59ed0c2570",
+      "title": "GlassWorm Campaign Evolves with Zig Dropper Targeting Developer IDEs",
+      "summary": "The GlassWorm campaign has evolved with a new Zig dropper designed to infect developer IDEs, including VS Code extensions. This new technique aims to stealthily compromise development environments, potentially leading to widespread code injection or data theft. The targeting of developer tools poses",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/glassworm-campaign-uses-zig-dropper-to.html",
+      "tier": 3,
+      "publishedDate": "2026-04-10T18:53:00+05:30"
+    },
+    {
+      "id": "e8d45ef6fa2e6d28",
+      "title": "Backdoored Smart Slider 3 Pro Update Distributed via Compromised Servers",
+      "summary": "Threat actors compromised Nextend's servers to distribute a backdoored version of the Smart Slider 3 Pro plugin for WordPress and Joomla. This incident impacts users of version 3.5.1.35 for WordPress, potentially exposing over 800,000 active installations. The compromise of update systems for popula",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/backdoored-smart-slider-3-pro-update.html",
+      "tier": 3,
+      "publishedDate": "2026-04-10T11:58:00+05:30"
+    }
+  ]
+}
