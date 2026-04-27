@@ -741,6 +741,23 @@
     ]
   },
   {
+    "id": "c61d15b3b89eb212",
+    "title": "North Korea's Lazarus Group Targets macOS Users with ClickFix",
+    "summary_raw": "Lazarus continues leveraging ClickFix for initial access and data theft, in this case, against Mac-centric organizations and their high-value leaders.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/north-koreas-lazarus-targets-macos-users-clickfix",
+    "publishedDate": "2026-04-24T13:00:00+00:00",
+    "scrapedAt": "2026-04-25T00:00:04.992274+00:00",
+    "summary": "The Lazarus Group, a North Korean state-sponsored hacking collective, is reportedly targeting macOS users through the ClickFix tool. This campaign aims for initial access and data theft, specifically focusing on Mac-centric organizations and their key personnel.",
+    "relevance_score": 8,
+    "tags": [
+      "APT",
+      "macOS",
+      "malware",
+      "nation-state"
+    ]
+  },
+  {
     "id": "321bb5bd178fd88c",
     "title": "Tropic Trooper APT Targets Home Routers and Japanese Organizations",
     "summary_raw": "The Chinese state-sponsored cyber threat is known for moving fast and trying odd attack vectors; now it's branching out in tools, victimology, and TTPs.",
@@ -1703,6 +1720,40 @@
     ]
   },
   {
+    "id": "4279beb58d72651b",
+    "title": "American Utility Firm Itron Discloses Breach of Internal IT Network",
+    "summary_raw": "Itron, Inc. has disclosed, via an 8-K filing with the U.S. Securities and Exchange Commission (SEC), a cybersecurity incident in which an unauthorized third party accessed certain internal systems. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/american-utility-firm-itron-discloses-breach-of-internal-it-network/",
+    "publishedDate": "2026-04-26T10:22:34-04:00",
+    "scrapedAt": "2026-04-27T04:23:56.662560+00:00",
+    "summary": "Itron, a significant American utility firm, has reported a cybersecurity incident where an unauthorized third party gained access to its internal IT systems. The company has filed an 8-K with the SEC, indicating a potential impact on its operations and data.",
+    "relevance_score": 7,
+    "tags": [
+      "data-breach",
+      "critical-infrastructure",
+      "IT-network"
+    ]
+  },
+  {
+    "id": "2e763ced4fb6d272",
+    "title": "FBI Extracts Deleted Signal Messages from iPhone Notification Database",
+    "summary_raw": "<p>404 Media <a href=\"https://www.404media.co/fbi-extracts-suspects-deleted-signal-messages-saved-in-iphone-notification-database-2/\">reports</a> (alternate <a href=\"https://archive.ph/bSQhD\">site</a>):</p>\n<blockquote><p>The FBI was able to forensically extract copies of incoming Signal messages from a defendant\u2019s iPhone, even after the app was deleted, because copies of the content were saved in the device\u2019s push notification database&#8230;.</p>\n<p>The news shows how forensic extraction&#8212;\u00adwhen someone has physical access to a device and is able to run specialized software on it&#8212;\u00adcan yield sensitive data derived from secure messaging apps in unexpected places. Signal already has a setting that blocks message content from displaying in push notifications; the case highlights why such a feature might be important for some users to turn on...</p></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/fbi-extracts-deleted-signal-messages-from-iphone-notification-database.html",
+    "publishedDate": "2026-04-23T11:05:42+00:00",
+    "scrapedAt": "2026-04-27T04:23:59.828283+00:00",
+    "summary": "The FBI has successfully extracted deleted Signal messages from an iPhone by accessing the device's push notification database, even after the app was removed. This forensic technique reveals a potential vulnerability in how deleted message data is handled on iOS devices.",
+    "relevance_score": 7,
+    "tags": [
+      "forensics",
+      "privacy",
+      "iOS",
+      "law-enforcement",
+      "messaging-apps"
+    ]
+  },
+  {
     "id": "37f4b3daf4d70942",
     "title": "AI Agent Authority Gap Requires Continuous Observability for Security",
     "summary_raw": "The AI Agent Authority Gap - From Ungoverned to Delegation\nAs discussed in our previous article, AI agents are exposing a structural gap in enterprise security, but the problem is often framed too narrowly.\nThe issue is not simply that agents are new actors. It is that agents are delegated actors. They do not emerge with independent authority. They are triggered, invoked, provisioned, or",
@@ -2001,6 +2052,40 @@
     ]
   },
   {
+    "id": "a45e8843566f432d",
+    "title": "Bluetooth Tracker Hidden in Mail Used to Track Naval Ship",
+    "summary_raw": "<p>It was used to <a href=\"https://www.tomshardware.com/tech-industry/cyber-security/bluetooth-tracker-hidden-in-a-postcard-and-mailed-to-a-warship-exposed-its-location-a-eur5-gadget-put-a-eur500-million-dutch-ship-at-risk-for-24-hours\">track</a> a Dutch naval ship:</p>\n<blockquote><p>Dutch journalist Just Vervaart, working for regional media network Omroep Gelderland, followed the directions posted on the Dutch government website and mailed a postcard with a hidden tracker inside. Because of this, they were able to track the ship for about a day, watching it sail from Heraklion, Crete, before it turned towards Cyprus. While it only showed the location of that one vessel, knowing that it was part of a carrier strike group sailing in the Mediterranean could potentially put the entire fleet at risk...</p></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/hiding-bluetooth-trackers-in-mail.html",
+    "publishedDate": "2026-04-24T11:01:03+00:00",
+    "scrapedAt": "2026-04-27T04:23:59.828206+00:00",
+    "summary": "A Bluetooth tracker concealed within a postcard was used to track a Dutch naval ship for 24 hours, highlighting a novel method for covert surveillance. This incident demonstrates a potential security risk to sensitive maritime assets using readily available technology.",
+    "relevance_score": 6,
+    "tags": [
+      "surveillance",
+      "IoT",
+      "espionage",
+      "maritime-security"
+    ]
+  },
+  {
+    "id": "0b3365db22be404b",
+    "title": "ICE Admits to Using Graphite Spyware",
+    "summary_raw": "<p>ICE has <a href=\"https://www.npr.org/2026/04/07/nx-s1-5776799/ice-spyware-privacy\">admitted</a> that it uses spyware from the Israeli company Graphite.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/ice-uses-graphite-spyware.html",
+    "publishedDate": "2026-04-22T11:02:25+00:00",
+    "scrapedAt": "2026-04-27T04:23:59.828356+00:00",
+    "summary": "U.S. Immigration and Customs Enforcement (ICE) has confirmed its use of spyware developed by the Israeli company Graphite. This admission raises concerns about government surveillance capabilities and the privacy implications of such tools.",
+    "relevance_score": 6,
+    "tags": [
+      "spyware",
+      "surveillance",
+      "privacy",
+      "government"
+    ]
+  },
+  {
     "id": "cea261a7807c0201",
     "title": "Why Most AI Deployments Fail After the Initial Demo",
     "summary_raw": "The fastest way to fall in love with an AI tool is to watch the demo.\nEverything moves quickly. Prompts land cleanly. The system produces impressive outputs in seconds. It feels like the beginning of a new era for your team.\nBut most AI initiatives don't fail because of bad technology. They stall because what worked in the demo doesn't survive contact with real operations. The gap between a",
@@ -2135,6 +2220,41 @@
     ]
   },
   {
+    "id": "df9279b73b19f33d",
+    "title": "Mexican Surveillance Company Grupo Seguritech Expanding to US",
+    "summary_raw": "<p><a href=\"https://restofworld.org/2026/mexico-seguritech-government-surveillance-profile/\">Grupo Seguritech</a> is a Mexican surveillance company that is expanding into the US.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/mexican-surveillance-company.html",
+    "publishedDate": "2026-04-21T11:04:59+00:00",
+    "scrapedAt": "2026-04-27T04:23:59.828429+00:00",
+    "summary": "Grupo Seguritech, a Mexican company specializing in surveillance technology, is expanding its operations into the United States. The company's growth signals an increasing market for surveillance solutions and potential cross-border implications.",
+    "relevance_score": 5,
+    "tags": [
+      "surveillance",
+      "technology",
+      "business",
+      "Mexico",
+      "US"
+    ]
+  },
+  {
+    "id": "84a78faab11eb844",
+    "title": "New Evidence Suggests Adam Back May Be Satoshi Nakamoto",
+    "summary_raw": "<p>The <i>New York Times</i> has a <a href=\"https://www.nytimes.com/2026/04/08/business/bitcoin-satoshi-nakamoto-identity-adam-back.html\">long article</a> where the author lays out an impressive array of circumstantial evidence that the inventor of Bitcoin is the cypherpunk Adam Back.</p>\n<p>I don&#8217;t know. The article is convincing, but it&#8217;s written to be convincing.</p>\n<p>I can&#8217;t remember if I ever met Adam. I was a member of the Cypherpunks mailing list for a while, but I was never really an active participant. I spent more time on the Usenet newsgroup sci.crypt. I knew a bunch of the Cypherpunks, though, from various conferences around the world at the time. I really have no opinion about who Satoshi Nakamoto really is...</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/is-satoshi-nakamoto-really-adam-back.html",
+    "publishedDate": "2026-04-20T11:07:25+00:00",
+    "scrapedAt": "2026-04-27T04:23:59.828531+00:00",
+    "summary": "A detailed analysis presented by the New York Times suggests that Adam Back, a prominent cypherpunk, may be the pseudonymous creator of Bitcoin, Satoshi Nakamoto. The article compiles circumstantial evidence supporting this long-standing theory within the cryptocurrency community.",
+    "relevance_score": 5,
+    "tags": [
+      "cryptocurrency",
+      "Bitcoin",
+      "investigation",
+      "cypherpunk"
+    ]
+  },
+  {
     "id": "f1a3c19e23ef0430",
     "title": "Trust as a Superpower for Innovation and Growth",
     "summary_raw": "How better intelligence and collaboration can unlock new opportunities for growth and greater financial health for more people.",
@@ -2166,6 +2286,23 @@
       "Windows",
       "beta program",
       "software update"
+    ]
+  },
+  {
+    "id": "2d8e8889fe4eb424",
+    "title": "Proactive Approach Needed to Aid Romance Scam Victims",
+    "summary_raw": "People targeted by confidence schemes find getting help is a lonely road. Experts want law enforcement, financial and government institutions to work together and protect them.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/building-teams-to-help-cyber-scam-victims",
+    "publishedDate": "2026-04-24T22:34:13+00:00",
+    "scrapedAt": "2026-04-27T04:23:57.099228+00:00",
+    "summary": "Experts are calling for a more proactive and empathetic approach to assist victims of romance scams. The current process for victims seeking help is often isolating, highlighting the need for better collaboration between law enforcement, financial institutions, and government bodies.",
+    "relevance_score": 4,
+    "tags": [
+      "scam",
+      "fraud",
+      "law-enforcement",
+      "policy"
     ]
   },
   {
@@ -2262,12 +2399,19 @@
     ]
   },
   {
-    "id": "c61d15b3b89eb212",
-    "title": "North Korea's Lazarus Targets macOS Users via ClickFix",
-    "summary_raw": "Lazarus continues leveraging ClickFix for initial access and data theft, in this case, against Mac-centric organizations and their high-value leaders.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/threat-intelligence/north-koreas-lazarus-targets-macos-users-clickfix",
-    "publishedDate": "2026-04-24T13:00:00+00:00",
-    "scrapedAt": "2026-04-25T00:00:04.992274+00:00"
+    "id": "c49703095b0cf80c",
+    "title": "Squid and Cuttlefish Evolution Linked to Deep-Sea Survival",
+    "summary_raw": "<p>Science <a href=\"https://www.sciencedaily.com/releases/2026/03/260331001100.htm\">news</a>:</p>\n<blockquote><p>Scientists have finally cracked a long-standing mystery about squid and cuttlefish evolution by analyzing newly sequenced genomes alongside global datasets. The research reveals that these bizarre, intelligent creatures likely originated deep in the ocean over 100 million years ago, surviving mass extinction events by retreating into oxygen-rich deep-sea refuges. For millions of years, their evolution barely changed&#8212;until a dramatic post-extinction boom sparked rapid diversification as they moved into new shallow-water habitats. ...</p></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/04/friday-squid-blogging-how-squid-survived-extinction-events.html",
+    "publishedDate": "2026-04-24T21:03:23+00:00",
+    "scrapedAt": "2026-04-27T04:23:59.828118+00:00",
+    "summary": "New research analyzing genomes suggests that squid and cuttlefish originated over 100 million years ago in the deep ocean. These intelligent cephalopods likely survived mass extinction events by retreating to oxygen-rich deep-sea refuges.",
+    "relevance_score": 1,
+    "tags": [
+      "research",
+      "evolution",
+      "marine-biology"
+    ]
   }
 ]

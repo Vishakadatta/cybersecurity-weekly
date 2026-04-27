@@ -1,0 +1,360 @@
+{
+  "edition": "2026-04-24",
+  "year": "2026",
+  "editionLabel": "Apr 24 \u2013 30, 2026",
+  "generatedAt": "2026-04-27T04:24:26.161857+00:00",
+  "subjectLine": "Global Advisory on Chinese Cyber Networks + ZionSiphon Targets Israeli Water Systems",
+  "articles": [
+    {
+      "id": "8ef2885ad06a9b1a",
+      "title": "Global Advisory Issued on Chinese Government-Linked Cyber Networks",
+      "summary": "CISA, the UK's NCSC, and international partners have released an advisory detailing covert cyber networks linked to the Chinese government. This coordinated warning highlights significant nation-state cyber activity and its potential global impact.",
+      "source": "CISA Advisories",
+      "url": "https://www.cisa.gov/news-events/news/cisa-national-cyber-security-centre-ncsc-uk-and-global-partners-issue-advisory-chinese-government",
+      "tier": 1,
+      "publishedDate": "2026-04-23T12:00:00+00:00"
+    },
+    {
+      "id": "ed4c2a69aa58bb46",
+      "title": "New ZionSiphon Malware Targets Israeli Water and Desalination OT Systems",
+      "summary": "Researchers have identified a new malware named ZionSiphon specifically targeting operational technology (OT) systems in Israel's water treatment and desalination facilities. The malware is designed for persistence and can scan for OT-relevant services, posing a direct threat to critical infrastruct",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/researchers-detect-zionsiphon-malware.html",
+      "tier": 1,
+      "publishedDate": "2026-04-20T13:04:00+05:30"
+    },
+    {
+      "id": "3dde21942fa674ad",
+      "title": "Lotus Wiper Malware Destroys Venezuelan Energy Systems",
+      "summary": "A new data wiper malware, named Lotus Wiper, has been used in destructive attacks targeting Venezuela's energy and utilities sector. The wiper, deployed via batch scripts, aims to cause significant operational disruption. This incident underscores the potential for destructive cyberattacks against c",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/lotus-wiper-malware-targets-venezuelan.html",
+      "tier": 1,
+      "publishedDate": "2026-04-22T16:25:00+05:30"
+    },
+    {
+      "id": "4ad217474a5956fc",
+      "title": "FIRESTARTER Backdoor Compromises Federal Cisco Firepower Device, Evades Patches",
+      "summary": "A federal agency's Cisco Firepower device was compromised with the FIRESTARTER backdoor malware, which has demonstrated the ability to survive security patches. This incident, revealed by CISA and NCSC, highlights a significant threat to critical infrastructure and network security devices. The back",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html",
+      "tier": 2,
+      "publishedDate": "2026-04-24T22:36:00+05:30"
+    },
+    {
+      "id": "0df993572c3bfbbc",
+      "title": "China-Linked GopherWhisper APT Targets Mongolian Government with Go Backdoors",
+      "summary": "A China-aligned advanced persistent threat (APT) group, dubbed GopherWhisper, has been identified targeting 12 Mongolian government systems. The group utilizes a variety of tools written in Go, employing injectors and loaders to deploy backdoors. This incident underscores the ongoing threat of natio",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/china-linked-gopherwhisper-infects-12.html",
+      "tier": 2,
+      "publishedDate": "2026-04-23T14:34:00+05:30"
+    },
+    {
+      "id": "2c4e9dd2b6d9cf9c",
+      "title": "Mustang Panda Targets Indian Banks and South Korean Policy Circles with New LOTUSLITE Variant",
+      "summary": "A new variant of the LOTUSLITE malware, attributed to the APT group Mustang Panda, has been discovered targeting Indian banking sectors and South Korean policy circles. The malware is designed for espionage, communicating with C2 servers over HTTPS and offering remote access capabilities. This highl",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/mustang-pandas-new-lotuslite-variant.html",
+      "tier": 2,
+      "publishedDate": "2026-04-22T13:28:00+05:30"
+    },
+    {
+      "id": "753b14c11ee2e632",
+      "title": "Three Microsoft Defender Zero-Days Actively Exploited, Two Unpatched",
+      "summary": "Threat actors are actively exploiting three zero-day vulnerabilities in Microsoft Defender, allowing them to gain elevated privileges on compromised systems. Two of these critical flaws, codenamed BlueHammer, RedSun, and UnDefend, remain unpatched, posing a significant risk to organizations. This hi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/three-microsoft-defender-zero-days.html",
+      "tier": 2,
+      "publishedDate": "2026-04-17T18:51:00+05:30"
+    },
+    {
+      "id": "4d957c21be6c4a78",
+      "title": "Apache ActiveMQ Vulnerability Added to CISA KEV Amid Active Exploitation",
+      "summary": "CISA has added a high-severity vulnerability in Apache ActiveMQ Classic, CVE-2026-34197, to its Known Exploited Vulnerabilities (KEV) catalog due to active exploitation in the wild. The vulnerability, with a CVSS score of 8.8, requires federal civilian agencies to patch it immediately, indicating a ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/apache-activemq-cve-2026-34197-added-to.html",
+      "tier": 2,
+      "publishedDate": "2026-04-17T08:52:00+05:30"
+    },
+    {
+      "id": "2d962fc0fbd9e729",
+      "title": "Bitwarden CLI npm Package Compromised, Stealing Developer Credentials",
+      "summary": "The Bitwarden CLI's npm package was compromised, with attackers distributing a malicious version containing a credential-stealing payload. This supply chain attack targeted developers, potentially exposing sensitive information and impacting downstream projects.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/bitwarden-cli-npm-package-compromised-to-steal-developer-credentials/",
+      "tier": 2,
+      "publishedDate": "2026-04-23T15:21:01-04:00"
+    },
+    {
+      "id": "bda9277a359b8cad",
+      "title": "Checkmarx KICS Analysis Tool Affected by Supply-Chain Breach",
+      "summary": "The Checkmarx KICS (Keep Infrastructure as Code Secure) analysis tool has been targeted in a supply-chain attack, compromising its Docker images and VSCode extensions. This breach could lead to the harvesting of sensitive data from developer environments using the tool.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-checkmarx-supply-chain-breach-affects-kics-analysis-tool/",
+      "tier": 2,
+      "publishedDate": "2026-04-23T12:05:12-04:00"
+    },
+    {
+      "id": "b0985eb6efbdc2a3",
+      "title": "Bomgar RMM Exploitation Highlights Supply Chain Risk",
+      "summary": "A critical remote code execution flaw (CVE-2026-1731) in Bomgar's remote monitoring and management tool is being widely exploited, demonstrating significant supply chain risks. Attackers can leverage this vulnerability to spread ransomware and compromise downstream systems.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/surge-bomgar-rmm-exploitation-demonstrates-supply-chain-risk",
+      "tier": 2,
+      "publishedDate": "2026-04-21T15:29:17+00:00"
+    },
+    {
+      "id": "6d6dc4f87ffca927",
+      "title": "AirSnitch Attacks Bypass Enterprise Wi-Fi Encryption",
+      "summary": "New research from Unit 42 details AirSnitch attacks that can circumvent WPA2/3 Wi-Fi encryption and client isolation. This vulnerability poses a significant risk to enterprise networks and critical infrastructure.",
+      "source": "Palo Alto Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/air-snitch-enterprise-wireless-attacks/",
+      "tier": 2,
+      "publishedDate": "2026-04-22T10:00:22+00:00"
+    },
+    {
+      "id": "a7af71ea4aa1d6d4",
+      "title": "LMDeploy SSRF Vulnerability Exploited Within 13 Hours of Disclosure",
+      "summary": "A critical Server-Side Request Forgery (SSRF) vulnerability (CVE-2026-33626) in the LMDeploy toolkit for serving Large Language Models (LLMs) was actively exploited within 13 hours of its public disclosure. This rapid exploitation underscores the high value and immediate risk associated with vulnera",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html",
+      "tier": 3,
+      "publishedDate": "2026-04-24T12:54:00+05:30"
+    },
+    {
+      "id": "8bdf83ea87f19365",
+      "title": "AI Model 'Glasswing' Finds Bugs, Prompting Collaboration for Patching",
+      "summary": "Anthropic's Project Glasswing, an AI model capable of discovering software vulnerabilities, has been kept from public release. Instead, access has been granted to major tech companies like Apple, Microsoft, Google, and Amazon to allow them to patch bugs before they can be exploited by adversaries. T",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/project-glasswing-proved-ai-can-find.html",
+      "tier": 3,
+      "publishedDate": "2026-04-23T17:00:00+05:30"
+    },
+    {
+      "id": "8aa654424993e8f6",
+      "title": "22 BRIDGE:BREAK Vulnerabilities Expose Thousands of Serial-to-IP Converters",
+      "summary": "Twenty-two new vulnerabilities, collectively named BRIDGE:BREAK, have been discovered in Lantronix and Silex serial-to-IP converters, potentially affecting nearly 20,000 devices. These flaws could allow attackers to hijack devices and tamper with data, posing a risk to industrial control systems and",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/22-bridgebreak-flaws-expose-20000.html",
+      "tier": 3,
+      "publishedDate": "2026-04-21T21:16:00+05:30"
+    },
+    {
+      "id": "38ca87f844e3f51a",
+      "title": "Critical SGLang Vulnerability (CVE-2026-5760) Allows RCE via Malicious Models",
+      "summary": "A critical vulnerability (CVE-2026-5760) with a CVSS score of 9.8 has been discovered in SGLang, enabling remote code execution through specially crafted GGUF model files. This command injection flaw poses a significant risk to systems using SGLang for AI model serving, potentially allowing attacker",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/sglang-cve-2026-5760-cvss-98-enables.html",
+      "tier": 3,
+      "publishedDate": "2026-04-20T22:44:00+05:30"
+    },
+    {
+      "id": "79b5ec9293d536df",
+      "title": "Anthropic MCP Design Vulnerability Threatens AI Supply Chain with RCE",
+      "summary": "A critical design vulnerability in Anthropic's Model Context Protocol (MCP) architecture allows for arbitrary command execution (RCE) on vulnerable implementations. This flaw poses a significant risk to the AI supply chain, potentially enabling attackers to compromise systems processing AI models an",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/anthropic-mcp-design-vulnerability.html",
+      "tier": 3,
+      "publishedDate": "2026-04-20T16:12:00+05:30"
+    },
+    {
+      "id": "67845184c2bafb29",
+      "title": "Firestarter Malware Persists Despite Cisco Firewall Updates",
+      "summary": "A custom malware known as Firestarter has been found to persist on Cisco Firepower and Secure Firewall devices, even after security patches and updates. This indicates a sophisticated threat capable of evading standard defenses, posing a significant risk to network infrastructure protected by these ",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/firestarter-malware-survives-cisco-firewall-updates-security-patches/",
+      "tier": 3,
+      "publishedDate": "2026-04-24T16:34:08-04:00"
+    },
+    {
+      "id": "d3c05976e68399d6",
+      "title": "Over 10,000 Zimbra Servers Vulnerable to Exploited XSS Flaw",
+      "summary": "A significant number of Zimbra Collaboration Suite (ZCS) instances, exceeding 10,000, are exposed online and vulnerable to ongoing cross-site scripting (XSS) attacks. This widespread vulnerability could allow attackers to compromise user sessions and steal sensitive information.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-says-zimbra-flaw-now-exploited-over-10k-servers-vulnerable/",
+      "tier": 3,
+      "publishedDate": "2026-04-24T09:35:33-04:00"
+    },
+    {
+      "id": "5d821765ebe031a2",
+      "title": "Trigona Ransomware Uses Custom Tool for Efficient Data Exfiltration",
+      "summary": "Recent Trigona ransomware attacks are employing a custom command-line tool designed for faster and more efficient data exfiltration. This indicates an evolving tactic by ransomware groups to maximize their gains before encrypting victim systems.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/trigona-ransomware-attacks-use-custom-exfiltration-tool-to-steal-data/",
+      "tier": 3,
+      "publishedDate": "2026-04-23T14:59:39-04:00"
+    },
+    {
+      "id": "9b457c2f34bf4ba8",
+      "title": "AI-Powered Phishing Surges, Enabling Personalized Attacks",
+      "summary": "Cyberattackers are increasingly leveraging AI to conduct sophisticated phishing campaigns, moving from broad attacks to highly personalized, one-to-one assaults. This trend signifies a significant escalation in the effectiveness and reach of phishing operations.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/ai-phishing-no-1-cyberattackers",
+      "tier": 3,
+      "publishedDate": "2026-04-24T13:30:00+00:00"
+    },
+    {
+      "id": "7a4b14159a9fe7ff",
+      "title": "Electricity Grids Face Growing Cyber Risk",
+      "summary": "Cyberattackers are increasingly targeting the electricity sector by manipulating voltage fluctuations, posing a new and growing cyber risk. This threat extends beyond traditional IT concerns to critical infrastructure control.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/electricity-growing-area-cyber-risk",
+      "tier": 3,
+      "publishedDate": "2026-04-22T14:25:07+00:00"
+    },
+    {
+      "id": "dd20c7e877758348",
+      "title": "Chinese APT Targets Indian Banks and Korean Policy Circles",
+      "summary": "A Chinese Advanced Persistent Threat (APT) group has been observed targeting Indian financial institutions and Korean policy circles, indicating nation-state espionage activities. The attackers' use of somewhat dated tactics suggests a potential lack of urgency or a deliberate camouflage strategy.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/chinese-apt-indian-banks-korean-policy",
+      "tier": 3,
+      "publishedDate": "2026-04-21T12:00:00+00:00"
+    },
+    {
+      "id": "0c6c8034524f7472",
+      "title": "AI-Driven Bug Hunting and Zero-Day Avalanche Raise Defender Concerns",
+      "summary": "The era of AI-powered vulnerability discovery has arrived, with tools uncovering numerous overlooked flaws in widely used software like Firefox. This advancement, coupled with the disclosure of multiple Windows zero-days and compromised developer accounts, signals an impending avalanche of exploits ",
+      "source": "Security Now (GRC)",
+      "url": "https://twit.tv/shows/security-now/episodes/1075",
+      "tier": 3,
+      "publishedDate": "2026-04-21T19:25:44+00:00"
+    },
+    {
+      "id": "99b39d6b703220da",
+      "title": "Frontier AI Models Accelerate Vulnerability Discovery and Patching",
+      "summary": "Palo Alto Unit 42's findings indicate that frontier AI models are significantly enhancing vulnerability discovery and can enable autonomous zero-day identification. These AI capabilities also promise faster patching of existing vulnerabilities (N-days).",
+      "source": "Palo Alto Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/ai-software-security-risks/",
+      "tier": 3,
+      "publishedDate": "2026-04-20T10:00:14+00:00"
+    },
+    {
+      "id": "c6e97fcdc96bc669",
+      "title": "Researchers Uncover Pre-Stuxnet Malware Targeting Engineering Software",
+      "summary": "A new malware framework named 'fast16', discovered by researchers, predates the infamous Stuxnet worm and was designed to sabotage industrial control systems. This discovery highlights the long history of sophisticated cyber-espionage and sabotage tools targeting critical infrastructure.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/researchers-uncover-pre-stuxnet-fast16.html",
+      "tier": 3,
+      "publishedDate": "2026-04-25T14:56:00+05:30"
+    },
+    {
+      "id": "7a6551a1775c8d21",
+      "title": "Chinese Phishing Scheme Targets NASA Employees for U.S. Defense Software Information",
+      "summary": "A Chinese national posed as a U.S. researcher to conduct a spear-phishing campaign targeting NASA employees and other government entities. The goal was to obtain sensitive information related to U.S. defense software, violating export control laws. This incident underscores the persistent threat of ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/nasa-employees-duped-in-chinese.html",
+      "tier": 3,
+      "publishedDate": "2026-04-24T19:43:00+05:30"
+    },
+    {
+      "id": "8ccdf0a58bc535bd",
+      "title": "Tropic Trooper Uses Trojanized SumatraPDF and GitHub for AdaptixC2 Deployment",
+      "summary": "The threat group Tropic Trooper is targeting Chinese speakers with a campaign that uses a trojanized SumatraPDF reader to deploy the AdaptixC2 post-exploitation agent. The attackers then leverage Microsoft Visual Studio Code tunnels for remote access. This sophisticated attack chain demonstrates adv",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/tropic-trooper-uses-trojanized.html",
+      "tier": 3,
+      "publishedDate": "2026-04-24T14:59:00+05:30"
+    },
+    {
+      "id": "9bc3905581f3f4a4",
+      "title": "Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain Campaign",
+      "summary": "The Bitwarden CLI, a command-line tool for the password manager, has been compromised as part of an ongoing supply chain campaign orchestrated by Checkmarx. Malicious code was injected into the '@bitwarden/cli' package, specifically in a file named 'bw1.js.' This incident raises serious concerns abo",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/bitwarden-cli-compromised-in-ongoing.html",
+      "tier": 3,
+      "publishedDate": "2026-04-23T19:12:00+05:30"
+    },
+    {
+      "id": "9e2a7771ec61279c",
+      "title": "AI Accelerates Exploitation, Shrinking Vulnerability Patch Windows",
+      "summary": "Artificial intelligence is enabling attackers to launch automated, large-scale exploits at unprecedented speeds. This trend, termed the 'Collapsing Exploit Window,' significantly reduces the time organizations have to patch vulnerabilities before they are actively exploited. This necessitates a fast",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/webinar-mythos-reality-check-beating.html",
+      "tier": 3,
+      "publishedDate": "2026-04-23T17:33:00+05:30"
+    },
+    {
+      "id": "0cd9568184756e94",
+      "title": "Malicious KICS Docker Images and VS Code Extensions Found in Checkmarx Supply Chain",
+      "summary": "Malicious images have been injected into the official 'checkmarx/kics' Docker Hub repository, with threat actors overwriting existing tags and introducing a new malicious version. This supply chain attack also affected VS Code extensions, demonstrating a sophisticated attempt to compromise developer",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/malicious-kics-docker-images-and-vs.html",
+      "tier": 3,
+      "publishedDate": "2026-04-22T23:25:00+05:30"
+    },
+    {
+      "id": "69eea6c1976f898f",
+      "title": "Self-Propagating Worm Hijacks npm Packages to Steal Developer Tokens",
+      "summary": "A new self-propagating supply chain worm, tracked as CanisterSprawl, has been found compromising npm packages to steal developer tokens. The worm spreads through compromised packages and uses an ICP canister to exfiltrate stolen data. This attack highlights the significant risks associated with the ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/self-propagating-supply-chain-worm.html",
+      "tier": 3,
+      "publishedDate": "2026-04-22T23:03:00+05:30"
+    },
+    {
+      "id": "d04ed9688bab50f9",
+      "title": "Harvester Uses Microsoft Graph API for Linux GoGra Backdoor in South Asia",
+      "summary": "The threat actor Harvester is deploying a new Linux version of its GoGra backdoor, targeting entities in South Asia. This malware cleverly uses the legitimate Microsoft Graph API and Outlook mailboxes as a covert command-and-control channel, allowing it to evade traditional network defenses. This so",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/harvester-deploys-linux-gogra-backdoor.html",
+      "tier": 3,
+      "publishedDate": "2026-04-22T20:58:00+05:30"
+    },
+    {
+      "id": "b5c0f3f63261716d",
+      "title": "Microsoft Patches Critical ASP.NET Core Privilege Escalation Vulnerability",
+      "summary": "Microsoft has released urgent updates to fix a critical privilege escalation vulnerability (CVE-2026-40372) in ASP.NET Core. This flaw, rated with a high CVSS score, could allow attackers to gain elevated access on affected systems. The timely patching is crucial to prevent widespread exploitation.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/microsoft-patches-critical-aspnet-core.html",
+      "tier": 3,
+      "publishedDate": "2026-04-22T14:59:00+05:30"
+    },
+    {
+      "id": "64c8458c46d8535c",
+      "title": "Critical Flaw in Cohere AI's Terrarium Sandbox Allows Root Code Execution and Container Escape",
+      "summary": "A critical vulnerability (CVE-2026-5752) has been found in Cohere AI's Terrarium sandbox, enabling attackers to achieve root code execution and escape the container environment. This flaw, with a high CVSS score, poses a significant risk to systems utilizing this sandbox for code execution. The abil",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/cohere-ai-terrarium-sandbox-flaw.html",
+      "tier": 3,
+      "publishedDate": "2026-04-22T12:46:00+05:30"
+    },
+    {
+      "id": "1f5eb5ca8dbebe95",
+      "title": "Identity-Based Attacks Remain a Primary Entry Vector for Breaches",
+      "summary": "Despite focus on advanced threats like zero-days, stolen credentials and identity-based attacks continue to be the most effective initial access vector for attackers. Techniques like credential stuffing are widely used to gain unauthorized access to systems. This emphasizes the ongoing importance of",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/no-exploit-needed-how-attackers-walk.html",
+      "tier": 3,
+      "publishedDate": "2026-04-21T17:00:00+05:30"
+    },
+    {
+      "id": "03d03a98cd841106",
+      "title": "Webinar: Eliminating Ghost Identities to Prevent Cloud Breaches",
+      "summary": "Compromised service accounts and forgotten API keys were responsible for 68% of cloud breaches in 2024, not phishing or weak passwords. The webinar focuses on unmanaged non-human identities, such as service accounts and API tokens, which are often overlooked and pose a significant risk to enterprise",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/webinar-find-and-eliminate-orphaned-non.html",
+      "tier": 3,
+      "publishedDate": "2026-04-18T13:37:00+05:30"
+    },
+    {
+      "id": "2b337b942bcf76c5",
+      "title": "Operation PowerOFF Dismantles 53 DDoS Domains, Exposes Millions of Criminal Accounts",
+      "summary": "An international law enforcement effort, dubbed Operation PowerOFF, has successfully taken down 53 domains and arrested four individuals involved in commercial distributed denial-of-service (DDoS) operations. The operation disrupted DDoS-for-hire services used by over 75,000 cybercriminals and provi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/operation-poweroff-seizes-53-ddos.html",
+      "tier": 3,
+      "publishedDate": "2026-04-17T11:16:00+05:30"
+    },
+    {
+      "id": "151bd31d43f94438",
+      "title": "DORA Regulation Emphasizes Credential Management for Financial Entities",
+      "summary": "The Digital Operational Resilience Act (DORA) mandates strong authentication and access control for EU financial institutions. This regulation highlights credential management as a critical risk control, with non-compliance potentially leading to significant security risks and operational disruption",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/dora-and-operational-resilience-credential-management-as-a-financial-risk-control/",
+      "tier": 3,
+      "publishedDate": "2026-04-24T10:10:20-04:00"
+    }
+  ]
+}
