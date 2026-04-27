@@ -2,9 +2,153 @@
   "edition": "2026-04-24",
   "year": "2026",
   "editionLabel": "Apr 24 \u2013 30, 2026",
-  "generatedAt": "2026-04-27T04:24:26.161857+00:00",
-  "subjectLine": "Global Advisory on Chinese Cyber Networks + ZionSiphon Targets Israeli Water Systems",
+  "generatedAt": "2026-04-27T17:27:40.661500+00:00",
+  "subjectLine": "BREAKING: TeamPCP Supply Chain Campaign: Update 008 - 26-Day Pause End + More Inside",
   "articles": [
+    {
+      "id": "0cf8c6da34add7c5",
+      "title": "Medieval Encrypted Letter Decoded",
+      "summary": "A medieval encrypted letter, sent by a Spanish diplomat, has been decoded after years of effort by researchers.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/medieval-encrypted-letter-decoded.html",
+      "tier": 3,
+      "publishedDate": "2026-04-27T11:04:41+00:00"
+    },
+    {
+      "id": "fcfa48ae4ab32874",
+      "title": "Parsing Agentic Offensive Security's Existential Threat",
+      "summary": "The rise of agentic AI in offensive security, exemplified by frontier LLMs like Claude Mythos, presents both fears of cybersecurity annihilation and opportunities for advancement.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/industrialized-exploitation-agentic-offensive-security-existential-threat",
+      "tier": 3,
+      "publishedDate": "2026-04-27T13:00:00+00:00"
+    },
+    {
+      "id": "b988ec6cac45656e",
+      "title": "Microsoft says Outlook.com outage is causing sign\u2011in failures",
+      "summary": "Microsoft is investigating an ongoing Outlook.com outage that is causing intermittent sign-in issues and preventing users from accessing their mailboxes.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-outlookcom-outage-is-causing-sign-in-failures/",
+      "tier": 3,
+      "publishedDate": "2026-04-27T08:03:46-04:00"
+    },
+    {
+      "id": "e9d4dc2578fe0e0f",
+      "title": "Money launderer linked to $230M crypto heist gets 70 months in prison",
+      "summary": "A 22-year-old man has been sentenced to 70 months in prison for laundering funds stolen in a $230 million cryptocurrency heist.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/money-launderer-linked-to-230m-crypto-heist-gets-70-months-in-prison/",
+      "tier": 3,
+      "publishedDate": "2026-04-27T09:01:38-04:00"
+    },
+    {
+      "id": "0409690bf7fd1db3",
+      "title": "FTC: Americans lost over $2.1 billion to social media scams in 2025",
+      "summary": "The U.S. Federal Trade Commission (FTC) reported that Americans lost over $2.1 billion to social media scams in 2025, marking a significant increase since 2020.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/ftc-americans-lost-over-21-billion-to-social-media-scams-in-2025/",
+      "tier": 3,
+      "publishedDate": "2026-04-27T12:27:53-04:00"
+    },
+    {
+      "id": "ab6cca51152d48de",
+      "title": "Fake CAPTCHA IRSF Scam and 120 Keitaro Campaigns Drive Global SMS, Crypto Fraud",
+      "summary": "A global telecommunications fraud campaign uses fake CAPTCHA verification to trick users into sending international text messages, alongside 120 Keitaro campaigns, driving SMS and crypto fraud.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/fake-captcha-irsf-scam-and-120-keitaro.html",
+      "tier": 3,
+      "publishedDate": "2026-04-27T12:03:00+05:30"
+    },
+    {
+      "id": "a0d3ca422f3f6c8c",
+      "title": "PhantomCore Exploits TrueConf Vulnerabilities to Breach Russian Networks",
+      "summary": "A pro-Ukrainian hacktivist group, PhantomCore, has been targeting Russian servers running TrueConf video conferencing software since September 2025.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/phantomcore-exploits-trueconf.html",
+      "tier": 3,
+      "publishedDate": "2026-04-27T17:24:00+05:30"
+    },
+    {
+      "id": "aff86eb34f73ed74",
+      "title": "20-Year-Old Malware Rewrites History of Cyber Sabotage",
+      "summary": "Researchers have uncovered a malware framework dubbed 'fast16' that predates Stuxnet by five years, potentially rewriting the history of cyber sabotage.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/20-year-old-malware-rewrites-history-of-cyber-sabotage",
+      "tier": 2,
+      "publishedDate": "2026-04-27T13:09:54+00:00"
+    },
+    {
+      "id": "6dc09b9847c21047",
+      "title": "Unpatched 'PhantomRPC' Flaw in Windows Enables Privilege Escalation",
+      "summary": "A researcher discovered an architectural weakness in Windows' Remote Procedure Call (RPC) mechanism that allows for privilege escalation through five different exploit paths.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/unpatched-phantomrpc-flaw-windows-privilege-escalation",
+      "tier": 2,
+      "publishedDate": "2026-04-27T15:31:41+00:00"
+    },
+    {
+      "id": "bbf92600f12e1ad6",
+      "title": "Deepfake Voice Attacks are Outpacing Defenses: What Security Leaders Should Know",
+      "summary": "Deepfake voice attacks, requiring only three seconds of audio to clone a voice for fraud, are tricking employees into sending money, and most current defenses are unable to detect them.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/deepfake-voice-attacks-are-outpacing-defenses-what-security-leaders-should-know/",
+      "tier": 2,
+      "publishedDate": "2026-04-27T09:00:09-04:00"
+    },
+    {
+      "id": "8158e267dc809d9f",
+      "title": "Medtronic confirms breach after hackers claim 9 million records theft",
+      "summary": "Medical device giant Medtronic disclosed that hackers breached its network and accessed data in certain corporate IT systems, with hackers claiming the theft of 9 million records.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/medtronic-confirms-breach-after-hackers-claim-9-million-records-theft/",
+      "tier": 2,
+      "publishedDate": "2026-04-27T09:50:42-04:00"
+    },
+    {
+      "id": "c0b3e295b05599b8",
+      "title": "Home security giant ADT data breach affects 5.5 million people",
+      "summary": "The ShinyHunters extortion group stole the personal information of 5.5 million individuals after breaching the systems of home security giant ADT.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/home-security-giant-adt-data-breach-affects-55-million-people/",
+      "tier": 2,
+      "publishedDate": "2026-04-27T10:43:11-04:00"
+    },
+    {
+      "id": "f8027890548aad25",
+      "title": "PyPI package with 1.1M monthly downloads hacked to push infostealer",
+      "summary": "The popular elementary-data Python Package Index (PyPI) package was compromised, with a malicious version pushed to steal sensitive developer data and cryptocurrency wallets.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/pypi-package-with-11m-monthly-downloads-hacked-to-push-infostealer/",
+      "tier": 2,
+      "publishedDate": "2026-04-27T11:17:37-04:00"
+    },
+    {
+      "id": "b8b132b7a7062afc",
+      "title": "Researchers Uncover 73 Fake VS Code Extensions Delivering GlassWorm v2 Malware",
+      "summary": "Dozens of Microsoft Visual Studio Code (VS Code) extensions on the Open VSX repository have been linked to a persistent information-stealing campaign dubbed GlassWorm v2.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/researchers-uncover-73-fake-vs-code.html",
+      "tier": 2,
+      "publishedDate": "2026-04-27T16:53:00+05:30"
+    },
+    {
+      "id": "070e48890236d159",
+      "title": "Mythos Changed the Math on Vulnerability Discovery. Most Teams Aren't Ready for the Remediation Side",
+      "summary": "Anthropic\u2019s Claude Mythos Preview, a powerful cybersecurity-focused AI system, is capable of identifying vulnerabilities, but many teams are unprepared for the remediation challenges it presents.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/mythos-changed-math-on-vulnerability.html",
+      "tier": 1,
+      "publishedDate": "2026-04-27T17:28:00+05:30"
+    },
+    {
+      "id": "33bf11cf78d45470",
+      "title": "TeamPCP Supply Chain Campaign: Update 008 - 26-Day Pause Ends with Three Concurrent Compromises (Checkmarx KICS, Bitwarden CLI Cascade, xinference PyPI), CanisterSprawl npm Worm Identified, and Tier 1 Coverage Returns, (Mon, Apr 27th)",
+      "summary": "This update details the continuation of the TeamPCP Supply Chain Campaign, highlighting three concurrent compromises involving Checkmarx KICS, Bitwarden CLI, and xinference PyPI. It also identifies the CanisterSprawl npm worm and notes the return of Tier 1 coverage.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/32926",
+      "tier": 1,
+      "publishedDate": "2026-04-27T14:01:17+00:00"
+    },
     {
       "id": "8ef2885ad06a9b1a",
       "title": "Global Advisory Issued on Chinese Government-Linked Cyber Networks",
