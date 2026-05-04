@@ -538,6 +538,24 @@
     ]
   },
   {
+    "id": "01b497f50ba44056",
+    "title": "Critical cPanel Flaw Mass-Exploited in 'Sorry' Ransomware Attacks",
+    "summary_raw": "A new disclosed cPanel flaw tracked as CVE-2026-41940 is being mass-exploited to breach websites and encrypt data in \"Sorry\" ransomware attacks. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/critrical-cpanel-flaw-mass-exploited-in-sorry-ransomware-attacks/",
+    "publishedDate": "2026-05-02T17:54:00-04:00",
+    "scrapedAt": "2026-05-04T04:34:12.449459+00:00",
+    "summary": "A critical vulnerability in cPanel, tracked as CVE-2026-41940, is being actively exploited to breach websites and deploy the 'Sorry' ransomware. This widespread exploitation of a critical flaw in a widely used web hosting control panel poses a significant threat to website owners and their data.",
+    "relevance_score": 9,
+    "tags": [
+      "ransomware",
+      "vulnerability",
+      "cpanel",
+      "mass-exploitation",
+      "web hosting"
+    ]
+  },
+  {
     "id": "c521ba313d3fccf1",
     "title": "Anti-DDoS Firm Accused of Orchestrating Attacks It Was Supposed to Prevent",
     "summary_raw": "A Brazilian tech firm that specializes in protecting networks from distributed denial-of-service (DDoS) attacks has been enabling a botnet responsible for an extended campaign of massive DDoS attacks against other network operators in Brazil, KrebsOnSecurity has learned. The firm's chief executive says the malicious activity resulted from a security breach and was likely the work of a competitor trying to tarnish his company's public image.",
@@ -1112,6 +1130,42 @@
     ]
   },
   {
+    "id": "e673c18fef24038c",
+    "title": "CISA Adds Actively Exploited Linux Root Access Bug CVE-2026-31431 to KEV",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a recently disclosed security flaw impacting various Linux distributions to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation in the wild.\nThe vulnerability, tracked as CVE-2026-31431 (CVSS score: 7.8), is a case of local privilege escalation (LPE) flaw that could allow an",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html",
+    "publishedDate": "2026-05-03T11:56:00+05:30",
+    "scrapedAt": "2026-05-04T04:34:12.365953+00:00",
+    "summary": "CISA has added a Linux privilege escalation vulnerability (CVE-2026-31431) to its Known Exploited Vulnerabilities catalog due to active exploitation in the wild. This flaw allows local attackers to gain root access, posing a significant risk to Linux systems. Its inclusion in the KEV catalog means federal agencies must patch it by a specific deadline.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "linux",
+      "privilege escalation",
+      "KEV",
+      "CISA"
+    ]
+  },
+  {
+    "id": "c0590d4f8b650da9",
+    "title": "Proof-of-Concept Exploit Available for Linux 'Copy Fail' Vulnerability (CVE-2026-31431)",
+    "summary_raw": "<p><strong>Categories:</strong> Threat Research</p><p><strong>Tags:</strong> advisory, Linux, Copy Fail</p>",
+    "source": "Sophos News",
+    "url": "https://www.sophos.com/en-us/blog/proof-of-concept-exploit-available-for-linux-copy-fail-cve-2026-31431",
+    "publishedDate": "2026-05-01T00:00:00+00:00",
+    "scrapedAt": "2026-05-04T04:34:15.395909+00:00",
+    "summary": "A proof-of-concept exploit has been released for the Linux 'Copy Fail' vulnerability (CVE-2026-31431), which allows for local privilege escalation. This development increases the risk of exploitation for this critical Linux flaw, making it easier for attackers to gain root access on compromised systems.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "linux",
+      "privilege escalation",
+      "exploit",
+      "CVE"
+    ]
+  },
+  {
     "id": "c476d0bc25b01350",
     "title": "30,000 Facebook Accounts Compromised in Google AppSheet Phishing Campaign",
     "summary_raw": "A newly discovered Vietnamese-linked operation has been observed using a Google AppSheet as a \"phishing relay\" to distribute phishing emails with an aim to compromise Facebook accounts.\nThe activity has been codenamed AccountDumpling by Guardio, with the scheme selling the stolen accounts back through an illicit storefront run by the threat actors. In all, roughly 30,000 Facebook accounts are",
@@ -1638,6 +1692,42 @@
     ]
   },
   {
+    "id": "e98fb1781d0a19d8",
+    "title": "Instructure Confirms Data Breach, ShinyHunters Claims Attack",
+    "summary_raw": "Educational tech giant Instructure has confirmed that data was stolen in a cyberattack, with the ShinyHunters extortion gang claiming responsibility. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/instructure-confirms-data-breach-shinyhunters-claims-attack/",
+    "publishedDate": "2026-05-03T18:16:27-04:00",
+    "scrapedAt": "2026-05-04T04:34:12.449126+00:00",
+    "summary": "Educational technology provider Instructure has confirmed a data breach, with the notorious ShinyHunters group claiming responsibility for the attack. The extent of the compromised data and the potential impact on users are still being assessed, but data breaches involving educational platforms can have significant privacy implications.",
+    "relevance_score": 7,
+    "tags": [
+      "data-breach",
+      "shinyhunters",
+      "education",
+      "extortion"
+    ]
+  },
+  {
+    "id": "78a60bccc5726dcc",
+    "title": "Telegram Mini Apps Abused for Crypto Scams and Android Malware",
+    "summary_raw": "Cybersecurity researchers have uncovered a large-scale fraud operation that uses Telegram's Mini App feature to run crypto scams, impersonate well-known brands, and distribute Android malware. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/telegram-mini-apps-abused-for-crypto-scams-android-malware-delivery/",
+    "publishedDate": "2026-05-03T10:11:21-04:00",
+    "scrapedAt": "2026-05-04T04:34:12.449354+00:00",
+    "summary": "Researchers have identified a large-scale operation using Telegram's Mini App feature to conduct cryptocurrency scams and distribute Android malware. This abuse highlights how legitimate platform features can be weaponized for malicious purposes, impacting users who interact with these seemingly harmless applications.",
+    "relevance_score": 7,
+    "tags": [
+      "telegram",
+      "malware",
+      "android",
+      "scam",
+      "cryptocurrency",
+      "mini apps"
+    ]
+  },
+  {
     "id": "f84acbf8885c5529",
     "title": "Weekly Security Bulletin: SMS Blasters, OpenEMR Flaws, Roblox Hacks, and More",
     "summary_raw": "The internet is noisy this week. We are seeing some wild new tactics, like people using fake cell towers to send scam texts, while some developers are accidentally downloading tools that peek into their private files during a simple install. It is definitely a busy time to be online.\nSecurity is always a moving target. Millions of servers are currently sitting online without any passwords, and",
@@ -1859,6 +1949,24 @@
     ]
   },
   {
+    "id": "4de0133fb7f493ce",
+    "title": "Microsoft Defender Flags DigiCert Certificates as Trojan",
+    "summary_raw": "Microsoft Defender is detecting legitimate DigiCert root certificates as Trojan:Win32/Cerdigent.A!dha, resulting in widespread false-positive alerts, and in some cases,\u00a0removing\u00a0certificates from Windows. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-defender-wrongly-flags-digicert-certs-as-trojan-win32-cerdigentadha/",
+    "publishedDate": "2026-05-03T14:11:25-04:00",
+    "scrapedAt": "2026-05-04T04:34:12.449245+00:00",
+    "summary": "Microsoft Defender is incorrectly identifying legitimate DigiCert root certificates as malware (Trojan:Win32/Cerdigent.A!dha), leading to widespread false positives and the removal of essential certificates from Windows systems. This misclassification can disrupt secure connections and impact the trust in digital certificates.",
+    "relevance_score": 6,
+    "tags": [
+      "false-positive",
+      "microsoft defender",
+      "digicert",
+      "certificates",
+      "security software"
+    ]
+  },
+  {
     "id": "dad5e9f1dbffb7e7",
     "title": "MSPs Losing Cybersecurity Revenue Due to Sales Challenges",
     "summary_raw": "The managed security services market is projected to grow from $38.31 billion in 2025 to $69.16 billion by 2030[1], with cybersecurity being the fastest-growing sector[2]. Despite this opportunity, many MSPs leave revenue on the table because their go-to-market strategy fails to connect technical expertise with business needs.\nThis execution gap is where most deals stall. MSPs often focus on",
@@ -1991,6 +2099,24 @@
       "honeypot",
       "threat-intelligence",
       "network-security"
+    ]
+  },
+  {
+    "id": "decc6aa20d61ef77",
+    "title": "Wireshark 4.6.5 Released with 43 Vulnerability Fixes",
+    "summary_raw": "Wireshark release 4.6.5 fixes 43 vulnerabilities (38 CVEs) and 35 bugs.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32944",
+    "publishedDate": "2026-05-03T16:49:04+00:00",
+    "scrapedAt": "2026-05-04T04:34:16.164855+00:00",
+    "summary": "Wireshark version 4.6.5 has been released, addressing a significant number of vulnerabilities, including 38 CVEs, along with numerous bug fixes. Keeping network analysis tools like Wireshark updated is crucial for maintaining security and preventing their own exploitation.",
+    "relevance_score": 5,
+    "tags": [
+      "wireshark",
+      "vulnerability",
+      "software update",
+      "network analysis",
+      "CVE"
     ]
   },
   {
@@ -2138,6 +2264,22 @@
       "microsoft",
       "ui-update",
       "operating-system"
+    ]
+  },
+  {
+    "id": "2334f37de4a58b1b",
+    "title": "ISC Stormcast for Monday, May 4th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32946",
+    "publishedDate": "2026-05-04T02:00:03+00:00",
+    "scrapedAt": "2026-05-04T04:34:16.164731+00:00",
+    "summary": "This entry is a podcast announcement for the ISC Stormcast, a daily summary of cybersecurity events. It typically covers a range of topics from vulnerabilities to incidents, providing a general overview of the week's security landscape.",
+    "relevance_score": 3,
+    "tags": [
+      "podcast",
+      "security news",
+      "ISC Stormcast"
     ]
   },
   {

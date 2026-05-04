@@ -1,0 +1,360 @@
+{
+  "edition": "2026-05-01",
+  "year": "2026",
+  "editionLabel": "May 1 \u2013 7, 2026",
+  "generatedAt": "2026-05-04T04:34:45.360143+00:00",
+  "subjectLine": "AI Unleashed: Nation-State Attacks Escalate, Zero-Days Rapidly Exploited",
+  "articles": [
+    {
+      "id": "b4eb38e56e6bf050",
+      "title": "DPRK Attacks Leverage AI, Fake Firms, and npm Malware",
+      "summary": "North Korean state-sponsored actors are employing a new wave of sophisticated attacks that utilize AI-generated malware within npm packages, alongside fake company fronts and Remote Access Trojans (RATs). One instance involved malicious code being inserted into an npm package via an AI large languag",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/new-wave-of-dprk-attacks-uses-ai.html",
+      "tier": 1,
+      "publishedDate": "2026-04-29T20:13:00+05:30"
+    },
+    {
+      "id": "a7af71ea4aa1d6d4",
+      "title": "LMDeploy CVE-2026-33626 SSRF Vulnerability Exploited Within 13 Hours",
+      "summary": "A critical Server-Side Request Forgery (SSRF) vulnerability (CVE-2026-33626) in the LMDeploy toolkit for large language models (LLMs) has been actively exploited in the wild just 13 hours after its public disclosure. This rapid exploitation of a zero-day vulnerability in a popular LLM deployment too",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/lmdeploy-cve-2026-33626-flaw-exploited.html",
+      "tier": 1,
+      "publishedDate": "2026-04-24T12:54:00+05:30"
+    },
+    {
+      "id": "8a65c6af6eb4e623",
+      "title": "Critical cPanel/WHM Bug Exploited as Zero-Day",
+      "summary": "A critical authentication bypass vulnerability (CVE-2026-41940) in cPanel, WHM, and WP Squared is being actively exploited in the wild as a zero-day, with malicious attempts detected since late February. This widespread vulnerability in popular web hosting control panels poses a significant risk to ",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-cpanel-and-whm-bug-exploited-as-a-zero-day-poc-now-available/",
+      "tier": 1,
+      "publishedDate": "2026-04-30T07:40:31-04:00"
+    },
+    {
+      "id": "e706f4f6e232ef47",
+      "title": "NSA Rootkit 'FAST16.SYS' Corrupted Scientific Research for 21 Years",
+      "summary": "A newly uncovered 21-year-old NSA rootkit, codenamed FAST16.SYS, has been revealed to have secretly corrupted scientific research in hostile states. This sophisticated digital sabotage highlights the long-term, covert capabilities of nation-state actors and fundamentally changes the understanding of",
+      "source": "Security Now (GRC)",
+      "url": "https://twit.tv/shows/security-now/episodes/1076",
+      "tier": 1,
+      "publishedDate": "2026-04-28T19:56:38+00:00"
+    },
+    {
+      "id": "99fec920a29df90e",
+      "title": "Fast16 Malware: A Precursor to Stuxnet Deployed Against Iran",
+      "summary": "Researchers have reverse-engineered Fast16, a state-sponsored malware likely of US origin, deployed against Iran years before Stuxnet. This sophisticated tool was designed for subtle sabotage, indicating early advancements in cyber warfare capabilities.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/fast16-malware.html",
+      "tier": 1,
+      "publishedDate": "2026-04-30T10:22:02+00:00"
+    },
+    {
+      "id": "176859b1f0d29a02",
+      "title": "Anthropic's Claude Mythos AI Poses New Cybersecurity Challenges",
+      "summary": "Anthropic's new AI model, Claude Mythos, can autonomously find and weaponize software vulnerabilities, a capability that could dramatically alter the cybersecurity landscape. This advancement means AI can discover critical flaws in essential software, potentially faster and more effectively than hum",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/what-anthropics-mythos-means-for-the-future-of-cybersecurity.html",
+      "tier": 1,
+      "publishedDate": "2026-04-28T11:06:44+00:00"
+    },
+    {
+      "id": "05a9a277bb780549",
+      "title": "AI Model Claude Mythos Discovers 271 Zero-Day Vulnerabilities in Firefox",
+      "summary": "An advanced AI model, Claude Mythos, has identified a significant number of zero-day vulnerabilities within the Firefox browser. This discovery highlights the growing capability of AI in uncovering complex software flaws that may have evaded human detection. The findings are being actively addressed",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/04/claude-mythos-has-found-271-zero-days-in-firefox.html",
+      "tier": 1,
+      "publishedDate": "2026-04-29T10:12:17+00:00"
+    },
+    {
+      "id": "c3fa253135db031c",
+      "title": "Chinese Silk Typhoon Hacker Extradited to U.S. for COVID Research Cyberattacks",
+      "summary": "A Chinese national, Xu Zewei, accused of being part of the state-sponsored Silk Typhoon hacking group, has been extradited to the U.S. from Italy. He is alleged to have orchestrated cyberattacks against U.S. organizations and government agencies, including those involved in COVID research.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/chinese-silk-typhoon-hacker-extradited.html",
+      "tier": 2,
+      "publishedDate": "2026-04-28T13:27:00+05:30"
+    },
+    {
+      "id": "95e5f10b6afb9f49",
+      "title": "China-Linked Hackers Target Asian Governments, NATO State, and Activists",
+      "summary": "A China-aligned espionage campaign, tracked as SHADOW-EARTH-053, is actively targeting government and defense sectors across Asia, as well as a NATO member state, journalists, and activists. This operation highlights the persistent threat of nation-state sponsored cyber espionage and its broad geopo",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/china-linked-hackers-target-asian.html",
+      "tier": 2,
+      "publishedDate": "2026-05-01T19:32:00+05:30"
+    },
+    {
+      "id": "f30ad6bb86093b27",
+      "title": "Linux 'Copy Fail' Flaw Grants Root Access on Major Distributions",
+      "summary": "A newly published exploit for the 'Copy Fail' vulnerability allows unprivileged local attackers to gain root permissions on Linux systems. This local privilege escalation flaw affects kernels released since 2017, posing a significant risk to a wide range of Linux distributions and their users.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-linux-copy-fail-flaw-gives-hackers-root-on-major-distros/",
+      "tier": 2,
+      "publishedDate": "2026-04-30T09:54:47-04:00"
+    },
+    {
+      "id": "74c284a55e651be7",
+      "title": "North Korea Dominates Crypto Theft, Accounting for 76% of Stolen Funds",
+      "summary": "North Korean threat actors are responsible for a staggering 76% of all cryptocurrency stolen in 2026, engaging in frequent and large-scale heists. The report suggests that AI may be playing a role in enhancing their capabilities, highlighting a major geopolitical and financial security concern.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cybersecurity-analytics/crypto-stolen-2026-north-korea",
+      "tier": 2,
+      "publishedDate": "2026-05-01T20:34:27+00:00"
+    },
+    {
+      "id": "b77c1e080f18aedf",
+      "title": "AI Discovers 38 Security Flaws in Widely Used EHR Platform",
+      "summary": "An AI system has identified 38 security vulnerabilities in OpenEMR, a platform used by over 100,000 healthcare providers, including issues enabling database compromise, RCE, and data theft. This discovery underscores the critical need for robust security in healthcare IT.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/ai-finds-38-security-flaws-openemr",
+      "tier": 3,
+      "publishedDate": "2026-04-29T19:32:42+00:00"
+    },
+    {
+      "id": "070e48890236d159",
+      "title": "AI Vulnerability Discovery Tool 'Mythos' Challenges Remediation Capabilities",
+      "summary": "Anthropic's new AI system, Mythos, is capable of discovering vulnerabilities at an unprecedented scale, raising significant concerns about organizations' ability to validate, prioritize, and remediate the findings. This advancement in AI-driven vulnerability discovery could fundamentally change the ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/mythos-changed-math-on-vulnerability.html",
+      "tier": 3,
+      "publishedDate": "2026-04-27T17:28:00+05:30"
+    },
+    {
+      "id": "189a840154728ba1",
+      "title": "Google Patches Critical Gemini CLI RCE Vulnerability",
+      "summary": "Google has fixed a critical RCE vulnerability (CVSS 10) in its Gemini CLI npm package and GitHub Actions workflow. The flaw allowed unprivileged attackers to inject malicious configuration, leading to arbitrary command execution. This incident underscores the security risks associated with CI/CD pip",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/google-fixes-cvss-10-gemini-cli-ci-rce.html",
+      "tier": 3,
+      "publishedDate": "2026-04-30T12:37:00+05:30"
+    },
+    {
+      "id": "224f620bcb737f36",
+      "title": "LiteLLM SQL Injection Exploited Rapidly After Disclosure",
+      "summary": "A critical SQL injection vulnerability (CVE-2026-42208) in the LiteLLM Python package has been actively exploited in the wild within 36 hours of its public disclosure. This rapid exploitation highlights the speed at which threat actors can weaponize newly revealed vulnerabilities. The flaw could all",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/litellm-cve-2026-42208-sql-injection.html",
+      "tier": 3,
+      "publishedDate": "2026-04-29T11:04:00+05:30"
+    },
+    {
+      "id": "00d19ac5ef1170ec",
+      "title": "Critical GitHub RCE Vulnerability Exploitable via Single Git Push",
+      "summary": "Researchers have discovered a critical vulnerability (CVE-2026-3854) in GitHub.com and GitHub Enterprise Server that allows authenticated users to achieve remote code execution with a single 'git push' command. This command injection flaw poses a significant risk to repositories with push access.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/researchers-discover-critical-github.html",
+      "tier": 3,
+      "publishedDate": "2026-04-28T23:49:00+05:30"
+    },
+    {
+      "id": "9f92ed805b9cbfc7",
+      "title": "Critical Unpatched Flaw in Hugging Face LeRobot Allows RCE",
+      "summary": "A critical vulnerability (CVE-2026-25874) has been disclosed in Hugging Face's popular open-source robotics platform, LeRobot, potentially allowing unauthenticated remote code execution. The flaw stems from untrusted data deserialization and carries a CVSS score of 9.3.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/critical-cve-2026-25874-leaves-hugging.html",
+      "tier": 3,
+      "publishedDate": "2026-04-28T16:48:00+05:30"
+    },
+    {
+      "id": "c6e97fcdc96bc669",
+      "title": "Pre-Stuxnet 'Fast16' Malware Discovered Targeting Engineering Software",
+      "summary": "Researchers have uncovered 'Fast16,' a Lua-based malware dating back to 2005, predating the infamous Stuxnet worm. This cyber sabotage framework was designed to tamper with high-precision calculation software, indicating early sophisticated threats targeting industrial and engineering systems.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/researchers-uncover-pre-stuxnet-fast16.html",
+      "tier": 3,
+      "publishedDate": "2026-04-25T14:56:00+05:30"
+    },
+    {
+      "id": "4ad217474a5956fc",
+      "title": "FIRESTARTER Backdoor Compromises Federal Cisco Firepower Device, Bypassing Patches",
+      "summary": "A federal civilian agency's Cisco Firepower device was compromised by the FIRESTARTER backdoor malware, which is designed for remote access and has demonstrated the ability to survive security patches. This incident highlights the persistent threat of sophisticated backdoors targeting critical netwo",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/firestarter-backdoor-hit-federal-cisco.html",
+      "tier": 3,
+      "publishedDate": "2026-04-24T22:36:00+05:30"
+    },
+    {
+      "id": "7a6551a1775c8d21",
+      "title": "Chinese Phishing Scheme Targets NASA Employees for U.S. Defense Software Data",
+      "summary": "A Chinese national impersonated a U.S. researcher in a spear-phishing campaign targeting NASA employees to steal sensitive information related to U.S. defense software. This operation, which also targeted other government entities and companies, violated export control laws and underscores nation-st",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/nasa-employees-duped-in-chinese.html",
+      "tier": 3,
+      "publishedDate": "2026-04-24T19:43:00+05:30"
+    },
+    {
+      "id": "9688aeb864b1b62e",
+      "title": "CopyFail: A Severe Linux Threat Targeting Multi-Tenant Servers and Containers",
+      "summary": "A new Linux threat named CopyFail has emerged, posing a significant risk to multi-tenant servers, CI/CD workflows, and Kubernetes containers. This vulnerability allows for unauthorized access and potential compromise of sensitive data within these critical infrastructure components. Its widespread p",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/04/as-the-most-severe-linux-threat-in-years-surfaces-the-world-scrambles/",
+      "tier": 3,
+      "publishedDate": "2026-04-30T20:20:48+00:00"
+    },
+    {
+      "id": "858077a01fe5a65a",
+      "title": "Insikt Group Tracks Cyber and Geopolitical Components of Iran Strikes",
+      "summary": "Insikt Group is monitoring the cyber, physical, and geopolitical aspects of US-Israeli strikes on Iran, providing continuous threat analysis and scenario planning. This situation highlights the intersection of nation-state conflict and cybersecurity.",
+      "source": "Recorded Future",
+      "url": "https://www.recordedfuture.com/blog/the-iran-war-what-you-need-to-know",
+      "tier": 3,
+      "publishedDate": "2026-05-01T00:00:00+00:00"
+    },
+    {
+      "id": "b3b5b98160ae728d",
+      "title": "Lazarus Group's Capabilities Beyond AGI",
+      "summary": "The Lazarus Group's capabilities extend beyond hypothetical advanced AI, as evidenced by the 2026 Claude Mythos breach and significant crypto theft. This highlights the persistent and evolving threat from sophisticated state-sponsored actors.",
+      "source": "Recorded Future",
+      "url": "https://www.recordedfuture.com/blog/lazarus-does-not-need-agi",
+      "tier": 3,
+      "publishedDate": "2026-04-28T00:00:00+00:00"
+    },
+    {
+      "id": "33bf11cf78d45470",
+      "title": "TeamPCP Supply Chain Campaign Update: Concurrent Compromises and New npm Worm",
+      "summary": "The TeamPCP supply chain campaign has resurfaced with three concurrent compromises affecting Checkmarx KICS, Bitwarden CLI, and xinference. A new npm worm, CanisterSprawl, has also been identified, highlighting the persistent and evolving threat landscape of software supply chain attacks.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/32926",
+      "tier": 3,
+      "publishedDate": "2026-04-27T14:01:17+00:00"
+    },
+    {
+      "id": "01b497f50ba44056",
+      "title": "Critical cPanel Flaw Mass-Exploited in 'Sorry' Ransomware Attacks",
+      "summary": "A critical vulnerability in cPanel, tracked as CVE-2026-41940, is being actively exploited to breach websites and deploy the 'Sorry' ransomware. This widespread exploitation of a critical flaw in a widely used web hosting control panel poses a significant threat to website owners and their data.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critrical-cpanel-flaw-mass-exploited-in-sorry-ransomware-attacks/",
+      "tier": 3,
+      "publishedDate": "2026-05-02T17:54:00-04:00"
+    },
+    {
+      "id": "783b2ab834d74d6e",
+      "title": "Cybercrime Groups Employ Vishing and SSO Abuse for Rapid SaaS Extortion",
+      "summary": "Two distinct cybercrime groups, Cordial Spider and Snarky Spider, are conducting high-speed data theft and extortion attacks within SaaS environments with minimal traces. They are utilizing vishing (voice phishing) and abusing Single Sign-On (SSO) mechanisms to achieve rapid compromise and data exfi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/cybercrime-groups-using-vishing-and-sso.html",
+      "tier": 3,
+      "publishedDate": "2026-05-01T19:56:00+05:30"
+    },
+    {
+      "id": "25d2b395aceff83f",
+      "title": "Malicious Ruby Gems and Go Modules Compromise CI Pipelines for Credential Theft",
+      "summary": "A new software supply chain attack campaign is exploiting poisoned Ruby gems and Go modules to compromise CI/CD pipelines, enabling credential theft, GitHub Actions tampering, and SSH persistence. The threat actor, operating under the GitHub account 'BufferZoneCorp,' is injecting malicious payloads ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/poisoned-ruby-gems-and-go-modules.html",
+      "tier": 3,
+      "publishedDate": "2026-05-01T15:13:00+05:30"
+    },
+    {
+      "id": "31bd688d7cff32ca",
+      "title": "PyTorch Lightning and Intercom-client Targeted in Supply Chain Attacks for Credential Theft",
+      "summary": "Popular Python package PyTorch Lightning and the intercom-client library have been compromised in recent supply chain attacks, with malicious versions pushed to repositories to steal credentials. Versions 2.6.2 and 2.6.3 of PyTorch Lightning, published on April 30, 2026, contained the malicious code",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/pytorch-lightning-compromised-in-pypi.html",
+      "tier": 3,
+      "publishedDate": "2026-04-30T22:01:00+05:30"
+    },
+    {
+      "id": "ea092c43e901df86",
+      "title": "Linux 'Copy Fail' Vulnerability Grants Root Access",
+      "summary": "A critical local privilege escalation vulnerability, dubbed 'Copy Fail' (CVE-2026-31431), has been disclosed for major Linux distributions. This flaw allows an unprivileged local user to gain root access by writing controlled bytes to the page cache of any readable file. The vulnerability's high sev",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/new-linux-copy-fail-vulnerability.html",
+      "tier": 3,
+      "publishedDate": "2026-04-30T14:54:00+05:30"
+    },
+    {
+      "id": "14d346846999fd4a",
+      "title": "SAP-Related npm Packages Hit by Credential-Stealing Supply Chain Attack",
+      "summary": "A new supply chain attack campaign, named 'Mini Shai-Hulud,' is targeting SAP-related npm packages with credential-stealing malware. Multiple security firms have reported on this campaign, which compromises legitimate packages to distribute malicious code. This attack highlights the ongoing risks wi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/sap-npm-packages-compromised-by-mini.html",
+      "tier": 3,
+      "publishedDate": "2026-04-29T21:56:00+05:30"
+    },
+    {
+      "id": "75d6fd475f24166b",
+      "title": "Critical cPanel Authentication Vulnerability Requires Immediate Update",
+      "summary": "cPanel has released urgent security updates to address a critical authentication vulnerability affecting all supported versions of its control panel software and WebHost Manager (WHM). The flaw could allow attackers to gain unauthorized access to the control panel. Users are strongly advised to upda",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/critical-cpanel-authentication.html",
+      "tier": 3,
+      "publishedDate": "2026-04-29T15:07:00+05:30"
+    },
+    {
+      "id": "b9ddf1c7b2f3d782",
+      "title": "VECT 2.0 Ransomware Irreversibly Destroys Files",
+      "summary": "The VECT 2.0 ransomware operation is acting more like a wiper, irreversibly destroying files larger than 131KB across Windows, Linux, and ESXi systems. This critical flaw in its encryption implementation means recovery is impossible, even for the threat actors.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/vect-20-ransomware-irreversibly.html",
+      "tier": 3,
+      "publishedDate": "2026-04-28T19:31:00+05:30"
+    },
+    {
+      "id": "d827c41da181d211",
+      "title": "Microsoft Patches Entra ID Role Flaw Enabling Service Principal Takeover",
+      "summary": "Microsoft has patched a critical flaw in Microsoft Entra ID where the 'Agent ID Administrator' role could be exploited for privilege escalation and identity takeover attacks. This role, intended for AI agents, inadvertently provided excessive permissions.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/microsoft-patches-entra-id-role-flaw.html",
+      "tier": 3,
+      "publishedDate": "2026-04-28T12:07:00+05:30"
+    },
+    {
+      "id": "4d29a9e39c8aa857",
+      "title": "Checkmarx Confirms GitHub Repository Data Leaked After Supply Chain Attack",
+      "summary": "Checkmarx has confirmed that data from its GitHub repository was posted on the dark web following a supply chain security incident on March 23, 2026. The breach is believed to have originated from unauthorized access to the company's GitHub repository.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/04/checkmarx-confirms-github-repository.html",
+      "tier": 3,
+      "publishedDate": "2026-04-27T19:49:00+05:30"
+    },
+    {
+      "id": "ab9cf6f1d6e19104",
+      "title": "CISA and Partners Guide Zero Trust Adoption in Operational Technology",
+      "summary": "CISA and US government partners have released a guide to accelerate the adoption of Zero Trust principles within Operational Technology (OT) environments. This guidance is crucial for enhancing the security of critical infrastructure.",
+      "source": "CISA Advisories",
+      "url": "https://www.cisa.gov/news-events/news/cisa-and-us-government-partners-unveil-guide-accelerate-zero-trust-adoption-operational-technology",
+      "tier": 3,
+      "publishedDate": "2026-04-29T12:00:00+00:00"
+    },
+    {
+      "id": "3721427799b39fb2",
+      "title": "Ubuntu Infrastructure Down Amidst Critical Root Vulnerability",
+      "summary": "Ubuntu's infrastructure has been experiencing an extended outage, lasting over a day, which has significantly hampered communication regarding a critical vulnerability. This vulnerability reportedly grants root access, raising serious security concerns.",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/05/ubuntu-infrastructure-has-been-down-for-more-than-a-day/",
+      "tier": 3,
+      "publishedDate": "2026-05-01T19:12:26+00:00"
+    },
+    {
+      "id": "c521ba313d3fccf1",
+      "title": "Anti-DDoS Firm Accused of Orchestrating Attacks It Was Supposed to Prevent",
+      "summary": "A Brazilian firm specializing in DDoS protection has allegedly been using a botnet to launch massive DDoS attacks against other Brazilian ISPs. The company's CEO claims the malicious activity was the result of a security breach, possibly orchestrated by a competitor. This incident highlights the pot",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
+      "tier": 3,
+      "publishedDate": "2026-04-30T14:04:26+00:00"
+    },
+    {
+      "id": "6dc09b9847c21047",
+      "title": "Unpatched Windows 'PhantomRPC' Flaw Allows Privilege Escalation",
+      "summary": "A critical vulnerability named 'PhantomRPC' has been discovered in Windows, allowing for privilege escalation. The flaw stems from an architectural weakness in how the Remote Procedure Call (RPC) mechanism handles connections to unavailable services, and remains unpatched.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/unpatched-phantomrpc-flaw-windows-privilege-escalation",
+      "tier": 3,
+      "publishedDate": "2026-04-27T15:31:41+00:00"
+    },
+    {
+      "id": "c61d15b3b89eb212",
+      "title": "North Korea's Lazarus Group Targets macOS Users with ClickFix",
+      "summary": "The Lazarus Group, a North Korean state-sponsored actor, is reportedly targeting macOS users, particularly high-value leaders and organizations. They are utilizing the ClickFix tool for initial access and data theft, indicating a continued focus on Apple's ecosystem.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/north-koreas-lazarus-targets-macos-users-clickfix",
+      "tier": 3,
+      "publishedDate": "2026-04-24T13:00:00+00:00"
+    }
+  ]
+}
