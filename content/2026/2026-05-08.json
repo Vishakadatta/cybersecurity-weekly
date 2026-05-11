@@ -2,9 +2,54 @@
   "edition": "2026-05-08",
   "year": "2026",
   "editionLabel": "May 8 \u2013 14, 2026",
-  "generatedAt": "2026-05-11T04:52:58.168969+00:00",
-  "subjectLine": "Linux Kernel Zero-Day 'Dirty Frag' Exploit, Nation-State Attacks, and Critical Ivanti/PAN-OS Vulnerabilities",
+  "generatedAt": "2026-05-11T18:00:21.097589+00:00",
+  "subjectLine": "BREAKING: cPanel CVE-2026-41940 Under Active Exploitation to Deploy Fi + More Inside",
   "articles": [
+    {
+      "id": "7f9a302d05e037ca",
+      "title": "Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K Downloads",
+      "summary": "A malicious Hugging Face repository managed to take a spot in the platform's trending list by impersonating OpenAI's Privacy Filter open-weight model to deliver a Rust-based information stealer to Win",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/fake-openai-privacy-filter-repo-hits-1.html",
+      "tier": 2,
+      "publishedDate": "2026-05-11T12:35:00+05:30"
+    },
+    {
+      "id": "2652101b1ca41960",
+      "title": "Instructure confirms hackers used Canvas flaw to deface portals",
+      "summary": "Education technology giant Instructure has confirmed that a security vulnerability allowed hackers to modify Canvas login portals and leave an extortion message.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/instructure-confirms-hackers-used-canvas-flaw-to-deface-portals/",
+      "tier": 2,
+      "publishedDate": "2026-05-11T11:26:26-04:00"
+    },
+    {
+      "id": "818e1c9a2ba0eb19",
+      "title": "'Dirty Frag' Exploit Poised to Blow Up on Enterprise Linux Distros",
+      "summary": "The privilege escalation vulnerability, which is similar to other Linux flaws like Copy Fail and Dirty Pipe, may already be under limited exploitation.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/dirty-frag-exploit-blow-up-enterprise-linux-distros",
+      "tier": 1,
+      "publishedDate": "2026-05-11T15:05:45+00:00"
+    },
+    {
+      "id": "5a38a188af401d84",
+      "title": "Hackers Used AI to Develop First Known Zero-Day 2FA Bypass for Mass Exploitation",
+      "summary": "Google on Monday disclosed that it identified an unknown threat actor using a zero-day exploit that it said was likely developed with an artificial intelligence (AI) system, marking the first time the",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
+      "tier": 1,
+      "publishedDate": "2026-05-11T21:15:00+05:30"
+    },
+    {
+      "id": "c431a6ce8cbfce66",
+      "title": "cPanel CVE-2026-41940 Under Active Exploitation to Deploy Filemanager Backdoor",
+      "summary": "A threat actor named Mr_Rot13 has been attributed to the exploitation of a recently disclosed critical cPanel flaw to deploy a backdoor codenamed Filemanager on compromised environments.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/cpanel-cve-2026-41940-under-active.html",
+      "tier": 1,
+      "publishedDate": "2026-05-11T23:24:00+05:30"
+    },
     {
       "id": "30edb1453751d03d",
       "title": "Linux Kernel Dirty Frag LPE Exploit Enables Root Access Across Major Distributions",
