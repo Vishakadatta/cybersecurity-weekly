@@ -1099,6 +1099,23 @@
     ]
   },
   {
+    "id": "c84897c4060cb4fe",
+    "title": "Ollama Vulnerability Allows Remote Process Memory Leak",
+    "summary_raw": "Cybersecurity researchers have disclosed a critical security vulnerability in Ollama that, if successfully exploited, could allow a remote, unauthenticated attacker to leak its entire process memory.\nThe out-of-bounds read flaw, which likely impacts over 300,000 servers globally, is tracked as CVE-2026-7482 (CVSS score: 9.1). It has been codenamed&nbsp;Bleeding Llama by Cyera.\nOllama is a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/ollama-out-of-bounds-read-vulnerability.html",
+    "publishedDate": "2026-05-10T18:11:00+05:30",
+    "scrapedAt": "2026-05-11T04:52:27.554724+00:00",
+    "summary": "A critical out-of-bounds read vulnerability, tracked as CVE-2026-7482 and codenamed 'Bleeding Llama', has been disclosed in Ollama. If exploited, this flaw could allow remote, unauthenticated attackers to leak the entire process memory of over 300,000 servers. This vulnerability has a CVSS score of 9.1, highlighting its significant potential impact.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "memory leak",
+      "CVE",
+      "critical vulnerability"
+    ]
+  },
+  {
     "id": "71e1d379c1909338",
     "title": "TCLBANKER Banking Trojan Targets Financial Platforms via WhatsApp and Outlook Worms",
     "summary_raw": "Threat hunters have flagged a previously undocumented Brazilian banking trojan dubbed TCLBANKER that's capable of targeting 59 banking, fintech, and cryptocurrency platforms.\nThe activity is being tracked by Elastic Security Labs under the moniker REF3076. The malware family is assessed to be a major update of the Maverick, which is known to leverage a worm called SORVEPOTEL to spread via",
@@ -1615,6 +1632,24 @@
     ]
   },
   {
+    "id": "b72e557552efd429",
+    "title": "Hackers Abuse Google Ads and Claude.ai Chats for Mac Malware Distribution",
+    "summary_raw": "Attackers are abusing Google Ads and legitimate Claude.ai shared chats in an active malvertising campaign. Users searching for \"Claude mac download\" may come across sponsored search results that list claude.ai as the target website, but lead to instructions that install malware on their Mac. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-abuse-google-ads-claudeai-chats-to-push-mac-malware/",
+    "publishedDate": "2026-05-10T13:52:15-04:00",
+    "scrapedAt": "2026-05-11T04:52:27.710624+00:00",
+    "summary": "Attackers are actively using Google Ads and shared Claude.ai chats in a malvertising campaign to distribute malware targeting macOS users. Users searching for legitimate downloads might be redirected through malicious ads or chat links that ultimately install malware on their systems. This highlights the evolving tactics used in phishing and malvertising.",
+    "relevance_score": 7,
+    "tags": [
+      "malware",
+      "malvertising",
+      "phishing",
+      "macOS",
+      "Google Ads"
+    ]
+  },
+  {
     "id": "23ac7ef55360983f",
     "title": "Fake Call History Apps Stole Payments After 7.3 Million Play Store Downloads",
     "summary_raw": "Cybersecurity researchers have discovered fraudulent apps on the official Google Play Store for Android that falsely claimed to offer access to call histories for any phone number, only to trick users into joining a subscription that provided fake data and incurred financial loss.\nThe 28 apps have collectively racked up more than 7.3 million downloads, with one of them alone accounting for over",
@@ -1856,6 +1891,23 @@
     ]
   },
   {
+    "id": "203442252abc86e9",
+    "title": "German Police Shut Down Crimenetwork Marketplace, Arrest Operator",
+    "summary_raw": "German authorities have shut down a relaunch version of the criminal marketplace 'Crimenetwork' that generated more than 3.6 million euros, and arrested its operator. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/police-shut-down-reboot-of-crimenetwork-marketplace-arrest-admin/",
+    "publishedDate": "2026-05-10T10:16:47-04:00",
+    "scrapedAt": "2026-05-11T04:52:27.710742+00:00",
+    "summary": "German authorities have successfully dismantled a relaunched version of the criminal marketplace 'Crimenetwork', which had generated over 3.6 million euros. The operator of the marketplace has been arrested as part of this operation. This action disrupts a significant platform used for illicit online activities.",
+    "relevance_score": 6,
+    "tags": [
+      "cybercrime",
+      "marketplace",
+      "law enforcement",
+      "arrest"
+    ]
+  },
+  {
     "id": "2c15c7bc80aed80c",
     "title": "Webinar Discusses Stopping Stealth Breaches Started by 'Patient Zero'",
     "summary_raw": "The hardest part of cybersecurity isn't the technology, it\u2019s the people.\nEvery major breach you\u2019ve read about lately usually starts the same way: one employee, one clever email, and one \"Patient Zero\" infection.\nIn 2026, hackers are using AI to make these \"first clicks\" nearly impossible to spot. If a single laptop gets compromised on your watch, do you have a plan to stop it from taking down",
@@ -2024,6 +2076,23 @@
     ]
   },
   {
+    "id": "64e67601e95e5f0d",
+    "title": "YARA-X 1.16.0 Release",
+    "summary_raw": "YARA-X&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s 1.16.0 release brings 4 improvements and 4 bugfixes.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32970",
+    "publishedDate": "2026-05-10T22:37:08+00:00",
+    "scrapedAt": "2026-05-11T04:52:32.398700+00:00",
+    "summary": "The YARA-X tool has released version 1.16.0, which includes four new improvements and four bug fixes. YARA-X is a tool used for malware research and threat hunting, allowing security professionals to identify and classify malware samples. This update likely enhances its capabilities for threat detection.",
+    "relevance_score": 5,
+    "tags": [
+      "malware analysis",
+      "threat hunting",
+      "YARA",
+      "release"
+    ]
+  },
+  {
     "id": "78109a2e22b06856",
     "title": "Research Hub Bridges Cybersecurity Gap for Under-Resourced Organizations",
     "summary_raw": "The UC Berkeley Center for Long-Term Cybersecurity (CLTC) offers tools and support to schools, local governments, and non-profits as they defend themselves against a growing volume of cyberattacks.",
@@ -2072,6 +2141,22 @@
       "cybersecurity trends",
       "malware",
       "security incidents"
+    ]
+  },
+  {
+    "id": "40a32c4ec5fafc92",
+    "title": "ISC Stormcast for Monday, May 11th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32972",
+    "publishedDate": "2026-05-11T02:15:11+00:00",
+    "scrapedAt": "2026-05-11T04:52:32.398587+00:00",
+    "summary": "This entry refers to the ISC Stormcast podcast for Monday, May 11th, 2026. The podcast typically covers recent cybersecurity events, threats, and advisories, providing a weekly digest of important security news. Listeners can expect updates on emerging vulnerabilities and incidents.",
+    "relevance_score": 4,
+    "tags": [
+      "cybersecurity news",
+      "podcast",
+      "advisory"
     ]
   },
   {
