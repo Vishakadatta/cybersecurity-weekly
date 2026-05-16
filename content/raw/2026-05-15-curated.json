@@ -1,0 +1,2200 @@
+[
+  {
+    "id": "309cba5eea4a5d7d",
+    "title": "Russian APT Turla Enhances Kazuar Backdoor for Persistent P2P Botnet Operations",
+    "summary_raw": "The Russian state-sponsored hacking group known as\n  \n    Turla\n  \n  has transformed its custom backdoor Kazuar into a modular peer-to-peer (P2P) botnet that's engineered for stealth and persistent access to compromised hosts.\n\n\n\n  Turla, per the U.S. Cybersecurity and Infrastructure Security Agency (CISA), is assessed to be affiliated with Center 16 of Russia's Federal Security Service (FSB)",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/turla-turns-kazuar-backdoor-into.html",
+    "publishedDate": "2026-05-15T22:40:25+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552247+00:00",
+    "summary": "The Russian state-sponsored hacking group Turla has evolved its Kazuar backdoor into a modular peer-to-peer botnet designed for stealth and persistent access. Affiliated with Russia's FSB, this development signifies a sophisticated advancement in nation-state cyber capabilities for long-term espionage and network infiltration.",
+    "relevance_score": 10,
+    "tags": [
+      "APT",
+      "nation-state",
+      "backdoor",
+      "botnet",
+      "espionage",
+      "FSB"
+    ]
+  },
+  {
+    "id": "3e0f6f26fcc7c9fb",
+    "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Actively Exploited",
+    "summary_raw": "Cisco has released updates to address a maximum-severity authentication bypass flaw in Catalyst SD-WAN Controller that it said has been exploited in limited attacks.\nThe vulnerability, tracked as CVE-2026-20182, carries a CVSS score of 10.0.\n\"A vulnerability in the peering authentication in Cisco Catalyst SD-WAN Controller, formerly SD-WAN vSmart, and Cisco Catalyst SD-WAN Manager, formerly",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html",
+    "publishedDate": "2026-05-14T23:15:20+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552790+00:00",
+    "summary": "Cisco has released updates to address a critical authentication bypass vulnerability (CVE-2026-20182) in its Catalyst SD-WAN Controller, which has a CVSS score of 10.0. The flaw has reportedly been exploited in limited attacks, allowing attackers to gain administrative access to the network management system.",
+    "relevance_score": 10,
+    "tags": [
+      "vulnerability",
+      "Cisco-SD-WAN",
+      "authentication-bypass",
+      "NMS",
+      "exploitation",
+      "critical-vulnerability"
+    ]
+  },
+  {
+    "id": "793b3080561d3715",
+    "title": "Windows Zero-Days Expose BitLocker Bypass and Privilege Escalation",
+    "summary_raw": "An anonymous cybersecurity researcher who disclosed three Microsoft Defender vulnerabilities has returned with two more zero-days involving a BitLocker bypass and a privilege escalation impacting Windows Collaborative Translation Framework (CTFMON).\nThe security defects have been codenamed YellowKey and GreenPlasma, respectively, by the researcher, who goes by the online aliases Chaotic Eclipse",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html",
+    "publishedDate": "2026-05-14T14:55:50+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553286+00:00",
+    "summary": "Two new Windows zero-day vulnerabilities have been disclosed, one allowing for a BitLocker bypass and the other enabling privilege escalation via the CTFMON component. These critical flaws, codenamed YellowKey and GreenPlasma, pose a significant threat to Windows system security.",
+    "relevance_score": 10,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Windows",
+      "BitLocker",
+      "privilege-escalation"
+    ]
+  },
+  {
+    "id": "af295a22300399e4",
+    "title": "18-Year-Old NGINX Rewrite Module Flaw Enables Unauthenticated RCE",
+    "summary_raw": "Cybersecurity researchers have disclosed multiple security vulnerabilities impacting NGINX Plus and NGINX Open, including a critical flaw that remained undetected for 18 years.\nThe vulnerability, discovered by depthfirst, is a heap buffer overflow issue impacting ngx_http_rewrite_module (CVE-2026-42945, CVSS v4 score: 9.2) that could allow an attacker to achieve remote code execution or cause a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/18-year-old-nginx-rewrite-module-flaw.html",
+    "publishedDate": "2026-05-14T11:30:09+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553453+00:00",
+    "summary": "A critical heap buffer overflow vulnerability (CVE-2026-42945) in the NGINX rewrite module, undetected for 18 years, has been disclosed. This flaw allows for unauthenticated remote code execution (RCE), posing a severe risk to web applications relying on NGINX.",
+    "relevance_score": 10,
+    "tags": [
+      "vulnerability",
+      "NGINX",
+      "RCE",
+      "web-application",
+      "critical-vulnerability"
+    ]
+  },
+  {
+    "id": "5a38a188af401d84",
+    "title": "AI Used to Develop First Known Zero-Day 2FA Bypass for Mass Exploitation",
+    "summary_raw": "Google on Monday disclosed that it identified an unknown threat actor using a zero-day exploit that it said was likely developed with an artificial intelligence (AI) system, marking the first time the technology has been put to use in the wild in a malicious context for vulnerability discovery and exploit generation.\nThe activity is said to be the work of cybercrime threat actors who appear to",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
+    "publishedDate": "2026-05-11T21:15:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555016+00:00",
+    "summary": "Google has disclosed the first known instance of a zero-day exploit, likely developed using AI, to bypass two-factor authentication (2FA). This marks a significant escalation in cybercrime capabilities, demonstrating AI's potential for creating sophisticated exploits for widespread attacks.",
+    "relevance_score": 10,
+    "tags": [
+      "AI",
+      "zero-day",
+      "2FA",
+      "exploitation",
+      "nation-state",
+      "cybercrime"
+    ]
+  },
+  {
+    "id": "09cad3c84ab78d3c",
+    "title": "Pwn2Own Berlin: Zero-Days in Windows 11, Exchange, and RHEL Demonstrated",
+    "summary_raw": "\u200bDuring the second day of Pwn2Own Berlin 2026, competitors collected $385,750 in cash awards after exploiting 15 unique zero-day vulnerabilities in multiple products, including Windows 11, Microsoft Exchange, and Red Hat Enterprise Linux for Workstations. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/pwn2own-day-two-hackers-demo-microsoft-exchange-windows-11-red-had-enterprise-linux-zero-days/",
+    "publishedDate": "2026-05-15T13:47:25-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688257+00:00",
+    "summary": "During Pwn2Own Berlin 2026, competitors successfully exploited 15 unique zero-day vulnerabilities, earning significant cash awards. Exploits targeted major software including Windows 11, Microsoft Exchange, and Red Hat Enterprise Linux, demonstrating critical security flaws in widely used platforms.",
+    "relevance_score": 10,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Pwn2Own",
+      "Windows-11",
+      "Microsoft-Exchange",
+      "Linux"
+    ]
+  },
+  {
+    "id": "21a9615c326f6ca8",
+    "title": "Cisco SD-WAN Flaw Exploited in Zero-Day Attacks",
+    "summary_raw": "Cisco is warning that a critical Catalyst SD-WAN Controller authentication bypass flaw, tracked as CVE-2026-20182, was actively exploited in zero-day attacks that allowed attackers to gain administrative privileges on compromised devices. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-critical-sd-wan-flaw-exploited-in-zero-day-attacks/",
+    "publishedDate": "2026-05-14T16:09:56-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.689009+00:00",
+    "summary": "Cisco is alerting users to a critical authentication bypass vulnerability in its Catalyst SD-WAN Controller that has been actively exploited in zero-day attacks. The flaw allows attackers to gain administrative privileges on compromised devices.",
+    "relevance_score": 10,
+    "tags": [
+      "cisco",
+      "sd-wan",
+      "zero-day",
+      "vulnerability",
+      "exploitation",
+      "authentication-bypass",
+      "critical-infrastructure"
+    ]
+  },
+  {
+    "id": "fa6c29e18fd8dadd",
+    "title": "Maximum Severity Cisco SD-WAN Bug Exploited in the Wild",
+    "summary_raw": "This is the second time this year a threat actor has leveraged a CVSS 10.0 vulnerability in Cisco's network control system.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/maximum-severity-cisco-sd-wan-bug-exploited",
+    "publishedDate": "2026-05-14T20:25:31+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.189951+00:00",
+    "summary": "A critical Cisco SD-WAN vulnerability with a CVSS score of 10.0 is being actively exploited by threat actors in the wild. This marks the second time this year a severe flaw in Cisco's network control system has been leveraged, emphasizing the need for rapid patching of high-impact network infrastructure vulnerabilities.",
+    "relevance_score": 10,
+    "tags": [
+      "vulnerability",
+      "Cisco",
+      "SD-WAN",
+      "exploited",
+      "critical vulnerability",
+      "NMS"
+    ]
+  },
+  {
+    "id": "4d7c8b857b2e39b5",
+    "title": "Zero-Day Exploit Defeats Windows 11 BitLocker Protections",
+    "summary_raw": "It's not entirely clear how the exploit works. Microsoft says it's investigating.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/",
+    "publishedDate": "2026-05-14T18:32:01+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.385838+00:00",
+    "summary": "A critical zero-day exploit has been discovered that completely bypasses the default BitLocker encryption protections on Windows 11. Microsoft is investigating this severe vulnerability, which could allow attackers to access encrypted data without authorization.",
+    "relevance_score": 10,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Windows-11",
+      "BitLocker",
+      "exploit",
+      "encryption"
+    ]
+  },
+  {
+    "id": "f6956d3e9be98cd2",
+    "title": "Critical Linux Kernel Vulnerability 'Copy.Fail' Disclosed",
+    "summary_raw": "<p>This is the <a href=\"https://jorijn.com/en/blog/copy-fail-cve-2026-31431-linux-kernel-bug-explained/\">worst</a> Linux vulnerability in years.</p>\n<blockquote><p><strong>TL;DR</strong></p>\n<ul>\n<li>copy.fail is a Linux kernel local privilege escalation, not a browser or clipboard attack. Disclosed by Theori on 29 April 2026 with a working PoC.\n<li>It abuses the kernel crypto API (AF_ALG sockets) plus splice() to write four bytes at a time straight into the page cache of a file the attacker does not own.\n<li>The exploit works unmodified across Ubuntu, RHEL, Debian, SUSE, Amazon Linux, Fedora and most others. No race condition, no per-distro offsets.\n<li>The file on disk is never modified. AIDE, Tripwire and checksum-based monitoring see nothing.\n...</li></li></li></li></ul></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/copy-fail-linux-vulnerability.html",
+    "publishedDate": "2026-05-12T11:06:12+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.936297+00:00",
+    "summary": "A severe Linux kernel vulnerability, dubbed 'Copy.Fail' (CVE-2026-31431), has been disclosed, allowing local privilege escalation. The exploit abuses the kernel crypto API and splice() functionality to write data directly into a file's page cache, posing a significant risk.",
+    "relevance_score": 10,
+    "tags": [
+      "vulnerability",
+      "Linux",
+      "privilege-escalation",
+      "CVE"
+    ]
+  },
+  {
+    "id": "71d567a7a33d95af",
+    "title": "Canvas Platform Breach Impacts Thousands of Schools Nationwide",
+    "summary_raw": "An ongoing data extortion attack targeting the widely-used education technology platform Canvas disrupted classes and coursework at school districts and universities across the United States today, after a cybercrime group defaced the service's login page with a ransom demand that threatened to leak data from 275 million students and faculty across nearly 9,000 educational institutions.",
+    "source": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-colleges-nationwide/",
+    "publishedDate": "2026-05-08T02:58:46+00:00",
+    "scrapedAt": "2026-05-16T00:12:23.289049+00:00",
+    "summary": "A significant data extortion attack against the popular education technology platform Canvas has disrupted classes and coursework across the United States. The attackers are threatening to leak data from approximately 275 million students and faculty from nearly 9,000 institutions, underscoring the risks associated with centralized educational platforms.",
+    "relevance_score": 9,
+    "tags": [
+      "data-breach",
+      "ransomware",
+      "education",
+      "extortion"
+    ]
+  },
+  {
+    "id": "5806f447b99d840f",
+    "title": "CISA Adds Cisco SD-WAN Authentication Bypass to KEV Catalog",
+    "summary_raw": "The U.S.Cybersecurity and Infrastructure Security Agency (CISA) on Thursday added a newly disclosed vulnerability impacting Cisco Catalyst SD-WAN Controller to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to remediate the issue by May 17, 2026.\nThe vulnerability is a critical authentication bypass tracked as CVE-2026-20182. It's",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html",
+    "publishedDate": "2026-05-15T10:58:03+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552707+00:00",
+    "summary": "CISA has added a critical authentication bypass vulnerability (CVE-2026-20182) in Cisco Catalyst SD-WAN Controller to its Known Exploited Vulnerabilities catalog. Federal agencies are mandated to patch this issue by May 17, 2026, due to its potential for administrative access exploitation.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "CISA",
+      "KEV",
+      "Cisco-SD-WAN",
+      "authentication-bypass",
+      "critical-infrastructure"
+    ]
+  },
+  {
+    "id": "47a09d0a3cc4cbe9",
+    "title": "Ghostwriter Targets Ukrainian Government with Geofenced PDF Phishing",
+    "summary_raw": "The Belarus-aligned threat group known as Ghostwriter has been attributed to a fresh set of attacks targeting governmental organizations in Ukraine.\nActive since at least 2016, Ghostwriter has been linked to both cyber espionage and influence operations targeting neighboring countries, particularly Ukraine. It's also tracked under the monikers FrostyNeighbor, PUSHCHA, Storm-0257, TA445, UAC\u20110057",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html",
+    "publishedDate": "2026-05-14T19:30:37+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553039+00:00",
+    "summary": "The Belarus-aligned threat group Ghostwriter has launched new attacks against Ukrainian government entities using geofenced PDF phishing campaigns. This operation, linked to cyber espionage and influence operations, highlights the ongoing geopolitical cyber warfare impacting Eastern Europe.",
+    "relevance_score": 9,
+    "tags": [
+      "APT",
+      "phishing",
+      "geopolitics",
+      "influence-operations",
+      "cyber-espionage"
+    ]
+  },
+  {
+    "id": "6be4313af3deb95a",
+    "title": "New Fragnesia Linux Kernel LPE Grants Root Access via Page Cache Corruption",
+    "summary_raw": "Details have emerged about a new variant of the recent Dirty Frag Linux local privilege escalation (LPE) vulnerability that allows local attackers to gain root access, making it the third such bug to be identified in the kernel within a span of two weeks.\nCodenamed Fragnesia, the security vulnerability is tracked as CVE-2026-46300 (CVSS score: 7.8) and is rooted in the Linux kernel's XFRM",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/new-fragnesia-linux-kernel-lpe-grants.html",
+    "publishedDate": "2026-05-14T12:36:15+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553372+00:00",
+    "summary": "A new Linux kernel local privilege escalation (LPE) vulnerability, dubbed Fragnesia (CVE-2026-46300), allows attackers to gain root access by corrupting the page cache. This marks the third such critical kernel vulnerability discovered in two weeks, highlighting ongoing issues with Linux kernel security.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "Linux",
+      "kernel",
+      "privilege-escalation",
+      "LPE"
+    ]
+  },
+  {
+    "id": "13f73932a6bb6cad",
+    "title": "Azerbaijani Energy Firm Hit by Chinese Nation-State Actors",
+    "summary_raw": "A threat actor with affiliations to China has been linked to a \"multi-wave intrusion\" targeting an unnamed Azerbaijani oil and gas company between late December 2025 and late February 2026, marking an expansion of its targeting.\nThe activity has been attributed by Bitdefender with moderate-to-high confidence to a hacking group known as FamousSparrow (aka UAT-9244), which shares some level of",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/azerbaijani-energy-firm-hit-by-repeated.html",
+    "publishedDate": "2026-05-13T18:30:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553625+00:00",
+    "summary": "An unnamed Azerbaijani oil and gas company was targeted in a multi-wave intrusion by a Chinese-affiliated threat actor known as FamousSparrow. This incident highlights the ongoing targeting of critical energy infrastructure by nation-state actors for espionage purposes.",
+    "relevance_score": 9,
+    "tags": [
+      "APT",
+      "nation-state",
+      "cyber-espionage",
+      "energy-sector",
+      "critical-infrastructure"
+    ]
+  },
+  {
+    "id": "c50c2ab06ebd9778",
+    "title": "Critical Exim BDAT Vulnerability (CVE-2026-45185) Allows Code Execution",
+    "summary_raw": "Exim has released security updates to address a severe security issue affecting certain configurations that could enable memory corruption and potential code execution.\nExim is an open-source Mail Transfer Agent (MTA) designed for Unix-like systems to receive, route, and deliver email.\nThe vulnerability, tracked as CVE-2026-45185 (CVSS score: 9.8), aka Dead.Letter, has been described as a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/new-exim-bdat-vulnerability-exposes.html",
+    "publishedDate": "2026-05-12T22:14:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554122+00:00",
+    "summary": "Exim has released updates to fix a critical vulnerability (CVE-2026-45185), dubbed Dead.Letter, which affects certain configurations of its Mail Transfer Agent. This flaw could lead to memory corruption and potential code execution, posing a significant risk to email infrastructure.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "Exim",
+      "RCE",
+      "email security",
+      "critical"
+    ]
+  },
+  {
+    "id": "f9795c5690a3aefc",
+    "title": "Mini Shai-Hulud Worm Compromises Major AI and Dev Packages",
+    "summary_raw": "TeamPCP, the threat actor behind the recentsupply chain attack spree, has been linked to the compromise of the npm and PyPI packages from TanStack, UiPath, Mistral AI, OpenSearch, and Guardrails AI as part of a fresh Mini Shai-Hulud campaign.\nThe affected npm packages have been modified to include an obfuscated JavaScript file (\"router_init.js\") that's designed to profile the execution",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html",
+    "publishedDate": "2026-05-12T17:16:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554444+00:00",
+    "summary": "The threat actor TeamPCP is behind a new Mini Shai-Hulud campaign that has compromised popular npm and PyPI packages from companies like Mistral AI and Guardrails AI. The compromised packages contain obfuscated JavaScript designed to profile the execution environment.",
+    "relevance_score": 9,
+    "tags": [
+      "supply chain",
+      "worm",
+      "npm",
+      "PyPI",
+      "AI",
+      "malware"
+    ]
+  },
+  {
+    "id": "f69a535e4a6c7aa3",
+    "title": "TeamPCP Compromises Checkmarx Jenkins AST Plugin, Weeks After KICS Supply Chain Attack",
+    "summary_raw": "Checkmarx has confirmed that a modified version of the Jenkins AST plugin was published to the Jenkins Marketplace.\n\"If you are using Checkmarx Jenkins AST plugin, you need to ensure that you are using the version 2.0.13-829.vc72453fa_1c16 that was published on December 17, 2025 or previously,\" the cybersecurity company said in a statement over the weekend.\nAs of writing, Checkmarx has released",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/teampcp-compromises-checkmarx-jenkins.html",
+    "publishedDate": "2026-05-12T00:00:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554852+00:00",
+    "summary": "Checkmarx has confirmed that a modified version of its Jenkins AST plugin was compromised and published to the Jenkins Marketplace by threat actor TeamPCP. This incident follows a previous supply chain attack on Checkmarx's KICS product, raising concerns about the security of development tools and software supply chains.",
+    "relevance_score": 9,
+    "tags": [
+      "supply-chain-attack",
+      "vulnerability",
+      "CI/CD",
+      "APT"
+    ]
+  },
+  {
+    "id": "c431a6ce8cbfce66",
+    "title": "cPanel CVE-2026-41940 Actively Exploited to Deploy Filemanager Backdoor",
+    "summary_raw": "A threat actor named Mr_Rot13 has been attributed to the exploitation of a recently disclosed critical cPanel flaw to deploy a backdoor codenamed Filemanager on compromised environments.\nThe attack exploits CVE-2026-41940, a vulnerability impacting cPanel and WebHost Manager (WHM) that could result in an authentication bypass and allow remote attackers to gain elevated control of the control",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/cpanel-cve-2026-41940-under-active.html",
+    "publishedDate": "2026-05-11T23:24:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554936+00:00",
+    "summary": "A critical vulnerability in cPanel and WebHost Manager (WHM), tracked as CVE-2026-41940, is being actively exploited by threat actor Mr_Rot13 to deploy the Filemanager backdoor. This authentication bypass flaw allows remote attackers to gain elevated control over compromised hosting environments.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "exploitation",
+      "backdoor",
+      "web-hosting",
+      "CVE"
+    ]
+  },
+  {
+    "id": "06209b4eb0d9b402",
+    "title": "Quasar Linux RAT Targets Developers for Software Supply Chain Compromise",
+    "summary_raw": "A previously undocumented Linux implant codenamed Quasar Linux RAT (QLNX) is targeting developers' systems to establish a silent foothold as well as facilitate a broad range of post-compromise functionality, such as credential harvesting, keylogging, file manipulation, clipboard monitoring, and network tunneling.\n\"QLNX targets developers and DevOps credentials across the software supply chain,\"",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/quasar-linux-rat-steals-developer.html",
+    "publishedDate": "2026-05-08T16:30:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555739+00:00",
+    "summary": "A new Linux implant, Quasar Linux RAT (QLNX), is targeting developers to steal credentials and gain a foothold in the software supply chain. The RAT offers extensive post-compromise capabilities including credential harvesting, keylogging, and network tunneling, posing a serious threat to development environments.",
+    "relevance_score": 9,
+    "tags": [
+      "malware",
+      "linux",
+      "RAT",
+      "supply-chain-attack",
+      "developer-tools",
+      "credentials"
+    ]
+  },
+  {
+    "id": "30edb1453751d03d",
+    "title": "Linux Kernel Dirty Frag LPE Exploit Grants Root Access",
+    "summary_raw": "Details have emerged about a new, unpatched local privilege escalation (LPE) vulnerability impacting the Linux kernel.\nDubbed Dirty Frag, it has been described as a successor to Copy Fail (CVE-2026-31431, CVSS score: 7.8), a recently disclosed LPE flaw impacting the Linux kernel that has since come under active exploitation in the wild. The vulnerability was reported to Linux kernel maintainers",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/linux-kernel-dirty-frag-lpe-exploit.html",
+    "publishedDate": "2026-05-08T10:42:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555984+00:00",
+    "summary": "A new unpatched local privilege escalation (LPE) vulnerability in the Linux kernel, dubbed Dirty Frag, allows attackers to gain root access. This exploit is considered a successor to the Copy Fail vulnerability and poses a widespread risk to major Linux distributions.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "linux-kernel",
+      "LPE",
+      "root-access",
+      "exploit"
+    ]
+  },
+  {
+    "id": "3e8a4c15a7e65ae9",
+    "title": "Microsoft Warns of Exploited Exchange Server Zero-Day Flaw",
+    "summary_raw": "On Thursday, Microsoft shared mitigations for a high-severity Exchange Server vulnerability exploited in attacks that allow threat actors to execute arbitrary code via cross-site scripting (XSS) while targeting Outlook on the web users. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-exchange-zero-day-flaw-exploited-in-attacks/",
+    "publishedDate": "2026-05-15T05:40:42-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688769+00:00",
+    "summary": "Microsoft has issued a warning about a critical zero-day vulnerability in Exchange Server that is actively being exploited. The flaw allows attackers to execute arbitrary code via cross-site scripting (XSS) targeting Outlook on the web users.",
+    "relevance_score": 9,
+    "tags": [
+      "microsoft-exchange",
+      "zero-day",
+      "vulnerability",
+      "exploitation",
+      "xss",
+      "nation-state"
+    ]
+  },
+  {
+    "id": "fac815bc891b4684",
+    "title": "18-Year-Old NGINX Vulnerability Allows DoS and Potential RCE",
+    "summary_raw": "An 18-year-old flaw in the NGINX open-source web server, discovered using an autonomous scanning system, can be exploited for denial of service and, under certain conditions, remote code execution. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/18-year-old-nginx-vulnerability-allows-dos-potential-rce/",
+    "publishedDate": "2026-05-14T11:43:41-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.689247+00:00",
+    "summary": "A long-standing vulnerability in the NGINX web server, dating back 18 years, has been discovered and can be exploited for denial of service and potentially remote code execution. This critical flaw underscores the importance of regularly auditing and patching even mature software components.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "NGINX",
+      "web server",
+      "DoS",
+      "RCE"
+    ]
+  },
+  {
+    "id": "a342a830bd51d116",
+    "title": "'FrostyNeighbor' APT Targets Government Orgs in Poland and Ukraine",
+    "summary_raw": "Attackers uniquely fingerprint victims before delivering spear-phishing payloads aimed at espionage, in the latest campaign from the Belarussian nation-state threat group.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/frostyneighbor-apt-govt-orgs-poland-ukraine",
+    "publishedDate": "2026-05-14T16:59:25+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190104+00:00",
+    "summary": "The nation-state threat group 'FrostyNeighbor,' believed to be linked to Belarus, is conducting targeted espionage campaigns against government organizations in Poland and Ukraine. Attackers meticulously fingerprint victims before deploying spear-phishing payloads, indicating a sophisticated and persistent threat.",
+    "relevance_score": 9,
+    "tags": [
+      "APT",
+      "nation-state",
+      "espionage",
+      "spear-phishing",
+      "Poland",
+      "Ukraine"
+    ]
+  },
+  {
+    "id": "88564ded433d7166",
+    "title": "China's 'FamousSparrow' APT Nests in South Caucasus Energy Firm",
+    "summary_raw": "The cyberthreat group targets an Azerbaijani oil and gas firm with repeated attacks, as the China-linked actors extend targeting beyond hospitality, telecom, and government sectors.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-famoussparrow-apt-south-caucasus-energy-firm",
+    "publishedDate": "2026-05-13T13:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190705+00:00",
+    "summary": "The China-linked advanced persistent threat (APT) group 'FamousSparrow' has been observed repeatedly targeting an energy firm in the South Caucasus. This expansion of targeting beyond traditional sectors like hospitality and government highlights the evolving strategies of nation-state actors.",
+    "relevance_score": 9,
+    "tags": [
+      "APT",
+      "nation-state",
+      "China",
+      "energy sector",
+      "South Caucasus",
+      "cyber espionage"
+    ]
+  },
+  {
+    "id": "818e1c9a2ba0eb19",
+    "title": "New 'Dirty Frag' Exploit Threatens Enterprise Linux Distributions",
+    "summary_raw": "The privilege escalation vulnerability, which is similar to other Linux flaws like Copy Fail and Dirty Pipe, may already be under limited exploitation.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/dirty-frag-exploit-blow-up-enterprise-linux-distros",
+    "publishedDate": "2026-05-11T15:05:45+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.191232+00:00",
+    "summary": "A newly discovered privilege escalation vulnerability, named 'Dirty Frag,' poses a significant risk to enterprise Linux distributions. Similar to previous flaws like Copy Fail and Dirty Pipe, this exploit may already be under limited exploitation, potentially impacting many systems.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "Linux",
+      "privilege-escalation",
+      "exploit",
+      "enterprise-security"
+    ]
+  },
+  {
+    "id": "fa75f7ef255022d1",
+    "title": "Attackers Leverage AI and LLMs for Exploit Development and Automation",
+    "summary_raw": "Cyber adversaries have long used AI, but now attackers are using large language models to develop exploits and orchestrate complex attacks.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cloud-security/hackers-ai-exploit-dev-attack-automation",
+    "publishedDate": "2026-05-11T13:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.191305+00:00",
+    "summary": "Cyber adversaries are increasingly using Artificial Intelligence (AI) and large language models (LLMs) to develop sophisticated exploits and automate complex attack campaigns. This trend signifies a new era in cyber warfare, where AI-powered tools enhance attacker capabilities.",
+    "relevance_score": 9,
+    "tags": [
+      "AI",
+      "LLM",
+      "exploit-development",
+      "attack-automation",
+      "nation-state"
+    ]
+  },
+  {
+    "id": "910aac05bb8c4c65",
+    "title": "DigiCert Mishap Exposes Critical Infrastructure, Microsoft Responds",
+    "summary_raw": "<p>DigiCert's latest security mishap triggered not just a scramble behind the scenes, but a cascading crisis that briefly wiped trust from millions of Windows systems. Find out how a single support slip, followed by Microsoft's heavy-handed response, left critical infrastructures exposed.</p><ul> \n<li>The FCC decides router firmware updates are useful.</li> \n<li>Netgear applies for and gets a full FCC pass.</li> \n<li>AI uncovers a 21-year old critical FreeBSD RCE.</li> \n<li>What was behind that Let's Encrypt outage.</li> \n<li>AI model repositories are overflowing with malware.</li> \n<li>The CISA 2015 info-sharing act is being renewed.</li> \n<li>Edge leaves ALL usernames and passwords in the clear.</li> \n<li>An examination of DigiCert's breach and their response</li></ul> \n<p>Show Notes - <a href=\"https://www.grc.com/sn/SN-1078-Notes.pdf\">https://www.grc.com/sn/SN-1078-Notes.pdf</a></p> \n<p><strong>Hosts:</strong> <a href=\"https://twit.tv/people/steve-gibson\">Steve Gibson</a> and <a href=\"https://twit.tv/people/leo-laporte\">Leo Laporte</a></p> \n<p>Download or subscribe to <em>Security Now</em> at <a href=\"https://twit.tv/shows/security-now\">https://twit.tv/shows/security-now</a>.</p> \n<p>You can submit a question to <em>Security Now</em> at the <a href=\"https://www.grc.com/feedback.htm\" target=\"_blank\">GRC Feedback Page</a>.</p> \n<p>For 16kbps versions, transcripts, and notes (including fixes), visit Steve's site: <a href=\"https://www.grc.com/securitynow.htm\" target=\"_blank\">grc.com</a>, also the home of the best disk maintenance and recovery utility ever written <a href=\"https://www.grc.com/sr/spinrite.htm\" target=\"_blank\">Spinrite 6</a>.</p> \n<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> \nSupport what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href=\"https://twit.tv/clubtwit\" rel=\"payment\">https://twit.tv/clubtwit</a></p>\n<p><strong>Sponsors:</strong><ul>\n<li><a href=\"http:/...",
+    "source": "Security Now (GRC)",
+    "url": "https://twit.tv/shows/security-now/episodes/1078",
+    "publishedDate": "2026-05-12T19:36:18+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.582010+00:00",
+    "summary": "A significant security incident involving DigiCert briefly compromised trust in millions of Windows systems due to a support error, leading to a heavy-handed response from Microsoft. This event exposed critical infrastructures and raises questions about certificate authority security and incident response.",
+    "relevance_score": 9,
+    "tags": [
+      "certificate-authority",
+      "critical-infrastructure",
+      "vulnerability",
+      "incident-response"
+    ]
+  },
+  {
+    "id": "3c1080a38868f1c4",
+    "title": "NIST NVD Enrichment Policy Change Impacts Vulnerability Prioritization",
+    "summary_raw": "NVD enrichment now covers only 15\u201320% of CVEs. Learn how Recorded Future Vulnerability Intelligence prioritizes risk using real attacker behavior signals.",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/nist-nvd-enrichment",
+    "publishedDate": "2026-05-14T00:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.795011+00:00",
+    "summary": "NIST's National Vulnerability Database (NVD) has changed its enrichment policy, now covering only a fraction of CVEs. This shift highlights the need for organizations to leverage external intelligence, like Recorded Future's Vulnerability Intelligence, which prioritizes risks based on real attacker behavior signals.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "NVD",
+      "policy",
+      "threat-intelligence"
+    ]
+  },
+  {
+    "id": "a85206c3f6dbcb2e",
+    "title": "OpenAI's GPT-5.5 Matches Mythos AI in Vulnerability Discovery",
+    "summary_raw": "<p>The UK&#8217;s AI Security Institute evaluated GPT-5.5&#8217;s ability to find security vulnerabilities, and <a href=\"https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities\">found</a> that it is comparable to Claude Mythos. Note that the OpenAI model is generally available.</p>\n<p><a href=\"https://www.aisi.gov.uk/blog/our-evaluation-of-claude-mythos-previews-cyber-capabilities\">Here</a> is the Institute&#8217;s evaluation of Mythos.</p>\n<p>And <a href=\"https://aisle.com/blog/ai-cybersecurity-after-mythos-the-jagged-frontier\">here</a> is an analysis of a smaller, cheaper model. It requires more scaffolding from the prompter, but it is also just as good.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/openais-gpt-5-5-is-as-good-as-mythos-at-finding-security-vulnerabilities.html",
+    "publishedDate": "2026-05-13T11:03:03+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.936238+00:00",
+    "summary": "The UK's AI Security Institute has found that OpenAI's GPT-5.5 is as effective as Anthropic's Mythos AI in discovering security vulnerabilities. Notably, GPT-5.5 is generally available, making its advanced vulnerability detection capabilities accessible to a wider audience.",
+    "relevance_score": 9,
+    "tags": [
+      "AI",
+      "vulnerability",
+      "research",
+      "GPT"
+    ]
+  },
+  {
+    "id": "2458d5eedbd97437",
+    "title": "Exploited WordPress Plugin Flaw Steals Payment Data from WooCommerce Checkouts",
+    "summary_raw": "A critical security vulnerability impacting the\n  Funnel Builder\n  plugin for WordPress has come under active exploitation in the wild to\n  inject malicious JavaScript code\n  into WooCommerce checkout pages with the goal of stealing payment data.\n\n\n\n  Details of the activity were\n  published\n  by Sansec this week. The vulnerability currently does not have an official CVE identifier. It",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/funnel-builder-flaw-under-active.html",
+    "publishedDate": "2026-05-16T20:50:48+05:30",
+    "scrapedAt": "2026-05-16T19:58:29.688901+00:00",
+    "summary": "A critical vulnerability in the Funnel Builder WordPress plugin is actively being exploited to inject malicious JavaScript into WooCommerce checkout pages. This attack aims to steal sensitive payment card information from unsuspecting customers. The vulnerability, which lacks a CVE identifier, highlights the risks associated with unpatched plugins and the importance of e-commerce security.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "exploitation",
+      "e-commerce",
+      "data-breach",
+      "WordPress",
+      "malware"
+    ]
+  },
+  {
+    "id": "8380987eb59b874d",
+    "title": "Russian Hackers Evolve Kazuar Backdoor into Modular P2P Botnet",
+    "summary_raw": "The Russian hacker group Secret Blizzard has developed its long-running Kazuar backdoor into a modular peer-to-peer (P2P) botnet designed for long-term persistence, stealth, and data collection. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/russian-hackers-turn-kazuar-backdoor-into-modular-p2p-botnet/",
+    "publishedDate": "2026-05-16T10:15:37-04:00",
+    "scrapedAt": "2026-05-16T19:58:29.804283+00:00",
+    "summary": "The Russian state-sponsored hacking group Secret Blizzard has transformed its long-standing Kazuar backdoor into a sophisticated modular peer-to-peer (P2P) botnet. This evolution focuses on achieving long-term persistence, enhanced stealth, and improved data exfiltration capabilities. The development signifies a growing threat from nation-state actors leveraging advanced botnet infrastructure.",
+    "relevance_score": 9,
+    "tags": [
+      "APT",
+      "nation-state",
+      "botnet",
+      "malware",
+      "backdoor",
+      "Russia"
+    ]
+  },
+  {
+    "id": "ac72c445faae58d6",
+    "title": "Four OpenClaw Vulnerabilities Allow Data Theft and Privilege Escalation",
+    "summary_raw": "Cybersecurity researchers have disclosed a set of four security flaws in OpenClaw that could be chained to achieve data theft, privilege escalation, and persistence.\n\n\n  The vulnerabilities, collectively dubbed\n  \n    Claw Chain\n  \n  by Cyera, can permit an attacker to establish a foothold, expose sensitive data, and plant backdoors. A brief description of the flaws is below -",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/four-openclaw-flaws-enable-data-theft.html",
+    "publishedDate": "2026-05-15T19:05:04+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552350+00:00",
+    "summary": "Researchers have identified a chain of four vulnerabilities in OpenClaw, dubbed 'Claw Chain,' which can be exploited for data theft, privilege escalation, and maintaining persistence. These flaws enable attackers to gain a foothold, access sensitive information, and deploy backdoors within affected systems.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "data-theft",
+      "privilege-escalation",
+      "persistence"
+    ]
+  },
+  {
+    "id": "ef5e7bcddb85ecdc",
+    "title": "TanStack Supply Chain Attack Affects OpenAI Employee Devices",
+    "summary_raw": "OpenAI has disclosed that two of its employee devices in its corporate environment were impacted via the Mini Shai-Hulud supply chain attack on TanStack, but noted that no user data, production systems, or intellectual property were compromised or modified in an unauthorized manner.\n\"Upon identification of the malicious activity, we worked quickly to investigate, contain, and take steps to",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html",
+    "publishedDate": "2026-05-15T16:24:44+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552522+00:00",
+    "summary": "OpenAI has reported that two employee devices were compromised through a supply chain attack targeting the TanStack software. While no user data or production systems were affected, the incident forced macOS updates and highlights the persistent risks associated with third-party software dependencies.",
+    "relevance_score": 8,
+    "tags": [
+      "supply-chain-attack",
+      "OpenAI",
+      "software-dependency",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "813d5d1dd99f0d48",
+    "title": "Exploited Vulnerability in On-Premise Microsoft Exchange Server",
+    "summary_raw": "Microsoft has disclosed a new security vulnerability impacting on-premise versions of Exchange Server that it said has come under active exploitation in the wild.\nThe vulnerability, tracked as CVE-2026-42897 (CVSS score: 8.1), has been described as a spoofing bug stemming from a cross-site scripting flaw. An anonymous researcher has been credited with discovering and reporting the issue.\n\"",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html",
+    "publishedDate": "2026-05-15T11:49:04+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552621+00:00",
+    "summary": "Microsoft has confirmed active exploitation of a spoofing vulnerability (CVE-2026-42897) in on-premise versions of Exchange Server. This cross-site scripting flaw, with a CVSS score of 8.1, poses a significant risk to organizations still managing their own Exchange infrastructure.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "Microsoft-Exchange",
+      "exploitation",
+      "XSS",
+      "on-premise"
+    ]
+  },
+  {
+    "id": "958ff8fa0446dd7d",
+    "title": "Malicious Stealer Backdoor Found in Multiple Node-IPC Versions",
+    "summary_raw": "Cybersecurity researchers are sounding the alarm about what has been described as \"malicious activity\" in newly published versions of node-ipc.\nAccording to Socket and StepSecurity, three different versions of the npm package have been confirmed as malicious -\n\nnode-ipc@9.1.6\nnode-ipc@9.2.3\nnode-ipc@12.0.1\n\n\"Early analysis indicates that node-ipc@9.1.6, node-ipc@9.2.3, and node-ipc@12.0.1",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/stealer-backdoor-found-in-3-node-ipc.html",
+    "publishedDate": "2026-05-14T22:52:43+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552873+00:00",
+    "summary": "Researchers have discovered a stealer backdoor embedded in three versions of the popular npm package node-ipc (v9.1.6, v9.2.3, and v12.0.1). This supply chain compromise targets developer secrets, highlighting the risks associated with open-source software dependencies and the need for rigorous vetting.",
+    "relevance_score": 8,
+    "tags": [
+      "supply-chain-attack",
+      "npm",
+      "node-ipc",
+      "backdoor",
+      "developer-secrets",
+      "open-source-security"
+    ]
+  },
+  {
+    "id": "d33a9ec3b29273d0",
+    "title": "PraisonAI Authentication Bypass Vulnerability Exploited Within Hours of Disclosure",
+    "summary_raw": "Threat actors have been observed attempting to exploit a recently disclosed security vulnerability in PraisonAI, an open-source multi-agent orchestration framework, within four hours of its public disclosure.\nThe vulnerability in question is CVE-2026-44338 (CVSS score: 7.3), a case of missing authentication that exposes sensitive endpoints to anyone, potentially allowing an attacker to invoke",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/praisonai-cve-2026-44338-auth-bypass.html",
+    "publishedDate": "2026-05-14T17:10:14+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553121+00:00",
+    "summary": "A critical authentication bypass vulnerability (CVE-2026-44338) in the PraisonAI framework was actively exploited by threat actors just four hours after its public disclosure. This rapid exploitation underscores the immediate danger posed by publicly known vulnerabilities and the need for swift patching.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "zero-day",
+      "authentication-bypass",
+      "exploitation",
+      "AI"
+    ]
+  },
+  {
+    "id": "81c12717b607fd47",
+    "title": "AI Hallucinations Pose Real Security Risks to Critical Infrastructure",
+    "summary_raw": "AI hallucinations are introducing serious security risks into critical infrastructure decision-making by exploiting human trust through highly confident yet incorrect outputs. When an AI model lacks certainty, it doesn\u2019t have a mechanism to recognize that. Instead, it generates the most probable response based on patterns in its training data, even if that response is inaccurate. These outputs",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/how-ai-hallucinations-are-creating-real.html",
+    "publishedDate": "2026-05-14T17:00:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553205+00:00",
+    "summary": "AI hallucinations, where models generate confident but incorrect outputs, are creating significant security risks, particularly in critical infrastructure decision-making. The inability of AI to recognize uncertainty can lead to flawed decisions based on inaccurate data, impacting operational integrity and safety.",
+    "relevance_score": 8,
+    "tags": [
+      "AI",
+      "critical-infrastructure",
+      "security-risk",
+      "decision-making"
+    ]
+  },
+  {
+    "id": "8ccb473bd1f57651",
+    "title": "Microsoft Patches 138 Vulnerabilities, Including Critical DNS and Netlogon Flaws",
+    "summary_raw": "Microsoft on Tuesday released patches for 138 security vulnerabilities spanning its product portfolio, although none of them have been listed as publicly known or under active attack.\nOf the 138 flaws, 30 are rated Critical, 104 are rated Important, three are rated Moderate, and one is rated Low in severity. As many as 61 vulnerabilities are classified as privilege escalation bugs, followed by",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html",
+    "publishedDate": "2026-05-13T16:06:10+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553875+00:00",
+    "summary": "Microsoft has released patches for 138 security vulnerabilities across its product range, with 30 rated as critical. While none are publicly known or under active attack, the update addresses significant issues including privilege escalation bugs and critical flaws in DNS and Netlogon services.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "patching",
+      "Microsoft",
+      "RCE",
+      "DNS"
+    ]
+  },
+  {
+    "id": "bf9d5851a6323b07",
+    "title": "RubyGems Pauses New Signups Amid Major Malicious Package Attack",
+    "summary_raw": "RubyGems, the standard package manager for the Ruby programming language, has temporarily paused account sign ups following what has been described as a \"major malicious attack.\"\n\"We're dealing with a major malicious attack on RubyGems right now,\" Maciej Mensfeld, senior product manager for software supply chain security at Mend.io, said in a post on X. \"Signups are paused for the time being.",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/rubygems-suspends-new-signups-after.html",
+    "publishedDate": "2026-05-12T20:17:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554203+00:00",
+    "summary": "RubyGems, the primary package manager for Ruby, has temporarily suspended new account signups due to a significant malicious attack. Hundreds of malicious packages were uploaded, prompting the temporary halt to prevent further compromise of the software supply chain.",
+    "relevance_score": 8,
+    "tags": [
+      "supply chain",
+      "RubyGems",
+      "malware",
+      "security incident"
+    ]
+  },
+  {
+    "id": "167302a17ce02a7a",
+    "title": "Agentic AI Poses a New Security Blind Spot",
+    "summary_raw": "Agentic AI is already running in production environments across many organizations today. It is executing tasks, consuming data, and taking actions \u2014 most likely without meaningful involvement from the security team. The industry conversation has largely framed this as a question of policy: allow it, restrict it, or monitor it? However, that framing misses the point.&nbsp;\nThe more urgent",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/why-agentic-ai-is-securitys-next-blind.html",
+    "publishedDate": "2026-05-12T16:00:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554523+00:00",
+    "summary": "Agentic AI is increasingly deployed in production environments without significant security team oversight, creating a new blind spot. The focus on policy rather than the inherent security risks of autonomous AI agents executing tasks and consuming data is a critical oversight.",
+    "relevance_score": 8,
+    "tags": [
+      "AI",
+      "security blind spot",
+      "policy",
+      "emerging threats"
+    ]
+  },
+  {
+    "id": "db295b9a019f6c6d",
+    "title": "OpenAI Launches Daybreak for AI-Powered Vulnerability Detection and Patch Validation",
+    "summary_raw": "OpenAI has launched Daybreak, a new cybersecurity initiative that brings together frontier artificial intelligence (AI) model capabilities and Codex Security to help organizations identify and patch vulnerabilities before attackers find a way in using the same issues.\n\"Daybreak combines the intelligence of OpenAI models, the extensibility of Codex as an agentic harness, and our partners across",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html",
+    "publishedDate": "2026-05-12T12:25:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554692+00:00",
+    "summary": "OpenAI has introduced Daybreak, a new initiative leveraging advanced AI models and Codex Security to proactively identify and help patch software vulnerabilities. This aims to allow organizations to fix security flaws before malicious actors can exploit them, marking a significant step in AI-assisted cybersecurity.",
+    "relevance_score": 8,
+    "tags": [
+      "AI",
+      "vulnerability",
+      "patching",
+      "cybersecurity"
+    ]
+  },
+  {
+    "id": "c84897c4060cb4fe",
+    "title": "Ollama Out-of-Bounds Read Vulnerability (CVE-2026-7482) Allows Remote Process Memory Leak",
+    "summary_raw": "Cybersecurity researchers have disclosed a critical security vulnerability in Ollama that, if successfully exploited, could allow a remote, unauthenticated attacker to leak its entire process memory.\nThe out-of-bounds read flaw, which likely impacts over 300,000 servers globally, is tracked as CVE-2026-7482 (CVSS score: 9.1). It has been codenamed&nbsp;Bleeding Llama by Cyera.\nOllama is a",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/ollama-out-of-bounds-read-vulnerability.html",
+    "publishedDate": "2026-05-10T18:11:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555333+00:00",
+    "summary": "A critical out-of-bounds read vulnerability in Ollama, tracked as CVE-2026-7482, allows unauthenticated remote attackers to leak its entire process memory. This flaw, dubbed 'Bleeding Llama,' potentially impacts over 300,000 servers globally and has a CVSS score of 9.1.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "exploitation",
+      "memory-leak",
+      "CVE",
+      "AI-infrastructure"
+    ]
+  },
+  {
+    "id": "71e1d379c1909338",
+    "title": "TCLBANKER Trojan Targets Financial Platforms with WhatsApp and Outlook Worms",
+    "summary_raw": "Threat hunters have flagged a previously undocumented Brazilian banking trojan dubbed TCLBANKER that's capable of targeting 59 banking, fintech, and cryptocurrency platforms.\nThe activity is being tracked by Elastic Security Labs under the moniker REF3076. The malware family is assessed to be a major update of the Maverick&nbsp;family, which is known to leverage a worm called SORVEPOTEL to",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/tclbanker-banking-trojan-targets.html",
+    "publishedDate": "2026-05-08T23:42:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555491+00:00",
+    "summary": "A new Brazilian banking trojan named TCLBANKER has been identified, targeting 59 financial platforms including banking, fintech, and cryptocurrency services. This malware, an update to the Maverick family, utilizes the SORVEPOTEL worm to spread via WhatsApp and Outlook, posing a significant threat to financial security.",
+    "relevance_score": 8,
+    "tags": [
+      "malware",
+      "banking-trojan",
+      "fintech",
+      "cryptocurrency",
+      "worm"
+    ]
+  },
+  {
+    "id": "aa100fb1f40f8b6c",
+    "title": "New Linux Backdoor PamDOORa Steals SSH Credentials via PAM Modules",
+    "summary_raw": "Cybersecurity researchers have disclosed details of a new Linux backdoor named PamDOORa that's being advertised on the Rehub Russian cybercrime forum for $1,600 by a threat actor called \"darkworm.\"\nThe backdoor is designed as a Pluggable Authentication Module (PAM)-based post-exploitation toolkit that enables persistent SSH access by means of a magic password and specific TCP port combination.",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/new-linux-pamdoora-backdoor-uses-pam.html",
+    "publishedDate": "2026-05-08T14:11:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555904+00:00",
+    "summary": "A new Linux backdoor named PamDOORa is being sold on a Russian cybercrime forum, designed to steal SSH credentials. It operates as a Pluggable Authentication Module (PAM) that enables persistent SSH access using a magic password and specific TCP port combination.",
+    "relevance_score": 8,
+    "tags": [
+      "malware",
+      "linux",
+      "backdoor",
+      "SSH",
+      "credentials",
+      "cybercrime"
+    ]
+  },
+  {
+    "id": "4a26b33b7d4985a0",
+    "title": "Popular node-ipc npm Package Compromised in Supply Chain Attack",
+    "summary_raw": "Hackers have injected credential-stealing malware into newly published versions of node-ipc, a popular inter-process communication package, in a new supply chain attack targeting npm. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/popular-node-ipc-npm-package-compromised-to-steal-credentials/",
+    "publishedDate": "2026-05-15T13:10:42-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688346+00:00",
+    "summary": "The popular node-ipc npm package has been compromised with credential-stealing malware injected into its latest versions. This supply chain attack highlights the risks associated with open-source dependencies and could impact numerous projects relying on this package.",
+    "relevance_score": 8,
+    "tags": [
+      "supply-chain",
+      "npm",
+      "malware",
+      "vulnerability",
+      "credential-theft"
+    ]
+  },
+  {
+    "id": "22f033ba062e3ccc",
+    "title": "OpenAI Confirms Breach via TanStack Supply Chain Attack",
+    "summary_raw": "OpenAI says two employees' devices were breached in the recent TanStack supply chain attack that impacted hundreds of npm and PyPI packages, causing the company to rotate code-signing certificates for its applications as a precaution. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/openai-confirms-security-breach-in-tanstack-supply-chain-attack/",
+    "publishedDate": "2026-05-14T15:07:24-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.689088+00:00",
+    "summary": "OpenAI has confirmed that two employee devices were compromised in the recent TanStack supply chain attack, which affected numerous npm and PyPI packages. As a precaution, OpenAI has rotated its code-signing certificates.",
+    "relevance_score": 8,
+    "tags": [
+      "supply-chain",
+      "openai",
+      "npm",
+      "pypi",
+      "vulnerability",
+      "breach"
+    ]
+  },
+  {
+    "id": "0bc4426c74e45d38",
+    "title": "Windows 11 and Microsoft Edge Hacked at Pwn2Own Berlin",
+    "summary_raw": "On the first day of Pwn2Own Berlin 2026, security researchers collected $523,000 in cash awards after exploiting 24 unique zero-days. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/windows-11-and-microsoft-edge-hacked-on-first-day-of-pwn2own-berlin-2026/",
+    "publishedDate": "2026-05-14T14:53:50-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.689167+00:00",
+    "summary": "Security researchers successfully exploited zero-day vulnerabilities in Windows 11 and Microsoft Edge at Pwn2Own Berlin, earning significant cash awards. This event highlights the ongoing discovery of critical flaws in widely used software and the high stakes involved in cybersecurity competitions.",
+    "relevance_score": 8,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Pwn2Own",
+      "Windows",
+      "Microsoft Edge"
+    ]
+  },
+  {
+    "id": "9384b9836301d586",
+    "title": "Taiwan Bullet Train Hack Exposes Rail System Cybersecurity Gaps",
+    "summary_raw": "A Taiwanese student experimenting with software-defined radio technology shut down three bullet trains for nearly an hour, leading to an anti-terrorism response.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/ics-ot-security/taiwan-incident-highlights-cybersecurity-gaps",
+    "publishedDate": "2026-05-15T01:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.189797+00:00",
+    "summary": "A cybersecurity incident involving a Taiwanese bullet train system, where a student used software-defined radio to disrupt operations, highlights significant vulnerabilities in critical infrastructure. The event triggered an anti-terrorism response, underscoring the potential impact of cyberattacks on public transportation.",
+    "relevance_score": 8,
+    "tags": [
+      "ICS",
+      "OT security",
+      "critical infrastructure",
+      "transportation security",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "45a79133c0d8e1ea",
+    "title": "Foxconn Attack Highlights Manufacturing's Cyber Crisis",
+    "summary_raw": "A Nitrogen ransomware attack on Foxconn's North American facilities is one of 600 hits on manufacturers this year, as gangs increasingly target the sector for its low tolerance for downtime.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/foxconn-attack-manufacturing-cyber-crisis",
+    "publishedDate": "2026-05-14T12:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190252+00:00",
+    "summary": "A ransomware attack by the Nitrogen group on Foxconn's North American facilities underscores the growing cyber threats targeting the manufacturing sector. This incident is one of many affecting manufacturers who are particularly vulnerable due to their low tolerance for operational downtime.",
+    "relevance_score": 8,
+    "tags": [
+      "ransomware",
+      "manufacturing",
+      "Foxconn",
+      "cyber crisis",
+      "Nitrogen"
+    ]
+  },
+  {
+    "id": "afc93e6c6c7de62a",
+    "title": "LatAm Vibe Hackers Generate Custom Hacking Tools on the Fly Using AI",
+    "summary_raw": "In the latest evolution of automated cyberattacks, threat actors heavily leveraged AI agents to support campaigns against entities in Mexico and Brazil.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cloud-security/ai-agents-generate-custom-hacking-tools",
+    "publishedDate": "2026-05-13T13:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190631+00:00",
+    "summary": "Threat actors are increasingly leveraging AI agents to automate and customize their cyberattacks, as demonstrated by recent campaigns targeting entities in Mexico and Brazil. This evolution in automated attacks allows for the rapid generation of tailored hacking tools.",
+    "relevance_score": 8,
+    "tags": [
+      "AI",
+      "automated attacks",
+      "threat actors",
+      "Mexico",
+      "Brazil",
+      "custom tools"
+    ]
+  },
+  {
+    "id": "9298b3a1ba9f50f3",
+    "title": "Hugging Face Packages Weaponized With a Single File Tweak",
+    "summary_raw": "A tokenizer library file present in Hugging Face AI models can be manipulated to hijack the model's outputs and exfiltrate data.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cloud-security/hugging-face-packages-weaponized-single-file-tweak",
+    "publishedDate": "2026-05-12T14:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190853+00:00",
+    "summary": "A vulnerability in Hugging Face AI model packages allows attackers to manipulate tokenizer library files, enabling them to hijack model outputs and exfiltrate data. This discovery highlights a significant security risk within widely used AI development platforms.",
+    "relevance_score": 8,
+    "tags": [
+      "AI",
+      "Hugging Face",
+      "vulnerability",
+      "data exfiltration",
+      "model hijacking",
+      "supply chain attack"
+    ]
+  },
+  {
+    "id": "c1107c8c94c6d4d3",
+    "title": "Worm Infects Hundreds of npm Packages, Targeting Supply Chain",
+    "summary_raw": "Hundreds of npm packages infected by the self-propagating, credential-stealing worm from TeamPCP are related to the open source TanStack ecosystem.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/worm-redux-fresh-mini-shai-hulud-infections-bite-supply-chain",
+    "publishedDate": "2026-05-12T11:07:43+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.191002+00:00",
+    "summary": "A self-propagating worm, dubbed 'Mini Shai-Hulud,' has infected hundreds of npm packages, primarily within the open-source TanStack ecosystem. This attack highlights the ongoing risks to software supply chains and the potential for widespread compromise through compromised dependencies.",
+    "relevance_score": 8,
+    "tags": [
+      "supply-chain",
+      "worm",
+      "npm",
+      "open-source",
+      "malware"
+    ]
+  },
+  {
+    "id": "833eb055f5b68607",
+    "title": "Cyber Espionage Group Targets Aviation Firms for Sensitive Map Data",
+    "summary_raw": "The campaign quietly compromises aerospace and drone operators to exfiltrate GIS files, terrain models, and GPS data and gain a clear picture of adversaries' world view.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/cyber-espionage-group-aviation-firms-steal-map-data",
+    "publishedDate": "2026-05-11T12:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.191379+00:00",
+    "summary": "A cyber espionage group is actively targeting aviation and drone operators to steal sensitive Geographic Information System (GIS) files, terrain models, and GPS data. This campaign aims to gain strategic intelligence by understanding adversaries' operational environments.",
+    "relevance_score": 8,
+    "tags": [
+      "espionage",
+      "APT",
+      "aviation-security",
+      "data-exfiltration",
+      "cyber-warfare"
+    ]
+  },
+  {
+    "id": "3b3bd484213a3686",
+    "title": "ShinyHunters Claims Second Attack on Instructure, Exposing Millions",
+    "summary_raw": "The edtech company is struggling to wrest control from its hackers. PII belonging to hundreds of millions of people is on the line.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/shinyhunters-second-attack-instructure",
+    "publishedDate": "2026-05-08T20:08:06+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.191454+00:00",
+    "summary": "The edtech company Instructure is facing a second attack claimed by ShinyHunters, with potentially hundreds of millions of individuals' Personally Identifiable Information (PII) at risk. This incident underscores the significant data breach risks faced by educational technology platforms.",
+    "relevance_score": 8,
+    "tags": [
+      "data-breach",
+      "ShinyHunters",
+      "Instructure",
+      "PII",
+      "edtech"
+    ]
+  },
+  {
+    "id": "527bbe593be8c8ce",
+    "title": "Linux Faces Second Critical Vulnerability in Weeks",
+    "summary_raw": "Production-version patches are coming online and should be installed pronto.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/05/linux-bitten-by-second-severe-vulnerability-in-as-many-weeks/",
+    "publishedDate": "2026-05-11T22:28:19+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.386021+00:00",
+    "summary": "Linux systems are once again under threat with the discovery of a second severe vulnerability in as many weeks. Users are urged to apply production-version patches immediately to mitigate potential risks. This highlights a concerning trend of critical flaws emerging in widely used operating systems.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "linux",
+      "critical"
+    ]
+  },
+  {
+    "id": "c897076069e6a20d",
+    "title": "CrowdStrike's Falcon AIDR Detects Threats at Kubernetes AI Prompt Layer",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/falcon-aidr-detects-threats-at-prompt-layer-in-kubernetes-ai-apps/",
+    "publishedDate": "2026-05-13T00:00:00-05:00",
+    "scrapedAt": "2026-05-16T00:12:29.731313+00:00",
+    "summary": "CrowdStrike's Falcon AIDR is now capable of detecting threats targeting the prompt layer within Kubernetes AI applications. This development is crucial for securing AI-driven systems, which are increasingly becoming targets due to their sensitive data and critical functions.",
+    "relevance_score": 8,
+    "tags": [
+      "AI",
+      "kubernetes",
+      "security",
+      "threat-detection"
+    ]
+  },
+  {
+    "id": "4af536c074541a77",
+    "title": "May 2026 Patch Tuesday: 30 Critical Vulnerabilities Addressed",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-may-2026/",
+    "publishedDate": "2026-05-12T00:00:00-05:00",
+    "scrapedAt": "2026-05-16T00:12:29.731400+00:00",
+    "summary": "Microsoft's May 2026 Patch Tuesday addresses a total of 130 CVEs, including 30 critical vulnerabilities. Organizations must prioritize patching these critical flaws to prevent exploitation and maintain system security. This highlights the ongoing need for diligent patch management.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "patch-tuesday",
+      "microsoft",
+      "critical"
+    ]
+  },
+  {
+    "id": "251695d88d7c8dca",
+    "title": "Unit 42 Analyzes AD CS Exploitation Techniques",
+    "summary_raw": "<p>Unit 42 analyzes AD CS exploitation through template misconfigurations and shadow credential misuse while offering behavioral detection for defenders.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/active-directory-certificate-services-exploitation/\">Inside AD CS Escalation: Unpacking Advanced Misuse Techniques and Tools</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/active-directory-certificate-services-exploitation/",
+    "publishedDate": "2026-05-11T22:00:43+00:00",
+    "scrapedAt": "2026-05-16T00:12:30.961465+00:00",
+    "summary": "Unit 42 has detailed advanced misuse techniques and tools for exploiting Active Directory Certificate Services (AD CS), including template misconfigurations and shadow credential misuse. The analysis provides behavioral detection methods for defenders to identify and mitigate these sophisticated attacks.",
+    "relevance_score": 8,
+    "tags": [
+      "AD-CS",
+      "exploitation",
+      "active-directory",
+      "attack-techniques"
+    ]
+  },
+  {
+    "id": "757070a2c1780838",
+    "title": "April 2026 CVE Landscape Shows Increase in High-Impact Vulnerabilities",
+    "summary_raw": "In April 2026, Insikt Group\u00ae identified 37 high-impact vulnerabilities that should be prioritized for remediation, 35 of which had a Very Critical Recorded Future Risk Score. This represents a 19% increase from last month.",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/april-cve-landscape",
+    "publishedDate": "2026-05-15T00:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.794916+00:00",
+    "summary": "Recorded Future's analysis of the April 2026 CVE landscape reveals a 19% increase in high-impact vulnerabilities compared to the previous month. A significant portion of these vulnerabilities carry a 'Very Critical' risk score, necessitating urgent attention from security teams.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "CVE",
+      "risk-management"
+    ]
+  },
+  {
+    "id": "a06c0aecd90475ec",
+    "title": "Anthropic's Mythos AI: A Powerful Vulnerability Discovery Tool",
+    "summary_raw": "<p>Last month, Anthropic made a remarkable <a href=\"https://red.anthropic.com/2026/mythos-preview/\">announcement</a> about its new model, Claude Mythos Preview: it was so good at finding security vulnerabilities in software that the company would not release it to the general public. Instead, it would only be available to a <a href=\"https://www.anthropic.com/glasswing\">select group</a> of companies to scan and fix their own software.</p>\n<p>The announcement requires context&#8212;but it contained an essential truth.</p>\n<p>While Anthropic&#8217;s model is really good at finding software vulnerabilities, so are other models. The UK&#8217;s AI Security Institute <a href=\"https://www.aisi.gov.uk/blog/our-evaluation-of-openais-gpt-5-5-cyber-capabilities\">found</a> that OpenAI&#8217;s GPT-5.5, already generally available, is comparable in capability. The company Aisle ...</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/how-dangerous-is-anthropics-mythos-ai.html",
+    "publishedDate": "2026-05-14T11:04:27+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.936178+00:00",
+    "summary": "Anthropic's Claude Mythos Preview AI demonstrates exceptional capability in finding software security vulnerabilities. Due to its power, Anthropic is limiting its access to a select group of companies for internal scanning and remediation, rather than public release.",
+    "relevance_score": 8,
+    "tags": [
+      "AI",
+      "vulnerability",
+      "research"
+    ]
+  },
+  {
+    "id": "f42d900629cb626d",
+    "title": "May 2026 Patch Tuesday Sees High Volume of Vulnerability Fixes",
+    "summary_raw": "Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some of the more widely-used software makers -- including Apple, Google, Microsoft, Mozilla and Oracle -- fixing near record volumes of security bugs, and/or quickening the tempo of their patch releases.",
+    "source": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/",
+    "publishedDate": "2026-05-12T21:46:45+00:00",
+    "scrapedAt": "2026-05-16T00:12:23.288928+00:00",
+    "summary": "Major software vendors including Apple, Google, Microsoft, Mozilla, and Oracle are releasing a near-record volume of security patches this May. This surge highlights the increasing effectiveness of AI in discovering vulnerabilities, even in human-written code, and the ongoing need for prompt patching to mitigate risks.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "patching",
+      "AI",
+      "software-update"
+    ]
+  },
+  {
+    "id": "42e8c65fa106c99e",
+    "title": "Internal Admin Tools Pose Significant Attack Surface Risk",
+    "summary_raw": "In Your Biggest Security Risk Isn't Malware \u2014 It's What You Already Trust, we made a simple argument: the most dangerous activity inside most organizations no longer looks like an attack. It looks like administration. PowerShell, WMIC, netsh, Certutil, MSBuild \u2014 the same trusted utilities your IT team uses every day are also the preferred toolkit of modern threat actors. Bitdefender's analysis",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/what-45-days-of-watching-your-own-tools.html",
+    "publishedDate": "2026-05-15T16:30:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552437+00:00",
+    "summary": "The article argues that the most significant security risks within organizations often stem from legitimate administrative tools like PowerShell and WMIC, rather than traditional malware. Threat actors increasingly leverage these trusted utilities for malicious purposes, highlighting the need for enhanced monitoring of internal system administration.",
+    "relevance_score": 7,
+    "tags": [
+      "attack-surface",
+      "insider-threat",
+      "administration-tools",
+      "threat-actor"
+    ]
+  },
+  {
+    "id": "e8a90ac1dd7e7e2c",
+    "title": "ThreatsDay Bulletin: PAN-OS RCE, Mythos cURL Bug, AI Tokenizer Attacks, and More",
+    "summary_raw": "Everything is still on fire.\nThis week feels dumb in the worst way \u2014 bad links, weak checks, fake help desks, shady forum posts, and people turning supply chain attacks into some cursed little game for clout and cash. Half of it feels new. Half of it feels like crap we should have fixed years ago.\nThe mess keeps getting louder: users get tricked, boxes get popped, tools meant for normal work",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/threatsday-bulletin-pan-os-rce-mythos.html",
+    "publishedDate": "2026-05-14T21:37:46+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.552956+00:00",
+    "summary": "This week's security landscape is fraught with vulnerabilities, including a critical RCE in PAN-OS and a bug in Mythos cURL. The bulletin also highlights emerging threats like AI tokenizer attacks and a resurgence of older, unpatched vulnerabilities, underscoring the persistent challenges in cybersecurity.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "RCE",
+      "AI",
+      "supply-chain-attack"
+    ]
+  },
+  {
+    "id": "417ed0237deba98b",
+    "title": "Microsoft's MDASH AI System Discovers 16 Windows Flaws",
+    "summary_raw": "Microsoft has unveiled a new multi-model artificial intelligence (AI)-driven system called MDASH to facilitate vulnerability discovery and remediation at scale, adding that it's being tested by some customers as part of a limited private preview.\nMDASH, short for multi-model agentic scanning harness, is designed as a model-agnostic system that uses bespoke AI agents for different vulnerability",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/microsofts-mdash-ai-system-finds-16.html",
+    "publishedDate": "2026-05-13T19:16:02+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553534+00:00",
+    "summary": "Microsoft has introduced MDASH, a new AI-driven system designed to accelerate vulnerability discovery and remediation at scale. This system has already identified 16 Windows flaws that were addressed in the latest Patch Tuesday, showcasing the potential of AI in cybersecurity.",
+    "relevance_score": 7,
+    "tags": [
+      "AI",
+      "vulnerability-discovery",
+      "Microsoft",
+      "Windows",
+      "patch-tuesday"
+    ]
+  },
+  {
+    "id": "aeff77dd5166f2b3",
+    "title": "Most Remediation Programs Fail to Confirm Fix Effectiveness",
+    "summary_raw": "Security teams have never had better visibility into their environments and never been worse at confirming what they fix stays fixed.\nMandiant's M-Trends 2026 report puts the mean time to exploit at an estimated negative seven days. The Verizon 2025 DBIR puts median time to remediate edge device vulnerabilities at 32 days. These numbers have understandably driven the industry toward a clear",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/most-remediation-programs-never-confirm.html",
+    "publishedDate": "2026-05-13T17:00:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553794+00:00",
+    "summary": "A significant gap exists in cybersecurity where remediation efforts often lack confirmation of actual effectiveness, leaving systems vulnerable. Reports indicate a negative mean time to exploit for vulnerabilities, highlighting the urgency for better verification processes in security fixes.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "remediation",
+      "security operations"
+    ]
+  },
+  {
+    "id": "39e9640cb93a0543",
+    "title": "GemStuffer Abuses RubyGems for UK Council Data Exfiltration",
+    "summary_raw": "Cybersecurity researchers are calling attention to a new campaign dubbed GemStuffer that has targeted the RubyGems repository with more than 150 gems that use the registry as a data exfiltration channel rather than for malware distribution.\n\"The packages do not appear designed for mass developer compromise,\" Socket said. \"Many have little or no download activity, and the payloads are repetitive,",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/gemstuffer-abuses-150-rubygems-to.html",
+    "publishedDate": "2026-05-13T13:38:54+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553956+00:00",
+    "summary": "A new campaign named GemStuffer is exploiting over 150 malicious RubyGems packages to exfiltrate data from scraped UK council portals. The campaign focuses on data exfiltration rather than direct malware distribution, with many packages showing low download activity.",
+    "relevance_score": 7,
+    "tags": [
+      "supply chain",
+      "data-exfiltration",
+      "RubyGems",
+      "APT"
+    ]
+  },
+  {
+    "id": "ea160e3abda77a30",
+    "title": "New TrickMo Variant Uses TON C2 and SOCKS5 for Android Network Pivots",
+    "summary_raw": "Cybersecurity researchers have flagged a new version of the TrickMo Android banking trojan that uses The Open Network (TON) for command-and-control (C2).\nThe new variant, observed by ThreatFabric between January and February 2026, has been observed actively targeting banking and cryptocurrency wallet users in France, Italy, and Austria.\n\"TrickMo relies on a runtime-loaded APK&nbsp; (dex.module),",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/new-trickmo-variant-uses-ton-c2-and.html",
+    "publishedDate": "2026-05-12T18:20:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554283+00:00",
+    "summary": "A new variant of the TrickMo Android banking trojan has been identified, utilizing The Open Network (TON) for command-and-control and SOCKS5 for network pivoting. This sophisticated variant actively targets banking and cryptocurrency users in Europe.",
+    "relevance_score": 7,
+    "tags": [
+      "Android",
+      "banking trojan",
+      "malware",
+      "C2",
+      "mobile security"
+    ]
+  },
+  {
+    "id": "bf4145a899ec9e41",
+    "title": "Instructure Reaches Ransom Agreement with ShinyHunters to Prevent 3.65TB Canvas Data Leak",
+    "summary_raw": "American educational technology company Instructure, the parent company of Canvas, said it reached an \"agreement\" with a decentralized cybercrime extortion group after it breached its network and threatened to leak stolen information from thousands of schools and universities.\nIn an update shared on Monday, the Utah-based firm said it \"reached an agreement with the unauthorized actor involved in",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/instructure-reaches-ransom-agreement.html",
+    "publishedDate": "2026-05-12T13:07:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554610+00:00",
+    "summary": "Educational technology company Instructure, the parent of Canvas, has reportedly reached an agreement with the ShinyHunters cybercrime group to prevent the leak of 3.65 terabytes of stolen data. The breach threatened information from thousands of schools and universities, highlighting the significant risk to educational institutions and their data.",
+    "relevance_score": 7,
+    "tags": [
+      "ransomware",
+      "data-breach",
+      "education"
+    ]
+  },
+  {
+    "id": "7f9a302d05e037ca",
+    "title": "Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Garners 244K Downloads",
+    "summary_raw": "A malicious Hugging Face repository managed to take a spot in the platform's trending list by impersonating OpenAI's Privacy Filter open-weight model to deliver a Rust-based information stealer to Windows users.\nThe project, named Open-OSS/privacy-filter, masqueraded as its legitimate counterpart released by OpenAI late last month (openai/privacy-filter), including copying the entire description",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/fake-openai-privacy-filter-repo-hits-1.html",
+    "publishedDate": "2026-05-11T12:35:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555253+00:00",
+    "summary": "A malicious repository impersonating OpenAI's Privacy Filter model achieved the top trending spot on Hugging Face, accumulating 244,000 downloads. The fake project distributed a Rust-based information stealer targeting Windows users, demonstrating a sophisticated social engineering tactic within the AI community.",
+    "relevance_score": 7,
+    "tags": [
+      "malware",
+      "AI",
+      "supply-chain-attack",
+      "information-stealer",
+      "social-engineering"
+    ]
+  },
+  {
+    "id": "bbcca5ac07c6c9b6",
+    "title": "cPanel and WHM Fixes Released for Three New Vulnerabilities",
+    "summary_raw": "cPanel has released updates to address three vulnerabilities in cPanel and Web Host Manager (WHM) that could be exploited to achieve privilege escalation, code execution, and denial-of-service.\nThe list of vulnerabilities is as follows -\n\nCVE-2026-29201 (CVSS score: 4.3) - An insufficient input validation of the feature file name in the \"feature::LOADFEATUREFILE\" adminbin call that could result",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/cpanel-whm-patch-3-new-vulnerabilities.html",
+    "publishedDate": "2026-05-09T12:46:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555412+00:00",
+    "summary": "cPanel has released updates to address three vulnerabilities in its cPanel and Web Host Manager (WHM) software. These flaws could allow attackers to escalate privileges, execute arbitrary code, or cause denial-of-service conditions. Users are strongly advised to apply these patches immediately to protect their systems.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "cPanel",
+      "WHM",
+      "patch"
+    ]
+  },
+  {
+    "id": "2c15c7bc80aed80c",
+    "title": "Webinar Discusses 'Patient Zero' and AI-Driven Stealth Breaches",
+    "summary_raw": "The hardest part of cybersecurity isn't the technology, it\u2019s the people.\nEvery major breach you\u2019ve read about lately usually starts the same way: one employee, one clever email, and one \"Patient Zero\" infection.\nIn 2026, hackers are using AI to make these \"first clicks\" nearly impossible to spot. If a single laptop gets compromised on your watch, do you have a plan to stop it from taking down",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/one-click-total-shutdown-patient-zero.html",
+    "publishedDate": "2026-05-08T19:31:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555659+00:00",
+    "summary": "A webinar titled 'Patient Zero' will explore how human error, often initiated by a single click on a malicious email, leads to major data breaches. With hackers leveraging AI to make initial infections harder to detect, organizations need robust plans to contain breaches originating from a single compromised endpoint.",
+    "relevance_score": 7,
+    "tags": [
+      "social-engineering",
+      "phishing",
+      "AI",
+      "breach",
+      "human-factor"
+    ]
+  },
+  {
+    "id": "bf21843079485575",
+    "title": "Funnel Builder WordPress Plugin Vulnerability Exploited for Credit Card Theft",
+    "summary_raw": "A critical vulnerability in the Funnel Builder plugin for WordPress is being actively exploited to inject malicious JavaScript snippets into WooCommerce checkout pages. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/funnel-builder-wordpress-plugin-bug-exploited-to-steal-credit-cards/",
+    "publishedDate": "2026-05-15T15:30:33-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688156+00:00",
+    "summary": "A critical vulnerability in the Funnel Builder WordPress plugin is actively being exploited to inject malicious JavaScript into WooCommerce checkout pages. This allows attackers to steal credit card information from unsuspecting customers, impacting e-commerce security.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "wordpress",
+      "woocommerce",
+      "credit-card-theft",
+      "e-commerce"
+    ]
+  },
+  {
+    "id": "fc7663ed1850fcf5",
+    "title": "Avada Builder WordPress Plugin Vulnerabilities Allow Credential Theft",
+    "summary_raw": "Two vulnerabilities in the Avada Builder plugin for WordPress, with an estimated one million active installations, allow hackers to read arbitrary files and extract sensitive information from the database. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/avada-builder-wordpress-plugin-flaws-allow-site-credential-theft/",
+    "publishedDate": "2026-05-15T11:56:56-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688429+00:00",
+    "summary": "Two critical vulnerabilities in the widely used Avada Builder WordPress plugin allow attackers to steal site credentials and read sensitive database information. With over one million active installations, this flaw poses a significant risk to WordPress websites.",
+    "relevance_score": 7,
+    "tags": [
+      "wordpress",
+      "plugin",
+      "vulnerability",
+      "credential-theft",
+      "data-breach"
+    ]
+  },
+  {
+    "id": "84eb2799ddb4d536",
+    "title": "REMUS Infostealer Evolves to Focus on Session Theft",
+    "summary_raw": "Stolen browser sessions and authentication tokens are becoming more valuable than stolen passwords. Flare explains how the REMUS infostealer evolved around session theft and operational scalability. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/inside-the-remus-infostealer-session-theft-maas-and-rapid-evolution/",
+    "publishedDate": "2026-05-15T10:02:12-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688593+00:00",
+    "summary": "The REMUS infostealer has evolved to prioritize stealing browser session tokens over passwords, recognizing their increased value to attackers. This evolution, coupled with its MaaS (Malware-as-a-Service) model, makes it a rapidly developing threat.",
+    "relevance_score": 7,
+    "tags": [
+      "infostealer",
+      "malware",
+      "session-theft",
+      "maas"
+    ]
+  },
+  {
+    "id": "642776f2920f2f75",
+    "title": "TeamPCP Hackers Threaten to Sell Mistral AI Source Code",
+    "summary_raw": "The TeamPCP hacker group is threatening to leak source code from the Mistral AI project unless a buyer is found for the data. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/teampcp-hackers-advertise-mistral-ai-code-repos-for-sale/",
+    "publishedDate": "2026-05-14T18:50:36-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688849+00:00",
+    "summary": "The TeamPCP hacker group is attempting to sell source code belonging to the Mistral AI project on the dark web. They are threatening to leak the code if a buyer is not found, indicating a potential data theft and extortion attempt.",
+    "relevance_score": 7,
+    "tags": [
+      "data-theft",
+      "extortion",
+      "source-code",
+      "apt"
+    ]
+  },
+  {
+    "id": "987fbb6a6a300fa7",
+    "title": "Auth Bypass Flaw in WordPress Plugin Grants Admin Access",
+    "summary_raw": "Hackers are leveraging a critical authentication bypass vulnerability in the WordPress plugin Burst Statistics to obtain admin-level access to websites. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-auth-bypass-flaw-in-burst-statistics-wordpress-plugin/",
+    "publishedDate": "2026-05-14T17:07:17-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688929+00:00",
+    "summary": "A critical authentication bypass vulnerability in the Burst Statistics WordPress plugin is being exploited by hackers to gain administrative privileges. This flaw allows unauthorized users to take full control of affected websites.",
+    "relevance_score": 7,
+    "tags": [
+      "wordpress",
+      "plugin",
+      "vulnerability",
+      "authentication-bypass",
+      "admin-access"
+    ]
+  },
+  {
+    "id": "e0017783a1506d6b",
+    "title": "AI Agents and Code Generation Pose New Security Challenges",
+    "summary_raw": "AI agents capable of discovering and exploiting obscure vulnerabilities are emerging alongside developers producing vast amounts of potentially flawed AI-generated code, forcing defenders to adapt accordingly.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/ai-code-and-agents-forces-defenders-adapt",
+    "publishedDate": "2026-05-18T13:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.189626+00:00",
+    "summary": "The emergence of AI agents capable of finding and exploiting obscure vulnerabilities, coupled with the proliferation of AI-generated code, presents significant new challenges for cybersecurity defenders. Organizations must adapt their strategies to address the evolving threat landscape driven by AI advancements.",
+    "relevance_score": 7,
+    "tags": [
+      "AI",
+      "vulnerability",
+      "code generation",
+      "cyber defense"
+    ]
+  },
+  {
+    "id": "f225ed7788572a0e",
+    "title": "Congress Investigates Instructure After Canvas Outage and Ransomware Attack",
+    "summary_raw": "The House Committee on Homeland Security sent a letter about the Canvas cyberattack, the same day that the edtech company said it reached an &quot;agreement&quot; with the ShinyHunters cybercriminals.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/congress-instructure-shinyhunters-attacks",
+    "publishedDate": "2026-05-14T20:19:20+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190028+00:00",
+    "summary": "The House Committee on Homeland Security has formally questioned Instructure following a cyberattack that disrupted its Canvas platform. The inquiry comes as Instructure reportedly reached an agreement with the ShinyHunters cybercriminal group, highlighting concerns over educational technology security.",
+    "relevance_score": 7,
+    "tags": [
+      "ransomware",
+      "data-breach",
+      "Instructure",
+      "Canvas",
+      "edtech",
+      "policy"
+    ]
+  },
+  {
+    "id": "efd762e9b8edeff0",
+    "title": "AI Drives Cybersecurity Investments, Widening 'Valley of Death'",
+    "summary_raw": "In a role reversal, investment dollars in security startups exceeded the value of mergers and acquisitions in 1Q26 by more than $1 billion, a rare occurrence.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/ai-cybersecurity-investments-valley-death",
+    "publishedDate": "2026-05-14T13:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190178+00:00",
+    "summary": "Cybersecurity startup investments significantly outpaced mergers and acquisitions in the first quarter, a rare occurrence indicating a potential shift in the market. This trend suggests a widening gap between innovative startups and established companies, potentially creating a 'valley of death' for some emerging technologies.",
+    "relevance_score": 7,
+    "tags": [
+      "AI",
+      "investment",
+      "cybersecurity startups",
+      "market trends"
+    ]
+  },
+  {
+    "id": "a2878c7e59d6b86b",
+    "title": "Attackers Weaponize RubyGems for Data Dead Drops",
+    "summary_raw": "Threat actors are publishing RubyGems packages that include scrapers targeting public-facing UK government servers, but with no clear objective.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/attackers-weaponize-rubygems-data-dead-drops",
+    "publishedDate": "2026-05-13T21:09:20+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190401+00:00",
+    "summary": "Threat actors are exploiting RubyGems packages to create data dead drops, scraping information from public-facing UK government servers. The motive behind these attacks remains unclear, but it highlights a new method for data exfiltration and reconnaissance.",
+    "relevance_score": 7,
+    "tags": [
+      "RubyGems",
+      "data exfiltration",
+      "government servers",
+      "threat actors",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "9beb7f8b265d3e4d",
+    "title": "Microsoft Patch Tuesday: No Zero-Days, But 137 Flaws to Address",
+    "summary_raw": "It's the first time in two years with no zero-days. But with 137 flaws to patch, including nine critical ones, admins still have plenty of work to do.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/patch-tuesday-microsoft-zero-day-sight",
+    "publishedDate": "2026-05-12T21:03:04+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190779+00:00",
+    "summary": "Microsoft's latest Patch Tuesday addresses 137 vulnerabilities, including nine critical ones, marking the first time in two years without any zero-day exploits. While the absence of zero-days is notable, administrators still face a significant patching workload.",
+    "relevance_score": 7,
+    "tags": [
+      "Patch Tuesday",
+      "Microsoft",
+      "vulnerability",
+      "patching",
+      "critical vulnerabilities"
+    ]
+  },
+  {
+    "id": "e470273d68dfc45d",
+    "title": "Cyberattack Disrupts Canvas Learning Platform During Finals Week",
+    "summary_raw": "Across the country, schools and colleges postpone year-end tests.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/05/chaos-erupts-as-cyberattack-disrupts-learning-platform-canvas-amid-finals/",
+    "publishedDate": "2026-05-08T18:33:48+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.386105+00:00",
+    "summary": "A significant cyberattack has caused widespread disruption to the Canvas learning platform, forcing schools and colleges across the country to postpone year-end exams. This incident underscores the vulnerability of educational infrastructure and the impact of such attacks on academic continuity.",
+    "relevance_score": 7,
+    "tags": [
+      "cyberattack",
+      "education",
+      "disruption"
+    ]
+  },
+  {
+    "id": "3d5eb4ab04af81a7",
+    "title": "CrowdStrike Releases 2026 Financial Services Threat Landscape Report",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-financial-services-threat-landscape-report/",
+    "publishedDate": "2026-05-14T00:00:00-05:00",
+    "scrapedAt": "2026-05-16T00:12:29.731211+00:00",
+    "summary": "CrowdStrike has published its 2026 report detailing the evolving threat landscape specifically for the financial services sector. The report likely outlines emerging attack vectors, adversary tactics, and recommended defenses to protect sensitive financial data and operations.",
+    "relevance_score": 7,
+    "tags": [
+      "financial-services",
+      "threat-landscape",
+      "report",
+      "cybersecurity"
+    ]
+  },
+  {
+    "id": "c73a79525c4f1413",
+    "title": "Gremlin Stealer Evolves with Advanced Obfuscation and Evasion Tactics",
+    "summary_raw": "<p>Unit 42 analyzes the evolution of Gremlin stealer. This variant uses advanced obfuscation, crypto clipping and session hijacking to compromise data.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/gremlin-stealer-evolution/\">Gremlin Stealer&#039;s Evolved Tactics: Hiding in Plain Sight With Resource Files</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/gremlin-stealer-evolution/",
+    "publishedDate": "2026-05-15T10:00:52+00:00",
+    "scrapedAt": "2026-05-16T00:12:30.961366+00:00",
+    "summary": "The Gremlin Stealer malware has evolved with sophisticated obfuscation techniques, crypto clipping, and session hijacking to better compromise data. This advanced variant poses a significant threat by hiding its malicious activities effectively.",
+    "relevance_score": 7,
+    "tags": [
+      "malware",
+      "stealer",
+      "infostealer",
+      "obfuscation"
+    ]
+  },
+  {
+    "id": "86319adbe9217f72",
+    "title": "AMOS Malware Steals Data at Scale on macOS",
+    "summary_raw": "<p>&lt;p&gt;Sophos X-Ops looks at the Atomic macOS Stealer and its capabilities&lt;/p&gt;</p><p><strong>Categories:</strong> Threat Research</p><p><strong>Tags:</strong> MacOS, AMOS, infostealer</p>",
+    "source": "Sophos News",
+    "url": "https://www.sophos.com/en-us/blog/why-amos-matters-the-macos-malware-stealing-data-at-scale",
+    "publishedDate": "2026-05-14T00:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.254343+00:00",
+    "summary": "Sophos X-Ops is examining the Atomic macOS Stealer (AMOS), a malware capable of stealing data at scale from macOS systems. This infostealer poses a significant risk to Mac users by exfiltrating sensitive information.",
+    "relevance_score": 7,
+    "tags": [
+      "macos",
+      "malware",
+      "infostealer",
+      "data-theft"
+    ]
+  },
+  {
+    "id": "b4d39507f50a9dfa",
+    "title": "May Patch Tuesday Addresses 132 CVEs",
+    "summary_raw": "<p>With advisories, this month\u2019s count approaches 300 \u2013 though many are already in place</p><p><strong>Categories:</strong> Threat Research, X-ops</p><p><strong>Tags:</strong> Patch Tuesday, MICROSOFT PATCH TUESDAY</p>",
+    "source": "Sophos News",
+    "url": "https://www.sophos.com/en-us/blog/may-patch-tuesday-hauls-out-132-cves",
+    "publishedDate": "2026-05-13T00:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.254436+00:00",
+    "summary": "Microsoft's May Patch Tuesday has released fixes for 132 Common Vulnerabilities and Exposures (CVEs). While this number is significant, many of these vulnerabilities may already be mitigated by existing security measures. Organizations should prioritize patching based on the criticality and exploitability of these new CVEs.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "patching",
+      "microsoft"
+    ]
+  },
+  {
+    "id": "9bb0fe8215f7f1fe",
+    "title": "AI and Intelligence Fusion for Enhanced Cyber Defense",
+    "summary_raw": "The real question in modern cyber defense isn't who has more technology. It's who uses their resources more efficiently. Here's how AI fused with threat intelligence tips that balance.",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/ai-intelligence-cyber-defense",
+    "publishedDate": "2026-05-14T00:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.795091+00:00",
+    "summary": "Effective cyber defense in the modern era hinges on efficient resource utilization, not just advanced technology. This article explores how the fusion of Artificial Intelligence (AI) with threat intelligence can significantly improve cyber defense capabilities by optimizing resource allocation.",
+    "relevance_score": 7,
+    "tags": [
+      "AI",
+      "threat-intelligence",
+      "cyber-defense"
+    ]
+  },
+  {
+    "id": "d0ccce5db8b3fb37",
+    "title": "LLMs Excel at Text-in-Text Steganography",
+    "summary_raw": "<p>Turns out that LLMs are <a href=\"https://arxiv.org/abs/2510.20075\">really good</a> at hiding text messages in other text messages.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/llms-and-text-in-text-steganography.html",
+    "publishedDate": "2026-05-11T11:04:29+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.936355+00:00",
+    "summary": "Large Language Models (LLMs) have demonstrated a surprising capability for text-in-text steganography, effectively hiding messages within other text. This advancement raises concerns about potential misuse for covert communication and the challenges it presents for detection and security.",
+    "relevance_score": 7,
+    "tags": [
+      "LLM",
+      "steganography",
+      "covert-channel",
+      "AI-security"
+    ]
+  },
+  {
+    "id": "5739d199c291b77a",
+    "title": "Outlook Junk Folder Bypasses Link Preview Function",
+    "summary_raw": "Besides serving as a place where Microsoft Outlook places suspected spam, the Outlook Junk folder has one additional function that can be quite helpful when it comes to identifying malicious messages. Any e-mail placed in this folder is stripped of all formatting, and destinations of all links included in the message become visible to the user, as you can see in the following images which show the same e-mail when it is placed in the inbox, and when it is placed in the Junk folder.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32990",
+    "publishedDate": "2026-05-14T06:08:25+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.212535+00:00",
+    "summary": "A vulnerability has been identified in Microsoft Outlook's junk folder where the link preview function can be bypassed. This bypass could potentially be exploited to trick users into clicking malicious links, even when messages are filtered as spam.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "phishing",
+      "email-security",
+      "microsoft-outlook"
+    ]
+  },
+  {
+    "id": "0ed9b14a207c17c4",
+    "title": "Microsoft May 2026 Patch Tuesday Addresses 137 Vulnerabilities",
+    "summary_raw": "Today&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s Microsoft patch Tuesday fixes 137 different vulnerabilities. In addition, the update addresses 137 Chromium-related issues affecting Microsoft Edge.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32980",
+    "publishedDate": "2026-05-12T18:29:36+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.212945+00:00",
+    "summary": "Microsoft's May 2026 Patch Tuesday update resolves 137 distinct vulnerabilities across its products. This includes a significant number of fixes for Chromium-related issues affecting the Microsoft Edge browser. Users are advised to apply these patches promptly to mitigate potential security risks.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "patching",
+      "Microsoft"
+    ]
+  },
+  {
+    "id": "6cf90560b8c6bb26",
+    "title": "Apple Patches 84 Vulnerabilities in Latest OS Updates",
+    "summary_raw": "Apple today released its typical feature update across it&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s operating systems (iOS, iPadOS, macOS, tvOS, watchOS, vision OS). With this update, Apple patched 84 different vulnerabilities. Updates are available for the \"26\" series of operating systems, as well as for the previous \"18\" version of iOS/iPadOS, and two versions back for macOS (version 14 and 15).&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32976",
+    "publishedDate": "2026-05-11T22:19:13+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.213096+00:00",
+    "summary": "Apple has released updates for its operating systems, including iOS, iPadOS, macOS, tvOS, watchOS, and visionOS, patching a total of 84 vulnerabilities. The updates cover multiple versions of these operating systems, ensuring a broad range of devices are protected. Users should install these updates to secure their Apple devices against known exploits.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "patching",
+      "Apple"
+    ]
+  },
+  {
+    "id": "681af4294cd5103c",
+    "title": "Webinar: Understanding Modern Attack Paths Across Code, Pipelines, and Cloud",
+    "summary_raw": "TL;DR: Stop chasing thousands of \"toast\" alerts. Join experts from Wiz to learn how hackers connect tiny flaws to build a \"Lethal Chain\" to your data\u2014and how to break it. Register for the Strategic Briefing Here.\nMost security tools work like a smoke alarm that goes off every time you burn a piece of toast. You get so many alerts that you eventually start to ignore them.\nThe real danger? While",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/webinar-why-your-appsec-tools-miss.html",
+    "publishedDate": "2026-05-13T17:22:43+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.553709+00:00",
+    "summary": "This webinar will explore how modern attackers chain together vulnerabilities across code, CI/CD pipelines, and cloud environments to achieve their objectives. It aims to educate attendees on identifying and breaking these 'Lethal Chains' to improve application security posture.",
+    "relevance_score": 6,
+    "tags": [
+      "webapp-management",
+      "attack-path",
+      "cloud-security",
+      "CI/CD",
+      "webinar"
+    ]
+  },
+  {
+    "id": "0c6fb55ad8b86011",
+    "title": "Android Introduces Intrusion Logging for Advanced Spyware Forensics",
+    "summary_raw": "Google on Tuesday unveiled a new opt-in Android feature called Intrusion Logging for storing forensic logs to better analyze sophisticated spyware attacks.\nIntrusion Logging, available as part of Advanced Protection Mode, enables \"persistent and privacy-preserving forensics logging to allow for investigation of devices in the event of a suspected compromise,\" the company said.\nThe feature, it",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/android-adds-intrusion-logging-for.html",
+    "publishedDate": "2026-05-13T12:25:42+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554040+00:00",
+    "summary": "Google has introduced an opt-in feature for Android called Intrusion Logging, designed to store forensic logs for better analysis of sophisticated spyware attacks. This feature, part of Advanced Protection Mode, aims to provide persistent and privacy-preserving logging for compromised devices.",
+    "relevance_score": 6,
+    "tags": [
+      "Android",
+      "spyware",
+      "forensics",
+      "mobile security"
+    ]
+  },
+  {
+    "id": "e063ab89b5464cbc",
+    "title": "iOS 26.5 Introduces Default End-to-End Encrypted RCS Messaging Between iPhone and Android",
+    "summary_raw": "Apple on Monday officially released iOS 26.5 with support for end-to-end encryption (E2EE) to Rich Communication Services (RCS) in beta as part of a \"cross-industry effort\" to replace traditional SMS with a more secure alternative.\nTo that end, E2EE RCS messaging is rolling out to iPhone users running iOS 26.5 with supported carriers and Android users on the latest version of Google Messages.",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/ios-265-brings-default-end-to-end.html",
+    "publishedDate": "2026-05-12T10:48:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554772+00:00",
+    "summary": "Apple's iOS 26.5 update now supports end-to-end encrypted (E2EE) Rich Communication Services (RCS) messaging in beta, aiming to replace less secure SMS. This cross-industry effort enhances privacy and security for messaging between iPhone and Android users, provided they are on supported carriers and apps.",
+    "relevance_score": 6,
+    "tags": [
+      "encryption",
+      "messaging",
+      "privacy",
+      "mobile-security"
+    ]
+  },
+  {
+    "id": "23ac7ef55360983f",
+    "title": "Fake Call History Apps on Google Play Stole Payments After 7.3 Million Downloads",
+    "summary_raw": "Cybersecurity researchers have discovered fraudulent apps on the official Google Play Store for Android that falsely claimed to offer access to call histories for any phone number, only to trick users into joining a subscription that provided fake data and incurred financial loss.\nThe 28 apps have collectively racked up more than 7.3 million downloads, with one of them alone accounting for over",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/fake-call-history-apps-stole-payments.html",
+    "publishedDate": "2026-05-08T20:38:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555570+00:00",
+    "summary": "Over 7.3 million users downloaded fraudulent apps from the Google Play Store that falsely promised call history access. These apps tricked users into subscriptions, delivering fake data and causing financial losses. This incident highlights the ongoing risk of malicious applications on official app stores.",
+    "relevance_score": 6,
+    "tags": [
+      "malware",
+      "android",
+      "google-play",
+      "scam",
+      "financial-loss"
+    ]
+  },
+  {
+    "id": "35abd53d057b167c",
+    "title": "Microsoft Edge to Stop Loading Passwords in Memory",
+    "summary_raw": "Microsoft is updating the Edge web browser to ensure it no longer loads saved passwords into process memory in clear text at startup after previously stating it was \"by design.\" [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-edge-to-stop-loading-cleartext-passwords-in-memory-on-startup/",
+    "publishedDate": "2026-05-15T10:49:39-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688512+00:00",
+    "summary": "Microsoft is changing its Edge browser to prevent saved passwords from being loaded into process memory in clear text at startup. This change addresses a security concern that was initially considered \"by design\" by the company.",
+    "relevance_score": 6,
+    "tags": [
+      "browser",
+      "microsoft-edge",
+      "security-update",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "8063eaf76e3376a8",
+    "title": "Cybercrime Tradecraft Used to Steal Freight",
+    "summary_raw": "Cargo theft now starts with phishing emails and stolen credentials, not hijackings, to reroute and steal freight from supply chains. NMFTA outlines how cyber-enabled cargo crime is changing transportation security. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cyber-enabled-cargo-crime-how-cybercrime-tradecraft-is-used-to-steal-freight/",
+    "publishedDate": "2026-05-14T11:21:32-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.689326+00:00",
+    "summary": "Cargo theft is increasingly initiated through cyber means, such as phishing emails and stolen credentials, to reroute and steal freight within supply chains. This shift demonstrates how cybercrime tactics are being applied to physical asset theft, impacting transportation security.",
+    "relevance_score": 6,
+    "tags": [
+      "cybercrime",
+      "supply chain",
+      "transportation security",
+      "phishing",
+      "credentials"
+    ]
+  },
+  {
+    "id": "acdef39baec87929",
+    "title": "SecurityScorecard Acquires Driftnet to Enhance Threat Intelligence",
+    "summary_raw": "The acquisition looks to boost visibility into third-party ecosystems, which are becoming a bigger concern as vectors for supply chain attacks.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/securityscorecard-snags-driftnet-to-level-up-threat-intelligence",
+    "publishedDate": "2026-05-14T20:57:27+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.189875+00:00",
+    "summary": "SecurityScorecard has acquired Driftnet to bolster its threat intelligence capabilities, particularly concerning third-party ecosystems. This move aims to provide greater visibility into supply chain risks, which are increasingly exploited by attackers.",
+    "relevance_score": 6,
+    "tags": [
+      "threat intelligence",
+      "acquisition",
+      "supply chain",
+      "third-party risk"
+    ]
+  },
+  {
+    "id": "a0ee34dae893f4ff",
+    "title": "Tables Turn on 'The Gentlemen' RaaS Gang With Data Leak",
+    "summary_raw": "An OPSEC failure provides a window into what helped the ransomware group rise: a generous affiliate model, opportunistic TTPs, and an effective organizational structure.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/threat-intelligence/gentlemen-raas-gang-data-leak",
+    "publishedDate": "2026-05-13T20:47:46+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190475+00:00",
+    "summary": "An operational security failure has exposed the inner workings of the 'The Gentlemen' ransomware-as-a-service (RaaS) group, revealing their successful tactics, techniques, and procedures (TTPs). This data leak offers insights into their generous affiliate model and organizational structure, potentially aiding in their disruption.",
+    "relevance_score": 6,
+    "tags": [
+      "RaaS",
+      "ransomware",
+      "data leak",
+      "threat intelligence",
+      "OPSEC"
+    ]
+  },
+  {
+    "id": "7ce9b1011105cccc",
+    "title": "FCC Eases Restrictions on Foreign-Made Routers, Delays Deadlines",
+    "summary_raw": "The Federal Communications Commission eased some restrictions and pushed back deadlines for foreign router manufacturers, but the ban is still in place.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/fcc-softens-foreign-router-ban",
+    "publishedDate": "2026-05-11T21:15:48+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.191082+00:00",
+    "summary": "The Federal Communications Commission (FCC) has softened some restrictions and pushed back deadlines for foreign router manufacturers, though a ban remains in place. This decision could have implications for network infrastructure security and the adoption of foreign-made networking equipment.",
+    "relevance_score": 6,
+    "tags": [
+      "FCC",
+      "routers",
+      "network-infrastructure",
+      "policy",
+      "security-regulations"
+    ]
+  },
+  {
+    "id": "adfe405d3bfb93bc",
+    "title": "Human Element Crucial for Cybersecurity Beyond Technical Controls",
+    "summary_raw": "Security controls can do only so much. Here are four attacks where your employees are usually your first, and only, line of cyber defense.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/tech-cant-stop-these-threats-people-can",
+    "publishedDate": "2026-05-11T19:50:20+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.191157+00:00",
+    "summary": "This article emphasizes that while security technology is important, human employees often serve as the first and last line of defense against cyber threats. It explores four types of attacks where human vigilance and awareness are critical to preventing breaches.",
+    "relevance_score": 6,
+    "tags": [
+      "human-factor",
+      "cybersecurity",
+      "social-engineering",
+      "awareness-training"
+    ]
+  },
+  {
+    "id": "b2e31d9bf2f4db82",
+    "title": "CrowdStrike Enhances Threat Detections with Automated Leads",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/ai-threat-detection-with-automated-leads/",
+    "publishedDate": "2026-05-11T00:00:00-05:00",
+    "scrapedAt": "2026-05-16T00:12:29.731485+00:00",
+    "summary": "CrowdStrike is implementing a transformative approach to threat detection using automated leads. This innovation aims to accelerate the identification and response to security incidents, improving overall cybersecurity posture for its clients.",
+    "relevance_score": 6,
+    "tags": [
+      "threat-detection",
+      "automation",
+      "cybersecurity"
+    ]
+  },
+  {
+    "id": "02bd8bb3468048d5",
+    "title": "Reducing Blast Radius in AI Agent Deployments",
+    "summary_raw": "<p>&lt;p&gt;Seven things security teams can start doing today to reduce risk&lt;/p&gt;</p><p><strong>Categories:</strong> Threat Research</p><p><strong>Tags:</strong> AI, CISO, risk</p>",
+    "source": "Sophos News",
+    "url": "https://www.sophos.com/en-us/blog/inside-the-lethal-trifecta-blast-radius-reduction-in-ai-agent-deployments",
+    "publishedDate": "2026-05-12T00:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.254515+00:00",
+    "summary": "Security teams can take proactive steps to minimize the potential damage from AI agent deployments. This article outlines seven strategies to reduce the blast radius of AI agents, emphasizing the importance of risk management in this rapidly evolving field.",
+    "relevance_score": 6,
+    "tags": [
+      "AI",
+      "risk",
+      "security-strategy"
+    ]
+  },
+  {
+    "id": "390cc6fa0e87845d",
+    "title": "Upcoming Speaking Engagements on AI and Cybersecurity",
+    "summary_raw": "<p>This is a current list of where and when I am scheduled to speak:</p>\n<ul>\n<li>I\u2019m giving a virtual talk on \u201cThe Security of Trust in the Age of AI,\u201d hosted by the <a href=\"https://www.fwa.org/event-landing/2351\">Financial Women\u2019s Association of New York</a>, at 6:00 PM ET on May 21, 2026.</li>\n<li>I\u2019m speaking at the <a href=\"https://potsdamer-sicherheitskonferenz.de/\">Potsdam Conference on National Cybersecurity</a>\u00a0at the Hasso Plattner Institut in Potsdam, Germany. The event runs June 24\u201325, 2026, and my talk will be the evening of June 24.</li>\n<li>I\u2019m speaking at the <a href=\"https://dighum.wien/\">Digital Humanism Conference</a> in Vienna, Austria, on Tuesday, June 26, 2026.</li>\n<li>I\u2019m speaking at the ...</li></ul>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/upcoming-speaking-engagements-56.html",
+    "publishedDate": "2026-05-14T16:01:06+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.936116+00:00",
+    "summary": "This article lists upcoming speaking engagements, including a virtual talk on 'The Security of Trust in the Age of AI' and a presentation at the Potsdam Conference on National Cybersecurity. These events will likely cover critical topics at the intersection of AI and cybersecurity.",
+    "relevance_score": 6,
+    "tags": [
+      "AI",
+      "cybersecurity",
+      "policy"
+    ]
+  },
+  {
+    "id": "7efd4b479d99a168",
+    "title": "Insider Betting Rife on Polymarket, Analysis Shows",
+    "summary_raw": "<p>Insider trading is <a href=\"https://arstechnica.com/tech-policy/2026/04/more-than-half-of-all-long-shot-bets-on-polymarket-pay-off/\">rife</a> on Polymarket:</p>\n<blockquote><p>Analysis by the Anti-Corruption Data Collective, a non-profit research and advocacy group, found that long-shot bets&#8212;\u00addefined as wagers of $2,500 or more at odds of 35 percent or less&#8212;\u00adon the platform had an average win rate of around 52 percent in markets on military and defense actions.</p>\n<p>That compares with a win rate of 25 percent across all politics-focused markets and just 14 percent for all markets on the platform as a whole.</p></blockquote>\n<p>It is absolutely insane that this is legal. We already know how insider betting warps sports. Insider betting warping politics&#8212;and military actions&#8212;is orders of magnitude worse...</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/insider-betting-on-polymarket.html",
+    "publishedDate": "2026-05-08T17:49:01+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.936470+00:00",
+    "summary": "An analysis of the Polymarket platform reveals a significant prevalence of insider betting, particularly in markets related to military and defense actions. Long-shot bets on these sensitive topics showed an unusually high win rate, suggesting potential exploitation of non-public information.",
+    "relevance_score": 6,
+    "tags": [
+      "insider-trading",
+      "gambling-platform",
+      "policy",
+      "defense-security"
+    ]
+  },
+  {
+    "id": "cd980de0f058339f",
+    "title": "Guest Diary: Analyzing Website Fraud Mechanisms",
+    "summary_raw": "&&#x23&#x3b;x26&#x3b;&#x23&#x3b;x5b&#x3b;This is a Guest Diary by Joshua Nikolson, an ISC Intern and part of the SANS.edu Bachelor&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s degree in Applied Cybersecurity (BACS) program.&#x5d;&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32958",
+    "publishedDate": "2026-05-13T06:29:07+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.212716+00:00",
+    "summary": "This guest diary entry delves into the inner workings of website fraud, providing an in-depth analysis of how fraudulent schemes are constructed and operate. It offers valuable insights for understanding and combating online deception tactics.",
+    "relevance_score": 6,
+    "tags": [
+      "website-fraud",
+      "analysis",
+      "cybercrime",
+      "security-research"
+    ]
+  },
+  {
+    "id": "f1a05133769cc4f1",
+    "title": "Webinar: Addressing Unanswered High-Risk SOC Alerts",
+    "summary_raw": "Why do the Riskiest SOC Alerts Go Unanswered?\nSecurity operations teams are drowning in alerts. But the real problem isn't always alert volume; it's the blind spots. The most dangerous alerts are the ones no one is investigating.\nA recent report from The Hacker News examined why certain high-risk alert categories - WAF, DLP, OT/IoT, dark web intelligence, and supply chain signals- consistently",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/webinar-what-riskiest-soc-alerts-go.html",
+    "publishedDate": "2026-05-12T17:28:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.554364+00:00",
+    "summary": "This webinar discusses why critical Security Operations Center (SOC) alerts, particularly those related to WAF, DLP, OT/IoT, dark web intelligence, and supply chain signals, often go unanswered. It aims to provide solutions for improving alert investigation and reducing security blind spots.",
+    "relevance_score": 5,
+    "tags": [
+      "SOC",
+      "alerting",
+      "security operations",
+      "webinar"
+    ]
+  },
+  {
+    "id": "4dc0279920853061",
+    "title": "Weekly Recap: Linux Rootkit, macOS Crypto Stealer, WebSocket Skimmers, and More",
+    "summary_raw": "Rough Monday.\nSomebody poisoned a trusted download again, somebody else turned cloud servers into public housing, and a few crews are still getting into boxes with bugs that should\u2019ve died years ago \u2014 the same old holes, same lazy access paths, same \u201chow the hell is this still open\u201d feeling. One report this week basically reads like a guy tripped over root access by accident and decided to stay",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/weekly-recap-linux-rootkit-macos-crypto.html",
+    "publishedDate": "2026-05-11T18:06:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555096+00:00",
+    "summary": "This week's security recap highlights persistent threats including a Linux rootkit, a macOS cryptocurrency stealer, and WebSocket skimmers. The article also notes the continued exploitation of old vulnerabilities and compromised download sources, underscoring ongoing challenges in basic cyber hygiene.",
+    "relevance_score": 5,
+    "tags": [
+      "malware",
+      "rootkit",
+      "cryptostealer",
+      "vulnerability",
+      "web-skimming"
+    ]
+  },
+  {
+    "id": "e4d79628adbaa9c2",
+    "title": "Analysis of 25 Million Alerts Reveals One Missed Threat Per Week",
+    "summary_raw": "The dark secret of enterprise security operations is that defenders have quietly institutionalized the practice of not looking. This is not just anecdotal, but rather backed by a recent report investigating more than 25 million security alerts, including informational and low-severity, across live enterprise environments.&nbsp;\nThe dataset behind these findings includes 10 million monitored",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/one-missed-threat-per-week-what-25m.html",
+    "publishedDate": "2026-05-08T16:00:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555823+00:00",
+    "summary": "A study analyzing over 25 million security alerts, including low-severity ones, found that enterprises often miss one threat per week due to an institutionalized practice of not investigating all alerts. This highlights a significant gap in security operations and the potential for overlooked risks.",
+    "relevance_score": 5,
+    "tags": [
+      "security-operations",
+      "alert-fatigue",
+      "risk-management",
+      "threat-detection"
+    ]
+  },
+  {
+    "id": "fe83fe5e37a482b0",
+    "title": "Microsoft to Automatically Roll Back Faulty Windows Drivers",
+    "summary_raw": "Microsoft is introducing a new capability that will allow it to remotely roll back problematic Windows drivers delivered through Windows Update. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-automatically-roll-back-faulty-windows-drivers/",
+    "publishedDate": "2026-05-15T08:29:48-04:00",
+    "scrapedAt": "2026-05-16T00:12:23.688687+00:00",
+    "summary": "Microsoft is implementing a new feature that will allow it to remotely roll back problematic drivers delivered via Windows Update. This proactive measure aims to improve system stability and prevent issues caused by faulty driver installations.",
+    "relevance_score": 5,
+    "tags": [
+      "microsoft",
+      "windows",
+      "driver",
+      "security-update"
+    ]
+  },
+  {
+    "id": "fa4456255d8695eb",
+    "title": "Checkbox Assessments Aren't Fit to Measure Risk",
+    "summary_raw": "Security governance needs to be more than an annual compliance exercise. New companies are emerging to address risk-management gaps in current audit tools.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/checkbox-assessments-aren-t-fit-to-measure-to-risk",
+    "publishedDate": "2026-05-13T21:17:07+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190327+00:00",
+    "summary": "Traditional checkbox compliance exercises are insufficient for accurately measuring an organization's security risk. New solutions are emerging to address the shortcomings of current audit tools and provide more effective risk management.",
+    "relevance_score": 5,
+    "tags": [
+      "risk management",
+      "compliance",
+      "security governance",
+      "audit tools"
+    ]
+  },
+  {
+    "id": "145eda81e82c382b",
+    "title": "20 Leaders Who Shaped the CISO Era Over Two Decades",
+    "summary_raw": "As part of Dark Reading's 20th anniversary special coverage, we profile the CISOs, founders, researchers, criminals, and policymakers who rewrote the enterprise risk playbook.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/20-leaders-ciso-era-2-decades-change",
+    "publishedDate": "2026-05-12T12:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190927+00:00",
+    "summary": "Dark Reading profiles 20 influential leaders, including CISOs, founders, researchers, criminals, and policymakers, who have significantly impacted enterprise risk management over the past two decades. This retrospective highlights the evolution of the CISO role and the strategies that have defined modern cybersecurity.",
+    "relevance_score": 5,
+    "tags": [
+      "CISO",
+      "cybersecurity",
+      "risk management"
+    ]
+  },
+  {
+    "id": "6a93a24c803dbfd5",
+    "title": "AI Age-Verification Checks Can Be Bypassed",
+    "summary_raw": "<p>Some AI-based video age-verification checks can be fooled with a <a href=\"https://techcrunch.com/2026/05/06/some-kids-are-bypassing-age-verification-checks-with-a-fake-mustache/\">fake mustache</a>.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/bypassing-on-camera-age-verification-checks.html",
+    "publishedDate": "2026-05-15T11:06:32+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.936042+00:00",
+    "summary": "AI-powered video age-verification systems are susceptible to bypass methods, such as using a fake mustache. This vulnerability highlights potential weaknesses in AI-driven identity and age verification technologies, raising concerns about their reliability.",
+    "relevance_score": 5,
+    "tags": [
+      "AI",
+      "vulnerability",
+      "identity-verification"
+    ]
+  },
+  {
+    "id": "e09a7fc237e3fd85",
+    "title": "New Malware Libraries Require New Signatures",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32986",
+    "publishedDate": "2026-05-15T06:38:33+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.212361+00:00",
+    "summary": "The emergence of new malware libraries necessitates the continuous development of updated signatures for effective detection. This ongoing arms race between malware creators and security defenders highlights the dynamic nature of threat landscapes.",
+    "relevance_score": 5,
+    "tags": [
+      "malware",
+      "signatures",
+      "threat-intelligence",
+      "cybersecurity"
+    ]
+  },
+  {
+    "id": "5c0e08858f7f273c",
+    "title": "Proxying Unproxyable Traffic: Sending EXE Files to a Proxy",
+    "summary_raw": ".. if &#xe2;&#x20ac;&#x153;unproxyable&#xe2;&#x20ac;&#x9d; is a word that is ..&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32982",
+    "publishedDate": "2026-05-13T01:20:35+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.212870+00:00",
+    "summary": "This technical discussion explores methods for proxying traffic that is typically considered unproxyable, specifically focusing on sending executable file traffic through a proxy. It addresses challenges in network management and security policy enforcement.",
+    "relevance_score": 5,
+    "tags": [
+      "proxy",
+      "network-security",
+      "traffic-analysis",
+      "network-management"
+    ]
+  },
+  {
+    "id": "85028d5d9f10f077",
+    "title": "Critique of Purple Teaming: Red and Blue Teams Operating in Isolation",
+    "summary_raw": "Defending a network at 2 am looks a lot like this: an analyst copy-pasting a hash from a PDF into a SIEM query. A red team script is being rewritten by hand so the blue team can use it. A patch waiting on a change-approval window that's longer than the exploitation window itself.\nNobody in that chain is incompetent. Every human is doing their job correctly. The problem is the system, its",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/your-purple-team-isnt-purple-its-just.html",
+    "publishedDate": "2026-05-11T17:00:00+05:30",
+    "scrapedAt": "2026-05-16T00:12:23.555176+00:00",
+    "summary": "This article argues that traditional purple teaming often fails to achieve true integration, with red and blue teams merely working in the same room rather than collaboratively. It highlights systemic issues like slow patch approval processes and manual script translation that hinder effective, unified defense.",
+    "relevance_score": 4,
+    "tags": [
+      "cyber-defense",
+      "red-team",
+      "blue-team",
+      "penetration-testing",
+      "strategy"
+    ]
+  },
+  {
+    "id": "b844c9c7dfacaf96",
+    "title": "Cisco Reports Record Revenue Amidst 4,000 Layoffs",
+    "summary_raw": "Layoffs are \"not a savings-driven restructure,\" CFO says.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/information-technology/2026/05/cisco-announces-record-revenue-and-4000-layoffs-in-the-same-day/",
+    "publishedDate": "2026-05-14T16:47:43+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.385935+00:00",
+    "summary": "Cisco has announced record revenue figures, coinciding with news of 4,000 layoffs across the company. The CFO stated the layoffs are not part of a savings-driven restructure, indicating potential strategic shifts within the networking giant.",
+    "relevance_score": 4,
+    "tags": [
+      "Cisco",
+      "layoffs",
+      "corporate-news",
+      "networking"
+    ]
+  },
+  {
+    "id": "753bd734959f1b1a",
+    "title": "Cybersecurity Pioneers Reflect on Past and Future",
+    "summary_raw": "Robert &quot;RSnake&quot; Hansen, Katie Moussouris, Rich Mogull, Richard Stiennon, and Bruce Schneier reflect on how their favorite columns penned for Dark Reading over the past 20 years have stood the test of time.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/cybersecurity-pioneers-ponder-past-prologue",
+    "publishedDate": "2026-05-15T12:00:00+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.189719+00:00",
+    "summary": "Prominent cybersecurity figures like Robert Hansen, Katie Moussouris, Rich Mogull, Richard Stiennon, and Bruce Schneier share their reflections on two decades of cybersecurity evolution. Their insights offer valuable historical context and perspective on the enduring challenges and future directions of the field.",
+    "relevance_score": 3,
+    "tags": [
+      "cybersecurity",
+      "history",
+      "reflection"
+    ]
+  },
+  {
+    "id": "247e2cb74ddeb93e",
+    "title": "ISC Stormcast for Friday, May 15th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32992",
+    "publishedDate": "2026-05-15T04:10:13+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.212454+00:00",
+    "summary": "This entry is a link to the SANS Internet Storm Center's daily podcast, providing a summary of recent cybersecurity events and discussions. It serves as a regular update for security professionals on emerging threats and trends.",
+    "relevance_score": 3,
+    "tags": [
+      "podcast",
+      "cybersecurity-news",
+      "threat-update"
+    ]
+  },
+  {
+    "id": "0f41ab2eb2c93d01",
+    "title": "ISC Stormcast for Thursday, May 14th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32988",
+    "publishedDate": "2026-05-14T04:20:11+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.212635+00:00",
+    "summary": "This entry links to the SANS Internet Storm Center's daily podcast, offering a digest of cybersecurity news and analysis. It's a routine update for those tracking the latest in the security world.",
+    "relevance_score": 3,
+    "tags": [
+      "podcast",
+      "cybersecurity-news",
+      "threat-update"
+    ]
+  },
+  {
+    "id": "6706e2c37634a51c",
+    "title": "ISC Stormcast for Wednesday, May 13th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32984",
+    "publishedDate": "2026-05-13T03:05:02+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.212795+00:00",
+    "summary": "This is a reference to the SANS Internet Storm Center's daily podcast, which provides a summary of cybersecurity events. It's a regular feature for staying informed about the evolving threat landscape.",
+    "relevance_score": 3,
+    "tags": [
+      "podcast",
+      "cybersecurity-news",
+      "threat-update"
+    ]
+  },
+  {
+    "id": "ebcfee4ad29388f9",
+    "title": "Schneier on Security: Friday Squid Blogging - Bigfin Squid",
+    "summary_raw": "<p><a href=\"https://www.sciencefocus.com/nature/bigfin-squid\">Article</a> about the bigfin squid.</p>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/friday-squid-blogging-bigfin-squid.html",
+    "publishedDate": "2026-05-16T01:03:31+00:00",
+    "scrapedAt": "2026-05-16T19:58:33.994355+00:00",
+    "summary": "This post from Bruce Schneier's blog uses a discussion about the Bigfin Squid as a springboard for general security commentary. It also mentions an update to the blog's moderation policy. While not detailing a specific security incident, Schneier's blog often touches upon broader security trends and implications.",
+    "relevance_score": 3,
+    "tags": [
+      "security commentary",
+      "blog"
+    ]
+  },
+  {
+    "id": "cebd430be53a108a",
+    "title": "Dark Reading Celebrates 20 Years as a Leading Authority on Cybersecurity",
+    "summary_raw": "Informa TechTarget's flagship cybersecurity media brand launches a special content series to mark two decades as a trusted source for cybersecurity professionals.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cybersecurity-operations/dark-reading-celebrates-20-years-as-a-leading-authority-on-cybersecurity-highlighting-the-people-events-ideas-and-technologies-shaping-the-modern-risk-landscape",
+    "publishedDate": "2026-05-13T18:52:50+00:00",
+    "scrapedAt": "2026-05-16T00:12:29.190549+00:00",
+    "summary": "Dark Reading is celebrating its 20th anniversary as a prominent cybersecurity news source. The publication is launching a special content series to commemorate two decades of shaping the cybersecurity landscape by highlighting key people, events, ideas, and technologies.",
+    "relevance_score": 2,
+    "tags": [
+      "anniversary",
+      "cybersecurity media",
+      "industry trends"
+    ]
+  },
+  {
+    "id": "ad3e3c5d0b5e0630",
+    "title": "Friday Squid Blogging: Western Australia Giant Squid Discovery",
+    "summary_raw": "<p>Evidence of them has <a href=\"https://nautil.us/giant-squid-discovered-lurking-off-the-australian-coast-1280546\">been</a> <a href=\"https://oceanographicmagazine.com/news/giant-squid-found-in-western-australian-waters-in-edna-study/\">found</a> by analyzing DNA in the seawater.</p>\n<p>As usual, you can also use this squid post to talk about the security stories in the news that I haven&#8217;t covered.</p>\n<p><a href=\"https://www.schneier.com/blog/archives/2024/06/new-blog-moderation-policy.html\">Blog moderation policy.</a></p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/05/friday-squid-blogging-giant-squid-live-in-the-waters-of-western-australia.html",
+    "publishedDate": "2026-05-08T21:03:28+00:00",
+    "scrapedAt": "2026-05-16T00:12:31.936412+00:00",
+    "summary": "This post, framed by a discovery of giant squid in Western Australian waters through environmental DNA analysis, serves as a platform for discussing broader security topics. It highlights how seemingly unrelated scientific findings can be used to reflect on current events and ongoing security discussions.",
+    "relevance_score": 2,
+    "tags": [
+      "discussion",
+      "security-news"
+    ]
+  },
+  {
+    "id": "c05d91ef6f021f3e",
+    "title": "ISC Stormcast for Tuesday, May 12th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/32978",
+    "publishedDate": "2026-05-12T03:15:10+00:00",
+    "scrapedAt": "2026-05-16T00:12:32.213022+00:00",
+    "summary": "This entry appears to be a placeholder for the SANS Internet Storm Center's daily podcast. As no specific security event details are provided in the raw summary, its direct impact or relevance cannot be assessed without further information. It is generally recommended to listen to such podcasts for a broader overview of current security news.",
+    "relevance_score": 2,
+    "tags": [
+      "podcast",
+      "security news"
+    ]
+  }
+]
