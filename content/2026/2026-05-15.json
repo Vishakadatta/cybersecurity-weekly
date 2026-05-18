@@ -2,9 +2,72 @@
   "edition": "2026-05-15",
   "year": "2026",
   "editionLabel": "May 15 \u2013 21, 2026",
-  "generatedAt": "2026-05-18T05:00:40.119761+00:00",
-  "subjectLine": "Zero-Days Dominate: Windows BitLocker Bypass, Cisco SD-WAN Exploited, AI-Powered 2FA Attacks",
+  "generatedAt": "2026-05-18T18:05:49.845245+00:00",
+  "subjectLine": "BREAKING: MiniPlasma Windows 0-Day Enables SYSTEM Privilege Escalation + More Inside",
   "articles": [
+    {
+      "id": "0e15511235b91dd8",
+      "title": "Grafana says stolen GitHub token let hackers steal codebase",
+      "summary": "Grafana Labs disclosed that hackers have downloaded its source code after breaching its GitHub environment using a stolen access token.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/grafana-says-stolen-github-token-let-hackers-steal-codebase/",
+      "tier": 2,
+      "publishedDate": "2026-05-18T09:46:26-04:00"
+    },
+    {
+      "id": "70e54c0073fa729f",
+      "title": "Leaked Shai-Hulud malware fuels new npm infostealer campaign",
+      "summary": "The Shai-Hulud malware leaked last week is now used in new attacks on the Node Package Manager (npm) index, as infected packages emerged over the weekend.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/leaked-shai-hulud-malware-fuels-new-npm-infostealer-campaign/",
+      "tier": 2,
+      "publishedDate": "2026-05-18T13:28:02-04:00"
+    },
+    {
+      "id": "d9ae04ec24e441d5",
+      "title": "Four Malicious npm Packages Deliver Infostealers and Phantom Bot DDoS Malware",
+      "summary": "Cybersecurity researchers have discovered four new npm packages containing information-stealing malware, one of which is a clone of the Shai-Hulud worm open-sourced by TeamPCP.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/four-malicious-npm-packages-deliver.html",
+      "tier": 2,
+      "publishedDate": "2026-05-18T14:27:26+05:30"
+    },
+    {
+      "id": "8410d715b31d6161",
+      "title": "Zero-Day Exploit Against Windows BitLocker",
+      "summary": "It\u2019s nasty, but it requires physical access to the computer.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/05/zero-day-exploit-against-windows-bitlocker.html",
+      "tier": 1,
+      "publishedDate": "2026-05-18T11:08:13+00:00"
+    },
+    {
+      "id": "adabc2b03322d836",
+      "title": "Exploit available for new DirtyDecrypt Linux root escalation flaw",
+      "summary": "A recently patched local privilege escalation vulnerability in the Linux kernel's rxgk module now has a proof-of-concept exploit that allows attackers to gain root access on some Linux systems.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/exploit-available-for-new-dirtydecrypt-linux-root-escalation-flaw/",
+      "tier": 2,
+      "publishedDate": "2026-05-18T03:18:33-04:00"
+    },
+    {
+      "id": "89f8f0099f6f60c7",
+      "title": "Hackers earn $1,298,250 for 47 zero-days at Pwn2Own Berlin 2026",
+      "summary": "The Pwn2Own Berlin 2026 hacking contest has concluded, with security researchers collecting $1,298,250 in rewards after exploiting 47 zero-day flaws.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-earn-1-298-250-for-47-zero-days-at-pwn2own-berlin-2026/",
+      "tier": 2,
+      "publishedDate": "2026-05-18T01:33:20-04:00"
+    },
+    {
+      "id": "d5bf59c9b653dbf0",
+      "title": "MiniPlasma Windows 0-Day Enables SYSTEM Privilege Escalation on Fully Patched Systems",
+      "summary": "Chaotic Eclipse, the security researcher behind the recently disclosed Windows flaws, YellowKey and GreenPlasma, has released a proof-of-concept (PoC) for a Windows privilege escalation zero-day flaw.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/miniplasma-windows-0-day-enables-system.html",
+      "tier": 1,
+      "publishedDate": "2026-05-18T14:27:34+05:30"
+    },
     {
       "id": "793b3080561d3715",
       "title": "Windows Zero-Days Expose BitLocker Bypass and Privilege Escalation",
