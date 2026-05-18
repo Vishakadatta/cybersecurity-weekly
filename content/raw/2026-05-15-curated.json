@@ -187,6 +187,25 @@
     ]
   },
   {
+    "id": "71eff1c266e731e7",
+    "title": "Windows 'MiniPlasma' Zero-Day Exploit Grants SYSTEM Access",
+    "summary_raw": "A cybersecurity researcher has released a proof-of-concept exploit for a Windows privilege escalation zero-day dubbed \"MiniPlasma\" that lets attackers gain SYSTEM privileges on fully patched Windows systems.\u00a0 [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/",
+    "publishedDate": "2026-05-17T18:30:08-04:00",
+    "scrapedAt": "2026-05-18T04:59:44.269532+00:00",
+    "summary": "A new zero-day vulnerability in Windows, dubbed 'MiniPlasma,' has been publicly disclosed with a proof-of-concept exploit. This vulnerability allows attackers to escalate privileges to SYSTEM level on fully patched systems. The release of a PoC significantly increases the risk of widespread exploitation.",
+    "relevance_score": 10,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Windows",
+      "privilege escalation",
+      "exploit",
+      "PoC"
+    ]
+  },
+  {
     "id": "71d567a7a33d95af",
     "title": "Canvas Platform Breach Impacts Thousands of Schools Nationwide",
     "summary_raw": "An ongoing data extortion attack targeting the widely-used education technology platform Canvas disrupted classes and coursework at school districts and universities across the United States today, after a cybercrime group defaced the service's login page with a ransom demand that threatened to leak data from 275 million students and faculty across nearly 9,000 educational institutions.",
@@ -1098,6 +1117,24 @@
     ]
   },
   {
+    "id": "7b6b6ee37fa4ce90",
+    "title": "Nginx Vulnerability CVE-2026-42945 Exploited in the Wild",
+    "summary_raw": "A newly disclosed security flaw impacting NGINX Plus and NGINX Open has come under active exploitation in the wild, days after its public disclosure, according to VulnCheck.\nThe vulnerability, tracked as CVE-2026-42945 (CVSS score: 9.2), is a heap buffer overflow in ngx_http_rewrite_module affecting NGINX versions 0.6.27 through 1.30.0. According to AI-native security company depthfirst, the",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/nginx-cve-2026-42945-exploited-in-wild.html",
+    "publishedDate": "2026-05-17T17:27:53+05:30",
+    "scrapedAt": "2026-05-18T04:59:44.195022+00:00",
+    "summary": "A critical heap buffer overflow vulnerability (CVE-2026-42945) in Nginx versions 0.6.27 through 1.30.0 is being actively exploited in the wild. This flaw, with a CVSS score of 9.2, can lead to worker crashes and potentially remote code execution. Its widespread use in web infrastructure makes this a significant threat.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "exploitation",
+      "RCE",
+      "Nginx",
+      "web server"
+    ]
+  },
+  {
     "id": "f42d900629cb626d",
     "title": "May 2026 Patch Tuesday Sees High Volume of Vulnerability Fixes",
     "summary_raw": "Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some of the more widely-used software makers -- including Apple, Google, Microsoft, Mozilla and Oracle -- fixing near record volumes of security bugs, and/or quickening the tempo of their patch releases.",
@@ -1629,6 +1666,42 @@
     ]
   },
   {
+    "id": "42fc5f50e98cee5c",
+    "title": "Grafana GitHub Token Breach Leads to Codebase Download and Extortion Attempt",
+    "summary_raw": "Grafana has disclosed that an \"unauthorized party\" obtained a token that granted them the ability to access the company's GitHub environment and download its codebase.\n\n\n  \"Our investigation has determined that no customer data or personal information was accessed during this incident, and we have found no evidence of impact to customer systems or operations,\" Grafana\n  said\n  in a series of",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/grafana-github-token-breach-led-to.html",
+    "publishedDate": "2026-05-17T12:43:33+05:30",
+    "scrapedAt": "2026-05-18T04:59:44.195160+00:00",
+    "summary": "Grafana experienced a security incident where an unauthorized party gained access to their GitHub environment via a stolen token, allowing them to download the company's codebase. While no customer data was compromised, the incident highlights the risks associated with compromised credentials and the potential for intellectual property theft.",
+    "relevance_score": 7,
+    "tags": [
+      "data-breach",
+      "codebase",
+      "GitHub",
+      "Grafana",
+      "extortion"
+    ]
+  },
+  {
+    "id": "446b2104854530e9",
+    "title": "Tycoon2FA Phishing Kit Hijacks Microsoft 365 Accounts",
+    "summary_raw": "The Tycoon2FA phishing kit now supports device-code phishing attacks and abuses Trustifi click-tracking URLs to hijack Microsoft 365 accounts. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/tycoon2fa-hijacks-microsoft-365-accounts-via-device-code-phishing/",
+    "publishedDate": "2026-05-17T10:43:10-04:00",
+    "scrapedAt": "2026-05-18T04:59:44.269639+00:00",
+    "summary": "The Tycoon2FA phishing kit has been updated to support device-code phishing attacks, enabling it to hijack Microsoft 365 accounts. This sophisticated attack leverages trust mechanisms within Microsoft's authentication flow to steal credentials. Users should be wary of any unexpected authentication prompts.",
+    "relevance_score": 7,
+    "tags": [
+      "phishing",
+      "Microsoft 365",
+      "account takeover",
+      "Tycoon2FA",
+      "authentication"
+    ]
+  },
+  {
     "id": "681af4294cd5103c",
     "title": "Webinar: Understanding Modern Attack Paths Across Code, Pipelines, and Cloud",
     "summary_raw": "TL;DR: Stop chasing thousands of \"toast\" alerts. Join experts from Wiz to learn how hackers connect tiny flaws to build a \"Lethal Chain\" to your data\u2014and how to break it. Register for the Strategic Briefing Here.\nMost security tools work like a smoke alarm that goes off every time you burn a piece of toast. You get so many alerts that you eventually start to ignore them.\nThe real danger? While",
@@ -1886,6 +1959,24 @@
     ]
   },
   {
+    "id": "189314d5a4d0ae05",
+    "title": "Microsoft Rejects Azure Vulnerability Report, No CVE Issued",
+    "summary_raw": "A security researcher claims Microsoft quietly fixed an Azure Backup for AKS vulnerability after rejecting his report, and without issuing a CVE. Microsoft disputes the claim, telling BleepingComputer the behavior was expected and that \"no product changes were made,\" despite the researcher documenting a silent fix. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/microsoft-rejects-critical-azure-vulnerability-report-no-cve-issued/",
+    "publishedDate": "2026-05-16T16:55:44-04:00",
+    "scrapedAt": "2026-05-18T04:59:44.269728+00:00",
+    "summary": "A security researcher claims Microsoft silently fixed a critical vulnerability in Azure Backup for AKS after rejecting his report and refusing to issue a CVE. Microsoft disputes the claim, stating no product changes were made and the behavior was expected. This situation raises concerns about vulnerability disclosure and patching transparency.",
+    "relevance_score": 6,
+    "tags": [
+      "vulnerability",
+      "Azure",
+      "Microsoft",
+      "cloud security",
+      "disclosure"
+    ]
+  },
+  {
     "id": "f1a05133769cc4f1",
     "title": "Webinar: Addressing Unanswered High-Risk SOC Alerts",
     "summary_raw": "Why do the Riskiest SOC Alerts Go Unanswered?\nSecurity operations teams are drowning in alerts. But the real problem isn't always alert volume; it's the blind spots. The most dangerous alerts are the ones no one is investigating.\nA recent report from The Hacker News examined why certain high-risk alert categories - WAF, DLP, OT/IoT, dark web intelligence, and supply chain signals- consistently",
@@ -2035,6 +2126,24 @@
       "network-security",
       "traffic-analysis",
       "network-management"
+    ]
+  },
+  {
+    "id": "9786733de375b59c",
+    "title": "South Korea Tests Laws Against Deepfakes",
+    "summary_raw": "South Korea's local elections next month will be a test bed for how effective regulations might be to stymie the flow of deepfakes.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/can-laws-stop-deepfakes-south-korea",
+    "publishedDate": "2026-05-18T01:00:00+00:00",
+    "scrapedAt": "2026-05-18T04:59:44.489313+00:00",
+    "summary": "South Korea is set to use its upcoming local elections as a test case for the effectiveness of new regulations aimed at curbing the spread of deepfakes. This initiative reflects a growing global concern over the malicious use of AI-generated synthetic media and the challenges in combating it.",
+    "relevance_score": 5,
+    "tags": [
+      "deepfake",
+      "policy",
+      "regulation",
+      "AI",
+      "election security"
     ]
   },
   {

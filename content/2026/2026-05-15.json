@@ -1,0 +1,360 @@
+{
+  "edition": "2026-05-15",
+  "year": "2026",
+  "editionLabel": "May 15 \u2013 21, 2026",
+  "generatedAt": "2026-05-18T05:00:40.119761+00:00",
+  "subjectLine": "Zero-Days Dominate: Windows BitLocker Bypass, Cisco SD-WAN Exploited, AI-Powered 2FA Attacks",
+  "articles": [
+    {
+      "id": "793b3080561d3715",
+      "title": "Windows Zero-Days Expose BitLocker Bypass and Privilege Escalation",
+      "summary": "Two new Windows zero-day vulnerabilities have been disclosed, one allowing for a BitLocker bypass and the other enabling privilege escalation via the CTFMON component. These critical flaws, codenamed YellowKey and GreenPlasma, pose a significant threat to Windows system security.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/windows-zero-days-expose-bitlocker.html",
+      "tier": 1,
+      "publishedDate": "2026-05-14T14:55:50+05:30"
+    },
+    {
+      "id": "4d7c8b857b2e39b5",
+      "title": "Zero-Day Exploit Defeats Windows 11 BitLocker Protections",
+      "summary": "A critical zero-day exploit has been discovered that completely bypasses the default BitLocker encryption protections on Windows 11. Microsoft is investigating this severe vulnerability, which could allow attackers to access encrypted data without authorization.",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/05/zero-day-exploit-completely-defeats-default-windows-11-bitlocker-protections/",
+      "tier": 1,
+      "publishedDate": "2026-05-14T18:32:01+00:00"
+    },
+    {
+      "id": "5a38a188af401d84",
+      "title": "AI Used to Develop First Known Zero-Day 2FA Bypass for Mass Exploitation",
+      "summary": "Google has disclosed the first known instance of a zero-day exploit, likely developed using AI, to bypass two-factor authentication (2FA). This marks a significant escalation in cybercrime capabilities, demonstrating AI's potential for creating sophisticated exploits for widespread attacks.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/hackers-used-ai-to-develop-first-known.html",
+      "tier": 1,
+      "publishedDate": "2026-05-11T21:15:00+05:30"
+    },
+    {
+      "id": "3e0f6f26fcc7c9fb",
+      "title": "Cisco Catalyst SD-WAN Controller Authentication Bypass Actively Exploited",
+      "summary": "Cisco has released updates to address a critical authentication bypass vulnerability (CVE-2026-20182) in its Catalyst SD-WAN Controller, which has a CVSS score of 10.0. The flaw has reportedly been exploited in limited attacks, allowing attackers to gain administrative access to the network manageme",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/cisco-catalyst-sd-wan-controller-auth.html",
+      "tier": 2,
+      "publishedDate": "2026-05-14T23:15:20+05:30"
+    },
+    {
+      "id": "21a9615c326f6ca8",
+      "title": "Cisco SD-WAN Flaw Exploited in Zero-Day Attacks",
+      "summary": "Cisco is alerting users to a critical authentication bypass vulnerability in its Catalyst SD-WAN Controller that has been actively exploited in zero-day attacks. The flaw allows attackers to gain administrative privileges on compromised devices.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-critical-sd-wan-flaw-exploited-in-zero-day-attacks/",
+      "tier": 2,
+      "publishedDate": "2026-05-14T16:09:56-04:00"
+    },
+    {
+      "id": "fa6c29e18fd8dadd",
+      "title": "Maximum Severity Cisco SD-WAN Bug Exploited in the Wild",
+      "summary": "A critical Cisco SD-WAN vulnerability with a CVSS score of 10.0 is being actively exploited by threat actors in the wild. This marks the second time this year a severe flaw in Cisco's network control system has been leveraged, emphasizing the need for rapid patching of high-impact network infrastruc",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/maximum-severity-cisco-sd-wan-bug-exploited",
+      "tier": 2,
+      "publishedDate": "2026-05-14T20:25:31+00:00"
+    },
+    {
+      "id": "5806f447b99d840f",
+      "title": "CISA Adds Cisco SD-WAN Authentication Bypass to KEV Catalog",
+      "summary": "CISA has added a critical authentication bypass vulnerability (CVE-2026-20182) in Cisco Catalyst SD-WAN Controller to its Known Exploited Vulnerabilities catalog. Federal agencies are mandated to patch this issue by May 17, 2026, due to its potential for administrative access exploitation.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/cisa-adds-cisco-sd-wan-cve-2026-20182.html",
+      "tier": 2,
+      "publishedDate": "2026-05-15T10:58:03+05:30"
+    },
+    {
+      "id": "09cad3c84ab78d3c",
+      "title": "Pwn2Own Berlin: Zero-Days in Windows 11, Exchange, and RHEL Demonstrated",
+      "summary": "During Pwn2Own Berlin 2026, competitors successfully exploited 15 unique zero-day vulnerabilities, earning significant cash awards. Exploits targeted major software including Windows 11, Microsoft Exchange, and Red Hat Enterprise Linux, demonstrating critical security flaws in widely used platforms.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/pwn2own-day-two-hackers-demo-microsoft-exchange-windows-11-red-had-enterprise-linux-zero-days/",
+      "tier": 3,
+      "publishedDate": "2026-05-15T13:47:25-04:00"
+    },
+    {
+      "id": "71eff1c266e731e7",
+      "title": "Windows 'MiniPlasma' Zero-Day Exploit Grants SYSTEM Access",
+      "summary": "A new zero-day vulnerability in Windows, dubbed 'MiniPlasma,' has been publicly disclosed with a proof-of-concept exploit. This vulnerability allows attackers to escalate privileges to SYSTEM level on fully patched systems. The release of a PoC significantly increases the risk of widespread exploita",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/",
+      "tier": 3,
+      "publishedDate": "2026-05-17T18:30:08-04:00"
+    },
+    {
+      "id": "af295a22300399e4",
+      "title": "18-Year-Old NGINX Rewrite Module Flaw Enables Unauthenticated RCE",
+      "summary": "A critical heap buffer overflow vulnerability (CVE-2026-42945) in the NGINX rewrite module, undetected for 18 years, has been disclosed. This flaw allows for unauthenticated remote code execution (RCE), posing a severe risk to web applications relying on NGINX.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/18-year-old-nginx-rewrite-module-flaw.html",
+      "tier": 3,
+      "publishedDate": "2026-05-14T11:30:09+05:30"
+    },
+    {
+      "id": "fac815bc891b4684",
+      "title": "18-Year-Old NGINX Vulnerability Allows DoS and Potential RCE",
+      "summary": "A long-standing vulnerability in the NGINX web server, dating back 18 years, has been discovered and can be exploited for denial of service and potentially remote code execution. This critical flaw underscores the importance of regularly auditing and patching even mature software components.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/18-year-old-nginx-vulnerability-allows-dos-potential-rce/",
+      "tier": 3,
+      "publishedDate": "2026-05-14T11:43:41-04:00"
+    },
+    {
+      "id": "309cba5eea4a5d7d",
+      "title": "Russian APT Turla Enhances Kazuar Backdoor for Persistent P2P Botnet Operations",
+      "summary": "The Russian state-sponsored hacking group Turla has evolved its Kazuar backdoor into a modular peer-to-peer botnet designed for stealth and persistent access. Affiliated with Russia's FSB, this development signifies a sophisticated advancement in nation-state cyber capabilities for long-term espiona",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/turla-turns-kazuar-backdoor-into.html",
+      "tier": 3,
+      "publishedDate": "2026-05-15T22:40:25+05:30"
+    },
+    {
+      "id": "8380987eb59b874d",
+      "title": "Russian Hackers Evolve Kazuar Backdoor into Modular P2P Botnet",
+      "summary": "The Russian state-sponsored hacking group Secret Blizzard has transformed its long-standing Kazuar backdoor into a sophisticated modular peer-to-peer (P2P) botnet. This evolution focuses on achieving long-term persistence, enhanced stealth, and improved data exfiltration capabilities. The developmen",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/russian-hackers-turn-kazuar-backdoor-into-modular-p2p-botnet/",
+      "tier": 3,
+      "publishedDate": "2026-05-16T10:15:37-04:00"
+    },
+    {
+      "id": "f6956d3e9be98cd2",
+      "title": "Critical Linux Kernel Vulnerability 'Copy.Fail' Disclosed",
+      "summary": "A severe Linux kernel vulnerability, dubbed 'Copy.Fail' (CVE-2026-31431), has been disclosed, allowing local privilege escalation. The exploit abuses the kernel crypto API and splice() functionality to write data directly into a file's page cache, posing a significant risk.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/05/copy-fail-linux-vulnerability.html",
+      "tier": 3,
+      "publishedDate": "2026-05-12T11:06:12+00:00"
+    },
+    {
+      "id": "6be4313af3deb95a",
+      "title": "New Fragnesia Linux Kernel LPE Grants Root Access via Page Cache Corruption",
+      "summary": "A new Linux kernel local privilege escalation (LPE) vulnerability, dubbed Fragnesia (CVE-2026-46300), allows attackers to gain root access by corrupting the page cache. This marks the third such critical kernel vulnerability discovered in two weeks, highlighting ongoing issues with Linux kernel secu",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/new-fragnesia-linux-kernel-lpe-grants.html",
+      "tier": 3,
+      "publishedDate": "2026-05-14T12:36:15+05:30"
+    },
+    {
+      "id": "30edb1453751d03d",
+      "title": "Linux Kernel Dirty Frag LPE Exploit Grants Root Access",
+      "summary": "A new unpatched local privilege escalation (LPE) vulnerability in the Linux kernel, dubbed Dirty Frag, allows attackers to gain root access. This exploit is considered a successor to the Copy Fail vulnerability and poses a widespread risk to major Linux distributions.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/linux-kernel-dirty-frag-lpe-exploit.html",
+      "tier": 3,
+      "publishedDate": "2026-05-08T10:42:00+05:30"
+    },
+    {
+      "id": "818e1c9a2ba0eb19",
+      "title": "New 'Dirty Frag' Exploit Threatens Enterprise Linux Distributions",
+      "summary": "A newly discovered privilege escalation vulnerability, named 'Dirty Frag,' poses a significant risk to enterprise Linux distributions. Similar to previous flaws like Copy Fail and Dirty Pipe, this exploit may already be under limited exploitation, potentially impacting many systems.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/dirty-frag-exploit-blow-up-enterprise-linux-distros",
+      "tier": 3,
+      "publishedDate": "2026-05-11T15:05:45+00:00"
+    },
+    {
+      "id": "3e8a4c15a7e65ae9",
+      "title": "Microsoft Warns of Exploited Exchange Server Zero-Day Flaw",
+      "summary": "Microsoft has issued a warning about a critical zero-day vulnerability in Exchange Server that is actively being exploited. The flaw allows attackers to execute arbitrary code via cross-site scripting (XSS) targeting Outlook on the web users.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-exchange-zero-day-flaw-exploited-in-attacks/",
+      "tier": 3,
+      "publishedDate": "2026-05-15T05:40:42-04:00"
+    },
+    {
+      "id": "813d5d1dd99f0d48",
+      "title": "Exploited Vulnerability in On-Premise Microsoft Exchange Server",
+      "summary": "Microsoft has confirmed active exploitation of a spoofing vulnerability (CVE-2026-42897) in on-premise versions of Exchange Server. This cross-site scripting flaw, with a CVSS score of 8.1, poses a significant risk to organizations still managing their own Exchange infrastructure.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/on-prem-microsoft-exchange-server-cve.html",
+      "tier": 3,
+      "publishedDate": "2026-05-15T11:49:04+05:30"
+    },
+    {
+      "id": "47a09d0a3cc4cbe9",
+      "title": "Ghostwriter Targets Ukrainian Government with Geofenced PDF Phishing",
+      "summary": "The Belarus-aligned threat group Ghostwriter has launched new attacks against Ukrainian government entities using geofenced PDF phishing campaigns. This operation, linked to cyber espionage and influence operations, highlights the ongoing geopolitical cyber warfare impacting Eastern Europe.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/ghostwriter-targets-ukrainian.html",
+      "tier": 3,
+      "publishedDate": "2026-05-14T19:30:37+05:30"
+    },
+    {
+      "id": "a342a830bd51d116",
+      "title": "'FrostyNeighbor' APT Targets Government Orgs in Poland and Ukraine",
+      "summary": "The nation-state threat group 'FrostyNeighbor,' believed to be linked to Belarus, is conducting targeted espionage campaigns against government organizations in Poland and Ukraine. Attackers meticulously fingerprint victims before deploying spear-phishing payloads, indicating a sophisticated and per",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/frostyneighbor-apt-govt-orgs-poland-ukraine",
+      "tier": 3,
+      "publishedDate": "2026-05-14T16:59:25+00:00"
+    },
+    {
+      "id": "13f73932a6bb6cad",
+      "title": "Azerbaijani Energy Firm Hit by Chinese Nation-State Actors",
+      "summary": "An unnamed Azerbaijani oil and gas company was targeted in a multi-wave intrusion by a Chinese-affiliated threat actor known as FamousSparrow. This incident highlights the ongoing targeting of critical energy infrastructure by nation-state actors for espionage purposes.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/azerbaijani-energy-firm-hit-by-repeated.html",
+      "tier": 3,
+      "publishedDate": "2026-05-13T18:30:00+05:30"
+    },
+    {
+      "id": "88564ded433d7166",
+      "title": "China's 'FamousSparrow' APT Nests in South Caucasus Energy Firm",
+      "summary": "The China-linked advanced persistent threat (APT) group 'FamousSparrow' has been observed repeatedly targeting an energy firm in the South Caucasus. This expansion of targeting beyond traditional sectors like hospitality and government highlights the evolving strategies of nation-state actors.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/china-famoussparrow-apt-south-caucasus-energy-firm",
+      "tier": 3,
+      "publishedDate": "2026-05-13T13:00:00+00:00"
+    },
+    {
+      "id": "f9795c5690a3aefc",
+      "title": "Mini Shai-Hulud Worm Compromises Major AI and Dev Packages",
+      "summary": "The threat actor TeamPCP is behind a new Mini Shai-Hulud campaign that has compromised popular npm and PyPI packages from companies like Mistral AI and Guardrails AI. The compromised packages contain obfuscated JavaScript designed to profile the execution environment.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/mini-shai-hulud-worm-compromises.html",
+      "tier": 3,
+      "publishedDate": "2026-05-12T17:16:00+05:30"
+    },
+    {
+      "id": "f69a535e4a6c7aa3",
+      "title": "TeamPCP Compromises Checkmarx Jenkins AST Plugin, Weeks After KICS Supply Chain Attack",
+      "summary": "Checkmarx has confirmed that a modified version of its Jenkins AST plugin was compromised and published to the Jenkins Marketplace by threat actor TeamPCP. This incident follows a previous supply chain attack on Checkmarx's KICS product, raising concerns about the security of development tools and s",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/teampcp-compromises-checkmarx-jenkins.html",
+      "tier": 3,
+      "publishedDate": "2026-05-12T00:00:00+05:30"
+    },
+    {
+      "id": "06209b4eb0d9b402",
+      "title": "Quasar Linux RAT Targets Developers for Software Supply Chain Compromise",
+      "summary": "A new Linux implant, Quasar Linux RAT (QLNX), is targeting developers to steal credentials and gain a foothold in the software supply chain. The RAT offers extensive post-compromise capabilities including credential harvesting, keylogging, and network tunneling, posing a serious threat to developmen",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/quasar-linux-rat-steals-developer.html",
+      "tier": 3,
+      "publishedDate": "2026-05-08T16:30:00+05:30"
+    },
+    {
+      "id": "958ff8fa0446dd7d",
+      "title": "Malicious Stealer Backdoor Found in Multiple Node-IPC Versions",
+      "summary": "Researchers have discovered a stealer backdoor embedded in three versions of the popular npm package node-ipc (v9.1.6, v9.2.3, and v12.0.1). This supply chain compromise targets developer secrets, highlighting the risks associated with open-source software dependencies and the need for rigorous vett",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/stealer-backdoor-found-in-3-node-ipc.html",
+      "tier": 3,
+      "publishedDate": "2026-05-14T22:52:43+05:30"
+    },
+    {
+      "id": "c431a6ce8cbfce66",
+      "title": "cPanel CVE-2026-41940 Actively Exploited to Deploy Filemanager Backdoor",
+      "summary": "A critical vulnerability in cPanel and WebHost Manager (WHM), tracked as CVE-2026-41940, is being actively exploited by threat actor Mr_Rot13 to deploy the Filemanager backdoor. This authentication bypass flaw allows remote attackers to gain elevated control over compromised hosting environments.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/cpanel-cve-2026-41940-under-active.html",
+      "tier": 3,
+      "publishedDate": "2026-05-11T23:24:00+05:30"
+    },
+    {
+      "id": "2458d5eedbd97437",
+      "title": "Exploited WordPress Plugin Flaw Steals Payment Data from WooCommerce Checkouts",
+      "summary": "A critical vulnerability in the Funnel Builder WordPress plugin is actively being exploited to inject malicious JavaScript into WooCommerce checkout pages. This attack aims to steal sensitive payment card information from unsuspecting customers. The vulnerability, which lacks a CVE identifier, highl",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/funnel-builder-flaw-under-active.html",
+      "tier": 3,
+      "publishedDate": "2026-05-16T20:50:48+05:30"
+    },
+    {
+      "id": "71d567a7a33d95af",
+      "title": "Canvas Platform Breach Impacts Thousands of Schools Nationwide",
+      "summary": "A significant data extortion attack against the popular education technology platform Canvas has disrupted classes and coursework across the United States. The attackers are threatening to leak data from approximately 275 million students and faculty from nearly 9,000 institutions, underscoring the ",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/05/canvas-breach-disrupts-schools-colleges-nationwide/",
+      "tier": 3,
+      "publishedDate": "2026-05-08T02:58:46+00:00"
+    },
+    {
+      "id": "d33a9ec3b29273d0",
+      "title": "PraisonAI Authentication Bypass Vulnerability Exploited Within Hours of Disclosure",
+      "summary": "A critical authentication bypass vulnerability (CVE-2026-44338) in the PraisonAI framework was actively exploited by threat actors just four hours after its public disclosure. This rapid exploitation underscores the immediate danger posed by publicly known vulnerabilities and the need for swift patc",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/praisonai-cve-2026-44338-auth-bypass.html",
+      "tier": 3,
+      "publishedDate": "2026-05-14T17:10:14+05:30"
+    },
+    {
+      "id": "81c12717b607fd47",
+      "title": "AI Hallucinations Pose Real Security Risks to Critical Infrastructure",
+      "summary": "AI hallucinations, where models generate confident but incorrect outputs, are creating significant security risks, particularly in critical infrastructure decision-making. The inability of AI to recognize uncertainty can lead to flawed decisions based on inaccurate data, impacting operational integr",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/how-ai-hallucinations-are-creating-real.html",
+      "tier": 3,
+      "publishedDate": "2026-05-14T17:00:00+05:30"
+    },
+    {
+      "id": "fa75f7ef255022d1",
+      "title": "Attackers Leverage AI and LLMs for Exploit Development and Automation",
+      "summary": "Cyber adversaries are increasingly using Artificial Intelligence (AI) and large language models (LLMs) to develop sophisticated exploits and automate complex attack campaigns. This trend signifies a new era in cyber warfare, where AI-powered tools enhance attacker capabilities.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cloud-security/hackers-ai-exploit-dev-attack-automation",
+      "tier": 3,
+      "publishedDate": "2026-05-11T13:00:00+00:00"
+    },
+    {
+      "id": "a85206c3f6dbcb2e",
+      "title": "OpenAI's GPT-5.5 Matches Mythos AI in Vulnerability Discovery",
+      "summary": "The UK's AI Security Institute has found that OpenAI's GPT-5.5 is as effective as Anthropic's Mythos AI in discovering security vulnerabilities. Notably, GPT-5.5 is generally available, making its advanced vulnerability detection capabilities accessible to a wider audience.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/05/openais-gpt-5-5-is-as-good-as-mythos-at-finding-security-vulnerabilities.html",
+      "tier": 3,
+      "publishedDate": "2026-05-13T11:03:03+00:00"
+    },
+    {
+      "id": "910aac05bb8c4c65",
+      "title": "DigiCert Mishap Exposes Critical Infrastructure, Microsoft Responds",
+      "summary": "A significant security incident involving DigiCert briefly compromised trust in millions of Windows systems due to a support error, leading to a heavy-handed response from Microsoft. This event exposed critical infrastructures and raises questions about certificate authority security and incident re",
+      "source": "Security Now (GRC)",
+      "url": "https://twit.tv/shows/security-now/episodes/1078",
+      "tier": 3,
+      "publishedDate": "2026-05-12T19:36:18+00:00"
+    },
+    {
+      "id": "3c1080a38868f1c4",
+      "title": "NIST NVD Enrichment Policy Change Impacts Vulnerability Prioritization",
+      "summary": "NIST's National Vulnerability Database (NVD) has changed its enrichment policy, now covering only a fraction of CVEs. This shift highlights the need for organizations to leverage external intelligence, like Recorded Future's Vulnerability Intelligence, which prioritizes risks based on real attacker ",
+      "source": "Recorded Future",
+      "url": "https://www.recordedfuture.com/blog/nist-nvd-enrichment",
+      "tier": 3,
+      "publishedDate": "2026-05-14T00:00:00+00:00"
+    },
+    {
+      "id": "ac72c445faae58d6",
+      "title": "Four OpenClaw Vulnerabilities Allow Data Theft and Privilege Escalation",
+      "summary": "Researchers have identified a chain of four vulnerabilities in OpenClaw, dubbed 'Claw Chain,' which can be exploited for data theft, privilege escalation, and maintaining persistence. These flaws enable attackers to gain a foothold, access sensitive information, and deploy backdoors within affected ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/four-openclaw-flaws-enable-data-theft.html",
+      "tier": 3,
+      "publishedDate": "2026-05-15T19:05:04+05:30"
+    },
+    {
+      "id": "ef5e7bcddb85ecdc",
+      "title": "TanStack Supply Chain Attack Affects OpenAI Employee Devices",
+      "summary": "OpenAI has reported that two employee devices were compromised through a supply chain attack targeting the TanStack software. While no user data or production systems were affected, the incident forced macOS updates and highlights the persistent risks associated with third-party software dependencie",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/tanstack-supply-chain-attack-hits-two.html",
+      "tier": 3,
+      "publishedDate": "2026-05-15T16:24:44+05:30"
+    },
+    {
+      "id": "8ccb473bd1f57651",
+      "title": "Microsoft Patches 138 Vulnerabilities, Including Critical DNS and Netlogon Flaws",
+      "summary": "Microsoft has released patches for 138 security vulnerabilities across its product range, with 30 rated as critical. While none are publicly known or under active attack, the update addresses significant issues including privilege escalation bugs and critical flaws in DNS and Netlogon services.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/microsoft-patches-138-vulnerabilities.html",
+      "tier": 3,
+      "publishedDate": "2026-05-13T16:06:10+05:30"
+    }
+  ]
+}
