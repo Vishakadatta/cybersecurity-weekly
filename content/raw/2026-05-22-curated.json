@@ -1337,6 +1337,23 @@
     ]
   },
   {
+    "id": "5b14eff211fa37d8",
+    "title": "Laravel Lang Packages Hijacked in Supply Chain Attack",
+    "summary_raw": "A supply chain attack targeting the Laravel Lang localization packages has exposed developers to a sophisticated credential-stealing malware campaign after attackers abused GitHub version tags to distribute malicious code through Composer packages. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/laravel-lang-packages-hijacked-to-deploy-credential-stealing-malware/",
+    "publishedDate": "2026-05-23T16:48:23-04:00",
+    "scrapedAt": "2026-05-25T05:12:44.188078+00:00",
+    "summary": "The Laravel Lang localization packages have been compromised in a supply chain attack, distributing credential-stealing malware. Attackers manipulated GitHub version tags to push malicious code through Composer, posing a significant risk to developers relying on these packages. This incident underscores the vulnerabilities inherent in software supply chains.",
+    "relevance_score": 8,
+    "tags": [
+      "supply chain attack",
+      "malware",
+      "credential theft",
+      "developer tools"
+    ]
+  },
+  {
     "id": "9c50addc3207c9b2",
     "title": "Alleged Kimwolf Botmaster Arrested in US and Canada",
     "summary_raw": "Canadian authorities on Wednesday arrested a 23-year-old Ottawa man on suspicion of building and operating Kimwolf, a fast spreading Internet-of-Things botnet that enslaved millions of devices for use in a series of massive distributed denial-of-service (DDoS) attacks over the past six months. KrebsOnSecurity publicly named the suspect in February 2026 after the accused launched a volley of DDoS, doxing and swatting campaigns against this author and a security researcher. He now faces criminal hacking charges in both Canada and the United States.",
@@ -1896,6 +1913,23 @@
     ]
   },
   {
+    "id": "0eb501df97cbed5f",
+    "title": "Ghost CMS SQL Injection Exploited in ClickFix Campaign",
+    "summary_raw": "A large-scale campaign is exploiting a critical SQL injection vulnerability (CVE-2026-26980) in Ghost CMS to inject malicious JavaScript code that triggers ClickFix attack flows. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/ghost-cms-sql-injection-flaw-exploited-in-large-scale-clickfix-campaign/",
+    "publishedDate": "2026-05-24T10:12:32-04:00",
+    "scrapedAt": "2026-05-25T05:12:44.187936+00:00",
+    "summary": "A critical SQL injection vulnerability in Ghost CMS is being actively exploited in a large-scale campaign. Attackers are injecting malicious JavaScript to trigger ClickFix attack flows, potentially impacting many websites using the platform. This highlights the ongoing threat of unpatched vulnerabilities in popular content management systems.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "SQL injection",
+      "CMS",
+      "malware"
+    ]
+  },
+  {
     "id": "bd897cee1d21f352",
     "title": "Making Vulnerable Drivers Exploitable Without Hardware",
     "summary_raw": "1 Introduction\n\nThis article provides a technical analysis of how many Windows kernel mode drivers can be interacted with from user mode without the hardware they were developed for. This work was motivated by driver-oriented vulnerability research and the need to evaluate the exploitability of individual findings, which frequently affect code whose reachability is hardware-gated. The",
@@ -2359,6 +2393,22 @@
       "malware",
       "signatures",
       "threat-intelligence"
+    ]
+  },
+  {
+    "id": "30253856bf16f2b1",
+    "title": "Wireshark 4.6.6 Released with Vulnerability Fixes",
+    "summary_raw": "Wireshark release 4.6.6 fixes 1 vulnerability and 11 bugs.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33010",
+    "publishedDate": "2026-05-24T16:38:21+00:00",
+    "scrapedAt": "2026-05-25T05:12:47.998320+00:00",
+    "summary": "Wireshark has released version 4.6.6, addressing one security vulnerability and eleven bugs. While not a critical zero-day, keeping network analysis tools like Wireshark updated is crucial for maintaining network security and preventing potential exploitation of discovered flaws.",
+    "relevance_score": 5,
+    "tags": [
+      "vulnerability",
+      "software update",
+      "network analysis"
     ]
   },
   {

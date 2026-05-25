@@ -1,0 +1,117 @@
+{
+  "edition": "2026-05-22",
+  "year": "2026",
+  "editionLabel": "May 22 \u2013 28, 2026",
+  "generatedAt": "2026-05-25T05:13:02.033169+00:00",
+  "subjectLine": "China's Webworm Targets EU Govs, Microsoft Exchange Zero-Day Exploited, CISA Leak Sparks Outrage",
+  "articles": [
+    {
+      "id": "ba6b682773d10ecf",
+      "title": "China's Webworm APT Uses Discord and Microsoft Graphs to Hack EU Governments",
+      "summary": "An advanced persistent threat group, China's Webworm, is targeting EU governments by leveraging Discord and Microsoft Graph APIs, along with SOCKS proxies. This sophisticated attack highlights nation-state capabilities and the exploitation of legitimate services for malicious purposes.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/endpoint-security/chinas-webworm-discord-microsoft-graphs",
+      "tier": 1,
+      "publishedDate": "2026-05-22T07:01:00+00:00"
+    },
+    {
+      "id": "c8f912a9c4d64438",
+      "title": "Microsoft Exchange Zero-Day Exploited, No Patch Available",
+      "summary": "A critical zero-day vulnerability (CVE-2026-42897) in Microsoft Exchange is currently under active attack, with no patch yet released. This cross-site scripting (XSS) flaw allows attackers to compromise Outlook Web Access (OWA) mailboxes, posing a significant risk to organizations.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/microsoft-exchange-zero-day-no-patch",
+      "tier": 1,
+      "publishedDate": "2026-05-18T21:43:51+00:00"
+    },
+    {
+      "id": "b56d41c43407ca68",
+      "title": "CISA Admin Leaked AWS GovCloud Keys on GitHub",
+      "summary": "A contractor for CISA inadvertently exposed highly privileged AWS GovCloud account credentials and internal system details via a public GitHub repository. This significant security lapse could grant attackers access to sensitive government cloud infrastructure. The incident underscores the critical ",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/05/cisa-security-leak.html",
+      "tier": 1,
+      "publishedDate": "2026-05-22T13:58:30+00:00"
+    },
+    {
+      "id": "05424afea71bae58",
+      "title": "Iranian APT Screening Serpens' 2026 Espionage Campaigns Tracked",
+      "summary": "Unit 42 has detailed the 2026 espionage campaigns conducted by the Iranian APT group Screening Serpens. The group employed AppDomainManager hijacking and new Remote Access Trojan (RAT) variants to target the technology and defense sectors. This report sheds light on the evolving tactics of nation-st",
+      "source": "Palo Alto Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/",
+      "tier": 1,
+      "publishedDate": "2026-05-22T13:00:42+00:00"
+    },
+    {
+      "id": "35ca5d2e47328b39",
+      "title": "Ghostwriter Targets Ukraine Government Entities with Prometheus Phishing Malware",
+      "summary": "The Belarus-aligned threat actor Ghostwriter is targeting Ukrainian government organizations with phishing campaigns. These attacks use lures related to Prometheus, a Ukrainian online learning platform, to trick victims into compromising their systems. This activity underscores ongoing nation-state ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/ghostwriter-targets-ukraine-government.html",
+      "tier": 1,
+      "publishedDate": "2026-05-22T21:50:32+05:30"
+    },
+    {
+      "id": "1463dcbfcb358003",
+      "title": "AI Initiative Uncovers Over 10,000 High-Severity Flaws in Critical Software",
+      "summary": "Anthropic's Project Glasswing, an AI-driven cybersecurity initiative, has identified more than 10,000 high- or critical-severity vulnerabilities in globally important software. This effort underscores the potential of AI in proactively identifying widespread security weaknesses before they can be ex",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html",
+      "tier": 2,
+      "publishedDate": "2026-05-23T17:25:35+05:30"
+    },
+    {
+      "id": "dd2888c2126a5e82",
+      "title": "Nine-Year-Old Linux Kernel Flaw Allows Root Command Execution",
+      "summary": "A critical vulnerability in the Linux kernel, undetected for nine years, has been disclosed, allowing unprivileged local users to execute arbitrary commands as root. This flaw, CVE-2026-46333, could have widespread implications for major Linux distributions and underscores the importance of continuo",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/9-year-old-linux-kernel-flaw-enables.html",
+      "tier": 2,
+      "publishedDate": "2026-05-21T13:05:53+05:30"
+    },
+    {
+      "id": "7712154873da915a",
+      "title": "Microsoft Defender Vulnerabilities Actively Exploited",
+      "summary": "Microsoft has issued a warning about two vulnerabilities in its Defender security software that are currently being exploited in the wild. One flaw allows for privilege escalation to SYSTEM level, while the other enables denial-of-service attacks, highlighting the need for immediate patching of endp",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/microsoft-warns-of-two-actively.html",
+      "tier": 2,
+      "publishedDate": "2026-05-21T16:25:57+05:30"
+    },
+    {
+      "id": "fc4a50d79e39df5c",
+      "title": "Cisco Patches CVSS 10.0 Secure Workload REST API Flaw",
+      "summary": "Cisco has released a patch for a critical vulnerability (CVE-2026-20223) in its Secure Workload product, rated at CVSS 10.0. The flaw allows unauthenticated, remote attackers to access sensitive data due to insufficient validation and authentication in the REST API. This vulnerability poses a signif",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/cisco-patches-cvss-100-secure-workload.html",
+      "tier": 3,
+      "publishedDate": "2026-05-22T11:06:18+05:30"
+    },
+    {
+      "id": "b76eae1a123f3072",
+      "title": "Microsoft Releases Mitigation for BitLocker Bypass Vulnerability 'YellowKey'",
+      "summary": "Microsoft has issued a mitigation for CVE-2026-45585, a zero-day vulnerability dubbed 'YellowKey' that allows for a bypass of BitLocker encryption. The vulnerability, with a CVSS score of 6.8, poses a significant risk to data security on Windows systems.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/microsoft-releases-mitigation-for.html",
+      "tier": 3,
+      "publishedDate": "2026-05-20T13:58:26+05:30"
+    },
+    {
+      "id": "0e138c761eb645b6",
+      "title": "EvilTokens Phishing Platform Bypasses MFA Using OAuth Consent",
+      "summary": "A new phishing-as-a-service platform called EvilTokens is successfully bypassing multi-factor authentication (MFA) by exploiting OAuth consent flows. The platform has already compromised over 340 Microsoft 365 organizations, demonstrating a critical new threat to cloud security.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/the-new-phishing-click-how-oauth.html",
+      "tier": 3,
+      "publishedDate": "2026-05-19T17:00:00+05:30"
+    },
+    {
+      "id": "d5bf59c9b653dbf0",
+      "title": "MiniPlasma Windows 0-Day Grants SYSTEM Privilege Escalation",
+      "summary": "A new Windows zero-day vulnerability, dubbed MiniPlasma, has been disclosed, allowing attackers to escalate privileges to SYSTEM level on fully patched systems. The flaw resides in the Windows Cloud Files Mini Filter Driver ('cldflt.sys').",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/miniplasma-windows-0-day-enables-system.html",
+      "tier": 3,
+      "publishedDate": "2026-05-18T14:27:34+05:30"
+    }
+  ]
+}
