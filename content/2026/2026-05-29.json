@@ -1,0 +1,369 @@
+{
+  "edition": "2026-05-29",
+  "year": "2026",
+  "editionLabel": "May 29 \u2013 Jun 4, 2026",
+  "generatedAt": "2026-06-01T05:51:59.470654+00:00",
+  "subjectLine": "AI Powers Nation-State Attacks & Critical Zero-Days Emerge",
+  "articles": [
+    {
+      "id": "c40f0d28bfe51d09",
+      "title": "GreyVibe Hackers Leverage AI for Cyberattacks on Ukraine",
+      "summary": "A threat group, likely Russian and tracked as GreyVibe, is employing AI tools like ChatGPT and Gemini to craft sophisticated cyberattacks against Ukrainian entities. The group uses AI-generated lures and custom malware, highlighting the evolving tactics of nation-state actors.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/greyvibe-hackers-use-chatgpt-gemini-to-power-cyberattacks/",
+      "tier": 1,
+      "publishedDate": "2026-05-28T18:24:49-04:00"
+    },
+    {
+      "id": "9316565e30e3af6d",
+      "title": "New Gogs Zero-Day Vulnerability Allows Remote Code Execution",
+      "summary": "An unpatched zero-day vulnerability has been discovered in the Gogs self-hosted Git service, enabling attackers to achieve remote code execution (RCE). This critical flaw poses a significant risk to internet-facing instances of the popular development tool.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-gogs-zero-day-flaw-lets-hackers-get-remote-code-execution/",
+      "tier": 1,
+      "publishedDate": "2026-05-28T10:25:43-04:00"
+    },
+    {
+      "id": "b56d41c43407ca68",
+      "title": "CISA Contractor Leaks Sensitive AWS GovCloud Credentials on GitHub",
+      "summary": "A contractor for CISA inadvertently exposed highly privileged AWS GovCloud account credentials and internal system details through a public GitHub repository. This leak could pose significant security risks to sensitive government infrastructure.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/05/cisa-security-leak.html",
+      "tier": 1,
+      "publishedDate": "2026-05-22T13:58:30+00:00"
+    },
+    {
+      "id": "84667f8f5b261a1d",
+      "title": "PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation",
+      "summary": "Palo Alto Networks has issued a warning that a medium-severity vulnerability (CVE-2026-0257) in PAN-OS and Prisma Access is being actively exploited. The flaw allows for authentication bypass, potentially enabling attackers to establish unauthorized VPN connections.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
+      "tier": 2,
+      "publishedDate": "2026-05-30T12:11:26+05:30"
+    },
+    {
+      "id": "997cfae6b12c8f86",
+      "title": "Threat Actors Exploit Critical FortiClient EMS Flaw to Deploy Credential Stealer",
+      "summary": "Threat actors are actively exploiting a critical vulnerability in FortiClient Endpoint Management Server (EMS) to deploy credential-stealing malware. The campaign abuses trusted endpoint management infrastructure to distribute the payload across managed devices. This highlights the importance of tim",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
+      "tier": 2,
+      "publishedDate": "2026-05-28T20:56:04+05:30"
+    },
+    {
+      "id": "426eaedecdda85e1",
+      "title": "FortiClient EMS Flaw Exploited for Infostealer Malware",
+      "summary": "Hackers are actively exploiting an authentication bypass vulnerability in FortiClient Enterprise Management Server (EMS) to deploy an information-stealing malware named EKZ. This highlights a critical vulnerability in network management systems.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-forticlient-ems-flaw-to-push-infostealer-malware/",
+      "tier": 2,
+      "publishedDate": "2026-05-28T13:25:43-04:00"
+    },
+    {
+      "id": "188cc814747dfa1a",
+      "title": "New Threat Actor JINX-0164 Targets Crypto Firms with macOS Malware and Fake Recruiter Scams",
+      "summary": "A new threat actor, dubbed JINX-0164, is targeting cryptocurrency organizations with sophisticated social engineering tactics, using fake recruiter lures and custom macOS malware to steal digital assets. The campaigns also leverage deep targeting of CI/CD infrastructure, posing a significant risk to",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/jinx-0164-targets-cryptocurrency-firms.html",
+      "tier": 3,
+      "publishedDate": "2026-05-28T13:24:48+05:30"
+    },
+    {
+      "id": "9fb67dacb13dd308",
+      "title": "Gitea Vulnerability Allows Unauthenticated Access to Private Container Images",
+      "summary": "A critical vulnerability (CVE-2026-27771) in Gitea, an open-source version control platform, allows unauthenticated attackers to pull private container images. This flaw, affecting versions prior to 1.26.2, poses a significant risk to organizations using Gitea for code hosting and container manageme",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/gitea-vulnerability-exposes-private.html",
+      "tier": 3,
+      "publishedDate": "2026-05-27T15:36:32+05:30"
+    },
+    {
+      "id": "97b44aaa392db065",
+      "title": "CERT-In Mandates 12-Hour Patching for Internet-Facing Flaws Amid AI Attacks",
+      "summary": "Amidst the rise of AI-assisted attacks, India's CERT-In has issued new guidelines mandating organizations to patch critical internet-facing vulnerabilities within 12 hours. This accelerated patching requirement aims to mitigate threats where threat actors leverage AI and LLMs to automate vulnerabili",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html",
+      "tier": 3,
+      "publishedDate": "2026-05-26T14:43:02+05:30"
+    },
+    {
+      "id": "8c19f57b3ebd5d46",
+      "title": "KnowledgeDeliver LMS Flaw Exploited as Zero-Day for Godzilla and Cobalt Strike Deployment",
+      "summary": "A critical zero-day vulnerability in the KnowledgeDeliver Learning Management System (LMS) was exploited to deliver the Godzilla web shell and subsequently deploy Cobalt Strike Beacon. The vulnerability, CVE-2026-5426, stems from the use of hard-coded machine keys, allowing attackers to gain a footh",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/knowledgedeliver-lms-flaw-exploited-to.html",
+      "tier": 3,
+      "publishedDate": "2026-05-26T10:49:38+05:30"
+    },
+    {
+      "id": "1463dcbfcb358003",
+      "title": "AI Discovers Over 10,000 High-Severity Flaws in Critical Software",
+      "summary": "Anthropic's Project Glasswing, powered by Claude Mythos AI, has identified more than 10,000 high- or critical-severity vulnerabilities in globally significant software. This initiative highlights the potential of AI in proactively identifying widespread security weaknesses within critical infrastruc",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html",
+      "tier": 3,
+      "publishedDate": "2026-05-23T17:25:35+05:30"
+    },
+    {
+      "id": "dd6625e624cd50cb",
+      "title": "Critical LiteSpeed cPanel Plugin Vulnerability Exploited to Gain Root Access",
+      "summary": "A critical vulnerability (CVE-2026-48172) in the LiteSpeed User-End cPanel Plugin, with a CVSS score of 10.0, is being actively exploited in the wild. This flaw allows any cPanel user, including attackers, to execute arbitrary scripts with root privileges, posing a severe security risk to server adm",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html",
+      "tier": 3,
+      "publishedDate": "2026-05-23T13:05:13+05:30"
+    },
+    {
+      "id": "7212daac780cce4c",
+      "title": "Global Takedown Dismantles VPN Used by 25 Ransomware Groups",
+      "summary": "Authorities have dismantled a criminal VPN service, codenamed First VPN Service, used by approximately 25 ransomware groups to mask their operations. This international law enforcement action, Operation Saffron, significantly disrupts the infrastructure supporting widespread cybercrime, including ra",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/first-vpn-dismantled-in-global-takedown.html",
+      "tier": 3,
+      "publishedDate": "2026-05-22T23:05:02+05:30"
+    },
+    {
+      "id": "bb5e870eb4ecc50d",
+      "title": "Megalodon Attack Compromises 5,561 GitHub Repositories via Malicious CI/CD Workflows",
+      "summary": "A new automated campaign dubbed Megalodon has rapidly compromised over 5,500 GitHub repositories by injecting malicious CI/CD workflows. The attack uses forged identities to exfiltrate sensitive data from build pipelines, posing a significant risk to software development supply chains.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/megalodon-github-attack-targets-5561.html",
+      "tier": 3,
+      "publishedDate": "2026-05-22T17:25:24+05:30"
+    },
+    {
+      "id": "fc4a50d79e39df5c",
+      "title": "Cisco Patches Critical CVSS 10.0 Flaw in Secure Workload REST API",
+      "summary": "Cisco has released a patch for a critical CVSS 10.0 vulnerability in its Secure Workload product, allowing unauthenticated attackers to access sensitive data. The flaw stems from insufficient validation and authentication in the REST API endpoints.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/cisco-patches-cvss-100-secure-workload.html",
+      "tier": 3,
+      "publishedDate": "2026-05-22T11:06:18+05:30"
+    },
+    {
+      "id": "4f031431c5fbe95e",
+      "title": "Charter Communications Data Breach Affects 4.9 Million Accounts",
+      "summary": "The telecom giant Charter Communications has suffered a data breach impacting approximately 4.9 million accounts. Personal information was stolen by the ShinyHunters extortion gang, underscoring the ongoing risks to large customer databases.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/charter-communications-data-breach-affects-49-million-accounts/",
+      "tier": 3,
+      "publishedDate": "2026-05-29T04:29:40-04:00"
+    },
+    {
+      "id": "ea2dc945e4cbf3f6",
+      "title": "Global Powers Explore Humanoid Robots, Cyber-Risk Looms",
+      "summary": "As global powers increasingly focus on developing humanoid robots, significant cyber-risk implications are emerging. The race for dominance in embodied AI and its supply chain presents new frontiers for cybersecurity challenges and potential nation-state competition.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/global-powers-explore-humanoids-cyber-risk",
+      "tier": 3,
+      "publishedDate": "2026-05-28T23:05:23+00:00"
+    },
+    {
+      "id": "0bdd1318bc032535",
+      "title": "AI Accelerates Exploit Development, Outpacing Scanners",
+      "summary": "New research indicates that attackers are leveraging Artificial Intelligence to significantly reduce the time required to develop functional exploits for known vulnerabilities (CVEs). This rapid development cycle is outpacing the detection capabilities of traditional security scanners.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/ai-assisted-exploit-development-scanner-detection",
+      "tier": 3,
+      "publishedDate": "2026-05-27T16:11:19+00:00"
+    },
+    {
+      "id": "ba6b682773d10ecf",
+      "title": "China's Webworm APT Targets EU Governments Using Discord and Microsoft Graphs",
+      "summary": "An advanced persistent threat group known as Webworm, attributed to China, has been targeting European governments. The group leverages platforms like Discord and Microsoft Graphs, along with SOCKS proxies, to facilitate its sophisticated attacks.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/endpoint-security/chinas-webworm-discord-microsoft-graphs",
+      "tier": 3,
+      "publishedDate": "2026-05-22T07:01:00+00:00"
+    },
+    {
+      "id": "d53f167a1ef01ea2",
+      "title": "Hacker Group \"TeamPCP\" Poisons Open Source Code at Unprecedented Scale",
+      "summary": "A hacker group known as TeamPCP is reportedly poisoning open-source code repositories at an unprecedented scale, with GitHub being the latest victim. This widespread campaign of software supply chain attacks poses a significant threat to the integrity and security of countless applications and syste",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/information-technology/2026/05/a-hacker-group-is-poisoning-open-source-code-at-an-unprecedented-scale/",
+      "tier": 3,
+      "publishedDate": "2026-05-22T10:30:14+00:00"
+    },
+    {
+      "id": "05424afea71bae58",
+      "title": "Iranian APT Screening Serpens Targets Tech and Defense with New Tactics",
+      "summary": "Unit 42 reports on Iranian APT group Screening Serpens' recent espionage campaigns, which utilize AppDomainManager hijacking and novel RAT variants. The group is specifically targeting the technology and defense sectors.",
+      "source": "Palo Alto Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/tracking-iran-apt-screening-serpens/",
+      "tier": 3,
+      "publishedDate": "2026-05-22T13:00:42+00:00"
+    },
+    {
+      "id": "1c164b0bed5747d2",
+      "title": "ROADtools Framework Abused for Cloud Intrusions by Nation-State Actors",
+      "summary": "The open-source framework ROADtools is being exploited by threat actors, including nation-state groups, to conduct cloud intrusions. This article highlights the need for organizations to detect and mitigate the malicious use of this tool.",
+      "source": "Palo Alto Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/roadtools-cloud-attacks/",
+      "tier": 3,
+      "publishedDate": "2026-05-22T10:00:24+00:00"
+    },
+    {
+      "id": "9703c7dae26a9a6f",
+      "title": "TeamPCP Supply Chain Campaign Activity Through 2026-05-24",
+      "summary": "The TeamPCP threat actor is actively engaged in a sophisticated supply chain attack, compromising multiple package ecosystems. Their campaign includes tampering with GitHub codebases, trojanizing a Microsoft-published Python SDK, and even open-sourcing their own malicious framework.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33016",
+      "tier": 3,
+      "publishedDate": "2026-05-25T13:26:06+00:00"
+    },
+    {
+      "id": "c52c5af4c524b5ec",
+      "title": "TeamPCP Supply Chain Campaign Activity Through 2026-05-24",
+      "summary": "The TeamPCP threat actor is actively engaged in a sophisticated supply chain attack, compromising multiple package ecosystems. Their campaign includes tampering with GitHub codebases, trojanizing a Microsoft-published Python SDK, and even open-sourcing their own malicious framework.",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33014",
+      "tier": 3,
+      "publishedDate": "2026-05-25T13:25:47+00:00"
+    },
+    {
+      "id": "138181572c8b801a",
+      "title": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Russian Cyberattacks",
+      "summary": "Authorities in the Netherlands have arrested two individuals for operating hosting infrastructure used by Russia for cyberattacks and disinformation campaigns within the EU. The seizure of 800 servers disrupts a significant part of the operational capabilities for these malicious activities. This ac",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+      "tier": 3,
+      "publishedDate": "2026-05-25T13:21:49+00:00"
+    },
+    {
+      "id": "e11c268779d002e0",
+      "title": "Attackers Use LLM Agent for Post-Exploitation After Marimo Exploit",
+      "summary": "An unknown threat actor has been observed using a large language model (LLM) agent for post-compromise actions after exploiting a Marimo network vulnerability (CVE-2026-39987). The attacker leveraged cloud credentials extracted from the compromised system to further their objectives. This demonstrat",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
+      "tier": 3,
+      "publishedDate": "2026-05-29T20:09:56+05:30"
+    },
+    {
+      "id": "ca4163d35829076b",
+      "title": "Kimsuky Deploys HTTPSpy, Expands Arsenal with HelloDoor and VS Code Tunnels",
+      "summary": "North Korean state-sponsored threat actor Kimsuky has been linked to new cyberattacks targeting South Korean military and corporate entities using tools like HTTPSpy, HelloDoor, and VS Code tunnels. The group employed social engineering tactics, including spoofing security software pages and fake me",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/kimsuky-deploys-httpspy-expands-arsenal.html",
+      "tier": 3,
+      "publishedDate": "2026-05-29T11:27:41+05:30"
+    },
+    {
+      "id": "321db785508b91ec",
+      "title": "Critical Gogs RCE Vulnerability Allows Arbitrary Code Execution",
+      "summary": "A critical remote code execution (RCE) vulnerability has been disclosed in Gogs, a popular self-hosted Git service, rated 9.4 on the CVSS scale. The flaw allows any authenticated user to execute arbitrary code on the server. This poses a significant risk to organizations relying on Gogs for their co",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html",
+      "tier": 3,
+      "publishedDate": "2026-05-28T22:54:44+05:30"
+    },
+    {
+      "id": "87bddcaf677c02ff",
+      "title": "Enterprise AI Risk Concentrated Among 'Power Users', New Report Reveals",
+      "summary": "A new report indicates that enterprise AI risk is not evenly distributed but is heavily concentrated among a small group of 'AI power users.' This finding highlights a significant visibility gap in how organizations understand and manage their exposure to AI tools and platforms.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/new-ai-usage-report-enterprise-ai-risk.html",
+      "tier": 3,
+      "publishedDate": "2026-05-28T17:00:00+05:30"
+    },
+    {
+      "id": "715bedbcfc42f741",
+      "title": "Malicious npm Package Steals Files from Claude AI User Directory",
+      "summary": "A malicious npm package named 'mouse5212-super-formatter' has been discovered with capabilities to steal files from the user data directory used by Anthropic's Claude AI. This incident highlights the risks associated with third-party packages in AI development environments and the potential for data",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/malicious-npm-package-stole-files-from.html",
+      "tier": 3,
+      "publishedDate": "2026-05-27T21:14:29+05:30"
+    },
+    {
+      "id": "6c3dd8f254d63f80",
+      "title": "GlassWorm Malware Infrastructure Disrupted, Targeting Software Developers",
+      "summary": "A coordinated effort by CrowdStrike, Google, and the Shadowserver Foundation has successfully disrupted the command-and-control infrastructure of GlassWorm, a malware campaign targeting software developers. This takedown addresses a significant threat to the software supply chain by neutralizing mal",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/glassworm-malware-takedown-disrupts.html",
+      "tier": 3,
+      "publishedDate": "2026-05-27T17:18:37+05:30"
+    },
+    {
+      "id": "9db9328f0ca4b1b9",
+      "title": "MuddyWater Espionage Campaign Targets 9 Countries Using DLL Side-Loading",
+      "summary": "The Iranian hacking group MuddyWater has been linked to a new espionage campaign affecting at least nine organizations across nine countries. The campaign targeted sectors including industrial manufacturing, education, public sector, and financial services, utilizing DLL side-loading techniques. Thi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/muddywater-uses-dll-side-loading-in.html",
+      "tier": 3,
+      "publishedDate": "2026-05-26T21:18:41+05:30"
+    },
+    {
+      "id": "6f9d5ea5cb2f6bd9",
+      "title": "Microsoft Patches Critical SharePoint RCE Vulnerability (CVE-2026-45659)",
+      "summary": "Microsoft has released patches for a critical remote code execution (RCE) vulnerability in SharePoint, tracked as CVE-2026-45659. This flaw, with a CVSS score of 8.8, could be exploited by attackers without specialized conditions, posing a significant risk to organizations using the affected server ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/microsoft-patches-sharepoint-rce-flaw.html",
+      "tier": 3,
+      "publishedDate": "2026-05-26T17:19:53+05:30"
+    },
+    {
+      "id": "a21e14a08de10f17",
+      "title": "MFA Prompt Bombing: Why Your Second Factor May Not Be Saving You",
+      "summary": "Attackers are increasingly employing MFA prompt bombing tactics, where they repeatedly send authentication requests to users until they approve them, bypassing the intended security benefits of multi-factor authentication. This method exploits user fatigue and urgency, highlighting a critical weakne",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/mfa-prompt-bombing-why-your-second.html",
+      "tier": 3,
+      "publishedDate": "2026-05-26T16:00:00+05:30"
+    },
+    {
+      "id": "c93bc112ac49e56f",
+      "title": "Iranian Hackers Nimbus Manticore Deploy MiniFast and MiniJunk V2 via Phishing and SEO Poisoning",
+      "summary": "The Iranian state-sponsored threat actor Nimbus Manticore has been attributed to a new campaign using phishing and SEO poisoning to deploy MiniFast and MiniJunk V2 malware. This activity follows a joint U.S.-Israeli military campaign against Iran, suggesting potential retaliatory or opportunistic mo",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/iranian-hackers-deploy-minifast-and.html",
+      "tier": 3,
+      "publishedDate": "2026-05-26T12:43:05+05:30"
+    },
+    {
+      "id": "3742b85f5b6e6da5",
+      "title": "Ghost CMS Critical Flaw Exploited to Hijack 700+ Sites for ClickFix Attacks",
+      "summary": "A critical SQL injection vulnerability in Ghost CMS, CVE-2026-26980, is being actively exploited to hijack over 700 websites for ClickFix attacks. The vulnerability allows unauthenticated attackers to inject malicious JavaScript code, enabling them to compromise site content and redirect users. This",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/ghost-cms-cve-2026-26980-exploited-to.html",
+      "tier": 3,
+      "publishedDate": "2026-05-25T17:32:46+05:30"
+    },
+    {
+      "id": "9c0dddc9f2726ce5",
+      "title": "TrapDoor Supply Chain Attack Targets npm, PyPI, and Crates.io",
+      "summary": "A coordinated supply chain attack, codenamed TrapDoor, has compromised over 34 malicious packages across npm, PyPI, and Crates.io, distributing credential-stealing malware. The campaign, active since late May 2026, involved over 384 package versions, posing a significant risk to developers and users",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/trapdoor-supply-chain-attack-spreads.html",
+      "tier": 3,
+      "publishedDate": "2026-05-25T11:29:13+05:30"
+    },
+    {
+      "id": "101108663e25444d",
+      "title": "New Russian-Linked GREYVIBE Targets Ukraine with AI-Powered Cyberattacks",
+      "summary": "A new threat actor named GREYVIBE, assessed to be Russian-speaking and aligned with Kremlin interests, has been conducting persistent cyberattacks against Ukraine since August 2025. The group is reportedly using AI-powered techniques in its operations. This underscores the ongoing geopolitical cyber",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html",
+      "tier": 3,
+      "publishedDate": "2026-05-29T17:01:59+05:30"
+    },
+    {
+      "id": "bcbce45b9a9590be",
+      "title": "Lawmakers Demand Answers as CISA Grapples with Contractor Data Leak",
+      "summary": "US lawmakers are demanding answers from CISA following a report that a contractor intentionally leaked AWS GovCloud keys and other sensitive agency data on GitHub. CISA is still working to contain the breach and invalidate the compromised credentials. This incident raises serious concerns about insi",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+      "tier": 3,
+      "publishedDate": "2026-05-22T16:34:24+00:00"
+    },
+    {
+      "id": "dd658e7b03a2ed37",
+      "title": "Lazarus Group Targets Financial Firms with New Memory-Only RAT",
+      "summary": "The North Korea-linked Lazarus Group is employing a new cross-platform malware known as RemotePE against financial and cryptocurrency organizations. This memory-only Remote Access Trojan (RAT) is deployed through a multi-stage attack chain involving loaders like DPAPILoader and RemotePELoader, highl",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/lazarus-deploys-remotepe-memory-only.html",
+      "tier": 3,
+      "publishedDate": "2026-05-25T15:02:54+05:30"
+    }
+  ]
+}

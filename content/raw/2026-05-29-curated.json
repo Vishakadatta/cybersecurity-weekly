@@ -1099,6 +1099,23 @@
     ]
   },
   {
+    "id": "03f2546636ff797b",
+    "title": "Dutch Authorities Dismantle Large Botnet with 17 Million Infected Devices",
+    "summary_raw": "Dutch authorities have announced the takedown of a botnet that enslaved millions of infected devices, including computers, tablets, smartphones, and IoT devices, to carry out malicious attacks.\n\nThe bot network, per the Dutch Politie and the National Cyber Security Center (NCSC), consisted of at least 17 million infected devices. More than 200 servers located in the Netherlands acted as the",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/05/dutch-authorities-dismantle-botnet.html",
+    "publishedDate": "2026-05-31T17:52:12+05:30",
+    "scrapedAt": "2026-06-01T05:51:26.470718+00:00",
+    "summary": "Dutch authorities have successfully dismantled a massive botnet comprising at least 17 million infected devices, including computers, smartphones, and IoT devices. This operation, conducted with the National Cyber Security Center, targeted over 200 servers in the Netherlands used to orchestrate malicious attacks. The takedown significantly disrupts a major source of cybercrime.",
+    "relevance_score": 8,
+    "tags": [
+      "botnet",
+      "cybercrime",
+      "law-enforcement",
+      "IoT"
+    ]
+  },
+  {
     "id": "20ea1f70b7865e02",
     "title": "ChatGPhish Vulnerability Turns ChatGPT Summaries into Phishing Surface",
     "summary_raw": "Cybersecurity researchers have disclosed details of a vulnerability in OpenAI ChatGPT that leverages the artificial intelligence (AI) assistant's implicit trust in Markdown links and images to trigger prompt injections and open the door to phishing attacks.\n\nThe technique has been codenamed ChatGPhish by Permiso Security.\n\n\"The chatgpt.com response renderer trusts Markdown links and Markdown",
@@ -1663,6 +1680,23 @@
     ]
   },
   {
+    "id": "efe3d3ab728d6227",
+    "title": "WP Maps Pro Plugin Vulnerability Allows Creation of Admin Accounts",
+    "summary_raw": "Hackers are targeting WordPress websites running a vulnerable version of the WP Maps Pro plugin, which allows creating rogue administrator accounts without authentication. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/wp-maps-pro-bug-exploited-to-create-admin-accounts-on-wordpress-sites/",
+    "publishedDate": "2026-05-31T10:06:42-04:00",
+    "scrapedAt": "2026-06-01T05:51:26.637890+00:00",
+    "summary": "A critical vulnerability in the WP Maps Pro WordPress plugin is being actively exploited by attackers to create unauthorized administrator accounts on affected websites. This flaw allows for unauthenticated access, posing a significant risk to website security and data integrity. Users are urged to update the plugin immediately.",
+    "relevance_score": 7,
+    "tags": [
+      "vulnerability",
+      "WordPress",
+      "webapp-management",
+      "RCE"
+    ]
+  },
+  {
     "id": "ef06d61235dad0a6",
     "title": "ThreatsDay Bulletin Highlights Diverse Security Issues: Claude Plugin, Azure Priv-Esc, MFA Bypass, and FIFA Scams",
     "summary_raw": "Every time you think the industry has finally stopped doing some reckless, low-effort crap, somebody spins up a fresh box full of sketchy loaders, fake installers, recycled social-engineering bait, and enough exposed infrastructure to make you wonder if prod is just a public beta now - meanwhile some researcher casually drops a technique that turns a \"minor\" foothold into total account",
@@ -1872,6 +1906,22 @@
     ]
   },
   {
+    "id": "a46fb0b37a75ad2e",
+    "title": "Unidentified RAT Pushes NetSupport RAT",
+    "summary_raw": "Introduction&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33034",
+    "publishedDate": "2026-06-01T00:02:30+00:00",
+    "scrapedAt": "2026-06-01T05:51:30.799701+00:00",
+    "summary": "An unidentified Remote Access Trojan (RAT) has been observed distributing the NetSupport RAT, indicating a potential campaign involving the deployment of legitimate remote administration tools for malicious purposes. This activity suggests an attacker is compromising systems and then installing further access mechanisms.",
+    "relevance_score": 6,
+    "tags": [
+      "RAT",
+      "malware",
+      "APT"
+    ]
+  },
+  {
     "id": "8659630f756788b0",
     "title": "How SIEM Helps MSPs Reduce Noise and Stop Threats Faster",
     "summary_raw": "MSPs don't lack security data. They struggle to separate real threats from alert noise. Kaseya explains how SIEM helps MSPs improve visibility, reduce fatigue, and respond faster. [...]",
@@ -1955,6 +2005,23 @@
     ]
   },
   {
+    "id": "301d5401bf7f30b3",
+    "title": "YARA-X Version 1.17.0 Released with Performance Improvements",
+    "summary_raw": "YARA-X&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s 1.17.0 release brings 5 improvements (several performance improvements) and 1 bugfix.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33032",
+    "publishedDate": "2026-05-31T16:01:29+00:00",
+    "scrapedAt": "2026-06-01T05:51:30.799782+00:00",
+    "summary": "YARA-X has released version 1.17.0, introducing five new improvements, notably focusing on performance enhancements, alongside one bug fix. YARA is a widely used tool for malware identification and classification, making performance improvements significant for security analysts.",
+    "relevance_score": 5,
+    "tags": [
+      "YARA",
+      "malware-analysis",
+      "threat-intelligence",
+      "tooling"
+    ]
+  },
+  {
     "id": "593f8e974014e2d6",
     "title": "Nordic CISOs Report Stable Cyber Threat Landscape",
     "summary_raw": "Artificial intelligence notwithstanding, the vast majority of CISOs in northern Europe say they're facing no more serious cyberattacks than they did two years ago.",
@@ -2017,6 +2084,21 @@
       "AI",
       "business",
       "strategy"
+    ]
+  },
+  {
+    "id": "65577799a190a0b9",
+    "title": "ISC Stormcast for June 1st, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33036",
+    "publishedDate": "2026-06-01T02:00:02+00:00",
+    "scrapedAt": "2026-06-01T05:51:30.799606+00:00",
+    "summary": "The SANS Internet Storm Center's podcast for Monday, June 1st, 2026, covers recent cybersecurity events and trends. While specific details are not provided in the raw summary, these podcasts typically offer valuable insights into emerging threats and defensive strategies.",
+    "relevance_score": 3,
+    "tags": [
+      "cybersecurity-news",
+      "podcast"
     ]
   },
   {
