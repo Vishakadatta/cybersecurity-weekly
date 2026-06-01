@@ -2,9 +2,99 @@
   "edition": "2026-05-29",
   "year": "2026",
   "editionLabel": "May 29 \u2013 Jun 4, 2026",
-  "generatedAt": "2026-06-01T05:51:59.470654+00:00",
-  "subjectLine": "AI Powers Nation-State Attacks & Critical Zero-Days Emerge",
+  "generatedAt": "2026-06-01T20:21:43.132345+00:00",
+  "subjectLine": "BREAKING: Miasma Supply Chain Attack Compromises Red Hat npm Packages  + More Inside",
   "articles": [
+    {
+      "id": "375bf89e31de218c",
+      "title": "Dozens of Red Hat packages backdoored through its offical NPM channel",
+      "summary": "Dozens of Red Hat packages have been backdoored through its official NPM channel, potentially compromising users who have downloaded affected packages.",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/06/dozens-of-red-hat-packages-backdoored-through-its-offical-npm-channel/",
+      "tier": 1,
+      "publishedDate": "2026-06-01T19:49:09+00:00"
+    },
+    {
+      "id": "9c10c0424399dec4",
+      "title": "Critical Windows Netlogon RCE flaw now exploited in attacks",
+      "summary": "Threat actors are now exploiting a recently patched critical Windows Netlogon vulnerability, according to the Centre for Cybersecurity Belgium.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/critical-windows-netlogon-remote-code-execution-flaw-now-exploited-in-attacks/",
+      "tier": 2,
+      "publishedDate": "2026-06-01T08:30:27-04:00"
+    },
+    {
+      "id": "90b6e1240f3f7e13",
+      "title": "WordPress malware campaign hides payloads in Steam profiles",
+      "summary": "Nearly 2,000 WordPress websites were infected with malware that relies on Steam Community profile comments to hide command-and-control (C2) data.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/wordpress-malware-campaign-hides-payloads-in-steam-profiles/",
+      "tier": 2,
+      "publishedDate": "2026-06-01T13:04:16-04:00"
+    },
+    {
+      "id": "208e0aa73c1a9146",
+      "title": "Dashlane password manager users locked out by brute force attacks",
+      "summary": "Multiple Dashlane users have been locked out of their accounts following brute-force attacks that attempted logins from distant locations and unknown devices.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/dashlane-password-manager-users-locked-out-by-brute-force-attacks/",
+      "tier": 2,
+      "publishedDate": "2026-06-01T14:17:13-04:00"
+    },
+    {
+      "id": "b796c71b86c4a5dd",
+      "title": "Critical WP Maps Pro Flaw Actively Exploited to Create Admin Accounts",
+      "summary": "Threat actors are actively exploiting a critical security flaw impacting WP Maps Pro, a WordPress plugin, to create malicious administrator accounts.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html",
+      "tier": 2,
+      "publishedDate": "2026-06-01T14:15:29+05:30"
+    },
+    {
+      "id": "1420e66b9816fd0a",
+      "title": "Patch Now: Another Palo Alto Auth Bypass Bug Under Active Exploit",
+      "summary": "Exploiting the PAN-OS GlobalProtect VPN vulnerability requires certain conditions, but adversaries have done so in two attack waves that started in mid-May.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/patch-palo-alto-auth-bypass-bug-exploit",
+      "tier": 2,
+      "publishedDate": "2026-06-01T14:35:51+00:00"
+    },
+    {
+      "id": "444c55f3b2a74069",
+      "title": "OpenAI Codex Authentication Tokens Stolen in codexui-android npm Supply Chain Attack",
+      "summary": "A new malicious supply chain campaign is targeting developers using OpenAI Codex through a legitimate-looking remote web UI, stealing authentication tokens.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html",
+      "tier": 2,
+      "publishedDate": "2026-06-01T15:01:15+05:30"
+    },
+    {
+      "id": "51a7ae357cae7505",
+      "title": "China-Aligned Groups Ramp Up Attacks: Dragon Weave Hits Czech Republic & Taiwan",
+      "summary": "A new cyber espionage campaign codenamed Operation Dragon Weave has been observed targeting officials and citizens in the Czech Republic and Taiwan to deliver an AdaptixC2 agent.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/china-aligned-groups-ramp-up-attacks.html",
+      "tier": 2,
+      "publishedDate": "2026-06-01T17:24:24+05:30"
+    },
+    {
+      "id": "4f9660b7e3af6f55",
+      "title": "Hackers Used Meta\u2019s AI Support Bot to Seize Instagram Accounts",
+      "summary": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages, after instructions were obtained via Meta's AI support bot.",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+      "tier": 1,
+      "publishedDate": "2026-06-01T17:32:50+00:00"
+    },
+    {
+      "id": "b77077332d59fc28",
+      "title": "Miasma Supply Chain Attack Compromises Red Hat npm Packages with Credential-Stealing Worm",
+      "summary": "A new supply chain attack campaign, codenamed Miasma, has compromised @redhat-cloud-services packages to steal credentials and secrets from developer machines and deliver a self-propagating worm.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html",
+      "tier": 1,
+      "publishedDate": "2026-06-01T23:10:28+05:30"
+    },
     {
       "id": "c40f0d28bfe51d09",
       "title": "GreyVibe Hackers Leverage AI for Cyberattacks on Ukraine",
