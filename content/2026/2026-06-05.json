@@ -1,0 +1,369 @@
+{
+  "edition": "2026-06-05",
+  "year": "2026",
+  "editionLabel": "Jun 5 \u2013 11, 2026",
+  "generatedAt": "2026-06-08T05:20:51.311221+00:00",
+  "subjectLine": "Cisco SD-WAN Under Fire, AI Worms Emerge, and Nation-State Attacks Escalate",
+  "articles": [
+    {
+      "id": "ed06b2949afbfd7f",
+      "title": "Cisco SD-WAN Zero-Day Actively Exploited",
+      "summary": "Cisco has issued a warning about an unpatched zero-day vulnerability in its Catalyst SD-WAN Manager, which is being actively exploited in the wild. The flaw allows attackers to gain root privileges, posing a severe risk to network infrastructure management. Users are strongly advised to update their",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root/",
+      "tier": 1,
+      "publishedDate": "2026-06-05T02:24:20-04:00"
+    },
+    {
+      "id": "a2fd6173618d03e3",
+      "title": "Cisco Catalyst SD-WAN Manager Vulnerability Actively Exploited",
+      "summary": "Cisco has issued a warning that a high-severity vulnerability (CVE-2026-20245) in its Catalyst SD-WAN Manager is under active exploitation. The flaw, with a CVSS score of 7.8, affects multiple deployment types, and critically, no patch is currently available.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html",
+      "tier": 1,
+      "publishedDate": "2026-06-06T09:49:28+05:30"
+    },
+    {
+      "id": "2a80d7c27e5e2cb0",
+      "title": "AI Discovers 21 Zero-Days in FFmpeg; Chrome Patches Record 429 Bugs",
+      "summary": "An AI agent has identified 21 previously unknown zero-day vulnerabilities in FFmpeg, a widely used media processing library. Concurrently, Google released Chrome 149 with patches for an unprecedented 429 security bugs, highlighting the scale of vulnerabilities being discovered and addressed.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
+      "tier": 1,
+      "publishedDate": "2026-06-06T12:58:30+05:30"
+    },
+    {
+      "id": "101108663e25444d",
+      "title": "New Russia-Linked GREYVIBE Group Targets Ukraine with AI-Powered Cyberattacks",
+      "summary": "A new, previously undocumented threat actor named GREYVIBE, believed to be Russian-speaking and aligned with Kremlin interests, has been actively targeting Ukraine since August 2025. The group is employing AI-powered cyberattacks, indicating a sophisticated and persistent campaign. This development ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html",
+      "tier": 1,
+      "publishedDate": "2026-05-29T17:01:59+05:30"
+    },
+    {
+      "id": "895c12ae9307a3ce",
+      "title": "Adaptive, Agentic AI Worms Predicted as Next Enterprise Threat",
+      "summary": "Researchers warn that adaptive and agentic AI worms, described as 'viruses with wings and brains,' pose a significant future threat to enterprises. These advanced malware variants are expected to emerge within the next year, capable of self-adaptation and autonomous propagation. This development sig",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyber-risk/adaptive-agentic-ai-worms-enterprise-cyber-threat",
+      "tier": 1,
+      "publishedDate": "2026-06-05T14:40:11+00:00"
+    },
+    {
+      "id": "246766a3e197a07c",
+      "title": "AI-Powered Internet Worm Prototype Developed",
+      "summary": "Researchers have successfully prototyped an AI-powered internet worm that carries its own Large Language Model (LLM). This innovation allows the worm to operate autonomously on compromised systems, representing a significant advancement in self-propagating malware.",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/06/ai-worm.html",
+      "tier": 1,
+      "publishedDate": "2026-06-05T13:21:23+00:00"
+    },
+    {
+      "id": "1ea85e08fd09bb53",
+      "title": "IronWorm and Miasma Worm Variants Target npm Ecosystem in Supply Chain Attacks",
+      "summary": "Multiple supply chain attacks have compromised the npm ecosystem, distributing a Rust-based information stealer and a self-spreading worm via over 50 malicious or poisoned legitimate packages. This widespread compromise of developer tools poses a significant risk to software integrity and the securi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/ironworm-and-new-miasma-worm-variant.html",
+      "tier": 2,
+      "publishedDate": "2026-06-05T23:35:30+05:30"
+    },
+    {
+      "id": "b77077332d59fc28",
+      "title": "Miasma Supply Chain Attack Compromises Red Hat npm Packages with Credential-Stealing Worm",
+      "summary": "A supply chain attack dubbed 'Miasma' has compromised Red Hat npm packages, embedding a credential-stealing worm that propagates itself. This attack targets developer machines and CI/CD pipelines, highlighting the growing risks associated with compromised software dependencies.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/miasma-supply-chain-attack-compromises.html",
+      "tier": 2,
+      "publishedDate": "2026-06-01T23:10:28+05:30"
+    },
+    {
+      "id": "375bf89e31de218c",
+      "title": "Dozens of Red Hat Packages Backdoored via Official NPM Channel",
+      "summary": "A significant security incident has occurred where dozens of Red Hat packages were compromised and backdoored through its official NPM channel. Users who have downloaded affected packages are urged to investigate immediately.",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/06/dozens-of-red-hat-packages-backdoored-through-its-offical-npm-channel/",
+      "tier": 2,
+      "publishedDate": "2026-06-01T19:49:09+00:00"
+    },
+    {
+      "id": "2b6030b62913c3c6",
+      "title": "Miasma Worm Attacks 73 Microsoft GitHub Repositories",
+      "summary": "Microsoft's GitHub repositories have been compromised by the Miasma supply chain attack, impacting 73 repositories across several organizations including Azure and MicrosoftDocs. GitHub has disabled access to the affected repositories due to the self-replicating nature of the worm.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html",
+      "tier": 2,
+      "publishedDate": "2026-06-06T12:28:04+05:30"
+    },
+    {
+      "id": "6c431e403d30c1fb",
+      "title": "One-Click GitHub Attack Steals Full OAuth Tokens via VS Code",
+      "summary": "A critical vulnerability in Microsoft Visual Studio Code allows attackers to steal full GitHub OAuth tokens with a single click. This exploit enables attackers to gain read and write access to a user's repositories, including private ones, posing a significant risk to developers.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/one-click-github-dev-attack-lets.html",
+      "tier": 2,
+      "publishedDate": "2026-06-03T23:28:00+05:30"
+    },
+    {
+      "id": "444c55f3b2a74069",
+      "title": "OpenAI Codex Authentication Tokens Stolen in codexui-android npm Supply Chain Attack",
+      "summary": "A new supply chain attack has compromised the 'codexui-android' npm package, which provides a remote web UI for OpenAI Codex. This malicious package steals authentication tokens from developers, posing a significant risk to users of OpenAI's AI models.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html",
+      "tier": 2,
+      "publishedDate": "2026-06-01T15:01:15+05:30"
+    },
+    {
+      "id": "84667f8f5b261a1d",
+      "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability Under Active Exploitation",
+      "summary": "Palo Alto Networks has issued a warning about a medium-severity authentication bypass vulnerability (CVE-2026-0257) in PAN-OS and Prisma Access that is currently being actively exploited. Attackers can leverage this flaw to establish unauthorized VPN connections, potentially leading to network compr",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
+      "tier": 2,
+      "publishedDate": "2026-05-30T12:11:26+05:30"
+    },
+    {
+      "id": "1420e66b9816fd0a",
+      "title": "Palo Alto Networks Auth Bypass Bug Under Active Exploit",
+      "summary": "A critical authentication bypass vulnerability in Palo Alto Networks' PAN-OS GlobalProtect VPN is being actively exploited by adversaries. While exploitation requires specific conditions, attackers have already launched two waves of attacks since mid-May, emphasizing the urgency for patching.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/patch-palo-alto-auth-bypass-bug-exploit",
+      "tier": 2,
+      "publishedDate": "2026-06-01T14:35:51+00:00"
+    },
+    {
+      "id": "b1de2842ac2680d3",
+      "title": "CISA Adds Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
+      "summary": "CISA has added a critical denial-of-service vulnerability (CVE-2026-28318) in SolarWinds Serv-U software to its Known Exploited Vulnerabilities catalog. The flaw is being actively exploited, making it imperative for organizations using the affected software to patch or mitigate the vulnerability imm",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+      "tier": 3,
+      "publishedDate": "2026-06-06T13:44:31+05:30"
+    },
+    {
+      "id": "0cde788ba67f712b",
+      "title": "Stock Exchange Executive's Outlook Mailbox Compromised for Five Months",
+      "summary": "Unknown attackers successfully spied on a senior executive's Outlook mailbox at a major global stock exchange for at least five months, exfiltrating data in small batches. The attackers routed traffic through Dropbox and OneDrive to blend in, suggesting a sophisticated espionage campaign.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/hackers-spied-on-stock-exchange.html",
+      "tier": 3,
+      "publishedDate": "2026-06-04T15:03:57+05:30"
+    },
+    {
+      "id": "7735a1dbbacdf902",
+      "title": "Gamaredon Exploits WinRAR Vulnerability Against Ukraine",
+      "summary": "The Russian state-sponsored hacking group Gamaredon is exploiting a WinRAR path traversal vulnerability (CVE-2025-8088) to deliver malware like GammaWorm and GammaSteel. This campaign targets Ukraine, aiming for data theft and propagation. The continued use of known vulnerabilities by nation-state a",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/gamaredon-exploits-winrar-to-deliver.html",
+      "tier": 3,
+      "publishedDate": "2026-06-02T23:51:49+05:30"
+    },
+    {
+      "id": "180b693cca2510ac",
+      "title": "Chinese APT Uses New Malware for Persistent Network Access",
+      "summary": "A Chinese nation-state actor, identified as UNC5221, is employing new malware tools, including Brickstorm, Plenet, and AgentPSD, to maintain access within compromised Microsoft 365 environments. This sophisticated operation highlights the ongoing threat of persistent espionage campaigns by advanced ",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/chinese-apt-deploys-new-malware-to-keep-access-to-hacked-networks/",
+      "tier": 3,
+      "publishedDate": "2026-06-05T14:09:47-04:00"
+    },
+    {
+      "id": "307d2245085aac2b",
+      "title": "China-Linked Espionage Groups Target Latin America",
+      "summary": "China-linked espionage groups have conducted cyberattacks against at least a dozen nations in Latin America, focusing on intelligence gathering related to maritime shipping and oil production. This highlights the increasing geopolitical cyber activity in the region.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/nation-state-cyber-activity-latin-america",
+      "tier": 3,
+      "publishedDate": "2026-06-03T19:52:32+00:00"
+    },
+    {
+      "id": "67c53a14276096c0",
+      "title": "China Targets Czech Organizations with Dual-Method Cyberattack",
+      "summary": "China is employing a sophisticated, two-pronged spear-phishing campaign targeting high-value organizations in the Czech Republic, utilizing the Azureveil malware for data theft. This incident underscores the persistent threat of nation-state sponsored espionage.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/threat-intelligence/china-uses-dual-method-attack-czech-taiwan-orgs",
+      "tier": 3,
+      "publishedDate": "2026-06-02T19:50:53+00:00"
+    },
+    {
+      "id": "ca4163d35829076b",
+      "title": "North Korean Kimsuky Group Expands Arsenal with HTTPSpy and New Tools",
+      "summary": "The North Korean state-sponsored threat actor Kimsuky has been observed deploying new tools, including HTTPSpy, HelloDoor, and VS Code tunnels, in recent attacks targeting South Korean entities. The group employs sophisticated social engineering tactics, such as fake installation pages and meeting i",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/kimsuky-deploys-httpspy-expands-arsenal.html",
+      "tier": 3,
+      "publishedDate": "2026-05-29T11:27:41+05:30"
+    },
+    {
+      "id": "84357fa1afa70310",
+      "title": "Iran Expands 'Handala' Brand to Physical Threats",
+      "summary": "Iran's Ministry of Intelligence (MOIS) is reportedly expanding its 'Handala' brand to encompass hybrid cyber and physical threat operations. This expansion involves recruiting proxies to conduct attacks, espionage, and sabotage targeting US and Israeli interests.",
+      "source": "Recorded Future",
+      "url": "https://www.recordedfuture.com/research/iran-handala-physical-threats",
+      "tier": 3,
+      "publishedDate": "2026-06-02T00:00:00+00:00"
+    },
+    {
+      "id": "daa2069fea6c34fa",
+      "title": "Researcher Exposes Windows BitLocker Zero-Day, Microsoft Responds",
+      "summary": "An anonymous researcher has published details of a significant security exploit that bypasses default Windows 11 BitLocker protections. Microsoft has acknowledged the issue, framing it as a shared responsibility for security. This zero-day vulnerability is critical due to the widespread use of BitLo",
+      "source": "Schneier on Security",
+      "url": "https://www.schneier.com/blog/archives/2026/06/microsoft-threatening-security-researcher.html",
+      "tier": 3,
+      "publishedDate": "2026-06-02T11:00:42+00:00"
+    },
+    {
+      "id": "c7879313a64f36a4",
+      "title": "AI Tool Discovers 2-Year-Old RCE Flaw in Redis (CVE-2026-23479)",
+      "summary": "An autonomous AI tool has discovered a two-year-old remote code execution (RCE) vulnerability in Redis, tracked as CVE-2026-23479. The flaw, present in versions since 7.2.0, allows authenticated users to run arbitrary OS commands on the database server.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/autonomous-ai-tool-finds-2-year-old-rce.html",
+      "tier": 3,
+      "publishedDate": "2026-06-03T22:10:00+05:30"
+    },
+    {
+      "id": "2592a526fb9b51d9",
+      "title": "Microsoft 365 Android Apps Vulnerable to Account Token Theft",
+      "summary": "Several Microsoft 365 Android applications contain a leftover debug flag that allows any app on the device to steal account tokens. This bypasses authentication and grants unauthorized access to sensitive user data like emails and files. The vulnerability poses a significant risk to users' data priv",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/microsoft-365-android-apps-let-any-app.html",
+      "tier": 3,
+      "publishedDate": "2026-06-03T20:26:35+05:30"
+    },
+    {
+      "id": "aea883acd7ae8538",
+      "title": "HTTP/2 Bomb Vulnerability Causes Remote DoS on Major Web Servers",
+      "summary": "A newly discovered HTTP/2 vulnerability, dubbed 'HTTP/2 Bomb,' enables remote denial-of-service (DoS) attacks against major web servers like NGINX, Apache, IIS, Envoy, and Cloudflare. The vulnerability exploits default configurations, potentially disrupting critical online services. This highlights ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/new-http2-bomb-vulnerability-allows.html",
+      "tier": 3,
+      "publishedDate": "2026-06-03T14:03:35+05:30"
+    },
+    {
+      "id": "b12df17a52041075",
+      "title": "Webinar: See Your Network Like an Attacker Beyond Zero-Days",
+      "summary": "This webinar, featuring HD Moore, creator of Metasploit, discusses the futility of solely relying on patching against zero-days and AI-generated exploits. It emphasizes understanding and controlling network reach once a breach occurs, suggesting a shift in security strategy towards visibility and co",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/beyond-zero-day-see-your-network-like.html",
+      "tier": 3,
+      "publishedDate": "2026-06-03T20:26:46+05:30"
+    },
+    {
+      "id": "3fb599106825f6a9",
+      "title": "Unpatched Windows Search Vulnerability Allows NTLMv2 Hash Theft",
+      "summary": "An unpatched vulnerability in the Windows Search URI handler allows attackers to steal users' NTLMv2 hashes, similar to a previous issue with the Snipping Tool. This flaw enables attackers to potentially impersonate users or gain further access to systems. The lack of a patch highlights ongoing risk",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/unpatched-windows-search-uri.html",
+      "tier": 3,
+      "publishedDate": "2026-06-03T15:48:52+05:30"
+    },
+    {
+      "id": "250420aaa4da3a8e",
+      "title": "Google June 2026 Android Update Patches 124 Flaws, Including One Exploited",
+      "summary": "Google's June 2026 Android security update addresses 124 vulnerabilities, including a high-severity privilege escalation flaw (CVE-2025-48595) that is actively being exploited. This update is crucial for protecting Android devices from known and active threats, emphasizing the importance of timely p",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/google-june-2026-android-update-patches.html",
+      "tier": 3,
+      "publishedDate": "2026-06-03T00:16:00+05:30"
+    },
+    {
+      "id": "61f81be3659e536f",
+      "title": "Oracle WebLogic CVE-2024-21182 Added to CISA KEV Catalog Due to Active Exploitation",
+      "summary": "CISA has added Oracle WebLogic Server vulnerability CVE-2024-21182 to its Known Exploited Vulnerabilities catalog, indicating active exploitation in the wild. This critical flaw allows unauthenticated attackers with network access to gain control of vulnerable servers, posing a significant risk to o",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/oracle-weblogic-cve-2024-21182-added-to.html",
+      "tier": 3,
+      "publishedDate": "2026-06-02T23:44:42+05:30"
+    },
+    {
+      "id": "51a7ae357cae7505",
+      "title": "China-Aligned Dragon Weave Campaign Targets Czech Republic and Taiwan",
+      "summary": "China-aligned threat actors are escalating their activities with Operation Dragon Weave, targeting government, research, and financial sectors in the Czech Republic and Taiwan. The campaign uses spear-phishing emails to deliver an AdaptixC2 agent, indicating sophisticated cyber espionage efforts.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/china-aligned-groups-ramp-up-attacks.html",
+      "tier": 3,
+      "publishedDate": "2026-06-01T17:24:24+05:30"
+    },
+    {
+      "id": "03f2546636ff797b",
+      "title": "Dutch Authorities Dismantle Large Botnet Linked to 17 Million Infected Devices",
+      "summary": "Dutch authorities have successfully dismantled a massive botnet comprising at least 17 million infected devices, including computers, smartphones, and IoT devices. This operation, involving over 200 servers, significantly disrupts a major infrastructure used for malicious cyberattacks. The takedown ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/dutch-authorities-dismantle-botnet.html",
+      "tier": 3,
+      "publishedDate": "2026-05-31T17:52:12+05:30"
+    },
+    {
+      "id": "e11c268779d002e0",
+      "title": "LLM Agent Used for Post-Exploitation After Marimo CVE Exploit",
+      "summary": "An unknown threat actor has been observed using a large language model (LLM) agent for post-compromise activities after exploiting a vulnerability (CVE-2026-39987) in Marimo. This marks a significant development in the use of AI by attackers for sophisticated cyber operations. The incident demonstra",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
+      "tier": 3,
+      "publishedDate": "2026-05-29T20:09:56+05:30"
+    },
+    {
+      "id": "6fb1925cf6612eef",
+      "title": "China-Linked Threat Cluster OP-512 Targets IIS Servers with Custom Web Shell",
+      "summary": "A newly identified threat cluster, OP-512, believed to be linked to China, is targeting Microsoft IIS servers with a custom web shell framework for espionage. This discovery underscores the persistent threat of nation-state actors and their development of sophisticated tools to compromise critical w",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/new-threat-cluster-op-512-targets.html",
+      "tier": 3,
+      "publishedDate": "2026-06-05T18:03:38+05:30"
+    },
+    {
+      "id": "f0f98fb2bada392d",
+      "title": "Critical Vulnerability in Everest Forms Pro WordPress Plugin Allows Site Takeover",
+      "summary": "A critical remote code execution vulnerability (CVE-2026-3300) in the Everest Forms Pro WordPress plugin, affecting nearly 4,000 active installations, is being actively exploited by threat actors. This flaw allows for complete site compromise, emphasizing the need for prompt patching of popular web ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html",
+      "tier": 3,
+      "publishedDate": "2026-06-05T14:08:59+05:30"
+    },
+    {
+      "id": "1166e148c198edcb",
+      "title": "Cisco Patches Critical Unified CM Vulnerability as Exploit Code Goes Public",
+      "summary": "Cisco has released a patch for a critical vulnerability (CVE-2026-20230) in Unified Communications Manager that allows unauthenticated attackers to write files and gain root access. With public exploit code available, organizations using this system are at immediate risk and should prioritize applyi",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html",
+      "tier": 3,
+      "publishedDate": "2026-06-04T22:25:51+05:30"
+    },
+    {
+      "id": "c7426199cb050c74",
+      "title": "China-Linked TA4922 Expands Phishing to UK, Germany, Italy, and South Africa",
+      "summary": "The China-linked cybercrime group TA4922 has broadened its phishing operations to target organizations in the UK, Germany, Italy, and South Africa. The group is employing a rapidly evolving malware arsenal, including known families like ValleyRAT and Atlas RAT, indicating a persistent and expanding ",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/china-linked-ta4922-expands-phishing.html",
+      "tier": 3,
+      "publishedDate": "2026-06-04T17:52:25+05:30"
+    },
+    {
+      "id": "dbc4f62a164220d0",
+      "title": "WhatsApp, Slack Notifications Can Hijack Google Gemini on Android",
+      "summary": "A vulnerability exists where malicious notifications from apps like WhatsApp and Slack could hijack Google Gemini on Android devices. This could lead to unauthorized actions such as sending fake messages or initiating calls, without requiring any malicious app installation.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/whatsapp-slack-notifications-could.html",
+      "tier": 3,
+      "publishedDate": "2026-06-04T00:41:15+05:30"
+    },
+    {
+      "id": "0ad1d907028712ff",
+      "title": "AI Accelerates Vulnerability Exploitation, Threatening Traditional Management",
+      "summary": "The increasing speed of AI-driven vulnerability exploitation is drastically shrinking the window between disclosure and weaponization, making traditional vulnerability management strategies obsolete. Organizations must adapt to this new reality where threats can be weaponized within hours, necessita",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/ai-driven-exploitation-is-destroying.html",
+      "tier": 3,
+      "publishedDate": "2026-06-02T17:28:00+05:30"
+    },
+    {
+      "id": "b12df17a52041075",
+      "title": "Webinar: See Your Network Like an Attacker Beyond Zero-Days",
+      "summary": "This webinar, featuring HD Moore, creator of Metasploit, discusses the futility of solely relying on patching against zero-days and AI-generated exploits. It emphasizes understanding and controlling network reach once a breach occurs, suggesting a shift in security strategy towards visibility and co",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/beyond-zero-day-see-your-network-like.html",
+      "tier": 3,
+      "publishedDate": "2026-06-03T20:26:46+05:30"
+    }
+  ]
+}

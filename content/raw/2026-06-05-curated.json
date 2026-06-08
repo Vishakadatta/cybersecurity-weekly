@@ -1193,6 +1193,24 @@
     ]
   },
   {
+    "id": "26ae46ece10d319f",
+    "title": "Silent Ransom Group Targets Law Firms with Social Engineering Attacks",
+    "summary_raw": "The Silent Ransom Group extortion gang is actively targeting U.S. law firms and professional services organizations in social engineering attacks that often lead to data theft within hours of initial contact, according to a new report by cybersecurity firm Mandiant. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/silent-ransom-group-targets-law-firms-with-fake-it-support-calls/",
+    "publishedDate": "2026-06-07T10:09:19-04:00",
+    "scrapedAt": "2026-06-08T05:20:18.731774+00:00",
+    "summary": "The Silent Ransom Group is employing social engineering tactics, specifically fake IT support calls, to target U.S. law firms and professional services organizations. These attacks are designed for rapid data theft, with compromised data often exfiltrated within hours of initial contact.",
+    "relevance_score": 8,
+    "tags": [
+      "ransomware",
+      "social engineering",
+      "data theft",
+      "law firms",
+      "APT"
+    ]
+  },
+  {
     "id": "4f9660b7e3af6f55",
     "title": "Hackers Used Meta's AI Support Bot to Seize Instagram Accounts",
     "summary_raw": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's \"AI support assistant\" bot into resetting account passwords.",
@@ -1833,6 +1851,24 @@
     ]
   },
   {
+    "id": "af428b1714adc784",
+    "title": "C0XMO Botnet Exploits DD-WRT Router Flaw, Eliminates Competing Malware",
+    "summary_raw": "A new variant of the Gafgyt botnet called C0XMO is targeting DD-WRT router firmware and can move to other device types with various CPU architectures. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/c0xmo-botnet-spreads-via-dd-wrt-router-flaw-kills-rival-malware/",
+    "publishedDate": "2026-06-07T10:17:46-04:00",
+    "scrapedAt": "2026-06-08T05:20:18.731668+00:00",
+    "summary": "A new variant of the Gafgyt botnet, dubbed C0XMO, is actively exploiting a vulnerability in DD-WRT router firmware. This botnet not only spreads across devices but also demonstrates a capability to remove rival malware, potentially consolidating control over compromised systems.",
+    "relevance_score": 7,
+    "tags": [
+      "botnet",
+      "IoT",
+      "router",
+      "DD-WRT",
+      "malware"
+    ]
+  },
+  {
     "id": "1b989337110f1c90",
     "title": "New Android Spyware 'Asin' Targets Arabic Users via Fake Apps",
     "summary_raw": "Arabic-speaking users have emerged as the target of a new Android spyware codenamed Asin, according to findings from ESET.\n\nThe Slovakian cybersecurity company said it first detected the malware spread via multiple campaigns in early 2025, with each attack wave making use of distinct websites mimicking utilities, war-related updates, and a government news source:\n\n\n  govlens[.]net, which",
@@ -2308,6 +2344,22 @@
     ]
   },
   {
+    "id": "95a4b5b81db19d20",
+    "title": "ISC Stormcast for Monday, June 8th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33058",
+    "publishedDate": "2026-06-08T02:00:03+00:00",
+    "scrapedAt": "2026-06-08T05:20:22.212561+00:00",
+    "summary": "This entry refers to the ISC Stormcast podcast for Monday, June 8th, 2026. The podcast typically covers recent cybersecurity events, threats, and advisories. Listeners can expect a summary of notable security news and potential incidents from the preceding period.",
+    "relevance_score": 5,
+    "tags": [
+      "cybersecurity news",
+      "podcast",
+      "threat intelligence"
+    ]
+  },
+  {
     "id": "7f2f368b88ed5216",
     "title": "MSPs Evolving Beyond vCISO Tools to Security Growth Platforms",
     "summary_raw": "Three years ago, the practical question for an MSP building a cybersecurity practice was which \"vCISO platform\" to buy. The term was good shorthand for the work at the time: assessments, advisory, reporting, maybe a compliance module bolted on the side. The work has since outgrown the descriptor.\n\nA Security Growth Platform is the more precise name for what MSPs and MSSPs need from the software",
@@ -2357,6 +2409,22 @@
       "cryptography",
       "machine-learning",
       "historical-data"
+    ]
+  },
+  {
+    "id": "1a4b4c5cfc0e1570",
+    "title": "Microsoft Introduces Intelligent Terminal, an AI-Powered Windows Terminal",
+    "summary_raw": "Microsoft has created an open-source fork of Windows Terminal called \"Intelligent Terminal,\" and it allows you to use AI directly inside Terminal without interfering with the regular session. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/hands-on-with-intelligent-terminal-an-ai-powered-windows-terminal/",
+    "publishedDate": "2026-06-07T19:20:02-04:00",
+    "scrapedAt": "2026-06-08T05:20:18.731549+00:00",
+    "summary": "Microsoft has developed an open-source fork of Windows Terminal named \"Intelligent Terminal.\" This new tool integrates AI capabilities directly within the terminal environment without disrupting ongoing sessions. It aims to enhance user productivity by bringing AI assistance directly into command-line workflows.",
+    "relevance_score": 4,
+    "tags": [
+      "AI",
+      "Windows Terminal",
+      "developer tools"
     ]
   },
   {
