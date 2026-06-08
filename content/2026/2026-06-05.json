@@ -2,9 +2,81 @@
   "edition": "2026-06-05",
   "year": "2026",
   "editionLabel": "Jun 5 \u2013 11, 2026",
-  "generatedAt": "2026-06-08T05:20:51.311221+00:00",
-  "subjectLine": "Cisco SD-WAN Under Fire, AI Worms Emerge, and Nation-State Attacks Escalate",
+  "generatedAt": "2026-06-08T18:29:51.075706+00:00",
+  "subjectLine": "BREAKING: Critical Check Point VPN Flaw Exploited to Bypass Passwords  + More Inside",
   "articles": [
+    {
+      "id": "4d17c54955eabd10",
+      "title": "TeamPCP Supply Chain Campaign: Activity Through 2026-06-07, (Mon, Jun 8th)",
+      "summary": "This diary continues the Internet Storm Center's tracking of the TeamPCP supply chain campaign, first documented in the SANS white paper When the Security Scanne",
+      "source": "SANS Internet Storm Center",
+      "url": "https://isc.sans.edu/diary/rss/33060",
+      "tier": 2,
+      "publishedDate": "2026-06-08T17:07:37+00:00"
+    },
+    {
+      "id": "d601d8dcb7ed1594",
+      "title": "VS Code Adds 2-Hour Extension Auto-Update Delay to Limit Supply Chain Attacks",
+      "summary": "Microsoft has announced that Visual Studio Code (VS Code) will apply a two-hour delay before extensions for the integrated development environment (IDE) are updated automatically to a newer version.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/vs-code-adds-2-hour-extension-auto.html",
+      "tier": 2,
+      "publishedDate": "2026-06-08T11:38:44+05:30"
+    },
+    {
+      "id": "70ca532b1f5ef8f4",
+      "title": "'Hades' Campaign Against PyPI Puts New Spin on Shai-Hulud",
+      "summary": "The latest attacks, which hit 37 PyPI wheels and 19 code packages, show a continued evolution of the persistent software supply chain threat.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/application-security/hades-campaign-pypi-shai-hulud",
+      "tier": 2,
+      "publishedDate": "2026-06-08T16:13:41+00:00"
+    },
+    {
+      "id": "68e47f7f5202c3b5",
+      "title": "VerdantBamboo Deploys BSD Variant of BRICKSTORM on Linux Appliances",
+      "summary": "A China-nexus cyber espionage group has been observed deploying a BSD variant of a known backdoor called BRICKSTORM, as well as two other malware families codenamed PLENET (aka GRIMBOLT) and AGENTPSD.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/verdantbamboo-deploys-bsd-variant-of.html",
+      "tier": 2,
+      "publishedDate": "2026-06-08T15:57:32+05:30"
+    },
+    {
+      "id": "47d18278ce1ce2a8",
+      "title": "Critical UniFi OS bug lets hackers gain root without authentication",
+      "summary": "Attackers can chain three already fixed vulnerabilities in the Ubiquiti UniFi OS server to execute remote code with root privileges and without authentication.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-unifi-os-bug-lets-hackers-gain-root-without-authentication/",
+      "tier": 1,
+      "publishedDate": "2026-06-08T11:51:19-04:00"
+    },
+    {
+      "id": "83f951ebf279e442",
+      "title": "Gogs patches critical zero-day enabling remote code execution",
+      "summary": "Gogs has patched a critical security zero-day flaw that can allow attackers to compromise Internet-facing instances and access any repositories (including private ones).",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/gogs-patches-critical-zero-day-enabling-remote-code-execution/",
+      "tier": 1,
+      "publishedDate": "2026-06-08T12:18:40-04:00"
+    },
+    {
+      "id": "3470539362b52dae",
+      "title": "Check Point links VPN zero-day attacks to Qilin ransomware gang",
+      "summary": "Israeli cybersecurity company Check Point has released security updates to patch a critical flaw affecting Remote Access VPN and Mobile Access deployments, which was exploited in zero-day attacks.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/check-point-links-vpn-zero-day-attacks-to-qilin-ransomware-gang/",
+      "tier": 1,
+      "publishedDate": "2026-06-08T09:05:16-04:00"
+    },
+    {
+      "id": "9517dbcbaf2efea7",
+      "title": "Critical Check Point VPN Flaw Exploited to Bypass Passwords in IKEv1 Setups",
+      "summary": "Check Point has warned of active exploitation of a critical vulnerability impacting Remote Access VPN and Mobile Access deployments that are configured to use the deprecated IKEv1 key exchange protocol.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/critical-check-point-vpn-flaw-exploited.html",
+      "tier": 1,
+      "publishedDate": "2026-06-08T19:47:39+05:30"
+    },
     {
       "id": "ed06b2949afbfd7f",
       "title": "Cisco SD-WAN Zero-Day Actively Exploited",
