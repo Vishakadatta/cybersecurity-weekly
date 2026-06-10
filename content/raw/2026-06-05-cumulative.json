@@ -1897,5 +1897,185 @@
     "url": "https://thehackernews.com/2026/06/servicenow-flaw-exploited-to-gain.html",
     "publishedDate": "2026-06-10T12:32:08+05:30",
     "scrapedAt": "2026-06-10T07:41:53.102491+00:00"
+  },
+  {
+    "id": "a02b18501d3cb698",
+    "title": "Who Runs the Ransomware Group \u2018The Gentlemen?\u2019",
+    "summary_raw": "A cybercrime group known as The Gentlemen has emerged as the second most active ransomware gang by victim count, rapidly attracting a talented pool of hackers through an aggressive recruitment strategy that promises affiliates 90 percent of any ransom paid by victims. This post examines clues pointing to a real life identity for the administrator of The Gentlemen ransomware group.",
+    "source": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
+    "publishedDate": "2026-06-10T14:03:44+00:00",
+    "scrapedAt": "2026-06-10T16:52:09.968286+00:00"
+  },
+  {
+    "id": "944a2c7b61d4b594",
+    "title": "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance",
+    "summary_raw": "Cybersecurity researchers have warned of a \"resurgence and expansion\" of JDY, a covert network associated with China-nexus state-sponsored threat actors.\n\n\"The JDY botnet comprises over 1,500 SOHO [small office and home office] and IoT devices and operates as a centrally controlled, high-performance scanner used to discover, fingerprint, and continuously map exposed services at scale,\" Lumen's",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/china-linked-jdy-botnet-expands-to-1500.html",
+    "publishedDate": "2026-06-10T21:38:42+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121106+00:00"
+  },
+  {
+    "id": "92218887bf7ba5fe",
+    "title": "Ivanti, Fortinet, and SAP Release Patches for Multiple Critical Vulnerabilities",
+    "summary_raw": "Fortinet, Ivanti, and SAP have released security updates to address multiple critical security vulnerabilities that could result in arbitrary code execution and information disclosure.\n\nThe security flaw patched by Fortinet relates to a command injection vulnerability in FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS WEB UI. It's tracked as CVE-2026-25089 (CVSS score: 9.1).\n\n\"An",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/ivanti-fortinet-and-sap-release-patches.html",
+    "publishedDate": "2026-06-10T20:40:59+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121218+00:00"
+  },
+  {
+    "id": "efdaae8518c88b1d",
+    "title": "Unpatched Langflow Flaw CVE-2026-5027 Exploited for Unauthenticated RCE",
+    "summary_raw": "A high-severity unpatched security flaw in Langflow, an open-source low-code platform to build artificial intelligence (AI) applications, has come under active exploitation in the wild, according to findings from VulnCheck.\n\nThe vulnerability in question is CVE-2026-5027 (CVSS score: 8.8), a case of path traversal that could allow an attacker to write files to arbitrary locations.\n\n\"The 'POST /",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html",
+    "publishedDate": "2026-06-10T20:30:59+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121309+00:00"
+  },
+  {
+    "id": "68b80d502f29c57c",
+    "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog Amid Active Exploitation",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe list of vulnerabilities is as follows -\n\n\n  CVE-2026-20245 (CVSS score: 7.8) - An improper encoding or escaping of output vulnerability in Cisco Catalyst SD-WAN Manager that could allow an",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
+    "publishedDate": "2026-06-10T20:14:29+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121399+00:00"
+  },
+  {
+    "id": "2743927cb3e57154",
+    "title": "Your Automated Pentest Looks Clean. See What It Missed in This Expert Webinar",
+    "summary_raw": "Your pentest report looks clean. That might be the problem.\n\nRun automated pentesting long enough, and the new findings start to dry up. By the third or fourth run, fewer issues appear. The report looks stable. Leadership reads \"stable\" as \"secure.\" It usually isn't. The work slows down. The risk does not.\n\nThat gap is what a The Hacker News webinar with Picus Security sets out to close.\n\nAutumn",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/your-automated-pentest-looks-clean-see.html",
+    "publishedDate": "2026-06-10T15:57:49+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121480+00:00"
+  },
+  {
+    "id": "0d578f2433fe77f3",
+    "title": "Microsoft Patches Record 206 Flaws, Including Three Zero-Days and Critical RCE Bugs",
+    "summary_raw": "Microsoft on Tuesday released fixes for a record 206 security vulnerabilities impacting its software portfolio, including three flaws that have been publicly disclosed at the time of release.\n\nOf the 206 flaws, 39 are rated Critical, and 167 are rated Important in severity. This includes 63 privilege escalation, 56 remote code execution, 30 information disclosure, 27 spoofing, 20 security",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/microsoft-patches-record-206-flaws.html",
+    "publishedDate": "2026-06-10T15:08:13+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121592+00:00"
+  },
+  {
+    "id": "8b5e9c5610e15085",
+    "title": "Anthropic Releases Claude Fable 5, Its Most Powerful AI Yet, With Cyber Safeguards",
+    "summary_raw": "On June 9, Anthropic released Claude Fable 5, the most capable model it has ever made, generally available. It also did something unusual: it shipped one model as two products, split not by capability but by a layer of safety classifiers.\n\nFable 5 goes to the public. Its twin, Claude Mythos 5, the same underlying model with the cyber safeguards lifted, stays locked to a vetted group of cyber",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/anthropic-releases-claude-fable-5-its.html",
+    "publishedDate": "2026-06-10T13:07:59+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121674+00:00"
+  },
+  {
+    "id": "328985d6bcace907",
+    "title": "China-linked JDY botnet expands targeting of U.S. military networks",
+    "summary_raw": "The JDY botnet, a malware network previously associated with Chinese threat actors like Volt Typhoon, has significantly expanded its targeting scope and reconnaissance efforts. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/china-linked-jdy-botnet-expands-targeting-of-us-military-networks/",
+    "publishedDate": "2026-06-10T11:00:00-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195443+00:00"
+  },
+  {
+    "id": "f95085924cae03aa",
+    "title": "The 5 Best Practices for Secure Identity Verification",
+    "summary_raw": "Attackers are increasingly bypassing weak authentication through phishing, MFA fatigue, and service desk social engineering. Specops Software breaks down five best practices for stronger identity verification and access security. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/the-5-best-practices-for-secure-identity-verification/",
+    "publishedDate": "2026-06-10T10:05:15-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195625+00:00"
+  },
+  {
+    "id": "2b1ea9e057ffd34b",
+    "title": "Microsoft patches Exchange Server zero-day exploited in attacks",
+    "summary_raw": "Microsoft has patched an actively exploited Exchange Server vulnerability that allows threat actors to execute arbitrary JavaScript code in cross-site scripting (XSS) attacks targeting Outlook Web Access users. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-exchange-server-zero-day-exploited-in-attacks/",
+    "publishedDate": "2026-06-10T09:44:19-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195727+00:00"
+  },
+  {
+    "id": "f20747ea9f69172d",
+    "title": "Microsoft: Some Windows PCs fail to install latest monthly updates",
+    "summary_raw": "Microsoft warned customers on Tuesday that they may have issues installing the latest monthly updates on some Windows devices that were upgraded to Windows 11 24H2 or 25H2. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-some-upgraded-windows-pcs-fail-to-install-monthly-updates/",
+    "publishedDate": "2026-06-10T07:33:32-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195815+00:00"
+  },
+  {
+    "id": "2ed1517514068ee9",
+    "title": "Microsoft patches YellowKey, GreenPlasma, MiniPlasma zero-days",
+    "summary_raw": "On Tuesday, Microsoft patched two zero-day vulnerabilities that let attackers gain SYSTEM privileges on fully patched Windows systems, and a third one that grants access to BitLocker-protected drives. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-yellowkey-greenplasma-miniplasma-zero-days/",
+    "publishedDate": "2026-06-10T05:57:33-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195898+00:00"
+  },
+  {
+    "id": "f6730f2237940df4",
+    "title": "Microsoft June 2026 Patch Tuesday fixes 6 zero-days, 200 flaws",
+    "summary_raw": "Today is Microsoft's June 2026 Patch Tuesday, with security updates for 200 flaws, including five publicly disclosed zero-day vulnerabilities and one actively exploited in attacks. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-6-zero-days-200-flaws/",
+    "publishedDate": "2026-06-09T13:57:59-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.196506+00:00"
+  },
+  {
+    "id": "652357f6bc926366",
+    "title": "Nightmare-Eclipse Drops Yet Another Microsoft Exploit, RoguePlanet",
+    "summary_raw": "The disgruntled researcher released yet another PoC for a Windows Defender bug that allows for system takeover, showing no signs of abandoning their ongoing feud with Microsoft.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/nightmare-eclipse-microsoft-exploit-rogueplanet",
+    "publishedDate": "2026-06-10T16:31:02+00:00",
+    "scrapedAt": "2026-06-10T16:52:13.594302+00:00"
+  },
+  {
+    "id": "5a9dff47d2358bb2",
+    "title": "The Invisible Battlefield: How Cyber War Is Reshaping Everyday Life",
+    "summary_raw": "Former National Cyber Director Chris Inglis warns that cyber attacks threaten hospitals, utilities and essential services.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/invisible-battlefield-cyber-war-reshaping-everyday-life",
+    "publishedDate": "2026-06-09T21:57:11+00:00",
+    "scrapedAt": "2026-06-10T16:52:13.594406+00:00"
+  },
+  {
+    "id": "47f5b66701e18975",
+    "title": "AI Slop Will Kill Cybersecurity Storytelling If We Let It",
+    "summary_raw": "AI-generated content threatens credibility in cybersecurity. This &quot;Ask the Expert&quot; column explores why human oversight matters and how to maintain authentic narratives.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/ai-slop-kill-cybersecurity-storytelling-we-let-it",
+    "publishedDate": "2026-06-08T22:05:49+00:00",
+    "scrapedAt": "2026-06-10T16:52:13.594821+00:00"
+  },
+  {
+    "id": "19bae0776a457f7a",
+    "title": "CISA Issues New Directive Improving How Federal Agencies Prioritize the Mitigation of Cyber Vulnerabilities",
+    "summary_raw": "",
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/news/cisa-issues-new-directive-improving-how-federal-agencies-prioritize-mitigation-cyber-vulnerabilities",
+    "publishedDate": "2026-06-10T12:00:00+00:00",
+    "scrapedAt": "2026-06-10T16:52:14.742552+00:00"
+  },
+  {
+    "id": "ca9d30c481587a7f",
+    "title": "2026 FIFA World Cup: What Public Safety Officials Need to Know",
+    "summary_raw": "Prepare for the 2026 FIFA World Cup with expert analysis of the physical and cyber threat landscape. Discover key mitigation strategies for host city officials to ensure public safety",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/2026-fifa-world-cup-cyber-physical-threats-security-guide",
+    "publishedDate": "2026-06-10T00:00:00+00:00",
+    "scrapedAt": "2026-06-10T16:52:23.950174+00:00"
+  },
+  {
+    "id": "4d8b4dc584dcbb65",
+    "title": "How has use of framing protection security headers changed in the past 3 years&#x3f;, (Wed, Jun 10th)",
+    "summary_raw": "Back in 2023, I wrote a diary&#x5b;1&#x5d; discussing how commonly X-Frame-Options and CSP headers containing the frame-ancestors directive were used on 1 million most popular domains on the internet (based on the Tranco list&#x5b;2&#x5d;), and how they were set. Given that three years have passed since then, I thought it might be interesting to repeat the analysis and see what &#xe2;&#x20ac;&#x201c; if anything &#xe2;&#x20ac;&#x201c; has changed in the meantime.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33068",
+    "publishedDate": "2026-06-10T08:29:21+00:00",
+    "scrapedAt": "2026-06-10T16:52:26.338940+00:00"
   }
 ]
