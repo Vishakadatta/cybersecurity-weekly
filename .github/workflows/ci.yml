@@ -1,0 +1,93 @@
+name: CI
+
+# Lint + build validation on every PR and on pushes to main that touch code.
+
+on:
+  pull_request:
+    paths:
+      - "scripts/**"
+      - "src/**"
+      - "templates/**"
+      - "package*.json"
+      - "astro.config.mjs"
+      - "tailwind.config.mjs"
+      - "tsconfig.json"
+      - ".github/workflows/**"
+      - ".github/actions/**"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "src/**"
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  python:
+    name: Python syntax + import smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: scripts/requirements.txt
+
+      - name: Install deps
+        run: pip install --upgrade pip && pip install -r scripts/requirements.txt
+
+      - name: Syntax check
+        run: |
+          python -c "
+          import ast, sys, pathlib
+          errors = 0
+          for f in pathlib.Path('scripts').glob('*.py'):
+              try:
+                  ast.parse(f.read_text())
+                  print(f'OK  {f}')
+              except SyntaxError as e:
+                  print(f'ERR {f}: {e}')
+                  errors += 1
+          sys.exit(1 if errors else 0)
+          "
+
+      - name: Import smoke (modules load without crashing)
+        env:
+          GROQ_API_KEY: "test-placeholder"
+          GEMINI_API_KEY: "test-placeholder"
+        run: |
+          cd scripts
+          python -c "import scrape, dedupe, llm_client, curate, finalize, monday_check, send_newsletter, edition; print('All imports OK')"
+
+  astro:
+    name: Astro build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install Node deps
+        run: npm ci
+
+      - name: Build (with placeholder env vars)
+        env:
+          ASTRO_TELEMETRY_DISABLED: 1
+          PUBLIC_BREVO_FORM_URL: "https://sibforms.com/serve/PLACEHOLDER"
+          PUBLIC_BREVO_UNSUBSCRIBE_URL: "https://example.com/unsub"
+        run: npx astro build
+
+      - name: Verify expected pages built
+        run: |
+          test -f dist/index.html
+          test -d dist/archive
+          echo "All expected pages present"

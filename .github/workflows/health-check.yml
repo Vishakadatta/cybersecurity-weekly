@@ -1,0 +1,85 @@
+name: Health check
+
+# Heartbeat monitor. Runs mid-week — if content/latest.json hasn't been
+# updated in the last 8 days, the weekly pipeline silently broke; open
+# an issue so you find out before Monday morning.
+
+on:
+  schedule:
+    - cron: "0 17 * * 3"  # Wednesday 9:00 AM PT (5:00 PM UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check-freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check latest.json freshness
+        id: check
+        run: |
+          if [ ! -f content/latest.json ]; then
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+            echo "reason=content/latest.json does not exist" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          last_update=$(git log -1 --format=%ct -- content/latest.json)
+          now=$(date +%s)
+          age_days=$(( (now - last_update) / 86400 ))
+          echo "Last update: $age_days days ago"
+          echo "age_days=$age_days" >> "$GITHUB_OUTPUT"
+          if [ "$age_days" -gt 8 ]; then
+            echo "stale=true" >> "$GITHUB_OUTPUT"
+            echo "reason=content/latest.json last updated $age_days days ago (threshold: 8)" >> "$GITHUB_OUTPUT"
+          else
+            echo "stale=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open stale-pipeline issue
+        if: steps.check.outputs.stale == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const reason = `${{ steps.check.outputs.reason }}`;
+            const runs = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions`;
+            // Avoid duplicate issues: only open one if there isn't already an open one with this label.
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'pipeline-stale',
+            });
+            if (existing.data.length > 0) {
+              console.log(`Existing stale issue already open: #${existing.data[0].number}`);
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[pipeline] Newsletter content is stale`,
+              labels: ['pipeline-stale', 'urgent'],
+              body: [
+                '**Heartbeat monitor detected stale content.**',
+                '',
+                reason,
+                '',
+                `Inspect recent runs: ${runs}`,
+                '',
+                'Likely causes: cron not firing (free Actions minutes exhausted, repo went private without billing, schedule disabled), all pipeline stages failed silently, or content/latest.json is being committed but not getting an updated mtime.',
+              ].join('\n'),
+            });
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Health check"
+            echo ""
+            echo "- Content age: **${{ steps.check.outputs.age_days }} days**"
+            echo "- Status: ${{ steps.check.outputs.stale == 'true' && '🚨 STALE' || '✅ fresh' }}"
+          } >> "$GITHUB_STEP_SUMMARY"
