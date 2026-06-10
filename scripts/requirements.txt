@@ -7,5 +7,5 @@
 # CUDA wheels.
 
 -r requirements-light.txt
-sentence-transformers>=3.0.0
-numpy>=1.26.0
+sentence-transformers>=5.5.1
+numpy>=2.4.6
