@@ -2,9 +2,45 @@
   "edition": "2026-06-05",
   "year": "2026",
   "editionLabel": "Jun 5 \u2013 11, 2026",
-  "generatedAt": "2026-06-10T16:57:39.185199+00:00",
-  "subjectLine": "Critical Exploits in Cisco, Microsoft, and Palo Alto Networks Devices",
+  "generatedAt": "2026-06-10T16:58:19.827307+00:00",
+  "subjectLine": "BREAKING: Unpatched Langflow Flaw CVE-2026-5027 Exploited for Unauthen + More Inside",
   "articles": [
+    {
+      "id": "944a2c7b61d4b594",
+      "title": "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance",
+      "summary": "Cybersecurity researchers have warned of a \"resurgence and expansion\" of JDY, a covert network associated with China-nexus state-sponsored threat actors.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/china-linked-jdy-botnet-expands-to-1500.html",
+      "tier": 1,
+      "publishedDate": "2026-06-10T21:38:42+05:30"
+    },
+    {
+      "id": "92218887bf7ba5fe",
+      "title": "Ivanti, Fortinet, and SAP Release Patches for Multiple Critical Vulnerabilities",
+      "summary": "Fortinet, Ivanti, and SAP have released security updates to address multiple critical security vulnerabilities that could result in arbitrary code execution and information disclosure.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/ivanti-fortinet-and-sap-release-patches.html",
+      "tier": 1,
+      "publishedDate": "2026-06-10T20:40:59+05:30"
+    },
+    {
+      "id": "68b80d502f29c57c",
+      "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog Amid Active Exploitation",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
+      "tier": 1,
+      "publishedDate": "2026-06-10T20:14:29+05:30"
+    },
+    {
+      "id": "efdaae8518c88b1d",
+      "title": "Unpatched Langflow Flaw CVE-2026-5027 Exploited for Unauthenticated RCE",
+      "summary": "A high-severity unpatched security flaw in Langflow, an open-source low-code platform to build artificial intelligence (AI) applications, has come under active exploitation in the wild.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html",
+      "tier": 1,
+      "publishedDate": "2026-06-10T20:30:59+05:30"
+    },
     {
       "id": "ed06b2949afbfd7f",
       "title": "Cisco SD-WAN Zero-Day Actively Exploited",
