@@ -5,13 +5,14 @@ generates the final edition JSON and HTML email.
 """
 
 import json
+import os
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
 from jinja2 import Template
 
-from gemini_client import ProjectError, create_client, generate_json
+from llm_client import ProjectError, generate_json
 from edition import CONTENT_DIR, RAW_DIR, get_edition, set_edition, date_label, date_range_label
 
 TEMPLATES_DIR = Path(__file__).parent.parent / "templates"
@@ -59,8 +60,14 @@ def generate_email_html(content: dict) -> str:
     with open(template_path) as f:
         template = Template(f.read())
 
-    site_url = "https://vishakadatta.github.io/cybersecurity-weekly/"
-    unsubscribe_url = "https://github.com/Vishakadatta/cybersecurity-weekly/issues/new?template=unsubscribe.yml&title=Unsubscribe"
+    site_url = os.environ.get("SITE_URL", "https://vishakadatta.github.io/cybersecurity-weekly/")
+    # Brevo per-recipient unsubscribe URL — falls back to a static manage-preferences
+    # page if the env var is unset (e.g. when running locally without Brevo configured).
+    # In production Brevo replaces {{ params.unsubscribe }} per-recipient.
+    unsubscribe_url = os.environ.get(
+        "UNSUBSCRIBE_URL",
+        "{{ params.unsubscribe }}",
+    )
 
     return template.render(
         subject_line=content["subjectLine"],
@@ -73,8 +80,6 @@ def generate_email_html(content: dict) -> str:
 
 
 def main():
-    client = create_client()
-
     year, edition = get_edition()
     print(f"Edition: {edition} ({date_range_label(edition)})")
 
@@ -104,7 +109,7 @@ def main():
     prompt = RANKING_PROMPT.format(articles_json=json.dumps(articles_for_prompt, indent=2))
 
     try:
-        result = generate_json(client, prompt, temperature=0.4)
+        result = generate_json(prompt, backend="gemini", temperature=0.4)
     except ProjectError as e:
         print(f"\nABORTING: Unrecoverable project error — {e}", file=sys.stderr)
         sys.exit(1)

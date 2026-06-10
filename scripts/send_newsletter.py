@@ -1,7 +1,11 @@
 """
 Monday sender.
-Reads the latest finalized edition from content/latest.json
-and sends the newsletter via Brevo to all subscribers.
+Reads the latest finalized edition from content/latest.json, pulls subscribers
+from a Brevo contact list, and sends the newsletter via Brevo's transactional
+API.
+
+Subscribers are managed entirely inside Brevo (signup form, double opt-in,
+unsubscribe). This script only reads the list — it never writes to it.
 """
 
 import json
@@ -14,33 +18,57 @@ from sib_api_v3_sdk.rest import ApiException
 
 from edition import CONTENT_DIR, RAW_DIR, get_edition
 
-SENDER_NAME = "Cybersecurity Weekly"
+SENDER_NAME = os.environ.get("SENDER_NAME", "Cybersecurity Weekly")
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "")
+BREVO_LIST_ID = os.environ.get("BREVO_LIST_ID", "")
+UNSUBSCRIBE_URL_TEMPLATE = os.environ.get("UNSUBSCRIBE_URL", "")
+
+PAGE_LIMIT = 500
 
 
-def load_subscribers(private_data_path: str | None = None) -> list[str]:
-    root = Path(__file__).parent.parent
-    search_paths = [
-        Path(private_data_path) / "subscribers" / "emails.json" if private_data_path else None,
-        root / "private-data" / "subscribers" / "emails.json",
-    ]
+def load_subscribers_from_brevo(api_client) -> list[dict]:
+    """Page through every contact in the configured Brevo list."""
+    if not BREVO_LIST_ID:
+        print("ERROR: BREVO_LIST_ID environment variable not set", file=sys.stderr)
+        sys.exit(1)
 
-    for p in search_paths:
-        if p and p.exists():
-            with open(p) as f:
-                data = json.load(f)
-            return data.get("emails", [])
+    list_id = int(BREVO_LIST_ID)
+    contacts_api = sib_api_v3_sdk.ContactsApi(api_client)
 
-    print("[WARN] No subscriber file found, no emails will be sent", file=sys.stderr)
-    return []
+    all_contacts: list[dict] = []
+    offset = 0
+    while True:
+        try:
+            page = contacts_api.get_contacts_from_list(
+                list_id=list_id, limit=PAGE_LIMIT, offset=offset
+            )
+        except ApiException as e:
+            print(f"ERROR: Brevo get_contacts_from_list failed: status={e.status} body={e.body}", file=sys.stderr)
+            sys.exit(1)
+
+        contacts = getattr(page, "contacts", []) or []
+        if not contacts:
+            break
+        all_contacts.extend(contacts)
+        if len(contacts) < PAGE_LIMIT:
+            break
+        offset += PAGE_LIMIT
+
+    return all_contacts
 
 
 def send_email(api_instance, to_email: str, subject: str, html_content: str) -> bool:
+    headers = {}
+    if UNSUBSCRIBE_URL_TEMPLATE:
+        headers["List-Unsubscribe"] = f"<{UNSUBSCRIBE_URL_TEMPLATE}>"
+        headers["List-Unsubscribe-Post"] = "List-Unsubscribe=One-Click"
+
     send_smtp_email = sib_api_v3_sdk.SendSmtpEmail(
         to=[{"email": to_email}],
         sender={"name": SENDER_NAME, "email": SENDER_EMAIL},
         subject=subject,
         html_content=html_content,
+        headers=headers or None,
     )
 
     try:
@@ -64,9 +92,8 @@ def main():
 
     configuration = sib_api_v3_sdk.Configuration()
     configuration.api_key["api-key"] = brevo_key
-    api_instance = sib_api_v3_sdk.TransactionalEmailsApi(
-        sib_api_v3_sdk.ApiClient(configuration)
-    )
+    api_client = sib_api_v3_sdk.ApiClient(configuration)
+    transac_api = sib_api_v3_sdk.TransactionalEmailsApi(api_client)
 
     year, edition = get_edition()
     content_file = CONTENT_DIR / year / f"{edition}.json"
@@ -89,21 +116,24 @@ def main():
         html_content = f.read()
 
     subject = content["subjectLine"]
-    private_data_path = os.environ.get("PRIVATE_DATA_PATH")
-    subscribers = load_subscribers(private_data_path)
+
+    print(f"Fetching subscribers from Brevo list {BREVO_LIST_ID}...")
+    contacts = load_subscribers_from_brevo(api_client)
+    subscribers = [c.get("email") for c in contacts if c.get("email") and not c.get("emailBlacklisted")]
+    subscribers = [e for e in subscribers if e]
 
     if not subscribers:
-        print("No subscribers found. Skipping email send.")
+        print("No active subscribers found in Brevo list. Skipping email send.")
         return
 
-    print(f"Sender: {SENDER_EMAIL}")
+    print(f"Sender:  {SENDER_EMAIL}")
     print(f"Sending newsletter to {len(subscribers)} subscribers")
     print(f"Subject: {subject}")
 
     sent = 0
     failed = 0
     for email in subscribers:
-        if send_email(api_instance, email, subject, html_content):
+        if send_email(transac_api, email, subject, html_content):
             sent += 1
             masked = email[:3] + "***@" + email.split("@")[1] if "@" in email else "***"
             print(f"  [OK] {masked}")

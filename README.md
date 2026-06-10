@@ -28,13 +28,15 @@ A fully automated, zero-cost cybersecurity newsletter and static website that cu
 
 Keeping up with cybersecurity news is a firehose. Most newsletters are either manually curated (unsustainable for a solo operator) or AI-generated garbage with no editorial judgment. This project takes a different approach:
 
-- **Automated scraping** pulls from 15+ trusted security sources over a 3-day window
-- **AI-powered tournament ranking** (Google Gemini) compares articles head-to-head and tiers the best ones
+- **Automated scraping** pulls from 14+ trusted security sources over a 3-day window
+- **Embedding-based dedupe** clusters near-identical stories across feeds before LLM stage — saves tokens, avoids "the same breach summarized five times"
+- **Two-model AI pipeline**: Groq Llama 3.3 70B for fast summarization, Gemini 2.5 Pro for judgment-heavy tournament ranking. Western/allied-origin models only.
 - **Focus areas** for 5G / indoor cells, NMS / webapp management, and other enterprise-relevant topics get priority
 - **Static site + email newsletter** means readers get it however they prefer
-- **Completely free to run** using GitHub Actions, GitHub Pages, Gemini free tier, and Brevo free tier
+- **Brevo-owned subscriber list** with double opt-in, hosted signup form, and per-recipient unsubscribe — no PII ever touches this repo
+- **Completely free to run** using GitHub Actions, GitHub Pages, Groq free tier, Gemini free tier, and Brevo free tier
 
-No servers. No databases. No costs. Just a cron job and good taste in sources.
+No servers. No private repos. No databases. No costs. Just a cron job and good taste in sources.
 
 ---
 
@@ -46,16 +48,16 @@ No servers. No databases. No costs. Just a cron job and good taste in sources.
 │                                                                     │
 │  Friday 4:30 PM PT          Saturday 12:00 PM PT                    │
 │  ┌──────────────┐           ┌──────────────────┐                    │
-│  │ Initial      │           │ Mid-cycle scrape  │                    │
-│  │ Scrape       │──────────▶│ + AI summarize    │                    │
-│  │ (all sources)│           │ new articles      │                    │
+│  │ Initial      │           │ Mid-cycle scrape │                    │
+│  │ scrape       │──────────▶│ + embed dedupe + │                    │
+│  │ (all sources)│           │ Groq summarize   │                    │
 │  └──────────────┘           └────────┬─────────┘                    │
 │                                      │                              │
 │  Sunday 6:00 PM PT                   ▼          Monday 9:00 AM PT   │
 │  ┌──────────────────┐       ┌──────────────────┐                    │
-│  │ Final scrape +   │       │ Breaking news     │                    │
-│  │ Tournament rank  │──────▶│ check, build      │                    │
-│  │ (AI tiers best)  │       │ site, send email  │                    │
+│  │ Final scrape +   │       │ Breaking news    │                    │
+│  │ Gemini tournament│──────▶│ check, build     │                    │
+│  │ rank (tiers)     │       │ site, send email │                    │
 │  └──────────────────┘       └──────────────────┘                    │
 └─────────────────────────────────────────────────────────────────────┘
 ```
@@ -66,65 +68,58 @@ No servers. No databases. No costs. Just a cron job and good taste in sources.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                         PUBLIC REPO                                     │
-│                   cybersecurity-weekly                                   │
+│                              PUBLIC REPO                                │
+│                          cybersecurity-weekly                           │
 │                                                                         │
-│  ┌───────────┐  ┌───────────┐  ┌────────────┐  ┌───────────────────┐   │
-│  │  Astro    │  │  Python   │  │  Content   │  │  GitHub Actions   │   │
-│  │  Site     │  │  Scripts  │  │  (JSON)    │  │  Workflows        │   │
-│  │           │  │           │  │            │  │                   │   │
-│  │ src/      │  │ scripts/  │  │ content/   │  │ .github/          │   │
-│  │ layouts/  │  │ scrape.py │  │ weekly/    │  │  workflows/       │   │
-│  │ pages/    │  │ curate.py │  │  2026-W14/ │  │   scrape.yml      │   │
-│  │ comps/    │  │ finalize. │  │   raw.json │  │   curate.yml      │   │
-│  │           │  │   py      │  │   curated. │  │   finalize.yml    │   │
-│  │           │  │ send_     │  │    json    │  │   publish.yml     │   │
-│  │           │  │  news     │  │   final.   │  │   subscribe.yml   │   │
-│  │           │  │  letter.py│  │    json    │  │                   │   │
-│  └───────────┘  └─────┬─────┘  └─────┬──────┘  └────────┬──────────┘   │
-│                       │              │                   │              │
-│                       ▼              ▼                   │              │
-│              ┌─────────────────────────────┐             │              │
-│              │  GitHub Pages (static site) │             │              │
-│              └─────────────────────────────┘             │              │
-└─────────────────────────────────────────────────────────┬───────────────┘
+│  ┌───────────┐  ┌───────────┐  ┌────────────┐  ┌───────────────────┐    │
+│  │  Astro    │  │  Python   │  │  Content   │  │  GitHub Actions   │    │
+│  │  Site     │  │  Scripts  │  │  (JSON)    │  │  Workflows        │    │
+│  │           │  │           │  │            │  │                   │    │
+│  │ src/      │  │ scrape.py │  │ content/   │  │ friday-scrape     │    │
+│  │ layouts/  │  │ dedupe.py │  │   raw/     │  │ saturday-curate   │    │
+│  │ pages/    │  │ curate.py │  │   2026/    │  │ sunday-finalize   │    │
+│  │ comps/    │  │ finalize. │  │     w14.   │  │ monday-send       │    │
+│  │           │  │   py      │  │      json  │  │                   │    │
+│  │ Embeds    │  │ llm_      │  │ latest.    │  │                   │    │
+│  │ Brevo     │  │  client.py│  │  json      │  │                   │    │
+│  │ form      │  │ send_news │  │            │  │                   │    │
+│  │ (iframe)  │  │  letter.py│  │            │  │                   │    │
+│  └─────┬─────┘  └─────┬─────┘  └─────┬──────┘  └────────┬──────────┘    │
+│        │              │              │                   │              │
+│        ▼              ▼              ▼                   │              │
+│  ┌──────────────────────────────────────────┐            │              │
+│  │       GitHub Pages (static site)         │            │              │
+│  └──────────────────────────────────────────┘            │              │
+└─────────────────────────────────────────────────────────┼───────────────┘
                                                           │
-                    ┌─────────────────────────────────────┘
-                    │
-                    ▼
+                                                          ▼
 ┌─────────────────────────────────────────────────────────────────────────┐
-│                     PRIVATE DATA STORE                                  │
-│              (separate private GitHub repo)                              │
+│                          EXTERNAL SERVICES                              │
 │                                                                         │
-│  Only stores subscriber email addresses.                                │
-│  Accessed via GitHub PAT from the public repo's Actions.                │
-│  Name and location configured via GitHub Secrets.                       │
-└─────────────────────────────────────────────────────────────────────────┘
-
-┌─────────────────────────────────────────────────────────────────────────┐
-│                       EXTERNAL SERVICES                                 │
-│                                                                         │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────────────────────┐   │
-│  │ Google       │  │ Brevo        │  │ RSS Feeds / Security Blogs   │   │
-│  │ Gemini API   │  │ (email)      │  │ (public internet)            │   │
-│  │ (free tier)  │  │ (free tier)  │  │                              │   │
-│  └──────────────┘  └──────────────┘  └──────────────────────────────┘   │
+│  ┌────────────┐  ┌────────────┐  ┌────────────┐  ┌──────────────────┐   │
+│  │ Groq       │  │ Google     │  │ Brevo      │  │ RSS / Security   │   │
+│  │ Llama 3.3  │  │ Gemini 2.5 │  │ - List     │  │ Blogs            │   │
+│  │ (summarize)│  │ (rank)     │  │ - Form     │  │ (public)         │   │
+│  │ free tier  │  │ free tier  │  │ - Send     │  │                  │   │
+│  └────────────┘  └────────────┘  │ free tier  │  └──────────────────┘   │
+│                                  └────────────┘                          │
 │                                                                         │
 │  All API keys stored as GitHub Secrets — never in code.                 │
+│  Subscriber list lives entirely inside Brevo — never in this repo.      │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Why Two Repos?
+### Why one repo (and no PII)?
 
 | Concern | Where It Lives | Why |
 |---|---|---|
-| All source code, scripts, site | **Public repo** | Open source, transparent, forkable |
-| Architecture, pipeline docs | **Public repo** | Not sensitive — the code *is* the architecture |
-| Subscriber email addresses | **Separate private repo** | PII must never be in a public repo |
-| API keys (Gemini, Brevo, PAT) | **GitHub Secrets** | Never committed to *any* repo |
-| Private repo name & location | **GitHub Secrets** | Not exposed in code or docs |
+| All source code, scripts, site | **This repo** | Open source, transparent, forkable |
+| Architecture, pipeline docs | **This repo** | Not sensitive — the code *is* the architecture |
+| Subscriber emails | **Brevo** | Brevo owns the full subscriber lifecycle: signup form, double opt-in, list storage, unsubscribe, bounce handling |
+| API keys (Groq, Gemini, Brevo) | **GitHub Secrets** | Never committed to any repo |
+| Brevo list ID, form URL, sender | **GitHub Secrets / Variables** | Build-time config, not exposed in source |
 
-The private data store is intentionally minimal — just a file with email addresses, nothing else. If you fork this project, you create your own private repo (name it whatever you want) and configure it via GitHub Secrets.
+No PII ever lands in this repo. The Monday sender reads the active subscriber list from Brevo via the Contacts API and ships transactional emails with `List-Unsubscribe` headers so email clients can render a native unsubscribe button.
 
 ---
 
@@ -134,12 +129,25 @@ Each week, four GitHub Actions workflows run on a fixed schedule:
 
 | # | When (Pacific) | When (UTC) | Workflow | What Happens |
 |---|---|---|---|---|
-| 1 | **Friday 4:30 PM** | Fri 23:30 | `scrape.yml` | Scrape all RSS feeds and source sites. Store raw articles in `content/weekly/YYYY-WNN/raw.json`. |
-| 2 | **Saturday 12:00 PM** | Sat 19:00 | `curate.yml` | Re-scrape for new articles. Send all articles to Gemini for summarization and relevance scoring. Output `curated.json`. |
-| 3 | **Sunday 6:00 PM** | Mon 01:00 | `finalize.yml` | Final scrape. Gemini runs **tournament ranking**: articles are compared head-to-head, then assigned to priority tiers. Output `final.json`. |
-| 4 | **Monday 9:00 AM** | Mon 16:00 | `publish.yml` | Emergency check for breaking news (last 12 hours). Build the Astro static site. Deploy to GitHub Pages. Send newsletter via Brevo. |
+| 1 | **Friday 4:30 PM** | Fri 23:30 | `friday-scrape.yml` | Scrape all RSS feeds. Store raw articles in `content/raw/`. |
+| 2 | **Saturday 12:00 PM** | Sat 19:00 | `saturday-curate.yml` | Re-scrape for new articles. **Embedding-dedupe** near-identical titles, send canonical articles to **Groq Llama 3.3 70B** for summarization + relevance scoring. Output `*-curated.json`. |
+| 3 | **Sunday 6:00 PM** | Mon 01:00 | `sunday-finalize.yml` | Final scrape. **Gemini 2.5 Pro** runs **tournament ranking**: articles are compared head-to-head, then assigned to priority tiers. Output the year's `wNN.json` edition file. |
+| 4 | **Monday 9:00 AM** | Mon 16:00 | `monday-send.yml` | Emergency check for breaking news. Build the Astro static site. Deploy to GitHub Pages. Pull subscribers from Brevo list and send the newsletter. |
 
 All content at every stage is committed to the repo as JSON, so you can audit exactly what the AI saw, ranked, and published.
+
+### Two-model split
+
+The pipeline uses two different LLMs deliberately:
+
+- **Groq Llama 3.3 70B Versatile** for **summarization** — fast (~500 tok/s), free, US-origin (Meta). The summarize-and-tag stage is mostly extraction and doesn't need deep judgment.
+- **Gemini 2.5 Pro** for **tournament ranking + Monday emergency check** — judgment-heavy "which of these stories matters more" comparisons benefit from a stronger reasoner.
+
+Both backends share a common `llm_client.py` with a fallback chain — if the primary backend is rate-limited or down, the other takes over automatically. **Only Western/allied-origin models are used** (Meta Llama, Google Gemini). No Chinese-origin LLMs anywhere in the pipeline, even when offered free via aggregators.
+
+### Embedding dedupe
+
+Before any LLM call, the curator embeds article titles with `sentence-transformers/all-MiniLM-L6-v2` (runs locally, no API) and clusters anything with cosine similarity ≥ 0.78. Each cluster collapses to a single canonical article (highest-weight source wins). This typically cuts the article volume sent to the LLM by 30–50%, since the same breach often shows up across Krebs, BleepingComputer, THN, and Dark Reading in the same week.
 
 ### Tournament Ranking
 
@@ -148,7 +156,7 @@ The Sunday finalization step uses a tournament-style comparison rather than aski
 - Severity and real-world impact
 - Relevance to focus areas (5G, indoor cells, NMS/webapp management)
 - Novelty (is this actually new, or a rehash?)
-- Source credibility
+- Source credibility (weighted in `sources.json`)
 
 Winners advance. The final ranked list is split into tiers for the newsletter.
 
@@ -156,27 +164,26 @@ Winners advance. The final ranked list is split into tiers for the newsletter.
 
 ## News Sources
 
-Feeds and sites scraped weekly:
+Feeds and sites scraped weekly (each with a `weight` in `scripts/sources.json` used as a tournament tiebreaker):
 
 | Source | Type | URL |
 |---|---|---|
-| **Security Now (GRC)** | Podcast show notes | grc.com |
 | **Krebs on Security** | Blog / RSS | krebsonsecurity.com |
 | **The Hacker News** | News / RSS | thehackernews.com |
 | **BleepingComputer** | News / RSS | bleepingcomputer.com |
 | **Dark Reading** | News / RSS | darkreading.com |
 | **CISA Advisories** | Government / RSS | cisa.gov |
 | **Ars Technica Security** | News / RSS | arstechnica.com/security |
+| **Security Now (GRC)** | Podcast show notes | grc.com |
 | **CrowdStrike Blog** | Vendor | crowdstrike.com/blog |
-| **Mandiant (Google Cloud)** | Vendor | cloud.google.com/blog/topics/threat-intelligence |
-| **Unit 42 (Palo Alto)** | Vendor | unit42.paloaltonetworks.com |
+| **Google Threat Intelligence** | Vendor | cloud.google.com/blog/topics/threat-intelligence |
+| **Palo Alto Unit 42** | Vendor | unit42.paloaltonetworks.com |
+| **Sophos News** | Vendor | news.sophos.com |
+| **Recorded Future** | News / RSS | recordedfuture.com |
 | **Schneier on Security** | Blog / RSS | schneier.com |
-| **The Record (Recorded Future)** | News / RSS | therecord.media |
-| **Risky Business** | Podcast / RSS | risky.biz |
 | **SANS Internet Storm Center** | Diary / RSS | isc.sans.edu |
-| **Qualys Threat Research** | Vendor | blog.qualys.com |
 
-Adding a source is as simple as adding an entry to `scripts/sources.json`.
+Adding a source is as simple as adding an entry to `scripts/sources.json` (include a `weight` between 0.5 and 2.0).
 
 ---
 
@@ -198,19 +205,17 @@ The newsletter template gives Tier 1 stories full summaries with analysis, Tier 
 
 ```
 ┌──────────────┐     ┌──────────────────────┐     ┌───────────────────┐
-│ User opens a │     │ subscribe.yml        │     │ Private data      │
-│ GitHub Issue │────▶│ workflow triggers     │────▶│ store: appends    │
-│ with email   │     │                      │     │ email to list     │
-│ in body      │     │ 1. Extract email     │     └───────────────────┘
-└──────────────┘     │ 2. Push to private   │
-                     │    repo via PAT      │
-                     │ 3. Redact issue body │
-                     │ 4. Close issue with  │
-                     │    confirmation      │
+│ User submits │     │ Brevo hosted form    │     │ Brevo contact     │
+│ email on the │────▶│ (sibforms.com)       │────▶│ list (active)     │
+│ site         │     │                      │     │                   │
+│ (iframe)     │     │ 1. Double opt-in     │     │ Read-only access  │
+└──────────────┘     │    email sent        │     │ from Monday job   │
+                     │ 2. User confirms     │     │ via Brevo API     │
+                     │ 3. Added to list     │     └───────────────────┘
                      └──────────────────────┘
 ```
 
-The user's email is **never visible** in the public repo — the workflow redacts the issue body immediately and replaces it with a "You're subscribed!" message. The actual email is written only to the private data store.
+The signup form is a Brevo-hosted page embedded as an iframe (`PUBLIC_BREVO_FORM_URL`). The user's email **never touches this repo** — it goes straight from the form into Brevo's contact list. Double opt-in is enabled, so spurious or malicious submissions never confirm. Unsubscribe is handled by Brevo's per-recipient unsubscribe URL plus the `List-Unsubscribe` header in each email (renders as a native button in Gmail, Apple Mail, etc.).
 
 ---
 
@@ -220,11 +225,12 @@ The user's email is **never visible** in the public repo — the workflow redact
 |---|---|---|
 | **Static site** | [Astro](https://astro.build) + [Tailwind CSS](https://tailwindcss.com) | Fast, zero-JS by default, great for content sites |
 | **Scraping & curation** | Python 3.12+ | `feedparser` for RSS, `httpx` for HTTP, `beautifulsoup4` for HTML parsing |
-| **AI summarization & ranking** | [Google Gemini API](https://ai.google.dev) (free tier) | 15 RPM / 1M tokens/day free — more than enough for weekly curation |
-| **Email delivery** | [Brevo](https://brevo.com) (free tier) | 300 emails/day free, REST API, no credit card required |
+| **Embedding dedupe** | `sentence-transformers/all-MiniLM-L6-v2` | Runs locally during Actions run — no API, no key |
+| **AI summarization** | [Groq](https://console.groq.com) Llama 3.3 70B (free tier) | 30 RPM / 14.4k RPD — vastly more than the pipeline needs |
+| **AI ranking** | [Google Gemini](https://ai.google.dev) 2.5 Pro (free tier) | 15 RPM / 1k RPD — fine for ~20 ranking calls/week |
+| **Email + subscriber list** | [Brevo](https://brevo.com) (free tier) | 300 emails/day, unlimited contacts, hosted signup form with double opt-in |
 | **Hosting** | [GitHub Pages](https://pages.github.com) | Free, auto-deploys from Actions, custom domain support |
 | **Automation** | [GitHub Actions](https://github.com/features/actions) | 2,000 free minutes/month, cron scheduling, secrets management |
-| **Subscriber storage** | Separate private GitHub repo | Free, version-controlled, no database needed |
 
 **Total running cost: $0/month** (within free tier limits for a newsletter under 300 subscribers).
 
@@ -235,15 +241,11 @@ The user's email is **never visible** in the public repo — the workflow redact
 ```
 cybersecurity-weekly/
 ├── .github/
-│   ├── ISSUE_TEMPLATE/
-│   │   ├── subscribe.yml           # Subscribe form template
-│   │   └── unsubscribe.yml         # Unsubscribe form template
 │   └── workflows/
 │       ├── friday-scrape.yml       # Cron: Fri 4:30 PM PT — initial scrape
-│       ├── saturday-curate.yml     # Cron: Sat 12:00 PM PT — AI summarize
-│       ├── sunday-finalize.yml     # Cron: Sun 6:00 PM PT — tournament rank
-│       ├── monday-send.yml         # Cron: Mon 9:00 AM PT — deploy + send
-│       └── subscriber-handler.yml  # Event: on issue opened
+│       ├── saturday-curate.yml     # Cron: Sat 12:00 PM PT — dedupe + Groq summarize
+│       ├── sunday-finalize.yml     # Cron: Sun 6:00 PM PT — Gemini tournament rank
+│       └── monday-send.yml         # Cron: Mon 9:00 AM PT — deploy + send
 ├── src/
 │   ├── layouts/
 │   │   └── BaseLayout.astro        # HTML shell, meta tags, Tailwind
@@ -254,9 +256,9 @@ cybersecurity-weekly/
 │   │       └── [week].astro        # Dynamic archive pages
 │   └── components/
 │       ├── Header.astro            # Site header / navigation
-│       ├── Footer.astro            # Site footer
+│       ├── Footer.astro            # Site footer (Brevo unsubscribe link)
 │       ├── ArticleCard.astro       # Single article display
-│       ├── Newsletter.astro        # Subscribe CTA section
+│       ├── Newsletter.astro        # Subscribe CTA section (Brevo iframe embed)
 │       └── ArchiveSidebar.astro    # Weekly edition navigation
 ├── public/
 │   └── favicon.svg
@@ -266,15 +268,15 @@ cybersecurity-weekly/
 │   │   └── w14.json                # Finalized weekly content
 │   └── latest.json                 # Pointer to current week
 ├── scripts/
-│   ├── sources.json                # Feed URLs and source metadata
+│   ├── sources.json                # Feed URLs, source weights, metadata
 │   ├── requirements.txt            # Pinned Python dependencies
 │   ├── scrape.py                   # RSS/HTTP scraping logic
-│   ├── curate.py                   # Gemini summarization + scoring
-│   ├── finalize.py                 # Tournament ranking + tier assignment
+│   ├── dedupe.py                   # Embedding-based dedupe (sentence-transformers)
+│   ├── llm_client.py               # Provider-agnostic LLM client (Groq + Gemini)
+│   ├── curate.py                   # Dedupe + Groq summarization + scoring
+│   ├── finalize.py                 # Tournament ranking (Gemini) + tier assignment
 │   ├── monday_check.py             # Monday emergency scrape check
-│   ├── send_newsletter.py          # Brevo API email delivery
-│   ├── subscriber_handler.py       # Issue-based subscribe/unsubscribe
-│   └── setup_private_repo.sh       # One-time private repo setup script
+│   └── send_newsletter.py          # Brevo API: read list + send transactional
 ├── templates/
 │   └── email.html                  # Jinja2 email template
 ├── astro.config.mjs
@@ -295,44 +297,35 @@ cybersecurity-weekly/
 
 - Node.js 20+
 - Python 3.12+
-- A [Google AI Studio](https://aistudio.google.com) account (for Gemini API key)
-- A [Brevo](https://brevo.com) account (for email sending)
-- A second **private** GitHub repository (for subscriber storage)
+- A [Groq](https://console.groq.com) account (for summarization)
+- A [Google AI Studio](https://aistudio.google.com) account (for ranking)
+- A [Brevo](https://brevo.com) account (for email + subscriber list)
 
-### GitHub Secrets Required
+### GitHub Secrets + Variables Required
 
-Set these in the public repo under **Settings → Secrets and variables → Actions**:
+Set these under **Settings → Secrets and variables → Actions**.
+
+**Repository secrets:**
 
 | Secret | Description |
 |---|---|
-| `GEMINI_API_KEY` | Google Gemini API key from AI Studio |
+| `GROQ_API_KEY` | Groq API key (Llama 3.3 70B summarization) |
+| `GEMINI_API_KEY` | Google Gemini API key (tournament ranking) |
 | `BREVO_API_KEY` | Brevo REST API key |
-| `PRIVATE_REPO_TOKEN` | GitHub PAT with `repo` scope, granting access to the private data repo |
-| `PRIVATE_REPO` | Full name of your private repo (e.g. `youruser/my-data-repo`) |
-| `PRIVATE_REPO_NAME` | Just the repo name portion (e.g. `my-data-repo`) |
+| `BREVO_LIST_ID` | Numeric ID of your Brevo subscriber list |
+| `SENDER_EMAIL` | Verified Brevo sender email address |
 
-### Private Data Store Setup
+**Repository variables (non-sensitive):**
 
-1. Create a new **private** GitHub repository (name it whatever you want — the name is never exposed in this codebase)
-2. Add a single file at `subscribers/emails.json`:
+| Variable | Description |
+|---|---|
+| `SENDER_NAME` | From-name on the email (default "Cybersecurity Weekly") |
+| `SITE_URL` | Public site URL for in-email links |
+| `UNSUBSCRIBE_URL` | Goes into the `List-Unsubscribe` header on every send |
+| `PUBLIC_BREVO_FORM_URL` | Brevo hosted form URL — embedded as iframe on site |
+| `PUBLIC_BREVO_UNSUBSCRIBE_URL` | Optional — shown as "Unsubscribe" footer link |
 
-```json
-{
-  "emails": []
-}
-```
-
-3. Generate a **Personal Access Token (classic)** with `repo` scope, or a **Fine-grained PAT** scoped to the private repo with Contents (Read and write)
-4. Add these secrets to the **public** repo:
-   - `PRIVATE_REPO_TOKEN` = the PAT
-   - `PRIVATE_REPO` = full repo name (e.g. `youruser/my-data-repo`)
-   - `PRIVATE_REPO_NAME` = just the repo name (e.g. `my-data-repo`)
-
-Or use the automated setup script:
-
-```bash
-bash scripts/setup_private_repo.sh <your-repo-name>
-```
+See [SETUP.md](SETUP.md) for the full step-by-step (5-minute) Brevo configuration.
 
 ---
 
@@ -342,6 +335,9 @@ bash scripts/setup_private_repo.sh <your-repo-name>
 
 ```bash
 npm install
+# Set the Brevo form URL so the subscribe section renders the iframe
+export PUBLIC_BREVO_FORM_URL="https://sibforms.com/serve/YOUR_ID"
+export PUBLIC_BREVO_UNSUBSCRIBE_URL="https://your-unsub-page"
 npm run dev          # http://localhost:4321
 npm run build        # Production build to dist/
 ```
@@ -362,8 +358,11 @@ python scripts/finalize.py
 Set environment variables locally for testing:
 
 ```bash
+export GROQ_API_KEY="your-key-here"
 export GEMINI_API_KEY="your-key-here"
 export BREVO_API_KEY="your-key-here"
+export BREVO_LIST_ID="123"
+export SENDER_EMAIL="newsletter@yourdomain.com"
 ```
 
 ---
@@ -373,16 +372,16 @@ export BREVO_API_KEY="your-key-here"
 This project is designed to be forkable. If you want to run your own cybersecurity newsletter:
 
 1. Fork this repo
-2. Create your own private subscriber repo
-3. Set up the required GitHub Secrets
-4. Customize `scripts/sources.json` with your preferred feeds
+2. Create a Brevo list + signup form (see [SETUP.md](SETUP.md))
+3. Set up the required GitHub Secrets + Variables
+4. Customize `scripts/sources.json` with your preferred feeds (and per-source `weight`)
 5. Edit the Astro templates to match your branding
 6. The pipeline runs itself every week
 
 ### Ways to contribute to *this* instance:
 
-- **Add news sources**: Submit a PR adding entries to `scripts/sources.json`
-- **Improve ranking prompts**: The Gemini prompts in `scripts/curate.py` and `scripts/finalize.py` can always be tuned
+- **Add news sources**: Submit a PR adding entries to `scripts/sources.json` (include a `weight` between 0.5 and 2.0)
+- **Improve prompts**: The summarization prompt in `scripts/curate.py` and the ranking prompt in `scripts/finalize.py` can always be tuned
 - **Site design**: UI/UX improvements to the Astro site
 - **Bug fixes**: If a feed parser breaks or an edge case appears in the pipeline
 - **Documentation**: Clarifications, typo fixes, better diagrams
@@ -395,4 +394,4 @@ This project is designed to be forkable. If you want to run your own cybersecuri
 
 You can read, use, modify, and share this code for personal, academic, or nonprofit purposes at no cost. If you or your organization make money from it (selling it, running it as a service, using it in a commercial product), you need a commercial license agreement with revenue sharing. See [LICENSE](LICENSE) for the full legal text.
 
-Copyright (c) 2026 Vishaka Datta Jamba Ehebbar
+Copyright (c) 2026 Vishakadatta Jambae Hebbar

@@ -2,71 +2,85 @@
   {
     "name": "Krebs on Security",
     "url": "https://krebsonsecurity.com/feed/",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.5
   },
   {
     "name": "The Hacker News",
     "url": "https://feeds.feedburner.com/TheHackersNews",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.0
   },
   {
     "name": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/feed/",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.2
   },
   {
     "name": "Dark Reading",
     "url": "https://www.darkreading.com/rss.xml",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.0
   },
   {
     "name": "CISA Advisories",
     "url": "https://www.cisa.gov/news.xml",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.5
   },
   {
     "name": "Ars Technica Security",
     "url": "https://feeds.arstechnica.com/arstechnica/technology-lab",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.0
   },
   {
     "name": "Security Now (GRC)",
     "url": "https://feeds.twit.tv/sn.xml",
-    "type": "rss"
+    "type": "rss",
+    "weight": 0.9
   },
   {
     "name": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/blog/feed/",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.1
   },
   {
     "name": "Google Threat Intelligence",
     "url": "https://cloud.google.com/blog/topics/threat-intelligence/rss/",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.3
   },
   {
     "name": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/feed/",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.2
   },
   {
     "name": "Sophos News",
     "url": "https://news.sophos.com/en-us/category/threat-research/feed/",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.0
   },
   {
     "name": "Recorded Future",
     "url": "https://www.recordedfuture.com/feed",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.1
   },
   {
     "name": "Schneier on Security",
     "url": "https://www.schneier.com/feed/atom/",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.2
   },
   {
     "name": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/rssfeed.xml",
-    "type": "rss"
+    "type": "rss",
+    "weight": 1.1
   }
 ]
