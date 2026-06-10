@@ -1,0 +1,354 @@
+name: Weekly pipeline
+
+# The entire 4-stage weekly pipeline lives in ONE file. Each cron schedule
+# selects which stage to run; manual dispatch lets you pick any stage or
+# the whole sequence end-to-end. Stages are jobs in this file — they share
+# the same checkout and the same concurrency group.
+#
+# Stages:
+#   scrape    — Friday 4:30 PM PT      (RSS → content/raw/)
+#   curate    — Saturday 12:00 PM PT   (dedupe + Maverick discovery + summarize)
+#   finalize  — Sunday 6:00 PM PT      (Maverick tournament rank + write edition)
+#   send      — Monday 9:00 AM PT      (emergency check + deploy site + send email)
+
+on:
+  schedule:
+    - cron: "30 23 * * 5"   # Fri 23:30 UTC = Fri 16:30 PT → scrape
+    - cron: "0 19 * * 6"    # Sat 19:00 UTC = Sat 12:00 PT → curate
+    - cron: "0 1 * * 1"     # Mon 01:00 UTC = Sun 18:00 PT → finalize
+    - cron: "0 16 * * 1"    # Mon 16:00 UTC = Mon 09:00 PT → send
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: Stage to run
+        required: true
+        default: scrape
+        type: choice
+        options:
+          - scrape
+          - curate
+          - finalize
+          - send
+          - all   # runs scrape→curate→finalize→send in one go
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  issues: write
+
+concurrency:
+  group: pipeline
+  cancel-in-progress: false
+
+env:
+  PYTHON_VERSION: "3.12"
+  NODE_VERSION: "20"
+
+jobs:
+  # ─────────────────────────────────────────────────────────────────────────
+  # Router: figure out which stage(s) to run.
+  # ─────────────────────────────────────────────────────────────────────────
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      stage: ${{ steps.pick.outputs.stage }}
+      run_scrape:   ${{ steps.pick.outputs.run_scrape }}
+      run_curate:   ${{ steps.pick.outputs.run_curate }}
+      run_finalize: ${{ steps.pick.outputs.run_finalize }}
+      run_send:     ${{ steps.pick.outputs.run_send }}
+    steps:
+      - id: pick
+        run: |
+          # Map cron schedule string → stage name. Manual dispatch overrides.
+          if [ -n "${{ inputs.stage }}" ]; then
+            stage="${{ inputs.stage }}"
+          else
+            case "${{ github.event.schedule }}" in
+              "30 23 * * 5") stage="scrape" ;;
+              "0 19 * * 6")  stage="curate" ;;
+              "0 1 * * 1")   stage="finalize" ;;
+              "0 16 * * 1")  stage="send" ;;
+              *)             stage="scrape" ;;
+            esac
+          fi
+          echo "stage=$stage" >> "$GITHUB_OUTPUT"
+          # "all" runs every stage in sequence
+          if [ "$stage" = "all" ]; then
+            echo "run_scrape=true"   >> "$GITHUB_OUTPUT"
+            echo "run_curate=true"   >> "$GITHUB_OUTPUT"
+            echo "run_finalize=true" >> "$GITHUB_OUTPUT"
+            echo "run_send=true"     >> "$GITHUB_OUTPUT"
+          else
+            for s in scrape curate finalize send; do
+              if [ "$s" = "$stage" ]; then
+                echo "run_${s}=true"  >> "$GITHUB_OUTPUT"
+              else
+                echo "run_${s}=false" >> "$GITHUB_OUTPUT"
+              fi
+            done
+          fi
+          echo "▶ Selected stage: $stage"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Stage 1: scrape
+  # ─────────────────────────────────────────────────────────────────────────
+  scrape:
+    needs: plan
+    if: needs.plan.outputs.run_scrape == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - run: pip install -r scripts/requirements.txt
+      - name: Scrape
+        run: python scripts/scrape.py
+      - name: Commit raw data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/raw/ content/latest.json
+          git diff --cached --quiet || git commit -m "chore(pipeline): scrape $(date -u +'%Y-%m-%d')"
+          git push
+      - name: Summary
+        if: always()
+        run: echo "## Scrape complete" >> "$GITHUB_STEP_SUMMARY"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Stage 2: curate (dedupe + Maverick discovery + summarize)
+  # ─────────────────────────────────────────────────────────────────────────
+  curate:
+    needs: [plan, scrape]
+    if: |
+      always() && needs.plan.outputs.run_curate == 'true' &&
+      (needs.scrape.result == 'success' || needs.scrape.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: Cache sentence-transformers model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-minilm-l6-v2-v1
+      - run: pip install -r scripts/requirements.txt
+      - name: Re-scrape for any new articles
+        run: python scripts/scrape.py
+      - name: Curate (dedupe + Maverick discover + summarize)
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_DELAY_SECONDS: "3"
+        run: python scripts/curate.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/raw/ content/latest.json
+          git diff --cached --quiet || git commit -m "chore(pipeline): curate $(date -u +'%Y-%m-%d')"
+          git push
+      - name: Summary
+        if: always()
+        run: echo "## Curate complete" >> "$GITHUB_STEP_SUMMARY"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Stage 3: finalize (Maverick tournament ranking)
+  # ─────────────────────────────────────────────────────────────────────────
+  finalize:
+    needs: [plan, curate]
+    if: |
+      always() && needs.plan.outputs.run_finalize == 'true' &&
+      (needs.curate.result == 'success' || needs.curate.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - name: Cache sentence-transformers model
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: hf-minilm-l6-v2-v1
+      - run: pip install -r scripts/requirements.txt
+      - name: Final scrape for weekend news
+        run: python scripts/scrape.py
+      - name: Re-curate any new articles
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_DELAY_SECONDS: "3"
+        run: python scripts/curate.py
+      - name: Tournament rank + write edition
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_DELAY_SECONDS: "10"
+          SITE_URL: ${{ vars.SITE_URL }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
+        run: python scripts/finalize.py
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/
+          git diff --cached --quiet || git commit -m "chore(pipeline): finalize $(date -u +'%Y-%m-%d')"
+          git push
+      - name: Summary
+        if: always()
+        run: echo "## Finalize complete" >> "$GITHUB_STEP_SUMMARY"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Stage 4a: emergency check (runs before send + deploy)
+  # ─────────────────────────────────────────────────────────────────────────
+  emergency_check:
+    needs: [plan, finalize]
+    if: |
+      always() && needs.plan.outputs.run_send == 'true' &&
+      (needs.finalize.result == 'success' || needs.finalize.result == 'skipped')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      head_sha: ${{ steps.head.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - run: pip install -r scripts/requirements.txt
+      - name: Monday emergency check
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LLM_DELAY_SECONDS: "10"
+          SITE_URL: ${{ vars.SITE_URL }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
+        run: python scripts/monday_check.py
+      - name: Commit any emergency updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/
+          git diff --cached --quiet || git commit -m "chore(pipeline): emergency update $(date -u +'%Y-%m-%d')"
+          git push
+      - id: head
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Stage 4b: send newsletter via Brevo
+  # ─────────────────────────────────────────────────────────────────────────
+  send_newsletter:
+    needs: emergency_check
+    if: needs.emergency_check.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.emergency_check.outputs.head_sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+      - run: pip install -r scripts/requirements.txt
+      - name: Send via Brevo
+        env:
+          BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
+          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
+          SENDER_NAME: ${{ vars.SENDER_NAME }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
+        run: python scripts/send_newsletter.py
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Stage 4c: deploy Astro site to GitHub Pages
+  # ─────────────────────────────────────────────────────────────────────────
+  deploy_site:
+    needs: emergency_check
+    if: needs.emergency_check.result == 'success'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.emergency_check.outputs.head_sha }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: npm
+      - run: npm ci
+      - name: Build Astro site
+        env:
+          ASTRO_TELEMETRY_DISABLED: 1
+          PUBLIC_BREVO_FORM_URL: ${{ vars.PUBLIC_BREVO_FORM_URL }}
+          PUBLIC_BREVO_UNSUBSCRIBE_URL: ${{ vars.PUBLIC_BREVO_UNSUBSCRIBE_URL }}
+        run: npx astro build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Failure notifier — opens one GitHub issue per failed scheduled run.
+  # ─────────────────────────────────────────────────────────────────────────
+  notify_failure:
+    needs: [plan, scrape, curate, finalize, emergency_check, send_newsletter, deploy_site]
+    if: always() && failure() && github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const stage = `${{ needs.plan.outputs.stage }}`;
+            const run = `https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const results = [
+              `scrape: ${{ needs.scrape.result }}`,
+              `curate: ${{ needs.curate.result }}`,
+              `finalize: ${{ needs.finalize.result }}`,
+              `emergency_check: ${{ needs.emergency_check.result }}`,
+              `send_newsletter: ${{ needs.send_newsletter.result }}`,
+              `deploy_site: ${{ needs.deploy_site.result }}`,
+            ].join('\n');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[pipeline] ${stage} failed (${new Date().toISOString().slice(0,10)})`,
+              labels: ['pipeline-failure', 'urgent'],
+              body: [
+                `**Weekly pipeline failed at stage: \`${stage}\`.**`,
+                '',
+                `Run: ${run}`,
+                '',
+                '```',
+                results,
+                '```',
+              ].join('\n'),
+            });
