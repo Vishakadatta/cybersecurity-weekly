@@ -742,9 +742,6 @@
     "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-ivanti-sentry-flaw-allows-code-execution-as-root/",
     "publishedDate": "2026-06-10T02:26:28-04:00",
     "scrapedAt": "2026-06-10T07:08:57.153140+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "Critical vulnerability in Ivanti Sentry allows code execution as root",
-    "security_topic": "vulnerability",
     "summary": "Ivanti patched a maximum-severity vulnerability in its Sentry secure mobile gateway solution, which enables remote attackers to execute code with root privileges. This flaw highlights the risks associated with secure mobile gateways and the importance of timely patching. The vulnerability could allow attackers to gain unauthorized access to sensitive data.",
     "relevance_score": 9,
     "tags": [
@@ -1706,9 +1703,6 @@
     "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
     "publishedDate": "2026-06-10T10:52:01+05:30",
     "scrapedAt": "2026-06-10T07:08:56.984030+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "Zero-day exploit in Microsoft Defender with potential for SYSTEM access",
-    "security_topic": "vulnerability",
     "summary": "A security researcher released a proof-of-concept exploit for a Microsoft Defender zero-day named RoguePlanet, which could grant SYSTEM access on updated Windows systems. The exploit is a race condition, allowing for potential SYSTEM-level access. This vulnerability highlights the ongoing risks associated with endpoint security solutions.",
     "relevance_score": 8,
     "tags": [
@@ -1726,9 +1720,6 @@
     "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/",
     "publishedDate": "2026-06-09T00:00:00-05:00",
     "scrapedAt": "2026-06-10T07:08:58.408726+00:00",
-    "discovery_score": 8.0,
-    "discovery_reason": "Microsoft patches 206 vulnerabilities, including three publicly disclosed zero-days",
-    "security_topic": "vulnerability",
     "summary": "Microsoft released its June 2026 Patch Tuesday update, patching 206 vulnerabilities, including three publicly disclosed zero-days. This update highlights the ongoing efforts to address vulnerabilities in Microsoft products and the importance of timely patching. The large number of patched vulnerabilities emphasizes the need for organizations to stay up-to-date with security updates.",
     "relevance_score": 8,
     "tags": [
@@ -2970,9 +2961,6 @@
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-technology-threat-landscape-report/",
     "publishedDate": "2026-06-09T00:00:00-05:00",
     "scrapedAt": "2026-06-10T07:08:58.408617+00:00",
-    "discovery_score": 7.0,
-    "discovery_reason": "Threat landscape report from CrowdStrike with insights on China's cyber activities",
-    "security_topic": "research",
     "summary": "CrowdStrike released its 2026 Technology Threat Landscape Report, highlighting China's increasing ambitions in fueling cyber attacks. The report likely provides insights into emerging threats and trends in the cybersecurity landscape. Understanding these trends is crucial for organizations to prepare for potential threats.",
     "relevance_score": 6,
     "tags": [

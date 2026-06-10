@@ -2,35 +2,53 @@
   "edition": "2026-06-05",
   "year": "2026",
   "editionLabel": "Jun 5 \u2013 11, 2026",
-  "generatedAt": "2026-06-10T06:26:52.679156+00:00",
-  "subjectLine": "BREAKING: Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access + More Inside",
+  "generatedAt": "2026-06-10T07:19:15.825989+00:00",
+  "subjectLine": "CISA Orders Emergency Patching + Critical 5G Flaw Exploited",
   "articles": [
     {
-      "id": "0359f2d74d508e95",
-      "title": "WinRAR Flaw Exploited by Russia-Aligned Groups to Deploy Stealers in Ukraine",
-      "summary": "Two Russia-aligned cyber attack campaigns have continued to exploit a security flaw in WinRAR to target Ukrainian organisations, almost a year after patches for the vulnerability were released.",
+      "id": "101108663e25444d",
+      "title": "New Russia-Linked GREYVIBE Group Targets Ukraine with AI-Powered Cyberattacks",
+      "summary": "A new, previously undocumented threat actor named GREYVIBE, believed to be Russian-speaking and aligned with Kremlin interests, has been actively targeting Ukraine since August 2025. The group is employing AI-powered cyberattacks, indicating a sophisticated and persistent campaign.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/winrar-flaw-exploited-by-russia-aligned-groups-to-deploy-stealers-in-ukraine.html",
+      "url": "https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html",
       "tier": 1,
-      "publishedDate": "2026-06-09T17:56:10+05:30"
-    },
-    {
-      "id": "3b3fe7c4f6a76b87",
-      "title": "Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access on Updated Windows",
-      "summary": "The anonymous security researcher going by the name Chaotic Eclipse (aka Nightmare-Eclipse) has released a proof-of-concept (PoC) exploit for yet another Microsoft Defender zero-day named RoguePlanet.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
-      "tier": 1,
-      "publishedDate": "2026-06-10T10:52:01+05:30"
+      "publishedDate": "2026-05-29T17:01:59+05:30"
     },
     {
       "id": "ed06b2949afbfd7f",
       "title": "Cisco SD-WAN Zero-Day Actively Exploited",
-      "summary": "Cisco has issued a warning about an unpatched zero-day vulnerability in its Catalyst SD-WAN Manager, which is being actively exploited in the wild. The flaw allows attackers to gain root privileges, posing a severe risk to network infrastructure management. Users are strongly advised to update their systems immediately, as no patch is currently available.",
+      "summary": "Cisco has issued a warning about an unpatched zero-day vulnerability in its Catalyst SD-WAN Manager, which is being actively exploited in the wild. The flaw allows attackers to gain root privileges, posing a severe risk to network infrastructure management.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root/",
       "tier": 1,
       "publishedDate": "2026-06-05T02:24:20-04:00"
+    },
+    {
+      "id": "2a80d7c27e5e2cb0",
+      "title": "AI Discovers 21 Zero-Days in FFmpeg; Chrome Patches Record 429 Bugs",
+      "summary": "An AI agent has identified 21 previously unknown zero-day vulnerabilities in FFmpeg, a widely used media processing library. Concurrently, Google released Chrome 149 with patches for an unprecedented 429 security bugs, highlighting the scale of vulnerabilities being discovered and addressed.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
+      "tier": 1,
+      "publishedDate": "2026-06-06T12:58:30+05:30"
+    },
+    {
+      "id": "a2fd6173618d03e3",
+      "title": "Cisco Catalyst SD-WAN Manager Vulnerability Actively Exploited",
+      "summary": "Cisco has issued a warning that a high-severity vulnerability (CVE-2026-20245) in its Catalyst SD-WAN Manager is under active exploitation. The flaw, with a CVSS score of 7.8, affects multiple deployment types, and critically, no patch is currently available.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html",
+      "tier": 1,
+      "publishedDate": "2026-06-06T09:49:28+05:30"
+    },
+    {
+      "id": "adbab8ad222f667e",
+      "title": "Chrome V8 Zero-Day Exploited in the Wild",
+      "summary": "A zero-day vulnerability in Chrome's V8 engine is being actively exploited in the wild. Google has released a security update to address the issue, highlighting the importance of keeping software up to date to prevent exploitation of zero-day vulnerabilities.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
+      "tier": 1,
+      "publishedDate": "2026-06-09T17:28:49+05:30"
     },
     {
       "id": "c29032fa40d7c7e5",
@@ -42,94 +60,22 @@
       "publishedDate": "2026-06-09T04:18:39-04:00"
     },
     {
-      "id": "101108663e25444d",
-      "title": "New Russia-Linked GREYVIBE Group Targets Ukraine with AI-Powered Cyberattacks",
-      "summary": "A new, previously undocumented threat actor named GREYVIBE, believed to be Russian-speaking and aligned with Kremlin interests, has been actively targeting Ukraine since August 2025. The group is employing AI-powered cyberattacks, indicating a sophisticated and persistent campaign.",
+      "id": "1ea85e08fd09bb53",
+      "title": "IronWorm and Miasma Worm Variants Target npm Ecosystem in Supply Chain Attacks",
+      "summary": "Multiple supply chain attacks have compromised the npm ecosystem, distributing a Rust-based information stealer and a self-spreading worm via over 50 malicious or poisoned legitimate packages. This widespread compromise of developer tools poses a significant risk to software integrity and the security of the software supply chain.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html",
-      "tier": 1,
-      "publishedDate": "2026-05-29T17:01:59+05:30"
-    },
-    {
-      "id": "84667f8f5b261a1d",
-      "title": "Palo Alto Networks PAN-OS Authentication Bypass Vulnerability Under Active Exploitation",
-      "summary": "Palo Alto Networks has issued a warning about a medium-severity authentication bypass vulnerability (CVE-2026-0257) in PAN-OS and Prisma Access that is currently being actively exploited. Attackers can leverage this flaw to establish unauthorized VPN connections, potentially leading to network compromise.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
+      "url": "https://thehackernews.com/2026/06/ironworm-and-new-miasma-worm-variant.html",
       "tier": 2,
-      "publishedDate": "2026-05-30T12:11:26+05:30"
+      "publishedDate": "2026-06-05T23:35:30+05:30"
     },
     {
-      "id": "b1de2842ac2680d3",
-      "title": "CISA Adds Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
-      "summary": "CISA has added a critical denial-of-service vulnerability (CVE-2026-28318) in SolarWinds Serv-U software to its Known Exploited Vulnerabilities catalog. The flaw is being actively exploited, making it imperative for organizations using the affected software to patch or mitigate the vulnerability immediately.",
+      "id": "6c431e403d30c1fb",
+      "title": "One-Click GitHub Attack Steals Full OAuth Tokens via VS Code",
+      "summary": "A critical vulnerability in Microsoft Visual Studio Code allows attackers to steal full GitHub OAuth tokens with a single click. This exploit enables attackers to gain read and write access to a user's repositories, including private ones, posing a significant risk to developers.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+      "url": "https://thehackernews.com/2026/06/one-click-github-dev-attack-lets.html",
       "tier": 2,
-      "publishedDate": "2026-06-06T13:44:31+05:30"
-    },
-    {
-      "id": "aea883acd7ae8538",
-      "title": "HTTP/2 Bomb Vulnerability Causes Remote DoS on Major Web Servers",
-      "summary": "A newly discovered HTTP/2 vulnerability, dubbed 'HTTP/2 Bomb,' enables remote denial-of-service (DoS) attacks against major web servers like NGINX, Apache, IIS, Envoy, and Cloudflare. The vulnerability exploits default configurations, potentially disrupting critical online services.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/new-http2-bomb-vulnerability-allows.html",
-      "tier": 2,
-      "publishedDate": "2026-06-03T14:03:35+05:30"
-    },
-    {
-      "id": "2b6030b62913c3c6",
-      "title": "Miasma Worm Attacks 73 Microsoft GitHub Repositories",
-      "summary": "Microsoft's GitHub repositories have been compromised by the Miasma supply chain attack, impacting 73 repositories across several organizations including Azure and MicrosoftDocs. GitHub has disabled access to the affected repositories due to the self-replicating nature of the worm.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html",
-      "tier": 2,
-      "publishedDate": "2026-06-06T12:28:04+05:30"
-    },
-    {
-      "id": "895c12ae9307a3ce",
-      "title": "Adaptive, Agentic AI Worms Predicted as Next Enterprise Threat",
-      "summary": "Researchers warn that adaptive and agentic AI worms, described as 'viruses with wings and brains,' pose a significant future threat to enterprises. These advanced malware variants are expected to emerge within the next year, capable of self-adaptation and autonomous propagation.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/cyber-risk/adaptive-agentic-ai-worms-enterprise-cyber-threat",
-      "tier": 3,
-      "publishedDate": "2026-06-05T14:40:11+00:00"
-    },
-    {
-      "id": "0ad1d907028712ff",
-      "title": "AI Accelerates Vulnerability Exploitation, Threatening Traditional Management",
-      "summary": "The increasing speed of AI-driven vulnerability exploitation is drastically shrinking the window between disclosure and weaponization, making traditional vulnerability management strategies obsolete. Organizations must adapt to this new reality where threats can be weaponized within hours, necessitating a shift to proactive and automated defense mechanisms.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/ai-driven-exploitation-is-destroying.html",
-      "tier": 3,
-      "publishedDate": "2026-06-02T17:28:00+05:30"
-    },
-    {
-      "id": "31f72fbd2254448b",
-      "title": "One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public",
-      "summary": "A Linux kernel use-after-free vulnerability has been published, allowing an unprivileged local user to escalate to root and break out of a container. The flaw was patched upstream, but exploits are now publicly available. This vulnerability highlights the ongoing risks in the Linux kernel.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/one-character-linux-kernel-flaw-enables.html",
-      "tier": 3,
-      "publishedDate": "2026-06-09T01:47:39+05:30"
-    },
-    {
-      "id": "7bb9c959c78254fd",
-      "title": "Veeam Backup & Replication RCE Flaw Lets Domain Users Run Remote Code",
-      "summary": "A critical vulnerability was discovered in Veeam's Backup & Replication software, allowing remote code execution by authenticated domain users. This flaw has a CVSS score of 9.4 and highlights the importance of securing backup and replication systems to prevent potential attacks.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/veeam-backup-replication-rce-flaw-lets.html",
-      "tier": 3,
-      "publishedDate": "2026-06-09T22:09:47+05:30"
-    },
-    {
-      "id": "adbab8ad222f667e",
-      "title": "Chrome V8 Zero-Day Exploited in the Wild",
-      "summary": "A zero-day vulnerability in Chrome's V8 engine is being actively exploited in the wild. Google has released a security update to address the issue, highlighting the importance of keeping software up to date to prevent exploitation of zero-day vulnerabilities.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
-      "tier": 3,
-      "publishedDate": "2026-06-09T17:28:49+05:30"
+      "publishedDate": "2026-06-03T23:28:00+05:30"
     }
   ]
 }
