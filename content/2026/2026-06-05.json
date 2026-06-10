@@ -2,9 +2,27 @@
   "edition": "2026-06-05",
   "year": "2026",
   "editionLabel": "Jun 5 \u2013 11, 2026",
-  "generatedAt": "2026-06-10T06:21:11.430410+00:00",
-  "subjectLine": "Critical Cisco SD-WAN Zero-Day, CISA Orders VPN Patch, AI-Powered Cyberattacks & Worms",
+  "generatedAt": "2026-06-10T06:26:52.679156+00:00",
+  "subjectLine": "BREAKING: Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access + More Inside",
   "articles": [
+    {
+      "id": "0359f2d74d508e95",
+      "title": "WinRAR Flaw Exploited by Russia-Aligned Groups to Deploy Stealers in Ukraine",
+      "summary": "Two Russia-aligned cyber attack campaigns have continued to exploit a security flaw in WinRAR to target Ukrainian organisations, almost a year after patches for the vulnerability were released.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/winrar-flaw-exploited-by-russia-aligned-groups-to-deploy-stealers-in-ukraine.html",
+      "tier": 1,
+      "publishedDate": "2026-06-09T17:56:10+05:30"
+    },
+    {
+      "id": "3b3fe7c4f6a76b87",
+      "title": "Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access on Updated Windows",
+      "summary": "The anonymous security researcher going by the name Chaotic Eclipse (aka Nightmare-Eclipse) has released a proof-of-concept (PoC) exploit for yet another Microsoft Defender zero-day named RoguePlanet.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
+      "tier": 1,
+      "publishedDate": "2026-06-10T10:52:01+05:30"
+    },
     {
       "id": "ed06b2949afbfd7f",
       "title": "Cisco SD-WAN Zero-Day Actively Exploited",
