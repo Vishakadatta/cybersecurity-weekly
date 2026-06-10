@@ -77,6 +77,39 @@
     ]
   },
   {
+    "id": "adbab8ad222f667e",
+    "title": "Chrome V8 Zero-Day Exploited in the Wild",
+    "summary_raw": "Google has released security updates to address 74 vulnerabilities, including one that has come under active exploitation in the wild.\n\nThe high-severity vulnerability, tracked as CVE-2026-11645 (CVSS score: 8.8), has been described as an out-of-bounds memory access in V8, Chrome's JavaScript and WebAssembly engine.\n\n\"Out-of-bounds read and write in V8 in Google Chrome prior to 149.0.7827.103",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
+    "publishedDate": "2026-06-09T17:28:49+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710030+00:00",
+    "summary": "A zero-day vulnerability in Chrome's V8 engine is being actively exploited in the wild. Google has released a security update to address the issue, highlighting the importance of keeping software up to date to prevent exploitation of zero-day vulnerabilities.",
+    "relevance_score": 10,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Chrome"
+    ]
+  },
+  {
+    "id": "c29032fa40d7c7e5",
+    "title": "CISA Orders US Agencies to Patch Check Point VPN Bug",
+    "summary_raw": "CISA has ordered U.S. government agencies to secure their Check Point Remote Access VPN and Mobile Access deployments against a critical vulnerability exploited in zero-day attacks by Qilin ransomware affiliates. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-check-point-flaw-exploited-by-ransomware-gangs/",
+    "publishedDate": "2026-06-09T04:18:39-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.794388+00:00",
+    "summary": "CISA has given US government agencies three days to patch a critical vulnerability in Check Point's Remote Access VPN and Mobile Access deployments. The flaw is being exploited by Qilin ransomware affiliates in zero-day attacks. Prompt action is required to prevent further attacks.",
+    "relevance_score": 10,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "ransomware",
+      "VPN"
+    ]
+  },
+  {
     "id": "1ea85e08fd09bb53",
     "title": "IronWorm and Miasma Worm Variants Target npm Ecosystem in Supply Chain Attacks",
     "summary_raw": "Multiple software supply chain attacks have hit the npm ecosystem, with threat actors using both malicious and poisoned versions of over 50 legitimate packages to distribute a Rust-based information stealer and a self-spreading worm, respectively.\n\nAccording to JFrog, the information stealer \"scrapes every secret it can find on a developer's machine, hides behind an eBPF kernel rootkit, and",
@@ -521,6 +554,168 @@
       "GitHub",
       "malware",
       "repository-compromise"
+    ]
+  },
+  {
+    "id": "85f025df1a492ade",
+    "title": "Proto6 Vulnerabilities in Protobuf.js Expose Node.js Apps to RCE and DoS",
+    "summary_raw": "Cybersecurity researchers have flagged half a dozen vulnerabilities in protobuf.js, a JavaScript and TypeScript implementation of Protocol Buffers (Protobuf), that, if successfully exploited, could result in remote code execution (RCE) and denial-of-service (DoS) attacks.\n\n\"In affected environments, a single malicious protobuf schema, descriptor, or crafted payload could be enough to trigger",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/six-proto6-vulnerabilities-in.html",
+    "publishedDate": "2026-06-10T10:38:35+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.709504+00:00",
+    "summary": "Six vulnerabilities were discovered in protobuf.js, a JavaScript and TypeScript implementation of Protocol Buffers, which could lead to remote code execution and denial-of-service attacks. A single malicious protobuf schema or payload could trigger these attacks. This highlights the need for secure coding practices and regular security audits.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "RCE",
+      "DoS",
+      "Node.js"
+    ]
+  },
+  {
+    "id": "7bb9c959c78254fd",
+    "title": "Veeam Backup & Replication RCE Flaw Lets Domain Users Run Remote Code",
+    "summary_raw": "Veeam has released security patches to address a critical flaw in its Backup &amp; Replication software that could result in remote code execution.\n\nTracked as CVE-2026-44963, the vulnerability carries a CVSS score of 9.4 out of a maximum of 10.0.\n\n\"A vulnerability allowing remote code execution (RCE) on the Backup Server by an authenticated domain user,\" Veeam said in a Tuesday advisory.\n\nIt",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/veeam-backup-replication-rce-flaw-lets.html",
+    "publishedDate": "2026-06-09T22:09:47+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.709708+00:00",
+    "summary": "A critical vulnerability was discovered in Veeam's Backup & Replication software, allowing remote code execution by authenticated domain users. This flaw has a CVSS score of 9.4 and highlights the importance of securing backup and replication systems to prevent potential attacks.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "RCE",
+      "backup",
+      "replication"
+    ]
+  },
+  {
+    "id": "31f72fbd2254448b",
+    "title": "One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public",
+    "summary_raw": "Security researchers have published a detailed, working exploit for a Linux kernel use-after-free that lets an unprivileged local user escalate to root and break out of a container.\n\nThe flaw, CVE-2026-23111, sits in the kernel's nf_tables packet-filtering code and was patched upstream on February 5, 2026. Exodus Intelligence released its full technical walkthrough on June 8, and it is not even",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/one-character-linux-kernel-flaw-enables.html",
+    "publishedDate": "2026-06-09T01:47:39+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710426+00:00",
+    "summary": "A Linux kernel use-after-free vulnerability has been published, allowing an unprivileged local user to escalate to root and break out of a container. The flaw was patched upstream, but exploits are now publicly available. This vulnerability highlights the ongoing risks in the Linux kernel.",
+    "relevance_score": 9,
+    "tags": [
+      "Linux kernel",
+      "vulnerability",
+      "local root access"
+    ]
+  },
+  {
+    "id": "9517dbcbaf2efea7",
+    "title": "Critical Check Point VPN Flaw Exploited to Bypass Passwords in IKEv1 Setups",
+    "summary_raw": "Check Point has warned of active exploitation of a critical vulnerability impacting Remote Access VPN and Mobile Access deployments that are configured to use the deprecated IKEv1 key exchange protocol.\n\nThe vulnerability, tracked as CVE-2026-50751 (CVSS score: 9.3), is a case of a logic flow weakness in certificate validation that allows an unauthenticated remote attacker to bypass user",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/critical-check-point-vpn-flaw-exploited.html",
+    "publishedDate": "2026-06-08T19:47:39+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710627+00:00",
+    "summary": "A critical vulnerability in Check Point's Remote Access VPN and Mobile Access deployments has been exploited, allowing an unauthenticated remote attacker to bypass user passwords in IKEv1 setups. The vulnerability highlights the importance of patching known flaws and using secure protocols.",
+    "relevance_score": 9,
+    "tags": [
+      "VPN",
+      "vulnerability",
+      "IKEv1"
+    ]
+  },
+  {
+    "id": "97adf953a8f5b6ce",
+    "title": "Microsoft June 2026 Patch Tuesday Fixes 3 Zero-Day, 200 Flaws",
+    "summary_raw": "Today is Microsoft's June 2026 Patch Tuesday, with security updates for 200 flaws and three publicly disclosed zero-day vulnerabilities. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-3-zero-day-200-flaws/",
+    "publishedDate": "2026-06-09T13:57:59-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.793920+00:00",
+    "summary": "Microsoft's June 2026 Patch Tuesday includes security updates for 200 vulnerabilities and three publicly disclosed zero-day vulnerabilities. This extensive patch release underscores Microsoft's ongoing efforts to address and mitigate security threats across its product portfolio. The fixes cover a wide range of products and are critical for preventing exploits and maintaining system security.",
+    "relevance_score": 9,
+    "tags": [
+      "Microsoft",
+      "Patch Tuesday",
+      "zero-day"
+    ]
+  },
+  {
+    "id": "0a5e3a93ca649603",
+    "title": "Critical Veeam Vulnerability Exposes Backup Servers to RCE Attacks",
+    "summary_raw": "Veeam has released security updates to patch a critical Backup & Replication security flaw that can be exploited to gain remote code execution (RCE) on domain-joined backup servers. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-veeam-vulnerability-exposes-backup-servers-to-rce-attacks/",
+    "publishedDate": "2026-06-09T10:27:56-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.794218+00:00",
+    "summary": "Veeam has released security updates to patch a critical vulnerability in its Backup & Replication software that can be exploited for remote code execution attacks. The flaw affects domain-joined backup servers. Users are advised to apply the patches immediately.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "RCE",
+      "backup servers"
+    ]
+  },
+  {
+    "id": "f91b36cf0666eb34",
+    "title": "Google Patches Fifth Chrome Zero-Day Flaw This Year",
+    "summary_raw": "Google has released emergency updates to patch another Chrome zero-day vulnerability that has been exploited in the wild, the fifth such flaw patched since the start of the year. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/google-patches-fifth-chrome-zero-day-bug-exploited-in-attacks-this-year/",
+    "publishedDate": "2026-06-09T02:56:27-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.794459+00:00",
+    "summary": "Google has released emergency updates to patch another Chrome zero-day vulnerability that has been exploited in the wild. This is the fifth such flaw patched since the start of the year, highlighting the ongoing threat of zero-day attacks. Users are advised to update their browsers immediately.",
+    "relevance_score": 9,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Chrome"
+    ]
+  },
+  {
+    "id": "9d8c103c78c94a44",
+    "title": "Miasma Supply Chain Worm Compromises 73 Microsoft Repositories",
+    "summary_raw": "The attacks stemmed from a GitHub account that was also compromised in a previous Miasmi attack on Microsoft last month.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/miasma-supply-chain-worm-73-microsoft-repositories",
+    "publishedDate": "2026-06-09T19:33:45+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.151471+00:00",
+    "summary": "A supply chain worm, known as Miasma, has compromised 73 Microsoft repositories on GitHub, highlighting the risks of supply chain attacks. The incident is similar to a previous attack on Microsoft last month, which also involved a compromised GitHub account.",
+    "relevance_score": 9,
+    "tags": [
+      "supply chain attack",
+      "GitHub",
+      "malware"
+    ]
+  },
+  {
+    "id": "acc817d6bfda07d2",
+    "title": "High-Severity Vulnerability in Linux Caused by a Single Faulty Character",
+    "summary_raw": "Use-after-free bug can be exploited to evade sandbox defenses.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/06/a-single-errant-character-in-the-linux-kernel-allows-attacker-to-gain-root/",
+    "publishedDate": "2026-06-09T15:12:43+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.424212+00:00",
+    "summary": "A high-severity vulnerability in Linux, caused by a single faulty character, can be exploited to evade sandbox defenses and potentially gain root access. This vulnerability demonstrates how even minor coding errors can have significant security implications. The fact that a single character can introduce such a critical flaw emphasizes the need for rigorous code review and testing.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "Linux",
+      "sandbox evasion"
+    ]
+  },
+  {
+    "id": "bcf1e1a578874353",
+    "title": "GPS Used as a Key Distribution Platform",
+    "summary_raw": "<p><a href=\"https://www.404media.co/the-u-s-military-quietly-turned-gps-into-a-global-numbers-station-evidence-suggests/\">This</a> is interesting:</p>\n<blockquote><p>The U.S. military has likely been quietly broadcasting codes for its global encryption network using public GPS for nearly 20 years, turning each satellite into a hidden &#8220;numbers station,&#8221; according to Steven Murdoch&#8230;</p>\n<p>That means every device that uses GPS has been receiving hidden government information for years, and nobody outside the military knew it until now.</p>\n<p>[&#8230;]</p>\n<p>Murdoch discovered that this particular sentinel was transmitted by all 31 operational satellites within a window of a few hours on May 26, 2011, potentially heralding the activation of a new operational system. He confirmed that this timeline coincided with the rollout of the military&#8217;s Over-the-Air Distribution (OTAD) and the Over-the-Air Rekeying (OTAR) by cross-referencing declassified documents, including a 2015 presentation about the dates of the operation...</p></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/06/gps-as-a-key-distribution-platform.html",
+    "publishedDate": "2026-06-09T15:06:49+00:00",
+    "scrapedAt": "2026-06-10T06:15:56.491193+00:00",
+    "summary": "The U.S. military has been using GPS to broadcast codes for its global encryption network, effectively turning each satellite into a hidden 'numbers station'. This means that every device using GPS has been receiving hidden government information. The implications of this practice are significant for both security and privacy.",
+    "relevance_score": 9,
+    "tags": [
+      "GPS",
+      "encryption",
+      "surveillance"
     ]
   },
   {
@@ -1211,6 +1406,247 @@
     ]
   },
   {
+    "id": "ea6cfaf1ee3aa04f",
+    "title": "Record-Breaking Patch Tuesday for June 2026",
+    "summary_raw": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company's monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned Microsoft's most dire \"critical\" rating, and exploit code for at least three of the weaknesses is now publicly available.",
+    "source": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
+    "publishedDate": "2026-06-09T22:07:28+00:00",
+    "scrapedAt": "2026-06-10T06:15:53.526445+00:00",
+    "summary": "Microsoft released nearly 200 security updates, including 30 critical bugs, as part of its monthly Patch Tuesday cycle. Exploit code for at least three of the weaknesses is now publicly available. This update highlights the importance of keeping software up to date to prevent potential attacks.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "patch",
+      "Microsoft"
+    ]
+  },
+  {
+    "id": "b533fe5a2c217920",
+    "title": "Researchers Build Self-Replicating AI Worm",
+    "summary_raw": "University of Toronto researchers have built and tested a proof-of-concept AI-driven computer worm that uses a locally hosted open-weight large language model to reason its way through a network, generate tailored attack strategies for each target it encounters, and replicate itself, all without human intervention and without touching a commercial AI service.\n\nThe preprint, posted to arXiv on",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/researchers-build-self-replicating-ai.html",
+    "publishedDate": "2026-06-09T17:29:03+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.709953+00:00",
+    "summary": "Researchers have built a proof-of-concept AI-driven worm that can replicate itself and generate tailored attack strategies without human intervention. This development highlights the potential risks associated with AI-powered attacks and the need for continued research into AI security.",
+    "relevance_score": 8,
+    "tags": [
+      "AI",
+      "worm",
+      "self-replicating"
+    ]
+  },
+  {
+    "id": "ba5c55b4a325572d",
+    "title": "LiteLLM Flaw CVE-2026-42271 Exploited in the Wild, Chains to Unauthenticated RCE",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday added a high-severity flaw impacting BerriAI LiteLLM to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-42271 (CVSS score: 8.7), is a command injection vulnerability that could allow any authenticated user to run arbitrary commands on the",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html",
+    "publishedDate": "2026-06-09T11:56:14+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710348+00:00",
+    "summary": "A high-severity flaw in BerriAI LiteLLM has been added to the Known Exploited Vulnerabilities catalog, with evidence of active exploitation. The vulnerability allows any authenticated user to run arbitrary commands, potentially leading to unauthenticated remote code execution. This exploit highlights the importance of patching known vulnerabilities.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "RCE",
+      "exploitation"
+    ]
+  },
+  {
+    "id": "68e47f7f5202c3b5",
+    "title": "VerdantBamboo Deploys BSD Variant of BRICKSTORM on Linux Appliances",
+    "summary_raw": "A China-nexus cyber espionage group has been observed deploying a BSD variant of a known backdoor called BRICKSTORM, as well as two other malware families codenamed PLENET (aka GRIMBOLT) and AGENTPSD to target Linux systems.\n\nThe activity has been attributed by Volexity to a threat cluster it tracks as VerdantBamboo, which it said overlaps with hacking groups known as Clay Typhoon (Microsoft),",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/verdantbamboo-deploys-bsd-variant-of.html",
+    "publishedDate": "2026-06-08T15:57:32+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710920+00:00",
+    "summary": "A China-nexus cyber espionage group has been observed deploying a BSD variant of the BRICKSTORM backdoor on Linux systems, along with other malware families. This activity highlights the ongoing risks of nation-state attacks and the importance of monitoring for suspicious activity.",
+    "relevance_score": 8,
+    "tags": [
+      "nation-state attack",
+      "Linux",
+      "backdoor"
+    ]
+  },
+  {
+    "id": "3268bbde4275b904",
+    "title": "Microsoft Defender 'RoguePlanet' Zero-Day Exploit Discovered",
+    "summary_raw": "A security researcher has released a new Microsoft Defender zero-day exploit named \"RoguePlanet\" just hours after Microsoft fixed two previously disclosed flaws during June 2026 Patch Tuesday. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-defender-rogueplanet-zero-day-grants-system-privileges/",
+    "publishedDate": "2026-06-09T19:11:18-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.793516+00:00",
+    "summary": "A zero-day exploit named 'RoguePlanet' has been found in Microsoft Defender, granting SYSTEM privileges. This vulnerability was disclosed just hours after Microsoft's June 2026 Patch Tuesday, highlighting the ongoing challenges in keeping software secure. The exploit's discovery underscores the importance of continuous vulnerability monitoring and patching.",
+    "relevance_score": 8,
+    "tags": [
+      "zero-day",
+      "Microsoft Defender",
+      "vulnerability"
+    ]
+  },
+  {
+    "id": "2c4b2bac225f53e4",
+    "title": "SAP Fixes Critical Flaws in NetWeaver and Commerce Cloud",
+    "summary_raw": "SAP has released fixes for 15 vulnerabilities as part of its June 2026 Security Patch package, including four critical-severity flaws affecting SAP NetWeaver and SAP Commerce Cloud. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/sap-fixes-critical-flaws-in-netweaver-and-commerce-cloud/",
+    "publishedDate": "2026-06-09T15:36:27-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.793765+00:00",
+    "summary": "SAP has released patches for 15 vulnerabilities, including four critical-severity flaws affecting SAP NetWeaver and SAP Commerce Cloud. These fixes are part of SAP's June 2026 Security Patch package, aiming to protect against potential exploits that could compromise business operations. The patches address vulnerabilities that could be exploited for unauthorized access or data manipulation.",
+    "relevance_score": 8,
+    "tags": [
+      "SAP",
+      "vulnerability",
+      "patch management"
+    ]
+  },
+  {
+    "id": "a41367cd04e8f003",
+    "title": "Microsoft Repositories on GitHub Compromised with Malware",
+    "summary_raw": "Microsoft removed 73 repositories across its Azure, microsoft, Azure-Samples, and MicrosoftDocs organizations on GitHub, disrupting continuous integration pipelines. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/github-disables-microsoft-repos-pushing-password-stealing-malware/",
+    "publishedDate": "2026-06-09T11:42:40-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.794146+00:00",
+    "summary": "Microsoft removed 73 repositories from GitHub after they were found to be pushing password-stealing malware, disrupting continuous integration pipelines. The incident highlights the risks of supply chain attacks. GitHub has since disabled the affected repositories.",
+    "relevance_score": 8,
+    "tags": [
+      "supply chain attack",
+      "malware",
+      "GitHub"
+    ]
+  },
+  {
+    "id": "b277c58ab6607be3",
+    "title": "Microsoft Exchange Flaw Allows Email Address Spoofing",
+    "summary_raw": "&quot;Ghost-Sender&quot; uses Exchange Online or on-premises in hybrid mode with a third-party mail server or spam filter to achieve this level of spoofing.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/exchange-flaw-attackers-spoof-email-address",
+    "publishedDate": "2026-06-09T20:20:00+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.151385+00:00",
+    "summary": "A flaw in Microsoft Exchange allows attackers to spoof any email address, potentially leading to phishing and other malicious activities. The vulnerability can be exploited using Exchange Online or on-premises in hybrid mode with a third-party mail server or spam filter.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "email spoofing",
+      "Microsoft Exchange"
+    ]
+  },
+  {
+    "id": "346ea778eac15373",
+    "title": "Russian Attackers Weaponize WinRAR Flaw Against Ukrainian Orgs",
+    "summary_raw": "Two separate campaigns target CVE-2025-8088, fixed last July, to conduct data theft and cyberespionage against military and government targets in Ukraine.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/russian-groups-winrar-flaw-ukrainian-orgs",
+    "publishedDate": "2026-06-09T15:37:02+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.151551+00:00",
+    "summary": "Russian attackers are exploiting a fixed vulnerability in WinRAR to conduct data theft and cyberespionage against military and government targets in Ukraine. This campaign highlights the ongoing threat of nation-state attacks and the importance of keeping software up to date to prevent exploitation of known vulnerabilities.",
+    "relevance_score": 8,
+    "tags": [
+      "nation-state",
+      "vulnerability",
+      "cyberespionage"
+    ]
+  },
+  {
+    "id": "ccbdf12d573888d2",
+    "title": "Silent Ransom Group Targets US Law Firms with Extortion Attacks",
+    "summary_raw": "The financially motivated group is combining vishing, IT impersonation, and in-person office intrusions to steal data and extort victims.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/silent-ransom-us-law-firms-extortion-attacks",
+    "publishedDate": "2026-06-08T20:59:52+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.151626+00:00",
+    "summary": "The Silent Ransom group is targeting US law firms with extortion attacks, combining vishing, IT impersonation, and in-person office intrusions to steal data and extort victims. The group's tactics are becoming increasingly sophisticated, making them a significant threat to the legal sector.",
+    "relevance_score": 8,
+    "tags": [
+      "ransomware",
+      "extortion",
+      "law firms"
+    ]
+  },
+  {
+    "id": "487cd3ce7de72e9a",
+    "title": "Check Point VPN Flaw Exploited Since Early May",
+    "summary_raw": "A newly discovered, critical zero-day vulnerability is under attack; a Qilin ransomware affiliate has been blamed for at least one incident.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/check-point-vpn-flaw-exploited-early-may",
+    "publishedDate": "2026-06-08T20:28:35+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.151699+00:00",
+    "summary": "A critical zero-day vulnerability in Check Point VPN has been exploited by a Qilin ransomware affiliate, highlighting the need for immediate patching. The vulnerability has been under attack since early May, and its exploitation can have severe consequences. This incident emphasizes the importance of keeping software up to date to prevent such attacks.",
+    "relevance_score": 8,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "ransomware",
+      "VPN"
+    ]
+  },
+  {
+    "id": "1f48e2fbac307e9b",
+    "title": "Locked in Heated Rivalry with Researcher, Microsoft Fixes 0-Day",
+    "summary_raw": "A separate zero-day also disclosed by Nightmare Eclipse appears to be patched as well.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/06/locked-in-heated-rivalry-with-researcher-microsoft-fixes-0-day-they-disclosed/",
+    "publishedDate": "2026-06-09T20:56:52+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.424105+00:00",
+    "summary": "Microsoft has patched a zero-day vulnerability disclosed by a researcher, amidst a public dispute over the disclosure process. The vulnerability's existence and subsequent patch highlight the ongoing cat-and-mouse game between software vendors and security researchers. The situation also underscores the importance of responsible vulnerability disclosure and collaboration between vendors and researchers.",
+    "relevance_score": 8,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "patch"
+    ]
+  },
+  {
+    "id": "8c9d7271a85a8279",
+    "title": "For the 2nd Time in Weeks, Microsoft Packages Laced with Credential Stealer",
+    "summary_raw": "73 packages run self-replicating stealer as soon as they're opened by an AI agent.",
+    "source": "Ars Technica Security",
+    "url": "https://arstechnica.com/security/2026/06/for-the-2nd-time-in-weeks-microsoft-packages-laced-with-credential-stealer/",
+    "publishedDate": "2026-06-08T18:34:23+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.424320+00:00",
+    "summary": "Microsoft packages have been found to contain a self-replicating credential stealer, marking the second such incident in weeks. This repeated compromise of Microsoft's package ecosystem raises concerns about the security of the software supply chain and the effectiveness of Microsoft's vetting processes. The incident highlights the need for enhanced security measures to prevent and detect such malicious inclusions.",
+    "relevance_score": 8,
+    "tags": [
+      "software supply chain",
+      "vulnerability",
+      "credential stealer"
+    ]
+  },
+  {
+    "id": "a64595471f507886",
+    "title": "Russia's Defense-Based Economy and Perpetual War",
+    "summary_raw": "Western sanctions have tied Russia's elite patronage to the defense sector. Learn why this creates a domestic imperative for Putin to pursue perpetual war",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/research/russia-defense-base-economy-risks-wars",
+    "publishedDate": "2026-06-09T00:00:00+00:00",
+    "scrapedAt": "2026-06-10T06:15:56.339675+00:00",
+    "summary": "Western sanctions have tied Russia's economy to its defense sector, creating a domestic imperative for Putin to pursue perpetual war. This has significant implications for global security and geopolitics. The situation underscores the importance of understanding the economic motivations behind nation-state actions.",
+    "relevance_score": 8,
+    "tags": [
+      "nation-state attacks",
+      "geopolitics",
+      "Russia"
+    ]
+  },
+  {
+    "id": "4d17c54955eabd10",
+    "title": "TeamPCP Supply Chain Campaign Update",
+    "summary_raw": "This diary continues the Internet Storm Center&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s tracking of the TeamPCP supply chain campaign, first documented in the SANS white paper When the Security Scanner Became the Weapon and most recently in the handler diary Activity Through 2026-05-24. Since that update, the story moved into two new places: the United States government, which formally caught up to the campaign, and the wider population of attackers now wielding the Mini Shai-Hulud framework that TeamPCP open-sourced last month.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33060",
+    "publishedDate": "2026-06-08T17:07:37+00:00",
+    "scrapedAt": "2026-06-10T06:15:56.742688+00:00",
+    "summary": "The TeamPCP supply chain campaign has been ongoing, with recent activity indicating its continued evolution. The campaign has been tracked by the Internet Storm Center, and its latest developments include the involvement of the U.S. government and the adoption of the Mini Shai-Hulud framework by other attackers. This campaign highlights the complexities and dangers of supply chain attacks.",
+    "relevance_score": 8,
+    "tags": [
+      "supply chain attack",
+      "TeamPCP",
+      "Mini Shai-Hulud"
+    ]
+  },
+  {
     "id": "4f9660b7e3af6f55",
     "title": "Hackers Used Meta's AI Support Bot to Seize Instagram Accounts",
     "summary_raw": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's \"AI support assistant\" bot into resetting account passwords.",
@@ -1869,6 +2305,118 @@
     ]
   },
   {
+    "id": "146cba0f97d31d94",
+    "title": "Microsoft Restores Some GitHub Repos, Keeps Others Offline",
+    "summary_raw": "Microsoft on Monday confirmed that it temporarily removed some GitHub repositories in response to a recent security incident that led to 73 of its open-source projects being compromised to inject an information stealer into the code.\n\n\"Our priority is to protect customers and the broader ecosystem,\" a Microsoft spokesperson told The Hacker News via email. \"We temporarily removed some",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/microsoft-restores-some-github-repos.html",
+    "publishedDate": "2026-06-09T22:04:52+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.709793+00:00",
+    "summary": "Microsoft temporarily removed some GitHub repositories in response to a security incident that compromised 73 open-source projects. The company is working to protect customers and the broader ecosystem. This incident highlights the importance of securing open-source projects and the potential risks associated with them.",
+    "relevance_score": 7,
+    "tags": [
+      "GitHub",
+      "open-source",
+      "security-incident"
+    ]
+  },
+  {
+    "id": "cfbb84372b06a784",
+    "title": "New FROST Attack Lets Websites Track User Activity",
+    "summary_raw": "A malicious website can work out which sites you visit and which apps you open, using nothing but JavaScript and the timing of your SSD. The attack, called FROST, needs no native code, no extension, and no permission prompt.\n\nYou open the page, leave the tab sitting there, and it watches the drive for contention in the background.\n\nResearchers at Graz University of Technology built it and",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/new-frost-attack-lets-websites-track.html",
+    "publishedDate": "2026-06-09T15:20:41+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710182+00:00",
+    "summary": "A new attack called FROST allows malicious websites to track which sites and apps users open using JavaScript and the timing of their SSD. This attack highlights the importance of protecting user privacy and the need for continued research into web security.",
+    "relevance_score": 7,
+    "tags": [
+      "web-security",
+      "privacy",
+      "tracking"
+    ]
+  },
+  {
+    "id": "71b6339f08378eba",
+    "title": "Meta Blocks NSO Group's New WhatsApp Phishing Attack, Files Contempt Order",
+    "summary_raw": "Meta on Monday said it detected and blocked spear-phishing attempts linked to Israeli spyware vendor NSO Group.\n\nIn addition, the tech giant said it's filing a federal court contempt order against the company for violating a permanent injunction that barred it from targeting WhatsApp and its users.\n\n\"They tried to trick people into clicking on malicious links to drive them to external websites",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/meta-blocks-nso-groups-new-whatsapp.html",
+    "publishedDate": "2026-06-08T22:38:44+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710542+00:00",
+    "summary": "Meta has detected and blocked spear-phishing attempts linked to NSO Group, and has filed a federal court contempt order against the company for violating a permanent injunction. The phishing attempts tried to trick people into clicking on malicious links, highlighting the ongoing risks of social engineering attacks.",
+    "relevance_score": 7,
+    "tags": [
+      "phishing",
+      "NSO Group",
+      "WhatsApp"
+    ]
+  },
+  {
+    "id": "8b24a39f4967bdbb",
+    "title": "ServiceNow Discloses Security Incident Exposing Customer Data",
+    "summary_raw": "ServiceNow is warning about a security incident after attackers exploited an unauthenticated access flaw through a vulnerable API endpoint, allowing them to query data from customer instances. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/servicenow-discloses-security-incident-exposing-customer-data/",
+    "publishedDate": "2026-06-09T17:34:09-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.793604+00:00",
+    "summary": "ServiceNow has announced a security incident where attackers exploited an unauthenticated access flaw through a vulnerable API endpoint, exposing customer data. This incident highlights the risks associated with API vulnerabilities and the importance of robust security measures to protect customer information. Companies must prioritize the security of their APIs to prevent such breaches.",
+    "relevance_score": 7,
+    "tags": [
+      "data breach",
+      "API security",
+      "ServiceNow"
+    ]
+  },
+  {
+    "id": "3c083cd9902b36a6",
+    "title": "NFCShare Android Malware Spreads via Fake Banking App Updates",
+    "summary_raw": "New variants of the NFCShare Android malware are being distributed as fake updates for legitimate banking apps hosted on GitHub. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/nfcshare-android-malware-spreads-via-fake-banking-app-updates-on-github/",
+    "publishedDate": "2026-06-08T18:11:58-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.794529+00:00",
+    "summary": "New variants of the NFCShare Android malware are being distributed as fake updates for legitimate banking apps hosted on GitHub. The malware can steal sensitive information and perform malicious activities. Users are warned to be cautious when updating apps.",
+    "relevance_score": 7,
+    "tags": [
+      "malware",
+      "Android",
+      "banking apps"
+    ]
+  },
+  {
+    "id": "70ca532b1f5ef8f4",
+    "title": "'Hades' Campaign Against PyPI Puts New Spin on Shai-Hulud",
+    "summary_raw": "The latest attacks, which hit 37 PyPI wheels and 19 code packages, show a continued evolution of the persistent software supply chain threat.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/application-security/hades-campaign-pypi-shai-hulud",
+    "publishedDate": "2026-06-08T16:13:41+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.151841+00:00",
+    "summary": "The 'Hades' campaign has targeted PyPI, affecting 37 wheels and 19 code packages, demonstrating the evolving threat of software supply chain attacks. This incident shows how attackers continually adapt and find new ways to exploit vulnerabilities in software ecosystems. The campaign's impact on the open-source community is significant, as it compromises the security of widely used packages.",
+    "relevance_score": 7,
+    "tags": [
+      "software supply chain",
+      "vulnerability",
+      "open-source"
+    ]
+  },
+  {
+    "id": "fdef56c4420bb3c6",
+    "title": "Critical Zcash Vulnerability Discovered and Fixed",
+    "summary_raw": "<p>If you&#8217;re a user&#8212;owner?&#8212;of this cryptocurrency, <a href=\"https://securityaffairs.com/193224/hacking/claude-opus-found-a-four-year-old-hole-in-zcashs-privacy-layer-nobody-knows-if-someone-already-used-it.html\">this</a> is important:</p>\n<blockquote><p>On May 29, the security researcher Taylor Hornby found a critical vulnerability in Zcash Orchard privacy pool using Claude Opus 4.8. The Zcash team hired Hornby specifically to look for this kind of issue. He found one fast enough to be embarrassing.</p>\n<p>The Orchard pool is the newest and most advanced shielded transaction system in the cryptocurrency Zcash. Introduced in 2022, it allows users to send and receive ZEC while keeping transaction details private. It uses zero-knowledge proofs to validate transactions without revealing amounts or participants. The bug: a specific check that was supposed to validate transaction inputs wasn&#8217;t actually enforcing the rules it appeared to enforce. An attacker could have exploited the flaw to feed false inputs into that check and generate ZEC from nothing, with the zero-knowledge proof system blessing the fraudulent transaction as valid...</p></blockquote>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/06/critical-zcash-vulnerability-found-and-fixed.html",
+    "publishedDate": "2026-06-08T17:06:53+00:00",
+    "scrapedAt": "2026-06-10T06:15:56.491270+00:00",
+    "summary": "A critical vulnerability was found in Zcash's privacy layer, which could have been exploited by attackers. Fortunately, the issue was discovered and fixed by a security researcher. This highlights the importance of continuous security audits and the need for cryptocurrency platforms to prioritize user privacy and security.",
+    "relevance_score": 7,
+    "tags": [
+      "Zcash",
+      "vulnerability",
+      "cryptocurrency"
+    ]
+  },
+  {
     "id": "1b989337110f1c90",
     "title": "New Android Spyware 'Asin' Targets Arabic Users via Fake Apps",
     "summary_raw": "Arabic-speaking users have emerged as the target of a new Android spyware codenamed Asin, according to findings from ESET.\n\nThe Slovakian cybersecurity company said it first detected the malware spread via multiple campaigns in early 2025, with each attack wave making use of distinct websites mimicking utilities, war-related updates, and a government news source:\n\n\n  govlens[.]net, which",
@@ -2163,6 +2711,166 @@
     ]
   },
   {
+    "id": "651fccbf7c7e56ea",
+    "title": "Meta to Use Off-Site Business Data for Feed and AI Personalization",
+    "summary_raw": "Meta on Tuesday announced that it will use information shared by other businesses to personalize users' feed and responses from its artificial intelligence (AI) chatbot, expanding its scope beyond targeted ads.\n\n\"Businesses often share information about people's activity on their sites with us to make ads more relevant,\" Meta said in a statement.\n\n\"We already use this data - like games you play",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/meta-to-use-off-site-business-data-for.html",
+    "publishedDate": "2026-06-09T22:33:58+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.709615+00:00",
+    "summary": "Meta announced that it will use data shared by businesses to personalize users' feeds and AI chatbot responses. This move expands Meta's data collection beyond targeted ads, raising concerns about user privacy. As data collection and usage become more prevalent, it's essential to consider the implications on user privacy and security.",
+    "relevance_score": 6,
+    "tags": [
+      "data-collection",
+      "privacy",
+      "Meta"
+    ]
+  },
+  {
+    "id": "b90e0707d3925ddc",
+    "title": "Hades PyPI Attack: 19 Packages Poisoned to Auto-Run Bun Credential Stealer",
+    "summary_raw": "The Miasma supply chain campaign has sparked a fresh attack wave called Hades, this time involving 37 malicious wheel artifacts across 19 packages in the Python Package Index (PyPI) registry, as the Mini Shai-Hulud-style attacks continue to be refined and splintered to target specific ecosystems.\n\n\"The compromised releases shipped a *-setup.pth file that attempts to execute automatically",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/hades-pypi-attack-19-packages-poisoned.html",
+    "publishedDate": "2026-06-09T14:43:32+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710256+00:00",
+    "summary": "A fresh attack wave called Hades has sparked, involving 37 malicious wheel artifacts across 19 packages in the Python Package Index registry. The compromised releases shipped a file that attempts to execute automatically, potentially stealing credentials. This attack highlights the ongoing risks in the software supply chain.",
+    "relevance_score": 6,
+    "tags": [
+      "supply chain attack",
+      "credential stealer",
+      "PyPI"
+    ]
+  },
+  {
+    "id": "f865cca38c142e98",
+    "title": "UNC3753 Used Vishing and Physical Intrusions in U.S. Data Theft Extortion Campaign",
+    "summary_raw": "Cybersecurity researchers have disclosed details of a financially motivated data theft extortion campaign that has targeted dozens of organizations across professional, legal, and financial services in the U.S. between January and May 2026.\n\nThe activity has been attributed by Google Mandiant and Google Threat Intelligence Group (GTIG) to a threat actor dubbed UNC3753, which is also known as",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/unc3753-used-vishing-and-physical.html",
+    "publishedDate": "2026-06-08T13:09:28+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710990+00:00",
+    "summary": "A financially motivated threat actor has been attributed to a data theft extortion campaign targeting organizations in the U.S., using vishing and physical intrusions. This highlights the importance of protecting against social engineering attacks and ensuring physical security.",
+    "relevance_score": 6,
+    "tags": [
+      "data theft",
+      "extortion",
+      "vishing"
+    ]
+  },
+  {
+    "id": "d601d8dcb7ed1594",
+    "title": "VS Code Adds Delay to Extension Auto-Updates to Limit Supply Chain Attacks",
+    "summary_raw": "Microsoft has announced that Visual Studio Code (VS Code) will apply a two-hour delay before extensions for the integrated development environment (IDE) are updated automatically to a newer version in an attempt to tackle software supply chain threats.\n\n\"When automatic updates are enabled, new versions are auto-updated two hours after they are published, adding an extra layer of protection",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/vs-code-adds-2-hour-extension-auto.html",
+    "publishedDate": "2026-06-08T11:38:44+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.711061+00:00",
+    "summary": "Microsoft has introduced a two-hour delay for automatic updates of VS Code extensions to mitigate software supply chain threats. This delay adds an extra layer of protection by giving the community time to review and respond to potential security issues. The move aims to enhance the security of the development environment.",
+    "relevance_score": 6,
+    "tags": [
+      "supply chain attacks",
+      "VS Code",
+      "software security"
+    ]
+  },
+  {
+    "id": "0a67216a18e61ddf",
+    "title": "Microsoft Releases Windows 10 KB5094127 Extended Security Update",
+    "summary_raw": "Microsoft has released the Windows 10 KB5094127 extended security update, which fixes the June 2026 Patch Tuesday vulnerabilities and adds new functionality to monitor the rollout of updated Secure Boot certificates that replace those expiring this month. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5094127-extended-security-update/",
+    "publishedDate": "2026-06-09T14:35:00-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.793845+00:00",
+    "summary": "Microsoft has issued the Windows 10 KB5094127 extended security update, addressing June 2026 Patch Tuesday vulnerabilities and adding functionality for monitoring the rollout of updated Secure Boot certificates. This update is crucial for maintaining the security and integrity of Windows 10 systems, especially with the impending expiration of Secure Boot certificates.",
+    "relevance_score": 6,
+    "tags": [
+      "Windows 10",
+      "security update",
+      "Secure Boot"
+    ]
+  },
+  {
+    "id": "6a15afeb540eee03",
+    "title": "Windows 11 KB5094126 & KB5093998 Cumulative Updates Released",
+    "summary_raw": "Microsoft has released Windows 11\u00a0KB5094126\u00a0and\u00a0KB5093998\u00a0cumulative updates for versions 25H2/24H2 and 23H2 to fix security vulnerabilities, bugs, and add new features. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5094126-and-kb5093998-cumulative-updates-released/",
+    "publishedDate": "2026-06-09T13:32:32-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.793997+00:00",
+    "summary": "Microsoft has released cumulative updates KB5094126 and KB5093998 for Windows 11, aiming to fix security vulnerabilities, bugs, and add new features. These updates are essential for ensuring the stability and security of Windows 11 systems, addressing issues that could be exploited by attackers and improving the overall user experience.",
+    "relevance_score": 6,
+    "tags": [
+      "Windows 11",
+      "cumulative update",
+      "security fix"
+    ]
+  },
+  {
+    "id": "545835ab2bd34c8a",
+    "title": "French Government Messaging Service Breached in Account Hijacking Attack",
+    "summary_raw": "DINUM, the digital affairs directorate of the French government, warned that hackers used a hijacked user account to breach Tchap, the French government's encrypted messaging platform. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/french-govt-messaging-service-breached-in-account-hijacking-attack/",
+    "publishedDate": "2026-06-09T06:53:00-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.794311+00:00",
+    "summary": "The French government's encrypted messaging platform, Tchap, was breached after hackers hijacked a user account. The incident raises concerns about the security of government communication systems. An investigation is underway to determine the extent of the breach.",
+    "relevance_score": 6,
+    "tags": [
+      "data breach",
+      "account hijacking",
+      "government"
+    ]
+  },
+  {
+    "id": "bb15f6d05ac3e162",
+    "title": "Iran Signed a Ceasefire \u2014 Its Hackers Didn't",
+    "summary_raw": "An extension of the Geneva Conventions could impose restrictions on cyberwarfare under ceasefire conditions and close a major loophole in international conflict.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyberattacks-data-breaches/iran-signed-ceasefire-hackers",
+    "publishedDate": "2026-06-08T19:07:48+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.151769+00:00",
+    "summary": "Despite Iran signing a ceasefire, its hackers continue to engage in cyberwarfare, exploiting a loophole in international conflict laws. This highlights the need for clearer regulations on cyberwarfare during ceasefires. The situation underscores the challenges of enforcing cybersecurity laws in the context of international conflicts.",
+    "relevance_score": 6,
+    "tags": [
+      "cyberwarfare",
+      "nation-state attacks",
+      "policy"
+    ]
+  },
+  {
+    "id": "d550714280e32acd",
+    "title": "Blinding the Watchmen: Abusing Cloud Logging Services for Defense Evasion and Visibility",
+    "summary_raw": "<p>Unit 42 research examines attack scenarios targeting cloud logging services. Learn how to defend against log manipulation and defense evasion.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/cloud-logging-defense-evasion/\">Blinding the Watchmen: Abusing Cloud Logging Services for Defense Evasion and Visibility</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/cloud-logging-defense-evasion/",
+    "publishedDate": "2026-06-09T22:00:21+00:00",
+    "scrapedAt": "2026-06-10T06:15:55.824010+00:00",
+    "summary": "Research by Unit 42 examines how attackers can abuse cloud logging services for defense evasion and visibility, highlighting a new vector of attack. The study provides insights into how cloud logging services can be manipulated by attackers to evade detection and discusses strategies for defending against such tactics. It underscores the importance of securing cloud infrastructure and monitoring services.",
+    "relevance_score": 6,
+    "tags": [
+      "cloud security",
+      "logging services",
+      "defense evasion"
+    ]
+  },
+  {
+    "id": "26906135163b4e8b",
+    "title": "Microsoft Teams Phishing Attacks on the Rise",
+    "summary_raw": "<p>Attackers are increasingly targeting collaboration platforms like Microsoft Teams. Learn the risks and key steps to strengthen your organization's security.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/microsoft-teams-phishing/\">When \u201cHi, This Is IT\u201d Comes Through Microsoft Teams</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+    "source": "Palo Alto Unit 42",
+    "url": "https://unit42.paloaltonetworks.com/microsoft-teams-phishing/",
+    "publishedDate": "2026-06-08T23:00:45+00:00",
+    "scrapedAt": "2026-06-10T06:15:55.824206+00:00",
+    "summary": "Attackers are increasingly targeting Microsoft Teams with phishing attacks, posing as IT personnel to trick users into divulging sensitive information. This highlights the need for organizations to strengthen their security measures on collaboration platforms. Users should be cautious of unsolicited messages and report suspicious activity to IT.",
+    "relevance_score": 6,
+    "tags": [
+      "phishing",
+      "Microsoft Teams",
+      "collaboration platforms"
+    ]
+  },
+  {
     "id": "f41f5b19bec05f21",
     "title": "SOCs Report Low Value from AI Security Tools, Expect More from Next Wave",
     "summary_raw": "Eighteen months ago, the AI SOC was a marketing line. Today it's a budget item. The category has crossed over from interesting to inevitable, with billions of dollars now flowing into AI-powered security operations platforms, agentic SOC tools, and AI co-pilots built into every layer of the security stack. The data shows SOCs are buying, deploying, and standing up AI capabilities at the fastest",
@@ -2360,6 +3068,118 @@
     ]
   },
   {
+    "id": "a3e4d5a177e0b326",
+    "title": "The Hidden Security Risk in Modern Networks",
+    "summary_raw": "Organizations have more visibility than ever. Growing tech stacks provide greater coverage, and network security teams are increasingly adopting AI and automation to help with routine tasks and reduce manual effort.\n\nBut the same challenges persist. Outages still last hours, causing significant financial losses, operational disruption, and reputational impact. Threat response and mean time to",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/the-hidden-security-risk-in-modern.html",
+    "publishedDate": "2026-06-09T17:00:00+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710107+00:00",
+    "summary": "Modern networks face a hidden security risk due to the complexity of growing tech stacks and the challenges of securing them. This risk highlights the need for organizations to adopt AI and automation to help with routine tasks and reduce manual effort, as well as to prioritize security and visibility in their networks.",
+    "relevance_score": 5,
+    "tags": [
+      "network-security",
+      "complexity",
+      "visibility"
+    ]
+  },
+  {
+    "id": "4b6c8ea3c5caecf6",
+    "title": "AI Phishing Is Crushing SOCs with Alert Volume: How to Reduce Tier 1 Overload",
+    "summary_raw": "Phishing has always been a numbers game. AI has turned it into a volume machine.\n\nAttackers can now create convincing emails, fake login pages, and tailored lures in minutes. Every polished message adds another case for Tier 1 to review, another link to inspect, and another alert that cannot be dismissed at a glance.\n\nAs the queue grows, a credential theft attempt or malware delivery can easily",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/ai-phishing-is-crushing-socs-with-alert.html",
+    "publishedDate": "2026-06-08T18:49:13+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710701+00:00",
+    "summary": "AI-powered phishing attacks are creating a high volume of alerts for Security Operations Centers, making it difficult to distinguish between legitimate and malicious activity. This highlights the need for more effective phishing detection and response strategies to reduce the overload on Tier 1 teams.",
+    "relevance_score": 5,
+    "tags": [
+      "phishing",
+      "AI",
+      "SOC"
+    ]
+  },
+  {
+    "id": "1bd063fb2c47430e",
+    "title": "OpenClaw AI Agent Found Vulnerable to Phishing Attacks",
+    "summary_raw": "Phishing simulation on an OpenClaw email agent with various configuration profiles showed that it was susceptible to tactics\u00a0commonly used to compromise human users. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/openclaw-ai-agent-found-falling-for-phishing-attacks-spills-user-data/",
+    "publishedDate": "2026-06-09T17:20:20-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.793687+00:00",
+    "summary": "An OpenClaw email agent has been found susceptible to phishing attacks, similar to those targeting human users. This vulnerability could lead to the spillage of user data, emphasizing the need for AI systems to be designed with robust security against social engineering tactics. As AI becomes more integrated into security solutions, ensuring their resilience to phishing is crucial.",
+    "relevance_score": 5,
+    "tags": [
+      "phishing",
+      "AI security",
+      "OpenClaw"
+    ]
+  },
+  {
+    "id": "d236141792bd4a48",
+    "title": "XBOW Tests Anthropic's Mythos Preview for Offensive Security",
+    "summary_raw": "Anthropic's Mythos Preview was highly effective at finding vulnerability candidates, especially when analyzing source code. XBOW explores how the model performed across exploit discovery, reverse engineering, and live-site validation. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/xbow-tests-anthropics-mythos-preview-for-offensive-security/",
+    "publishedDate": "2026-06-09T12:16:38-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.794072+00:00",
+    "summary": "XBOW has tested Anthropic's Mythos Preview AI model for its effectiveness in offensive security tasks, including exploit discovery and reverse engineering. The model showed promise in finding vulnerability candidates, especially when analyzing source code. This research highlights the potential of AI in enhancing security testing and vulnerability detection capabilities.",
+    "relevance_score": 5,
+    "tags": [
+      "AI",
+      "offensive security",
+      "Mythos"
+    ]
+  },
+  {
+    "id": "3688d78a40426f3b",
+    "title": "Record 206 CVEs Reported in Latest Patch Tuesday",
+    "summary_raw": "Voluminous patch updates could soon be the norm, as artificial intelligence accelerates the speed and scale of vulnerability discovery.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/blame-ai-patch-tuesday-record-206-cves",
+    "publishedDate": "2026-06-09T21:42:57+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.151264+00:00",
+    "summary": "The latest Patch Tuesday update includes a record 206 CVEs, highlighting the increasing volume of vulnerability discoveries. The use of artificial intelligence is accelerating the speed and scale of vulnerability detection, leading to more frequent and extensive patch updates.",
+    "relevance_score": 5,
+    "tags": [
+      "vulnerabilities",
+      "patch management",
+      "AI"
+    ]
+  },
+  {
+    "id": "11b61405969e5a6e",
+    "title": "The Malicious Use of AI - Anthropic's Red Team Report",
+    "summary_raw": "<p>Discover how Anthropic's secretive red team and the MITRE ATT&amp;CK framework are mapping the chilling rise of malicious AI use, revealing cyber threats that now move faster than defenders can respond.</p><ul> \n<li>Was a U.S. law firm right to pay a $20 million ransom.</li> \n<li>Could Cisco have yet another SD-WAN 0-day in the wild.</li> \n<li>Why is it so difficult to author secure PHP code.</li> \n<li>Teens use \"WeedHack\" to spy and attack each other.</li> \n<li>Researchers create the first AI-enabled Internet worm.</li> \n<li>Google Chrome pops-up \"Shop with confidence.\" What...</li> \n<li>The discovered and irresponsibly disclosed HTTP/2 Bomb.</li> \n<li>What Anthropic learns from their past year of Claude abuse: It's bad</li></ul> \n<p>Show Notes - <a href=\"https://www.grc.com/sn/SN-1082-Notes.pdf\">https://www.grc.com/sn/SN-1082-Notes.pdf</a></p> \n<p><strong>Hosts:</strong> <a href=\"https://twit.tv/people/steve-gibson\">Steve Gibson</a> and <a href=\"https://twit.tv/people/leo-laporte\">Leo Laporte</a></p> \n<p>Download or subscribe to <em>Security Now</em> at <a href=\"https://twit.tv/shows/security-now\">https://twit.tv/shows/security-now</a>.</p> \n<p>You can submit a question to <em>Security Now</em> at the <a href=\"https://www.grc.com/feedback.htm\" target=\"_blank\">GRC Feedback Page</a>.</p> \n<p>For 16kbps versions, transcripts, and notes (including fixes), visit Steve's site: <a href=\"https://www.grc.com/securitynow.htm\" target=\"_blank\">grc.com</a>, also the home of the best disk maintenance and recovery utility ever written <a href=\"https://www.grc.com/sr/spinrite.htm\" target=\"_blank\">Spinrite 6</a>.</p> \n<p><strong>Join Club TWiT for Ad-Free Podcasts!</strong><br /> \nSupport what you love and get ad-free audio <em>and</em> video feeds, a members-only Discord, and exclusive content. Join today: <a href=\"https://twit.tv/clubtwit\" rel=\"payment\">https://twit.tv/clubtwit</a></p>\n<p><strong>Sponsors:</strong><ul>\n<li><a href=\"https://www.threatlocker.com/pages/solutions...",
+    "source": "Security Now (GRC)",
+    "url": "https://twit.tv/shows/security-now/episodes/1082",
+    "publishedDate": "2026-06-09T18:17:35+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.618948+00:00",
+    "summary": "Anthropic's red team report discusses the malicious use of AI, highlighting how attackers are leveraging AI to move faster than defenders can respond. The report touches on various topics, including the use of AI in cyber threats and the challenges of securing against such threats. It emphasizes the evolving nature of cyberattacks and the need for adaptive defense strategies.",
+    "relevance_score": 5,
+    "tags": [
+      "AI",
+      "cyber threats",
+      "red team"
+    ]
+  },
+  {
+    "id": "539d9ce65b84a27d",
+    "title": "Anthropic's Project Glasswing Update",
+    "summary_raw": "<p>In April, Anthropic initated <a href=\"https://www.anthropic.com/glasswing\">Project Glasswing</a>. The idea was to let companies use their new model to find and fix vulnerabilities in their own software. It was a fantastic PR move, and so many press outlets have uncritically parroted Anthropic&#8217;s claims that it&#8217;s now common wisdom that Mythos is better at finding software vulnerabilities than other models. Which is just <a href=\"https://www.theguardian.com/commentisfree/2026/may/08/how-dangerous-is-anthropics-mythos-ai\">not</a> <a href=\"https://spectrum.ieee.org/ai-cybersecurity-mythos\">true</a>.</p>\n<p>In any case, Anthropic has <a href=\"https://www.anthropic.com/research/glasswing-initial-update\">published</a> a Project Glasswing status report. It&#8217;s finding <a href=\"https://www.securityweek.com/anthropic-mythos-detected-23000-potential-vulnerabilities-across-1000-oss-projects/\">a lot</a> of vulnerabilities in software&#8212;yay! Some of them are even dangerous. But almost none of them has been patched. It&#8217;s ...</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-project-glasswing-update.html",
+    "publishedDate": "2026-06-08T11:01:47+00:00",
+    "scrapedAt": "2026-06-10T06:15:56.491354+00:00",
+    "summary": "Anthropic's Project Glasswing aims to help companies find and fix vulnerabilities in their software using AI models. While the project has garnered significant attention, its effectiveness in comparison to other models is still a subject of debate. The project's outcome will be crucial in determining the role of AI in software security.",
+    "relevance_score": 5,
+    "tags": [
+      "AI",
+      "software vulnerabilities",
+      "Project Glasswing"
+    ]
+  },
+  {
     "id": "7f2f368b88ed5216",
     "title": "MSPs Evolving Beyond vCISO Tools to Security Growth Platforms",
     "summary_raw": "Three years ago, the practical question for an MSP building a cybersecurity practice was which \"vCISO platform\" to buy. The term was good shorthand for the work at the time: assessments, advisory, reporting, maybe a compliance module bolted on the side. The work has since outgrown the descriptor.\n\nA Security Growth Platform is the more precise name for what MSPs and MSSPs need from the software",
@@ -2428,6 +3248,70 @@
     ]
   },
   {
+    "id": "2bde8178b07d031b",
+    "title": "Weekly Recap: Instagram Account Hacks, Android Zero-Day, GitHub Worm and More",
+    "summary_raw": "Monday again. The weekend was meant to be quiet. It wasn't. Last week had poisoned packages, a broken AI helper, and a worm tearing through repos. The ugly part: basic tricks still worked.\n\nA chatbot got fooled. A bot token got leaked inside the malware. The same old mistakes showed up again. And while everyone chased the loud stuff, quieter attackers sat in inboxes for months, reading mail and",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/weekly-recap-instagram-account-hacks.html",
+    "publishedDate": "2026-06-08T18:48:57+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710773+00:00",
+    "summary": "This week's recap includes several notable security incidents, including Instagram account hacks, an Android zero-day exploit, and a GitHub worm. These incidents highlight the ongoing risks of social engineering, vulnerabilities, and malware.",
+    "relevance_score": 4,
+    "tags": [
+      "security recap",
+      "Instagram",
+      "Android",
+      "GitHub"
+    ]
+  },
+  {
+    "id": "c75264d3114ee8c6",
+    "title": "Anthropic Rolls Out Claude Fable 5 AI Model",
+    "summary_raw": "Anthropic has begun rolling out a new model called \"Fable,\" which is based on the same underlying model as Mythos, its most powerful AI model class. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-claude-fable-5-but-its-available-for-a-limited-time/",
+    "publishedDate": "2026-06-09T22:03:31-04:00",
+    "scrapedAt": "2026-06-10T06:15:53.793409+00:00",
+    "summary": "Anthropic has released a new AI model called Claude Fable 5, based on its powerful Mythos model class. However, the availability of this model is limited. The introduction of new AI models can have implications for cybersecurity, particularly in areas like phishing detection and vulnerability analysis. The model's capabilities and potential security applications are being explored.",
+    "relevance_score": 4,
+    "tags": [
+      "AI",
+      "Anthropic",
+      "Mythos"
+    ]
+  },
+  {
+    "id": "c66e7beea95b8c02",
+    "title": "CrowdStrike and Zscaler Bring Continuous Identity to Zero Trust Access",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-zscaler-bring-continuous-identity-security-to-zero-trust-access/",
+    "publishedDate": "2026-06-08T00:00:00-05:00",
+    "scrapedAt": "2026-06-10T06:15:54.708860+00:00",
+    "summary": "CrowdStrike and Zscaler have partnered to bring continuous identity verification to zero-trust access solutions, enhancing security for users. This collaboration aims to provide more robust and adaptive security measures, reflecting the growing importance of identity and access management in cybersecurity. The partnership highlights the trend towards more integrated and comprehensive security solutions.",
+    "relevance_score": 4,
+    "tags": [
+      "zero-trust",
+      "identity management",
+      "partnership"
+    ]
+  },
+  {
+    "id": "2e920aec7abd7a3d",
+    "title": "ISC Stormcast for June 9th, 2026",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33062",
+    "publishedDate": "2026-06-09T02:00:03+00:00",
+    "scrapedAt": "2026-06-10T06:15:56.742610+00:00",
+    "summary": "The ISC Stormcast provides updates on the latest security threats and trends. This episode covers various topics, including ongoing campaigns and newly discovered vulnerabilities. Listeners can expect insights into current security issues and advice on how to mitigate potential threats.",
+    "relevance_score": 4,
+    "tags": [
+      "security updates",
+      "ISC Stormcast"
+    ]
+  },
+  {
     "id": "f199e98d8f8323d7",
     "title": "Brave Launches Minimalist Paid Browser 'Origin'",
     "summary_raw": "Brave has announced the public release of Brave Origin, a paid minimalist version of its browser that strips out cryptocurrency, AI, rewards, and other monetization-focused features. [...]",
@@ -2473,6 +3357,21 @@
       "Windows",
       "utilities",
       "command-line"
+    ]
+  },
+  {
+    "id": "0e715ec896730206",
+    "title": "The Hardest Fork",
+    "summary_raw": "Mythos is real. I know a big chunk of the industry thinks it's a marketing stunt, and I get why. I get it. But I've seen the findings, and they're bad. These aren't \"whoops, this line right here is wrong, and that's RCE.\" They're novel combinations of a few dozen issues out of thousands of things every SAST scanner already finds, chained together into something much worse. It's real creativity,",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/the-hardest-fork.html",
+    "publishedDate": "2026-06-08T17:23:00+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.710847+00:00",
+    "summary": "A recent discovery highlights the creativity and complexity of modern cyber threats, where novel combinations of issues can be chained together to create something much worse. This emphasizes the need for continuous monitoring and improvement of security postures.",
+    "relevance_score": 3,
+    "tags": [
+      "cyber threats",
+      "security posture"
     ]
   },
   {
@@ -2552,6 +3451,21 @@
     ]
   },
   {
+    "id": "fc12381b2594d668",
+    "title": "CISA Announces Winners of the 2026 President's Cup Cybersecurity Competition",
+    "summary_raw": "",
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/news/cisa-announces-winners-2026-presidents-cup-cybersecurity-competition",
+    "publishedDate": "2026-06-09T12:00:00+00:00",
+    "scrapedAt": "2026-06-10T06:15:54.209830+00:00",
+    "summary": "CISA has announced the winners of the 2026 President's Cup Cybersecurity Competition, an event aimed at promoting cybersecurity awareness and skills. While the announcement itself does not reveal specific security threats or vulnerabilities, it highlights the importance of fostering a skilled cybersecurity workforce. The competition's focus on cybersecurity talent development is crucial for addressing the evolving threat landscape.",
+    "relevance_score": 2,
+    "tags": [
+      "cybersecurity awareness",
+      "competition"
+    ]
+  },
+  {
     "id": "4fa3278fb38e44e8",
     "title": "Name That Toon Contest",
     "summary_raw": "",
@@ -2578,5 +3492,35 @@
     "tags": [
       "discussion"
     ]
+  },
+  {
+    "id": "0359f2d74d508e95",
+    "title": "WinRAR Flaw Exploited by Russia-Aligned Groups to Deploy Stealers in Ukraine",
+    "summary_raw": "Two Russia-aligned cyber attack campaigns have continued to exploit a security flaw in WinRAR to target Ukrainian organisations, almost a year after patches for the vulnerability were released.\n\nThe activity has been attributed by Trend Micro to Earth Dahu (aka Gamaredon) and SHADOW-EARTH-066 (aka UAC-0226). It involves the exploitation of CVE-2025-8088, a path traversal flaw that allows an",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/winrar-flaw-exploited-by-russia-aligned.html",
+    "publishedDate": "2026-06-09T17:56:10+05:30",
+    "scrapedAt": "2026-06-10T06:15:53.709874+00:00",
+    "duplicate_of_canonical": true
+  },
+  {
+    "id": "9820ae8e6ccc95dd",
+    "title": "ISC Stormcast For Wednesday, June 10th, 2026 https://isc.sans.edu/podcastdetail/9966, (Wed, Jun 10th)",
+    "summary_raw": "",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33066",
+    "publishedDate": "2026-06-10T02:00:02+00:00",
+    "scrapedAt": "2026-06-10T06:15:56.742426+00:00",
+    "duplicate_of_canonical": true
+  },
+  {
+    "id": "7767b09e4d7e10c3",
+    "title": "Microsoft June 2026 Patch Tuesday, (Tue, Jun 9th)",
+    "summary_raw": "Microsoft today released patches for 204 vulnerabilities. 38 of these vulnerabilities are considered critical, and three have been disclosed before today. Six of the vulnerabilities affect Microsoft cloud solutions and do not require any user action. In addition, Microsoft incorporated 360 different vulnerabilities affecting Chromium into its Edge browser.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33064",
+    "publishedDate": "2026-06-09T17:34:29+00:00",
+    "scrapedAt": "2026-06-10T06:15:56.742525+00:00",
+    "duplicate_of_canonical": true
   }
 ]
