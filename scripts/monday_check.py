@@ -9,7 +9,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from gemini_client import ProjectError, create_client, generate_json
+from llm_client import ProjectError, generate_json
 from edition import CONTENT_DIR, RAW_DIR, get_edition
 
 SCRIPTS_DIR = Path(__file__).parent
@@ -37,8 +37,6 @@ If NO (the existing newsletter is still comprehensive and up-to-date), respond w
 
 
 def main():
-    client = create_client()
-
     year, edition = get_edition()
     content_file = CONTENT_DIR / year / f"{edition}.json"
 
@@ -84,13 +82,13 @@ def main():
     )
 
     try:
-        result = generate_json(client, prompt, temperature=0.2)
+        result = generate_json(prompt, backend="gemini", temperature=0.2)
     except ProjectError:
         print("[WARN] Project-level error, proceeding with existing newsletter")
         return
 
     if not result:
-        print("[WARN] Gemini check failed, proceeding with existing newsletter")
+        print("[WARN] LLM check failed, proceeding with existing newsletter")
         return
 
     if not result.get("inject"):

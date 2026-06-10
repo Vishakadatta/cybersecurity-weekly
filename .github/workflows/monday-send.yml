@@ -34,8 +34,11 @@ jobs:
       - name: Monday emergency check
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_MODEL: gemini-2.5-pro
-          GEMINI_DELAY_SECONDS: "20"
+          LLM_DELAY_SECONDS: "10"
+          SITE_URL: ${{ vars.SITE_URL }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
         run: python scripts/monday_check.py
 
       - name: Commit any emergency updates
@@ -55,13 +58,6 @@ jobs:
         with:
           ref: main
 
-      - name: Checkout private data store
-        uses: actions/checkout@v4
-        with:
-          repository: ${{ github.repository_owner }}/cybersecurity-weekly-private
-          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
-          path: private-data
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -75,8 +71,10 @@ jobs:
       - name: Send newsletter
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+          BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-          PRIVATE_DATA_PATH: ${{ github.workspace }}/private-data
+          SENDER_NAME: ${{ vars.SENDER_NAME }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
         run: python scripts/send_newsletter.py
 
   deploy-site:
@@ -104,6 +102,8 @@ jobs:
         run: npx astro build
         env:
           ASTRO_TELEMETRY_DISABLED: 1
+          PUBLIC_BREVO_FORM_URL: ${{ vars.PUBLIC_BREVO_FORM_URL }}
+          PUBLIC_BREVO_UNSUBSCRIBE_URL: ${{ vars.PUBLIC_BREVO_UNSUBSCRIBE_URL }}
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

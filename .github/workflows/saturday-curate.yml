@@ -29,11 +29,11 @@ jobs:
       - name: Scrape for new articles
         run: python scripts/scrape.py
 
-      - name: Curate and summarize with Gemini
+      - name: Curate and summarize (Groq primary, Gemini fallback)
         env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_MODEL: gemini-2.5-pro
-          GEMINI_DELAY_SECONDS: "20"
+          LLM_DELAY_SECONDS: "3"
         run: python scripts/curate.py
 
       - name: Commit curated data

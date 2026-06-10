@@ -8,8 +8,9 @@ import json
 import sys
 from pathlib import Path
 
-from gemini_client import ProjectError, create_client, generate_json, throttle
+from llm_client import ProjectError, generate_json, throttle
 from edition import RAW_DIR, get_edition
+from dedupe import dedupe_articles
 
 SUMMARIZE_PROMPT = """You are a cybersecurity news editor. I will give you a list of raw articles scraped from security news sources this week.
 
@@ -24,7 +25,7 @@ Focus areas that should get higher relevance scores:
 - NMS (Network Management Systems), webapp management
 - Critical zero-days, nation-state attacks, widespread impact
 
-Respond with a JSON array. Each element must have these fields:
+Respond with a JSON object containing a single key "articles" whose value is an array. Each element of the array must have these fields:
 - id (string, keep the original)
 - title (string, cleaned up)
 - summary (string, 2-3 sentences)
@@ -41,8 +42,6 @@ def chunk_articles(articles: list[dict], chunk_size: int = 10) -> list[list[dict
 
 
 def main():
-    client = create_client()
-
     year, edition = get_edition()
     cumulative_file = RAW_DIR / f"{edition}-cumulative.json"
 
@@ -73,7 +72,22 @@ def main():
                     if k in curated
                 })
 
-    uncurated = [a for a in articles if not a.get("summary")]
+    uncurated_all = [a for a in articles if not a.get("summary")]
+
+    if uncurated_all:
+        print(f"  Deduping {len(uncurated_all)} uncurated articles by title embedding...")
+        canonicals, _ = dedupe_articles(uncurated_all)
+        suppressed = len(uncurated_all) - len(canonicals)
+        if suppressed:
+            print(f"  Suppressed {suppressed} near-duplicate articles from LLM input")
+        uncurated = canonicals
+        canonical_ids = {a["id"] for a in canonicals}
+        for a in uncurated_all:
+            if a["id"] not in canonical_ids:
+                articles_by_id[a["id"]]["duplicate_of_canonical"] = True
+    else:
+        uncurated = []
+
     print(f"  Already curated: {len(already_curated)}, need curation: {len(uncurated)}")
 
     if not uncurated:
@@ -103,7 +117,7 @@ def main():
         prompt = SUMMARIZE_PROMPT + json.dumps(input_data, indent=2)
 
         try:
-            result = generate_json(client, prompt, temperature=0.3)
+            result = generate_json(prompt, backend="groq", temperature=0.3)
         except ProjectError as e:
             print(f"\nABORTING: Unrecoverable project error — {e}", file=sys.stderr)
             print("Fix your API key / project, then re-run.", file=sys.stderr)

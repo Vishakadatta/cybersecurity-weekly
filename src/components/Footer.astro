@@ -1,4 +1,6 @@
 ---
+const base = import.meta.env.BASE_URL;
+const unsubscribeUrl = import.meta.env.PUBLIC_BREVO_UNSUBSCRIBE_URL;
 const year = new Date().getFullYear();
 ---
 
@@ -17,21 +19,21 @@ const year = new Date().getFullYear();
         GitHub
       </a>
       <a
-        href="https://github.com/Vishakadatta/cybersecurity-weekly/issues/new?template=subscribe.yml&title=Subscribe"
-        target="_blank"
-        rel="noopener"
+        href={`${base}#subscribe`}
         class="text-sm text-dark-400 transition hover:text-cyber-400"
       >
         Subscribe
       </a>
-      <a
-        href="https://github.com/Vishakadatta/cybersecurity-weekly/issues/new?template=unsubscribe.yml&title=Unsubscribe"
-        target="_blank"
-        rel="noopener"
-        class="text-sm text-dark-400 transition hover:text-cyber-400"
-      >
-        Unsubscribe
-      </a>
+      {unsubscribeUrl && (
+        <a
+          href={unsubscribeUrl}
+          target="_blank"
+          rel="noopener"
+          class="text-sm text-dark-400 transition hover:text-cyber-400"
+        >
+          Unsubscribe
+        </a>
+      )}
     </div>
   </div>
 </footer>

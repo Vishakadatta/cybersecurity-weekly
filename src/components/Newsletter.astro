@@ -1,21 +1,47 @@
-<section class="my-12 rounded-2xl border border-cyber-500/20 bg-gradient-to-br from-cyber-950/50 to-dark-900 p-8 text-center">
-  <div class="mx-auto max-w-lg">
+---
+const formUrl = import.meta.env.PUBLIC_BREVO_FORM_URL;
+const unsubscribeUrl = import.meta.env.PUBLIC_BREVO_UNSUBSCRIBE_URL;
+---
+
+<section id="subscribe" class="my-12 rounded-2xl border border-cyber-500/20 bg-gradient-to-br from-cyber-950/50 to-dark-900 p-8">
+  <div class="mx-auto max-w-lg text-center">
     <h2 class="mb-2 text-2xl font-bold text-white">Stay in the loop</h2>
     <p class="mb-6 text-dark-300">
       Get the top cybersecurity stories delivered to your inbox every Monday morning.
-      AI-curated, concise, and free.
+      AI-curated, concise, and free. You'll receive a confirmation email to verify your address.
     </p>
-    <a
-      href="https://github.com/Vishakadatta/cybersecurity-weekly/issues/new?template=subscribe.yml&title=Subscribe"
-      target="_blank"
-      rel="noopener"
-      class="inline-flex items-center gap-2 rounded-lg bg-cyber-500 px-6 py-3 text-sm font-semibold text-dark-950 transition hover:bg-cyber-400"
-    >
-      <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-      </svg>
-      Subscribe via GitHub
-    </a>
-    <p class="mt-3 text-xs text-dark-500">Requires a GitHub account. We never spam.</p>
+
+    {formUrl ? (
+      <div class="overflow-hidden rounded-lg bg-dark-950/40 ring-1 ring-cyber-500/10">
+        <iframe
+          src={formUrl}
+          title="Subscribe to Cybersecurity Weekly"
+          width="100%"
+          height="420"
+          frameborder="0"
+          scrolling="auto"
+          style="background:transparent;"
+          allowfullscreen
+        ></iframe>
+      </div>
+    ) : (
+      <div class="rounded-lg border border-amber-500/30 bg-amber-950/20 p-4 text-left text-sm text-amber-200">
+        <p class="font-semibold">Subscribe form not configured.</p>
+        <p class="mt-1 text-amber-200/80">
+          Set <code class="rounded bg-dark-900 px-1.5 py-0.5 text-xs">PUBLIC_BREVO_FORM_URL</code>
+          in your Astro build environment to the URL of your Brevo hosted signup form
+          (e.g. <code class="rounded bg-dark-900 px-1.5 py-0.5 text-xs">https://sibforms.com/serve/MUIFA...</code>).
+        </p>
+      </div>
+    )}
+
+    {unsubscribeUrl && (
+      <p class="mt-4 text-xs text-dark-500">
+        Already subscribed?
+        <a href={unsubscribeUrl} target="_blank" rel="noopener" class="ml-1 underline hover:text-cyber-400">
+          Manage preferences or unsubscribe
+        </a>
+      </p>
+    )}
   </div>
 </section>
