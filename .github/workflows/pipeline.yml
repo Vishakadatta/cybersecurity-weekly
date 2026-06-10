@@ -20,16 +20,19 @@ on:
   workflow_dispatch:
     inputs:
       stage:
-        description: Stage to run
+        description: 'Stage to run. "all" cascades through every stage. "from_<stage>" runs that stage onward. Bare stage names run just that one stage.'
         required: true
-        default: scrape
+        default: all
         type: choice
         options:
-          - scrape
-          - curate
-          - finalize
-          - send
-          - all   # runs scrape→curate→finalize→send in one go
+          - all              # scrape → curate → finalize → send (full chain)
+          - from_curate      # curate → finalize → send
+          - from_finalize    # finalize → send
+          - from_send        # just emergency_check → send + deploy
+          - only_scrape
+          - only_curate
+          - only_finalize
+          - only_send
 
 permissions:
   contents: write
@@ -60,35 +63,41 @@ jobs:
     steps:
       - id: pick
         run: |
-          # Map cron schedule string → stage name. Manual dispatch overrides.
+          # Translate the firing trigger into 4 booleans (one per stage).
+          # Cron always fires exactly one stage (it's the weekly cadence —
+          # each day's prior commits feed the next day). workflow_dispatch
+          # supports richer shapes: all / from_<stage> / only_<stage>.
           if [ -n "${{ inputs.stage }}" ]; then
-            stage="${{ inputs.stage }}"
+            mode="${{ inputs.stage }}"
           else
             case "${{ github.event.schedule }}" in
-              "30 23 * * 5") stage="scrape" ;;
-              "0 19 * * 6")  stage="curate" ;;
-              "0 1 * * 1")   stage="finalize" ;;
-              "0 16 * * 1")  stage="send" ;;
-              *)             stage="scrape" ;;
+              "30 23 * * 5") mode="only_scrape" ;;
+              "0 19 * * 6")  mode="only_curate" ;;
+              "0 1 * * 1")   mode="only_finalize" ;;
+              "0 16 * * 1")  mode="only_send" ;;
+              *)             mode="only_scrape" ;;
             esac
           fi
-          echo "stage=$stage" >> "$GITHUB_OUTPUT"
-          # "all" runs every stage in sequence
-          if [ "$stage" = "all" ]; then
-            echo "run_scrape=true"   >> "$GITHUB_OUTPUT"
-            echo "run_curate=true"   >> "$GITHUB_OUTPUT"
-            echo "run_finalize=true" >> "$GITHUB_OUTPUT"
-            echo "run_send=true"     >> "$GITHUB_OUTPUT"
-          else
-            for s in scrape curate finalize send; do
-              if [ "$s" = "$stage" ]; then
-                echo "run_${s}=true"  >> "$GITHUB_OUTPUT"
-              else
-                echo "run_${s}=false" >> "$GITHUB_OUTPUT"
-              fi
-            done
-          fi
-          echo "▶ Selected stage: $stage"
+
+          # Default all stages off, then enable based on mode.
+          s=false; c=false; f=false; n=false
+          case "$mode" in
+            all)             s=true;  c=true;  f=true;  n=true ;;
+            from_curate)              c=true;  f=true;  n=true ;;
+            from_finalize)                     f=true;  n=true ;;
+            from_send)                                  n=true ;;
+            only_scrape)     s=true ;;
+            only_curate)              c=true ;;
+            only_finalize)                     f=true ;;
+            only_send)                                  n=true ;;
+          esac
+
+          echo "stage=$mode"      >> "$GITHUB_OUTPUT"
+          echo "run_scrape=$s"    >> "$GITHUB_OUTPUT"
+          echo "run_curate=$c"    >> "$GITHUB_OUTPUT"
+          echo "run_finalize=$f"  >> "$GITHUB_OUTPUT"
+          echo "run_send=$n"      >> "$GITHUB_OUTPUT"
+          echo "▶ Mode: $mode  (scrape=$s curate=$c finalize=$f send=$n)"
 
   # ─────────────────────────────────────────────────────────────────────────
   # Stage 1: scrape
