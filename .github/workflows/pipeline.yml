@@ -355,9 +355,13 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
-      # `npm install` not `npm ci`: lockfile was generated on macOS and omits
-      # Linux-only platform binaries (npm bug #4828).
-      - run: npm install --no-audit --no-fund
+      # Lockfile generated on macOS; npm bug #4828 means the Linux-only
+      # @rollup/rollup-linux-x64-gnu binary isn't listed. Nuke any cached
+      # tree and let npm install re-resolve per-platform.
+      - name: Install Node deps (fresh, cross-platform safe)
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install --no-audit --no-fund
       - name: Build Astro site
         env:
           ASTRO_TELEMETRY_DISABLED: 1

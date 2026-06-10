@@ -78,12 +78,14 @@ jobs:
           node-version: 22
           cache: npm
 
-      - name: Install Node deps
-        # `npm install` not `npm ci`: lockfile was generated on macOS and
-        # omits Linux-only platform binaries (npm bug #4828). install
-        # re-resolves per-platform; ci is too strict and crashes on
-        # missing @rollup/rollup-linux-x64-gnu.
-        run: npm install --no-audit --no-fund
+      - name: Install Node deps (fresh, cross-platform safe)
+        # Lockfile was generated on macOS; npm bug #4828 means the
+        # Linux-only @rollup/rollup-linux-x64-gnu binary isn't listed.
+        # Nuke the lockfile + any cached node_modules and let npm install
+        # re-resolve per-platform.
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install --no-audit --no-fund
 
       - name: Build (with placeholder env vars)
         env:
