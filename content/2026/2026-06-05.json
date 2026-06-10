@@ -2,9 +2,45 @@
   "edition": "2026-06-05",
   "year": "2026",
   "editionLabel": "Jun 5 \u2013 11, 2026",
-  "generatedAt": "2026-06-10T07:19:15.825989+00:00",
-  "subjectLine": "CISA Orders Emergency Patching + Critical 5G Flaw Exploited",
+  "generatedAt": "2026-06-10T07:21:02.318910+00:00",
+  "subjectLine": "BREAKING: Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access + More Inside",
   "articles": [
+    {
+      "id": "78c0dc3e15352e5a",
+      "title": "Ivanti: Max severity Sentry flaw allows code execution as root",
+      "summary": "Ivanti has patched two critical vulnerabilities in its Sentry secure mobile gateway solution, including a maximum-severity flaw that enables remote attackers to execute code with root privileges.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-ivanti-sentry-flaw-allows-code-execution-as-root/",
+      "tier": 1,
+      "publishedDate": "2026-06-10T02:26:28-04:00"
+    },
+    {
+      "id": "7bb9c959c78254fd",
+      "title": "Veeam Backup & Replication RCE Flaw Lets Domain Users Run Remote Code",
+      "summary": "Veeam has released security patches to address a critical flaw in its Backup & Replication software that could result in remote code execution.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/veeam-backup-replication-rce-flaw-lets.html",
+      "tier": 1,
+      "publishedDate": "2026-06-09T22:09:47+05:30"
+    },
+    {
+      "id": "97adf953a8f5b6ce",
+      "title": "Microsoft June 2026 Patch Tuesday fixes 3 zero-day, 200 flaws",
+      "summary": "Today is Microsoft's June 2026 Patch Tuesday, with security updates for 200 flaws and three publicly disclosed zero-day vulnerabilities.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-3-zero-day-200-flaws/",
+      "tier": 1,
+      "publishedDate": "2026-06-09T13:57:59-04:00"
+    },
+    {
+      "id": "3b3fe7c4f6a76b87",
+      "title": "Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access on Updated Windows",
+      "summary": "The anonymous security researcher going by the name Chaotic Eclipse (aka Nightmare-Eclipse) has released a proof-of-concept (PoC) exploit for yet another Microsoft Defender zero-day named RoguePlanet.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
+      "tier": 1,
+      "publishedDate": "2026-06-10T10:52:01+05:30"
+    },
     {
       "id": "101108663e25444d",
       "title": "New Russia-Linked GREYVIBE Group Targets Ukraine with AI-Powered Cyberattacks",
