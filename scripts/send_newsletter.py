@@ -18,7 +18,7 @@ from sib_api_v3_sdk.rest import ApiException
 
 from edition import CONTENT_DIR, RAW_DIR, get_edition
 
-SENDER_NAME = os.environ.get("SENDER_NAME", "Cybersecurity Weekly")
+SENDER_NAME = "Cybersecurity Weekly"
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL", "")
 BREVO_LIST_ID = os.environ.get("BREVO_LIST_ID", "")
 UNSUBSCRIBE_URL_TEMPLATE = os.environ.get("UNSUBSCRIBE_URL", "")
@@ -90,7 +90,6 @@ def _validate_env() -> dict[str, str]:
         "SENDER_EMAIL":    "GitHub repo Secret. The verified Brevo sender email address.",
     }
     required_vars = {
-        "SENDER_NAME":     'GitHub repo Variable. The from-name on the email (e.g. "Cybersecurity Weekly").',
         "UNSUBSCRIBE_URL": "GitHub repo Variable. Goes into the List-Unsubscribe header on every send.",
     }
 
