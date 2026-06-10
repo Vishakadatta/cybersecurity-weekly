@@ -16,9 +16,16 @@ import re
 import sys
 import time
 
+# Groq fallback chain. Maverick is the largest production Llama 4 (17B active /
+# 400B total MoE). Scout is the smaller Llama 4 MoE (17B / 109B). We then
+# fall further to Llama 3.3 70B and Llama 3.1 8B Instant as safety nets in case
+# Llama 4 endpoints are rate-limited or temporarily unavailable.
+# Set GROQ_PRIMARY_MODEL to override the head of the list.
 PREFERRED_GROQ_MODELS = [
-    "llama-3.3-70b-versatile",
-    "llama-3.1-8b-instant",
+    "meta-llama/llama-4-maverick-17b-128e-instruct",   # 400B total MoE — primary
+    "meta-llama/llama-4-scout-17b-16e-instruct",        # 109B total MoE — fallback
+    "llama-3.3-70b-versatile",                          # 70B dense — safety net
+    "llama-3.1-8b-instant",                             # 8B dense — last resort within Groq
 ]
 
 PREFERRED_GEMINI_MODELS = [
@@ -27,9 +34,12 @@ PREFERRED_GEMINI_MODELS = [
     "gemini-2.5-flash-lite",
 ]
 
+# Per user policy: Gemini is the absolute last resort. The Groq backend
+# must exhaust every model in its chain before any Gemini call is made.
+# Both "groq" and "gemini" entry points use the same order.
 BACKEND_FALLBACKS = {
     "groq": ["groq", "gemini"],
-    "gemini": ["gemini", "groq"],
+    "gemini": ["groq", "gemini"],
 }
 
 DEFAULT_DELAY = 5
@@ -97,7 +107,7 @@ def _groq_generate(prompt: str, temperature: float):
     if client is None:
         raise RuntimeError("Groq backend unavailable (no key or SDK)")
 
-    env_model = os.environ.get("GROQ_MODEL", "").strip()
+    env_model = os.environ.get("GROQ_PRIMARY_MODEL", os.environ.get("GROQ_MODEL", "")).strip()
     models = [env_model] + [m for m in PREFERRED_GROQ_MODELS if m != env_model] if env_model else list(PREFERRED_GROQ_MODELS)
 
     for model in models:

@@ -109,7 +109,8 @@ def main():
     prompt = RANKING_PROMPT.format(articles_json=json.dumps(articles_for_prompt, indent=2))
 
     try:
-        result = generate_json(prompt, backend="gemini", temperature=0.4)
+        # Groq (Llama 4 Maverick) primary per project policy — Gemini is last resort.
+        result = generate_json(prompt, backend="groq", temperature=0.4)
     except ProjectError as e:
         print(f"\nABORTING: Unrecoverable project error — {e}", file=sys.stderr)
         sys.exit(1)

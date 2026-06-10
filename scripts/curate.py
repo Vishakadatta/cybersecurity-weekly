@@ -11,6 +11,7 @@ from pathlib import Path
 from llm_client import ProjectError, generate_json, throttle
 from edition import RAW_DIR, get_edition
 from dedupe import dedupe_articles
+from discover import discover as discovery_pass
 
 SUMMARIZE_PROMPT = """You are a cybersecurity news editor. I will give you a list of raw articles scraped from security news sources this week.
 
@@ -80,11 +81,30 @@ def main():
         suppressed = len(uncurated_all) - len(canonicals)
         if suppressed:
             print(f"  Suppressed {suppressed} near-duplicate articles from LLM input")
-        uncurated = canonicals
         canonical_ids = {a["id"] for a in canonicals}
         for a in uncurated_all:
             if a["id"] not in canonical_ids:
                 articles_by_id[a["id"]]["duplicate_of_canonical"] = True
+
+        # Discovery pass — Llama 4 Maverick filters cybersecurity-irrelevant noise
+        # before we spend tokens summarizing it.
+        print(f"  Discovery pass over {len(canonicals)} canonicals (Llama 4 Maverick)...")
+        try:
+            kept, dropped = discovery_pass(canonicals)
+        except ProjectError as e:
+            print(f"\nABORTING: Unrecoverable project error during discovery — {e}", file=sys.stderr)
+            sys.exit(1)
+        print(f"  Discovery kept {len(kept)}, dropped {len(dropped)} as irrelevant")
+        # Merge discovery scores back into the main article store for audit.
+        for a in kept + dropped:
+            target = articles_by_id.get(a["id"])
+            if target is not None:
+                target["discovery_score"] = a.get("discovery_score")
+                target["discovery_reason"] = a.get("discovery_reason")
+                target["security_topic"] = a.get("security_topic")
+        for a in dropped:
+            articles_by_id[a["id"]]["dropped_by_discovery"] = True
+        uncurated = kept
     else:
         uncurated = []
 

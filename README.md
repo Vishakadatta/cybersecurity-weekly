@@ -136,14 +136,25 @@ Each week, four GitHub Actions workflows run on a fixed schedule:
 
 All content at every stage is committed to the repo as JSON, so you can audit exactly what the AI saw, ranked, and published.
 
-### Two-model split
+### LLM stack — Groq-first, Gemini last-resort
 
-The pipeline uses two different LLMs deliberately:
+The pipeline uses a three-stage LLM workflow, with Groq's Llama 4 family doing the heavy lifting:
 
-- **Groq Llama 3.3 70B Versatile** for **summarization** — fast (~500 tok/s), free, US-origin (Meta). The summarize-and-tag stage is mostly extraction and doesn't need deep judgment.
-- **Gemini 2.5 Pro** for **tournament ranking + Monday emergency check** — judgment-heavy "which of these stories matters more" comparisons benefit from a stronger reasoner.
+1. **Discovery (`discover.py`)** — Llama 4 Maverick (17B active / 400B total MoE) scans every canonical article post-dedupe and scores actual cybersecurity relevance 1–10. Anything below the threshold (default 5) is dropped before any token is spent on summarization. This is the "find the real cybersecurity news" stage.
+2. **Summarization (`curate.py`)** — Llama 4 Maverick again produces titles, 2–3 sentence summaries, relevance scores, and topic tags for what survived discovery.
+3. **Tournament ranking (`finalize.py`) + Monday emergency check** — Llama 4 Maverick compares articles head-to-head and assigns tiers + the newsletter subject line.
 
-Both backends share a common `llm_client.py` with a fallback chain — if the primary backend is rate-limited or down, the other takes over automatically. **Only Western/allied-origin models are used** (Meta Llama, Google Gemini). No Chinese-origin LLMs anywhere in the pipeline, even when offered free via aggregators.
+**Fallback chain (within Groq, exhausted before any Gemini call):**
+
+```
+Llama 4 Maverick (17B/400B MoE)  ─►  Llama 4 Scout (17B/109B MoE)
+  ─►  Llama 3.3 70B Versatile     ─►  Llama 3.1 8B Instant
+  ─►  Gemini 2.5 Pro / Flash / Flash-Lite  (LAST RESORT)
+```
+
+Gemini is genuinely a last resort — it's only used if every Groq model is rate-limited or down. Override the primary with `GROQ_PRIMARY_MODEL`.
+
+**Only Western/allied-origin models are used** (Meta Llama, Google Gemini). No Chinese-origin LLMs anywhere in the pipeline, even when offered free via aggregators.
 
 ### Embedding dedupe
 
@@ -272,8 +283,9 @@ cybersecurity-weekly/
 │   ├── requirements.txt            # Pinned Python dependencies
 │   ├── scrape.py                   # RSS/HTTP scraping logic
 │   ├── dedupe.py                   # Embedding-based dedupe (sentence-transformers)
+│   ├── discover.py                 # Maverick filters cybersecurity-irrelevant noise
 │   ├── llm_client.py               # Provider-agnostic LLM client (Groq + Gemini)
-│   ├── curate.py                   # Dedupe + Groq summarization + scoring
+│   ├── curate.py                   # Dedupe + discover + Maverick summarization
 │   ├── finalize.py                 # Tournament ranking (Gemini) + tier assignment
 │   ├── monday_check.py             # Monday emergency scrape check
 │   └── send_newsletter.py          # Brevo API: read list + send transactional

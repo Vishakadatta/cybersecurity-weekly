@@ -1,0 +1,121 @@
+version: 2
+
+# Dependabot configuration. Groups minor + patch updates into a single PR per
+# ecosystem to keep PR volume low; majors stay separate so a breaking change
+# is never silently bundled with safe updates.
+#
+# Security updates always open immediately and are NOT subject to the weekly
+# schedule.
+
+updates:
+  # ------- Node / Astro site -------
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "10:00"
+      timezone: "America/Los_Angeles"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "ecosystem:npm"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
+    groups:
+      astro-stack:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
+          - "tailwindcss"
+          - "@tailwindcss/*"
+        update-types:
+          - "minor"
+          - "patch"
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+      runtime-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+        exclude-patterns:
+          - "astro"
+          - "@astrojs/*"
+          - "tailwindcss"
+          - "@tailwindcss/*"
+
+  # ------- Python pipeline scripts -------
+  - package-ecosystem: "pip"
+    directory: "/scripts"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "10:00"
+      timezone: "America/Los_Angeles"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+      - "ecosystem:pip"
+    commit-message:
+      prefix: "chore(deps)"
+      include: "scope"
+    groups:
+      ai-clients:
+        patterns:
+          - "groq"
+          - "google-genai"
+          - "sentence-transformers"
+        update-types:
+          - "minor"
+          - "patch"
+      scraping:
+        patterns:
+          - "feedparser"
+          - "httpx"
+          - "beautifulsoup4"
+          - "python-dateutil"
+        update-types:
+          - "minor"
+          - "patch"
+      everything-else:
+        patterns:
+          - "*"
+        exclude-patterns:
+          - "groq"
+          - "google-genai"
+          - "sentence-transformers"
+          - "feedparser"
+          - "httpx"
+          - "beautifulsoup4"
+          - "python-dateutil"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # ------- GitHub Actions (workflow + composite-action versions) -------
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "10:00"
+      timezone: "America/Los_Angeles"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "ecosystem:github-actions"
+    commit-message:
+      prefix: "chore(actions)"
+      include: "scope"
+    groups:
+      actions-all:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
