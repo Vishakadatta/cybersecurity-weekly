@@ -735,6 +735,26 @@
     ]
   },
   {
+    "id": "78c0dc3e15352e5a",
+    "title": "Ivanti Sentry Flaw Allows Code Execution as Root",
+    "summary_raw": "Ivanti has patched two critical vulnerabilities in its Sentry secure mobile gateway solution, including a maximum-severity flaw that enables remote attackers to execute code with root privileges. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-ivanti-sentry-flaw-allows-code-execution-as-root/",
+    "publishedDate": "2026-06-10T02:26:28-04:00",
+    "scrapedAt": "2026-06-10T07:08:57.153140+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Critical vulnerability in Ivanti Sentry allows code execution as root",
+    "security_topic": "vulnerability",
+    "summary": "Ivanti patched a maximum-severity vulnerability in its Sentry secure mobile gateway solution, which enables remote attackers to execute code with root privileges. This flaw highlights the risks associated with secure mobile gateways and the importance of timely patching. The vulnerability could allow attackers to gain unauthorized access to sensitive data.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "code-execution",
+      "root-privileges",
+      "mobile-gateway"
+    ]
+  },
+  {
     "id": "6fb1925cf6612eef",
     "title": "China-Linked Threat Cluster OP-512 Targets IIS Servers with Custom Web Shell",
     "summary_raw": "Cybersecurity researchers have discovered a previously unreported threat cluster dubbed OP-512 (where \"OP\" stands for \"opponent\") that has been observed&nbsp;targeting Microsoft Internet Information Services (IIS) servers to deploy a bespoke web shell framework.\n\nReliaQuest has assessed with moderate to high confidence that the espionage-focused activity is linked to China.\n\n\"OP-512 was highly",
@@ -1676,6 +1696,46 @@
       "supply chain attack",
       "TeamPCP",
       "Mini Shai-Hulud"
+    ]
+  },
+  {
+    "id": "3b3fe7c4f6a76b87",
+    "title": "Microsoft Defender Zero-Day RoguePlanet Grants SYSTEM Access",
+    "summary_raw": "The anonymous security researcher going by the name Chaotic Eclipse (aka Nightmare-Eclipse) has released a proof-of-concept (PoC) exploit for yet another Microsoft Defender zero-day named RoguePlanet.\n\n\"The exploit is a race condition, so it's a hit or miss,\" the researcher, who published the exploit under a new GitHub account, \"MSNightmare\" said. \"I have managed to get a 100% success rate on",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
+    "publishedDate": "2026-06-10T10:52:01+05:30",
+    "scrapedAt": "2026-06-10T07:08:56.984030+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Zero-day exploit in Microsoft Defender with potential for SYSTEM access",
+    "security_topic": "vulnerability",
+    "summary": "A security researcher released a proof-of-concept exploit for a Microsoft Defender zero-day named RoguePlanet, which could grant SYSTEM access on updated Windows systems. The exploit is a race condition, allowing for potential SYSTEM-level access. This vulnerability highlights the ongoing risks associated with endpoint security solutions.",
+    "relevance_score": 8,
+    "tags": [
+      "zero-day",
+      "Microsoft",
+      "vulnerability",
+      "endpoint-security"
+    ]
+  },
+  {
+    "id": "4845ebb04ea7a50b",
+    "title": "June 2026 Patch Tuesday: Microsoft Patches 206 Vulnerabilities",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/",
+    "publishedDate": "2026-06-09T00:00:00-05:00",
+    "scrapedAt": "2026-06-10T07:08:58.408726+00:00",
+    "discovery_score": 8.0,
+    "discovery_reason": "Microsoft patches 206 vulnerabilities, including three publicly disclosed zero-days",
+    "security_topic": "vulnerability",
+    "summary": "Microsoft released its June 2026 Patch Tuesday update, patching 206 vulnerabilities, including three publicly disclosed zero-days. This update highlights the ongoing efforts to address vulnerabilities in Microsoft products and the importance of timely patching. The large number of patched vulnerabilities emphasizes the need for organizations to stay up-to-date with security updates.",
+    "relevance_score": 8,
+    "tags": [
+      "patch-tuesday",
+      "Microsoft",
+      "vulnerabilities",
+      "zero-days"
     ]
   },
   {
@@ -2900,6 +2960,26 @@
       "phishing",
       "Microsoft Teams",
       "collaboration platforms"
+    ]
+  },
+  {
+    "id": "fc73c9f958d4f833",
+    "title": "CrowdStrike 2026 Technology Threat Landscape Report",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-technology-threat-landscape-report/",
+    "publishedDate": "2026-06-09T00:00:00-05:00",
+    "scrapedAt": "2026-06-10T07:08:58.408617+00:00",
+    "discovery_score": 7.0,
+    "discovery_reason": "Threat landscape report from CrowdStrike with insights on China's cyber activities",
+    "security_topic": "research",
+    "summary": "CrowdStrike released its 2026 Technology Threat Landscape Report, highlighting China's increasing ambitions in fueling cyber attacks. The report likely provides insights into emerging threats and trends in the cybersecurity landscape. Understanding these trends is crucial for organizations to prepare for potential threats.",
+    "relevance_score": 6,
+    "tags": [
+      "threat-landscape",
+      "China",
+      "cyber-attacks",
+      "report"
     ]
   },
   {
