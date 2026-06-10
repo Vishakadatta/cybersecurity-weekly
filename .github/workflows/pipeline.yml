@@ -355,7 +355,9 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
-      - run: npm ci
+      # `npm install` not `npm ci`: lockfile was generated on macOS and omits
+      # Linux-only platform binaries (npm bug #4828).
+      - run: npm install --no-audit --no-fund
       - name: Build Astro site
         env:
           ASTRO_TELEMETRY_DISABLED: 1
