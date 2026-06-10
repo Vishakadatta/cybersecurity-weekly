@@ -2,9 +2,54 @@
   "edition": "2026-06-05",
   "year": "2026",
   "editionLabel": "Jun 5 \u2013 11, 2026",
-  "generatedAt": "2026-06-10T07:21:02.318910+00:00",
+  "generatedAt": "2026-06-10T07:34:51.580151+00:00",
   "subjectLine": "BREAKING: Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access + More Inside",
   "articles": [
+    {
+      "id": "ea6cfaf1ee3aa04f",
+      "title": "A Record-Breaking Patch Tuesday for June 2026",
+      "source": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
+      "summary": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company's monthly Patch Tuesday.",
+      "tier": 1,
+      "publishedDate": "2026-06-09T22:07:28+00:00"
+    },
+    {
+      "id": "97adf953a8f5b6ce",
+      "title": "Microsoft June 2026 Patch Tuesday fixes 3 zero-day, 200 flaws",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-3-zero-day-200-flaws/",
+      "summary": "Today is Microsoft's June 2026 Patch Tuesday, with security updates for 200 flaws and three publicly disclosed zero-day vulnerabilities.",
+      "tier": 1,
+      "publishedDate": "2026-06-09T13:57:59-04:00"
+    },
+    {
+      "id": "3268bbde4275b904",
+      "title": "Microsoft Defender 'RoguePlanet' zero-day grants SYSTEM privileges",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-defender-rogueplanet-zero-day-grants-system-privileges/",
+      "summary": "A security researcher has released a new Microsoft Defender zero-day exploit named \"RoguePlanet\" just hours after Microsoft fixed two previously disclosed flaws during June 2026 Patch Tuesday.",
+      "tier": 1,
+      "publishedDate": "2026-06-09T19:11:18-04:00"
+    },
+    {
+      "id": "78c0dc3e15352e5a",
+      "title": "Ivanti: Max severity Sentry flaw allows code execution as root",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-ivanti-sentry-flaw-allows-code-execution-as-root/",
+      "summary": "Ivanti has patched two critical vulnerabilities in its Sentry secure mobile gateway solution, including a maximum-severity flaw that enables remote attackers to execute code with root privileges.",
+      "tier": 1,
+      "publishedDate": "2026-06-10T02:26:28-04:00"
+    },
+    {
+      "id": "3b3fe7c4f6a76b87",
+      "title": "Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access on Updated Windows",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
+      "summary": "The anonymous security researcher going by the name Chaotic Eclipse (aka Nightmare-Eclipse) has released a proof-of-concept (PoC) exploit for yet another Microsoft Defender zero-day named RoguePlanet.",
+      "tier": 1,
+      "publishedDate": "2026-06-10T10:52:01+05:30"
+    },
     {
       "id": "78c0dc3e15352e5a",
       "title": "Ivanti: Max severity Sentry flaw allows code execution as root",
