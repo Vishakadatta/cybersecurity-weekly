@@ -1852,5 +1852,41 @@
     "url": "https://isc.sans.edu/diary/rss/33060",
     "publishedDate": "2026-06-08T17:07:37+00:00",
     "scrapedAt": "2026-06-10T06:15:56.742688+00:00"
+  },
+  {
+    "id": "3b3fe7c4f6a76b87",
+    "title": "Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access on Updated Windows",
+    "summary_raw": "The anonymous security researcher going by the name Chaotic Eclipse (aka Nightmare-Eclipse) has released a proof-of-concept (PoC) exploit for yet another Microsoft Defender zero-day named RoguePlanet.\n\n\"The exploit is a race condition, so it's a hit or miss,\" the researcher, who published the exploit under a new GitHub account, \"MSNightmare\" said. \"I have managed to get a 100% success rate on",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
+    "publishedDate": "2026-06-10T10:52:01+05:30",
+    "scrapedAt": "2026-06-10T07:08:56.984030+00:00"
+  },
+  {
+    "id": "78c0dc3e15352e5a",
+    "title": "Ivanti: Max severity Sentry flaw allows code execution as root",
+    "summary_raw": "Ivanti has patched two critical vulnerabilities in its Sentry secure mobile gateway solution, including a maximum-severity flaw that enables remote attackers to execute code with root privileges. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-ivanti-sentry-flaw-allows-code-execution-as-root/",
+    "publishedDate": "2026-06-10T02:26:28-04:00",
+    "scrapedAt": "2026-06-10T07:08:57.153140+00:00"
+  },
+  {
+    "id": "fc73c9f958d4f833",
+    "title": "CrowdStrike 2026 Technology Threat Landscape Report: China&rsquo;s Ambitions Fuel Attacks",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-2026-technology-threat-landscape-report/",
+    "publishedDate": "2026-06-09T00:00:00-05:00",
+    "scrapedAt": "2026-06-10T07:08:58.408617+00:00"
+  },
+  {
+    "id": "4845ebb04ea7a50b",
+    "title": "June 2026 Patch Tuesday: Microsoft Patches 206 Vulnerabilities Including Three Publicly Disclosed Zero-Days",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/",
+    "publishedDate": "2026-06-09T00:00:00-05:00",
+    "scrapedAt": "2026-06-10T07:08:58.408726+00:00"
   }
 ]
