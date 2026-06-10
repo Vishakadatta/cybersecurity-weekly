@@ -16,14 +16,20 @@ import re
 import sys
 import time
 
-# Groq fallback chain. Maverick is the largest production Llama 4 (17B active /
-# 400B total MoE). Scout is the smaller Llama 4 MoE (17B / 109B). We then
-# fall further to Llama 3.3 70B and Llama 3.1 8B Instant as safety nets in case
-# Llama 4 endpoints are rate-limited or temporarily unavailable.
-# Set GROQ_PRIMARY_MODEL to override the head of the list.
+# Groq fallback chain. Llama 4 Scout is the head of the chain by default
+# because Llama 4 Maverick (the larger 400B MoE) has been intermittently
+# returning model_404 on Groq's production API for some accounts. Keeping
+# Maverick first wasted ~500ms per LLM call retrying a known-failing model
+# before the chain reached Scout. Scout (17B active / 109B total MoE) is
+# still a Llama 4, just with fewer experts — quality is very close for
+# this workload (summarization + 1-10 relevance scoring).
+#
+# To restore Maverick as primary (e.g. if your Groq account regains access,
+# or if it's working on a future paid tier), set:
+#     GROQ_PRIMARY_MODEL=meta-llama/llama-4-maverick-17b-128e-instruct
 PREFERRED_GROQ_MODELS = [
-    "meta-llama/llama-4-maverick-17b-128e-instruct",   # 400B total MoE — primary
-    "meta-llama/llama-4-scout-17b-16e-instruct",        # 109B total MoE — fallback
+    "meta-llama/llama-4-scout-17b-16e-instruct",        # 109B total MoE — primary (proven available)
+    "meta-llama/llama-4-maverick-17b-128e-instruct",    # 400B total MoE — try if Scout is down
     "llama-3.3-70b-versatile",                          # 70B dense — safety net
     "llama-3.1-8b-instant",                             # 8B dense — last resort within Groq
 ]

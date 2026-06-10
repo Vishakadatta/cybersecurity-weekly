@@ -7,17 +7,45 @@ and saves raw articles as JSON for the current edition.
 import json
 import hashlib
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 import feedparser
 import httpx
 from dateutil import parser as dateparser
+from dateutil import tz as dateutz
 
 from edition import RAW_DIR, compute_friday, set_edition
 
 SCRIPTS_DIR = Path(__file__).parent
 SOURCES_FILE = SCRIPTS_DIR / "sources.json"
+
+# A realistic User-Agent — some feeds (Schneier on Security, others behind WAFs)
+# 429 or 403 on the default httpx UA. Identifying ourselves honestly avoids that.
+USER_AGENT = (
+    "CybersecurityWeeklyBot/1.0 (+https://github.com/Vishakadatta/cybersecurity-weekly; "
+    "weekly RSS aggregator for newsletter)"
+)
+
+# Polite delay between feed fetches so we don't hammer hosts that share infra.
+INTER_FEED_DELAY = 1.0
+
+# Map common US timezone abbreviations so dateutil.parser can resolve dates like
+# "Fri, 06 Jun 2026 14:32:00 PDT" without emitting UnknownTimezoneWarning.
+TZINFOS = {
+    "PDT": dateutz.gettz("America/Los_Angeles"),
+    "PST": dateutz.gettz("America/Los_Angeles"),
+    "MDT": dateutz.gettz("America/Denver"),
+    "MST": dateutz.gettz("America/Denver"),
+    "CDT": dateutz.gettz("America/Chicago"),
+    "CST": dateutz.gettz("America/Chicago"),
+    "EDT": dateutz.gettz("America/New_York"),
+    "EST": dateutz.gettz("America/New_York"),
+    "BST": dateutz.gettz("Europe/London"),
+    "CEST": dateutz.gettz("Europe/Berlin"),
+    "CET": dateutz.gettz("Europe/Berlin"),
+}
 
 
 def load_sources() -> list[dict]:
@@ -31,8 +59,12 @@ def article_id(url: str) -> str:
 
 def fetch_rss(source: dict, cutoff: datetime) -> list[dict]:
     articles = []
+    headers = {
+        "User-Agent": USER_AGENT,
+        "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.8",
+    }
     try:
-        resp = httpx.get(source["url"], timeout=30, follow_redirects=True)
+        resp = httpx.get(source["url"], timeout=30, follow_redirects=True, headers=headers)
         resp.raise_for_status()
         feed = feedparser.parse(resp.text)
 
@@ -42,7 +74,7 @@ def fetch_rss(source: dict, cutoff: datetime) -> list[dict]:
                 raw_date = getattr(entry, date_field, None)
                 if raw_date:
                     try:
-                        published = dateparser.parse(raw_date)
+                        published = dateparser.parse(raw_date, tzinfos=TZINFOS)
                         break
                     except (ValueError, TypeError):
                         continue
@@ -110,11 +142,14 @@ def main():
         print(f"Loaded {len(existing)} existing articles from cumulative file")
 
     all_new = []
-    for source in sources:
+    for i, source in enumerate(sources):
         print(f"Scraping: {source['name']}...")
         articles = fetch_rss(source, cutoff)
         print(f"  Found {len(articles)} articles within date range")
         all_new.extend(articles)
+        # Polite delay between feeds — avoids 429 from shared-infra hosts.
+        if i < len(sources) - 1:
+            time.sleep(INTER_FEED_DELAY)
 
     with open(raw_file, "w") as f:
         json.dump(all_new, f, indent=2)
