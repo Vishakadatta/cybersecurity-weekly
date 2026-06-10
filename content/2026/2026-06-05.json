@@ -2,85 +2,31 @@
   "edition": "2026-06-05",
   "year": "2026",
   "editionLabel": "Jun 5 \u2013 11, 2026",
-  "generatedAt": "2026-06-10T07:43:07.345587+00:00",
-  "subjectLine": "BREAKING: A Record-Breaking Patch Tuesday for June 2026 + More Inside",
+  "generatedAt": "2026-06-10T16:57:39.185199+00:00",
+  "subjectLine": "Critical Exploits in Cisco, Microsoft, and Palo Alto Networks Devices",
   "articles": [
-    {
-      "id": "3268bbde4275b904",
-      "title": "Microsoft Defender 'RoguePlanet' zero-day grants SYSTEM privileges",
-      "summary": "A security researcher has released a new Microsoft Defender zero-day exploit named \"RoguePlanet\" just hours after Microsoft fixed two previously disclosed flaws during June 2026 Patch Tuesday.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-defender-rogueplanet-zero-day-grants-system-privileges/",
-      "tier": 1,
-      "publishedDate": "2026-06-09T19:11:18-04:00"
-    },
-    {
-      "id": "78c0dc3e15352e5a",
-      "title": "Ivanti: Max severity Sentry flaw allows code execution as root",
-      "summary": "Ivanti has patched two critical vulnerabilities in its Sentry secure mobile gateway solution, including a maximum-severity flaw that enables remote attackers to execute code with root privileges.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/new-max-severity-ivanti-sentry-flaw-allows-code-execution-as-root/",
-      "tier": 1,
-      "publishedDate": "2026-06-10T02:26:28-04:00"
-    },
-    {
-      "id": "7bb9c959c78254fd",
-      "title": "Veeam Backup & Replication RCE Flaw Lets Domain Users Run Remote Code",
-      "summary": "Veeam has released security patches to address a critical flaw in its Backup & Replication software that could result in remote code execution.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/veeam-backup-replication-rce-flaw-lets.html",
-      "tier": 1,
-      "publishedDate": "2026-06-09T22:09:47+05:30"
-    },
-    {
-      "id": "3b3fe7c4f6a76b87",
-      "title": "Microsoft Defender RoguePlanet Zero-Day Grants SYSTEM Access on Updated Windows",
-      "summary": "The anonymous security researcher going by the name Chaotic Eclipse (aka Nightmare-Eclipse) has released a proof-of-concept (PoC) exploit for yet another Microsoft Defender zero-day named RoguePlanet.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
-      "tier": 1,
-      "publishedDate": "2026-06-10T10:52:01+05:30"
-    },
-    {
-      "id": "ea6cfaf1ee3aa04f",
-      "title": "A Record-Breaking Patch Tuesday for June 2026",
-      "summary": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company's monthly Patch Tuesday",
-      "source": "Krebs on Security",
-      "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
-      "tier": 1,
-      "publishedDate": "2026-06-09T22:07:28+00:00"
-    },
-    {
-      "id": "101108663e25444d",
-      "title": "New Russia-Linked GREYVIBE Group Targets Ukraine with AI-Powered Cyberattacks",
-      "summary": "A new, previously undocumented threat actor named GREYVIBE, believed to be Russian-speaking and aligned with Kremlin interests, has been actively targeting Ukraine since August 2025. The group is employing AI-powered cyberattacks, indicating a sophisticated and persistent campaign.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html",
-      "tier": 3,
-      "publishedDate": "2026-05-29T17:01:59+05:30"
-    },
     {
       "id": "ed06b2949afbfd7f",
       "title": "Cisco SD-WAN Zero-Day Actively Exploited",
-      "summary": "Cisco has issued a warning about an unpatched zero-day vulnerability in its Catalyst SD-WAN Manager, which is being actively exploited in the wild. The flaw allows attackers to gain root privileges, posing a severe risk to network infrastructure management.",
+      "summary": "Cisco has issued a warning about an unpatched zero-day vulnerability in its Catalyst SD-WAN Manager, which is being actively exploited in the wild.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root/",
       "tier": 1,
       "publishedDate": "2026-06-05T02:24:20-04:00"
     },
     {
-      "id": "2a80d7c27e5e2cb0",
-      "title": "AI Discovers 21 Zero-Days in FFmpeg; Chrome Patches Record 429 Bugs",
-      "summary": "An AI agent has identified 21 previously unknown zero-day vulnerabilities in FFmpeg, a widely used media processing library. Concurrently, Google released Chrome 149 with patches for an unprecedented 429 security bugs, highlighting the scale of vulnerabilities being discovered and addressed.",
+      "id": "101108663e25444d",
+      "title": "New Russia-Linked GREYVIBE Group Targets Ukraine with AI-Powered Cyberattacks",
+      "summary": "A new, previously undocumented threat actor named GREYVIBE, believed to be Russian-speaking and aligned with Kremlin interests, has been actively targeting Ukraine since August 2025.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
+      "url": "https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html",
       "tier": 1,
-      "publishedDate": "2026-06-06T12:58:30+05:30"
+      "publishedDate": "2026-05-29T17:01:59+05:30"
     },
     {
       "id": "a2fd6173618d03e3",
       "title": "Cisco Catalyst SD-WAN Manager Vulnerability Actively Exploited",
-      "summary": "Cisco has issued a warning that a high-severity vulnerability (CVE-2026-20245) in its Catalyst SD-WAN Manager is under active exploitation. The flaw, with a CVSS score of 7.8, affects multiple deployment types, and critically, no patch is currently available.",
+      "summary": "Cisco has issued a warning that a high-severity vulnerability (CVE-2026-20245) in its Catalyst SD-WAN Manager is under active exploitation.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html",
       "tier": 1,
@@ -89,38 +35,47 @@
     {
       "id": "adbab8ad222f667e",
       "title": "Chrome V8 Zero-Day Exploited in the Wild",
-      "summary": "A zero-day vulnerability in Chrome's V8 engine is being actively exploited in the wild. Google has released a security update to address the issue, highlighting the importance of keeping software up to date to prevent exploitation of zero-day vulnerabilities.",
+      "summary": "A zero-day vulnerability in Chrome's V8 engine is being actively exploited in the wild. Google has released a security update to address the issue.",
       "source": "The Hacker News",
       "url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
       "tier": 1,
       "publishedDate": "2026-06-09T17:28:49+05:30"
     },
     {
-      "id": "c29032fa40d7c7e5",
+      "id": "0d578f2433fe77f3",
       "title": "CISA Orders US Agencies to Patch Check Point VPN Bug",
-      "summary": "CISA has given US government agencies three days to patch a critical vulnerability in Check Point's Remote Access VPN and Mobile Access deployments. The flaw is being exploited by Qilin ransomware affiliates in zero-day attacks. Prompt action is required to prevent further attacks.",
+      "summary": "CISA has given US government agencies three days to patch a critical vulnerability in Check Point's Remote Access VPN and Mobile Access deployments.",
       "source": "BleepingComputer",
       "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-check-point-flaw-exploited-by-ransomware-gangs/",
       "tier": 1,
       "publishedDate": "2026-06-09T04:18:39-04:00"
     },
     {
-      "id": "1ea85e08fd09bb53",
-      "title": "IronWorm and Miasma Worm Variants Target npm Ecosystem in Supply Chain Attacks",
-      "summary": "Multiple supply chain attacks have compromised the npm ecosystem, distributing a Rust-based information stealer and a self-spreading worm via over 50 malicious or poisoned legitimate packages. This widespread compromise of developer tools poses a significant risk to software integrity and the security of the software supply chain.",
+      "id": "2a80d7c27e5e2cb0",
+      "title": "AI Discovers 21 Zero-Days in FFmpeg; Chrome Patches Record 429 Bugs",
+      "summary": "An AI agent has identified 21 previously unknown zero-day vulnerabilities in FFmpeg, a widely used media processing library. Concurrently, Google released Chrome 149 with patches for an unprecedented 429 security bugs.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/ironworm-and-new-miasma-worm-variant.html",
-      "tier": 2,
-      "publishedDate": "2026-06-05T23:35:30+05:30"
+      "url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
+      "tier": 1,
+      "publishedDate": "2026-06-06T12:58:30+05:30"
     },
     {
-      "id": "6c431e403d30c1fb",
-      "title": "One-Click GitHub Attack Steals Full OAuth Tokens via VS Code",
-      "summary": "A critical vulnerability in Microsoft Visual Studio Code allows attackers to steal full GitHub OAuth tokens with a single click. This exploit enables attackers to gain read and write access to a user's repositories, including private ones, posing a significant risk to developers.",
+      "id": "0",
+      "title": "Microsoft Patches Record 206 Flaws, Including Three Zero-Days and Critical RCE Bugs",
+      "summary": "Microsoft has patched a record 206 security vulnerabilities, including three zero-days and critical RCE bugs.",
       "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/one-click-github-dev-attack-lets.html",
-      "tier": 2,
-      "publishedDate": "2026-06-03T23:28:00+05:30"
+      "url": "https://thehackernews.com/2026/06/microsoft-patches-record-206-flaws.html",
+      "tier": 1,
+      "publishedDate": "2026-06-10T15:08:13+05:30"
+    },
+    {
+      "id": "c29032fa40d7c7e5",
+      "title": "CISA Adds Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
+      "summary": "CISA has added a critical denial-of-service vulnerability (CVE-2026-28318) in SolarWinds Serv-U software to its Known Exploited Vulnerabilities catalog.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+      "tier": 1,
+      "publishedDate": "2026-06-06T13:44:31+05:30"
     }
   ]
 }

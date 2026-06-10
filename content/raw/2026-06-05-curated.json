@@ -117,9 +117,6 @@
     "url": "https://thehackernews.com/2026/06/microsoft-patches-record-206-flaws.html",
     "publishedDate": "2026-06-10T15:08:13+05:30",
     "scrapedAt": "2026-06-10T16:52:11.121592+00:00",
-    "discovery_score": 10.0,
-    "discovery_reason": "Record patches including zero-days",
-    "security_topic": "vulnerability",
     "summary": "Microsoft has patched a record 206 security vulnerabilities, including three zero-days and critical RCE bugs. This massive patch release addresses a wide range of security issues. The number of vulnerabilities and zero-days emphasizes the complexity of software security.",
     "relevance_score": 10,
     "tags": [
@@ -778,9 +775,6 @@
     "url": "https://thehackernews.com/2026/06/ivanti-fortinet-and-sap-release-patches.html",
     "publishedDate": "2026-06-10T20:40:59+05:30",
     "scrapedAt": "2026-06-10T16:52:11.121218+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "Critical vulnerability patches",
-    "security_topic": "vulnerability",
     "summary": "Ivanti, Fortinet, and SAP have released security updates to address multiple critical vulnerabilities that could lead to arbitrary code execution and information disclosure. These patches are crucial to preventing potential attacks. The vulnerabilities' severity highlights the importance of timely patching.",
     "relevance_score": 9,
     "tags": [
@@ -797,9 +791,6 @@
     "url": "https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html",
     "publishedDate": "2026-06-10T20:30:59+05:30",
     "scrapedAt": "2026-06-10T16:52:11.121309+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "Unpatched vulnerability exploited",
-    "security_topic": "vulnerability",
     "summary": "A high-severity unpatched vulnerability in Langflow is being exploited in the wild, allowing attackers to write files to arbitrary locations. This flaw highlights the risks of unpatched software. The exploitation of this vulnerability could lead to significant security breaches.",
     "relevance_score": 9,
     "tags": [
@@ -816,9 +807,6 @@
     "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
     "publishedDate": "2026-06-10T20:14:29+05:30",
     "scrapedAt": "2026-06-10T16:52:11.121399+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "CISA adds vulnerabilities to KEV catalog",
-    "security_topic": "vulnerability",
     "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities catalog, including flaws in Cisco, Chrome, and Arista products. These vulnerabilities are being actively exploited, posing a significant risk to organizations. The addition to the KEV catalog emphasizes the need for immediate patching.",
     "relevance_score": 9,
     "tags": [
@@ -835,9 +823,6 @@
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-exchange-server-zero-day-exploited-in-attacks/",
     "publishedDate": "2026-06-10T09:44:19-04:00",
     "scrapedAt": "2026-06-10T16:52:12.195727+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "Exchange Server zero-day patch",
-    "security_topic": "vulnerability",
     "summary": "Microsoft has patched an actively exploited Exchange Server vulnerability that allows threat actors to execute arbitrary JavaScript code in XSS attacks. This patch is crucial to preventing further exploitation. The zero-day vulnerability posed a significant risk to Exchange Server users.",
     "relevance_score": 9,
     "tags": [
@@ -855,9 +840,6 @@
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-6-zero-days-200-flaws/",
     "publishedDate": "2026-06-09T13:57:59-04:00",
     "scrapedAt": "2026-06-10T16:52:12.196506+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "Patch Tuesday fixes",
-    "security_topic": "vulnerability",
     "summary": "Microsoft's June 2026 Patch Tuesday addressed 200 security flaws, including six zero-day vulnerabilities, one of which was actively exploited. These patches are essential to protect against potential attacks. The large number of flaws fixed highlights the ongoing efforts to secure Microsoft products.",
     "relevance_score": 9,
     "tags": [
@@ -1870,9 +1852,6 @@
     "url": "https://www.bleepingcomputer.com/news/security/china-linked-jdy-botnet-expands-targeting-of-us-military-networks/",
     "publishedDate": "2026-06-10T11:00:00-04:00",
     "scrapedAt": "2026-06-10T16:52:12.195443+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "Nation-state botnet expansion",
-    "security_topic": "nation-state",
     "summary": "The JDY botnet, linked to Chinese threat actors, has expanded its targeting scope and reconnaissance efforts on U.S. military networks. This development raises concerns about the security of U.S. military infrastructure. The botnet's activities may be part of a larger campaign to gather intelligence.",
     "relevance_score": 8,
     "tags": [
@@ -1890,9 +1869,6 @@
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-yellowkey-greenplasma-miniplasma-zero-days/",
     "publishedDate": "2026-06-10T05:57:33-04:00",
     "scrapedAt": "2026-06-10T16:52:12.195898+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "Zero-day vulnerability patches",
-    "security_topic": "vulnerability",
     "summary": "Microsoft patched three zero-day vulnerabilities in Windows, allowing attackers to gain SYSTEM privileges and access BitLocker-protected drives. These vulnerabilities were actively exploited in attacks. Patching these vulnerabilities is crucial to prevent potential system takeovers.",
     "relevance_score": 8,
     "tags": [
@@ -1910,9 +1886,6 @@
     "url": "https://www.schneier.com/blog/archives/2026/06/nso-group-hacking-whatsapp-despite-court-order.html",
     "publishedDate": "2026-06-10T11:08:59+00:00",
     "scrapedAt": "2026-06-10T16:54:46.226737+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "nation-state actor violating court order",
-    "security_topic": "nation-state",
     "summary": "NSO Group was caught phishing WhatsApp users, violating a court order. This incident highlights the ongoing issue of spyware and surveillance. WhatsApp's efforts to protect users are crucial in the face of these threats.",
     "relevance_score": 8,
     "tags": [
@@ -2699,9 +2672,6 @@
     "url": "https://www.bleepingcomputer.com/news/security/the-5-best-practices-for-secure-identity-verification/",
     "publishedDate": "2026-06-10T10:05:15-04:00",
     "scrapedAt": "2026-06-10T16:52:12.195625+00:00",
-    "discovery_score": 6.0,
-    "discovery_reason": "Best practices for identity verification",
-    "security_topic": "other",
     "summary": "Specops Software outlines five best practices for stronger identity verification and access security to counter increasing authentication bypass attacks. These practices aim to enhance security measures. The recommendations address a critical aspect of cybersecurity.",
     "relevance_score": 7,
     "tags": [
@@ -2717,9 +2687,6 @@
     "url": "https://www.darkreading.com/endpoint-security/invisible-battlefield-cyber-war-reshaping-everyday-life",
     "publishedDate": "2026-06-09T21:57:11+00:00",
     "scrapedAt": "2026-06-10T16:52:13.594406+00:00",
-    "discovery_score": 5.0,
-    "discovery_reason": "Cyber war impact on everyday life",
-    "security_topic": "other",
     "summary": "Former National Cyber Director Chris Inglis warns that cyber attacks threaten critical infrastructure, such as hospitals and utilities. The increasing threat of cyber war highlights the need for robust cybersecurity measures. This threat landscape affects not only organizations but also everyday life.",
     "relevance_score": 7,
     "tags": [
@@ -3207,14 +3174,32 @@
     "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
     "publishedDate": "2026-06-10T14:03:44+00:00",
     "scrapedAt": "2026-06-10T16:52:09.968286+00:00",
-    "discovery_score": 8.0,
-    "discovery_reason": "Ransomware group analysis",
-    "security_topic": "ransomware",
     "summary": "The Gentlemen ransomware group has emerged as the second most active ransomware gang, attracting talented hackers with a 90% ransom share promise. Investigators are trying to uncover the identity of the group's administrator. This group's activities highlight the ongoing threat of ransomware attacks.",
     "relevance_score": 6,
     "tags": [
       "ransomware",
       "cybercrime"
+    ]
+  },
+  {
+    "id": "944a2c7b61d4b594",
+    "title": "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance",
+    "summary_raw": "Cybersecurity researchers have warned of a \"resurgence and expansion\" of JDY, a covert network associated with China-nexus state-sponsored threat actors.\n\n\"The JDY botnet comprises over 1,500 SOHO [small office and home office] and IoT devices and operates as a centrally controlled, high-performance scanner used to discover, fingerprint, and continuously map exposed services at scale,\" Lumen's",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/china-linked-jdy-botnet-expands-to-1500.html",
+    "publishedDate": "2026-06-10T21:38:42+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121106+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Nation-state threat actor research with significant botnet expansion",
+    "security_topic": "nation-state",
+    "summary": "The JDY botnet, linked to China-nexus state-sponsored threat actors, has expanded to over 1,500 SOHO and IoT devices. It operates as a high-performance scanner for discovering and mapping exposed services. This expansion raises concerns about the botnet's potential for large-scale cyber reconnaissance.",
+    "relevance_score": 6,
+    "tags": [
+      "botnet",
+      "China",
+      "IoT",
+      "cyber reconnaissance",
+      "state-sponsored"
     ]
   },
   {
@@ -3225,9 +3210,6 @@
     "url": "https://www.darkreading.com/vulnerabilities-threats/nightmare-eclipse-microsoft-exploit-rogueplanet",
     "publishedDate": "2026-06-10T16:31:02+00:00",
     "scrapedAt": "2026-06-10T16:52:13.594302+00:00",
-    "discovery_score": 7.0,
-    "discovery_reason": "PoC for Windows Defender bug",
-    "security_topic": "vulnerability",
     "summary": "A researcher released a proof-of-concept exploit for a Windows Defender vulnerability, allowing for system takeover. This exploit is a continuation of a feud between the researcher and Microsoft. The release highlights the ongoing cat-and-mouse game between researchers and vendors.",
     "relevance_score": 6,
     "tags": [
@@ -3553,9 +3535,6 @@
     "url": "https://thehackernews.com/2026/06/anthropic-releases-claude-fable-5-its.html",
     "publishedDate": "2026-06-10T13:07:59+05:30",
     "scrapedAt": "2026-06-10T16:52:11.121674+00:00",
-    "discovery_score": 6.0,
-    "discovery_reason": "AI model release with cyber safeguards",
-    "security_topic": "ai-security",
     "summary": "Anthropic has released Claude Fable 5, its most capable AI model yet, with built-in cyber safeguards. The model is designed to mitigate potential security risks associated with AI. This development highlights the growing importance of AI security.",
     "relevance_score": 5,
     "tags": [
@@ -3571,9 +3550,6 @@
     "url": "https://www.cisa.gov/news-events/news/cisa-issues-new-directive-improving-how-federal-agencies-prioritize-mitigation-cyber-vulnerabilities",
     "publishedDate": "2026-06-10T12:00:00+00:00",
     "scrapedAt": "2026-06-10T16:52:14.742552+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "new policy directive from CISA on vulnerability mitigation",
-    "security_topic": "policy",
     "summary": "CISA issued a new directive to improve how federal agencies prioritize and mitigate cyber vulnerabilities. This directive aims to enhance the security posture of federal agencies. The directive is a step towards a more proactive approach to cybersecurity.",
     "relevance_score": 5,
     "tags": [
@@ -3722,14 +3698,30 @@
     "url": "https://thehackernews.com/2026/06/your-automated-pentest-looks-clean-see.html",
     "publishedDate": "2026-06-10T15:57:49+05:30",
     "scrapedAt": "2026-06-10T16:52:11.121480+00:00",
-    "discovery_score": 5.0,
-    "discovery_reason": "Webinar on pentesting",
-    "security_topic": "tooling",
     "summary": "Automated pentesting may not always reveal all security issues, and a webinar by The Hacker News and Picus Security aims to address this gap. The webinar focuses on identifying overlooked risks. This highlights the limitations of automated security testing.",
     "relevance_score": 4,
     "tags": [
       "pentesting",
       "security testing"
+    ]
+  },
+  {
+    "id": "f20747ea9f69172d",
+    "title": "Microsoft: Some Windows PCs Fail to Install Latest Monthly Updates",
+    "summary_raw": "Microsoft warned customers on Tuesday that they may have issues installing the latest monthly updates on some Windows devices that were upgraded to Windows 11 24H2 or 25H2. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-some-upgraded-windows-pcs-fail-to-install-monthly-updates/",
+    "publishedDate": "2026-06-10T07:33:32-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195815+00:00",
+    "discovery_score": 6.0,
+    "discovery_reason": "Windows update issues have security implications for patch management",
+    "security_topic": "vulnerability",
+    "summary": "Microsoft has warned that some Windows devices upgraded to Windows 11 24H2 or 25H2 may have issues installing the latest monthly updates. This issue may leave some devices vulnerable to known security exploits. A fix is likely forthcoming, but users should be aware of the potential problem.",
+    "relevance_score": 4,
+    "tags": [
+      "Windows",
+      "update issues",
+      "vulnerability"
     ]
   },
   {
@@ -3740,9 +3732,6 @@
     "url": "https://www.recordedfuture.com/blog/2026-fifa-world-cup-cyber-physical-threats-security-guide",
     "publishedDate": "2026-06-10T00:00:00+00:00",
     "scrapedAt": "2026-06-10T16:52:23.950174+00:00",
-    "discovery_score": 5.0,
-    "discovery_reason": "threat analysis for a specific event",
-    "security_topic": "research",
     "summary": "The 2026 FIFA World Cup poses physical and cyber threats to host cities. Public safety officials need to be aware of these threats and implement mitigation strategies. The event highlights the importance of a comprehensive security plan.",
     "relevance_score": 4,
     "tags": [
@@ -3822,9 +3811,6 @@
     "url": "https://isc.sans.edu/diary/rss/33068",
     "publishedDate": "2026-06-10T08:29:21+00:00",
     "scrapedAt": "2026-06-10T16:52:26.338940+00:00",
-    "discovery_score": 7.0,
-    "discovery_reason": "security header usage analysis",
-    "security_topic": "research",
     "summary": "An analysis of framing protection security headers on popular domains revealed changes in usage over the past three years. The analysis highlights the evolving security landscape. Understanding these changes can help improve web application security.",
     "relevance_score": 3,
     "tags": [
@@ -3936,6 +3922,25 @@
     "tags": []
   },
   {
+    "id": "47f5b66701e18975",
+    "title": "AI Slop Will Kill Cybersecurity Storytelling If We Let It",
+    "summary_raw": "AI-generated content threatens credibility in cybersecurity. This &quot;Ask the Expert&quot; column explores why human oversight matters and how to maintain authentic narratives.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/ai-slop-kill-cybersecurity-storytelling-we-let-it",
+    "publishedDate": "2026-06-08T22:05:49+00:00",
+    "scrapedAt": "2026-06-10T16:52:13.594821+00:00",
+    "discovery_score": 5.0,
+    "discovery_reason": "Opinion piece on AI impact on cybersecurity storytelling",
+    "security_topic": "other",
+    "summary": "The rise of AI-generated content threatens the credibility of cybersecurity storytelling. Human oversight is essential to maintaining authentic narratives and preventing the spread of misinformation. This issue highlights the need for careful evaluation of sources in the cybersecurity community.",
+    "relevance_score": 2,
+    "tags": [
+      "AI",
+      "cybersecurity storytelling",
+      "misinformation"
+    ]
+  },
+  {
     "id": "4fa3278fb38e44e8",
     "title": "Name That Toon Contest",
     "summary_raw": "",
@@ -3964,42 +3969,6 @@
     ]
   },
   {
-    "id": "944a2c7b61d4b594",
-    "title": "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance",
-    "summary_raw": "Cybersecurity researchers have warned of a \"resurgence and expansion\" of JDY, a covert network associated with China-nexus state-sponsored threat actors.\n\n\"The JDY botnet comprises over 1,500 SOHO [small office and home office] and IoT devices and operates as a centrally controlled, high-performance scanner used to discover, fingerprint, and continuously map exposed services at scale,\" Lumen's",
-    "source": "The Hacker News",
-    "url": "https://thehackernews.com/2026/06/china-linked-jdy-botnet-expands-to-1500.html",
-    "publishedDate": "2026-06-10T21:38:42+05:30",
-    "scrapedAt": "2026-06-10T16:52:11.121106+00:00",
-    "duplicate_of_canonical": true
-  },
-  {
-    "id": "f20747ea9f69172d",
-    "title": "Microsoft: Some Windows PCs fail to install latest monthly updates",
-    "summary_raw": "Microsoft warned customers on Tuesday that they may have issues installing the latest monthly updates on some Windows devices that were upgraded to Windows 11 24H2 or 25H2. [...]",
-    "source": "BleepingComputer",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-some-upgraded-windows-pcs-fail-to-install-monthly-updates/",
-    "publishedDate": "2026-06-10T07:33:32-04:00",
-    "scrapedAt": "2026-06-10T16:52:12.195815+00:00",
-    "discovery_score": 2.0,
-    "discovery_reason": "Windows update issues",
-    "security_topic": "none",
-    "dropped_by_discovery": true
-  },
-  {
-    "id": "47f5b66701e18975",
-    "title": "AI Slop Will Kill Cybersecurity Storytelling If We Let It",
-    "summary_raw": "AI-generated content threatens credibility in cybersecurity. This &quot;Ask the Expert&quot; column explores why human oversight matters and how to maintain authentic narratives.",
-    "source": "Dark Reading",
-    "url": "https://www.darkreading.com/cyber-risk/ai-slop-kill-cybersecurity-storytelling-we-let-it",
-    "publishedDate": "2026-06-08T22:05:49+00:00",
-    "scrapedAt": "2026-06-10T16:52:13.594821+00:00",
-    "discovery_score": 4.0,
-    "discovery_reason": "opinion piece on cyber topic",
-    "security_topic": "other",
-    "dropped_by_discovery": true
-  },
-  {
     "id": "d88274798e0f1b32",
     "title": "CrowdStrike Expands Identity Leadership with OpenID and IDPro",
     "summary_raw": "",
@@ -4008,7 +3977,7 @@
     "publishedDate": "2026-06-10T00:00:00-05:00",
     "scrapedAt": "2026-06-10T16:54:39.178980+00:00",
     "discovery_score": 2.0,
-    "discovery_reason": "product expansion announcement",
+    "discovery_reason": "Product expansion announcement with no direct security relevance",
     "security_topic": "none",
     "dropped_by_discovery": true
   }
