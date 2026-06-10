@@ -7,11 +7,11 @@
 # Heavy jobs (curate, finalize) install the full requirements.txt instead,
 # which adds sentence-transformers and pulls in torch + CUDA wheels (~2 GB).
 
-feedparser>=6.0.11
-httpx>=0.27.0
-beautifulsoup4>=4.12.3
+feedparser>=6.0.12
+httpx>=0.28.1
+beautifulsoup4>=4.15.0
 python-dateutil>=2.9.0
-jinja2>=3.1.4
+jinja2>=3.1.6
 groq>=1.4.0
 google-genai>=2.8.0
 sib-api-v3-sdk>=7.6.0
