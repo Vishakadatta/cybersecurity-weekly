@@ -80,15 +80,46 @@ def send_email(api_instance, to_email: str, subject: str, html_content: str) -> 
         return False
 
 
-def main():
-    brevo_key = os.environ.get("BREVO_API_KEY")
-    if not brevo_key:
-        print("ERROR: BREVO_API_KEY environment variable not set", file=sys.stderr)
+def _validate_env() -> dict[str, str]:
+    """Validate every required env var at once and emit a single, actionable
+    error if anything is missing. Failing one-at-a-time across CI runs is
+    tedious; this preflight catches all of them in a single failed job."""
+    required_secrets = {
+        "BREVO_API_KEY":   "GitHub repo Secret. Brevo dashboard → SMTP & API → API Keys.",
+        "BREVO_LIST_ID":   "GitHub repo Secret. Numeric ID of your Brevo contact list (Contacts → Lists).",
+        "SENDER_EMAIL":    "GitHub repo Secret. The verified Brevo sender email address.",
+    }
+    required_vars = {
+        "SENDER_NAME":     'GitHub repo Variable. The from-name on the email (e.g. "Cybersecurity Weekly").',
+        "UNSUBSCRIBE_URL": "GitHub repo Variable. Goes into the List-Unsubscribe header on every send.",
+    }
+
+    missing: list[str] = []
+    values: dict[str, str] = {}
+    for k, hint in {**required_secrets, **required_vars}.items():
+        v = os.environ.get(k, "").strip()
+        if not v:
+            kind = "Secret" if k in required_secrets else "Variable"
+            missing.append(f"  - {k:18}  [{kind}]  {hint}")
+        else:
+            values[k] = v
+
+    if missing:
+        print(
+            "ERROR: required environment is incomplete. Set the following in\n"
+            "  GitHub repo → Settings → Secrets and variables → Actions:\n\n"
+            + "\n".join(missing)
+            + "\n\nAfter setting them, re-run the workflow via 'Run workflow' on the Actions tab.",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
-    if not SENDER_EMAIL:
-        print("ERROR: SENDER_EMAIL environment variable not set", file=sys.stderr)
-        sys.exit(1)
+    return values
+
+
+def main():
+    _validate_env()
+    brevo_key = os.environ["BREVO_API_KEY"]
 
     configuration = sib_api_v3_sdk.Configuration()
     configuration.api_key["api-key"] = brevo_key
