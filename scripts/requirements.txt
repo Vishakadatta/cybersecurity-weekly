@@ -1,10 +1,11 @@
-feedparser>=6.0.11
-httpx>=0.27.0
-beautifulsoup4>=4.12.3
-google-genai>=1.0.0
-groq>=0.11.0
-jinja2>=3.1.4
-sib-api-v3-sdk>=7.6.0
-python-dateutil>=2.9.0
+# Full dependency set. Used by curate + finalize jobs (which run the
+# embedding-dedupe step) and by local development.
+#
+# For lightweight jobs (scrape / emergency_check / send_newsletter),
+# install requirements-light.txt instead — same packages minus
+# sentence-transformers + numpy, which together drag in ~2 GB of torch +
+# CUDA wheels.
+
+-r requirements-light.txt
 sentence-transformers>=3.0.0
 numpy>=1.26.0

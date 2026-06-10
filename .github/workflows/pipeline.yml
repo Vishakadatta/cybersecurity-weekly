@@ -113,8 +113,8 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: pip
-          cache-dependency-path: scripts/requirements.txt
-      - run: pip install -r scripts/requirements.txt
+          cache-dependency-path: scripts/requirements-light.txt
+      - run: pip install -r scripts/requirements-light.txt
       - name: Scrape
         run: python scripts/scrape.py
       - name: Commit raw data
@@ -244,8 +244,8 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: pip
-          cache-dependency-path: scripts/requirements.txt
-      - run: pip install -r scripts/requirements.txt
+          cache-dependency-path: scripts/requirements-light.txt
+      - run: pip install -r scripts/requirements-light.txt
       - name: Monday emergency check
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
@@ -280,8 +280,8 @@ jobs:
         with:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: pip
-          cache-dependency-path: scripts/requirements.txt
-      - run: pip install -r scripts/requirements.txt
+          cache-dependency-path: scripts/requirements-light.txt
+      - run: pip install -r scripts/requirements-light.txt
       - name: Send via Brevo
         env:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}

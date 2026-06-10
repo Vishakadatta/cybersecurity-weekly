@@ -1,0 +1,17 @@
+# Light dependency set: everything *except* torch + sentence-transformers.
+# Used by jobs that don't run the embedding-dedupe step:
+#   - scrape (RSS only)
+#   - emergency_check (LLM clients only)
+#   - send_newsletter (Brevo SDK + Jinja only)
+#
+# Heavy jobs (curate, finalize) install the full requirements.txt instead,
+# which adds sentence-transformers and pulls in torch + CUDA wheels (~2 GB).
+
+feedparser>=6.0.11
+httpx>=0.27.0
+beautifulsoup4>=4.12.3
+python-dateutil>=2.9.0
+jinja2>=3.1.4
+groq>=0.11.0
+google-genai>=1.0.0
+sib-api-v3-sdk>=7.6.0
