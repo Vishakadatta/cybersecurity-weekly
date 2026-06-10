@@ -2077,5 +2077,23 @@
     "url": "https://isc.sans.edu/diary/rss/33068",
     "publishedDate": "2026-06-10T08:29:21+00:00",
     "scrapedAt": "2026-06-10T16:52:26.338940+00:00"
+  },
+  {
+    "id": "d88274798e0f1b32",
+    "title": "CrowdStrike Expands Identity Leadership with OpenID and IDPro",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-identity-leadership-with-openid-and-idpro/",
+    "publishedDate": "2026-06-10T00:00:00-05:00",
+    "scrapedAt": "2026-06-10T16:54:39.178980+00:00"
+  },
+  {
+    "id": "b6e1ca93e9ecaf6b",
+    "title": "NSO Group Hacking WhatsApp Despite Court Order",
+    "summary_raw": "<p>WhatsApp has <a href=\"https://www.securityweek.com/whatsapp-catches-spyware-firm-nso-defying-no-hacking-court-order/\">caught</a> the NSO Group phishing its users, in violation of a court order.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/06/nso-group-hacking-whatsapp-despite-court-order.html",
+    "publishedDate": "2026-06-10T11:08:59+00:00",
+    "scrapedAt": "2026-06-10T16:54:46.226737+00:00"
   }
 ]

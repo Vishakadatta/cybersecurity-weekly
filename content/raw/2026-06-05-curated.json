@@ -110,6 +110,25 @@
     ]
   },
   {
+    "id": "0d578f2433fe77f3",
+    "title": "Microsoft Patches Record 206 Flaws, Including Three Zero-Days and Critical RCE Bugs",
+    "summary_raw": "Microsoft on Tuesday released fixes for a record 206 security vulnerabilities impacting its software portfolio, including three flaws that have been publicly disclosed at the time of release.\n\nOf the 206 flaws, 39 are rated Critical, and 167 are rated Important in severity. This includes 63 privilege escalation, 56 remote code execution, 30 information disclosure, 27 spoofing, 20 security",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/microsoft-patches-record-206-flaws.html",
+    "publishedDate": "2026-06-10T15:08:13+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121592+00:00",
+    "discovery_score": 10.0,
+    "discovery_reason": "Record patches including zero-days",
+    "security_topic": "vulnerability",
+    "summary": "Microsoft has patched a record 206 security vulnerabilities, including three zero-days and critical RCE bugs. This massive patch release addresses a wide range of security issues. The number of vulnerabilities and zero-days emphasizes the complexity of software security.",
+    "relevance_score": 10,
+    "tags": [
+      "Microsoft",
+      "patching",
+      "zero-day"
+    ]
+  },
+  {
     "id": "1ea85e08fd09bb53",
     "title": "IronWorm and Miasma Worm Variants Target npm Ecosystem in Supply Chain Attacks",
     "summary_raw": "Multiple software supply chain attacks have hit the npm ecosystem, with threat actors using both malicious and poisoned versions of over 50 legitimate packages to distribute a Rust-based information stealer and a self-spreading worm, respectively.\n\nAccording to JFrog, the information stealer \"scrapes every secret it can find on a developer's machine, hides behind an eBPF kernel rootkit, and",
@@ -749,6 +768,103 @@
       "code-execution",
       "root-privileges",
       "mobile-gateway"
+    ]
+  },
+  {
+    "id": "92218887bf7ba5fe",
+    "title": "Ivanti, Fortinet, and SAP Release Patches for Multiple Critical Vulnerabilities",
+    "summary_raw": "Fortinet, Ivanti, and SAP have released security updates to address multiple critical security vulnerabilities that could result in arbitrary code execution and information disclosure.\n\nThe security flaw patched by Fortinet relates to a command injection vulnerability in FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS WEB UI. It's tracked as CVE-2026-25089 (CVSS score: 9.1).\n\n\"An",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/ivanti-fortinet-and-sap-release-patches.html",
+    "publishedDate": "2026-06-10T20:40:59+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121218+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Critical vulnerability patches",
+    "security_topic": "vulnerability",
+    "summary": "Ivanti, Fortinet, and SAP have released security updates to address multiple critical vulnerabilities that could lead to arbitrary code execution and information disclosure. These patches are crucial to preventing potential attacks. The vulnerabilities' severity highlights the importance of timely patching.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "patching",
+      "arbitrary code execution"
+    ]
+  },
+  {
+    "id": "efdaae8518c88b1d",
+    "title": "Unpatched Langflow Flaw CVE-2026-5027 Exploited for Unauthenticated RCE",
+    "summary_raw": "A high-severity unpatched security flaw in Langflow, an open-source low-code platform to build artificial intelligence (AI) applications, has come under active exploitation in the wild, according to findings from VulnCheck.\n\nThe vulnerability in question is CVE-2026-5027 (CVSS score: 8.8), a case of path traversal that could allow an attacker to write files to arbitrary locations.\n\n\"The 'POST /",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/unpatched-langflow-flaw-cve-2026-5027.html",
+    "publishedDate": "2026-06-10T20:30:59+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121309+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Unpatched vulnerability exploited",
+    "security_topic": "vulnerability",
+    "summary": "A high-severity unpatched vulnerability in Langflow is being exploited in the wild, allowing attackers to write files to arbitrary locations. This flaw highlights the risks of unpatched software. The exploitation of this vulnerability could lead to significant security breaches.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "unpatched",
+      "RCE"
+    ]
+  },
+  {
+    "id": "68b80d502f29c57c",
+    "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog Amid Active Exploitation",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe list of vulnerabilities is as follows -\n\n\n  CVE-2026-20245 (CVSS score: 7.8) - An improper encoding or escaping of output vulnerability in Cisco Catalyst SD-WAN Manager that could allow an",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
+    "publishedDate": "2026-06-10T20:14:29+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121399+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "CISA adds vulnerabilities to KEV catalog",
+    "security_topic": "vulnerability",
+    "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities catalog, including flaws in Cisco, Chrome, and Arista products. These vulnerabilities are being actively exploited, posing a significant risk to organizations. The addition to the KEV catalog emphasizes the need for immediate patching.",
+    "relevance_score": 9,
+    "tags": [
+      "vulnerability",
+      "CISA",
+      "active exploitation"
+    ]
+  },
+  {
+    "id": "2b1ea9e057ffd34b",
+    "title": "Microsoft patches Exchange Server zero-day exploited in attacks",
+    "summary_raw": "Microsoft has patched an actively exploited Exchange Server vulnerability that allows threat actors to execute arbitrary JavaScript code in cross-site scripting (XSS) attacks targeting Outlook Web Access users. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-exchange-server-zero-day-exploited-in-attacks/",
+    "publishedDate": "2026-06-10T09:44:19-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195727+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Exchange Server zero-day patch",
+    "security_topic": "vulnerability",
+    "summary": "Microsoft has patched an actively exploited Exchange Server vulnerability that allows threat actors to execute arbitrary JavaScript code in XSS attacks. This patch is crucial to preventing further exploitation. The zero-day vulnerability posed a significant risk to Exchange Server users.",
+    "relevance_score": 9,
+    "tags": [
+      "Microsoft",
+      "Exchange Server",
+      "zero-day",
+      "XSS"
+    ]
+  },
+  {
+    "id": "f6730f2237940df4",
+    "title": "Microsoft June 2026 Patch Tuesday fixes 6 zero-days, 200 flaws",
+    "summary_raw": "Today is Microsoft's June 2026 Patch Tuesday, with security updates for 200 flaws, including five publicly disclosed zero-day vulnerabilities and one actively exploited in attacks. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-6-zero-days-200-flaws/",
+    "publishedDate": "2026-06-09T13:57:59-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.196506+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Patch Tuesday fixes",
+    "security_topic": "vulnerability",
+    "summary": "Microsoft's June 2026 Patch Tuesday addressed 200 security flaws, including six zero-day vulnerabilities, one of which was actively exploited. These patches are essential to protect against potential attacks. The large number of flaws fixed highlights the ongoing efforts to secure Microsoft products.",
+    "relevance_score": 9,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Microsoft",
+      "Patch Tuesday"
     ]
   },
   {
@@ -1737,9 +1853,6 @@
     "url": "https://thehackernews.com/2026/06/servicenow-flaw-exploited-to-gain.html",
     "publishedDate": "2026-06-10T12:32:08+05:30",
     "scrapedAt": "2026-06-10T07:41:53.102491+00:00",
-    "discovery_score": 9.0,
-    "discovery_reason": "exploited flaw in a widely used platform",
-    "security_topic": "vulnerability",
     "summary": "ServiceNow warned about a security incident where threat actors exploited a flaw to gain unauthorized access to customer instances. A security update was applied on June 5, 2026, to address the issue, which could allow unauthenticated users to access susceptible instances. This incident highlights the importance of promptly patching vulnerabilities in widely used services.",
     "relevance_score": 8,
     "tags": [
@@ -1747,6 +1860,65 @@
       "exploit",
       "unauthorized-access",
       "NMS"
+    ]
+  },
+  {
+    "id": "328985d6bcace907",
+    "title": "China-linked JDY botnet expands targeting of U.S. military networks",
+    "summary_raw": "The JDY botnet, a malware network previously associated with Chinese threat actors like Volt Typhoon, has significantly expanded its targeting scope and reconnaissance efforts. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/china-linked-jdy-botnet-expands-targeting-of-us-military-networks/",
+    "publishedDate": "2026-06-10T11:00:00-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195443+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Nation-state botnet expansion",
+    "security_topic": "nation-state",
+    "summary": "The JDY botnet, linked to Chinese threat actors, has expanded its targeting scope and reconnaissance efforts on U.S. military networks. This development raises concerns about the security of U.S. military infrastructure. The botnet's activities may be part of a larger campaign to gather intelligence.",
+    "relevance_score": 8,
+    "tags": [
+      "botnet",
+      "China",
+      "U.S. military",
+      "cyber espionage"
+    ]
+  },
+  {
+    "id": "2ed1517514068ee9",
+    "title": "Microsoft patches YellowKey, GreenPlasma, MiniPlasma zero-days",
+    "summary_raw": "On Tuesday, Microsoft patched two zero-day vulnerabilities that let attackers gain SYSTEM privileges on fully patched Windows systems, and a third one that grants access to BitLocker-protected drives. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-yellowkey-greenplasma-miniplasma-zero-days/",
+    "publishedDate": "2026-06-10T05:57:33-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195898+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "Zero-day vulnerability patches",
+    "security_topic": "vulnerability",
+    "summary": "Microsoft patched three zero-day vulnerabilities in Windows, allowing attackers to gain SYSTEM privileges and access BitLocker-protected drives. These vulnerabilities were actively exploited in attacks. Patching these vulnerabilities is crucial to prevent potential system takeovers.",
+    "relevance_score": 8,
+    "tags": [
+      "zero-day",
+      "vulnerability",
+      "Microsoft",
+      "Windows"
+    ]
+  },
+  {
+    "id": "b6e1ca93e9ecaf6b",
+    "title": "NSO Group Hacking WhatsApp Despite Court Order",
+    "summary_raw": "<p>WhatsApp has <a href=\"https://www.securityweek.com/whatsapp-catches-spyware-firm-nso-defying-no-hacking-court-order/\">caught</a> the NSO Group phishing its users, in violation of a court order.</p>",
+    "source": "Schneier on Security",
+    "url": "https://www.schneier.com/blog/archives/2026/06/nso-group-hacking-whatsapp-despite-court-order.html",
+    "publishedDate": "2026-06-10T11:08:59+00:00",
+    "scrapedAt": "2026-06-10T16:54:46.226737+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "nation-state actor violating court order",
+    "security_topic": "nation-state",
+    "summary": "NSO Group was caught phishing WhatsApp users, violating a court order. This incident highlights the ongoing issue of spyware and surveillance. WhatsApp's efforts to protect users are crucial in the face of these threats.",
+    "relevance_score": 8,
+    "tags": [
+      "spyware",
+      "WhatsApp",
+      "NSO Group"
     ]
   },
   {
@@ -2520,6 +2692,43 @@
     ]
   },
   {
+    "id": "f95085924cae03aa",
+    "title": "The 5 Best Practices for Secure Identity Verification",
+    "summary_raw": "Attackers are increasingly bypassing weak authentication through phishing, MFA fatigue, and service desk social engineering. Specops Software breaks down five best practices for stronger identity verification and access security. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/the-5-best-practices-for-secure-identity-verification/",
+    "publishedDate": "2026-06-10T10:05:15-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195625+00:00",
+    "discovery_score": 6.0,
+    "discovery_reason": "Best practices for identity verification",
+    "security_topic": "other",
+    "summary": "Specops Software outlines five best practices for stronger identity verification and access security to counter increasing authentication bypass attacks. These practices aim to enhance security measures. The recommendations address a critical aspect of cybersecurity.",
+    "relevance_score": 7,
+    "tags": [
+      "identity verification",
+      "access security"
+    ]
+  },
+  {
+    "id": "5a9dff47d2358bb2",
+    "title": "The Invisible Battlefield: How Cyber War Is Reshaping Everyday Life",
+    "summary_raw": "Former National Cyber Director Chris Inglis warns that cyber attacks threaten hospitals, utilities and essential services.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/endpoint-security/invisible-battlefield-cyber-war-reshaping-everyday-life",
+    "publishedDate": "2026-06-09T21:57:11+00:00",
+    "scrapedAt": "2026-06-10T16:52:13.594406+00:00",
+    "discovery_score": 5.0,
+    "discovery_reason": "Cyber war impact on everyday life",
+    "security_topic": "other",
+    "summary": "Former National Cyber Director Chris Inglis warns that cyber attacks threaten critical infrastructure, such as hospitals and utilities. The increasing threat of cyber war highlights the need for robust cybersecurity measures. This threat landscape affects not only organizations but also everyday life.",
+    "relevance_score": 7,
+    "tags": [
+      "cyber war",
+      "critical infrastructure",
+      "cybersecurity"
+    ]
+  },
+  {
     "id": "1b989337110f1c90",
     "title": "New Android Spyware 'Asin' Targets Arabic Users via Fake Apps",
     "summary_raw": "Arabic-speaking users have emerged as the target of a new Android spyware codenamed Asin, according to findings from ESET.\n\nThe Slovakian cybersecurity company said it first detected the malware spread via multiple campaigns in early 2025, with each attack wave making use of distinct websites mimicking utilities, war-related updates, and a government news source:\n\n\n  govlens[.]net, which",
@@ -2991,6 +3200,43 @@
     ]
   },
   {
+    "id": "a02b18501d3cb698",
+    "title": "Who Runs the Ransomware Group 'The Gentlemen?'",
+    "summary_raw": "A cybercrime group known as The Gentlemen has emerged as the second most active ransomware gang by victim count, rapidly attracting a talented pool of hackers through an aggressive recruitment strategy that promises affiliates 90 percent of any ransom paid by victims. This post examines clues pointing to a real life identity for the administrator of The Gentlemen ransomware group.",
+    "source": "Krebs on Security",
+    "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
+    "publishedDate": "2026-06-10T14:03:44+00:00",
+    "scrapedAt": "2026-06-10T16:52:09.968286+00:00",
+    "discovery_score": 8.0,
+    "discovery_reason": "Ransomware group analysis",
+    "security_topic": "ransomware",
+    "summary": "The Gentlemen ransomware group has emerged as the second most active ransomware gang, attracting talented hackers with a 90% ransom share promise. Investigators are trying to uncover the identity of the group's administrator. This group's activities highlight the ongoing threat of ransomware attacks.",
+    "relevance_score": 6,
+    "tags": [
+      "ransomware",
+      "cybercrime"
+    ]
+  },
+  {
+    "id": "652357f6bc926366",
+    "title": "Nightmare-Eclipse Drops Yet Another Microsoft Exploit, RoguePlanet",
+    "summary_raw": "The disgruntled researcher released yet another PoC for a Windows Defender bug that allows for system takeover, showing no signs of abandoning their ongoing feud with Microsoft.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/vulnerabilities-threats/nightmare-eclipse-microsoft-exploit-rogueplanet",
+    "publishedDate": "2026-06-10T16:31:02+00:00",
+    "scrapedAt": "2026-06-10T16:52:13.594302+00:00",
+    "discovery_score": 7.0,
+    "discovery_reason": "PoC for Windows Defender bug",
+    "security_topic": "vulnerability",
+    "summary": "A researcher released a proof-of-concept exploit for a Windows Defender vulnerability, allowing for system takeover. This exploit is a continuation of a feud between the researcher and Microsoft. The release highlights the ongoing cat-and-mouse game between researchers and vendors.",
+    "relevance_score": 6,
+    "tags": [
+      "exploit",
+      "Microsoft",
+      "Windows Defender"
+    ]
+  },
+  {
     "id": "f41f5b19bec05f21",
     "title": "SOCs Report Low Value from AI Security Tools, Expect More from Next Wave",
     "summary_raw": "Eighteen months ago, the AI SOC was a marketing line. Today it's a budget item. The category has crossed over from interesting to inevitable, with billions of dollars now flowing into AI-powered security operations platforms, agentic SOC tools, and AI co-pilots built into every layer of the security stack. The data shows SOCs are buying, deploying, and standing up AI capabilities at the fastest",
@@ -3300,6 +3546,43 @@
     ]
   },
   {
+    "id": "8b5e9c5610e15085",
+    "title": "Anthropic Releases Claude Fable 5, Its Most Powerful AI Yet, With Cyber Safeguards",
+    "summary_raw": "On June 9, Anthropic released Claude Fable 5, the most capable model it has ever made, generally available. It also did something unusual: it shipped one model as two products, split not by capability but by a layer of safety classifiers.\n\nFable 5 goes to the public. Its twin, Claude Mythos 5, the same underlying model with the cyber safeguards lifted, stays locked to a vetted group of cyber",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/anthropic-releases-claude-fable-5-its.html",
+    "publishedDate": "2026-06-10T13:07:59+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121674+00:00",
+    "discovery_score": 6.0,
+    "discovery_reason": "AI model release with cyber safeguards",
+    "security_topic": "ai-security",
+    "summary": "Anthropic has released Claude Fable 5, its most capable AI model yet, with built-in cyber safeguards. The model is designed to mitigate potential security risks associated with AI. This development highlights the growing importance of AI security.",
+    "relevance_score": 5,
+    "tags": [
+      "AI",
+      "cyber safeguards"
+    ]
+  },
+  {
+    "id": "19bae0776a457f7a",
+    "title": "CISA Issues New Directive Improving How Federal Agencies Prioritize the Mitigation of Cyber Vulnerabilities",
+    "summary_raw": "",
+    "source": "CISA Advisories",
+    "url": "https://www.cisa.gov/news-events/news/cisa-issues-new-directive-improving-how-federal-agencies-prioritize-mitigation-cyber-vulnerabilities",
+    "publishedDate": "2026-06-10T12:00:00+00:00",
+    "scrapedAt": "2026-06-10T16:52:14.742552+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "new policy directive from CISA on vulnerability mitigation",
+    "security_topic": "policy",
+    "summary": "CISA issued a new directive to improve how federal agencies prioritize and mitigate cyber vulnerabilities. This directive aims to enhance the security posture of federal agencies. The directive is a step towards a more proactive approach to cybersecurity.",
+    "relevance_score": 5,
+    "tags": [
+      "CISA",
+      "directive",
+      "vulnerability management"
+    ]
+  },
+  {
     "id": "7f2f368b88ed5216",
     "title": "MSPs Evolving Beyond vCISO Tools to Security Growth Platforms",
     "summary_raw": "Three years ago, the practical question for an MSP building a cybersecurity practice was which \"vCISO platform\" to buy. The term was good shorthand for the work at the time: assessments, advisory, reporting, maybe a compliance module bolted on the side. The work has since outgrown the descriptor.\n\nA Security Growth Platform is the more precise name for what MSPs and MSSPs need from the software",
@@ -3432,6 +3715,43 @@
     ]
   },
   {
+    "id": "2743927cb3e57154",
+    "title": "Your Automated Pentest Looks Clean. See What It Missed in This Expert Webinar",
+    "summary_raw": "Your pentest report looks clean. That might be the problem.\n\nRun automated pentesting long enough, and the new findings start to dry up. By the third or fourth run, fewer issues appear. The report looks stable. Leadership reads \"stable\" as \"secure.\" It usually isn't. The work slows down. The risk does not.\n\nThat gap is what a The Hacker News webinar with Picus Security sets out to close.\n\nAutumn",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/your-automated-pentest-looks-clean-see.html",
+    "publishedDate": "2026-06-10T15:57:49+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121480+00:00",
+    "discovery_score": 5.0,
+    "discovery_reason": "Webinar on pentesting",
+    "security_topic": "tooling",
+    "summary": "Automated pentesting may not always reveal all security issues, and a webinar by The Hacker News and Picus Security aims to address this gap. The webinar focuses on identifying overlooked risks. This highlights the limitations of automated security testing.",
+    "relevance_score": 4,
+    "tags": [
+      "pentesting",
+      "security testing"
+    ]
+  },
+  {
+    "id": "ca9d30c481587a7f",
+    "title": "2026 FIFA World Cup: What Public Safety Officials Need to Know",
+    "summary_raw": "Prepare for the 2026 FIFA World Cup with expert analysis of the physical and cyber threat landscape. Discover key mitigation strategies for host city officials to ensure public safety",
+    "source": "Recorded Future",
+    "url": "https://www.recordedfuture.com/blog/2026-fifa-world-cup-cyber-physical-threats-security-guide",
+    "publishedDate": "2026-06-10T00:00:00+00:00",
+    "scrapedAt": "2026-06-10T16:52:23.950174+00:00",
+    "discovery_score": 5.0,
+    "discovery_reason": "threat analysis for a specific event",
+    "security_topic": "research",
+    "summary": "The 2026 FIFA World Cup poses physical and cyber threats to host cities. Public safety officials need to be aware of these threats and implement mitigation strategies. The event highlights the importance of a comprehensive security plan.",
+    "relevance_score": 4,
+    "tags": [
+      "public safety",
+      "cybersecurity",
+      "FIFA World Cup"
+    ]
+  },
+  {
     "id": "f199e98d8f8323d7",
     "title": "Brave Launches Minimalist Paid Browser 'Origin'",
     "summary_raw": "Brave has announced the public release of Brave Origin, a paid minimalist version of its browser that strips out cryptocurrency, AI, rewards, and other monetization-focused features. [...]",
@@ -3492,6 +3812,24 @@
     "tags": [
       "cyber threats",
       "security posture"
+    ]
+  },
+  {
+    "id": "4d8b4dc584dcbb65",
+    "title": "How has use of framing protection security headers changed in the past 3 years?",
+    "summary_raw": "Back in 2023, I wrote a diary&#x5b;1&#x5d; discussing how commonly X-Frame-Options and CSP headers containing the frame-ancestors directive were used on 1 million most popular domains on the internet (based on the Tranco list&#x5b;2&#x5d;), and how they were set. Given that three years have passed since then, I thought it might be interesting to repeat the analysis and see what &#xe2;&#x20ac;&#x201c; if anything &#xe2;&#x20ac;&#x201c; has changed in the meantime.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "url": "https://isc.sans.edu/diary/rss/33068",
+    "publishedDate": "2026-06-10T08:29:21+00:00",
+    "scrapedAt": "2026-06-10T16:52:26.338940+00:00",
+    "discovery_score": 7.0,
+    "discovery_reason": "security header usage analysis",
+    "security_topic": "research",
+    "summary": "An analysis of framing protection security headers on popular domains revealed changes in usage over the past three years. The analysis highlights the evolving security landscape. Understanding these changes can help improve web application security.",
+    "relevance_score": 3,
+    "tags": [
+      "web security",
+      "security headers"
     ]
   },
   {
@@ -3624,5 +3962,54 @@
     "tags": [
       "discussion"
     ]
+  },
+  {
+    "id": "944a2c7b61d4b594",
+    "title": "China-Linked JDY Botnet Expands to 1,500+ Devices for Cyber Reconnaissance",
+    "summary_raw": "Cybersecurity researchers have warned of a \"resurgence and expansion\" of JDY, a covert network associated with China-nexus state-sponsored threat actors.\n\n\"The JDY botnet comprises over 1,500 SOHO [small office and home office] and IoT devices and operates as a centrally controlled, high-performance scanner used to discover, fingerprint, and continuously map exposed services at scale,\" Lumen's",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/china-linked-jdy-botnet-expands-to-1500.html",
+    "publishedDate": "2026-06-10T21:38:42+05:30",
+    "scrapedAt": "2026-06-10T16:52:11.121106+00:00",
+    "duplicate_of_canonical": true
+  },
+  {
+    "id": "f20747ea9f69172d",
+    "title": "Microsoft: Some Windows PCs fail to install latest monthly updates",
+    "summary_raw": "Microsoft warned customers on Tuesday that they may have issues installing the latest monthly updates on some Windows devices that were upgraded to Windows 11 24H2 or 25H2. [...]",
+    "source": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-some-upgraded-windows-pcs-fail-to-install-monthly-updates/",
+    "publishedDate": "2026-06-10T07:33:32-04:00",
+    "scrapedAt": "2026-06-10T16:52:12.195815+00:00",
+    "discovery_score": 2.0,
+    "discovery_reason": "Windows update issues",
+    "security_topic": "none",
+    "dropped_by_discovery": true
+  },
+  {
+    "id": "47f5b66701e18975",
+    "title": "AI Slop Will Kill Cybersecurity Storytelling If We Let It",
+    "summary_raw": "AI-generated content threatens credibility in cybersecurity. This &quot;Ask the Expert&quot; column explores why human oversight matters and how to maintain authentic narratives.",
+    "source": "Dark Reading",
+    "url": "https://www.darkreading.com/cyber-risk/ai-slop-kill-cybersecurity-storytelling-we-let-it",
+    "publishedDate": "2026-06-08T22:05:49+00:00",
+    "scrapedAt": "2026-06-10T16:52:13.594821+00:00",
+    "discovery_score": 4.0,
+    "discovery_reason": "opinion piece on cyber topic",
+    "security_topic": "other",
+    "dropped_by_discovery": true
+  },
+  {
+    "id": "d88274798e0f1b32",
+    "title": "CrowdStrike Expands Identity Leadership with OpenID and IDPro",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-expands-identity-leadership-with-openid-and-idpro/",
+    "publishedDate": "2026-06-10T00:00:00-05:00",
+    "scrapedAt": "2026-06-10T16:54:39.178980+00:00",
+    "discovery_score": 2.0,
+    "discovery_reason": "product expansion announcement",
+    "security_topic": "none",
+    "dropped_by_discovery": true
   }
 ]
