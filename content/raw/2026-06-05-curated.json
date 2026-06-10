@@ -1730,6 +1730,26 @@
     ]
   },
   {
+    "id": "39a13aae9e28aa12",
+    "title": "ServiceNow Flaw Exploited for Unauthorized Access",
+    "summary_raw": "ServiceNow has warned about a security incident in which unknown threat actors exploited a flaw to obtain deeper unauthorized access to susceptible instances.\n\n\"On June 5, 2026, ServiceNow applied a security update to hosted customer instances,\" the company revealed in an advisory that requires customer access. \"The update concerned a security issue that could allow an unauthenticated user, in",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/servicenow-flaw-exploited-to-gain.html",
+    "publishedDate": "2026-06-10T12:32:08+05:30",
+    "scrapedAt": "2026-06-10T07:41:53.102491+00:00",
+    "discovery_score": 9.0,
+    "discovery_reason": "exploited flaw in a widely used platform",
+    "security_topic": "vulnerability",
+    "summary": "ServiceNow warned about a security incident where threat actors exploited a flaw to gain unauthorized access to customer instances. A security update was applied on June 5, 2026, to address the issue, which could allow unauthenticated users to access susceptible instances. This incident highlights the importance of promptly patching vulnerabilities in widely used services.",
+    "relevance_score": 8,
+    "tags": [
+      "vulnerability",
+      "exploit",
+      "unauthorized-access",
+      "NMS"
+    ]
+  },
+  {
     "id": "4f9660b7e3af6f55",
     "title": "Hackers Used Meta's AI Support Bot to Seize Instagram Accounts",
     "summary_raw": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's \"AI support assistant\" bot into resetting account passwords.",

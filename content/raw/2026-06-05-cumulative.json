@@ -1888,5 +1888,14 @@
     "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/",
     "publishedDate": "2026-06-09T00:00:00-05:00",
     "scrapedAt": "2026-06-10T07:08:58.408726+00:00"
+  },
+  {
+    "id": "39a13aae9e28aa12",
+    "title": "ServiceNow Flaw Exploited to Gain Unauthorized Access to Customer Instances",
+    "summary_raw": "ServiceNow has warned about a security incident in which unknown threat actors exploited a flaw to obtain deeper unauthorized access to susceptible instances.\n\n\"On June 5, 2026, ServiceNow applied a security update to hosted customer instances,\" the company revealed in an advisory that requires customer access. \"The update concerned a security issue that could allow an unauthenticated user, in",
+    "source": "The Hacker News",
+    "url": "https://thehackernews.com/2026/06/servicenow-flaw-exploited-to-gain.html",
+    "publishedDate": "2026-06-10T12:32:08+05:30",
+    "scrapedAt": "2026-06-10T07:41:53.102491+00:00"
   }
 ]
