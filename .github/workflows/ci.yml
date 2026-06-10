@@ -10,15 +10,17 @@ on:
       - "templates/**"
       - "package*.json"
       - "astro.config.mjs"
-      - "tailwind.config.mjs"
       - "tsconfig.json"
       - ".github/workflows/**"
-      - ".github/actions/**"
   push:
     branches: [main]
     paths:
       - "scripts/**"
       - "src/**"
+      - "package*.json"
+      - "astro.config.mjs"
+      - ".github/workflows/ci.yml"
+  workflow_dispatch:
 
 concurrency:
   group: ci-${{ github.ref }}
