@@ -6,7 +6,7 @@
     "source": "Krebs on Security",
     "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
     "publishedDate": "2026-06-09T22:07:28+00:00",
-    "scrapedAt": "2026-06-10T06:18:22.160707+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.518305+00:00"
   },
   {
     "id": "85f025df1a492ade",
@@ -15,7 +15,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/six-proto6-vulnerabilities-in.html",
     "publishedDate": "2026-06-10T10:38:35+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.396800+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802133+00:00"
   },
   {
     "id": "651fccbf7c7e56ea",
@@ -24,7 +24,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/meta-to-use-off-site-business-data-for.html",
     "publishedDate": "2026-06-09T22:33:58+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.396923+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802241+00:00"
   },
   {
     "id": "7bb9c959c78254fd",
@@ -33,7 +33,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/veeam-backup-replication-rce-flaw-lets.html",
     "publishedDate": "2026-06-09T22:09:47+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397091+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802331+00:00"
   },
   {
     "id": "146cba0f97d31d94",
@@ -42,7 +42,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/microsoft-restores-some-github-repos.html",
     "publishedDate": "2026-06-09T22:04:52+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397196+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802416+00:00"
   },
   {
     "id": "0359f2d74d508e95",
@@ -51,7 +51,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/winrar-flaw-exploited-by-russia-aligned.html",
     "publishedDate": "2026-06-09T17:56:10+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397297+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802499+00:00"
   },
   {
     "id": "b533fe5a2c217920",
@@ -60,7 +60,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/researchers-build-self-replicating-ai.html",
     "publishedDate": "2026-06-09T17:29:03+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397398+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802599+00:00"
   },
   {
     "id": "adbab8ad222f667e",
@@ -69,7 +69,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
     "publishedDate": "2026-06-09T17:28:49+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397498+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802685+00:00"
   },
   {
     "id": "a3e4d5a177e0b326",
@@ -78,7 +78,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/the-hidden-security-risk-in-modern.html",
     "publishedDate": "2026-06-09T17:00:00+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397596+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802770+00:00"
   },
   {
     "id": "cfbb84372b06a784",
@@ -87,7 +87,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/new-frost-attack-lets-websites-track.html",
     "publishedDate": "2026-06-09T15:20:41+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397696+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802853+00:00"
   },
   {
     "id": "b90e0707d3925ddc",
@@ -96,7 +96,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/hades-pypi-attack-19-packages-poisoned.html",
     "publishedDate": "2026-06-09T14:43:32+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397792+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.802936+00:00"
   },
   {
     "id": "ba5c55b4a325572d",
@@ -105,7 +105,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html",
     "publishedDate": "2026-06-09T11:56:14+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.397888+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803019+00:00"
   },
   {
     "id": "31f72fbd2254448b",
@@ -114,7 +114,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/one-character-linux-kernel-flaw-enables.html",
     "publishedDate": "2026-06-09T01:47:39+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398021+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803110+00:00"
   },
   {
     "id": "71b6339f08378eba",
@@ -123,7 +123,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/meta-blocks-nso-groups-new-whatsapp.html",
     "publishedDate": "2026-06-08T22:38:44+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398122+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803194+00:00"
   },
   {
     "id": "9517dbcbaf2efea7",
@@ -132,7 +132,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/critical-check-point-vpn-flaw-exploited.html",
     "publishedDate": "2026-06-08T19:47:39+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398218+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803277+00:00"
   },
   {
     "id": "4b6c8ea3c5caecf6",
@@ -141,7 +141,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/ai-phishing-is-crushing-socs-with-alert.html",
     "publishedDate": "2026-06-08T18:49:13+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398314+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803356+00:00"
   },
   {
     "id": "2bde8178b07d031b",
@@ -150,7 +150,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/weekly-recap-instagram-account-hacks.html",
     "publishedDate": "2026-06-08T18:48:57+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398410+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803439+00:00"
   },
   {
     "id": "0e715ec896730206",
@@ -159,7 +159,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/the-hardest-fork.html",
     "publishedDate": "2026-06-08T17:23:00+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398508+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803524+00:00"
   },
   {
     "id": "68e47f7f5202c3b5",
@@ -168,7 +168,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/verdantbamboo-deploys-bsd-variant-of.html",
     "publishedDate": "2026-06-08T15:57:32+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398605+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803617+00:00"
   },
   {
     "id": "f865cca38c142e98",
@@ -177,7 +177,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/unc3753-used-vishing-and-physical.html",
     "publishedDate": "2026-06-08T13:09:28+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398701+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803698+00:00"
   },
   {
     "id": "d601d8dcb7ed1594",
@@ -186,7 +186,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/vs-code-adds-2-hour-extension-auto.html",
     "publishedDate": "2026-06-08T11:38:44+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398796+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803780+00:00"
   },
   {
     "id": "34cc4bb82be1f8bf",
@@ -195,7 +195,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/new-chatgpt-lockdown-mode-limits-tools.html",
     "publishedDate": "2026-06-06T19:06:57+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.398890+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803862+00:00"
   },
   {
     "id": "4c8a8b8ada73a3bb",
@@ -204,7 +204,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/free-apps-are-quietly-turning-smart-tvs.html",
     "publishedDate": "2026-06-06T13:59:05+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399009+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.803944+00:00"
   },
   {
     "id": "b1de2842ac2680d3",
@@ -213,7 +213,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
     "publishedDate": "2026-06-06T13:44:31+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399106+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804025+00:00"
   },
   {
     "id": "2a80d7c27e5e2cb0",
@@ -222,7 +222,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
     "publishedDate": "2026-06-06T12:58:30+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399199+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804105+00:00"
   },
   {
     "id": "2b6030b62913c3c6",
@@ -231,7 +231,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html",
     "publishedDate": "2026-06-06T12:28:04+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399292+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804186+00:00"
   },
   {
     "id": "a2fd6173618d03e3",
@@ -240,7 +240,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html",
     "publishedDate": "2026-06-06T09:49:28+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399386+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804266+00:00"
   },
   {
     "id": "1ea85e08fd09bb53",
@@ -249,7 +249,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/ironworm-and-new-miasma-worm-variant.html",
     "publishedDate": "2026-06-05T23:35:30+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399480+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804346+00:00"
   },
   {
     "id": "1b989337110f1c90",
@@ -258,7 +258,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/android-spyware-asin-targets-arabic.html",
     "publishedDate": "2026-06-05T20:23:40+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399573+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804427+00:00"
   },
   {
     "id": "6fb1925cf6612eef",
@@ -267,7 +267,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/new-threat-cluster-op-512-targets.html",
     "publishedDate": "2026-06-05T18:03:38+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399665+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804508+00:00"
   },
   {
     "id": "f41f5b19bec05f21",
@@ -276,7 +276,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/only-10-of-socs-say-theyre-getting.html",
     "publishedDate": "2026-06-05T16:50:00+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399758+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804596+00:00"
   },
   {
     "id": "f0f98fb2bada392d",
@@ -285,7 +285,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html",
     "publishedDate": "2026-06-05T14:08:59+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399851+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804678+00:00"
   },
   {
     "id": "ae18d2949faada03",
@@ -294,7 +294,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/fifa-world-cup-2026-scams-are-already.html",
     "publishedDate": "2026-06-05T12:31:41+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.399967+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804757+00:00"
   },
   {
     "id": "b5b8223e790378d9",
@@ -303,7 +303,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/pcpjack-hijacks-230-aws-google-cloud.html",
     "publishedDate": "2026-06-05T11:04:19+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400065+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804837+00:00"
   },
   {
     "id": "1166e148c198edcb",
@@ -312,7 +312,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html",
     "publishedDate": "2026-06-04T22:25:51+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400159+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804917+00:00"
   },
   {
     "id": "4ddc5379f6309160",
@@ -321,7 +321,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/claude-code-github-action-flaw-let-one.html",
     "publishedDate": "2026-06-04T20:45:26+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400252+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.804998+00:00"
   },
   {
     "id": "71e224483c09ee2d",
@@ -330,7 +330,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/agentic-ai-is-transforming-defense-but.html",
     "publishedDate": "2026-06-04T20:40:00+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400347+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805079+00:00"
   },
   {
     "id": "718125680d4ff914",
@@ -339,7 +339,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/threatsday-bulletin-ai-agents-gone.html",
     "publishedDate": "2026-06-04T19:30:49+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400447+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805163+00:00"
   },
   {
     "id": "c7426199cb050c74",
@@ -348,7 +348,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/china-linked-ta4922-expands-phishing.html",
     "publishedDate": "2026-06-04T17:52:25+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400541+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805245+00:00"
   },
   {
     "id": "594fcf8aa5f90ade",
@@ -357,7 +357,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/fluttershell-backdoor-spreads-to-macos.html",
     "publishedDate": "2026-06-04T16:49:53+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400634+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805327+00:00"
   },
   {
     "id": "3496fcdc798841ae",
@@ -366,7 +366,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/fake-sites-mimicking-open-source-tools.html",
     "publishedDate": "2026-06-04T15:21:28+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400727+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805406+00:00"
   },
   {
     "id": "0cde788ba67f712b",
@@ -375,7 +375,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/hackers-spied-on-stock-exchange.html",
     "publishedDate": "2026-06-04T15:03:57+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400821+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805487+00:00"
   },
   {
     "id": "0ec3b1f0f49ea97a",
@@ -384,7 +384,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/doj-disrupts-southeast-asia-crypto.html",
     "publishedDate": "2026-06-04T11:36:25+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.400914+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805576+00:00"
   },
   {
     "id": "dbc4f62a164220d0",
@@ -393,7 +393,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/whatsapp-slack-notifications-could.html",
     "publishedDate": "2026-06-04T00:41:15+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.401034+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805656+00:00"
   },
   {
     "id": "6c431e403d30c1fb",
@@ -402,7 +402,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/one-click-github-dev-attack-lets.html",
     "publishedDate": "2026-06-03T23:28:00+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.401129+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805738+00:00"
   },
   {
     "id": "c7879313a64f36a4",
@@ -411,7 +411,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/autonomous-ai-tool-finds-2-year-old-rce.html",
     "publishedDate": "2026-06-03T22:10:00+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.401223+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805819+00:00"
   },
   {
     "id": "886f2451f9cbe93c",
@@ -420,7 +420,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/cisa-adds-exploited-magento-rce-flaw.html",
     "publishedDate": "2026-06-03T22:00:00+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.401317+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805900+00:00"
   },
   {
     "id": "d5168f1294db5177",
@@ -429,7 +429,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/google-doubleclick-abused-in-new.html",
     "publishedDate": "2026-06-03T21:59:16+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.401416+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.805984+00:00"
   },
   {
     "id": "b12df17a52041075",
@@ -438,7 +438,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/beyond-zero-day-see-your-network-like.html",
     "publishedDate": "2026-06-03T20:26:46+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.401511+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.806067+00:00"
   },
   {
     "id": "2592a526fb9b51d9",
@@ -447,7 +447,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/microsoft-365-android-apps-let-any-app.html",
     "publishedDate": "2026-06-03T20:26:35+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.401605+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.806148+00:00"
   },
   {
     "id": "93a46bbcda21a93c",
@@ -456,7 +456,7 @@
     "source": "The Hacker News",
     "url": "https://thehackernews.com/2026/06/shrinking-iam-attack-surface-through.html",
     "publishedDate": "2026-06-03T17:28:00+05:30",
-    "scrapedAt": "2026-06-10T06:18:22.401698+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.806231+00:00"
   },
   {
     "id": "c75264d3114ee8c6",
@@ -465,7 +465,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-rolls-out-claude-fable-5-but-its-available-for-a-limited-time/",
     "publishedDate": "2026-06-09T22:03:31-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.491460+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.930828+00:00"
   },
   {
     "id": "3268bbde4275b904",
@@ -474,7 +474,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-defender-rogueplanet-zero-day-grants-system-privileges/",
     "publishedDate": "2026-06-09T19:11:18-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.491579+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.930929+00:00"
   },
   {
     "id": "8b24a39f4967bdbb",
@@ -483,7 +483,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/servicenow-discloses-security-incident-exposing-customer-data/",
     "publishedDate": "2026-06-09T17:34:09-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.491687+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931018+00:00"
   },
   {
     "id": "1bd063fb2c47430e",
@@ -492,7 +492,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/openclaw-ai-agent-found-falling-for-phishing-attacks-spills-user-data/",
     "publishedDate": "2026-06-09T17:20:20-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.491791+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931104+00:00"
   },
   {
     "id": "2c4b2bac225f53e4",
@@ -501,7 +501,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/sap-fixes-critical-flaws-in-netweaver-and-commerce-cloud/",
     "publishedDate": "2026-06-09T15:36:27-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.491892+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931187+00:00"
   },
   {
     "id": "0a67216a18e61ddf",
@@ -510,7 +510,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5094127-extended-security-update/",
     "publishedDate": "2026-06-09T14:35:00-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492022+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931268+00:00"
   },
   {
     "id": "97adf953a8f5b6ce",
@@ -519,7 +519,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-june-2026-patch-tuesday-fixes-3-zero-day-200-flaws/",
     "publishedDate": "2026-06-09T13:57:59-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492124+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931349+00:00"
   },
   {
     "id": "6a15afeb540eee03",
@@ -528,7 +528,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5094126-and-kb5093998-cumulative-updates-released/",
     "publishedDate": "2026-06-09T13:32:32-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492223+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931431+00:00"
   },
   {
     "id": "d236141792bd4a48",
@@ -537,7 +537,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/xbow-tests-anthropics-mythos-preview-for-offensive-security/",
     "publishedDate": "2026-06-09T12:16:38-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492322+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931512+00:00"
   },
   {
     "id": "a41367cd04e8f003",
@@ -546,7 +546,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/github-disables-microsoft-repos-pushing-password-stealing-malware/",
     "publishedDate": "2026-06-09T11:42:40-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492420+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931608+00:00"
   },
   {
     "id": "0a5e3a93ca649603",
@@ -555,7 +555,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/new-veeam-vulnerability-exposes-backup-servers-to-rce-attacks/",
     "publishedDate": "2026-06-09T10:27:56-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492517+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931691+00:00"
   },
   {
     "id": "545835ab2bd34c8a",
@@ -564,7 +564,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/french-govt-messaging-service-breached-in-account-hijacking-attack/",
     "publishedDate": "2026-06-09T06:53:00-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492613+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931772+00:00"
   },
   {
     "id": "c29032fa40d7c7e5",
@@ -573,7 +573,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-check-point-flaw-exploited-by-ransomware-gangs/",
     "publishedDate": "2026-06-09T04:18:39-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492708+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931852+00:00"
   },
   {
     "id": "f91b36cf0666eb34",
@@ -582,7 +582,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/google-patches-fifth-chrome-zero-day-bug-exploited-in-attacks-this-year/",
     "publishedDate": "2026-06-09T02:56:27-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492806+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.931932+00:00"
   },
   {
     "id": "3c083cd9902b36a6",
@@ -591,7 +591,7 @@
     "source": "BleepingComputer",
     "url": "https://www.bleepingcomputer.com/news/security/nfcshare-android-malware-spreads-via-fake-banking-app-updates-on-github/",
     "publishedDate": "2026-06-08T18:11:58-04:00",
-    "scrapedAt": "2026-06-10T06:18:22.492903+00:00"
+    "scrapedAt": "2026-06-10T06:23:20.932014+00:00"
   },
   {
     "id": "3688d78a40426f3b",
@@ -600,7 +600,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/vulnerabilities-threats/blame-ai-patch-tuesday-record-206-cves",
     "publishedDate": "2026-06-09T21:42:57+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.615360+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477101+00:00"
   },
   {
     "id": "b277c58ab6607be3",
@@ -609,7 +609,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/vulnerabilities-threats/exchange-flaw-attackers-spoof-email-address",
     "publishedDate": "2026-06-09T20:20:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.615471+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477196+00:00"
   },
   {
     "id": "9d8c103c78c94a44",
@@ -618,7 +618,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/miasma-supply-chain-worm-73-microsoft-repositories",
     "publishedDate": "2026-06-09T19:33:45+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.615571+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477276+00:00"
   },
   {
     "id": "346ea778eac15373",
@@ -627,7 +627,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/vulnerabilities-threats/russian-groups-winrar-flaw-ukrainian-orgs",
     "publishedDate": "2026-06-09T15:37:02+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.615667+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477355+00:00"
   },
   {
     "id": "ccbdf12d573888d2",
@@ -636,7 +636,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/silent-ransom-us-law-firms-extortion-attacks",
     "publishedDate": "2026-06-08T20:59:52+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.615761+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477434+00:00"
   },
   {
     "id": "487cd3ce7de72e9a",
@@ -645,7 +645,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/vulnerabilities-threats/check-point-vpn-flaw-exploited-early-may",
     "publishedDate": "2026-06-08T20:28:35+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.615855+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477511+00:00"
   },
   {
     "id": "bb15f6d05ac3e162",
@@ -654,7 +654,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/iran-signed-ceasefire-hackers",
     "publishedDate": "2026-06-08T19:07:48+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.615973+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477603+00:00"
   },
   {
     "id": "70ca532b1f5ef8f4",
@@ -663,7 +663,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/hades-campaign-pypi-shai-hulud",
     "publishedDate": "2026-06-08T16:13:41+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616072+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477682+00:00"
   },
   {
     "id": "7f4aa2c684130679",
@@ -672,7 +672,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/exposed-fuel-tank-gauges-attack-us",
     "publishedDate": "2026-06-05T19:04:36+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616163+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477757+00:00"
   },
   {
     "id": "895c12ae9307a3ce",
@@ -681,7 +681,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/adaptive-agentic-ai-worms-enterprise-cyber-threat",
     "publishedDate": "2026-06-05T14:40:11+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616255+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477833+00:00"
   },
   {
     "id": "0118ef4f8588e2d2",
@@ -690,7 +690,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cybersecurity-operations/trump-ai-order-seeks-voluntary-frontier-model-testing",
     "publishedDate": "2026-06-05T13:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616345+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477908+00:00"
   },
   {
     "id": "817236fe7d939faa",
@@ -699,7 +699,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/rust-written-ironworm-npm-supply-chain",
     "publishedDate": "2026-06-04T21:47:06+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616442+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.477989+00:00"
   },
   {
     "id": "281ac386cb62d289",
@@ -708,7 +708,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/threat-intelligence/china-ta4922-cybercrime-attacks-globally",
     "publishedDate": "2026-06-04T21:23:59+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616540+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478066+00:00"
   },
   {
     "id": "f1edf4690a8750f0",
@@ -717,7 +717,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/vulnerabilities-threats/4-critical-threats-attackers-advantage",
     "publishedDate": "2026-06-04T21:08:16+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616629+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478141+00:00"
   },
   {
     "id": "6301a8ba359a462a",
@@ -726,7 +726,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/bugcrowd-launches-eu-data-residency-option-for-evolving-data-sovereignty-needs",
     "publishedDate": "2026-06-04T14:22:20+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616717+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478217+00:00"
   },
   {
     "id": "913d19225031ef51",
@@ -735,7 +735,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/pakistan-spies-afghan-finance-ministry-xeno-rat",
     "publishedDate": "2026-06-04T04:01:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616805+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478292+00:00"
   },
   {
     "id": "39a733b72e5a72d5",
@@ -744,7 +744,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/endpoint-security/attackers-automate-edr-evasion-testing",
     "publishedDate": "2026-06-03T21:34:07+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.616893+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478368+00:00"
   },
   {
     "id": "307d2245085aac2b",
@@ -753,7 +753,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/nation-state-cyber-activity-latin-america",
     "publishedDate": "2026-06-03T19:52:32+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617007+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478442+00:00"
   },
   {
     "id": "742c39d3b7230838",
@@ -762,7 +762,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/cyber-insurance-rates-drop-exclusions-widen",
     "publishedDate": "2026-06-03T19:10:58+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617099+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478517+00:00"
   },
   {
     "id": "4d420b4456b9be4d",
@@ -771,7 +771,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/coding-gaffe-exposes-microsoft-365-accounts-takeover",
     "publishedDate": "2026-06-03T19:00:41+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617187+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478602+00:00"
   },
   {
     "id": "54370a3ee5dd58c2",
@@ -780,7 +780,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/application-security/malicious-notifications-could-trick-google-gemini-users",
     "publishedDate": "2026-06-03T12:01:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617275+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478678+00:00"
   },
   {
     "id": "fe78c1c01fc17f26",
@@ -789,7 +789,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/global-stock-exchange-hit-monthslong-email-campaign",
     "publishedDate": "2026-06-03T10:01:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617363+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478753+00:00"
   },
   {
     "id": "4d76cdeed4d1658b",
@@ -798,7 +798,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cybersecurity-operations/zoom-ciso-ai-security-enabler-role-replacer",
     "publishedDate": "2026-06-02T21:51:07+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617451+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478828+00:00"
   },
   {
     "id": "b676808d36758c80",
@@ -807,7 +807,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/fbi-flagged-phishing-kit-kali365-expands-its-reach",
     "publishedDate": "2026-06-02T21:32:24+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617539+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478904+00:00"
   },
   {
     "id": "0283659909d819f6",
@@ -816,7 +816,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/drivesurge-hijacks-thousands-sites-clickfix-fakeupdate-attacks",
     "publishedDate": "2026-06-02T20:11:51+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617626+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.478979+00:00"
   },
   {
     "id": "67c53a14276096c0",
@@ -825,7 +825,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/threat-intelligence/china-uses-dual-method-attack-czech-taiwan-orgs",
     "publishedDate": "2026-06-02T19:50:53+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617713+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.479054+00:00"
   },
   {
     "id": "50b0817ef48aac29",
@@ -834,7 +834,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/securing-ai-agents-rogue",
     "publishedDate": "2026-06-02T19:10:14+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617800+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.479128+00:00"
   },
   {
     "id": "c00d2295eadfc1eb",
@@ -843,7 +843,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/cyber-risk/assume-breach-ai-native-security-reshape-enterprise-defense",
     "publishedDate": "2026-06-02T12:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.617888+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.479203+00:00"
   },
   {
     "id": "4fa3278fb38e44e8",
@@ -852,7 +852,7 @@
     "source": "Dark Reading",
     "url": "https://www.darkreading.com/events/celebrate-20-years-of-dark-reading-name-that-toon-contest",
     "publishedDate": "2026-06-26T11:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.619076+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.480512+00:00"
   },
   {
     "id": "fc12381b2594d668",
@@ -861,7 +861,7 @@
     "source": "CISA Advisories",
     "url": "https://www.cisa.gov/news-events/news/cisa-announces-winners-2026-presidents-cup-cybersecurity-competition",
     "publishedDate": "2026-06-09T12:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.685977+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.602314+00:00"
   },
   {
     "id": "ff2bb79d12870613",
@@ -870,7 +870,7 @@
     "source": "CISA Advisories",
     "url": "https://www.cisa.gov/news-events/news/cisa-urges-stronger-security-automatic-tank-gauge-systems",
     "publishedDate": "2026-06-02T12:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.686093+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.602410+00:00"
   },
   {
     "id": "1f48e2fbac307e9b",
@@ -879,7 +879,7 @@
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/06/locked-in-heated-rivalry-with-researcher-microsoft-fixes-0-day-they-disclosed/",
     "publishedDate": "2026-06-09T20:56:52+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.804275+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.730021+00:00"
   },
   {
     "id": "acc817d6bfda07d2",
@@ -888,7 +888,7 @@
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/06/a-single-errant-character-in-the-linux-kernel-allows-attacker-to-gain-root/",
     "publishedDate": "2026-06-09T15:12:43+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.804391+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.730121+00:00"
   },
   {
     "id": "8c9d7271a85a8279",
@@ -897,7 +897,7 @@
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/06/for-the-2nd-time-in-weeks-microsoft-packages-laced-with-credential-stealer/",
     "publishedDate": "2026-06-08T18:34:23+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.804496+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.730210+00:00"
   },
   {
     "id": "2193987563578830",
@@ -906,7 +906,7 @@
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/06/highly-reviewed-speaker-can-be-hacked-over-the-air-to-infect-connected-devices/",
     "publishedDate": "2026-06-05T21:00:29+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.804598+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.730294+00:00"
   },
   {
     "id": "e6f9ac9ee67fc912",
@@ -915,7 +915,7 @@
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/06/dashlane-explains-how-attackers-managed-to-download-encrypted-password-vaults/",
     "publishedDate": "2026-06-04T20:02:04+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.804701+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.730378+00:00"
   },
   {
     "id": "fcbdf55f382bd796",
@@ -924,7 +924,7 @@
     "source": "Ars Technica Security",
     "url": "https://arstechnica.com/security/2026/06/dashlane-issues-opaque-advisory-warning-20-encrypted-vaults-were-stolen/",
     "publishedDate": "2026-06-03T19:53:14+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.804801+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.730462+00:00"
   },
   {
     "id": "11b61405969e5a6e",
@@ -933,7 +933,7 @@
     "source": "Security Now (GRC)",
     "url": "https://twit.tv/shows/security-now/episodes/1082",
     "publishedDate": "2026-06-09T18:17:35+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.965199+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.921167+00:00"
   },
   {
     "id": "162c2518e0a37ce3",
@@ -942,7 +942,7 @@
     "source": "Security Now (GRC)",
     "url": "https://twit.tv/shows/security-now/episodes/1081",
     "publishedDate": "2026-06-02T20:08:50+00:00",
-    "scrapedAt": "2026-06-10T06:18:23.965393+00:00"
+    "scrapedAt": "2026-06-10T06:23:21.921343+00:00"
   },
   {
     "id": "c66e7beea95b8c02",
@@ -951,7 +951,7 @@
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-zscaler-bring-continuous-identity-security-to-zero-trust-access/",
     "publishedDate": "2026-06-08T00:00:00-05:00",
-    "scrapedAt": "2026-06-10T06:18:24.084756+00:00"
+    "scrapedAt": "2026-06-10T06:23:22.119292+00:00"
   },
   {
     "id": "287b9c98e6a9c437",
@@ -960,7 +960,7 @@
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/three-principles-to-safely-scale-agentic-ai/",
     "publishedDate": "2026-06-05T00:00:00-05:00",
-    "scrapedAt": "2026-06-10T06:18:24.084881+00:00"
+    "scrapedAt": "2026-06-10T06:23:22.119398+00:00"
   },
   {
     "id": "c303f79bc88c42ba",
@@ -969,7 +969,7 @@
     "source": "CrowdStrike Blog",
     "url": "https://www.crowdstrike.com/en-us/blog/iso-42001-2023-and-new-reality-of-cloud-ai-data-risk/",
     "publishedDate": "2026-06-04T00:00:00-05:00",
-    "scrapedAt": "2026-06-10T06:18:24.085054+00:00"
+    "scrapedAt": "2026-06-10T06:23:22.119488+00:00"
   },
   {
     "id": "d550714280e32acd",
@@ -978,7 +978,7 @@
     "source": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/cloud-logging-defense-evasion/",
     "publishedDate": "2026-06-09T22:00:21+00:00",
-    "scrapedAt": "2026-06-10T06:18:25.564460+00:00"
+    "scrapedAt": "2026-06-10T06:23:25.665532+00:00"
   },
   {
     "id": "b4be8cd5eeb463c7",
@@ -987,7 +987,7 @@
     "source": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
     "publishedDate": "2026-06-09T14:05:42+00:00",
-    "scrapedAt": "2026-06-10T06:18:25.564580+00:00"
+    "scrapedAt": "2026-06-10T06:23:25.665648+00:00"
   },
   {
     "id": "26906135163b4e8b",
@@ -996,7 +996,7 @@
     "source": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/microsoft-teams-phishing/",
     "publishedDate": "2026-06-08T23:00:45+00:00",
-    "scrapedAt": "2026-06-10T06:18:25.564690+00:00"
+    "scrapedAt": "2026-06-10T06:23:25.665739+00:00"
   },
   {
     "id": "bbb6da0dea027441",
@@ -1005,7 +1005,7 @@
     "source": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
     "publishedDate": "2026-06-02T17:30:33+00:00",
-    "scrapedAt": "2026-06-10T06:18:25.564796+00:00"
+    "scrapedAt": "2026-06-10T06:23:25.665827+00:00"
   },
   {
     "id": "d03eb8d658ada0c1",
@@ -1014,7 +1014,7 @@
     "source": "Palo Alto Unit 42",
     "url": "https://unit42.paloaltonetworks.com/flutterbridge-new-fluttershell-backdoor/",
     "publishedDate": "2026-06-02T10:00:31+00:00",
-    "scrapedAt": "2026-06-10T06:18:25.564899+00:00"
+    "scrapedAt": "2026-06-10T06:23:25.665912+00:00"
   },
   {
     "id": "f69545ec5bd310a1",
@@ -1023,7 +1023,7 @@
     "source": "Sophos News",
     "url": "https://www.sophos.com/en-us/blog/you-do-surprise-me-exe-an-unexpected-executable-in-hola-browser",
     "publishedDate": "2026-06-04T00:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:25.950824+00:00"
+    "scrapedAt": "2026-06-10T06:23:25.935890+00:00"
   },
   {
     "id": "a64595471f507886",
@@ -1032,7 +1032,7 @@
     "source": "Recorded Future",
     "url": "https://www.recordedfuture.com/research/russia-defense-base-economy-risks-wars",
     "publishedDate": "2026-06-09T00:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.445706+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.473678+00:00"
   },
   {
     "id": "72ed1561244c6ae7",
@@ -1041,7 +1041,7 @@
     "source": "Recorded Future",
     "url": "https://www.recordedfuture.com/blog/recorded-future-holistic-sourcing-wins",
     "publishedDate": "2026-06-05T00:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.445815+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.473774+00:00"
   },
   {
     "id": "b9a0798ca5c4b212",
@@ -1050,7 +1050,7 @@
     "source": "Recorded Future",
     "url": "https://www.recordedfuture.com/research/2026-fifa-world-cup-threats",
     "publishedDate": "2026-06-04T00:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.445916+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.473859+00:00"
   },
   {
     "id": "e9f1b8753daee5de",
@@ -1059,7 +1059,7 @@
     "source": "Recorded Future",
     "url": "https://www.recordedfuture.com/blog/remembering-sir-alex-younger",
     "publishedDate": "2026-06-04T00:00:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.446043+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.473940+00:00"
   },
   {
     "id": "bcf1e1a578874353",
@@ -1068,7 +1068,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/06/gps-as-a-key-distribution-platform.html",
     "publishedDate": "2026-06-09T15:06:49+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.573486+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.644103+00:00"
   },
   {
     "id": "fdef56c4420bb3c6",
@@ -1077,7 +1077,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/06/critical-zcash-vulnerability-found-and-fixed.html",
     "publishedDate": "2026-06-08T17:06:53+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.573572+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.644177+00:00"
   },
   {
     "id": "539d9ce65b84a27d",
@@ -1086,7 +1086,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/06/anthropics-project-glasswing-update.html",
     "publishedDate": "2026-06-08T11:01:47+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.573651+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.644238+00:00"
   },
   {
     "id": "246766a3e197a07c",
@@ -1095,7 +1095,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/06/ai-worm.html",
     "publishedDate": "2026-06-05T13:21:23+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.573727+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.644299+00:00"
   },
   {
     "id": "63c949153ce01726",
@@ -1104,7 +1104,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/06/hacking-metas-ai-chatbot.html",
     "publishedDate": "2026-06-04T11:04:09+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.573799+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.644359+00:00"
   },
   {
     "id": "ffb33d471b5ae4f3",
@@ -1113,7 +1113,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/06/ai-used-to-decrypt-medieval-ciphers.html",
     "publishedDate": "2026-06-03T11:04:40+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.573870+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.644418+00:00"
   },
   {
     "id": "062bc82f78d35d90",
@@ -1122,7 +1122,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/06/the-intersection-of-encryption-and-ai.html",
     "publishedDate": "2026-06-02T11:06:25+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.573969+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.644476+00:00"
   },
   {
     "id": "daa2069fea6c34fa",
@@ -1131,7 +1131,7 @@
     "source": "Schneier on Security",
     "url": "https://www.schneier.com/blog/archives/2026/06/microsoft-threatening-security-researcher.html",
     "publishedDate": "2026-06-02T11:00:42+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.574046+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.644534+00:00"
   },
   {
     "id": "9820ae8e6ccc95dd",
@@ -1140,7 +1140,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33066",
     "publishedDate": "2026-06-10T02:00:02+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.835599+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893059+00:00"
   },
   {
     "id": "7767b09e4d7e10c3",
@@ -1149,7 +1149,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33064",
     "publishedDate": "2026-06-09T17:34:29+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.835704+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893152+00:00"
   },
   {
     "id": "2e920aec7abd7a3d",
@@ -1158,7 +1158,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33062",
     "publishedDate": "2026-06-09T02:00:03+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.835807+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893238+00:00"
   },
   {
     "id": "4d17c54955eabd10",
@@ -1167,7 +1167,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33060",
     "publishedDate": "2026-06-08T17:07:37+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.835904+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893318+00:00"
   },
   {
     "id": "95a4b5b81db19d20",
@@ -1176,7 +1176,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33058",
     "publishedDate": "2026-06-08T02:00:03+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.836044+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893399+00:00"
   },
   {
     "id": "0332f8377eaeef47",
@@ -1185,7 +1185,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33054",
     "publishedDate": "2026-06-05T06:47:26+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.836147+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893476+00:00"
   },
   {
     "id": "14d8898c39b03442",
@@ -1194,7 +1194,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33050",
     "publishedDate": "2026-06-05T02:00:02+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.836243+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893575+00:00"
   },
   {
     "id": "8c8e3cb02b09647a",
@@ -1203,7 +1203,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33048",
     "publishedDate": "2026-06-04T06:10:44+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.836335+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893654+00:00"
   },
   {
     "id": "24bf967ae2406c6c",
@@ -1212,7 +1212,7 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33046",
     "publishedDate": "2026-06-04T02:00:03+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.836429+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893735+00:00"
   },
   {
     "id": "5df9c61fa5ca2ffc",
@@ -1221,6 +1221,6 @@
     "source": "SANS Internet Storm Center",
     "url": "https://isc.sans.edu/diary/rss/33044",
     "publishedDate": "2026-06-03T13:40:00+00:00",
-    "scrapedAt": "2026-06-10T06:18:26.836520+00:00"
+    "scrapedAt": "2026-06-10T06:23:26.893813+00:00"
   }
 ]
