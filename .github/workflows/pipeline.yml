@@ -315,7 +315,7 @@ jobs:
   # ─────────────────────────────────────────────────────────────────────────
   send_newsletter:
     needs: emergency_check
-    if: needs.emergency_check.result == 'success'
+    if: always() && needs.emergency_check.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
@@ -341,7 +341,7 @@ jobs:
   # ─────────────────────────────────────────────────────────────────────────
   deploy_site:
     needs: emergency_check
-    if: needs.emergency_check.result == 'success'
+    if: always() && needs.emergency_check.result == 'success'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     environment:
