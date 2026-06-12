@@ -14,6 +14,7 @@ from jinja2 import Template
 
 from llm_client import ProjectError, generate_json
 from edition import CONTENT_DIR, RAW_DIR, get_edition, set_edition, date_label, date_range_label
+from dedupe import dedupe_articles
 
 TEMPLATES_DIR = Path(__file__).parent.parent / "templates"
 
@@ -24,7 +25,7 @@ Here are all the curated articles from this week, already scored for relevance:
 {articles_json}
 
 Your tasks:
-1. SELECT the top 8-12 most important articles (quality over quantity)
+1. SELECT the top 8-12 most important DISTINCT news stories (quality over quantity)
 2. ASSIGN each a tier:
    - tier 1 (BREAKING): Major stories with widespread impact. Usually 1-3 per week.
    - tier 2 (FOCUS): Stories about 5G, indoor cells, NMS, webapp management. Usually 2-4 per week.
@@ -32,6 +33,11 @@ Your tasks:
 3. RANK articles within each tier by importance
 4. Write a CATCHY subject line for the newsletter (factual but attention-grabbing, not clickbait)
    Example: "Iran-Linked Hackers Hit Medical Devices + Critical 5G Flaw Exposed"
+
+CRITICAL RULES — violations will break the newsletter:
+- Each article "id" value MUST appear EXACTLY ONCE in your output. No article may be repeated.
+- If two articles cover the same real-world news event (even if they have different IDs or come from different sources), include only ONE of them — pick the highest-quality source.
+- The output "articles" array must contain only UNIQUE stories. A subscriber should never read the same news event twice.
 
 IMPORTANT: If an article touches on 5G, indoor cells, NMS, or network management, it should be tier 2 at minimum, even if the relevance score is lower.
 
@@ -92,7 +98,20 @@ def main():
         articles = json.load(f)
 
     print(f"Loaded {len(articles)} curated articles")
-    print("Running tournament ranking via Gemini...")
+
+    # Final-pass dedupe before the LLM sees anything.
+    # curate.py dedupes at summarization time, but across 3 days of scraping
+    # (Fri/Sat/Sun) the same story can arrive from multiple sources and both
+    # get curated. Run embedding-based dedupe on the full curated set so
+    # the ranking LLM only sees one canonical article per real-world event.
+    print("Final-pass dedupe across all curated articles...")
+    deduped, _ = dedupe_articles(articles, threshold=0.72)
+    suppressed = len(articles) - len(deduped)
+    if suppressed:
+        print(f"  Suppressed {suppressed} near-duplicate articles before ranking")
+    articles = deduped
+
+    print(f"Running tournament ranking on {len(articles)} unique stories...")
 
     top_articles = articles[:40]
     articles_for_prompt = [{
@@ -119,20 +138,51 @@ def main():
         print("ERROR: Gemini ranking failed after retries", file=sys.stderr)
         sys.exit(1)
 
+    raw_selected = result.get("articles", [])
+
+    # Hard dedupe on LLM output — LLMs sometimes repeat high-scoring articles
+    # in their JSON responses regardless of prompt instructions. First-seen wins.
+    seen_ids: set[str] = set()
+    seen_titles: list[str] = []
+    deduped_selected = []
+    for a in raw_selected:
+        aid = a.get("id", "")
+        title = a.get("title", "")[:60].lower()
+        # Skip if exact same ID already included
+        if aid and aid in seen_ids:
+            print(f"  [dedup] dropped repeated id={aid}: {a.get('title','')[:60]}")
+            continue
+        # Skip if very similar title already included (same story different LLM wording)
+        duplicate = False
+        for seen in seen_titles:
+            shared = sum(c1 == c2 for c1, c2 in zip(title, seen))
+            if len(title) > 10 and shared / max(len(title), len(seen)) > 0.85:
+                print(f"  [dedup] dropped similar title: {a.get('title','')[:60]}")
+                duplicate = True
+                break
+        if duplicate:
+            continue
+        seen_ids.add(aid)
+        seen_titles.append(title)
+        deduped_selected.append(a)
+
+    if len(deduped_selected) < len(raw_selected):
+        print(f"  [dedup] LLM output: {len(raw_selected)} → {len(deduped_selected)} after removing repeats")
+
     content = {
         "edition": edition,
         "year": year,
         "editionLabel": date_range_label(edition),
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "subjectLine": result.get("subjectLine", "Cybersecurity Weekly"),
-        "articles": result.get("articles", []),
+        "articles": deduped_selected,
     }
 
     tier_counts = {1: 0, 2: 0, 3: 0}
     for a in content["articles"]:
         tier_counts[a.get("tier", 3)] += 1
 
-    print(f"\nSelected {len(content['articles'])} articles:")
+    print(f"\nSelected {len(content['articles'])} articles (after dedupe):")
     print(f"  Tier 1 (Breaking): {tier_counts[1]}")
     print(f"  Tier 2 (Focus):    {tier_counts[2]}")
     print(f"  Tier 3 (Notable):  {tier_counts[3]}")
