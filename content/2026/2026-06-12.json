@@ -1,0 +1,99 @@
+{
+  "edition": "2026-06-12",
+  "year": "2026",
+  "editionLabel": "Jun 12 \u2013 18, 2026",
+  "generatedAt": "2026-06-12T23:31:30.637967+00:00",
+  "subjectLine": "China-Linked Hackers Hide for 10 Years + Microsoft Patches 206 Vulnerabilities",
+  "articles": [
+    {
+      "id": "5dff8089bf35a8b2",
+      "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
+      "summary": "A China-linked group backdoored Linux login software to hide for nearly a decade, allowing them to maintain access to targeted networks.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
+      "tier": 1,
+      "publishedDate": "2026-06-12T23:47:55+05:30"
+    },
+    {
+      "id": "4845ebb04ea7a50b",
+      "title": "June 2026 Patch Tuesday: Microsoft Patches 206 Vulnerabilities Including Three Publicly Disclosed Zero-Days",
+      "summary": "Microsoft's June 2026 Patch Tuesday update addresses 206 vulnerabilities, including three publicly disclosed zero-days.",
+      "source": "CrowdStrike Blog",
+      "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/",
+      "tier": 1,
+      "publishedDate": "2026-06-09T00:00:00-05:00"
+    },
+    {
+      "id": "d4d188a1b01ce8ad",
+      "title": "Oracle Mitigates PeopleSoft Zero-Day Exploited in Data Theft Attacks",
+      "summary": "Oracle has mitigated a critical PeopleSoft Suite zero-day vulnerability actively exploited in ShinyHunter data theft attacks.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
+      "tier": 1,
+      "publishedDate": "2026-06-11T15:39:53-04:00"
+    },
+    {
+      "id": "487cd3ce7de72e9a",
+      "title": "Check Point VPN Flaw Exploited Since Early May",
+      "summary": "A critical zero-day vulnerability in Check Point VPN has been exploited since early May, with a Qilin ransomware affiliate blamed for at least one incident.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/check-point-vpn-flaw-exploited-early-may",
+      "tier": 1,
+      "publishedDate": "2026-06-08T20:28:35+00:00"
+    },
+    {
+      "id": "2a80d7c27e5e2cb0",
+      "title": "AI Agent Discovers 21 Zero-Days in FFmpeg",
+      "summary": "An AI agent has discovered 21 previously unknown vulnerabilities in FFmpeg, a widely used media library.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
+      "tier": 2,
+      "publishedDate": "2026-06-06T12:58:30+05:30"
+    },
+    {
+      "id": "92218887bf7ba5fe",
+      "title": "Ivanti, Fortinet, and SAP Release Patches for Multiple Critical Vulnerabilities",
+      "summary": "Ivanti, Fortinet, and SAP have released security updates to address multiple critical vulnerabilities that could result in arbitrary code execution and information disclosure.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/ivanti-fortinet-and-sap-release-patches.html",
+      "tier": 2,
+      "publishedDate": "2026-06-10T20:40:59+05:30"
+    },
+    {
+      "id": "68b80d502f29c57c",
+      "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog Amid Active Exploitation",
+      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities catalog, including flaws in Cisco, Chrome, and Arista products.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
+      "tier": 2,
+      "publishedDate": "2026-06-10T20:14:29+05:30"
+    },
+    {
+      "id": "97865ac01ae6aa13",
+      "title": "CISA Orders Feds to Patch Actively Exploited Ivanti Flaw",
+      "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) has ordered government agencies to patch an actively exploited Ivanti Sentry flaw within three days.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-3-days-to-patch-ivanti-flaw-exploited-in-attacks/",
+      "tier": 2,
+      "publishedDate": "2026-06-12T04:26:55-04:00"
+    },
+    {
+      "id": "90c2326a2ff414df",
+      "title": "ShinyHunters Uses Oracle Zero-Day to Target Higher Ed",
+      "summary": "The ShinyHunters group has exploited an Oracle zero-day vulnerability to target higher education institutions, resulting in significant data theft.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/shinyhunters-oracle-zero-day-higher-ed",
+      "tier": 3,
+      "publishedDate": "2026-06-12T20:26:32+00:00"
+    },
+    {
+      "id": "f6e3c1d8a56c0698",
+      "title": "Authorities dismantle 'AudiA6' ransomware crypto-laundering service",
+      "summary": "Law enforcement dismantled the 'AudiA6' cryptocurrency service allegedly used by ransomware actors to launder over $380 million.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/",
+      "tier": 3,
+      "publishedDate": "2026-06-11T11:55:41-04:00"
+    }
+  ]
+}
