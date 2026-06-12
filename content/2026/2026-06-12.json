@@ -2,9 +2,63 @@
   "edition": "2026-06-12",
   "year": "2026",
   "editionLabel": "Jun 12 \u2013 18, 2026",
-  "generatedAt": "2026-06-12T23:32:20.552619+00:00",
+  "generatedAt": "2026-06-12T23:36:19.838765+00:00",
   "subjectLine": "BREAKING: Over 400 Arch Linux AUR Packages Hijacked to Deploy Infostea + More Inside",
   "articles": [
+    {
+      "id": "90c2326a2ff414df",
+      "title": "ShinyHunters Uses Oracle Zero-Day to Rampage Higher Ed",
+      "summary": "A major bug in Oracle's ERP software disproportionately affected American universities, and hackers have capitalized by stealing gobs of data.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/shinyhunters-oracle-zero-day-higher-ed",
+      "tier": 1,
+      "publishedDate": "2026-06-12T20:26:32+00:00"
+    },
+    {
+      "id": "a36831d1aab4c213",
+      "title": "Over 400 Arch Linux packages compromised to push rootkit, infostealer",
+      "summary": "More than 400 packages in the Arch User Repository (AUR) are distributing a Linux rootkit and infostealer malware targeting credentials and access tokens.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/over-400-arch-linux-packages-compromised-to-push-rootkit-infostealer/",
+      "tier": 1,
+      "publishedDate": "2026-06-12T13:03:55-04:00"
+    },
+    {
+      "id": "878ad15444890798",
+      "title": "PeopleSoft 0-day affecting hundreds of organizations steals gigabytes of data",
+      "summary": "Vulnerability in the Oracle-owned PeopleSoft software is about as critical as they come.",
+      "source": "Ars Technica Security",
+      "url": "https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/",
+      "tier": 1,
+      "publishedDate": "2026-06-12T19:26:47+00:00"
+    },
+    {
+      "id": "5dff8089bf35a8b2",
+      "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
+      "summary": "Instead of hiding on the laptops and servers defenders watch most closely, a China-nexus group spent close to a decade hidden inside the Linux login system itself.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
+      "tier": 1,
+      "publishedDate": "2026-06-12T23:47:55+05:30"
+    },
+    {
+      "id": "8f8a91d1631a1602",
+      "title": "Google Sues Chinese Smishing Network Accused of Using Gemini AI in Phishing",
+      "summary": "Google on Friday said it's pursuing legal action against a Chinese cybercrime network, accusing it of using its Gemini artificial intelligence (AI) agent to send phishing text messages targeting Americans.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
+      "tier": 1,
+      "publishedDate": "2026-06-13T00:29:32+05:30"
+    },
+    {
+      "id": "856c09d61358610a",
+      "title": "Over 400 Arch Linux AUR Packages Hijacked to Deploy Infostealer and eBPF Rootkit",
+      "summary": "Attackers took over more than 400 packages in the Arch User Repository (AUR) this week and rewrote their build scripts to install a credential stealer on any machine that built them.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
+      "tier": 1,
+      "publishedDate": "2026-06-13T01:03:25+05:30"
+    },
     {
       "id": "878ad15444890798",
       "title": "PeopleSoft 0-day affecting hundreds of organizations steals gigabytes of data",
