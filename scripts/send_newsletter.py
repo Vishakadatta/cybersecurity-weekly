@@ -89,9 +89,12 @@ def _validate_env() -> dict[str, str]:
         "BREVO_LIST_ID":   "GitHub repo Secret. Numeric ID of your Brevo contact list (Contacts → Lists).",
         "SENDER_EMAIL":    "GitHub repo Secret. The verified Brevo sender email address.",
     }
-    required_vars = {
-        "UNSUBSCRIBE_URL": "GitHub repo Variable. Goes into the List-Unsubscribe header on every send.",
-    }
+    # UNSUBSCRIBE_URL is optional — improves deliverability and compliance
+    # (List-Unsubscribe header) but not required to send. Warn if missing.
+    required_vars = {}
+    if not os.environ.get("UNSUBSCRIBE_URL", "").strip():
+        print("[WARN] UNSUBSCRIBE_URL not set — emails will have no List-Unsubscribe header. "
+              "Set it as a repo Variable for better deliverability.", file=sys.stderr)
 
     missing: list[str] = []
     values: dict[str, str] = {}
