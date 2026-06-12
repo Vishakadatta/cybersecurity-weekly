@@ -13,27 +13,35 @@ from edition import RAW_DIR, get_edition
 from dedupe import dedupe_articles
 from discover import discover as discovery_pass
 
-SUMMARIZE_PROMPT = """You are a cybersecurity news editor. I will give you a list of raw articles scraped from security news sources this week.
+SUMMARIZE_PROMPT = """You are a senior cybersecurity analyst and newsletter editor. I will give you a batch of raw articles scraped from security news sources this week.
 
-For each article, produce:
-1. A clean, concise title (fix any RSS formatting artifacts)
-2. A 2-3 sentence summary that captures the key facts and why it matters
-3. A relevance_score from 1-10 (10 = most important/impactful)
-4. Tags: an array of relevant topic tags (e.g. "ransomware", "zero-day", "5G", "indoor-cells", "NMS", "APT", "vulnerability", "data-breach", "policy")
+For each article, extract structured intelligence — not a generic summary. Think like a CISO reading this before their Monday morning standup.
 
-Focus areas that should get higher relevance scores:
-- 5G security, indoor small cells, cellular infrastructure
-- NMS (Network Management Systems), webapp management
-- Critical zero-days, nation-state attacks, widespread impact
+For each article produce:
+1. title — clean, precise headline (fix RSS artifacts, remove clickbait)
+2. summary — 2-3 sentences. Lead with the most important fact. Be specific: name the vendor, CVE, threat actor, or affected system. Do NOT say "a new report says" or "researchers discovered" — state the finding directly.
+3. relevance_score — 1-10. Be strict:
+   - 9-10: active exploitation, mass impact, nation-state, critical infrastructure
+   - 7-8: significant CVE, ransomware campaign, APT research, notable breach
+   - 5-6: vendor advisory, policy change, research with practical implications
+   - 3-4: opinion, podcast summary, general AI/tech with minor security angle
+   - 1-2: not really security news
+4. tags — topic tags: ransomware, zero-day, 5G, indoor-cells, NMS, APT, vulnerability, data-breach, supply-chain, policy, patch-tuesday, ai-security, cloud, identity, network, mobile
+5. cve_ids — array of CVE IDs mentioned (e.g. ["CVE-2024-1234"]). Empty array if none.
+6. affected_systems — array of affected products/vendors (e.g. ["Cisco IOS XE", "Windows 11"]). Be specific.
+7. threat_actor — name if attributed (e.g. "Lazarus Group", "Volt Typhoon"). null if unknown.
+8. urgency — one of: "patch-now", "this-week", "monitor", "informational"
+9. source_quality — one of: "primary" (original research/government advisory), "reporting" (news outlet covering it), "vendor" (vendor blog/advisory)
 
-Respond with a JSON object containing a single key "articles" whose value is an array. Each element of the array must have these fields:
-- id (string, keep the original)
-- title (string, cleaned up)
-- summary (string, 2-3 sentences)
-- relevance_score (number, 1-10)
-- tags (array of strings)
+Focus areas that should score higher:
+- 5G security, indoor small cells, cellular infrastructure, RAN
+- NMS (Network Management Systems), webapp management platforms
+- Critical zero-days being actively exploited
+- Supply chain attacks, nation-state campaigns
 
-Here are the articles:
+Respond with a JSON object: { "articles": [ ... ] }
+
+Articles to process:
 
 """
 
@@ -129,9 +137,10 @@ def main():
         input_data = [{
             "id": a["id"],
             "title": a["title"],
-            "raw_summary": a.get("summary_raw", "")[:500],
+            "raw_summary": a.get("summary_raw", "")[:600],
             "source": a["source"],
             "url": a["url"],
+            "source_type": a.get("source_quality", "reporting"),
         } for a in chunk]
 
         prompt = SUMMARIZE_PROMPT + json.dumps(input_data, indent=2)
@@ -169,6 +178,12 @@ def main():
             articles_by_id[aid]["summary"] = summary.get("summary", "")
             articles_by_id[aid]["relevance_score"] = summary.get("relevance_score", 5)
             articles_by_id[aid]["tags"] = summary.get("tags", [])
+            # New richer fields
+            articles_by_id[aid]["cve_ids"] = summary.get("cve_ids", [])
+            articles_by_id[aid]["affected_systems"] = summary.get("affected_systems", [])
+            articles_by_id[aid]["threat_actor"] = summary.get("threat_actor")
+            articles_by_id[aid]["urgency"] = summary.get("urgency", "informational")
+            articles_by_id[aid]["source_quality"] = summary.get("source_quality", "reporting")
 
     enriched = list(articles_by_id.values())
     enriched.sort(key=lambda a: a.get("relevance_score", 0), reverse=True)

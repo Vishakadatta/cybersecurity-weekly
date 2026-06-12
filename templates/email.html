@@ -14,63 +14,119 @@
           <!-- Header -->
           <tr>
             <td style="padding:24px 32px;border-bottom:1px solid #1e293b;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
-                <tr>
-                  <td>
-                    <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;">
-                      &#128737; Cybersecurity Weekly
-                    </h1>
-                    <p style="margin:4px 0 0;font-size:13px;color:#64748b;">
-                      {{ edition_label }} &middot; AI-curated security news
-                    </p>
-                  </td>
-                </tr>
-              </table>
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;">
+                &#128737; Cybersecurity Weekly
+              </h1>
+              <p style="margin:4px 0 0;font-size:13px;color:#64748b;">
+                {{ edition_label }} &middot; AI-curated security intelligence
+              </p>
             </td>
           </tr>
 
-          <!-- Subject / Intro -->
+          <!-- Subject + Week Intro -->
           <tr>
-            <td style="padding:32px 32px 16px;">
-              <h2 style="margin:0;font-size:22px;font-weight:800;color:#ffffff;line-height:1.3;">
+            <td style="padding:32px 32px 20px;">
+              <h2 style="margin:0 0 14px;font-size:22px;font-weight:800;color:#ffffff;line-height:1.3;">
                 {{ subject_line }}
               </h2>
-              <p style="margin:12px 0 0;font-size:14px;color:#94a3b8;line-height:1.6;">
-                Here are this week's most important cybersecurity stories, ranked and curated by AI.
+              {% if week_intro %}
+              <p style="margin:0;font-size:14px;color:#94a3b8;line-height:1.7;border-left:3px solid #14b8a6;padding-left:14px;">
+                {{ week_intro }}
               </p>
+              {% endif %}
             </td>
           </tr>
 
           <!-- Articles -->
           {% for article in articles %}
           <tr>
-            <td style="padding:8px 32px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid {% if article.tier == 1 %}#7f1d1d{% elif article.tier == 2 %}#78350f{% else %}#1e293b{% endif %};border-radius:12px;">
                 <tr>
                   <td style="padding:20px 24px;">
-                    {% if article.tier == 1 %}
-                    <span style="display:inline-block;padding:2px 8px;font-size:11px;font-weight:700;color:#f87171;background-color:#450a0a;border-radius:4px;margin-bottom:8px;">
-                      BREAKING
-                    </span>
-                    {% elif article.tier == 2 %}
-                    <span style="display:inline-block;padding:2px 8px;font-size:11px;font-weight:700;color:#fbbf24;background-color:#451a03;border-radius:4px;margin-bottom:8px;">
-                      FOCUS
-                    </span>
-                    {% else %}
-                    <span style="display:inline-block;padding:2px 8px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;margin-bottom:8px;">
-                      NOTABLE
-                    </span>
-                    {% endif %}
-                    <span style="font-size:12px;color:#64748b;margin-left:8px;">{{ article.source }}</span>
-                    <h3 style="margin:8px 0;font-size:16px;font-weight:600;color:#ffffff;line-height:1.4;">
-                      {{ article.title }}
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          {% if article.tier == 1 %}
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          {% elif article.tier == 2 %}
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          {% else %}
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          {% endif %}
+
+                          {% if article.threat_actor %}
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; {{ article.threat_actor }}</span>
+                          {% endif %}
+
+                          {% if article.cve_ids %}
+                          {% for cve in article.cve_ids[:2] %}
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">{{ cve }}</span>
+                          {% endfor %}
+                          {% endif %}
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="{{ article.url }}" style="color:#ffffff;text-decoration:none;">{{ article.title }}</a>
                     </h3>
-                    <p style="margin:0 0 12px;font-size:14px;color:#cbd5e1;line-height:1.6;">
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 {% if article.impact %}10px{% else %}14px{% endif %};font-size:14px;color:#cbd5e1;line-height:1.7;">
                       {{ article.summary }}
                     </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    {% if article.impact %}
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:{% if article.action %}8px{% else %}14px{% endif %};">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> {{ article.impact }}
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    {% endif %}
+
+                    <!-- Action (T1 only) -->
+                    {% if article.action %}
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> {{ article.action }}
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    {% endif %}
+
+                    <!-- Sources -->
+                    {% if article.sources and article.sources|length > 1 %}
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      Coverage:
+                      {% for src in article.sources[:4] %}
+                      <a href="{{ src.url }}" style="color:#14b8a6;text-decoration:none;margin-left:4px;">{{ src.name }}</a>{% if not loop.last %} &middot;{% endif %}
+                      {% endfor %}
+                    </p>
+                    {% else %}
                     <a href="{{ article.url }}" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">
                       Read full story &rarr;
                     </a>
+                    {% endif %}
+
                   </td>
                 </tr>
               </table>
@@ -82,7 +138,7 @@
           <tr>
             <td style="padding:32px;" align="center">
               <a href="{{ site_url }}" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:700;color:#042f2e;background-color:#2dd4bf;border-radius:8px;text-decoration:none;">
-                View all stories on the web
+                View all stories on the web &rarr;
               </a>
             </td>
           </tr>

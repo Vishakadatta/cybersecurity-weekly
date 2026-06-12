@@ -64,6 +64,11 @@ const tier3 = content.articles.filter((a: any) => a.tier === 3);
           <p class="mt-2 text-dark-400">
             Generated on {new Date(content.generatedAt).toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
           </p>
+          {content.weekIntro && (
+            <blockquote class="mt-4 border-l-4 border-cyber-500 pl-4 text-sm text-dark-300 leading-relaxed italic">
+              {content.weekIntro}
+            </blockquote>
+          )}
         </div>
 
         {tier1.length > 0 && (

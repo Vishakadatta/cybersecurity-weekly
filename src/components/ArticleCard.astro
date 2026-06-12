@@ -1,4 +1,9 @@
 ---
+interface Source {
+  name: string;
+  url: string;
+}
+
 interface Props {
   title: string;
   summary: string;
@@ -6,40 +11,98 @@ interface Props {
   url: string;
   tier: 1 | 2 | 3;
   publishedDate?: string;
+  impact?: string;
+  action?: string;
+  cve_ids?: string[];
+  affected_systems?: string[];
+  threat_actor?: string | null;
+  sources?: Source[];
 }
 
-const { title, summary, source, url, tier, publishedDate } = Astro.props;
+const {
+  title, summary, source, url, tier, publishedDate,
+  impact, action, cve_ids, affected_systems, threat_actor, sources,
+} = Astro.props;
 
 const tierConfig = {
-  1: { label: 'BREAKING', color: 'bg-red-500/10 text-red-400 ring-red-500/30' },
-  2: { label: 'FOCUS', color: 'bg-amber-500/10 text-amber-400 ring-amber-500/30' },
-  3: { label: 'NOTABLE', color: 'bg-dark-700 text-dark-300 ring-dark-600' },
+  1: { label: '⚠ BREAKING', border: 'border-red-900/50', badge: 'bg-red-500/10 text-red-400 ring-red-500/30' },
+  2: { label: '🎯 FOCUS',    border: 'border-amber-900/40', badge: 'bg-amber-500/10 text-amber-400 ring-amber-500/30' },
+  3: { label: 'NOTABLE',    border: 'border-dark-800', badge: 'bg-dark-700 text-dark-300 ring-dark-600' },
 };
 
-const { label, color } = tierConfig[tier];
+const { label, border, badge } = tierConfig[tier];
+const displaySources = sources?.length ? sources : [{ name: source, url }];
 ---
 
-<article class="group rounded-xl border border-dark-800 bg-dark-900/50 p-6 transition hover:border-dark-700 hover:bg-dark-900">
-  <div class="mb-3 flex items-center gap-3">
-    <span class={`inline-flex items-center rounded-md px-2 py-1 text-xs font-semibold ring-1 ring-inset ${color}`}>
+<article class={`group rounded-xl border ${border} bg-dark-900/50 p-6 transition hover:bg-dark-900`}>
+
+  <!-- Tier + meta row -->
+  <div class="mb-3 flex flex-wrap items-center gap-2">
+    <span class={`inline-flex items-center rounded-md px-2 py-1 text-xs font-semibold ring-1 ring-inset ${badge}`}>
       {label}
     </span>
-    <span class="text-xs text-dark-500">{source}</span>
-    {publishedDate && <span class="text-xs text-dark-600">&middot; {publishedDate}</span>}
+    {threat_actor && (
+      <span class="text-xs text-red-400 font-medium">🔒 {threat_actor}</span>
+    )}
+    {cve_ids?.slice(0, 2).map(cve => (
+      <code class="text-xs text-dark-400 bg-dark-800 px-1.5 py-0.5 rounded font-mono">{cve}</code>
+    ))}
+    {publishedDate && (
+      <span class="text-xs text-dark-600 ml-auto">{publishedDate}</span>
+    )}
   </div>
+
+  <!-- Title -->
   <h3 class="mb-2 text-lg font-semibold leading-snug text-white transition group-hover:text-cyber-400">
     <a href={url} target="_blank" rel="noopener">{title}</a>
   </h3>
-  <p class="mb-4 text-sm leading-relaxed text-dark-300">{summary}</p>
-  <a
-    href={url}
-    target="_blank"
-    rel="noopener"
-    class="inline-flex items-center gap-1 text-sm font-medium text-cyber-400 transition hover:text-cyber-300"
-  >
-    Read full story
-    <svg class="h-4 w-4 transition group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
-    </svg>
-  </a>
+
+  <!-- Summary -->
+  <p class="mb-3 text-sm leading-relaxed text-dark-300">{summary}</p>
+
+  <!-- Impact (T1 + T2) -->
+  {impact && (
+    <div class="mb-2 rounded-md bg-blue-950/40 border border-blue-900/30 px-3 py-2">
+      <p class="text-xs text-blue-300 leading-relaxed">
+        <span class="font-semibold text-blue-200">📊 Impact: </span>{impact}
+      </p>
+    </div>
+  )}
+
+  <!-- Action (T1 only) -->
+  {action && (
+    <div class="mb-3 rounded-md bg-green-950/40 border border-green-900/30 px-3 py-2">
+      <p class="text-xs text-green-300 leading-relaxed">
+        <span class="font-semibold text-green-200">✅ Action: </span>{action}
+      </p>
+    </div>
+  )}
+
+  <!-- Affected systems chips -->
+  {affected_systems && affected_systems.length > 0 && (
+    <div class="mb-3 flex flex-wrap gap-1">
+      {affected_systems.slice(0, 4).map(sys => (
+        <span class="text-xs text-dark-400 bg-dark-800 px-2 py-0.5 rounded-full">{sys}</span>
+      ))}
+    </div>
+  )}
+
+  <!-- Source links -->
+  <div class="flex flex-wrap items-center gap-3">
+    {displaySources.slice(0, 4).map((src, i) => (
+      <a
+        href={src.url}
+        target="_blank"
+        rel="noopener"
+        class={`inline-flex items-center gap-1 text-sm font-medium transition ${i === 0 ? 'text-cyber-400 hover:text-cyber-300' : 'text-dark-400 hover:text-dark-200'}`}
+      >
+        {i === 0 ? (
+          <>Read full story <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" /></svg></>
+        ) : (
+          src.name
+        )}
+      </a>
+    ))}
+  </div>
+
 </article>
