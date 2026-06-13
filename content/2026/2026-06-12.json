@@ -1,252 +1,279 @@
 {
   "edition": "2026-06-12",
   "year": "2026",
-  "editionLabel": "Jun 12 \u2013 18, 2026",
-  "generatedAt": "2026-06-12T23:40:06.883778+00:00",
-  "subjectLine": "BREAKING: Over 400 Arch Linux AUR Packages Hijacked to Deploy Infostea + More Inside",
+  "editionLabel": "Jun 5 \u2013 12, 2026",
+  "generatedAt": "2026-06-13T03:28:51.408820+00:00",
+  "subjectLine": "China-Linked Hackers Compromise Linux Login Software, Microsoft Patches Record 206 Vulnerabilities",
+  "weekIntro": "This week, we saw a surge in high-impact vulnerabilities and active exploitation attempts, including a decade-long compromise of Linux login software by China-linked hackers. The increasing volume of patch updates, such as Microsoft's record 206 CVEs, highlights the need for efficient vulnerability management. As AI accelerates the speed and scale of vulnerability discovery, security teams must adapt to keep pace with the evolving threat landscape.",
   "articles": [
     {
-      "id": "a36831d1aab4c213",
-      "title": "Over 400 Arch Linux packages compromised to push rootkit, infostealer",
-      "summary": "More than 400 packages in the Arch User Repository (AUR) are distributing a Linux rootkit and infostealer malware targeting credentials and access tokens.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/over-400-arch-linux-packages-compromised-to-push-rootkit-infostealer/",
-      "tier": 1,
-      "publishedDate": "2026-06-12T13:03:55-04:00"
-    },
-    {
-      "id": "878ad15444890798",
-      "title": "PeopleSoft 0-day affecting hundreds of organizations steals gigabytes of data",
-      "summary": "Vulnerability in the Oracle-owned PeopleSoft software is about as critical as they come.",
-      "source": "Ars Technica Security",
-      "url": "https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/",
-      "tier": 1,
-      "publishedDate": "2026-06-12T19:26:47+00:00"
-    },
-    {
-      "id": "90c2326a2ff414df",
-      "title": "ShinyHunters Uses Oracle Zero-Day to Rampage Higher Ed",
-      "summary": "A major bug in Oracle's ERP software disproportionately affected American universities, and hackers have capitalized by stealing gobs of data.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/shinyhunters-oracle-zero-day-higher-ed",
-      "tier": 1,
-      "publishedDate": "2026-06-12T20:26:32+00:00"
-    },
-    {
       "id": "5dff8089bf35a8b2",
-      "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
-      "summary": "Instead of hiding on the laptops and servers defenders watch most closely, a China-nexus group spent close to a decade hidden inside the Linux login system itself.",
-      "source": "The Hacker News",
+      "title": "China-Linked Hackers Compromise Linux Login Software",
+      "summary": "China-linked hackers backdoored Linux login software, compromising PAM and OpenSSH components for nearly a decade.",
+      "impact": "This incident highlights the sophistication and persistence of nation-state attacks, allowing attackers to maintain access to targeted networks for extended periods. Security teams must be vigilant in monitoring their systems for such threats.",
+      "action": "Teams should inspect their Linux login systems for signs of compromise and consider implementing additional security measures to prevent similar attacks.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/one-character-linux-kernel-flaw-enables.html"
+        }
+      ],
       "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
-      "tier": 1,
-      "publishedDate": "2026-06-12T23:47:55+05:30"
+      "publishedDate": "2026-06-12T23:47:55+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "PAM",
+        "OpenSSH"
+      ],
+      "threat_actor": "Velvet Ant",
+      "tier": 1
     },
     {
-      "id": "8f8a91d1631a1602",
-      "title": "Google Sues Chinese Smishing Network Accused of Using Gemini AI in Phishing",
-      "summary": "Google on Friday said it's pursuing legal action against a Chinese cybercrime network, accusing it of using its Gemini artificial intelligence (AI) agent to send phishing text messages targeting Americans.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
-      "tier": 1,
-      "publishedDate": "2026-06-13T00:29:32+05:30"
-    },
-    {
-      "id": "856c09d61358610a",
-      "title": "Over 400 Arch Linux AUR Packages Hijacked to Deploy Infostealer and eBPF Rootkit",
-      "summary": "Attackers took over more than 400 packages in the Arch User Repository (AUR) this week and rewrote their build scripts to install a credential stealer on any machine that built them.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
-      "tier": 1,
-      "publishedDate": "2026-06-13T01:03:25+05:30"
-    },
-    {
-      "id": "90c2326a2ff414df",
-      "title": "ShinyHunters Uses Oracle Zero-Day to Rampage Higher Ed",
-      "summary": "A major bug in Oracle's ERP software disproportionately affected American universities, and hackers have capitalized by stealing gobs of data.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/shinyhunters-oracle-zero-day-higher-ed",
-      "tier": 1,
-      "publishedDate": "2026-06-12T20:26:32+00:00"
-    },
-    {
-      "id": "a36831d1aab4c213",
-      "title": "Over 400 Arch Linux packages compromised to push rootkit, infostealer",
-      "summary": "More than 400 packages in the Arch User Repository (AUR) are distributing a Linux rootkit and infostealer malware targeting credentials and access tokens.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/over-400-arch-linux-packages-compromised-to-push-rootkit-infostealer/",
-      "tier": 1,
-      "publishedDate": "2026-06-12T13:03:55-04:00"
-    },
-    {
-      "id": "878ad15444890798",
-      "title": "PeopleSoft 0-day affecting hundreds of organizations steals gigabytes of data",
-      "summary": "Vulnerability in the Oracle-owned PeopleSoft software is about as critical as they come.",
-      "source": "Ars Technica Security",
-      "url": "https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/",
-      "tier": 1,
-      "publishedDate": "2026-06-12T19:26:47+00:00"
-    },
-    {
-      "id": "5dff8089bf35a8b2",
-      "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
-      "summary": "Instead of hiding on the laptops and servers defenders watch most closely, a China-nexus group spent close to a decade hidden inside the Linux login system itself.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
-      "tier": 1,
-      "publishedDate": "2026-06-12T23:47:55+05:30"
-    },
-    {
-      "id": "8f8a91d1631a1602",
-      "title": "Google Sues Chinese Smishing Network Accused of Using Gemini AI in Phishing",
-      "summary": "Google on Friday said it's pursuing legal action against a Chinese cybercrime network, accusing it of using its Gemini artificial intelligence (AI) agent to send phishing text messages targeting Americans.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
-      "tier": 1,
-      "publishedDate": "2026-06-13T00:29:32+05:30"
-    },
-    {
-      "id": "856c09d61358610a",
-      "title": "Over 400 Arch Linux AUR Packages Hijacked to Deploy Infostealer and eBPF Rootkit",
-      "summary": "Attackers took over more than 400 packages in the Arch User Repository (AUR) this week and rewrote their build scripts to install a credential stealer on any machine that built them.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
-      "tier": 1,
-      "publishedDate": "2026-06-13T01:03:25+05:30"
-    },
-    {
-      "id": "878ad15444890798",
-      "title": "PeopleSoft 0-day affecting hundreds of organizations steals gigabytes of data",
-      "summary": "Vulnerability in the Oracle-owned PeopleSoft software is about as critical as they come.",
-      "source": "Ars Technica Security",
-      "url": "https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/",
-      "tier": 1,
-      "publishedDate": "2026-06-12T19:26:47+00:00"
-    },
-    {
-      "id": "a36831d1aab4c213",
-      "title": "Over 400 Arch Linux packages compromised to push rootkit, infostealer",
-      "summary": "More than 400 packages in the Arch User Repository (AUR) are distributing a Linux rootkit and infostealer malware targeting credentials and access tokens.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/over-400-arch-linux-packages-compromised-to-push-rootkit-infostealer/",
-      "tier": 1,
-      "publishedDate": "2026-06-12T13:03:55-04:00"
-    },
-    {
-      "id": "8f8a91d1631a1602",
-      "title": "Google Sues Chinese Smishing Network Accused of Using Gemini AI in Phishing",
-      "summary": "Google on Friday said it's pursuing legal action against a Chinese cybercrime network, accusing it of using its Gemini artificial intelligence (AI) agent to send phishing text messages targeting Ameri",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
-      "tier": 1,
-      "publishedDate": "2026-06-13T00:29:32+05:30"
-    },
-    {
-      "id": "5dff8089bf35a8b2",
-      "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
-      "summary": "Instead of hiding on the laptops and servers defenders watch most closely, a China-nexus group spent close to a decade hidden inside the Linux login system itself.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
-      "tier": 1,
-      "publishedDate": "2026-06-12T23:47:55+05:30"
-    },
-    {
-      "id": "856c09d61358610a",
-      "title": "Over 400 Arch Linux AUR Packages Hijacked to Deploy Infostealer and eBPF Rootkit",
-      "summary": "Attackers took over more than 400 packages in the Arch User Repository (AUR) this week and rewrote their build scripts to install a credential stealer on any machine that built them.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
-      "tier": 1,
-      "publishedDate": "2026-06-13T01:03:25+05:30"
-    },
-    {
-      "id": "5dff8089bf35a8b2",
-      "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
-      "summary": "A China-linked group backdoored Linux login software to hide for nearly a decade, allowing them to maintain access to targeted networks.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
-      "tier": 1,
-      "publishedDate": "2026-06-12T23:47:55+05:30"
-    },
-    {
-      "id": "4845ebb04ea7a50b",
-      "title": "June 2026 Patch Tuesday: Microsoft Patches 206 Vulnerabilities Including Three Publicly Disclosed Zero-Days",
-      "summary": "Microsoft's June 2026 Patch Tuesday update addresses 206 vulnerabilities, including three publicly disclosed zero-days.",
-      "source": "CrowdStrike Blog",
+      "id": "ea6cfaf1ee3aa04f",
+      "title": "Microsoft Patches Record 206 Vulnerabilities, Including Three Zero-Days",
+      "summary": "Microsoft patched 206 vulnerabilities, including three zero-days, affecting Windows and other products.",
+      "impact": "This massive patch release increases the risk of widespread attacks if not applied promptly. Security teams must prioritize these updates to prevent exploitation.",
+      "action": "Security teams should immediately apply the June 2026 Patch Tuesday updates to prevent potential exploitation of the vulnerabilities.",
+      "sources": [
+        {
+          "name": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/"
+        },
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/microsoft-patches-record-206-flaws.html"
+        },
+        {
+          "name": "SANS Internet Storm Center",
+          "url": "https://isc.sans.edu/diary/rss/33064"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/blame-ai-patch-tuesday-record-206-cves"
+        }
+      ],
       "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-june-2026/",
-      "tier": 1,
-      "publishedDate": "2026-06-09T00:00:00-05:00"
-    },
-    {
-      "id": "d4d188a1b01ce8ad",
-      "title": "Oracle Mitigates PeopleSoft Zero-Day Exploited in Data Theft Attacks",
-      "summary": "Oracle has mitigated a critical PeopleSoft Suite zero-day vulnerability actively exploited in ShinyHunter data theft attacks.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
-      "tier": 1,
-      "publishedDate": "2026-06-11T15:39:53-04:00"
+      "publishedDate": "2026-06-09T00:00:00-05:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows",
+        "Microsoft Internet Information Services (IIS)",
+        "Windows Collaborative Translation Framework",
+        "Windows BitLocker",
+        "Windows Kernel",
+        "Windows HTTP.sys",
+        "Windows DHCP Client",
+        "Microsoft Edge",
+        "Chromium",
+        "Active Directory Domain Services",
+        "Microsoft Office",
+        "Outlook",
+        "Word"
+      ],
+      "threat_actor": null,
+      "tier": 1
     },
     {
       "id": "487cd3ce7de72e9a",
-      "title": "Check Point VPN Flaw Exploited Since Early May",
-      "summary": "A critical zero-day vulnerability in Check Point VPN has been exploited since early May, with a Qilin ransomware affiliate blamed for at least one incident.",
-      "source": "Dark Reading",
+      "title": "Check Point VPN Zero-Day Vulnerability Exploited",
+      "summary": "A critical zero-day vulnerability in Check Point VPN is being exploited, allowing attackers to bypass authentication.",
+      "impact": "The exploitation of this flaw poses a significant risk to organizations using Check Point VPN, highlighting the importance of timely patching and vulnerability management. This vulnerability can enable attackers to establish a VPN session without a valid password.",
+      "action": "Security teams should immediately patch the vulnerability to prevent exploitation.",
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/check-point-vpn-flaw-exploited-early-may"
+        }
+      ],
       "url": "https://www.darkreading.com/vulnerabilities-threats/check-point-vpn-flaw-exploited-early-may",
-      "tier": 1,
-      "publishedDate": "2026-06-08T20:28:35+00:00"
+      "publishedDate": "2026-06-08T20:28:35+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Check Point Security Gateways",
+        "Check Point Spark Firewalls"
+      ],
+      "threat_actor": "Qilin ransomware affiliate",
+      "tier": 1
+    },
+    {
+      "id": "68b80d502f29c57c",
+      "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog",
+      "summary": "CISA added CVE-2026-20245, CVE-2026-11645, and CVE-2026-7473 to its KEV catalog due to active exploitation",
+      "impact": "These vulnerabilities pose a significant risk to organizations, allowing attackers to execute arbitrary code or process non-configured tunnel traffic. Security teams must prioritize patching to prevent exploitation",
+      "action": "Security teams should immediately patch Cisco, Chrome, and Arista products to mitigate the vulnerabilities",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
+      "publishedDate": "2026-06-10T20:14:29+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Cisco Catalyst SD-WAN Manager",
+        "Google Chrome",
+        "Arista Extensible Operating System (EOS)"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "3b3fe7c4f6a76b87",
+      "title": "Microsoft Defender RoguePlanet Zero-Day Vulnerability",
+      "summary": "A zero-day vulnerability in Microsoft Defender, RoguePlanet, grants SYSTEM access on updated Windows systems.",
+      "impact": "This vulnerability allows attackers to gain SYSTEM access, enabling them to run arbitrary code or perform unauthorized actions. Security teams must take immediate action to mitigate this threat.",
+      "action": "Security teams should apply patches and monitor systems for potential exploitation of the RoguePlanet vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/nightmare-eclipse-microsoft-exploit-rogueplanet"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/microsoft-defender-rogueplanet-zero-day.html",
+      "publishedDate": "2026-06-10T10:52:01+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows 11",
+        "Windows 10",
+        "Windows Server"
+      ],
+      "threat_actor": null,
+      "tier": 1
     },
     {
       "id": "2a80d7c27e5e2cb0",
       "title": "AI Agent Discovers 21 Zero-Days in FFmpeg",
-      "summary": "An AI agent has discovered 21 previously unknown vulnerabilities in FFmpeg, a widely used media library.",
-      "source": "The Hacker News",
+      "summary": "An AI agent found 21 zero-days in FFmpeg, including CVE-2026-39210 through CVE-2026-39218.",
+      "impact": "The discovery highlights AI's potential in vulnerability discovery and the need for prompt patching, putting pressure on security teams to address the influx of vulnerabilities.",
+      "action": "Security teams should promptly patch FFmpeg and monitor for updates to address the discovered vulnerabilities.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html"
+        }
+      ],
       "url": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
-      "tier": 2,
-      "publishedDate": "2026-06-06T12:58:30+05:30"
+      "publishedDate": "2026-06-06T12:58:30+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "FFmpeg"
+      ],
+      "threat_actor": null,
+      "tier": 2
     },
     {
-      "id": "92218887bf7ba5fe",
-      "title": "Ivanti, Fortinet, and SAP Release Patches for Multiple Critical Vulnerabilities",
-      "summary": "Ivanti, Fortinet, and SAP have released security updates to address multiple critical vulnerabilities that could result in arbitrary code execution and information disclosure.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/ivanti-fortinet-and-sap-release-patches.html",
-      "tier": 2,
-      "publishedDate": "2026-06-10T20:40:59+05:30"
+      "id": "d4d188a1b01ce8ad",
+      "title": "Oracle PeopleSoft Zero-Day Exploited by ShinyHunters",
+      "summary": "ShinyHunters exploited Oracle PeopleSoft CVE-2026-35273 for data theft.",
+      "impact": "This critical vulnerability poses significant risks to affected systems, particularly in higher education. Security teams must act quickly to mitigate the flaw.",
+      "action": "Teams should immediately apply Oracle's emergency mitigations and monitor for updates on a patch.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/shinyhunters-oracle-zero-day-higher-ed"
+        },
+        {
+          "name": "Ars Technica Security",
+          "url": "https://arstechnica.com/security/2026/06/peoplesoft-0-day-affecting-hundreds-of-organizations-steals-gigabytes-of-data/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/shinyhunters-exploits-oracle-peoplesoft.html"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/oracle-mitigates-peoplesoft-zero-day-exploited-in-data-theft-attacks/",
+      "publishedDate": "2026-06-11T15:39:53-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Oracle PeopleSoft PeopleTools"
+      ],
+      "threat_actor": "ShinyHunters",
+      "tier": 2
     },
     {
-      "id": "68b80d502f29c57c",
-      "title": "CISA Adds Cisco, Chrome, and Arista Flaws to KEV Catalog Amid Active Exploitation",
-      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities catalog, including flaws in Cisco, Chrome, and Arista products.",
-      "source": "The Hacker News",
-      "url": "https://thehackernews.com/2026/06/cisa-adds-cisco-chrome-and-arista-flaws.html",
-      "tier": 2,
-      "publishedDate": "2026-06-10T20:14:29+05:30"
-    },
-    {
-      "id": "97865ac01ae6aa13",
-      "title": "CISA Orders Feds to Patch Actively Exploited Ivanti Flaw",
-      "summary": "The US Cybersecurity and Infrastructure Security Agency (CISA) has ordered government agencies to patch an actively exploited Ivanti Sentry flaw within three days.",
-      "source": "BleepingComputer",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-3-days-to-patch-ivanti-flaw-exploited-in-attacks/",
-      "tier": 2,
-      "publishedDate": "2026-06-12T04:26:55-04:00"
-    },
-    {
-      "id": "90c2326a2ff414df",
-      "title": "ShinyHunters Uses Oracle Zero-Day to Target Higher Ed",
-      "summary": "The ShinyHunters group has exploited an Oracle zero-day vulnerability to target higher education institutions, resulting in significant data theft.",
-      "source": "Dark Reading",
-      "url": "https://www.darkreading.com/vulnerabilities-threats/shinyhunters-oracle-zero-day-higher-ed",
-      "tier": 3,
-      "publishedDate": "2026-06-12T20:26:32+00:00"
+      "id": "b1de2842ac2680d3",
+      "title": "CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
+      "summary": "CISA added a high-severity SolarWinds Serv-U DoS flaw to its KEV catalog, citing active exploitation.",
+      "impact": "This vulnerability can cause the SolarWinds Serv-U service to crash, posing a significant risk to security teams. Prompt patching is necessary to prevent exploitation.",
+      "action": "Security teams should update to SolarWinds Serv-U version 15.5.4 HF1 to address the flaw.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+      "publishedDate": "2026-06-06T13:44:31+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "SolarWinds Serv-U"
+      ],
+      "threat_actor": null,
+      "tier": 2
     },
     {
       "id": "f6e3c1d8a56c0698",
-      "title": "Authorities dismantle 'AudiA6' ransomware crypto-laundering service",
-      "summary": "Law enforcement dismantled the 'AudiA6' cryptocurrency service allegedly used by ransomware actors to launder over $380 million.",
-      "source": "BleepingComputer",
+      "title": "Authorities Dismantle 'AudiA6' Ransomware Crypto-Laundering Service",
+      "summary": "Law enforcement dismantled 'AudiA6', a cryptocurrency service used by ransomware actors to launder over $380 million.",
+      "impact": "The takedown of AudiA6 could reduce ransomware attacks by limiting laundering options, disrupting cybercrime infrastructure. This action cuts off a key financial pipeline for cybercriminals.",
+      "action": "Security teams should monitor for changes in ransomware actor tactics and be prepared to adapt their defenses accordingly.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/europol-disrupts-audia6-crypto.html"
+        }
+      ],
       "url": "https://www.bleepingcomputer.com/news/legal/authorities-dismantle-audia6-ransomware-crypto-laundering-service/",
-      "tier": 3,
-      "publishedDate": "2026-06-11T11:55:41-04:00"
+      "publishedDate": "2026-06-11T11:55:41-04:00",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "9d8c103c78c94a44",
+      "title": "Miasma Supply Chain Worm Compromises 73 Microsoft Repositories",
+      "summary": "Miasma worm compromised 73 Microsoft GitHub repositories via a previously compromised account.",
+      "impact": "The attack highlights software supply chain vulnerabilities and development environment risks, disrupting CI/CD workflows globally. This incident may lead to increased concerns about supply chain threats.",
+      "action": "Security teams should review their GitHub repositories and dependencies for potential Miasma worm compromises and implement additional security measures to protect their development environments.",
+      "sources": [
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/application-security/miasma-supply-chain-worm-73-microsoft-repositories"
+        }
+      ],
+      "url": "https://www.darkreading.com/application-security/miasma-supply-chain-worm-73-microsoft-repositories",
+      "publishedDate": "2026-06-09T19:33:45+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Microsoft GitHub repositories",
+        "Azure organization",
+        "Azure/functions-action",
+        "functions-container-action"
+      ],
+      "threat_actor": null,
+      "tier": 3
     }
   ]
 }
