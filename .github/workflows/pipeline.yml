@@ -1,34 +1,44 @@
 name: Weekly pipeline
 
-# The entire 4-stage weekly pipeline lives in ONE file. Each cron schedule
-# selects which stage to run; manual dispatch lets you pick any stage or
-# the whole sequence end-to-end. Stages are jobs in this file — they share
-# the same checkout and the same concurrency group.
-#
-# Stages:
-#   scrape    — Friday 4:30 PM PT      (RSS → content/raw/)
-#   curate    — Saturday 12:00 PM PT   (dedupe + Maverick discovery + summarize)
-#   finalize  — Sunday 6:00 PM PT      (Maverick tournament rank + write edition)
-#   send      — Monday 9:00 AM PT      (emergency check + deploy site + send email)
+# Schedule table (all UTC, biased to PDT = UTC-7):
+# ┌─────────────────────┬─────────────────┬──────────────┬──────────────┐
+# │ Cron (UTC)          │ PT-summer (PDT) │ PT-winter    │ Action       │
+# ├─────────────────────┼─────────────────┼──────────────┼──────────────┤
+# │ 30 23 * * 5         │ Fri 4:30 PM     │ Fri 3:30 PM  │ scrape #1    │
+# │ 0 15 * * 6          │ Sat 8:00 AM     │ Sat 7:00 AM  │ scrape+curate│
+# │ 0 21 * * 6          │ Sat 2:00 PM     │ Sat 1:00 PM  │ curate sweep │
+# │ 0 3 * * 0           │ Sat 8:00 PM     │ Sat 7:00 PM  │ curate sweep │
+# │ 0 15 * * 0          │ Sun 8:00 AM     │ Sun 7:00 AM  │ scrape+curate│
+# │ 0 19 * * 0          │ Sun 12:00 PM    │ Sun 11:00 AM │ finalize #1  │
+# │ 0 1 * * 1           │ Sun 6:00 PM     │ Sun 5:00 PM  │ final sweep  │
+# │ 0 12 * * 1          │ Mon 5:00 AM     │ Mon 4:00 AM  │ final LAST   │
+# │ 30 15 * * 1         │ Mon 8:30 AM     │ Mon 7:30 AM  │ send+deploy  │
+# └─────────────────────┴─────────────────┴──────────────┴──────────────┘
+# Monday send completes before 10 AM PT in both DST states.
 
 on:
   schedule:
-    - cron: "30 23 * * 5"   # Fri 23:30 UTC = Fri 16:30 PT → scrape
-    - cron: "0 19 * * 6"    # Sat 19:00 UTC = Sat 12:00 PT → curate
-    - cron: "0 1 * * 1"     # Mon 01:00 UTC = Sun 18:00 PT → finalize
-    - cron: "0 16 * * 1"    # Mon 16:00 UTC = Mon 09:00 PT → send
+    - cron: "30 23 * * 5"
+    - cron: "0 15 * * 6"
+    - cron: "0 21 * * 6"
+    - cron: "0 3 * * 0"
+    - cron: "0 15 * * 0"
+    - cron: "0 19 * * 0"
+    - cron: "0 1 * * 1"
+    - cron: "0 12 * * 1"
+    - cron: "30 15 * * 1"
   workflow_dispatch:
     inputs:
       stage:
-        description: 'Stage to run. "all" cascades through every stage. "from_<stage>" runs that stage onward. Bare stage names run just that one stage.'
+        description: 'Stage to run. "all" cascades through every stage.'
         required: true
         default: all
         type: choice
         options:
-          - all              # scrape → curate → finalize → send (full chain)
-          - from_curate      # curate → finalize → send
-          - from_finalize    # finalize → send
-          - from_send        # just emergency_check → send + deploy
+          - all
+          - from_curate
+          - from_finalize
+          - from_send
           - only_scrape
           - only_curate
           - only_finalize
@@ -60,44 +70,49 @@ jobs:
       run_curate:   ${{ steps.pick.outputs.run_curate }}
       run_finalize: ${{ steps.pick.outputs.run_finalize }}
       run_send:     ${{ steps.pick.outputs.run_send }}
+      is_deadline:  ${{ steps.pick.outputs.is_deadline }}
     steps:
       - id: pick
         run: |
-          # Translate the firing trigger into 4 booleans (one per stage).
-          # Cron always fires exactly one stage (it's the weekly cadence —
-          # each day's prior commits feed the next day). workflow_dispatch
-          # supports richer shapes: all / from_<stage> / only_<stage>.
           if [ -n "${{ inputs.stage }}" ]; then
             mode="${{ inputs.stage }}"
           else
             case "${{ github.event.schedule }}" in
               "30 23 * * 5") mode="only_scrape" ;;
-              "0 19 * * 6")  mode="only_curate" ;;
+              "0 15 * * 6")  mode="scrape_curate" ;;
+              "0 21 * * 6")  mode="only_curate" ;;
+              "0 3 * * 0")   mode="only_curate" ;;
+              "0 15 * * 0")  mode="scrape_curate_deadline" ;;
+              "0 19 * * 0")  mode="only_finalize" ;;
               "0 1 * * 1")   mode="only_finalize" ;;
-              "0 16 * * 1")  mode="only_send" ;;
+              "0 12 * * 1")  mode="finalize_deadline" ;;
+              "30 15 * * 1") mode="only_send" ;;
               *)             mode="only_scrape" ;;
             esac
           fi
 
-          # Default all stages off, then enable based on mode.
-          s=false; c=false; f=false; n=false
+          s=false; c=false; f=false; n=false; d=false
           case "$mode" in
-            all)             s=true;  c=true;  f=true;  n=true ;;
-            from_curate)              c=true;  f=true;  n=true ;;
-            from_finalize)                     f=true;  n=true ;;
-            from_send)                                  n=true ;;
-            only_scrape)     s=true ;;
-            only_curate)              c=true ;;
-            only_finalize)                     f=true ;;
-            only_send)                                  n=true ;;
+            all)                      s=true;  c=true;  f=true;  n=true ;;
+            from_curate)                       c=true;  f=true;  n=true ;;
+            from_finalize)                              f=true;  n=true ;;
+            from_send)                                           n=true ;;
+            only_scrape)              s=true ;;
+            only_curate)                       c=true ;;
+            only_finalize)                              f=true ;;
+            only_send)                                           n=true ;;
+            scrape_curate)            s=true;  c=true ;;
+            scrape_curate_deadline)   s=true;  c=true;           d=true ;;
+            finalize_deadline)                          f=true;  d=true ;;
           esac
 
-          echo "stage=$mode"      >> "$GITHUB_OUTPUT"
-          echo "run_scrape=$s"    >> "$GITHUB_OUTPUT"
-          echo "run_curate=$c"    >> "$GITHUB_OUTPUT"
-          echo "run_finalize=$f"  >> "$GITHUB_OUTPUT"
-          echo "run_send=$n"      >> "$GITHUB_OUTPUT"
-          echo "▶ Mode: $mode  (scrape=$s curate=$c finalize=$f send=$n)"
+          echo "stage=$mode"         >> "$GITHUB_OUTPUT"
+          echo "run_scrape=$s"       >> "$GITHUB_OUTPUT"
+          echo "run_curate=$c"       >> "$GITHUB_OUTPUT"
+          echo "run_finalize=$f"     >> "$GITHUB_OUTPUT"
+          echo "run_send=$n"         >> "$GITHUB_OUTPUT"
+          echo "is_deadline=$d"      >> "$GITHUB_OUTPUT"
+          echo "▶ Mode: $mode  (scrape=$s curate=$c finalize=$f send=$n deadline=$d)"
 
   # ─────────────────────────────────────────────────────────────────────────
   # Stage 1: scrape
@@ -127,8 +142,6 @@ jobs:
             exit 0
           fi
           git commit -m "chore(pipeline): scrape $(date -u +'%Y-%m-%d')"
-          # Retry on race: if remote moved (concurrent job or contributor push),
-          # pull --rebase the new commits underneath ours and try again.
           for attempt in 1 2 3 4 5; do
             if git push; then exit 0; fi
             echo "push rejected on attempt $attempt, rebasing onto remote"
@@ -142,7 +155,7 @@ jobs:
         run: echo "## Scrape complete" >> "$GITHUB_STEP_SUMMARY"
 
   # ─────────────────────────────────────────────────────────────────────────
-  # Stage 2: curate (dedupe + Maverick discovery + summarize)
+  # Stage 2: curate (dedupe + discovery + summarize)
   # ─────────────────────────────────────────────────────────────────────────
   curate:
     needs: [plan, scrape]
@@ -166,9 +179,7 @@ jobs:
           path: ~/.cache/huggingface
           key: hf-minilm-l6-v2-v1
       - run: pip install -r scripts/requirements.txt
-      - name: Re-scrape for any new articles
-        run: python scripts/scrape.py
-      - name: Curate (dedupe + Maverick discover + summarize)
+      - name: Curate (resumable)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -192,12 +203,27 @@ jobs:
           done
           echo "Failed to push after 5 attempts" >&2
           exit 1
+      - name: Deadline check
+        if: needs.plan.outputs.is_deadline == 'true'
+        run: |
+          cd scripts
+          python -c "
+          from state import load_state, get_stage_status
+          from edition import get_edition
+          _, edition = get_edition()
+          state = load_state(edition)
+          status = get_stage_status(state, 'curate')
+          if status != 'complete':
+              print(f'DEADLINE MISS: curate stage is \"{status}\" at final sweeper')
+              exit(1)
+          print(f'Curate stage is complete — deadline met')
+          "
       - name: Summary
         if: always()
         run: echo "## Curate complete" >> "$GITHUB_STEP_SUMMARY"
 
   # ─────────────────────────────────────────────────────────────────────────
-  # Stage 3: finalize (Maverick tournament ranking)
+  # Stage 3: finalize (per-cluster synthesis + assembly)
   # ─────────────────────────────────────────────────────────────────────────
   finalize:
     needs: [plan, curate]
@@ -221,15 +247,7 @@ jobs:
           path: ~/.cache/huggingface
           key: hf-minilm-l6-v2-v1
       - run: pip install -r scripts/requirements.txt
-      - name: Final scrape for weekend news
-        run: python scripts/scrape.py
-      - name: Re-curate any new articles
-        env:
-          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          LLM_DELAY_SECONDS: "3"
-        run: python scripts/curate.py
-      - name: Tournament rank + write edition
+      - name: Finalize (resumable)
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -255,6 +273,21 @@ jobs:
           done
           echo "Failed to push after 5 attempts" >&2
           exit 1
+      - name: Deadline check
+        if: needs.plan.outputs.is_deadline == 'true'
+        run: |
+          cd scripts
+          python -c "
+          from state import load_state, get_stage_status
+          from edition import get_edition
+          _, edition = get_edition()
+          state = load_state(edition)
+          status = get_stage_status(state, 'finalize')
+          if status != 'complete':
+              print(f'DEADLINE MISS: finalize stage is \"{status}\" at final sweeper')
+              exit(1)
+          print(f'Finalize stage is complete — deadline met')
+          "
       - name: Summary
         if: always()
         run: echo "## Finalize complete" >> "$GITHUB_STEP_SUMMARY"
@@ -355,9 +388,6 @@ jobs:
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: npm
-      # Lockfile generated on macOS; npm bug #4828 means the Linux-only
-      # @rollup/rollup-linux-x64-gnu binary isn't listed. Nuke any cached
-      # tree and let npm install re-resolve per-platform.
       - name: Install Node deps (fresh, cross-platform safe)
         run: |
           rm -rf node_modules package-lock.json
@@ -376,6 +406,7 @@ jobs:
 
   # ─────────────────────────────────────────────────────────────────────────
   # Failure notifier — opens one GitHub issue per failed scheduled run.
+  # Only fires on non-zero exit or deadline miss, not on partial exits.
   # ─────────────────────────────────────────────────────────────────────────
   notify_failure:
     needs: [plan, scrape, curate, finalize, emergency_check, send_newsletter, deploy_site]

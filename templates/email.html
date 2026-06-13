@@ -113,12 +113,16 @@
                     </table>
                     {% endif %}
 
-                    <!-- Sources -->
-                    {% if article.sources and article.sources|length > 1 %}
+                    <!-- Sources: journalism links + advisory chips -->
+                    {% if article.sources and article.sources|length > 0 %}
                     <p style="margin:0 0 10px;font-size:12px;color:#475569;">
-                      Coverage:
+                      <a href="{{ article.url }}" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
                       {% for src in article.sources[:4] %}
-                      <a href="{{ src.url }}" style="color:#14b8a6;text-decoration:none;margin-left:4px;">{{ src.name }}</a>{% if not loop.last %} &middot;{% endif %}
+                        {% if src.kind is defined and src.kind == 'advisory' %}
+                        <a href="{{ src.url }}" style="margin-left:6px;font-size:11px;font-family:monospace;color:#14b8a6;background:#042f2e;padding:2px 6px;border-radius:3px;text-decoration:none;">{{ src.name[:12] }} &rarr;</a>
+                        {% elif src.url != article.url %}
+                        <a href="{{ src.url }}" style="color:#64748b;text-decoration:none;margin-left:6px;">{{ src.name }}</a>
+                        {% endif %}
                       {% endfor %}
                     </p>
                     {% else %}

@@ -6,6 +6,7 @@ and saves raw articles as JSON for the current edition.
 
 import json
 import hashlib
+import re
 import sys
 import time
 from datetime import datetime, timedelta, timezone
@@ -16,7 +17,7 @@ import httpx
 from dateutil import parser as dateparser
 from dateutil import tz as dateutz
 
-from edition import RAW_DIR, compute_friday, set_edition
+from edition import RAW_DIR, compute_friday, set_edition, date_range_label
 
 SCRIPTS_DIR = Path(__file__).parent
 SOURCES_FILE = SCRIPTS_DIR / "sources.json"
@@ -51,6 +52,14 @@ TZINFOS = {
 def load_sources() -> list[dict]:
     with open(SOURCES_FILE) as f:
         return json.load(f)
+
+
+CVE_RE = re.compile(r"CVE-\d{4}-\d{4,}", re.IGNORECASE)
+
+
+def extract_cve_ids(title: str, summary: str) -> list[str]:
+    raw = set(CVE_RE.findall(f"{title} {summary}"))
+    return sorted({cve.upper() for cve in raw})
 
 
 def article_id(url: str) -> str:
@@ -99,9 +108,11 @@ def fetch_rss(source: dict, cutoff: datetime) -> list[dict]:
                 "title": title,
                 "summary_raw": summary,
                 "source": source["name"],
+                "source_kind": source.get("kind", "journalism"),
                 "url": link,
                 "publishedDate": published.isoformat(),
                 "scrapedAt": datetime.now(timezone.utc).isoformat(),
+                "cve_ids_scraped": extract_cve_ids(title, summary),
             })
     except Exception as e:
         print(f"  [WARN] Failed to fetch {source['name']}: {e}", file=sys.stderr)

@@ -9,3 +9,4 @@
 -r requirements-light.txt
 sentence-transformers>=5.5.1
 numpy>=2.4.6
+trafilatura>=2.0.0

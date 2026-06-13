@@ -64,7 +64,7 @@ jobs:
           GEMINI_API_KEY: "test-placeholder"
         run: |
           cd scripts
-          python -c "import scrape, dedupe, discover, llm_client, curate, finalize, monday_check, send_newsletter, edition; print('All imports OK')"
+          python -c "import scrape, dedupe, discover, llm_client, curate, finalize, monday_check, send_newsletter, edition, state; print('All imports OK')"
 
   astro:
     name: Astro build

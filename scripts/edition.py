@@ -55,9 +55,9 @@ def date_label(edition: str) -> str:
 
 
 def date_range_label(edition: str) -> str:
-    """Convert '2026-04-10' to 'Apr 10 – 16, 2026' (Fri-Thu week)."""
+    """Convert '2026-06-12' to 'Jun 5 – 12, 2026' (trailing 8-day scrape window)."""
     fri = datetime.strptime(edition, "%Y-%m-%d")
-    thu = fri + timedelta(days=6)
-    if fri.month == thu.month:
-        return f"{fri.strftime('%b %-d')} – {thu.strftime('%-d, %Y')}"
-    return f"{fri.strftime('%b %-d')} – {thu.strftime('%b %-d, %Y')}"
+    start = fri - timedelta(days=7)
+    if start.month == fri.month:
+        return f"{start.strftime('%b %-d')} – {fri.strftime('%-d, %Y')}"
+    return f"{start.strftime('%b %-d')} – {fri.strftime('%b %-d, %Y')}"

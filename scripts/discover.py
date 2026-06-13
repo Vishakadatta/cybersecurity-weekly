@@ -16,33 +16,50 @@ import os
 import sys
 from pathlib import Path
 
-from llm_client import ProjectError, generate_json, throttle
+from llm_client import ProjectError, QuotaExhausted, generate_json, throttle
 from edition import RAW_DIR, get_edition
 
 # Articles scoring below this are dropped. Override via env var.
 MIN_RELEVANCE = float(os.environ.get("DISCOVERY_MIN_RELEVANCE", "5"))
 BATCH_SIZE = int(os.environ.get("DISCOVERY_BATCH_SIZE", "15"))
 
-DISCOVERY_PROMPT = """You are a senior cybersecurity analyst. I will give you a batch of headlines and short summaries scraped from news feeds. Score each one on how much it belongs in a cybersecurity newsletter aimed at security professionals and CISOs.
+DISCOVERY_PROMPT = """You are a senior cybersecurity analyst curating a weekly newsletter for sysadmins, DevOps engineers, and security engineers. Its focus is Linux distribution security and open-source / supply-chain security.
 
-A 10 is a major breach, zero-day, nation-state campaign, critical CVE actively exploited, infrastructure compromise, or a story directly touching 5G / indoor cells / NMS / web-app management platforms.
+I will give you a batch of headlines and short summaries scraped from news feeds. Score each on a 1-10 scale for how much it belongs in THIS newsletter. Two things drive the score, and you must weigh both:
 
-A 7-9 is a meaningful security story: new vulnerability disclosures, ransomware activity, threat-actor research, significant policy or regulation, defensive tooling that matters.
+  SEVERITY  - how serious the security event is (exploitation, criticality, scope).
+  FOCUS-FIT - how directly it touches our beat:
+              * Linux distro security: kernel, glibc, OpenSSL, sudo, systemd, and similar core-component CVEs; distro security advisories (USN/DSA/RHSA).
+              * Open-source & supply-chain security: malicious or backdoored npm/PyPI/crates/Go packages; compromised maintainer accounts or releases; build-system / CI / GitHub Actions compromise.
 
-A 4-6 is loosely related: general tech with a security angle, opinion pieces on cyber topics, podcast episodes that touch on security among other things.
+Scoring anchors:
 
-A 1-3 is noise that should NOT be in the newsletter: pure consumer-tech news, product launches with no security relevance, gadget reviews, podcast banter that doesn't focus on a security story, generic AI news, unrelated business news.
+  10  Both high-severity AND in-focus. Actively-exploited Linux kernel or core-library CVE, an xz-style backdoor, a compromise of a widely-used open-source package, a poisoned popular CI action.
 
-For each article, return:
-- id (keep the exact original)
-- score (number 1-10)
-- reason (one short clause — why this score)
-- security_topic (string: one of "breach", "vulnerability", "ransomware", "nation-state", "policy", "research", "tooling", "5G", "indoor-cells", "NMS", "webapp-mgmt", "ai-security", "supply-chain", "other", or "none" if score < 4)
+  7-9 Either a strong in-focus story that is not yet critical (a notable distro advisory, a newly disclosed OSS vulnerability, supply-chain research), OR a broadly important general security story that is OUT of focus (a major corporate breach, a Windows-only zero-day, a large ransomware campaign). General-but-important news caps at 8 - it never reaches 10, because it is not our beat.
 
-Respond with a single JSON object: { "articles": [ ... ] }
+  4-6  Moderate relevance: routine vulnerability disclosures, smaller incidents, security tooling, policy/regulation with some practitioner impact.
 
-Articles:
+  1-3  Marginal or off-topic: product marketing, opinion with no concrete security event, consumer-only stories, vendor PR.
 
+For EACH article return: the id, an integer score 1-10, and a short reason (one sentence) stating the severity and the focus-fit you judged. The reason is mandatory - it is your justification, not optional commentary.
+
+Return ONLY a JSON array, no prose, no markdown fences:
+[{"id": "<id>", "score": <int>, "reason": "<one sentence>"}]
+
+Examples:
+
+Input:
+  id=a1  "USN-7321-1: Linux kernel vulnerabilities" - Several flaws in the Linux kernel could allow local privilege escalation; updates available for Ubuntu 24.04.
+  id=b2  "Retailer discloses breach affecting 4M customers" - Names and emails exposed via a misconfigured cloud bucket.
+  id=c3  "New JetBrains IDE theme released" - Dark mode refresh and UI tweaks for the latest version.
+
+Output:
+[{"id": "a1", "score": 10, "reason": "High severity local privilege escalation in the Linux kernel with a live distro advisory - squarely in focus."},
+ {"id": "b2", "score": 7, "reason": "Serious breach and broadly important, but a generic cloud-misconfig incident outside our Linux/OSS focus, so capped below 10."},
+ {"id": "c3", "score": 2, "reason": "Low severity product UI news with no security event and no focus relevance."}]
+
+Now score this batch:
 """
 
 
@@ -53,8 +70,8 @@ def chunks(items, n):
 
 def discover(articles: list[dict]) -> tuple[list[dict], list[dict]]:
     """
-    Returns (kept, dropped). Kept articles get a `discovery_score`,
-    `discovery_reason`, and `security_topic` field merged in.
+    Returns (kept, dropped). Kept articles get `discovery_score`
+    and `discovery_reason` fields merged in.
     """
     if not articles:
         return [], []
@@ -71,18 +88,18 @@ def discover(articles: list[dict]) -> tuple[list[dict], list[dict]]:
         } for a in batch]
 
         prompt = DISCOVERY_PROMPT + json.dumps(payload, indent=2)
-        result = generate_json(prompt, backend="groq", temperature=0.2)
+        result = generate_json(prompt, task="discovery", temperature=0.2)
         if not result:
             print(f"  [discover] batch failed, keeping all {len(batch)} articles by default", flush=True)
             for a in batch:
-                decisions[a["id"]] = {"score": MIN_RELEVANCE, "reason": "discovery-failed-keep", "security_topic": "other"}
+                decisions[a["id"]] = {"score": MIN_RELEVANCE, "reason": "discovery-failed-keep"}
             continue
         if isinstance(result, dict) and "articles" in result:
             result = result["articles"]
         if not isinstance(result, list):
             print(f"  [discover] unexpected payload shape, keeping batch", flush=True)
             for a in batch:
-                decisions[a["id"]] = {"score": MIN_RELEVANCE, "reason": "discovery-bad-shape-keep", "security_topic": "other"}
+                decisions[a["id"]] = {"score": MIN_RELEVANCE, "reason": "discovery-bad-shape-keep"}
             continue
 
         for entry in result:
@@ -91,17 +108,15 @@ def discover(articles: list[dict]) -> tuple[list[dict], list[dict]]:
                 decisions[aid] = {
                     "score": float(entry.get("score", MIN_RELEVANCE)),
                     "reason": str(entry.get("reason", ""))[:200],
-                    "security_topic": str(entry.get("security_topic", "other"))[:40],
                 }
 
         throttle(extra_delay=2)
 
     kept, dropped = [], []
     for a in articles:
-        d = decisions.get(a["id"], {"score": MIN_RELEVANCE, "reason": "no-decision-keep", "security_topic": "other"})
+        d = decisions.get(a["id"], {"score": MIN_RELEVANCE, "reason": "no-decision-keep"})
         a["discovery_score"] = d["score"]
         a["discovery_reason"] = d["reason"]
-        a["security_topic"] = d["security_topic"]
         if d["score"] >= MIN_RELEVANCE:
             kept.append(a)
         else:

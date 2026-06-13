@@ -1,13 +1,12 @@
 """
-Provider-agnostic LLM client with fallback chain.
+Provider-agnostic LLM client with task-based model routing.
 
 Backends (Western/allied-origin only):
-- Groq (Meta Llama 3.3 70B / 3.1 8B) — fast, free, used for summarization
-- Gemini 2.5 Pro / Flash — used for judgment-heavy tournament ranking
+- Groq (Meta Llama 4 Scout, Llama 3.3 70B, Llama 3.1 8B)
+- Gemini 3 Flash / 3.1 Flash-Lite (last resort)
 
-Backend is selected per-call via the `backend` argument. Each backend has its
-own internal model fallback chain. If a whole backend is exhausted, the next
-fallback backend in `BACKEND_FALLBACKS` is tried.
+Each task maps to a specific model fallback chain. The editorial/synthesis
+chain never contains 8B — enforced by assertion.
 """
 
 import json
@@ -16,37 +15,45 @@ import re
 import sys
 import time
 
-# Groq fallback chain. Llama 4 Scout is the head of the chain by default
-# because Llama 4 Maverick (the larger 400B MoE) has been intermittently
-# returning model_404 on Groq's production API for some accounts. Keeping
-# Maverick first wasted ~500ms per LLM call retrying a known-failing model
-# before the chain reached Scout. Scout (17B active / 109B total MoE) is
-# still a Llama 4, just with fewer experts — quality is very close for
-# this workload (summarization + 1-10 relevance scoring).
-#
-# To restore Maverick as primary (e.g. if your Groq account regains access,
-# or if it's working on a future paid tier), set:
-#     GROQ_PRIMARY_MODEL=meta-llama/llama-4-maverick-17b-128e-instruct
-PREFERRED_GROQ_MODELS = [
-    "meta-llama/llama-4-scout-17b-16e-instruct",        # 109B total MoE — primary (proven available)
-    "meta-llama/llama-4-maverick-17b-128e-instruct",    # 400B total MoE — try if Scout is down
-    "llama-3.3-70b-versatile",                          # 70B dense — safety net
-    "llama-3.1-8b-instant",                             # 8B dense — last resort within Groq
-]
+# ---------------------------------------------------------------------------
+# Task → model routing table (CO §7)
+# ---------------------------------------------------------------------------
+# Each task defines a chain of (backend, model) pairs tried in order.
+# "groq" models are tried before any "gemini" model per project policy.
 
-PREFERRED_GEMINI_MODELS = [
-    "gemini-2.5-pro",
-    "gemini-2.5-flash",
-    "gemini-2.5-flash-lite",
-]
-
-# Per user policy: Gemini is the absolute last resort. The Groq backend
-# must exhaust every model in its chain before any Gemini call is made.
-# Both "groq" and "gemini" entry points use the same order.
-BACKEND_FALLBACKS = {
-    "groq": ["groq", "gemini"],
-    "gemini": ["groq", "gemini"],
+TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
+    "discovery": [
+        ("groq", "llama-3.1-8b-instant"),
+        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+    ],
+    "summarize": [
+        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+        ("groq", "llama-3.3-70b-versatile"),
+    ],
+    "editorial": [
+        ("groq", "llama-3.3-70b-versatile"),
+        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+        ("gemini", "gemini-3-flash"),
+    ],
+    "verify": [
+        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+        ("groq", "llama-3.3-70b-versatile"),
+    ],
+    "emergency": [
+        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+        ("gemini", "gemini-3-flash"),
+    ],
 }
+
+# Hard constraint: 8B must never appear in editorial/finalize chains.
+for _task in ("editorial", "verify"):
+    for _be, _model in TASK_CHAINS[_task]:
+        assert "8b" not in _model.lower(), f"8B model in {_task} chain: {_model}"
+
+GEMINI_MODELS = [
+    "gemini-3-flash",
+    "gemini-3.1-flash-lite",
+]
 
 DEFAULT_DELAY = 5
 REQUEST_DELAY = int(os.environ.get("LLM_DELAY_SECONDS", str(DEFAULT_DELAY)))
@@ -55,6 +62,53 @@ MAX_RETRIES = int(os.environ.get("LLM_MAX_RETRIES", "2"))
 
 class ProjectError(Exception):
     """Unrecoverable error (bad key, banned project, spending cap)."""
+
+
+class QuotaExhausted(Exception):
+    """Daily quota exhausted for a model — caller should checkpoint and exit 0."""
+    def __init__(self, model: str, scope: str = "daily"):
+        self.model = model
+        self.scope = scope
+        super().__init__(f"Quota exhausted for {model} ({scope})")
+
+
+# ---------------------------------------------------------------------------
+# Rate-limit budget tracking (from Groq response headers)
+# ---------------------------------------------------------------------------
+
+_budget: dict[str, dict] = {}
+
+
+def get_budget() -> dict[str, dict]:
+    return dict(_budget)
+
+
+def _update_budget_from_headers(model: str, headers: dict):
+    info = {}
+    for key, field in [
+        ("x-ratelimit-remaining-requests", "remaining_requests"),
+        ("x-ratelimit-remaining-tokens", "remaining_tokens"),
+        ("retry-after", "retry_after"),
+        ("x-ratelimit-reset-requests", "reset_requests"),
+        ("x-ratelimit-reset-tokens", "reset_tokens"),
+    ]:
+        val = headers.get(key)
+        if val is not None:
+            try:
+                info[field] = int(val) if field.startswith("remaining") else val
+            except (ValueError, TypeError):
+                info[field] = val
+    if info:
+        _budget[model] = info
+
+
+def _check_budget_before_call(model: str, min_tokens: int = 2000):
+    b = _budget.get(model)
+    if not b:
+        return
+    remaining = b.get("remaining_tokens")
+    if remaining is not None and remaining < min_tokens:
+        raise QuotaExhausted(model, "daily-tokens-low")
 
 
 def _parse_json(text: str):
@@ -81,6 +135,9 @@ def _classify_error(e: Exception) -> str:
     if "429" in msg or "resource_exhausted" in msg or "rate limit" in msg:
         if "limit: 0" in msg:
             return "model_404"
+        # Check for daily exhaustion markers
+        if any(w in msg for w in ["daily", "day", "24h"]):
+            return "daily_limit"
         return "rate_limit"
     if "404" in msg or "not found" in msg or "model_not_found" in msg:
         return "model_404"
@@ -108,57 +165,63 @@ def _get_groq_client():
     return _groq_client
 
 
-def _groq_generate(prompt: str, temperature: float):
+def _groq_generate(prompt: str, model: str, temperature: float):
     client = _get_groq_client()
     if client is None:
         raise RuntimeError("Groq backend unavailable (no key or SDK)")
 
-    env_model = os.environ.get("GROQ_PRIMARY_MODEL", os.environ.get("GROQ_MODEL", "")).strip()
-    models = [env_model] + [m for m in PREFERRED_GROQ_MODELS if m != env_model] if env_model else list(PREFERRED_GROQ_MODELS)
+    _check_budget_before_call(model)
 
-    for model in models:
-        for attempt in range(MAX_RETRIES + 1):
-            try:
-                print(f"  [groq:{model} attempt {attempt + 1}/{MAX_RETRIES + 1}]", end=" ", flush=True)
-                resp = client.chat.completions.create(
-                    model=model,
-                    messages=[{"role": "user", "content": prompt}],
-                    temperature=temperature,
-                    response_format={"type": "json_object"},
-                )
-                text = resp.choices[0].message.content
-                parsed = _parse_json(text)
-                if parsed is None:
-                    print("JSON parse failed, retrying...", flush=True)
-                    if attempt < MAX_RETRIES:
-                        time.sleep(10)
-                        continue
-                    break
-                print("OK", flush=True)
-                return parsed
-            except Exception as e:
-                kind = _classify_error(e)
-                preview = str(e)[:150]
-                if kind == "project":
-                    print(f"\n  FATAL: {preview}", flush=True)
-                    raise ProjectError(str(e)) from e
-                if kind == "model_404":
-                    print(f"not available, trying next model", flush=True)
-                    break
-                if kind == "rate_limit":
-                    if attempt < MAX_RETRIES:
-                        wait = 30 * (attempt + 1)
-                        print(f"rate-limited, waiting {wait}s...", flush=True)
-                        time.sleep(wait)
-                    else:
-                        print(f"exhausted retries", flush=True)
-                        break
+    for attempt in range(MAX_RETRIES + 1):
+        try:
+            print(f"  [groq:{model} attempt {attempt + 1}/{MAX_RETRIES + 1}]", end=" ", flush=True)
+            resp = client.chat.completions.create(
+                model=model,
+                messages=[{"role": "user", "content": prompt}],
+                temperature=temperature,
+                response_format={"type": "json_object"},
+            )
+            # Parse rate-limit headers from the raw response if available
+            raw_resp = getattr(resp, "_raw_response", None) or getattr(resp, "http_response", None)
+            if raw_resp and hasattr(raw_resp, "headers"):
+                _update_budget_from_headers(model, dict(raw_resp.headers))
+
+            text = resp.choices[0].message.content
+            parsed = _parse_json(text)
+            if parsed is None:
+                print("JSON parse failed, retrying...", flush=True)
+                if attempt < MAX_RETRIES:
+                    time.sleep(10)
+                    continue
+                return None
+            print("OK", flush=True)
+            return parsed
+        except Exception as e:
+            kind = _classify_error(e)
+            preview = str(e)[:150]
+            if kind == "project":
+                print(f"\n  FATAL: {preview}", flush=True)
+                raise ProjectError(str(e)) from e
+            if kind == "daily_limit":
+                print(f"daily quota exhausted", flush=True)
+                raise QuotaExhausted(model, "daily") from e
+            if kind == "model_404":
+                print(f"not available", flush=True)
+                return None
+            if kind == "rate_limit":
+                if attempt < MAX_RETRIES:
+                    wait = 30 * (attempt + 1)
+                    print(f"rate-limited, waiting {wait}s...", flush=True)
+                    time.sleep(wait)
                 else:
-                    print(f"error: {preview}", flush=True)
-                    if attempt < MAX_RETRIES:
-                        time.sleep(10)
-                    else:
-                        break
+                    print(f"exhausted retries", flush=True)
+                    return None
+            else:
+                print(f"error: {preview}", flush=True)
+                if attempt < MAX_RETRIES:
+                    time.sleep(10)
+                else:
+                    return None
     return None
 
 
@@ -183,92 +246,119 @@ def _get_gemini_client():
     return _gemini_client
 
 
-def _gemini_generate(prompt: str, temperature: float):
+def _gemini_generate(prompt: str, model: str, temperature: float):
     client = _get_gemini_client()
     if client is None:
         raise RuntimeError("Gemini backend unavailable (no key or SDK)")
     from google.genai import types
 
-    env_model = os.environ.get("GEMINI_MODEL", "").strip()
-    models = [env_model] + [m for m in PREFERRED_GEMINI_MODELS if m != env_model] if env_model else list(PREFERRED_GEMINI_MODELS)
-
-    for model in models:
-        for attempt in range(MAX_RETRIES + 1):
-            try:
-                print(f"  [gemini:{model} attempt {attempt + 1}/{MAX_RETRIES + 1}]", end=" ", flush=True)
-                resp = client.models.generate_content(
-                    model=model,
-                    contents=prompt,
-                    config=types.GenerateContentConfig(
-                        response_mime_type="application/json",
-                        temperature=temperature,
-                    ),
-                )
-                parsed = _parse_json(resp.text)
-                if parsed is None:
-                    print("JSON parse failed, retrying...", flush=True)
-                    if attempt < MAX_RETRIES:
-                        time.sleep(15)
-                        continue
-                    break
-                print("OK", flush=True)
-                return parsed
-            except Exception as e:
-                kind = _classify_error(e)
-                preview = str(e)[:150]
-                if kind == "project":
-                    print(f"\n  FATAL: {preview}", flush=True)
-                    raise ProjectError(str(e)) from e
-                if kind == "model_404":
-                    print(f"not available, trying next model", flush=True)
-                    break
-                if kind == "rate_limit":
-                    if attempt < MAX_RETRIES:
-                        wait = 60 * (attempt + 1)
-                        print(f"rate-limited, waiting {wait}s...", flush=True)
-                        time.sleep(wait)
-                    else:
-                        print(f"exhausted retries", flush=True)
-                        break
+    for attempt in range(MAX_RETRIES + 1):
+        try:
+            print(f"  [gemini:{model} attempt {attempt + 1}/{MAX_RETRIES + 1}]", end=" ", flush=True)
+            resp = client.models.generate_content(
+                model=model,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    temperature=temperature,
+                ),
+            )
+            parsed = _parse_json(resp.text)
+            if parsed is None:
+                print("JSON parse failed, retrying...", flush=True)
+                if attempt < MAX_RETRIES:
+                    time.sleep(15)
+                    continue
+                return None
+            print("OK", flush=True)
+            return parsed
+        except Exception as e:
+            kind = _classify_error(e)
+            preview = str(e)[:150]
+            if kind == "project":
+                print(f"\n  FATAL: {preview}", flush=True)
+                raise ProjectError(str(e)) from e
+            if kind == "model_404":
+                print(f"not available", flush=True)
+                return None
+            if kind == "rate_limit":
+                if attempt < MAX_RETRIES:
+                    wait = 60 * (attempt + 1)
+                    print(f"rate-limited, waiting {wait}s...", flush=True)
+                    time.sleep(wait)
                 else:
-                    print(f"error: {preview}", flush=True)
-                    if attempt < MAX_RETRIES:
-                        time.sleep(15)
-                    else:
-                        break
+                    print(f"exhausted retries", flush=True)
+                    return None
+            else:
+                print(f"error: {preview}", flush=True)
+                if attempt < MAX_RETRIES:
+                    time.sleep(15)
+                else:
+                    return None
     return None
 
 
-# ---------- Public API ----------
+# ---------- Backend dispatch ----------
 
-_BACKEND_IMPL = {
+_BACKEND_DISPATCH = {
     "groq": _groq_generate,
     "gemini": _gemini_generate,
 }
 
 
-def generate_json(prompt: str, *, backend: str = "groq", temperature: float = 0.3):
+# ---------- Public API ----------
+
+def generate_json(
+    prompt: str,
+    *,
+    task: str = "summarize",
+    backend: str | None = None,
+    temperature: float = 0.3,
+):
     """
-    Generate a JSON response. `backend` picks the primary backend; the
-    BACKEND_FALLBACKS chain is tried in order if the primary fails.
+    Generate a JSON response using the model chain for `task`.
+
+    If `backend` is provided (legacy callers), a flat fallback is used:
+    all Groq models then all Gemini models. New callers should use `task`.
     """
-    chain = BACKEND_FALLBACKS.get(backend, [backend])
-    for be in chain:
-        impl = _BACKEND_IMPL.get(be)
+    if backend is not None:
+        # Legacy path: flat chain through all models in backend order
+        chain = _build_legacy_chain(backend)
+    else:
+        chain = TASK_CHAINS.get(task)
+        if chain is None:
+            raise ValueError(f"Unknown task: {task}")
+
+    for be, model in chain:
+        impl = _BACKEND_DISPATCH.get(be)
         if impl is None:
             continue
         try:
-            result = impl(prompt, temperature)
-        except ProjectError:
+            result = impl(prompt, model, temperature)
+        except (ProjectError, QuotaExhausted):
             raise
         except RuntimeError as e:
             print(f"  [{be}] unavailable: {e}", flush=True)
             continue
         if result is not None:
             return result
-        print(f"  [{be}] exhausted, falling through to next backend", flush=True)
-    print("  WARNING: All backends exhausted, returning None", file=sys.stderr, flush=True)
+        print(f"  [{be}:{model}] failed, trying next", flush=True)
+
+    print("  WARNING: All models exhausted, returning None", file=sys.stderr, flush=True)
     return None
+
+
+def _build_legacy_chain(backend: str) -> list[tuple[str, str]]:
+    groq_models = [
+        "meta-llama/llama-4-scout-17b-16e-instruct",
+        "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "llama-3.3-70b-versatile",
+        "llama-3.1-8b-instant",
+    ]
+    chain: list[tuple[str, str]] = []
+    chain.extend(("groq", m) for m in groq_models)
+    chain.extend(("gemini", m) for m in GEMINI_MODELS)
+    return chain
 
 
 def throttle(extra_delay: int = 0):

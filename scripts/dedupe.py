@@ -1,22 +1,23 @@
 """
-Title-embedding dedupe.
+Multi-layer embedding + CVE-ID dedupe.
 
-Many of the same stories show up across multiple feeds in a given week (Krebs,
-BleepingComputer, THN, Dark Reading all cover the same breach). LLM ranking
-sees these as separate articles and either wastes tokens summarizing each or
-gets confused. We embed the titles, cluster by cosine similarity, and keep one
-canonical article per cluster (highest source weight, then earliest published).
+L2a: exact CVE-ID join — articles sharing any CVE merge into one cluster.
+L2b: cosine-similarity clustering on title + first 500 chars of summary_raw.
 
-Runs locally — sentence-transformers all-MiniLM-L6-v2 is ~80MB, no API calls.
+Canonical selection: highest-weight journalism member wins; if cluster is
+advisory-only, highest-weight advisory wins.  Tiebreak: earliest published.
+
+Cluster ID = SHA-256 of sorted member article IDs (stable across re-runs).
 """
 
+import hashlib
 import json
 import sys
 from pathlib import Path
 
 import numpy as np
 
-DEFAULT_THRESHOLD = 0.78  # cosine similarity for "same story"
+DEFAULT_THRESHOLD = 0.78
 SOURCES_FILE = Path(__file__).parent / "sources.json"
 
 _model = None
@@ -41,38 +42,59 @@ def _load_source_weights() -> dict[str, float]:
     return weights
 
 
-def _cluster(sims: np.ndarray, threshold: float) -> list[list[int]]:
-    n = sims.shape[0]
-    parent = list(range(n))
+def _load_source_kinds() -> dict[str, str]:
+    kinds: dict[str, str] = {}
+    if not SOURCES_FILE.exists():
+        return kinds
+    with open(SOURCES_FILE) as f:
+        for src in json.load(f):
+            kinds[src["name"]] = src.get("kind", "journalism")
+    return kinds
 
-    def find(x: int) -> int:
-        while parent[x] != x:
-            parent[x] = parent[parent[x]]
-            x = parent[x]
+
+class _UnionFind:
+    def __init__(self, n: int):
+        self.parent = list(range(n))
+
+    def find(self, x: int) -> int:
+        while self.parent[x] != x:
+            self.parent[x] = self.parent[self.parent[x]]
+            x = self.parent[x]
         return x
 
-    def union(a: int, b: int):
-        ra, rb = find(a), find(b)
+    def union(self, a: int, b: int):
+        ra, rb = self.find(a), self.find(b)
         if ra != rb:
-            parent[ra] = rb
+            self.parent[ra] = rb
 
-    for i in range(n):
-        for j in range(i + 1, n):
-            if sims[i, j] >= threshold:
-                union(i, j)
-
-    clusters: dict[int, list[int]] = {}
-    for i in range(n):
-        clusters.setdefault(find(i), []).append(i)
-    return list(clusters.values())
+    def clusters(self) -> list[list[int]]:
+        groups: dict[int, list[int]] = {}
+        for i in range(len(self.parent)):
+            groups.setdefault(self.find(i), []).append(i)
+        return list(groups.values())
 
 
-def _canonical_index(cluster: list[int], articles: list[dict], weights: dict[str, float]) -> int:
+def cluster_id(articles: list[dict]) -> str:
+    member_ids = sorted(a["id"] for a in articles)
+    raw = ",".join(member_ids).encode()
+    return hashlib.sha256(raw).hexdigest()[:16]
+
+
+def _canonical_index(
+    cluster: list[int],
+    articles: list[dict],
+    weights: dict[str, float],
+    kinds: dict[str, str],
+) -> int:
     def sort_key(idx: int):
         a = articles[idx]
-        w = weights.get(a.get("source", ""), 1.0)
+        source = a.get("source", "")
+        kind = kinds.get(source, a.get("source_kind", "journalism"))
+        w = weights.get(source, 1.0)
+        # journalism=0 sorts before advisory=1 (we want journalism first)
+        kind_rank = 0 if kind == "journalism" else 1
         pub = a.get("publishedDate") or ""
-        return (-w, pub)
+        return (kind_rank, -w, pub)
     return sorted(cluster, key=sort_key)[0]
 
 
@@ -82,36 +104,66 @@ def dedupe_articles(
     threshold: float = DEFAULT_THRESHOLD,
 ) -> tuple[list[dict], list[list[dict]]]:
     """
-    Returns (canonical_articles, clusters_of_dupes).
-    Each canonical article gets a `dupe_count` field and a `dupe_sources` list
-    for use in ranking. Duplicates are not deleted from disk — only suppressed
-    from the LLM input.
+    Returns (canonical_articles, clusters_of_members).
+    Each canonical gets `dupe_count`, `dupe_sources`, and `cluster_id`.
     """
     if not articles:
         return [], []
 
-    titles = [a.get("title", "") for a in articles]
+    n = len(articles)
+    uf = _UnionFind(n)
+
+    # --- L2a: CVE-ID exact-match join ---
+    cve_to_indices: dict[str, list[int]] = {}
+    for i, a in enumerate(articles):
+        for cve in a.get("cve_ids_scraped", []) + a.get("cve_ids", []):
+            cve_upper = cve.upper()
+            cve_to_indices.setdefault(cve_upper, []).append(i)
+    for indices in cve_to_indices.values():
+        for j in range(1, len(indices)):
+            uf.union(indices[0], indices[j])
+
+    # --- L2b: embedding cosine similarity ---
+    texts = []
+    for a in articles:
+        title = a.get("title", "")
+        summary = (a.get("summary_raw") or a.get("summary") or "")[:500]
+        texts.append(f"{title} {summary}" if summary else title)
+
     model = _get_model()
-    embeddings = model.encode(titles, normalize_embeddings=True, show_progress_bar=False)
+    embeddings = model.encode(texts, normalize_embeddings=True, show_progress_bar=False)
     sims = embeddings @ embeddings.T
 
-    clusters = _cluster(np.asarray(sims), threshold)
+    for i in range(n):
+        for j in range(i + 1, n):
+            if sims[i, j] >= threshold:
+                uf.union(i, j)
+
+    # --- Build output ---
+    clusters = uf.clusters()
     weights = _load_source_weights()
+    kinds = _load_source_kinds()
 
     canonicals = []
     cluster_groups = []
-    for cluster in clusters:
-        if len(cluster) == 1:
-            canonicals.append(articles[cluster[0]])
-            cluster_groups.append([articles[cluster[0]]])
+    for cluster_indices in clusters:
+        members = [articles[i] for i in cluster_indices]
+        cid = cluster_id(members)
+
+        if len(cluster_indices) == 1:
+            a = dict(articles[cluster_indices[0]])
+            a["cluster_id"] = cid
+            canonicals.append(a)
+            cluster_groups.append(members)
             continue
-        canonical_idx = _canonical_index(cluster, articles, weights)
+
+        canonical_idx = _canonical_index(cluster_indices, articles, weights, kinds)
         canonical = dict(articles[canonical_idx])
-        dupes = [articles[i] for i in cluster]
-        canonical["dupe_count"] = len(dupes)
-        canonical["dupe_sources"] = sorted({a.get("source", "") for a in dupes})
+        canonical["dupe_count"] = len(members)
+        canonical["dupe_sources"] = sorted({a.get("source", "") for a in members})
+        canonical["cluster_id"] = cid
         canonicals.append(canonical)
-        cluster_groups.append(dupes)
+        cluster_groups.append(members)
 
     return canonicals, cluster_groups
 

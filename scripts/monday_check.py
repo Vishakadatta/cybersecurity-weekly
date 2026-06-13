@@ -82,8 +82,7 @@ def main():
     )
 
     try:
-        # Groq primary per project policy; falls through to Gemini only if Groq is fully down.
-        result = generate_json(prompt, backend="groq", temperature=0.2)
+        result = generate_json(prompt, task="emergency", temperature=0.2)
     except ProjectError:
         print("[WARN] Project-level error, proceeding with existing newsletter")
         return
