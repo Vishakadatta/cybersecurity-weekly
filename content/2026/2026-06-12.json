@@ -2,10 +2,46 @@
   "edition": "2026-06-12",
   "year": "2026",
   "editionLabel": "Jun 5 \u2013 12, 2026",
-  "generatedAt": "2026-06-13T03:28:51.408820+00:00",
-  "subjectLine": "China-Linked Hackers Compromise Linux Login Software, Microsoft Patches Record 206 Vulnerabilities",
+  "generatedAt": "2026-06-13T03:36:54.210021+00:00",
+  "subjectLine": "BREAKING: China-Linked Hackers Backdoored Linux Login Software to Hide + More Inside",
   "weekIntro": "This week, we saw a surge in high-impact vulnerabilities and active exploitation attempts, including a decade-long compromise of Linux login software by China-linked hackers. The increasing volume of patch updates, such as Microsoft's record 206 CVEs, highlights the need for efficient vulnerability management. As AI accelerates the speed and scale of vulnerability discovery, security teams must adapt to keep pace with the evolving threat landscape.",
   "articles": [
+    {
+      "id": "90c2326a2ff414df",
+      "title": "ShinyHunters Uses Oracle Zero-Day to Rampage Higher Ed",
+      "summary": "A major bug in Oracle's ERP software disproportionately affected American universities, and hackers have capitalized by stealing gobs of data.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/vulnerabilities-threats/shinyhunters-oracle-zero-day-higher-ed",
+      "tier": 2,
+      "publishedDate": "2026-06-12T20:26:32+00:00"
+    },
+    {
+      "id": "8f8a91d1631a1602",
+      "title": "Google Sues Chinese Smishing Network Accused of Using Gemini AI in Phishing",
+      "summary": "Google on Friday said it's pursuing legal action against a Chinese cybercrime network, accusing it of using its Gemini artificial intelligence (AI) agent to send phishing text messages targeting Americans.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/google-sues-chinese-smishing-network.html",
+      "tier": 2,
+      "publishedDate": "2026-06-13T00:29:32+05:30"
+    },
+    {
+      "id": "856c09d61358610a",
+      "title": "Over 400 Arch Linux AUR Packages Hijacked to Deploy Infostealer and eBPF Rootkit",
+      "summary": "Attackers took over more than 400 packages in the Arch User Repository (AUR) this week and rewrote their build scripts to install a credential stealer on any machine that built them.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/over-400-arch-linux-aur-packages.html",
+      "tier": 1,
+      "publishedDate": "2026-06-13T01:03:25+05:30"
+    },
+    {
+      "id": "5dff8089bf35a8b2",
+      "title": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
+      "summary": "China-nexus group spent close to a decade hidden inside the Linux login system itself.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
+      "tier": 1,
+      "publishedDate": "2026-06-12T23:47:55+05:30"
+    },
     {
       "id": "5dff8089bf35a8b2",
       "title": "China-Linked Hackers Compromise Linux Login Software",
