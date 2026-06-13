@@ -67,7 +67,7 @@ def main():
     print(f"Found {len(monday_articles)} articles from the last 18 hours")
 
     existing_summary = [
-        {"title": a["title"], "source": a["source"], "tier": a["tier"]}
+        {"title": a["title"], "source": a.get("source") or (a.get("sources", [{}])[0].get("name", "")), "tier": a["tier"]}
         for a in content["articles"]
     ]
     new_summary = [
