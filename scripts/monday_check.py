@@ -5,6 +5,7 @@ If a high-impact story is found, injects it into the finalized content.
 """
 
 import json
+import os
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -111,8 +112,21 @@ def main():
         json.dump(content, f, indent=2)
     print(f"Updated {content_file} with emergency additions")
 
-    from finalize import generate_email_html
-    email_html = generate_email_html(content)
+    from jinja2 import Template
+    template_path = Path(__file__).resolve().parent.parent / "templates" / "email.html"
+    with open(template_path) as tf:
+        template = Template(tf.read())
+    site_url = os.environ.get("SITE_URL", "https://vishakadatta.github.io/cybersecurity-weekly/")
+    unsubscribe_url = os.environ.get("UNSUBSCRIBE_URL", "{{ params.unsubscribe }}")
+    email_html = template.render(
+        subject_line=content["subjectLine"],
+        week_intro=content.get("weekIntro", ""),
+        edition_label=content.get("editionLabel", content["edition"]),
+        year=content["year"],
+        articles=content["articles"],
+        site_url=site_url,
+        unsubscribe_url=unsubscribe_url,
+    )
     email_file = RAW_DIR / f"{edition}-email.html"
     with open(email_file, "w") as f:
         f.write(email_html)
