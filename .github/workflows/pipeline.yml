@@ -398,7 +398,7 @@ jobs:
           PUBLIC_BREVO_FORM_URL: ${{ vars.PUBLIC_BREVO_FORM_URL }}
           PUBLIC_BREVO_UNSUBSCRIBE_URL: ${{ vars.PUBLIC_BREVO_UNSUBSCRIBE_URL }}
         run: npx astro build
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: dist/
       - id: deployment
