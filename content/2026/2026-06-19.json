@@ -1,0 +1,297 @@
+{
+  "edition": "2026-06-19",
+  "year": "2026",
+  "editionLabel": "Jun 12 \u2013 19, 2026",
+  "generatedAt": "2026-06-21T20:33:01.259607+00:00",
+  "subjectLine": "Breaking: Microsoft Defender Zero-Day 'RoguePlanet' Vulnerability Confirmed, Alongside Active Exploitation of Fortinet and Cisco Vulnerabilities",
+  "weekIntro": "This week, we saw a surge in critical vulnerabilities and active exploitation, with a zero-day vulnerability in Microsoft Defender and exploitation of vulnerabilities in Fortinet and Cisco products. These incidents highlight the ongoing threat of nation-state campaigns and the importance of prompt patching and mitigation. Our top stories this week focus on these breaking threats and other significant security incidents.",
+  "articles": [
+    {
+      "id": "a5a90539c857c926",
+      "title": "Microsoft Defender Zero-Day 'RoguePlanet' Vulnerability Confirmed",
+      "summary": "Microsoft confirms RoguePlanet, a Defender zero-day with CVE-2026-50656, a 7.8 CVSS score privilege escalation flaw.",
+      "impact": "This vulnerability allows attackers to gain SYSTEM-level privileges, posing a significant risk to security. Microsoft is working on a patch, but the timeline for release is not specified.",
+      "action": "Security teams should monitor Microsoft's updates for a patch to address the RoguePlanet vulnerability and consider mitigations to reduce the risk of exploitation.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/microsoft-confirms-rogueplanet-defender_02022423645.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/microsoft-confirms-rogueplanet-defender_02022423645.html",
+      "publishedDate": "2026-06-17T23:06:28+05:30",
+      "cve_ids": [
+        "CVE-2026-50656"
+      ],
+      "affected_systems": [
+        "Microsoft Defender",
+        "Microsoft Malware Protection Engine"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "c7e1305438fdeef4",
+      "title": "Apple Patches High-Severity Eavesdropping Vulnerability in Beats Studio Buds",
+      "summary": "Apple patched CVE-2025-20701, a high-severity vulnerability in Beats Studio Buds, allowing nearby attackers to eavesdrop via microphone.",
+      "impact": "The vulnerability could be exploited by nearby hackers to eavesdrop on users, and successful exploitation could lead to remote escalation of privilege. This vulnerability affects multiple manufacturers, including Jabra, Bose, and JBL.",
+      "action": "Security teams should ensure their Beats Studio Buds are updated to Beats Firmware Update 1B211 to patch the vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/apple-patches-beats-studio-buds-flaw.html"
+        },
+        {
+          "name": "Ars Technica Security",
+          "url": "https://arstechnica.com/apple/2026/06/apple-patches-high-severity-eavesdropping-vulnerability-in-beats-studio-buds/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/apple-patches-beats-studio-buds-flaw.html",
+      "publishedDate": "2026-06-18T19:41:35+00:00",
+      "cve_ids": [
+        "CVE-2025-20701"
+      ],
+      "affected_systems": [
+        "Beats Studio Buds",
+        "Jabra headphones",
+        "Bose headphones",
+        "JBL headphones"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "1dc696798859e4b8",
+      "title": "CISA Warns of FortiBleed Campaign Targeting Fortinet Devices",
+      "summary": "86,644 FortiGate devices compromised due to exposed credentials",
+      "impact": "This campaign poses a significant risk to organizations using Fortinet devices, particularly in the telecom, government, and education sectors. Security teams must take immediate action to secure their devices.",
+      "action": "Teams should terminate all SSL VPN and administrative sessions, reset passwords, and enable multifactor authentication to mitigate the threat.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/cisa-warns-fortinet-customers-as.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-fortinet-users-to-secure-devices-after-fortibleed-leak/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/cisa-warns-fortinet-customers-as.html",
+      "publishedDate": "2026-06-19T02:47:55-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "FortiGate"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "937d45d23a40e237",
+      "title": "F5 Patches Critical NGINX Open Source Flaws",
+      "summary": "F5 fixed two critical NGINX Open Source flaws, CVE-2026-42530 and CVE-2026-42055, enabling remote code execution.",
+      "impact": "These vulnerabilities could allow remote unauthenticated attackers to execute code on affected systems, particularly those with Address Space Layout Randomization (ASLR) disabled. This poses a significant risk to security teams relying on NGINX Open Source.",
+      "action": "Security teams should immediately update to the patched versions of NGINX Open Source and related products to mitigate the risk of remote code execution.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html",
+      "publishedDate": "2026-06-18T23:02:14+05:30",
+      "cve_ids": [
+        "CVE-2026-42530"
+      ],
+      "affected_systems": [
+        "NGINX Open Source",
+        "NGINX Gateway Fabric",
+        "NGINX Instance Manager",
+        "NGINX Ingress Controller",
+        "NGINX Plus",
+        "F5 WAF for NGINX",
+        "NGINX App Protect WAF",
+        "F5 DoS for NGINX",
+        "NGINX App Protect DoS"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "f8eb1060791f8ee3",
+      "title": "Crypto Clipper Campaign Abuses Legitimate Platforms",
+      "summary": "A threat actor is using paid posts and fake reviews to spread a cryptocurrency clipboard hijacker",
+      "impact": "This campaign targets cryptocurrency asset holders and online gamblers, posing a significant threat to digital assets. Security teams should be aware of the use of Ghost Networks to poison reputation-driven systems.",
+      "action": "Security teams should monitor clipboard activity for suspicious patterns and verify the authenticity of downloads and promotions",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/crypto-clipper-campaign-abuses-fake.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/crypto-clipper-campaign-abuses-fake.html",
+      "publishedDate": "2026-06-17T23:44:24+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows",
+        "macOS"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "e0c6188852fc79fb",
+      "title": "Google Vertex AI SDK Vulnerability Allows Remote Code Execution",
+      "summary": "A flaw in the Google Cloud Vertex AI SDK for Python allows attackers to hijack model uploads via bucket squatting.",
+      "impact": "This vulnerability enables remote code execution within a target's Vertex AI serving infrastructure, potentially leading to data exfiltration and further compromise. Security teams should be aware of the risks associated with using vulnerable versions of the SDK.",
+      "action": "Update to version 1.148.0 or later of the Google Cloud Vertex AI SDK for Python to mitigate the vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/google-vertex-ai-sdk-flaw-let-attackers.html"
+        },
+        {
+          "name": "Palo Alto Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/hijacking-vertex-ai-model/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/google-vertex-ai-sdk-flaw-let-attackers.html",
+      "publishedDate": "2026-06-16T10:00:29+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Google Cloud Vertex AI SDK for Python"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "44495b28d6b9e603",
+      "title": "145 Mastra npm Packages Compromised in Software Supply Chain Attack",
+      "summary": "145 Mastra npm packages were compromised via a hijacked contributor account, introducing malware through a third-party library named 'easy-day-js'.",
+      "impact": "This attack poses a significant risk to security teams as the compromised packages are used in AI development and cloud infrastructure, holding sensitive credentials. The attack's impact could lead to cryptocurrency theft and unauthorized access.",
+      "action": "Security teams should immediately review their dependencies and remove any packages associated with the Mastra namespace that include the 'easy-day-js' library.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/144-mastra-npm-packages-compromised-via.html",
+      "publishedDate": "2026-06-17T13:08:24+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "1e3eb30b35ffc026",
+      "title": "ClickFix Campaigns Deliver Malware Loaders to Education and Finance",
+      "summary": "ClickFix campaigns deliver BabaDeda, Lorem Ipsum, and Potemkin loaders to drop info stealers and RATs.",
+      "impact": "These campaigns pose a significant threat to education and financial organizations, potentially leading to data breaches and unauthorized access. Security teams must be vigilant in detecting and mitigating these attacks.",
+      "action": "Security teams should monitor for suspicious PowerShell activity and implement measures to prevent loader execution, such as restricting PowerShell usage and implementing robust endpoint security controls.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/clickfix-campaigns-expand-malware.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/clickfix-campaigns-expand-malware.html",
+      "publishedDate": "2026-06-16T23:11:28+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "BabaDeda",
+      "tier": 3
+    },
+    {
+      "id": "954607137e04da1b",
+      "title": "North Korean ScarCruft Group Deploys NarwhalRAT via Fake Microsoft Alerts",
+      "summary": "North Korean state-sponsored group ScarCruft uses fake Microsoft alerts to deploy NarwhalRAT malware",
+      "impact": "This phishing campaign poses a significant threat to security teams, as it can lead to unauthorized access and data theft. The use of legitimate-looking Microsoft alerts makes it challenging for users to distinguish between genuine and malicious emails.",
+      "action": "Security teams should educate users about such phishing tactics and implement robust email filtering and monitoring to detect and prevent similar attacks",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/fake-microsoft-alerts-used-to-deploy.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/fake-microsoft-alerts-used-to-deploy.html",
+      "publishedDate": "2026-06-16T13:44:55+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "ScarCruft (APT37)",
+      "tier": 3
+    },
+    {
+      "id": "4c841f86020ece33",
+      "title": "LiteSpeed cPanel Plugin Vulnerability Exploited for Root Privilege Escalation",
+      "summary": "CVE-2026-54420 allows privilege escalation to root on shared hosting servers running CloudLinux or CageFS",
+      "impact": "This vulnerability poses a significant risk to security teams, as it can be exploited for root privilege escalation, potentially leading to unauthorized access and data breaches. Federal Civilian Executive Branch agencies must apply fixes by June 18, 2026.",
+      "action": "Security teams should upgrade to LiteSpeed WHM Plugin v5.3.2.1 or higher to patch the vulnerability",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/cisa-flags-litespeed-cpanel-plugin-flaw.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/cisa-flags-litespeed-cpanel-plugin-flaw.html",
+      "publishedDate": "2026-06-16T11:11:52+05:30",
+      "cve_ids": [
+        "CVE-2026-54420"
+      ],
+      "affected_systems": [
+        "LiteSpeed cPanel Plugin",
+        "CloudLinux",
+        "CageFS"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "72391304030e2531",
+      "title": "China-Linked Hackers Exploit Google Workspace Rules to Steal Sensitive Emails",
+      "summary": "China-linked hackers stole research and defense emails by rewiring Google Workspace rules",
+      "impact": "This campaign highlights the vulnerability of research networks and the need for robust security measures. Security teams must be vigilant about protecting sensitive information.",
+      "action": "Security teams should review their Google Workspace rules and monitor for suspicious activity",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html",
+      "publishedDate": "2026-06-16T01:14:06+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "REDCap",
+        "Google Workspace"
+      ],
+      "threat_actor": "UNC6508",
+      "tier": 3
+    },
+    {
+      "id": "2f89dbfc90451bc5",
+      "title": "Cisco Patches Actively Exploited SD-WAN Manager Vulnerability",
+      "summary": "CVE-2026-20262 allows authenticated attackers to create or overwrite files on affected systems.",
+      "impact": "This vulnerability poses a significant risk to security teams, as it could be exploited to elevate privileges to root. Affected systems include various Cisco SD-WAN products.",
+      "action": "Security teams should apply the latest patches to affected Cisco SD-WAN products to mitigate the vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html",
+      "publishedDate": "2026-06-16T11:35:58+05:30",
+      "cve_ids": [
+        "CVE-2026-20262"
+      ],
+      "affected_systems": [
+        "Cisco Catalyst SD-WAN Manager On-Prem",
+        "Cisco SD-WAN Cloud-Pro",
+        "Cisco SD-WAN Cloud (Cisco Managed)",
+        "Cisco SD-WAN for Government (FedRAMP)"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
