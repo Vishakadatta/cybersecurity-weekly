@@ -2,10 +2,37 @@
   "edition": "2026-06-19",
   "year": "2026",
   "editionLabel": "Jun 12 \u2013 19, 2026",
-  "generatedAt": "2026-06-21T20:33:01.259607+00:00",
-  "subjectLine": "Breaking: Microsoft Defender Zero-Day 'RoguePlanet' Vulnerability Confirmed, Alongside Active Exploitation of Fortinet and Cisco Vulnerabilities",
+  "generatedAt": "2026-06-22T18:57:50.853225+00:00",
+  "subjectLine": "BREAKING: ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chai + More Inside",
   "weekIntro": "This week, we saw a surge in critical vulnerabilities and active exploitation, with a zero-day vulnerability in Microsoft Defender and exploitation of vulnerabilities in Fortinet and Cisco products. These incidents highlight the ongoing threat of nation-state campaigns and the importance of prompt patching and mitigation. Our top stories this week focus on these breaking threats and other significant security incidents.",
   "articles": [
+    {
+      "id": "f1470df83f4c69e9",
+      "title": "AryStinger Malware Infects 4,300 Legacy Routers to Build Reconnaissance Proxy Network",
+      "summary": "A new malware family is turning forgotten home routers into a distributed reconnaissance and proxy network, not the DDoS botnet these devices usually end up in.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/arystinger-malware-infects-4300-legacy.html",
+      "tier": 2,
+      "publishedDate": "2026-06-22T12:27:44+05:30"
+    },
+    {
+      "id": "41444a2175f8fe01",
+      "title": "29-Year-Old Squid Proxy Bug 'Squidbleed' Can Leak Cleartext HTTP Requests",
+      "summary": "A heap over-read in the Squid web proxy can leak another user's cleartext HTTP request, including any credentials or session tokens it carries, to anyone already allowed to send traffic through the same proxy.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html",
+      "tier": 2,
+      "publishedDate": "2026-06-22T19:59:46+05:30"
+    },
+    {
+      "id": "2ce34d4bc99a9a63",
+      "title": "ShapedPlugin WordPress Pro Plugins Backdoored in Supply Chain Attack",
+      "summary": "Multiple WordPress plugins from ShapedPlugin were compromised in a supply chain attack after unknown threat actors managed to tamper with the official release channels and push backdoor code.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
+      "tier": 2,
+      "publishedDate": "2026-06-22T23:30:48+05:30"
+    },
     {
       "id": "a5a90539c857c926",
       "title": "Microsoft Defender Zero-Day 'RoguePlanet' Vulnerability Confirmed",
