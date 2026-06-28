@@ -1,0 +1,276 @@
+{
+  "edition": "2026-06-26",
+  "year": "2026",
+  "editionLabel": "Jun 19 \u2013 26, 2026",
+  "generatedAt": "2026-06-28T20:22:36.788284+00:00",
+  "subjectLine": "Breaking: FortiGate Firewalls Targeted in Mass Credential Harvesting Campaign, Over 110 Million Credentials Stolen",
+  "weekIntro": "This week, the cybersecurity landscape saw significant threats emerge, including a mass credential harvesting campaign targeting FortiGate firewalls and the exploitation of critical vulnerabilities in various systems. The sheer scale and impact of these threats underscore the need for vigilance and prompt action from security teams. From nation-state campaigns to supply chain attacks, the diversity of threats demands a proactive and multi-faceted approach to security.",
+  "articles": [
+    {
+      "id": "7a77e8c85f9b4ade",
+      "title": "FortiBleed Campaign Targets 430,000 FortiGate Firewalls",
+      "summary": "Threat actors harvested 110 million credentials from FortiGate firewalls",
+      "impact": "This campaign exposes a significant number of credentials, posing a substantial risk to security teams managing FortiGate firewalls. The breach can lead to unauthorized access to sensitive networks and systems.",
+      "action": "Security teams should immediately verify exposure and rotate credentials for their FortiGate firewalls",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/fortibleed-attackers-firewalls-credentials-stealers"
+        },
+        {
+          "name": "Recorded Future",
+          "url": "https://www.recordedfuture.com/blog/critical-fortibleed-campaign"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html",
+      "publishedDate": "2026-06-23T12:34:54+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "FortiGate firewalls"
+      ],
+      "threat_actor": "Russian-speaking initial access broker (IAB)",
+      "tier": 1
+    },
+    {
+      "id": "00c478966725b25d",
+      "title": "Turla Deploys STOCKSTAY Backdoor in Ukraine Espionage Attacks",
+      "summary": "Turla uses STOCKSTAY, a .NET backdoor, against Ukrainian government and military targets.",
+      "impact": "The STOCKSTAY backdoor poses a significant threat to government and military organizations, allowing for stealthy data exfiltration and command-and-control capabilities. This highlights the ongoing sophistication of state-sponsored threat actors.",
+      "action": "Security teams should monitor for STOCKSTAY's indicators of compromise and implement defenses against .NET-based backdoors.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/google-details-turlas-new-stockstay.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/google-details-turlas-new-stockstay.html",
+      "publishedDate": "2026-06-26T12:45:46+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "Turla",
+      "tier": 1
+    },
+    {
+      "id": "7670c7a3042714c8",
+      "title": "Chrome Ad Blocker Found with Arbitrary JavaScript Execution Capability",
+      "summary": "Adblock for YouTube Chrome extension has a dormant script injection capability, posing security risks to 10M+ users.",
+      "impact": "This capability could allow attackers to read pages, steal data, and act as the user inside personal accounts. Security teams should be aware of the potential risks associated with this extension.",
+      "action": "Security teams should review and potentially remove the Adblock for YouTube extension from their users' browsers.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/chrome-ad-blocker-with-10m-installs.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/chrome-ad-blocker-with-10m-installs.html",
+      "publishedDate": "2026-06-25T19:42:52+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "b24c44ec2fbf1964",
+      "title": "CISA Adds Exploited PTC Windchill RCE Flaw to KEV",
+      "summary": "A critical RCE vulnerability in PTC Windchill PDMlink and PTC FlexPLM is being actively exploited.",
+      "impact": "This vulnerability allows attackers to execute arbitrary code, and its exploitation can lead to significant security breaches. Security teams must take immediate action to protect against this threat.",
+      "action": "Teams should apply patches and block the identified attacker command-and-control address to mitigate the vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/cisa-adds-exploited-ptc-windchill-rce.html",
+      "publishedDate": "2026-06-26T18:01:56+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "PTC Windchill PDMlink",
+        "PTC FlexPLM"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "1b5999f52bb0ca15",
+      "title": "Linux Kernel Vulnerability 'pedit COW' Enables Unprivileged Root Access",
+      "summary": "CVE-2026-46331 allows local unprivileged users to gain root access by corrupting shared page-cache memory",
+      "impact": "This vulnerability poses a significant risk to Linux systems, allowing attackers to escalate privileges without detection by traditional file-integrity checks. Security teams must prioritize patching to prevent exploitation.",
+      "action": "Security teams should immediately apply patches for CVE-2026-46331 to prevent potential exploitation",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
+      "publishedDate": "2026-06-26T19:27:55+05:30",
+      "cve_ids": [
+        "CVE-2026-46331"
+      ],
+      "affected_systems": [
+        "RHEL 10",
+        "Debian"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "1fc5c8704160b449",
+      "title": "Amazon Q Developer Flaw Allows Malicious Repos to Run Code",
+      "summary": "CVE-2026-12957 flaw in Amazon Q Developer lets malicious repositories run commands and steal cloud credentials",
+      "impact": "This flaw poses a significant risk to developers' cloud credentials and permissions. Security teams should be aware of the potential for arbitrary code execution with a developer's live cloud session attached.",
+      "action": "Security teams should apply the Amazon patch and review their cloud permissions to mitigate potential damage",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html",
+      "publishedDate": "2026-06-26T19:23:00+05:30",
+      "cve_ids": [
+        "CVE-2026-12957"
+      ],
+      "affected_systems": [
+        "Language Servers for AWS",
+        "VS Code",
+        "JetBrains",
+        "Eclipse",
+        "Visual Studio"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "f183838f79464db0",
+      "title": "Microsoft Warns of Photo ZIP Phishing Campaign Targeting Hotels",
+      "summary": "A phishing campaign targets hotels with photo-themed ZIP files to drop a Node.js implant",
+      "impact": "This campaign poses a significant threat to hotel and hospitality organizations, potentially compromising front-desk machines. Security teams should be aware of the campaign's tactics to prevent similar attacks.",
+      "action": "Security teams should educate users about the risks of photo-themed ZIP files and implement measures to detect and block Node.js implants",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/microsoft-warns-of-photo-zip-phishing.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/microsoft-warns-of-photo-zip-phishing.html",
+      "publishedDate": "2026-06-26T14:57:12+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "c0efebc39890620c",
+      "title": "curl Vulnerabilities Discovered, Including 24-Year-Old Bug",
+      "summary": "Six vulnerabilities in curl were discovered, including a 24-year-old bug, CVE-2026-8932, allowing connection reuse despite mTLS config changes.",
+      "impact": "These vulnerabilities pose a significant risk to security teams, as they can be exploited to reuse connections and potentially lead to unauthorized access. The long-standing nature of one of the vulnerabilities highlights the importance of regular updates and patches.",
+      "action": "Security teams should update to curl version 8.21.0 to address the identified flaws.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/threatsday-bulletin-smart-tv-proxyware.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/weekly-recap-browser-bugs-edr-killers.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/threatsday-bulletin-smart-tv-proxyware.html",
+      "publishedDate": "2026-06-22T16:25:10+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "curl"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "9641f0f414982593",
+      "title": "Network Detection and Response Essential for Security Teams",
+      "summary": "Security operations teams struggle to answer basic questions during incident investigations due to abundance of telemetry.",
+      "impact": "This means security teams require defensible evidence, not assumptions, and need to go beyond alerts for initial triage. Investigations require validated evidence of active exploit and exposure.",
+      "action": "Security teams should adopt Network Detection and Response (NDR) to navigate the current era of networking and strengthen threat hunting and AI-assisted investigations.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/surviving-mythos-era-richard-bejtlich.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/surviving-mythos-era-richard-bejtlich.html",
+      "publishedDate": "2026-06-25T16:47:31+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "666b25b32ef0939b",
+      "title": "Mistic Backdoor Deployed in Financially Motivated Attacks",
+      "summary": "Mistic backdoor linked to KongTuke targets insurance, education, IT, and professional services sectors.",
+      "impact": "This backdoor enables long-term, low-visibility access and can lead to lateral movement and ransomware attacks. Security teams should be aware of the stealthy nature of this backdoor and its ability to blend in with trusted Microsoft endpoint security tooling.",
+      "action": "Security teams should monitor for suspicious activity related to the Mistic backdoor and implement measures to detect and prevent DLL side-loading techniques.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/new-mistic-backdoor-linked-to-kongtuke.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/new-mistic-backdoor-linked-to-kongtuke.html",
+      "publishedDate": "2026-06-25T14:24:37+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "KongTuke",
+      "tier": 3
+    },
+    {
+      "id": "2ce34d4bc99a9a63",
+      "title": "ShapedPlugin WordPress Pro Plugins Compromised in Supply Chain Attack",
+      "summary": "WordPress Pro plugins from ShapedPlugin were compromised with backdoor code",
+      "impact": "This supply chain attack affects security teams by introducing backdoor code into Pro plugin releases, enabling arbitrary file writes and command execution. The impacted plugins can capture credentials and 2FA codes.",
+      "action": "Security teams should immediately update affected ShapedPlugin Pro plugins to versions 3.5.4, 3.2.6, and 4.0.2 or later for Product Slider Pro for WooCommerce, Real Testimonials Pro, and Smart Post Show Pro respectively",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/shapedplugin-wordpress-pro-plugins.html",
+      "publishedDate": "2026-06-22T23:30:48+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Product Slider Pro for WooCommerce",
+        "Real Testimonials Pro",
+        "Smart Post Show Pro"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "41444a2175f8fe01",
+      "title": "29-Year-Old Squid Proxy Bug 'Squidbleed' Leaks Cleartext HTTP Requests",
+      "summary": "Squidbleed bug leaks cleartext HTTP requests due to a heap over-read in Squid web proxy",
+      "impact": "This bug poses a significant risk to security teams as it can leak sensitive information, including credentials and session tokens, to unauthorized users. Affected systems may include shared networks like schools, offices, and public Wi-Fi.",
+      "action": "Security teams should update their Squid configurations to mitigate the Squidbleed bug and consider implementing additional security measures to protect against similar vulnerabilities.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html",
+      "publishedDate": "2026-06-22T21:59:00+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Squid web proxy"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
