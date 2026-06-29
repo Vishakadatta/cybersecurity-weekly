@@ -2,10 +2,55 @@
   "edition": "2026-06-26",
   "year": "2026",
   "editionLabel": "Jun 19 \u2013 26, 2026",
-  "generatedAt": "2026-06-28T20:22:36.788284+00:00",
-  "subjectLine": "Breaking: FortiGate Firewalls Targeted in Mass Credential Harvesting Campaign, Over 110 Million Credentials Stolen",
+  "generatedAt": "2026-06-29T17:59:23.473792+00:00",
+  "subjectLine": "BREAKING: Mustang Panda Uses Zoho WorkDrive as Command Channel in Indi + More Inside",
   "weekIntro": "This week, the cybersecurity landscape saw significant threats emerge, including a mass credential harvesting campaign targeting FortiGate firewalls and the exploitation of critical vulnerabilities in various systems. The sheer scale and impact of these threats underscore the need for vigilance and prompt action from security teams. From nation-state campaigns to supply chain attacks, the diversity of threats demands a proactive and multi-faceted approach to security.",
   "articles": [
+    {
+      "id": "ad4d93174220db78",
+      "title": "Hackers now exploit critical Oracle E-Business flaw in attacks",
+      "summary": "Attackers have begun exploiting a critical vulnerability (CVE-2026-46817) in the Oracle E-Business Suite (EBS) financial application.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-oracle-e-business-suite-flaw-now-exploited-in-attacks/",
+      "tier": 1,
+      "publishedDate": "2026-06-29T09:46:17-04:00"
+    },
+    {
+      "id": "52781c932d2c42d8",
+      "title": "Critical SimpleHelp flaw exploited to deploy new stealer malware",
+      "summary": "Hackers are exploiting a recently disclosed critical vulnerability (CVE-2026-48558) in SimpleHelp to deploy Djinn Stealer, a previously undocumented cross-platform information stealer targeting Windows, Linux, and macOS systems.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-simplehelp-flaw-deploy-new-djinn-infostealer-taskweaver-malware/",
+      "tier": 1,
+      "publishedDate": "2026-06-29T10:00:00-04:00"
+    },
+    {
+      "id": "f4a911d05ca8c2ae",
+      "title": "Public PoC Released for Critical libssh2 CVE-2026-55200 Client-Side SSH Flaw",
+      "summary": "A public proof-of-concept is now out for CVE-2026-55200, a critical flaw in libssh2 that lets a malicious or compromised SSH server trigger memory corruption on a connecting client, with possible code execution.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/public-poc-released-for-critical.html",
+      "tier": 1,
+      "publishedDate": "2026-06-29T12:36:34+05:30"
+    },
+    {
+      "id": "9eaf1ecb10810547",
+      "title": "Gamaredon Expands Ukraine Attacks with New Malware and Cloud Service Abuse",
+      "summary": "A Russian advanced persistent threat (APT) group has continued to evolve and expand its malware arsenal as part of its ongoing cyber onslaught against Ukraine throughout 2025.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/gamaredon-expands-ukraine-attacks-with.html",
+      "tier": 1,
+      "publishedDate": "2026-06-29T17:10:24+05:30"
+    },
+    {
+      "id": "5b93a99b987c1db2",
+      "title": "Mustang Panda Uses Zoho WorkDrive as Command Channel in Indian Government Attacks",
+      "summary": "The China-aligned espionage group Mustang Panda is running two campaigns against the Indian government and hydropower targets, deploying new malware and turning a legitimate cloud service into a command channel.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
+      "tier": 1,
+      "publishedDate": "2026-06-29T20:33:40+05:30"
+    },
     {
       "id": "7a77e8c85f9b4ade",
       "title": "FortiBleed Campaign Targets 430,000 FortiGate Firewalls",
