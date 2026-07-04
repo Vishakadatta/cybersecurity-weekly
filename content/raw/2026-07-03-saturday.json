@@ -7,7 +7,29 @@
     "source_kind": "journalism",
     "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
     "publishedDate": "2026-07-02T19:27:33+00:00",
-    "scrapedAt": "2026-07-04T01:09:46.360260+00:00",
+    "scrapedAt": "2026-07-04T15:57:35.591642+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "05aacbc9930d8717",
+    "title": "U.S. Government Entity Paid Kairos $1 Million in Data-Theft Extortion Case",
+    "summary_raw": "A U.S. government entity paid about $1 million to keep stolen files from being leaked, according to a new&nbsp;case study by Rakesh Krishnan for Ransom-ISAC, built on a leaked negotiation chat and the blockchain trail the payment left.\n\nThe odd part: the group that took the money calls itself Kairos, but it may not be a ransomware gang at all. Krishnan found no sign that it ever locked a single",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
+    "publishedDate": "2026-07-04T18:17:53+05:30",
+    "scrapedAt": "2026-07-04T15:57:36.910575+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "6e9f5188f8e28888",
+    "title": "North Korean Hackers Publish 108 Malicious Packages and Extensions in PolinRider Campaign",
+    "summary_raw": "The North Korean threat actors linked to the Contagious Interview campaign have been observed publishing 108 unique packages and web browser extensions spanning npm, Packagist, Go, and Google Chrome as part of an ongoing activity referred to as PolinRider.\n\n\"The campaign remains active, and new malicious packages are likely to continue appearing as threat actors compromise maintainer accounts,",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html",
+    "publishedDate": "2026-07-04T16:47:24+05:30",
+    "scrapedAt": "2026-07-04T15:57:36.910699+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -18,7 +40,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
     "publishedDate": "2026-07-04T01:49:31+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.606130+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.910799+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -29,7 +51,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
     "publishedDate": "2026-07-04T01:10:01+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.606265+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.910918+00:00",
     "cve_ids_scraped": [
       "CVE-2026-46242"
     ]
@@ -42,7 +64,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
     "publishedDate": "2026-07-04T00:25:24+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.606384+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911033+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -53,7 +75,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
     "publishedDate": "2026-07-03T21:37:15+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.606497+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911126+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -64,7 +86,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/armored-likho-targets-government.html",
     "publishedDate": "2026-07-03T19:06:33+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.606613+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911213+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -75,7 +97,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/european-parliament-member.html",
     "publishedDate": "2026-07-03T16:35:43+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.606722+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911297+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -86,7 +108,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/pamstealer-uses-fake-maccy-sites-and.html",
     "publishedDate": "2026-07-03T13:33:37+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.606828+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911378+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -97,7 +119,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/google-disrupts-netnut-residential.html",
     "publishedDate": "2026-07-03T00:24:06+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.606934+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911463+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -108,7 +130,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
     "publishedDate": "2026-07-03T00:00:33+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607067+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911546+00:00",
     "cve_ids_scraped": [
       "CVE-2025-5777"
     ]
@@ -121,7 +143,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/threatsday-ai-compute-hijacking-apple.html",
     "publishedDate": "2026-07-02T20:54:18+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607180+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911631+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -132,7 +154,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/toddycat-linked-umbrij-malware-abuses.html",
     "publishedDate": "2026-07-02T18:34:13+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607287+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911712+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -143,7 +165,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/identity-lifecycle-management.html",
     "publishedDate": "2026-07-02T17:00:00+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607400+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911792+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -154,7 +176,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
     "publishedDate": "2026-07-02T14:43:13+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607503+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911872+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -165,7 +187,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/fortibleed-credential-theft-linked-to.html",
     "publishedDate": "2026-07-02T13:30:49+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607607+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.911971+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -176,7 +198,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/new-chocopoc-rat-targets-vulnerability.html",
     "publishedDate": "2026-07-02T12:54:23+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607711+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912054+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -187,7 +209,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
     "publishedDate": "2026-07-02T11:16:45+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607815+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912135+00:00",
     "cve_ids_scraped": [
       "CVE-2026-45659"
     ]
@@ -200,7 +222,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html",
     "publishedDate": "2026-07-02T01:10:06+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.607922+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912216+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -211,7 +233,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/19-year-old-scattered-spider-suspect.html",
     "publishedDate": "2026-07-02T00:58:07+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608052+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912295+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -222,7 +244,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/seo-poisoned-software-sites-abuse.html",
     "publishedDate": "2026-07-01T23:23:06+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608159+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912373+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -233,7 +255,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/veildrop-malware-chain-uses-blogger.html",
     "publishedDate": "2026-07-01T22:48:50+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608268+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912457+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -244,7 +266,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ousaban-banking-trojan-targets-iberian.html",
     "publishedDate": "2026-07-01T20:56:55+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608372+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912537+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -255,7 +277,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/adobe-patches-7-cvss-100-flaws-in.html",
     "publishedDate": "2026-07-01T20:55:46+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608475+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912613+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -266,7 +288,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/critical-cursor-flaws-could-let-prompt.html",
     "publishedDate": "2026-07-01T20:12:54+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608588+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912691+00:00",
     "cve_ids_scraped": [
       "CVE-2026-50548",
       "CVE-2026-50549"
@@ -280,7 +302,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
     "publishedDate": "2026-07-01T19:26:18+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608700+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912771+00:00",
     "cve_ids_scraped": [
       "CVE-2026-8037"
     ]
@@ -293,7 +315,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ai-generated-browser-ransomware-abuses.html",
     "publishedDate": "2026-07-01T18:29:19+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608806+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912851+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -304,7 +326,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/2026-cybersecurity-assessment-gap.html",
     "publishedDate": "2026-07-01T17:00:00+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.608915+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.912943+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -315,7 +337,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/microsoft-accelerates-post-quantum.html",
     "publishedDate": "2026-07-01T16:11:36+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609042+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913025+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -326,7 +348,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/phantom-squatting-uses-ai-hallucinated.html",
     "publishedDate": "2026-07-01T12:50:51+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609152+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913100+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -337,7 +359,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/anthropic-restores-claude-fable-5-after.html",
     "publishedDate": "2026-07-01T12:16:17+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609254+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913175+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -348,7 +370,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/azure-cli-password-spray-hits-at-least.html",
     "publishedDate": "2026-07-01T11:16:03+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609355+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913249+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -359,7 +381,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/researcher-analyzes-3000-live-clickfix.html",
     "publishedDate": "2026-07-01T11:02:12+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609456+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913324+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -370,7 +392,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/citrix-patches-six-netscaler-flaws.html",
     "publishedDate": "2026-07-01T09:24:22+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609562+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913398+00:00",
     "cve_ids_scraped": [
       "CVE-2026-8451"
     ]
@@ -383,7 +405,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/microsoft-warns-poisoned-mcp-tool.html",
     "publishedDate": "2026-06-30T23:16:07+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609671+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913476+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -394,7 +416,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/rustduck-botnet-rebuilds-in-rust-to.html",
     "publishedDate": "2026-06-30T23:15:25+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609774+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913551+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -405,7 +427,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/langflow-rce-exploited-to-deploy-monero.html",
     "publishedDate": "2026-06-30T21:17:20+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609873+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913625+00:00",
     "cve_ids_scraped": [
       "CVE-2026-33017"
     ]
@@ -418,7 +440,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/silent-swap-crypto-clipper-uses-fake.html",
     "publishedDate": "2026-06-30T21:10:18+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.609996+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913706+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -429,7 +451,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/guardfall-exposes-open-source-ai-coding.html",
     "publishedDate": "2026-06-30T19:56:15+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610106+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913780+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -440,7 +462,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/282-ios-apps-found-leaking-llm-api-keys.html",
     "publishedDate": "2026-06-30T19:19:34+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610209+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913855+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -451,7 +473,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/what-numbers-say-about-fifa-2026-cyber.html",
     "publishedDate": "2026-06-30T17:00:00+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610318+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.913946+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -462,7 +484,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
     "publishedDate": "2026-06-30T16:48:47+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610419+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914026+00:00",
     "cve_ids_scraped": [
       "CVE-2026-48558"
     ]
@@ -475,7 +497,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/airdrop-and-quick-share-flaws-let.html",
     "publishedDate": "2026-06-30T14:57:58+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610521+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914106+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -486,7 +508,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/new-bioshocking-attack-tricks-ai.html",
     "publishedDate": "2026-06-30T14:07:19+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610621+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914184+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -497,7 +519,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/progress-kemp-loadmaster-flaw-could-let.html",
     "publishedDate": "2026-06-30T13:08:07+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610721+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914260+00:00",
     "cve_ids_scraped": [
       "CVE-2026-8037"
     ]
@@ -510,7 +532,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/oracle-e-business-suite-flaw-cve-2026.html",
     "publishedDate": "2026-06-30T10:34:06+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610830+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914336+00:00",
     "cve_ids_scraped": [
       "CVE-2026-46817"
     ]
@@ -523,7 +545,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/whatsapp-is-finally-getting-usernames.html",
     "publishedDate": "2026-06-29T21:39:21+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.610935+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914415+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -534,7 +556,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/malicious-perplexity-chrome-extension.html",
     "publishedDate": "2026-06-29T21:10:00+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.611064+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914493+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -545,7 +567,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/apple-patches-30-ios-macos-safari-flaws.html",
     "publishedDate": "2026-06-29T21:00:00+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.611168+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914567+00:00",
     "cve_ids_scraped": [
       "CVE-2026-43707"
     ]
@@ -558,29 +580,18 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/06/mustang-panda-uses-zoho-workdrive-as.html",
     "publishedDate": "2026-06-29T20:33:40+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.611273+00:00",
+    "scrapedAt": "2026-07-04T15:57:36.914643+00:00",
     "cve_ids_scraped": []
   },
   {
-    "id": "39206295ba6c3c88",
-    "title": "\u26a1 Weekly Recap: Linux Kernel Flaws, AI Malware Tricks, Turla Backdoor, Infostealers and More",
-    "summary_raw": "This week was a reminder that attackers do not always need big tricks. One small mistake, one old access path, one missed patch, and suddenly the door is open.\n\nThe noise is not all noise, either. Forums are talking, researchers are finding easy cracks, and defenders have more cleanup waiting.\n\nHere\u2019s the full Monday recap.\n\n\u26a1 Threat of the Week\n\nNew DirtyClone Linux Kernel Flaw Lets Local",
-    "source": "The Hacker News",
+    "id": "8fa0fcbc82e1ebb2",
+    "title": "JadePuffer ransomware used AI agent to automate entire attack",
+    "summary_raw": "Researchers identified what they believe is the first documented case of a ransomware operation, JadePuffer, conducted entirely by a large language model (LLM) agent. [...]",
+    "source": "BleepingComputer",
     "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/06/weekly-recap-linux-kernel-flaws-ai.html",
-    "publishedDate": "2026-06-29T20:11:07+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.611375+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "8ca2d56d86cf5ad2",
-    "title": "236,000 DCloud Uni-App Sites Used in Crypto Scams, Phishing, and Wallet Drainers",
-    "summary_raw": "New findings unearthed by Infoblox show that more than 236,000 websites are using investment scam templates built using a legitimate Chinese open-source, cross-platform application development framework called DCloud Uni-App.\n\nThe templates power bogus cryptocurrency exchanges, multi-language pig-butchering operations, WhatsApp phishing networks, fake gambling platforms, brand-impersonation",
-    "source": "The Hacker News",
-    "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/06/236000-dcloud-uni-app-sites-used-in.html",
-    "publishedDate": "2026-06-29T17:27:40+05:30",
-    "scrapedAt": "2026-07-04T01:09:47.611482+00:00",
+    "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/",
+    "publishedDate": "2026-07-04T10:16:38-04:00",
+    "scrapedAt": "2026-07-04T15:57:38.150854+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -591,7 +602,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/netnut-proxy-network-disrupted-2-million-infected-devices-cut-off/",
     "publishedDate": "2026-07-03T13:50:04-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.669914+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.150989+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -602,7 +613,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/artoken-phaas-exposes-eviltokens-microsoft-365-phishing-toolkit/",
     "publishedDate": "2026-07-03T10:12:22-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670075+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151089+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -613,7 +624,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-isnt-permanently-leaving-subscriptions-anthropic-says/",
     "publishedDate": "2026-07-02T21:37:09-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670191+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151184+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -624,7 +635,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-relaunch-disappoints-users-with-nerfed-performance/",
     "publishedDate": "2026-07-02T20:48:30-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670303+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151276+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -635,7 +646,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/legal/google-loses-final-appeal-to-overturn-41-billion-eu-fine/",
     "publishedDate": "2026-07-02T11:18:51-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670409+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151365+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -646,7 +657,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/consentfix-and-clickfix-how-microsoft-365-accounts-are-hijacked-in-3-seconds/",
     "publishedDate": "2026-07-02T10:00:10-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670516+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151454+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -657,7 +668,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-bug-that-removed-copilot-button-in-outlook/",
     "publishedDate": "2026-07-02T08:15:47-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670621+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151540+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -668,7 +679,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/cisco-finally-confirms-attackers-exploiting-unified-cm-flaw/",
     "publishedDate": "2026-07-02T07:35:25-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670727+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151621+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -679,7 +690,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-rce-flaw-now-actively-exploited/",
     "publishedDate": "2026-07-02T06:52:43-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670830+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151701+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -690,7 +701,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/opera-rolls-out-paste-protect-feature-to-fight-clickfix-attacks/",
     "publishedDate": "2026-07-02T06:46:58-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.670933+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151778+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -701,7 +712,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/alleged-scattered-spider-hacker-extradited-to-the-united-states/",
     "publishedDate": "2026-07-02T04:58:25-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.671062+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151855+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -712,7 +723,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/medtronic-notifies-customers-impacted-by-shinyhunters-data-breach/",
     "publishedDate": "2026-07-02T00:25:42-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.671166+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.151949+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -723,7 +734,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/",
     "publishedDate": "2026-07-01T17:37:24-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.671267+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.152027+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -734,18 +745,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/kubota-says-hackers-had-month-long-access-to-network-systems/",
     "publishedDate": "2026-07-01T17:09:06-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.671369+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "1815aa1fb72dbe54",
-    "title": "New ChocoPoC malware targets researchers via trojanized PoC exploits",
-    "summary_raw": "Multiple weaponized proof-of-concept (PoC) exploits on GitHub were found delivering a Python-based remote access trojan (RAT) named ChocoPoC that can execute commands and steal sensitive data in a campaign believed to target cybersecurity researchers. [...]",
-    "source": "BleepingComputer",
-    "source_kind": "journalism",
-    "url": "https://www.bleepingcomputer.com/news/security/new-chocopoc-malware-targets-researchers-via-trojanized-poc-exploits/",
-    "publishedDate": "2026-07-01T16:08:13-04:00",
-    "scrapedAt": "2026-07-04T01:09:48.671470+00:00",
+    "scrapedAt": "2026-07-04T15:57:38.152100+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -756,7 +756,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/chinese-llms-broaden-gap-between-attackers-and-defenders",
     "publishedDate": "2026-07-03T13:01:00+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.753457+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599284+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -767,7 +767,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-analytics/aussies-face-reduced-cybercrime-risk-pressure-shifts-smbs",
     "publishedDate": "2026-07-02T23:01:00+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.753577+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599395+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -778,7 +778,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-operations/apple-patch-policy-ai",
     "publishedDate": "2026-07-02T19:31:58+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.753685+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599488+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -789,7 +789,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/threat-intelligence/fortibleed-actors-inc-lynx-ransomware-gangs",
     "publishedDate": "2026-07-02T19:11:33+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.753787+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599573+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -800,7 +800,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/attackers-use-interpol-lure-target-small-businesses",
     "publishedDate": "2026-07-02T18:07:40+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.753887+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599659+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -811,7 +811,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/vulnerabilities-threats/anthropic-s-ai-finds-bugs-ibm-bets-5b-it-can-fix-them-",
     "publishedDate": "2026-07-02T12:33:57+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754011+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599738+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -822,7 +822,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/application-security/phishing-campaigns-auto-adapt-victims-device-os",
     "publishedDate": "2026-07-01T20:31:21+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754116+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599817+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -833,7 +833,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/vulnerabilities-threats/winner-dominant-malware-delivery-clickfix",
     "publishedDate": "2026-07-01T19:46:34+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754215+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599912+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -844,7 +844,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/too-much-security-data-risk",
     "publishedDate": "2026-07-01T15:44:41+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754313+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.599994+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -855,7 +855,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/endpoint-security/phantom-squatting-ai-driven-supply-chain-threat",
     "publishedDate": "2026-07-01T15:17:14+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754411+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600071+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -866,7 +866,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/threat-intelligence/safe-events-threat-intel-digital-security",
     "publishedDate": "2026-07-01T13:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754508+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600143+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -877,7 +877,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/threat-intelligence/china-linked-group-targets-southeast-asia-critical-systems",
     "publishedDate": "2026-07-01T01:00:01+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754603+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600217+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -888,7 +888,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/fake-bug-report-hijacks-ai-coding-agents",
     "publishedDate": "2026-06-30T21:37:50+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754699+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600292+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -899,7 +899,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cloud-security/attackers-hijack-exposed-ai-endpoints-power-offensive-ops",
     "publishedDate": "2026-06-30T21:01:58+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754795+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600363+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -910,7 +910,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-operations/identity-security-cyber-career-entry-point",
     "publishedDate": "2026-06-30T19:11:40+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.754890+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600435+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -921,7 +921,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/phishers-persistence-eu-asia-hospitality-orgs",
     "publishedDate": "2026-06-30T18:59:46+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755008+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600507+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -932,7 +932,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/ai-generated-workflows-silent-security-disaster",
     "publishedDate": "2026-06-30T13:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755113+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600579+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -943,7 +943,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/vulnerabilities-threats/nist-enrichment-reductions-cve-coverage-accuracy",
     "publishedDate": "2026-06-29T22:46:45+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755210+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600649+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -954,7 +954,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/djinn-stealer-targets-cloud-ai-credentials",
     "publishedDate": "2026-06-29T21:29:15+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755306+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600720+00:00",
     "cve_ids_scraped": [
       "CVE-2026-48558"
     ]
@@ -967,7 +967,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/vulnerabilities-threats/vulnerabilities-private-data-indian-government-systems",
     "publishedDate": "2026-06-29T21:05:29+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755404+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600795+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -978,7 +978,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/clothes-invisible-facial-recognition",
     "publishedDate": "2026-06-29T19:38:04+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755498+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600866+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -989,7 +989,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/ics-ot-security/iran-russia-china-target-water-systems-sabotage",
     "publishedDate": "2026-06-29T19:12:08+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755594+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.600962+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1000,7 +1000,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cloud-security/amazon-q-vs-extension-flaw-leads-cloud-credential-theft",
     "publishedDate": "2026-06-29T11:44:42+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755688+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.601036+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1011,7 +1011,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/third-party-breaches-teaches-education-lesson-vendor-risk",
     "publishedDate": "2026-06-27T11:48:05+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755783+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.601108+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1022,7 +1022,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-operations/ai-decline-confidence-autonomous-penetration-testing",
     "publishedDate": "2026-06-26T19:11:02+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755879+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.601178+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1033,7 +1033,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/identity-access-management-security/cisco-adds-nhi-security-stack-with-astrix-widefield",
     "publishedDate": "2026-06-26T17:31:04+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.755990+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.601248+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1044,7 +1044,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/application-security/initiative-tackles-security-end-of-life-open-source",
     "publishedDate": "2026-06-26T16:32:30+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.756094+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.601317+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1055,29 +1055,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-operations/ai-wont-wipe-out-entry-level-cybersecurity-jobs",
     "publishedDate": "2026-06-26T16:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.756190+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "8a389fcc4ff6dde6",
-    "title": "Meeting Trump's 2030 Quantum Deadline Will be Expensive, Complex",
-    "summary_raw": "Getting accurate visibility into IT and OT systems will be compounded by multivendor environments, misaligned update life cycles, and interoperability gaps.",
-    "source": "Dark Reading",
-    "source_kind": "journalism",
-    "url": "https://www.darkreading.com/cybersecurity-operations/meeting-2030-quantum-deadline-expensive-complex",
-    "publishedDate": "2026-06-26T13:30:00+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.756293+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "4f12024baac3265f",
-    "title": "Thanks for Crushing the Submissions Inbox. We're Trying to Keep Up",
-    "summary_raw": "It might be taking a bit longer than usual to respond to your submissions \u2014 here's why.",
-    "source": "Dark Reading",
-    "source_kind": "journalism",
-    "url": "https://www.darkreading.com/cybersecurity-operations/submissions-guidelines-reminder",
-    "publishedDate": "2026-06-26T13:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:09:50.756390+00:00",
+    "scrapedAt": "2026-07-04T15:57:39.601387+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1088,7 +1066,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/security/2026/07/new-pamstealer-macos-malware-uses-clever-tradecraft-to-remain-stealthy/",
     "publishedDate": "2026-07-02T19:38:57+00:00",
-    "scrapedAt": "2026-07-04T01:09:52.899578+00:00",
+    "scrapedAt": "2026-07-04T15:57:41.896397+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1099,7 +1077,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/information-technology/2026/07/t-mobile-moving-tens-of-thousands-of-virtual-machines-off-vmware-amid-lawsuit/",
     "publishedDate": "2026-07-01T21:21:21+00:00",
-    "scrapedAt": "2026-07-04T01:09:52.899702+00:00",
+    "scrapedAt": "2026-07-04T15:57:41.896508+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1110,7 +1088,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/security/2026/06/ai-browsers-can-be-lulled-into-a-dream-world-where-guardrails-no-longer-apply/",
     "publishedDate": "2026-06-30T20:03:14+00:00",
-    "scrapedAt": "2026-07-04T01:09:52.899813+00:00",
+    "scrapedAt": "2026-07-04T15:57:41.896600+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1121,7 +1099,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/information-technology/2026/06/us-offers-10-million-for-info-on-group-behind-signal-and-whatsapp-hacking-spree/",
     "publishedDate": "2026-06-29T22:05:33+00:00",
-    "scrapedAt": "2026-07-04T01:09:52.899918+00:00",
+    "scrapedAt": "2026-07-04T15:57:41.896689+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1132,7 +1110,7 @@
     "source_kind": "journalism",
     "url": "https://twit.tv/shows/security-now/episodes/1085",
     "publishedDate": "2026-06-30T18:43:36-07:00",
-    "scrapedAt": "2026-07-04T01:09:54.243835+00:00",
+    "scrapedAt": "2026-07-04T15:57:43.229117+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1143,7 +1121,7 @@
     "source_kind": "journalism",
     "url": "https://www.crowdstrike.com/en-us/blog/browser-security-zero-days-are-only-part-of-the-problem/",
     "publishedDate": "2026-06-30T00:00:00-05:00",
-    "scrapedAt": "2026-07-04T01:09:55.329658+00:00",
+    "scrapedAt": "2026-07-04T15:57:44.413756+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1154,7 +1132,7 @@
     "source_kind": "journalism",
     "url": "https://www.crowdstrike.com/en-us/blog/new-in-falcon-cloud-security-expanding-multi-cloud-coverage/",
     "publishedDate": "2026-06-29T00:00:00-05:00",
-    "scrapedAt": "2026-07-04T01:09:55.329780+00:00",
+    "scrapedAt": "2026-07-04T15:57:44.413870+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1165,7 +1143,7 @@
     "source_kind": "journalism",
     "url": "https://unit42.paloaltonetworks.com/webauthn-added-to-browser-based-rdp/",
     "publishedDate": "2026-07-02T22:00:39+00:00",
-    "scrapedAt": "2026-07-04T01:09:58.511528+00:00",
+    "scrapedAt": "2026-07-04T15:57:47.976850+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1176,7 +1154,7 @@
     "source_kind": "journalism",
     "url": "https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/",
     "publishedDate": "2026-07-01T01:00:11+00:00",
-    "scrapedAt": "2026-07-04T01:09:58.511655+00:00",
+    "scrapedAt": "2026-07-04T15:57:47.976982+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1187,7 +1165,7 @@
     "source_kind": "journalism",
     "url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/",
     "publishedDate": "2026-06-26T19:05:33+00:00",
-    "scrapedAt": "2026-07-04T01:09:58.511771+00:00",
+    "scrapedAt": "2026-07-04T15:57:47.977081+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1198,7 +1176,7 @@
     "source_kind": "journalism",
     "url": "https://www.sophos.com/en-us/blog/vect-and-teampcp-partner-for-ransomware-campaigns",
     "publishedDate": "2026-07-02T00:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:09:59.834182+00:00",
+    "scrapedAt": "2026-07-04T15:57:49.439527+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1209,7 +1187,7 @@
     "source_kind": "journalism",
     "url": "https://www.recordedfuture.com/research/nexus-tag182-disseminates-markirat",
     "publishedDate": "2026-07-01T00:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:10:01.189386+00:00",
+    "scrapedAt": "2026-07-04T15:57:50.891789+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1220,7 +1198,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/flock-cameras-can-surveil-cars-without-license-plates.html",
     "publishedDate": "2026-07-03T11:15:25+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.275610+00:00",
+    "scrapedAt": "2026-07-04T15:57:52.010293+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1231,7 +1209,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/cybersecurity-mission-creep-in-the-us.html",
     "publishedDate": "2026-07-02T11:11:44+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.275710+00:00",
+    "scrapedAt": "2026-07-04T15:57:52.010386+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1242,7 +1220,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/papa-johns-surveillance-based-advertising.html",
     "publishedDate": "2026-07-01T10:53:23+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.275799+00:00",
+    "scrapedAt": "2026-07-04T15:57:52.010463+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1253,7 +1231,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/06/the-realities-of-ai-video-surveillance.html",
     "publishedDate": "2026-06-30T12:05:57+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.275887+00:00",
+    "scrapedAt": "2026-07-04T15:57:52.010538+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1264,7 +1242,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/06/factoring-rsa-keys-with-many-zeros.html",
     "publishedDate": "2026-06-29T16:05:18+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.275994+00:00",
+    "scrapedAt": "2026-07-04T15:57:52.010603+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1275,7 +1253,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/06/robot-police-officers.html",
     "publishedDate": "2026-06-29T10:55:33+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.276091+00:00",
+    "scrapedAt": "2026-07-04T15:57:52.010666+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1286,7 +1264,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/06/the-chinese-control-the-majority-of-argentinas-squid-fleet.html",
     "publishedDate": "2026-06-26T20:57:04+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.276175+00:00",
+    "scrapedAt": "2026-07-04T15:57:52.010729+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1297,18 +1275,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/06/meta-is-testing-facial-recognition-for-police-and-military.html",
     "publishedDate": "2026-06-26T16:40:56+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.276252+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "372c1d0594271a7a",
-    "title": "One Million Passports Leaked Online",
-    "summary_raw": "<p>A database of almost a million passports from around the world was <a href=\"https://cambridgeanalytica.org/data-breaches-scandals/passports-driver-licenses-exposed-public-internet-2026-51096/\">leaked</a> online.</p>\n<p>Note what happened. A high-value credential&#8212;a passport&#8212;was used in an ancillary low-value authentication system: ID verification for cannabis dispensaries. And it&#8217;s the low-value system that got hacked, putting the high-value credential at risk.</p>",
-    "source": "Schneier on Security",
-    "source_kind": "journalism",
-    "url": "https://www.schneier.com/blog/archives/2026/06/one-million-passports-leaked-online.html",
-    "publishedDate": "2026-06-26T11:03:21+00:00",
-    "scrapedAt": "2026-07-04T01:10:02.276329+00:00",
+    "scrapedAt": "2026-07-04T15:57:52.010786+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1319,7 +1286,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33120",
     "publishedDate": "2026-07-02T02:00:02+00:00",
-    "scrapedAt": "2026-07-04T01:10:03.574219+00:00",
+    "scrapedAt": "2026-07-04T15:57:53.225066+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1330,7 +1297,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33118",
     "publishedDate": "2026-07-01T05:10:20+00:00",
-    "scrapedAt": "2026-07-04T01:10:03.574330+00:00",
+    "scrapedAt": "2026-07-04T15:57:53.225174+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1341,7 +1308,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33116",
     "publishedDate": "2026-07-01T02:00:03+00:00",
-    "scrapedAt": "2026-07-04T01:10:03.574438+00:00",
+    "scrapedAt": "2026-07-04T15:57:53.225272+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1352,7 +1319,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33114",
     "publishedDate": "2026-06-30T09:31:27+00:00",
-    "scrapedAt": "2026-07-04T01:10:03.574538+00:00",
+    "scrapedAt": "2026-07-04T15:57:53.225359+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1363,7 +1330,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33112",
     "publishedDate": "2026-06-30T02:25:12+00:00",
-    "scrapedAt": "2026-07-04T01:10:03.574641+00:00",
+    "scrapedAt": "2026-07-04T15:57:53.225443+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1374,7 +1341,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33110",
     "publishedDate": "2026-06-29T12:00:54+00:00",
-    "scrapedAt": "2026-07-04T01:10:03.574740+00:00",
+    "scrapedAt": "2026-07-04T15:57:53.225522+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1385,7 +1352,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33108",
     "publishedDate": "2026-06-29T02:00:02+00:00",
-    "scrapedAt": "2026-07-04T01:10:03.574841+00:00",
+    "scrapedAt": "2026-07-04T15:57:53.225604+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1396,7 +1363,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33106",
     "publishedDate": "2026-06-28T07:56:44+00:00",
-    "scrapedAt": "2026-07-04T01:10:03.574937+00:00",
+    "scrapedAt": "2026-07-04T15:57:53.225681+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1407,7 +1374,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8496-2",
     "publishedDate": "2026-07-03T18:49:32+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.177514+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.676999+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1418,7 +1385,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8503-1",
     "publishedDate": "2026-07-02T22:04:04+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.177639+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677115+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1429,7 +1396,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8500-1",
     "publishedDate": "2026-07-02T16:46:58+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.177754+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677213+00:00",
     "cve_ids_scraped": [
       "CVE-2026-35177",
       "CVE-2026-55693",
@@ -1449,7 +1416,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8501-1",
     "publishedDate": "2026-07-02T16:14:41+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.177881+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677326+00:00",
     "cve_ids_scraped": [
       "CVE-2024-35896",
       "CVE-2026-23455",
@@ -1475,7 +1442,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8493-2",
     "publishedDate": "2026-07-02T16:07:52+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.178039+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677428+00:00",
     "cve_ids_scraped": [
       "CVE-2022-48816",
       "CVE-2023-53673",
@@ -1551,7 +1518,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8499-1",
     "publishedDate": "2026-07-02T15:56:51+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.178228+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677561+00:00",
     "cve_ids_scraped": [
       "CVE-2026-31431",
       "CVE-2026-43284",
@@ -1574,7 +1541,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8498-1",
     "publishedDate": "2026-07-02T15:49:42+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.178361+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677670+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1585,7 +1552,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8497-1",
     "publishedDate": "2026-07-02T15:40:31+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.178480+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677770+00:00",
     "cve_ids_scraped": [
       "CVE-2026-43284",
       "CVE-2026-43500",
@@ -1608,7 +1575,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8492-2",
     "publishedDate": "2026-07-02T15:24:59+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.178605+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677874+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1619,7 +1586,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8496-1",
     "publishedDate": "2026-07-02T15:11:32+00:00",
-    "scrapedAt": "2026-07-04T01:10:05.178723+00:00",
+    "scrapedAt": "2026-07-04T15:57:54.677988+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1630,7 +1597,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00287.html",
     "publishedDate": "2026-07-03T00:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:10:07.032327+00:00",
+    "scrapedAt": "2026-07-04T15:57:56.108963+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1641,7 +1608,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00286.html",
     "publishedDate": "2026-07-02T00:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:10:07.032393+00:00",
+    "scrapedAt": "2026-07-04T15:57:56.109025+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1652,7 +1619,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00285.html",
     "publishedDate": "2026-06-30T00:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:10:07.032449+00:00",
+    "scrapedAt": "2026-07-04T15:57:56.109071+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1663,7 +1630,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00284.html",
     "publishedDate": "2026-06-28T00:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:10:07.032500+00:00",
+    "scrapedAt": "2026-07-04T15:57:56.109110+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1674,7 +1641,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00283.html",
     "publishedDate": "2026-06-28T00:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:10:07.032549+00:00",
+    "scrapedAt": "2026-07-04T15:57:56.109150+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1685,7 +1652,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:29863",
     "publishedDate": "2026-07-02T18:31:08+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.093688+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.493986+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1696,7 +1663,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34911",
     "publishedDate": "2026-07-02T14:52:02+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.093824+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494106+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1707,7 +1674,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34927",
     "publishedDate": "2026-07-02T13:21:17+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.093938+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494205+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1718,7 +1685,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34608",
     "publishedDate": "2026-07-02T00:03:15+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094078+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494295+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1729,7 +1696,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34508",
     "publishedDate": "2026-07-01T21:21:55+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094196+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494381+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1740,7 +1707,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34476",
     "publishedDate": "2026-07-01T19:58:39+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094303+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494465+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1751,7 +1718,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34443",
     "publishedDate": "2026-07-01T19:42:54+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094411+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494546+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1762,7 +1729,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34477",
     "publishedDate": "2026-07-01T19:34:24+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094516+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494628+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1773,7 +1740,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34359",
     "publishedDate": "2026-07-01T19:33:39+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094620+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494712+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1784,7 +1751,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34372",
     "publishedDate": "2026-07-01T18:54:19+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094729+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494793+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1795,7 +1762,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34357",
     "publishedDate": "2026-07-01T18:46:15+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094834+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494873+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1806,7 +1773,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34362",
     "publishedDate": "2026-07-01T18:20:34+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.094938+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.494967+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1817,7 +1784,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34363",
     "publishedDate": "2026-07-01T18:20:05+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095066+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.495047+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1828,7 +1795,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34367",
     "publishedDate": "2026-07-01T17:33:44+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095171+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.495126+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1839,7 +1806,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34365",
     "publishedDate": "2026-07-01T17:32:19+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095274+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.495204+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1850,7 +1817,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34368",
     "publishedDate": "2026-07-01T17:31:34+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095375+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.495293+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1861,7 +1828,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34366",
     "publishedDate": "2026-07-01T17:30:44+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095477+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.495368+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1872,7 +1839,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34354",
     "publishedDate": "2026-07-01T17:14:34+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095579+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.495444+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1883,194 +1850,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34355",
     "publishedDate": "2026-07-01T16:54:34+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095680+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "63809f9a5a2beed9",
-    "title": "RHSA-2026:34211: Moderate: glibc security update",
-    "summary_raw": "An update for glibc is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34211",
-    "publishedDate": "2026-07-01T12:19:04+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095790+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "2beea5d875dc947f",
-    "title": "RHSA-2026:34196: Important: podman security update",
-    "summary_raw": "An update for podman is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34196",
-    "publishedDate": "2026-07-01T12:15:18+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.095893+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "bd650ae87c9fb28d",
-    "title": "RHSA-2026:34197: Important: skopeo security update",
-    "summary_raw": "An update for skopeo is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34197",
-    "publishedDate": "2026-07-01T12:13:53+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096018+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "950d3a266f6c7596",
-    "title": "RHSA-2026:34156: Moderate: rrdtool security update",
-    "summary_raw": "An update for rrdtool is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34156",
-    "publishedDate": "2026-07-01T12:05:39+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096127+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "5a5d9cb93747e3fd",
-    "title": "RHSA-2026:34192: Important: buildah security, bug fix, and enhancement update",
-    "summary_raw": "An update for buildah is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34192",
-    "publishedDate": "2026-07-01T11:48:44+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096239+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "0bd1c942e46ad02b",
-    "title": "RHSA-2026:34155: Moderate: rrdtool security update",
-    "summary_raw": "An update for rrdtool is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34155",
-    "publishedDate": "2026-07-01T11:46:24+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096341+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "7d98117105da45dd",
-    "title": "RHSA-2026:29856: Important: OpenShift Container Platform 4.18.46 bug fix and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.18.46 is now available with updates to packages and images that fix several bugs and add enhancements.\n\nThis release includes a security update for Red Hat OpenShift Container Platform 4.18.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:29856",
-    "publishedDate": "2026-07-01T11:46:17+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096441+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "fad5492b078bd7b5",
-    "title": "RHSA-2026:28886: Important: OpenShift Container Platform 4.14.68 packages and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.14.68 is now available with\nupdates to packages and images that fix several bugs and add enhancements.\n\nThis release includes a security update for Red Hat OpenShift Container\nPlatform 4.14.\n\nRed Hat Product Security has rated this update as having a security impact\nof Important. A Common Vulnerability Scoring System (CVSS) base score,\nwhich gives a detailed severity rating, is available for each vulnerability\nfrom the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:28886",
-    "publishedDate": "2026-07-01T11:30:18+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096543+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "a6483951dbc08fb5",
-    "title": "RHSA-2026:28887: Critical: OpenShift Container Platform 4.14.68 bug fix and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.14.68 is now available with\nupdates to packages and images that fix several bugs and add enhancements.\n\n This release includes a security update for Red Hat OpenShift Container\nPlatform 4.14.\n\nRed Hat Product Security has rated this update as having a security impact\nof Critical. A Common Vulnerability Scoring System (CVSS) base score, which\ngives a detailed severity rating, is available for each vulnerability from\nthe CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:28887",
-    "publishedDate": "2026-07-01T11:17:18+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096645+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "d9f946de79ea3f02",
-    "title": "RHSA-2026:34160: Important: Red Hat Ansible Automation Platform 2.6 Product Security and Bug Fix Update",
-    "summary_raw": "An update is now available for Red Hat Ansible Automation Platform 2.6\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34160",
-    "publishedDate": "2026-07-01T11:09:18+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096747+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "00a4c9ef5020670a",
-    "title": "RHSA-2026:34094: Important: kernel security, bug fix, and enhancement update",
-    "summary_raw": "An update for kernel is now available for Red Hat Enterprise Linux 9.6 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34094",
-    "publishedDate": "2026-07-01T09:48:13+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096849+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "671be80eae7a57d4",
-    "title": "RHSA-2026:34109: Important: httpd security, bug fix, and enhancement update",
-    "summary_raw": "An update for httpd is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34109",
-    "publishedDate": "2026-07-01T09:31:08+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.096957+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "5bc528d8409fc201",
-    "title": "RHSA-2026:29079: Important: OpenShift Container Platform 4.16.65 packages and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.16.65 is now available with updates to packages and images that fix several bugs and add enhancements.\n\nThis release includes a security update for Red Hat OpenShift Container Platform 4.16.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:29079",
-    "publishedDate": "2026-07-01T09:24:28+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.097092+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "be91923893459129",
-    "title": "RHSA-2026:29080: Important: OpenShift Container Platform 4.16.65 bug fix and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.16.65 is now available with updates to packages and images that fix several bugs and add enhancements.\n\nThis release includes a security update for Red Hat OpenShift Container Platform 4.16.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:29080",
-    "publishedDate": "2026-07-01T09:15:03+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.097197+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "477d3da702bc3cf7",
-    "title": "RHSA-2026:34095: Important: kernel security, bug fix, and enhancement update",
-    "summary_raw": "An update for kernel is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34095",
-    "publishedDate": "2026-07-01T09:00:43+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.097300+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "fd81814a61b6d24a",
-    "title": "RHSA-2026:34076: Important: ruby:2.5 security update",
-    "summary_raw": "An update for the ruby:2.5 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34076",
-    "publishedDate": "2026-07-01T08:25:13+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.097401+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "b80cbdfc1161a24f",
-    "title": "RHSA-2026:34043: Important: postgresql:12 security update",
-    "summary_raw": "An update for the postgresql:12 module is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34043",
-    "publishedDate": "2026-07-01T06:40:45+00:00",
-    "scrapedAt": "2026-07-04T01:10:08.097502+00:00",
+    "scrapedAt": "2026-07-04T15:57:57.495520+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2081,7 +1861,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081199/",
     "publishedDate": "2026-07-03T15:54:01+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.424892+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.804354+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2092,7 +1872,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1079407/",
     "publishedDate": "2026-07-03T14:10:03+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425050+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.804552+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2103,7 +1883,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081187/",
     "publishedDate": "2026-07-03T13:03:41+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425166+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.804694+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2114,7 +1894,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081038/",
     "publishedDate": "2026-07-02T20:58:45+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425283+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.804845+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2125,7 +1905,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081015/",
     "publishedDate": "2026-07-02T16:39:26+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425404+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.804974+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2136,7 +1916,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081012/",
     "publishedDate": "2026-07-02T16:20:33+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425514+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805090+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2147,7 +1927,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081013/",
     "publishedDate": "2026-07-02T16:05:34+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425623+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805179+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2158,7 +1938,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1080162/",
     "publishedDate": "2026-07-02T14:06:08+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425740+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805304+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2169,7 +1949,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1080956/",
     "publishedDate": "2026-07-02T13:17:54+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425855+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805441+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2180,7 +1960,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1079457/",
     "publishedDate": "2026-07-02T00:18:56+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.425991+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805555+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2191,7 +1971,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1078968/",
     "publishedDate": "2026-07-01T17:07:42+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.426107+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805640+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2202,7 +1982,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1079808/",
     "publishedDate": "2026-07-01T13:18:52+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.426216+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805723+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2213,7 +1993,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1080689/",
     "publishedDate": "2026-07-01T13:15:44+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.426323+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805805+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2224,7 +2004,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1080518/",
     "publishedDate": "2026-06-30T17:53:49+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.426432+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.805949+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2235,7 +2015,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1079001/",
     "publishedDate": "2026-06-30T13:09:28+00:00",
-    "scrapedAt": "2026-07-04T01:10:09.426538+00:00",
+    "scrapedAt": "2026-07-04T15:57:58.806089+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2246,7 +2026,7 @@
     "source_kind": "journalism",
     "url": "https://github.blog/security/application-security/how-github-used-secret-scanning-to-reach-inbox-zero/",
     "publishedDate": "2026-07-02T16:00:00+00:00",
-    "scrapedAt": "2026-07-04T01:10:10.541888+00:00",
+    "scrapedAt": "2026-07-04T15:58:00.050412+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2257,7 +2037,7 @@
     "source_kind": "journalism",
     "url": "https://github.blog/security/6-security-settings-every-github-maintainer-should-enable-this-week/",
     "publishedDate": "2026-07-01T15:59:29+00:00",
-    "scrapedAt": "2026-07-04T01:10:10.542037+00:00",
+    "scrapedAt": "2026-07-04T15:58:00.050527+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2268,40 +2048,7 @@
     "source_kind": "journalism",
     "url": "https://github.blog/security/supply-chain-security/inside-the-advisory-database-and-what-happens-when-vulnerability-volume-breaks-records/",
     "publishedDate": "2026-06-29T16:10:20+00:00",
-    "scrapedAt": "2026-07-04T01:10:10.542154+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "05aacbc9930d8717",
-    "title": "U.S. Government Entity Paid Kairos $1 Million in Data-Theft Extortion Case",
-    "summary_raw": "A U.S. government entity paid about $1 million to keep stolen files from being leaked, according to a new&nbsp;case study by Rakesh Krishnan for Ransom-ISAC, built on a leaked negotiation chat and the blockchain trail the payment left.\n\nThe odd part: the group that took the money calls itself Kairos, but it may not be a ransomware gang at all. Krishnan found no sign that it ever locked a single",
-    "source": "The Hacker News",
-    "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
-    "publishedDate": "2026-07-04T18:17:53+05:30",
-    "scrapedAt": "2026-07-04T15:57:36.910575+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "6e9f5188f8e28888",
-    "title": "North Korean Hackers Publish 108 Malicious Packages and Extensions in PolinRider Campaign",
-    "summary_raw": "The North Korean threat actors linked to the Contagious Interview campaign have been observed publishing 108 unique packages and web browser extensions spanning npm, Packagist, Go, and Google Chrome as part of an ongoing activity referred to as PolinRider.\n\n\"The campaign remains active, and new malicious packages are likely to continue appearing as threat actors compromise maintainer accounts,",
-    "source": "The Hacker News",
-    "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html",
-    "publishedDate": "2026-07-04T16:47:24+05:30",
-    "scrapedAt": "2026-07-04T15:57:36.910699+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "8fa0fcbc82e1ebb2",
-    "title": "JadePuffer ransomware used AI agent to automate entire attack",
-    "summary_raw": "Researchers identified what they believe is the first documented case of a ransomware operation, JadePuffer, conducted entirely by a large language model (LLM) agent. [...]",
-    "source": "BleepingComputer",
-    "source_kind": "journalism",
-    "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/",
-    "publishedDate": "2026-07-04T10:16:38-04:00",
-    "scrapedAt": "2026-07-04T15:57:38.150854+00:00",
+    "scrapedAt": "2026-07-04T15:58:00.050624+00:00",
     "cve_ids_scraped": []
   }
 ]
