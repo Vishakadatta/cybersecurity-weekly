@@ -1,0 +1,307 @@
+{
+  "edition": "2026-07-03",
+  "year": "2026",
+  "editionLabel": "Jun 26 \u2013 Jul 3, 2026",
+  "generatedAt": "2026-07-05T20:23:42.755815+00:00",
+  "subjectLine": "FBI Seizes NetNut Proxy Platform, Disrupts Popa Botnet; Critical Vulnerabilities in Microsoft SharePoint and Linux Kernel",
+  "weekIntro": "This week, we saw significant actions against cybercrime with the FBI's seizure of the NetNut proxy platform, disrupting the Popa botnet. Meanwhile, critical vulnerabilities were disclosed in Microsoft SharePoint and the Linux kernel, posing immediate risks to security teams. These developments highlight the ongoing cat-and-mouse game between law enforcement, cybersecurity professionals, and threat actors.",
+  "articles": [
+    {
+      "id": "417bdaa0c3e139ab",
+      "title": "FBI Seizes NetNut Proxy Platform, Disrupts Popa Botnet",
+      "summary": "FBI seizes hundreds of NetNut domains, disrupting Popa botnet of 2 million compromised devices",
+      "impact": "The seizure disrupts a significant botnet used for abusive and intrusive internet traffic, including mass content scraping and advertising fraud. This action will likely impact cybercriminal operations relying on NetNut's services.",
+      "action": "Security teams should monitor for potential shifts in malicious traffic patterns and adjust their defenses accordingly",
+      "sources": [
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/"
+        }
+      ],
+      "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
+      "publishedDate": "2026-07-02T19:27:33+00:00",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "2cc6f7ea50239231",
+      "title": "Linux Kernel \"Bad Epoll\" Flaw Allows Unprivileged Users to Gain Root",
+      "summary": "CVE-2026-46242 lets ordinary users gain root access on Linux desktops, servers, and Android.",
+      "impact": "This flaw poses a significant risk to Linux-based systems, including Android, as it allows unprivileged users to escalate privileges to root. The vulnerability can be triggered from inside Chrome's renderer sandbox, making it particularly dangerous.",
+      "action": "Security teams should apply the available fix for CVE-2026-46242 to prevent potential exploitation.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
+      "publishedDate": "2026-07-04T01:10:01+05:30",
+      "cve_ids": [
+        "CVE-2026-46242"
+      ],
+      "affected_systems": [
+        "Linux desktops",
+        "Linux servers",
+        "Android"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "7baac3cbeb6c86ab",
+      "title": "Microsoft SharePoint RCE Flaw CVE-2026-45659 Actively Exploited",
+      "summary": "CVE-2026-45659, a remote code execution flaw in Microsoft SharePoint, is being actively exploited, allowing attackers to execute code with low privileges.",
+      "impact": "This vulnerability poses a significant risk to security teams, as it can be exploited without admin privileges, and over 10,000 SharePoint servers are exposed online. Federal agencies are required to patch by July 4, 2026.",
+      "action": "Security teams should immediately apply patches for CVE-2026-45659 to prevent exploitation of Microsoft SharePoint Server.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-rce-flaw-now-actively-exploited/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/sharepoint-rce-cve-2026-45659-added-to.html",
+      "publishedDate": "2026-07-02T06:52:43-04:00",
+      "cve_ids": [
+        "CVE-2026-45659"
+      ],
+      "affected_systems": [
+        "Microsoft SharePoint Server Subscription Edition",
+        "Microsoft SharePoint Server 2019",
+        "Microsoft SharePoint Enterprise Server 2016"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "8fa0fcbc82e1ebb2",
+      "title": "AI Agent Automates Ransomware Attack via Langflow RCE",
+      "summary": "An AI agent exploited CVE-2025-3248 to automate a ransomware attack from start to finish.",
+      "impact": "This attack demonstrates a significant shift in ransomware operations, potentially lowering the skill barrier for attackers and increasing the speed of attacks. Security teams must be prepared to defend against autonomous threats.",
+      "action": "Teams should prioritize patching Langflow and other vulnerable systems, and implement robust monitoring and detection capabilities to identify and respond to autonomous threats.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
+      "publishedDate": "2026-07-02T14:43:13+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Langflow",
+        "MinIO",
+        "MySQL",
+        "Alibaba Nacos"
+      ],
+      "threat_actor": "JADEPUFFER",
+      "tier": 2
+    },
+    {
+      "id": "d46c218220428012",
+      "title": "Seven Vulnerabilities Disclosed in FatFs Filesystem Library",
+      "summary": "FatFs library has seven vulnerabilities, including integer overflows and buffer overflows, affecting millions of embedded devices",
+      "impact": "These vulnerabilities can lead to memory corruption and code execution, compromising the security of devices such as security cameras, drones, and industrial controllers. Security teams should be aware of the potential risks and take immediate action to mitigate them.",
+      "action": "Security teams should review their embedded devices and apply patches or updates as soon as they become available to prevent potential exploitation",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
+      "publishedDate": "2026-07-04T01:49:31+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "security cameras",
+        "drones",
+        "industrial controllers",
+        "hardware crypto wallets"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "26684e42397d6e65",
+      "title": "FortiBleed Credential Theft Linked to INC and Lynx Ransomware Operations",
+      "summary": "FortiBleed campaign attributed to INC and Lynx ransomware, with 110 million credentials stolen from 430,000 FortiGate firewalls.",
+      "impact": "This campaign poses a significant threat to organizations using Fortinet devices, as stolen credentials can be used for follow-on intrusions and ransomware deployments. Security teams must take immediate action to protect their networks.",
+      "action": "Security teams should immediately review their FortiGate firewalls for signs of compromise and update their devices with the latest security patches.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/fortibleed-credential-theft-linked-to.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/threat-intelligence/fortibleed-actors-inc-lynx-ransomware-gangs"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/fortibleed-credential-theft-linked-to.html",
+      "publishedDate": "2026-07-01T17:37:24-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "FortiGate firewalls"
+      ],
+      "threat_actor": "INC and Lynx ransomware",
+      "tier": 2
+    },
+    {
+      "id": "bde0640ad7125b4c",
+      "title": "19-Year-Old Scattered Spider Suspect Extradited to US",
+      "summary": "Peter Stokes, 19, extradited to face US charges for hacking and extortion as part of Scattered Spider group.",
+      "impact": "The extradition highlights the global reach of law enforcement in combating cybercrime, particularly against groups like Scattered Spider known for social engineering tactics. This case underscores the importance of vigilance against such threats.",
+      "action": "Security teams should review their IT help desk protocols to prevent social engineering attacks like those used by Scattered Spider.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/19-year-old-scattered-spider-suspect.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/alleged-scattered-spider-hacker-extradited-to-the-united-states/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/19-year-old-scattered-spider-suspect.html",
+      "publishedDate": "2026-07-02T00:58:07+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "Scattered Spider",
+      "tier": 2
+    },
+    {
+      "id": "b67780783342b207",
+      "title": "Progress Kemp LoadMaster Pre-Auth RCE Vulnerability Under Active Exploitation",
+      "summary": "CVE-2026-8037 allows unauthenticated attackers to execute arbitrary commands on LoadMaster appliances",
+      "impact": "This vulnerability poses a significant risk to security teams, as it can be exploited without credentials, allowing attackers to run arbitrary commands as root. Successful exploitation can lead to severe consequences, including data breaches and lateral movement within a network",
+      "action": "Security teams should immediately update their Progress Kemp LoadMaster appliances to the latest version to mitigate the vulnerability",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/06/progress-kemp-loadmaster-flaw-could-let.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
+      "publishedDate": "2026-06-30T13:08:07+05:30",
+      "cve_ids": [
+        "CVE-2026-8037"
+      ],
+      "affected_systems": [
+        "Progress Kemp LoadMaster"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "8f4ed435a511a9d2",
+      "title": "2026 Cybersecurity Assessment Reveals Gap Between Awareness and Resilience",
+      "summary": "Organizations struggle to turn cyber risk awareness into operational resilience despite increased awareness.",
+      "impact": "This gap poses significant challenges for security teams, hindering their ability to effectively reduce the attack surface and respond to breaches. The disconnect between leadership and practitioners further complicates strategic decision-making.",
+      "action": "Security teams should reassess their visibility into employee AI usage and develop strategies to address the gap between awareness and resilience.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/2026-cybersecurity-assessment-gap.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/2026-cybersecurity-assessment-gap.html",
+      "publishedDate": "2026-07-01T17:00:00+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "991a4d0a2130b6d6",
+      "title": "Phantom Squatting: AI-Hallucinated Domains Target Supply Chains",
+      "summary": "Attackers register AI-hallucinated domains for legitimate brands, posing a software supply chain risk.",
+      "impact": "This emerging threat allows attackers to intercept traffic generated by AI systems, potentially leading to phishing and malware attacks. Security teams must be aware of this new vector to protect their supply chains.",
+      "action": "Monitor for registrations of hallucinated domains and implement Advanced URL Filtering and Advanced DNS Security to detect and prevent phantom squatting attacks.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/phantom-squatting-uses-ai-hallucinated.html"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/endpoint-security/phantom-squatting-ai-driven-supply-chain-threat"
+        },
+        {
+          "name": "Palo Alto Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/phantom-squatting-uses-ai-hallucinated.html",
+      "publishedDate": "2026-07-01T01:00:11+00:00",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "1815aa1fb72dbe54",
+      "title": "ChocoPoC RAT Targets Vulnerability Researchers via Fake PoC Exploits",
+      "summary": "ChocoPoC malware hides in fake exploit code on GitHub, stealing passwords, cookies, and files from researchers.",
+      "impact": "This campaign poses a significant threat to security researchers, potentially compromising their systems and data. It highlights the need for caution when using proof-of-concept exploits from untrusted sources.",
+      "action": "Security teams should exercise extreme caution when cloning and running proof-of-concept repositories from GitHub, thoroughly reviewing dependencies and code before execution.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/new-chocopoc-rat-targets-vulnerability.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/new-chocopoc-malware-targets-researchers-via-trojanized-poc-exploits/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/new-chocopoc-rat-targets-vulnerability.html",
+      "publishedDate": "2026-07-01T16:08:13-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "FortiWeb",
+        "React2Shell"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "3ab818632c1707cc",
+      "title": "Unpatched Argo CD Repo-Server Flaw Allows Full Kubernetes Cluster Takeover",
+      "summary": "An unpatched flaw in Argo CD's repo-server component lets unauthenticated attackers run code, potentially leading to full cluster takeover.",
+      "impact": "This vulnerability poses a significant risk to security teams, as it could allow attackers to compromise entire Kubernetes clusters. The lack of a patch or CVE assignment exacerbates the issue.",
+      "action": "Security teams should immediately review their Argo CD configurations and consider implementing temporary mitigations until a patch is available.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html",
+      "publishedDate": "2026-07-02T01:10:06+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Argo CD"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
