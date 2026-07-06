@@ -2,10 +2,37 @@
   "edition": "2026-07-03",
   "year": "2026",
   "editionLabel": "Jun 26 \u2013 Jul 3, 2026",
-  "generatedAt": "2026-07-05T20:23:42.755815+00:00",
-  "subjectLine": "FBI Seizes NetNut Proxy Platform, Disrupts Popa Botnet; Critical Vulnerabilities in Microsoft SharePoint and Linux Kernel",
+  "generatedAt": "2026-07-06T17:58:52.126471+00:00",
+  "subjectLine": "BREAKING: Max severity Adobe ColdFusion flaw now exploited in attacks + More Inside",
   "weekIntro": "This week, we saw significant actions against cybercrime with the FBI's seizure of the NetNut proxy platform, disrupting the Popa botnet. Meanwhile, critical vulnerabilities were disclosed in Microsoft SharePoint and the Linux kernel, posing immediate risks to security teams. These developments highlight the ongoing cat-and-mouse game between law enforcement, cybersecurity professionals, and threat actors.",
   "articles": [
+    {
+      "id": "c0578c58cbb475c4",
+      "title": "JadePuffer: The First Complete LLM-Driven Ransomware Attack",
+      "summary": "An \"agentic threat actor\" successfully exploited a Langflow flaw to steal data from a production database server and encrypt other systems.",
+      "source": "Dark Reading",
+      "url": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack",
+      "tier": 2,
+      "publishedDate": "2026-07-06T16:36:50+00:00"
+    },
+    {
+      "id": "4488624860bdc457",
+      "title": "Threat Actors Probe Gitea Docker Flaw CVE-2026-20896 13 Days After Disclosure",
+      "summary": "Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
+      "tier": 1,
+      "publishedDate": "2026-07-06T21:58:59+05:30"
+    },
+    {
+      "id": "190da742e8622b86",
+      "title": "Max severity Adobe ColdFusion flaw now exploited in attacks",
+      "summary": "Attackers are now exploiting a maximum-severity Adobe ColdFusion vulnerability tracked as CVE-2026-48282.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/max-severity-adobe-coldfusion-flaw-now-exploited-in-attacks/",
+      "tier": 1,
+      "publishedDate": "2026-07-06T09:18:37-04:00"
+    },
     {
       "id": "417bdaa0c3e139ab",
       "title": "FBI Seizes NetNut Proxy Platform, Disrupts Popa Botnet",
