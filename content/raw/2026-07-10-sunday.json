@@ -7,7 +7,40 @@
     "source_kind": "journalism",
     "url": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
     "publishedDate": "2026-07-08T12:31:39+00:00",
-    "scrapedAt": "2026-07-11T00:58:37.833439+00:00",
+    "scrapedAt": "2026-07-12T16:00:32.109831+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "440f70b0e78588e2",
+    "title": "Compromised jscrambler 8.14.0 npm Release Drops Rust Infostealer During Install",
+    "summary_raw": "The jscrambler npm package was compromised, and simply installing its&nbsp;8.14.0&nbsp;release runs an infostealer on your machine. Published on July 11, 2026, the malicious version carries a&nbsp;preinstall&nbsp;hook that drops and executes a native binary, one build each for Windows, macOS, and Linux.\n\nSocket flagged the release&nbsp;six minutes after it was published. If you or one of your",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
+    "publishedDate": "2026-07-11T23:29:26+05:30",
+    "scrapedAt": "2026-07-12T16:00:33.385916+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "5a78286d4eea74fb",
+    "title": "Hackers Weaponize Balochistan Police Portal in Multi-Group Espionage Campaigns",
+    "summary_raw": "Cybersecurity researchers have disclosed details of sustained cyber espionage activity against several Pakistani law enforcement organizations undertaken by suspected China- and India-aligned threat actors between February 2024 and April 2026.\n\n\"At Balochistan Police, the compromised assets included servers hosting web applications that manage police and citizen data, such as criminal and",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html",
+    "publishedDate": "2026-07-11T23:19:31+05:30",
+    "scrapedAt": "2026-07-12T16:00:33.386052+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "2764346b77ff5d26",
+    "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
+    "summary_raw": "Zimbra is urging customers to apply updates to address a critical security vulnerability impacting the Classic Web Client that could result in arbitrary code execution.\n\nThe vulnerability has been described as a case of stored cross-site scripting (XSS) that could allow specially crafted emails to execute malicious scripts in a user's session. It has yet to be assigned a CVE identifier.\n\n\"The",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
+    "publishedDate": "2026-07-11T12:15:55+05:30",
+    "scrapedAt": "2026-07-12T16:00:33.386179+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -18,7 +51,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
     "publishedDate": "2026-07-10T22:00:00+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.083302+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.386323+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -29,7 +62,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html",
     "publishedDate": "2026-07-10T21:59:00+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.083427+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.386440+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -40,7 +73,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
     "publishedDate": "2026-07-10T21:27:14+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.083528+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.386559+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -51,7 +84,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
     "publishedDate": "2026-07-10T20:21:49+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.083656+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.386668+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -62,7 +95,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html",
     "publishedDate": "2026-07-10T19:49:50+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.083749+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.386774+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -73,7 +106,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/new-modbeacon-rat-uses-grpc-streaming.html",
     "publishedDate": "2026-07-10T18:45:23+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.083838+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.386881+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -84,7 +117,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/unpatched-xring-flaw-in-xquic-lets.html",
     "publishedDate": "2026-07-10T17:17:43+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.083923+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.386987+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -95,7 +128,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/from-17000-to-11-million-assets-how.html",
     "publishedDate": "2026-07-10T17:09:40+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084007+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387102+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -106,7 +139,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/exposed-hacker-server-reveals-wp.html",
     "publishedDate": "2026-07-10T17:00:02+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084091+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387211+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -117,7 +150,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/study-of-281-free-android-vpn-apps.html",
     "publishedDate": "2026-07-10T16:26:23+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084180+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387344+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -128,7 +161,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html",
     "publishedDate": "2026-07-10T16:00:20+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084260+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387454+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -139,7 +172,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html",
     "publishedDate": "2026-07-10T14:30:05+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084342+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387559+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -150,7 +183,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ransomware-negotiator-gets-70-months-in.html",
     "publishedDate": "2026-07-10T13:40:12+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084426+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387666+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -161,7 +194,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
     "publishedDate": "2026-07-10T00:08:49+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084506+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387774+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -172,7 +205,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
     "publishedDate": "2026-07-09T23:38:07+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084606+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387881+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -183,7 +216,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/npm-12-disables-install-scripts-by.html",
     "publishedDate": "2026-07-09T22:19:02+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084688+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.387986+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -194,7 +227,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html",
     "publishedDate": "2026-07-09T20:39:28+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084771+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388090+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -205,7 +238,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ai-attacks-move-in-minutes-join-this.html",
     "publishedDate": "2026-07-09T17:56:58+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084853+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388196+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -216,7 +249,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/summer-of-clearinghouses.html",
     "publishedDate": "2026-07-09T16:30:00+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.084933+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388326+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -227,7 +260,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html",
     "publishedDate": "2026-07-09T16:13:09+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085020+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388435+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -238,7 +271,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html",
     "publishedDate": "2026-07-09T14:18:48+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085099+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388542+00:00",
     "cve_ids_scraped": [
       "CVE-2026-50656"
     ]
@@ -251,7 +284,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/metas-new-ai-image-tool-lets-others-use.html",
     "publishedDate": "2026-07-09T12:51:06+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085181+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388651+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -262,7 +295,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html",
     "publishedDate": "2026-07-09T10:45:02+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085260+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388758+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -273,7 +306,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ghostapproval-symlink-flaws-could-let.html",
     "publishedDate": "2026-07-09T09:57:18+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085337+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388865+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -284,7 +317,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/fake-7-zip-installers-turn-devices-into.html",
     "publishedDate": "2026-07-09T09:31:49+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085413+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.388969+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -295,7 +328,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
     "publishedDate": "2026-07-08T22:32:12+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085491+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389073+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -306,7 +339,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html",
     "publishedDate": "2026-07-08T20:37:24+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085583+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389177+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -317,7 +350,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html",
     "publishedDate": "2026-07-08T20:08:05+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085663+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389305+00:00",
     "cve_ids_scraped": [
       "CVE-2026-50746"
     ]
@@ -330,7 +363,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/new-ghost-phishing-wave-is-breaking.html",
     "publishedDate": "2026-07-08T18:30:00+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085747+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389417+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -341,7 +374,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/scmbanker-malware-uses-clickfix-lures.html",
     "publishedDate": "2026-07-08T18:22:15+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085825+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389524+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -352,7 +385,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/github-verified-commits-can-be.html",
     "publishedDate": "2026-07-08T17:21:24+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085906+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389640+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -363,7 +396,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/the-verification-step-is-new-ato.html",
     "publishedDate": "2026-07-08T17:00:00+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.085985+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389744+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -374,7 +407,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/github-copilot-refuses-harmful-requests.html",
     "publishedDate": "2026-07-08T16:51:07+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086062+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389849+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -385,7 +418,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/china-linked-uat-7810-expands-orb.html",
     "publishedDate": "2026-07-08T14:34:33+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086139+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.389952+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -396,7 +429,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
     "publishedDate": "2026-07-08T11:46:44+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086214+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390056+00:00",
     "cve_ids_scraped": [
       "CVE-2026-43499"
     ]
@@ -409,7 +442,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
     "publishedDate": "2026-07-08T11:03:12+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086291+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390164+00:00",
     "cve_ids_scraped": [
       "CVE-2026-48282"
     ]
@@ -422,7 +455,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/redwing-maas-packages-android-bank.html",
     "publishedDate": "2026-07-07T22:40:15+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086367+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390298+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -433,7 +466,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html",
     "publishedDate": "2026-07-07T22:07:33+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086443+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390407+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -444,7 +477,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/debull-tooling-abuses-microsoft-device.html",
     "publishedDate": "2026-07-07T20:44:14+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086523+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390511+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -455,7 +488,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/public-github-issue-could-trick-github.html",
     "publishedDate": "2026-07-07T19:34:50+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086618+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390613+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -466,7 +499,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/court-filing-reveals-windows-device-id.html",
     "publishedDate": "2026-07-07T18:57:20+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086697+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390717+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -477,7 +510,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/writer-ai-flaw-could-let-agent-previews.html",
     "publishedDate": "2026-07-07T18:57:09+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086775+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390820+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -488,7 +521,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/what-changes-when-your-software-supply.html",
     "publishedDate": "2026-07-07T17:00:00+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086851+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.390923+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -499,7 +532,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
     "publishedDate": "2026-07-07T14:40:51+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.086934+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.391031+00:00",
     "cve_ids_scraped": [
       "CVE-2024-42009"
     ]
@@ -512,7 +545,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
     "publishedDate": "2026-07-07T12:10:47+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.087011+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.391141+00:00",
     "cve_ids_scraped": [
       "CVE-2026-11405"
     ]
@@ -525,7 +558,7 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html",
     "publishedDate": "2026-07-07T10:46:51+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.087087+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.391270+00:00",
     "cve_ids_scraped": [
       "CVE-2026-40138"
     ]
@@ -538,44 +571,40 @@
     "source_kind": "journalism",
     "url": "https://thehackernews.com/2026/07/iran-linked-hackers-use-new-cavern-c2.html",
     "publishedDate": "2026-07-07T00:04:26+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.087164+00:00",
+    "scrapedAt": "2026-07-12T16:00:33.391386+00:00",
     "cve_ids_scraped": []
   },
   {
-    "id": "006a797fc25d645e",
-    "title": "16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on Intel and AMD x86 Systems",
-    "summary_raw": "A use-after-free bug in Linux's KVM hypervisor can be triggered from a guest virtual machine to corrupt the shadow-page state of the host kernel that runs it.\n\nDubbed 'Januscape' and tracked as&nbsp;CVE-2026-53359, the flaw sits in the shadow MMU code that KVM shares across both Intel and AMD. The public proof-of-concept panics the host; the researcher claims that a separate, unreleased exploit",
-    "source": "The Hacker News",
+    "id": "7c20169ea7d15f0e",
+    "title": "RedHook Android malware now uses Wireless ADB for shell access",
+    "summary_raw": "A new version of the RedHook Android malware abuses the Android Wireless Debugging (Wireless ADB) mechanism in a novel way to gain shell-level privileges without requiring a computer connection. [...]",
+    "source": "BleepingComputer",
     "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html",
-    "publishedDate": "2026-07-06T23:07:01+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.087243+00:00",
-    "cve_ids_scraped": [
-      "CVE-2026-53359"
-    ]
+    "url": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/",
+    "publishedDate": "2026-07-12T10:27:32-04:00",
+    "scrapedAt": "2026-07-12T16:00:34.469408+00:00",
+    "cve_ids_scraped": []
   },
   {
-    "id": "4488624860bdc457",
-    "title": "Threat Actors Probe Gitea Docker Flaw CVE-2026-20896 13 Days After Disclosure",
-    "summary_raw": "Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images, according to Sysdig.\n\nThe vulnerability in question is CVE-2026-20896 (CVSS score: 9.8), a vulnerability that stems from the DevOps platform trusting the \"X-WEBAUTH-USER\" header from any source IP address, effectively allowing an unauthenticated internet client to get elevated",
-    "source": "The Hacker News",
+    "id": "1c37f0a5062bb5c5",
+    "title": "Australia warns of global campaign targeting vulnerable CMS platforms",
+    "summary_raw": "The Australian Cyber Security Centre (ACSC) issued an alert about a global exploitation campaign targeting vulnerable content management systems (CMS) and plugins. [...]",
+    "source": "BleepingComputer",
     "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
-    "publishedDate": "2026-07-06T21:58:59+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.087320+00:00",
-    "cve_ids_scraped": [
-      "CVE-2026-20896"
-    ]
+    "url": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
+    "publishedDate": "2026-07-11T10:18:23-04:00",
+    "scrapedAt": "2026-07-12T16:00:34.469538+00:00",
+    "cve_ids_scraped": []
   },
   {
-    "id": "cd04d93b37a55539",
-    "title": "\u26a1 Weekly Recap: Proxy Botnets, Browser Ransomware, AI Agent Tricks, Fake PoC Malware and More",
-    "summary_raw": "A streaming box should not need a threat model. Neither should a username field, a demo repo, a reset flow, or a browser permission prompt. That is the irritating part this week: the risky pieces were ordinary.\n\nHome devices became a routing cover. Clean code pulled dirt from a dependency. Identity shortcuts aged badly. AI systems trusted the wrong instructions. Same soft spot throughout: trust",
-    "source": "The Hacker News",
+    "id": "23c14337daef23d0",
+    "title": "'Ghostcommit' hides prompt injection in images to fool AI agents, steal secrets",
+    "summary_raw": "A PNG hiding a prompt injection could steal your repo's secrets, researchers demonstrate. The technique, dubbed 'Ghostcommit,' slipped past AI code reviewers CodeRabbit and Bugbot, which never open image files at all, then convinced a coding agent to read a repo's .env and write every secret into the code as a list of numbers. [...]",
+    "source": "BleepingComputer",
     "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/07/monday-recap-proxy-botnets-browser.html",
-    "publishedDate": "2026-07-06T18:31:14+05:30",
-    "scrapedAt": "2026-07-11T00:58:39.087396+00:00",
+    "url": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
+    "publishedDate": "2026-07-11T05:03:57-04:00",
+    "scrapedAt": "2026-07-12T16:00:34.469654+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -586,7 +615,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/",
     "publishedDate": "2026-07-10T17:59:02-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.185301+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.469766+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -597,7 +626,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/ryuk-ransomware-member-pleads-guilty-in-the-us-faces-15-years-in-prison/",
     "publishedDate": "2026-07-10T13:46:10-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.185423+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.469886+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -608,7 +637,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/police-suspects-dutch-hackers-were-involved-in-odido-breach/",
     "publishedDate": "2026-07-10T12:37:01-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.185521+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.469994+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -619,7 +648,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/progress-urges-sharefile-customers-to-shut-down-servers-over-credible-threat/",
     "publishedDate": "2026-07-10T12:26:10-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.185633+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470102+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -630,7 +659,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-auth-bypass-in-gitea-docker-image/",
     "publishedDate": "2026-07-10T11:48:38-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.185725+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470212+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -641,7 +670,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/money-launderer-accused-of-stealing-seized-crypto-while-in-prison/",
     "publishedDate": "2026-07-10T11:30:19-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.185810+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470347+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -652,7 +681,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/the-replicant-in-your-directory-ai-agents-and-the-identity-security-gap/",
     "publishedDate": "2026-07-10T10:00:10-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.185894+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470458+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -663,7 +692,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/zimbra-urges-customers-to-patch-critical-web-client-xss-flaw/",
     "publishedDate": "2026-07-10T07:47:38-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.185987+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470572+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -674,7 +703,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/us-ransomware-negotiator-gets-4-years-in-prison-for-blackcat-attacks/",
     "publishedDate": "2026-07-10T04:17:52-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.186069+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470675+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -685,7 +714,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/openmandriva-linux-says-contributor-tried-to-sabotage-the-project/",
     "publishedDate": "2026-07-09T18:14:13-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.186150+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470779+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -696,7 +725,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/",
     "publishedDate": "2026-07-09T16:10:00-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.186229+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470883+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -707,40 +736,7 @@
     "source_kind": "journalism",
     "url": "https://www.bleepingcomputer.com/news/security/new-helix-vishing-group-emerges-in-sharepoint-data-theft-attacks/",
     "publishedDate": "2026-07-09T13:08:29-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.186313+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "7aa47b4e15decb86",
-    "title": "Microsoft expects more Windows security updates from AI-discovered flaws",
-    "summary_raw": "Microsoft says Windows users should expect to see an increase in security updates as the company increasingly relies on artificial intelligence to discover vulnerabilities in its codebase. [...]",
-    "source": "BleepingComputer",
-    "source_kind": "journalism",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-expects-more-windows-security-updates-from-ai-discovered-flaws/",
-    "publishedDate": "2026-07-09T13:00:00-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.186397+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "e2986714170efa3c",
-    "title": "New Forg365 phishing platform uses AI to target Microsoft 365 accounts",
-    "summary_raw": "A new phishing-as-a-service (PhaaS) operation called Forg365 focuses on stealing Microsoft 365 accounts by combining adversary-in-the-middle (AiTM) and device code methods with AI-assisted lure generation. [...]",
-    "source": "BleepingComputer",
-    "source_kind": "journalism",
-    "url": "https://www.bleepingcomputer.com/news/security/new-forg365-phishing-platform-uses-ai-to-target-microsoft-365-accounts/",
-    "publishedDate": "2026-07-09T10:39:51-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.186476+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "2dd04b40686d3053",
-    "title": "The Hidden Security Risks of Reduced Summer IT Coverage",
-    "summary_raw": "Security operations don't slow down when IT teams take vacation, but staffing levels often do. Kaseya explains how AI-driven automation can help organizations maintain consistent security operations and reduce reliance on manual processes year-round. [...]",
-    "source": "BleepingComputer",
-    "source_kind": "journalism",
-    "url": "https://www.bleepingcomputer.com/news/security/the-hidden-security-risks-of-reduced-summer-it-coverage/",
-    "publishedDate": "2026-07-09T10:02:12-04:00",
-    "scrapedAt": "2026-07-11T00:58:40.186571+00:00",
+    "scrapedAt": "2026-07-12T16:00:34.470987+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -751,7 +747,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-operations/jen-ellis-connecting-cyber-community-political-machinery",
     "publishedDate": "2026-07-10T19:08:04+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.732839+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.829373+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -762,7 +758,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/threat-intelligence/cybercriminals-healthcare-businesses-attacks-surge",
     "publishedDate": "2026-07-10T16:51:34+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.732952+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.829503+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -773,7 +769,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/vulnerabilities-threats/atm-crypto-software-bugs-jackpot-bust",
     "publishedDate": "2026-07-10T14:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733044+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.829613+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -784,7 +780,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/more-countries-jump-on-the-social-media-ban-wagon",
     "publishedDate": "2026-07-10T13:50:24+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733129+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.829717+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -795,7 +791,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/application-security/ai-coding-security-risks-productivity-gains",
     "publishedDate": "2026-07-10T13:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733212+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.829819+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -806,7 +802,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/iran-cyber-crosshairs-beyond-critical-infrastructure",
     "publishedDate": "2026-07-09T20:32:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733293+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.829921+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -817,7 +813,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/vulnerabilities-threats/microsoft-rogueplanet-zero-day-threat",
     "publishedDate": "2026-07-09T20:21:19+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733373+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830023+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -828,7 +824,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/identity-access-management-security/ai-agents-new-kind-identity-most-organizations-not-ready",
     "publishedDate": "2026-07-09T19:16:02+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733448+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830122+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -839,7 +835,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-operations/businesses-wartime-cybersecurity-gameplans",
     "publishedDate": "2026-07-09T14:31:20+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733527+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830228+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -850,7 +846,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/ai-gateways-keys-kingdom",
     "publishedDate": "2026-07-09T13:01:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733620+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830354+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -861,7 +857,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/goddamn-ransomware-byovd-smite-companies",
     "publishedDate": "2026-07-09T10:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733694+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830456+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -872,7 +868,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-operations/european-organizations-collaboration-security-confidence-gap",
     "publishedDate": "2026-07-09T08:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733769+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830555+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -883,7 +879,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/mexicos-cyber-plan-first-real-test",
     "publishedDate": "2026-07-08T21:34:21+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733845+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830662+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -894,7 +890,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cloud-security/lone-attacker-ai-breach-aws-cloud-environment",
     "publishedDate": "2026-07-08T20:32:22+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733917+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830763+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -905,7 +901,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/vidar-infostealer-smb-malvertising-campaign",
     "publishedDate": "2026-07-08T16:45:54+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.733987+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830861+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -916,7 +912,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cybersecurity-operations/state-ids-ai-agents-estonia",
     "publishedDate": "2026-07-08T08:01:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.734057+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.830958+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -927,7 +923,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/big-brand-jobs-scam-marketing-pros-google-accounts",
     "publishedDate": "2026-07-07T21:02:29+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.734129+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.831054+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -938,7 +934,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/application-security/dialogflow-cx-rogue-agent-flaw-enabled-ai-chatbot-data-theft",
     "publishedDate": "2026-07-07T20:36:43+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.734201+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.831154+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -949,7 +945,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyber-risk/gitlost-leaks-private-data-github-agentic-workflows",
     "publishedDate": "2026-07-07T15:24:30+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.734273+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.831273+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -960,7 +956,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/busysnake-infostealer-critical-infrastructure-networks",
     "publishedDate": "2026-07-06T21:37:56+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.734343+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.831379+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -971,7 +967,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/vulnerabilities-threats/citrixbleed-ing-again-netscaler-vulnerability-under-attack",
     "publishedDate": "2026-07-06T21:17:42+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.734414+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.831478+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -982,18 +978,7 @@
     "source_kind": "journalism",
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/jadepuffer-first-complete-llm-driven-ransomware-attack",
     "publishedDate": "2026-07-06T16:36:50+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.734488+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "0ddc5c27aace4ccc",
-    "title": "Chinese LLMs Broaden the Gap Between Attackers &amp; Defenders",
-    "summary_raw": "Two new models from Chinese firms compete with top US mainstream and frontier models. Should cyber-defenders be worried?",
-    "source": "Dark Reading",
-    "source_kind": "journalism",
-    "url": "https://www.darkreading.com/cyber-risk/chinese-llms-broaden-gap-between-attackers-and-defenders",
-    "publishedDate": "2026-07-03T13:01:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:41.734571+00:00",
+    "scrapedAt": "2026-07-12T16:00:35.831574+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1004,7 +989,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/security/2026/07/patch-for-windows-defender-0-day-could-allow-attackers-to-fill-hard-disk/",
     "publishedDate": "2026-07-09T20:52:55+00:00",
-    "scrapedAt": "2026-07-11T00:58:43.959329+00:00",
+    "scrapedAt": "2026-07-12T16:00:37.976982+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1015,7 +1000,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/information-technology/2026/07/allstate-accuses-broadcom-of-auditing-it-because-it-quit-vmware-ca/",
     "publishedDate": "2026-07-09T20:28:55+00:00",
-    "scrapedAt": "2026-07-11T00:58:43.959439+00:00",
+    "scrapedAt": "2026-07-12T16:00:37.977108+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1026,7 +1011,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/security/2026/07/high-severity-guest-vm-escape-is-1-of-2-linux-vulnerabilities-to-surface-this-week/",
     "publishedDate": "2026-07-08T19:01:19+00:00",
-    "scrapedAt": "2026-07-11T00:58:43.959531+00:00",
+    "scrapedAt": "2026-07-12T16:00:37.977221+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1037,7 +1022,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/gadgets/2026/07/thousands-of-routers-bricked-after-government-program-concludes-in-australia/",
     "publishedDate": "2026-07-08T18:10:16+00:00",
-    "scrapedAt": "2026-07-11T00:58:43.959637+00:00",
+    "scrapedAt": "2026-07-12T16:00:37.977360+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1048,7 +1033,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/science/2026/07/us-rare-earths-flow-to-asia-as-domestic-demand-is-slow-to-emerge/",
     "publishedDate": "2026-07-08T13:26:10+00:00",
-    "scrapedAt": "2026-07-11T00:58:43.959720+00:00",
+    "scrapedAt": "2026-07-12T16:00:37.977471+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1059,7 +1044,7 @@
     "source_kind": "journalism",
     "url": "https://arstechnica.com/security/2026/07/hackers-can-use-9-of-the-most-popular-ai-tools-to-assemble-massive-botnets/",
     "publishedDate": "2026-07-08T07:00:51+00:00",
-    "scrapedAt": "2026-07-11T00:58:43.959803+00:00",
+    "scrapedAt": "2026-07-12T16:00:37.977580+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1070,7 +1055,7 @@
     "source_kind": "journalism",
     "url": "https://twit.tv/shows/security-now/episodes/1086",
     "publishedDate": "2026-07-07T19:19:20-07:00",
-    "scrapedAt": "2026-07-11T00:58:45.249227+00:00",
+    "scrapedAt": "2026-07-12T16:00:39.379447+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1081,7 +1066,7 @@
     "source_kind": "journalism",
     "url": "https://www.crowdstrike.com/en-us/blog/why-ai-governance-without-guardrails-is-theater/",
     "publishedDate": "2026-07-09T00:00:00-05:00",
-    "scrapedAt": "2026-07-11T00:58:46.372035+00:00",
+    "scrapedAt": "2026-07-12T16:00:40.462338+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1092,7 +1077,7 @@
     "source_kind": "journalism",
     "url": "https://www.crowdstrike.com/en-us/blog/falcon-secure-access-sets-standard-for-zero-trust-security-browser/",
     "publishedDate": "2026-07-08T00:00:00-05:00",
-    "scrapedAt": "2026-07-11T00:58:46.372149+00:00",
+    "scrapedAt": "2026-07-12T16:00:40.462473+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1103,7 +1088,7 @@
     "source_kind": "journalism",
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-uncovers-new-prompt-injection-techniques/",
     "publishedDate": "2026-07-07T00:00:00-05:00",
-    "scrapedAt": "2026-07-11T00:58:46.372242+00:00",
+    "scrapedAt": "2026-07-12T16:00:40.462587+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1114,7 +1099,7 @@
     "source_kind": "journalism",
     "url": "https://www.crowdstrike.com/en-us/blog/how-ai-leading-security-teams-are-building-the-agentic-soc/",
     "publishedDate": "2026-07-06T00:00:00-05:00",
-    "scrapedAt": "2026-07-11T00:58:46.372328+00:00",
+    "scrapedAt": "2026-07-12T16:00:40.462694+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1125,7 +1110,7 @@
     "source_kind": "journalism",
     "url": "https://unit42.paloaltonetworks.com/the-gentlemen-ransomware/",
     "publishedDate": "2026-07-10T22:00:39+00:00",
-    "scrapedAt": "2026-07-11T00:58:49.900505+00:00",
+    "scrapedAt": "2026-07-12T16:00:43.878920+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1136,7 +1121,7 @@
     "source_kind": "journalism",
     "url": "https://unit42.paloaltonetworks.com/vidar-stealer-xmrig-miner-campaign-analysis/",
     "publishedDate": "2026-07-07T22:00:21+00:00",
-    "scrapedAt": "2026-07-11T00:58:49.900639+00:00",
+    "scrapedAt": "2026-07-12T16:00:43.879047+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1147,7 +1132,7 @@
     "source_kind": "journalism",
     "url": "https://www.sophos.com/en-us/blog/2607_agents_vs_telemetry",
     "publishedDate": "2026-07-07T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:51.078767+00:00",
+    "scrapedAt": "2026-07-12T16:00:44.955444+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1158,7 +1143,7 @@
     "source_kind": "journalism",
     "url": "https://www.recordedfuture.com/blog/june-2026-cve-landscape",
     "publishedDate": "2026-07-10T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:52.448486+00:00",
+    "scrapedAt": "2026-07-12T16:00:46.340949+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1169,7 +1154,7 @@
     "source_kind": "journalism",
     "url": "https://www.recordedfuture.com/blog/riskx-interview-payment-fraud",
     "publishedDate": "2026-07-09T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:52.448618+00:00",
+    "scrapedAt": "2026-07-12T16:00:46.341068+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1180,7 +1165,7 @@
     "source_kind": "journalism",
     "url": "https://www.recordedfuture.com/blog/build-defensive-ai-agents",
     "publishedDate": "2026-07-08T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:52.448711+00:00",
+    "scrapedAt": "2026-07-12T16:00:46.341174+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1191,7 +1176,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/friday-squid-blogging-squidbleed-vulnerability.html",
     "publishedDate": "2026-07-10T21:07:13+00:00",
-    "scrapedAt": "2026-07-11T00:58:53.551581+00:00",
+    "scrapedAt": "2026-07-12T16:00:47.445507+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1202,7 +1187,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/ai-surveillance-and-social-progress.html",
     "publishedDate": "2026-07-10T11:02:04+00:00",
-    "scrapedAt": "2026-07-11T00:58:53.551673+00:00",
+    "scrapedAt": "2026-07-12T16:00:47.445606+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1213,7 +1198,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/the-language-of-ai-could-change-how-humans-speak.html",
     "publishedDate": "2026-07-09T11:00:45+00:00",
-    "scrapedAt": "2026-07-11T00:58:53.551750+00:00",
+    "scrapedAt": "2026-07-12T16:00:47.445699+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1224,7 +1209,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/cybersecurity-and-the-gap-between-skill-and-ability.html",
     "publishedDate": "2026-07-08T11:03:04+00:00",
-    "scrapedAt": "2026-07-11T00:58:53.551819+00:00",
+    "scrapedAt": "2026-07-12T16:00:47.445786+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1235,7 +1220,7 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/google-is-suing-chinese-scammers-who-are-using-gemini.html",
     "publishedDate": "2026-07-07T10:43:40+00:00",
-    "scrapedAt": "2026-07-11T00:58:53.551886+00:00",
+    "scrapedAt": "2026-07-12T16:00:47.445871+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1246,18 +1231,18 @@
     "source_kind": "journalism",
     "url": "https://www.schneier.com/blog/archives/2026/07/france-to-stop-certifying-non-quantum-safe-encryption.html",
     "publishedDate": "2026-07-06T10:45:44+00:00",
-    "scrapedAt": "2026-07-11T00:58:53.551949+00:00",
+    "scrapedAt": "2026-07-12T16:00:47.445954+00:00",
     "cve_ids_scraped": []
   },
   {
-    "id": "e45a7cc48c530e44",
-    "title": "Flock Cameras Can Surveil Cars Without License Plates",
-    "summary_raw": "<p>This is from a 2024 <a href=\"https://amp.newsobserver.com/news/politics-government/article315990932.html\">company presentation</a>:</p>\n<blockquote><p>Officers can also tap into data showing a car&#8217;s decals, bumper stickers, back and top racks&#8212;along with temporary and unique state tags.</p>\n<p>Flock calls it a &#8220;Vehicle Fingerprint&#8221; and it&#8217;s touted as a way for law enforcement officials to get more information &#8220;even when you don&#8217;t have full plate information,&#8221; the company&#8217;s presentation shows.</p>\n<p>The company gives police officers the ability to search that data as well, to &#8220;build stronger cases with less information upfront.&#8221; That includes being able to locate multiple vehicles law enforcement officials believe are moving together and what Flock calls a &#8220;multi geo search.&#8221;...</p></blockquote>",
-    "source": "Schneier on Security",
+    "id": "ea67761667be32f6",
+    "title": "Wireshark 4.6.7 Released, (Sat, Jul 11th)",
+    "summary_raw": "Wireshark release 4.6.7 fixes 12 vulnerabilities and 16 bugs.&#xd;",
+    "source": "SANS Internet Storm Center",
     "source_kind": "journalism",
-    "url": "https://www.schneier.com/blog/archives/2026/07/flock-cameras-can-surveil-cars-without-license-plates.html",
-    "publishedDate": "2026-07-03T11:15:25+00:00",
-    "scrapedAt": "2026-07-11T00:58:53.552013+00:00",
+    "url": "https://isc.sans.edu/diary/rss/33146",
+    "publishedDate": "2026-07-11T09:07:06+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.617941+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1268,7 +1253,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33138",
     "publishedDate": "2026-07-10T15:52:27+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.860676+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618058+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1279,7 +1264,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33144",
     "publishedDate": "2026-07-10T09:09:29+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.860794+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618176+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1290,7 +1275,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33142",
     "publishedDate": "2026-07-10T02:00:03+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.860892+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618316+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1301,7 +1286,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33140",
     "publishedDate": "2026-07-09T02:00:02+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.860980+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618427+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1312,7 +1297,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33130",
     "publishedDate": "2026-07-09T01:20:02+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.861061+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618528+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1323,7 +1308,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33136",
     "publishedDate": "2026-07-08T02:00:02+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.861142+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618634+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1334,7 +1319,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33128",
     "publishedDate": "2026-07-07T18:09:04+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.861220+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618734+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1345,7 +1330,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33126",
     "publishedDate": "2026-07-07T02:00:02+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.861301+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618842+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1356,18 +1341,7 @@
     "source_kind": "journalism",
     "url": "https://isc.sans.edu/diary/rss/33124",
     "publishedDate": "2026-07-06T13:35:58+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.861374+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "fd2ad828d39abcd7",
-    "title": "ISC Stormcast For Monday, July 6th, 2026 https://isc.sans.edu/podcastdetail/9994, (Mon, Jul 6th)",
-    "summary_raw": "",
-    "source": "SANS Internet Storm Center",
-    "source_kind": "journalism",
-    "url": "https://isc.sans.edu/diary/rss/33122",
-    "publishedDate": "2026-07-06T11:36:06+00:00",
-    "scrapedAt": "2026-07-11T00:58:54.861455+00:00",
+    "scrapedAt": "2026-07-12T16:00:48.618943+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1378,7 +1352,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8530-1",
     "publishedDate": "2026-07-10T10:07:49+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.256176+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.226332+00:00",
     "cve_ids_scraped": [
       "CVE-2021-47202",
       "CVE-2024-56643",
@@ -1412,7 +1386,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8529-1",
     "publishedDate": "2026-07-10T10:00:19+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.256313+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.226484+00:00",
     "cve_ids_scraped": [
       "CVE-2021-47202",
       "CVE-2024-56643",
@@ -1445,7 +1419,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8528-1",
     "publishedDate": "2026-07-10T09:52:32+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.256428+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.226620+00:00",
     "cve_ids_scraped": [
       "CVE-2026-31431",
       "CVE-2026-43284",
@@ -1463,7 +1437,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8527-1",
     "publishedDate": "2026-07-10T09:45:14+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.256538+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.226753+00:00",
     "cve_ids_scraped": [
       "CVE-2022-48816",
       "CVE-2023-53673",
@@ -1539,7 +1513,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8492-5",
     "publishedDate": "2026-07-10T09:38:58+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.256690+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.226908+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1550,7 +1524,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8526-1",
     "publishedDate": "2026-07-09T19:25:53+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.256796+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.227031+00:00",
     "cve_ids_scraped": [
       "CVE-2026-47254",
       "CVE-2026-47709",
@@ -1567,7 +1541,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8525-1",
     "publishedDate": "2026-07-09T19:14:44+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.256894+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.227153+00:00",
     "cve_ids_scraped": [
       "CVE-2024-11053",
       "CVE-2024-8096",
@@ -1585,7 +1559,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8524-1",
     "publishedDate": "2026-07-09T15:11:48+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.256995+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.227306+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1596,7 +1570,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8523-1",
     "publishedDate": "2026-07-09T14:13:33+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.257076+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.227416+00:00",
     "cve_ids_scraped": [
       "CVE-2026-2369",
       "CVE-2026-5119"
@@ -1610,7 +1584,7 @@
     "source_kind": "advisory",
     "url": "https://ubuntu.com/security/notices/USN-8522-1",
     "publishedDate": "2026-07-09T12:45:50+00:00",
-    "scrapedAt": "2026-07-11T00:58:56.257161+00:00",
+    "scrapedAt": "2026-07-12T16:00:50.227528+00:00",
     "cve_ids_scraped": [
       "CVE-2026-20884",
       "CVE-2026-20889",
@@ -1621,6 +1595,17 @@
     ]
   },
   {
+    "id": "31ade4353c8f766d",
+    "title": "DSA-6387-1 chromium - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6387-1\">https://security-tracker.debian.org/tracker/DSA-6387-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00298.html",
+    "publishedDate": "2026-07-11T00:00:00+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394506+00:00",
+    "cve_ids_scraped": []
+  },
+  {
     "id": "a489d21ea34d5312",
     "title": "DSA-6386-1 opam - security update",
     "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6386-1\">https://security-tracker.debian.org/tracker/DSA-6386-1</a>",
@@ -1628,7 +1613,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00297.html",
     "publishedDate": "2026-07-10T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484063+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394574+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1639,7 +1624,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00296.html",
     "publishedDate": "2026-07-08T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484125+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394631+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1650,7 +1635,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00295.html",
     "publishedDate": "2026-07-08T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484172+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394682+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1661,7 +1646,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00294.html",
     "publishedDate": "2026-07-07T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484213+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394732+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1672,7 +1657,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00293.html",
     "publishedDate": "2026-07-07T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484253+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394782+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1683,7 +1668,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00292.html",
     "publishedDate": "2026-07-05T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484289+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394830+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1694,7 +1679,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00291.html",
     "publishedDate": "2026-07-05T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484323+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394878+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1705,7 +1690,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00290.html",
     "publishedDate": "2026-07-05T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484358+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394926+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1716,18 +1701,7 @@
     "source_kind": "advisory",
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00289.html",
     "publishedDate": "2026-07-05T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484393+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "0dea0621c0e9e462",
-    "title": "DSA-6377-1 php8.4 - security update",
-    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6377-1\">https://security-tracker.debian.org/tracker/DSA-6377-1</a>",
-    "source": "Debian Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://lists.debian.org/debian-security-announce/2026/msg00288.html",
-    "publishedDate": "2026-07-04T00:00:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:57.484428+00:00",
+    "scrapedAt": "2026-07-12T16:01:21.394981+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1738,7 +1712,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37729",
     "publishedDate": "2026-07-10T13:19:51+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.563807+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.476306+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1749,7 +1723,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37728",
     "publishedDate": "2026-07-10T12:26:51+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.563920+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.476436+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1760,7 +1734,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37435",
     "publishedDate": "2026-07-09T20:07:34+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564020+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.476552+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1771,7 +1745,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:34048",
     "publishedDate": "2026-07-09T20:00:54+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564111+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.476664+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1782,7 +1756,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37436",
     "publishedDate": "2026-07-09T19:54:04+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564199+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.476777+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1793,7 +1767,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37410",
     "publishedDate": "2026-07-09T18:56:09+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564282+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.476888+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1804,7 +1778,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37397",
     "publishedDate": "2026-07-09T17:43:28+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564363+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.476998+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1815,7 +1789,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37396",
     "publishedDate": "2026-07-09T17:24:13+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564445+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.477107+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1826,7 +1800,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37395",
     "publishedDate": "2026-07-09T17:19:33+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564526+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.477215+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -1837,821 +1811,7 @@
     "source_kind": "advisory",
     "url": "https://access.redhat.com/errata/RHSA-2026:37391",
     "publishedDate": "2026-07-09T17:08:23+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564631+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "d6a6def0c1d33258",
-    "title": "RHSA-2026:37390: Important: Red Hat Build of Apache Camel 4.18.1.P1 for Spring Boot release.",
-    "summary_raw": "Red Hat build of Apache Camel 4.18.1.P1 for Spring Boot patch release and security update is now available.\n\nRed Hat Product Security has rated this update as having a security impact of\nImportant. A Common Vulnerability Scoring System (CVSS) base score, which gives\na detailed severity rating, is available for each vulnerability from the CVE\nlink(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37390",
-    "publishedDate": "2026-07-09T15:29:15+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564713+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "3304e9db7788d011",
-    "title": "RHSA-2026:37385: Important: rh-podman-desktop security advisory update",
-    "summary_raw": "A security advisory update for rh-podman-desktop is now available for Red Hat Enterprise Linux 10.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37385",
-    "publishedDate": "2026-07-09T14:49:43+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564795+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "fe9d9b6372652dbf",
-    "title": "RHSA-2026:34755: Important: OpenShift Container Platform 4.19.37 packages and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.19.37 is now available with\nupdates to packages and images that fix several bugs and add enhancements.\n\nThis release includes a security update for Red Hat OpenShift Container\nPlatform 4.19.\n\nRed Hat Product Security has rated this update as having a security impact\nof Important. A Common Vulnerability Scoring System (CVSS) base score,\nwhich gives a detailed severity rating, is available for each vulnerability\nfrom the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34755",
-    "publishedDate": "2026-07-09T14:00:13+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564874+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "df738f02aad5be59",
-    "title": "RHSA-2026:34757: Moderate: OpenShift Container Platform 4.19.37 bug fix and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.19.37 is now available with\nupdates to packages and images that fix several bugs and add enhancements.\n\n This release includes a security update for Red Hat OpenShift Container\nPlatform 4.19.\n\nRed Hat Product Security has rated this update as having a security impact\nof Important. A Common Vulnerability Scoring System (CVSS) base score,\nwhich gives a detailed severity rating, is available for each vulnerability\nfrom the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34757",
-    "publishedDate": "2026-07-09T13:52:43+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.564953+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "1f3fa70462b7590c",
-    "title": "RHSA-2026:37250: Moderate: libreoffice security update",
-    "summary_raw": "An update for libreoffice is now available for Red Hat Enterprise Linux 9.6 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37250",
-    "publishedDate": "2026-07-09T12:20:37+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565030+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "cd3ed552ec08f0d3",
-    "title": "RHSA-2026:37251: Moderate: libreoffice security update",
-    "summary_raw": "An update for libreoffice is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37251",
-    "publishedDate": "2026-07-09T11:40:57+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565106+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "c41814a998a7ca3c",
-    "title": "RHSA-2026:37238: Important: ruby:3.3 security update",
-    "summary_raw": "An update for the ruby:3.3 module is now available for Red Hat Enterprise Linux 9.6 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37238",
-    "publishedDate": "2026-07-09T11:38:39+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565183+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "6dc418787835ef8c",
-    "title": "RHSA-2026:37249: Moderate: libreoffice security update",
-    "summary_raw": "An update for libreoffice is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37249",
-    "publishedDate": "2026-07-09T11:20:42+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565258+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "17f3bef3e693d624",
-    "title": "RHSA-2026:37207: Important: freerdp security update",
-    "summary_raw": "An update for freerdp is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37207",
-    "publishedDate": "2026-07-09T10:04:52+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565335+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "f03bd1973b380054",
-    "title": "RHSA-2026:37210: Important: firefox security update",
-    "summary_raw": "An update for firefox is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37210",
-    "publishedDate": "2026-07-09T09:24:32+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565413+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "6c74f0803ecca7b0",
-    "title": "RHSA-2026:37129: Important: gstreamer1-plugins-good security update",
-    "summary_raw": "An update for gstreamer1-plugins-good is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37129",
-    "publishedDate": "2026-07-09T08:53:47+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565491+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "73d833092b653183",
-    "title": "RHSA-2026:37137: Important: tomcat security, bug fix, and enhancement update",
-    "summary_raw": "An update for tomcat is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37137",
-    "publishedDate": "2026-07-09T08:24:22+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565589+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "9875a9f09cb5618f",
-    "title": "RHSA-2026:34097: Important: OpenShift Container Platform 4.17.55 packages and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.17.55 is now available with\nupdates to packages and images that fix several bugs and add enhancements.\n\nThis release includes a security update for Red Hat OpenShift Container\nPlatform 4.17.\n\nRed Hat Product Security has rated this update as having a security impact\nof Important. A Common Vulnerability Scoring System (CVSS) base score,\nwhich gives a detailed severity rating, is available for each vulnerability\nfrom the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34097",
-    "publishedDate": "2026-07-09T08:19:37+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565670+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "60b0d740486b9087",
-    "title": "RHSA-2026:34098: Critical: OpenShift Container Platform 4.17.55 bug fix and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.17.55 is now available with\nupdates to packages and images that fix several bugs and add enhancements.\n\n This release includes a security update for Red Hat OpenShift Container\nPlatform 4.17.\n\nRed Hat Product Security has rated this update as having a security impact\nof Critical. A Common Vulnerability Scoring System (CVSS) base score, which\ngives a detailed severity rating, is available for each vulnerability from\nthe CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34098",
-    "publishedDate": "2026-07-09T08:03:47+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565748+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "fdf0d07267a73ac6",
-    "title": "RHSA-2026:37136: Important: tomcat security update",
-    "summary_raw": "An update for tomcat is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37136",
-    "publishedDate": "2026-07-09T08:03:18+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565827+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "babeac4ad0f78578",
-    "title": "RHSA-2026:37130: Important: gstreamer1-plugins-bad-free security update",
-    "summary_raw": "An update for gstreamer1-plugins-bad-free is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37130",
-    "publishedDate": "2026-07-09T07:58:22+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565904+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "a2a3e4f8692fe351",
-    "title": "RHSA-2026:37123: Important: podman security, bug fix, and enhancement update",
-    "summary_raw": "An update for podman is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37123",
-    "publishedDate": "2026-07-09T07:38:17+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.565978+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "d17f4ff4de01562d",
-    "title": "RHSA-2026:37072: Important: podman security, bug fix, and enhancement update",
-    "summary_raw": "An update for podman is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37072",
-    "publishedDate": "2026-07-09T05:35:52+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566052+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "d07414f6face3964",
-    "title": "RHSA-2026:37070: Moderate: perl:5.32 security update",
-    "summary_raw": "An update for the perl:5.32 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:37070",
-    "publishedDate": "2026-07-09T05:22:41+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566131+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "e89f736ad05ae84d",
-    "title": "RHSA-2026:36957: Important: kernel security update",
-    "summary_raw": "An update for kernel is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36957",
-    "publishedDate": "2026-07-09T03:46:32+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566206+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "10ed68d8900377eb",
-    "title": "RHSA-2026:36956: Important: kernel security update",
-    "summary_raw": "An update for kernel is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36956",
-    "publishedDate": "2026-07-09T03:00:56+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566284+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "dbe02b30db3ded78",
-    "title": "RHSA-2026:36879: Important: tomcat security, bug fix, and enhancement update",
-    "summary_raw": "An update for tomcat is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36879",
-    "publishedDate": "2026-07-08T22:12:05+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566358+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "fbf24f7ab402eba5",
-    "title": "RHSA-2026:36877: Important: tomcat security update",
-    "summary_raw": "An update for tomcat is now available for Red Hat Enterprise Linux 9.6 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36877",
-    "publishedDate": "2026-07-08T22:03:45+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566437+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "87a253b46e15cbe8",
-    "title": "RHSA-2026:36876: Important: tomcat security update",
-    "summary_raw": "An update for tomcat is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36876",
-    "publishedDate": "2026-07-08T21:53:45+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566511+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "40681eaff48e6993",
-    "title": "RHSA-2026:36878: Important: tomcat security update",
-    "summary_raw": "An update for tomcat is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36878",
-    "publishedDate": "2026-07-08T21:46:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566600+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "cb736ee1aea352f6",
-    "title": "RHSA-2026:36834: Important: gstreamer1-plugins-bad-free security update",
-    "summary_raw": "An update for gstreamer1-plugins-bad-free is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36834",
-    "publishedDate": "2026-07-08T20:54:36+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566675+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "80f417122bb1e6d4",
-    "title": "RHSA-2026:36832: Important: libreoffice security update",
-    "summary_raw": "An update for libreoffice is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36832",
-    "publishedDate": "2026-07-08T19:40:59+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566749+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "516e5e10b22da950",
-    "title": "RHSA-2026:36846: Important: httpd:2.4 security update",
-    "summary_raw": "An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36846",
-    "publishedDate": "2026-07-08T19:33:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566823+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "0adcee37067c62c5",
-    "title": "RHSA-2026:36839: Important: Red Hat Build of Apache Camel 4.18 for Quarkus 3.33 update is now available (RHBQ 3.33.2.SP2)",
-    "summary_raw": "An update for Red Hat Build of Apache Camel 4.18 for Quarkus 3.33 update is now available (RHBQ 3.33.2.SP2).\nThe purpose of this text-only errata is to inform you about the enhancements that improve your developer experience and ensure the security and stability of your products.\nRed Hat Product Security has rated this update as having a security impact of Important.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36839",
-    "publishedDate": "2026-07-08T18:28:22+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566898+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "a96c6b693833f0a0",
-    "title": "RHSA-2026:36831: Important: httpd:2.4 security update",
-    "summary_raw": "An update for the httpd:2.4 module is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36831",
-    "publishedDate": "2026-07-08T17:58:39+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.566971+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "572838eb3265a8a2",
-    "title": "RHSA-2026:36788: Important: tomcat security, bug fix, and enhancement update",
-    "summary_raw": "An update for tomcat is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36788",
-    "publishedDate": "2026-07-08T16:41:59+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567047+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "b2eb7b380d292864",
-    "title": "RHSA-2026:36790: Important: tomcat9 security, bug fix, and enhancement update",
-    "summary_raw": "An update for tomcat9 is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36790",
-    "publishedDate": "2026-07-08T16:38:09+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567121+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "f30b0244cf94abe6",
-    "title": "RHSA-2026:36776: Important: rhc security update",
-    "summary_raw": "An update for rhc is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36776",
-    "publishedDate": "2026-07-08T16:32:14+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567195+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "15f6e36c2906fbf2",
-    "title": "RHSA-2026:36798: Important: xorg-x11-server-Xwayland security update",
-    "summary_raw": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 10.0 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36798",
-    "publishedDate": "2026-07-08T16:29:19+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567268+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "89b25155cee84276",
-    "title": "RHSA-2026:36792: Important: xorg-x11-server security update",
-    "summary_raw": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36792",
-    "publishedDate": "2026-07-08T16:22:54+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567342+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "725f0af742664ad6",
-    "title": "RHSA-2026:36782: Moderate: aardvark-dns security update",
-    "summary_raw": "An update for aardvark-dns is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36782",
-    "publishedDate": "2026-07-08T16:16:39+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567416+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "c528fae37ab85f4b",
-    "title": "RHSA-2026:36787: Important: tomcat security update",
-    "summary_raw": "An update for tomcat is now available for Red Hat Enterprise Linux 10.0 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36787",
-    "publishedDate": "2026-07-08T16:16:19+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567495+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "f8ecafb57dfe88da",
-    "title": "RHSA-2026:36791: Important: xorg-x11-server security update",
-    "summary_raw": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.6 Extended Update Support Long-Life Add-On.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36791",
-    "publishedDate": "2026-07-08T16:16:04+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567582+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "502fc0046dee4d81",
-    "title": "RHSA-2026:36789: Important: tomcat9 security update",
-    "summary_raw": "An update for tomcat9 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36789",
-    "publishedDate": "2026-07-08T16:14:09+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567661+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "899a50fe36c3f9ca",
-    "title": "RHSA-2026:36796: Important: Red Hat Edge Manager Version 1.0.3 Security Update",
-    "summary_raw": "Red Hat Edge Manager Version 1.0.3 Security Update",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36796",
-    "publishedDate": "2026-07-08T15:52:29+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567738+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "6d353795750d5afb",
-    "title": "RHSA-2026:36774: Important: gstreamer1-plugins-good security update",
-    "summary_raw": "An update for gstreamer1-plugins-good is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36774",
-    "publishedDate": "2026-07-08T15:45:15+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567811+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "b4207365d1e28f5d",
-    "title": "RHSA-2026:36767: Important: kernel security, bug fix, and enhancement update",
-    "summary_raw": "An update for kernel is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36767",
-    "publishedDate": "2026-07-08T15:22:14+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567884+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "2e573727e0d5d50b",
-    "title": "RHSA-2026:36768: Important: xorg-x11-server security update",
-    "summary_raw": "An update for xorg-x11-server is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions and Red Hat Enterprise Linux 8.8 Telecommunications Update Service.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36768",
-    "publishedDate": "2026-07-08T14:38:23+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.567958+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "3d32320af1bc7c57",
-    "title": "RHSA-2026:36733: Moderate: cups security update",
-    "summary_raw": "An update for cups is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36733",
-    "publishedDate": "2026-07-08T14:37:58+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568032+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "5f1f56979a5b0b7a",
-    "title": "RHSA-2026:36734: Low: libxml2 security update",
-    "summary_raw": "An update for libxml2 is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36734",
-    "publishedDate": "2026-07-08T14:33:53+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568105+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "f2803de8f73ffde6",
-    "title": "RHSA-2026:36717: Moderate: opencryptoki security update",
-    "summary_raw": "An update for opencryptoki is now available for Red Hat Enterprise Linux 9.6 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36717",
-    "publishedDate": "2026-07-08T14:32:13+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568179+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "0082dee455696aa4",
-    "title": "RHSA-2026:36730: Moderate: libsolv security update",
-    "summary_raw": "An update for libsolv is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36730",
-    "publishedDate": "2026-07-08T14:30:49+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568252+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "a05a7f75e8691417",
-    "title": "RHSA-2026:36728: Low: libtasn1 security update",
-    "summary_raw": "An update for libtasn1 is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Low. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36728",
-    "publishedDate": "2026-07-08T14:30:13+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568327+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "174133a754fd1f83",
-    "title": "RHSA-2026:36697: Moderate: opencryptoki security update",
-    "summary_raw": "An update for opencryptoki is now available for Red Hat Enterprise Linux 10.0 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36697",
-    "publishedDate": "2026-07-08T14:20:24+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568405+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "5121ac9abda56953",
-    "title": "RHSA-2026:36732: Moderate: python-urllib3 security update",
-    "summary_raw": "An update for python-urllib3 is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36732",
-    "publishedDate": "2026-07-08T14:20:00+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568480+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "940fda32e800f27c",
-    "title": "RHSA-2026:36749: Important: gstreamer1-plugins-bad-free security update",
-    "summary_raw": "An update for gstreamer1-plugins-bad-free is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36749",
-    "publishedDate": "2026-07-08T14:15:18+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568567+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "2b8525f95600e3b6",
-    "title": "RHSA-2026:36721: Moderate: edk2 security, bug fix, and enhancement update",
-    "summary_raw": "An update for edk2 is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36721",
-    "publishedDate": "2026-07-08T14:11:58+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568645+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "67233a86bab7eb93",
-    "title": "RHSA-2026:36645: Important: kernel update",
-    "summary_raw": "An update for kernel is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36645",
-    "publishedDate": "2026-07-08T14:02:54+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568719+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "6af0967a908e62d9",
-    "title": "RHSA-2026:36674: Moderate: gstreamer1-plugins-ugly-free security update",
-    "summary_raw": "An update for gstreamer1-plugins-ugly-free is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36674",
-    "publishedDate": "2026-07-08T13:09:58+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568792+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "81b284745e6272dd",
-    "title": "RHSA-2026:36675: Important: gstreamer1-plugins-good security update",
-    "summary_raw": "An update for gstreamer1-plugins-good is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36675",
-    "publishedDate": "2026-07-08T12:47:53+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568867+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "59e3b65c432b912e",
-    "title": "RHSA-2026:36671: Important: 389-ds-base security update",
-    "summary_raw": "An update for 389-ds-base is now available for Red Hat Enterprise Linux 9.6 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36671",
-    "publishedDate": "2026-07-08T12:25:23+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.568941+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "53f4431b026efae9",
-    "title": "RHSA-2026:36639: Important: nginx:1.26 security, bug fix, and enhancement update",
-    "summary_raw": "An update for the nginx:1.26 module is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36639",
-    "publishedDate": "2026-07-08T12:03:13+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569015+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "312d9186b24cc782",
-    "title": "RHSA-2026:36673: Moderate: gstreamer1-plugins-ugly-free security update",
-    "summary_raw": "An update for gstreamer1-plugins-ugly-free is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36673",
-    "publishedDate": "2026-07-08T12:02:53+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569087+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "c2489223890a69d8",
-    "title": "RHSA-2026:36670: Important: 389-ds-base security update",
-    "summary_raw": "An update for 389-ds-base is now available for Red Hat Enterprise Linux 10.0 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36670",
-    "publishedDate": "2026-07-08T11:36:33+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569161+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "52a4fd7cc6017a9e",
-    "title": "RHSA-2026:36618: Important: nginx:1.24 security, bug fix, and enhancement update",
-    "summary_raw": "An update for the nginx:1.24 module is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36618",
-    "publishedDate": "2026-07-08T10:29:48+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569237+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "8f6bd4eb23510d68",
-    "title": "RHSA-2026:36643: Moderate: glibc security update",
-    "summary_raw": "An update for glibc is now available for Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support and Red Hat Enterprise Linux 8.4 Extended Update Support Long-Life Add-On.\n\nRed Hat Product Security has rated this update as having a security impact of Moderate. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36643",
-    "publishedDate": "2026-07-08T09:57:53+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569310+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "8c4087b9b5a6359d",
-    "title": "RHSA-2026:36634: Important: xorg-x11-server-Xwayland security update",
-    "summary_raw": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 9.6 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36634",
-    "publishedDate": "2026-07-08T09:46:53+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569384+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "402f9bc77cd1c1c2",
-    "title": "RHSA-2026:34815: Important: OpenShift Container Platform 4.18.47 bug fix and security update",
-    "summary_raw": "Red Hat OpenShift Container Platform release 4.18.47 is now available with updates to packages and images that fix several bugs and add enhancements.\n\nThis release includes a security update for Red Hat OpenShift Container Platform 4.18.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability\nfrom the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:34815",
-    "publishedDate": "2026-07-08T09:34:48+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569462+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "9e7062d054ca73b2",
-    "title": "RHSA-2026:36632: Important: xorg-x11-server-Xwayland security update",
-    "summary_raw": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36632",
-    "publishedDate": "2026-07-08T09:30:28+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569536+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "922b25c20f95bbf5",
-    "title": "RHSA-2026:36641: Important: redhat-ds:12 security update",
-    "summary_raw": "An update for the redhat-ds:12 module is now available for Red Hat Directory Server 12.2 E4S for RHEL 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36641",
-    "publishedDate": "2026-07-08T09:26:43+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569625+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "3496fef463780fd0",
-    "title": "RHSA-2026:36617: Important: oci-seccomp-bpf-hook security update",
-    "summary_raw": "An update for oci-seccomp-bpf-hook is now available for Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36617",
-    "publishedDate": "2026-07-08T09:19:18+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569702+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "d471d62430f7aaff",
-    "title": "RHSA-2026:36633: Important: xorg-x11-server-Xwayland security update",
-    "summary_raw": "An update for xorg-x11-server-Xwayland is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36633",
-    "publishedDate": "2026-07-08T09:19:08+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569775+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "897c0f2074c5efa2",
-    "title": "RHSA-2026:36585: Important: 389-ds-base security update",
-    "summary_raw": "An update for 389-ds-base is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36585",
-    "publishedDate": "2026-07-08T06:34:48+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569847+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "32b0e2088f8e80a1",
-    "title": "RHSA-2026:36541: Important: kernel security, bug fix, and enhancement update",
-    "summary_raw": "An update for kernel is now available for Red Hat Enterprise Linux 10.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36541",
-    "publishedDate": "2026-07-08T06:13:32+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569919+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "3a4ef605fe69b0a3",
-    "title": "RHSA-2026:36534: Important: kpatch-patch-5_14_0-570_116_1, kpatch-patch-5_14_0-570_17_1, kpatch-patch-5_14_0-570_39_1, kpatch-patch-5_14_0-570_66_1, and kpatch-patch-5_14_0-570_94_1 security update",
-    "summary_raw": "An update for multiple packages is now available for Red Hat Enterprise Linux 9.6 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36534",
-    "publishedDate": "2026-07-08T04:26:42+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.569991+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "0d0a64c4abf3e2e1",
-    "title": "RHSA-2026:36530: Important: kpatch-patch-4_18_0-553_109_1, kpatch-patch-4_18_0-553_125_1, kpatch-patch-4_18_0-553_53_1, kpatch-patch-4_18_0-553_72_1, and kpatch-patch-4_18_0-553_85_1 security update",
-    "summary_raw": "An update for multiple packages is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36530",
-    "publishedDate": "2026-07-08T04:21:12+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.570069+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "293950c20ae7cd18",
-    "title": "RHSA-2026:36533: Important: kpatch-patch-5_14_0-427_100_1, kpatch-patch-5_14_0-427_113_1, kpatch-patch-5_14_0-427_126_1, kpatch-patch-5_14_0-427_68_2, and kpatch-patch-5_14_0-427_84_1 security update",
-    "summary_raw": "An update for multiple packages is now available for Red Hat Enterprise Linux 9.4 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36533",
-    "publishedDate": "2026-07-08T04:12:57+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.570143+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "8d96c6c3abd508ea",
-    "title": "RHSA-2026:36531: Important: kpatch-patch-4_18_0-477_107_1, kpatch-patch-4_18_0-477_120_1, kpatch-patch-4_18_0-477_130_1, and kpatch-patch-4_18_0-477_97_1 security update",
-    "summary_raw": "An update for multiple packages is now available for Red Hat Enterprise Linux 8.8 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36531",
-    "publishedDate": "2026-07-08T04:09:57+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.570217+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "15225f30f4bb9d38",
-    "title": "RHSA-2026:36532: Important: kpatch-patch-5_14_0-284_117_1, kpatch-patch-5_14_0-284_134_1, kpatch-patch-5_14_0-284_148_1, kpatch-patch-5_14_0-284_158_1, and kpatch-patch-5_14_0-284_172_1 security update",
-    "summary_raw": "An update for multiple packages is now available for Red Hat Enterprise Linux 9.2 Update Services for SAP Solutions.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
-    "source": "Red Hat Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://access.redhat.com/errata/RHSA-2026:36532",
-    "publishedDate": "2026-07-08T04:08:17+00:00",
-    "scrapedAt": "2026-07-11T00:58:58.570290+00:00",
+    "scrapedAt": "2026-07-12T16:01:22.477358+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2662,7 +1822,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1080822/",
     "publishedDate": "2026-07-10T15:20:51+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.676511+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.733765+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2673,7 +1833,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1080519/",
     "publishedDate": "2026-07-10T13:50:40+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.676649+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.733895+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2684,7 +1844,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1082272/",
     "publishedDate": "2026-07-10T13:41:03+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.676754+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734014+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2695,7 +1855,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1080821/",
     "publishedDate": "2026-07-09T14:25:18+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.676854+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734134+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2706,7 +1866,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1082032/",
     "publishedDate": "2026-07-09T13:19:01+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.676942+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734246+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2717,7 +1877,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1082030/",
     "publishedDate": "2026-07-09T13:00:11+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677025+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734387+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2728,7 +1888,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1080835/",
     "publishedDate": "2026-07-09T01:12:33+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677121+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734505+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2739,7 +1899,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081884/",
     "publishedDate": "2026-07-08T22:31:34+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677208+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734623+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2750,7 +1910,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1077427/",
     "publishedDate": "2026-07-08T13:14:23+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677300+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734736+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2761,7 +1921,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081798/",
     "publishedDate": "2026-07-08T12:50:59+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677385+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734845+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2772,7 +1932,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081690/",
     "publishedDate": "2026-07-07T14:27:57+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677471+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.734955+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2783,7 +1943,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081009/",
     "publishedDate": "2026-07-07T13:39:34+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677572+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.735068+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2794,7 +1954,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081644/",
     "publishedDate": "2026-07-07T13:07:58+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677658+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.735179+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2805,7 +1965,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1081536/",
     "publishedDate": "2026-07-06T16:13:19+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677743+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.735326+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2816,7 +1976,7 @@
     "source_kind": "journalism",
     "url": "https://lwn.net/Articles/1079415/",
     "publishedDate": "2026-07-06T14:37:34+00:00",
-    "scrapedAt": "2026-07-11T00:58:59.677824+00:00",
+    "scrapedAt": "2026-07-12T16:01:23.735440+00:00",
     "cve_ids_scraped": []
   },
   {
@@ -2827,95 +1987,7 @@
     "source_kind": "journalism",
     "url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/",
     "publishedDate": "2026-07-09T16:29:37+00:00",
-    "scrapedAt": "2026-07-11T00:59:00.783039+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "2764346b77ff5d26",
-    "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
-    "summary_raw": "Zimbra is urging customers to apply updates to address a critical security vulnerability impacting the Classic Web Client that could result in arbitrary code execution.\n\nThe vulnerability has been described as a case of stored cross-site scripting (XSS) that could allow specially crafted emails to execute malicious scripts in a user's session. It has yet to be assigned a CVE identifier.\n\n\"The",
-    "source": "The Hacker News",
-    "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
-    "publishedDate": "2026-07-11T12:15:55+05:30",
-    "scrapedAt": "2026-07-11T15:50:51.347575+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "1c37f0a5062bb5c5",
-    "title": "Australia warns of global campaign targeting vulnerable CMS platforms",
-    "summary_raw": "The Australian Cyber Security Centre (ACSC) issued an alert about a global exploitation campaign targeting vulnerable content management systems (CMS) and plugins. [...]",
-    "source": "BleepingComputer",
-    "source_kind": "journalism",
-    "url": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
-    "publishedDate": "2026-07-11T10:18:23-04:00",
-    "scrapedAt": "2026-07-11T15:50:52.488181+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "23c14337daef23d0",
-    "title": "'Ghostcommit' hides prompt injection in images to fool AI agents, steal secrets",
-    "summary_raw": "A PNG hiding a prompt injection could steal your repo's secrets, researchers demonstrate. The technique, dubbed 'Ghostcommit,' slipped past AI code reviewers CodeRabbit and Bugbot, which never open image files at all, then convinced a coding agent to read a repo's .env and write every secret into the code as a list of numbers. [...]",
-    "source": "BleepingComputer",
-    "source_kind": "journalism",
-    "url": "https://www.bleepingcomputer.com/news/security/ghostcommit-hides-prompt-injection-in-images-to-fool-ai-agents-steal-secrets/",
-    "publishedDate": "2026-07-11T05:03:57-04:00",
-    "scrapedAt": "2026-07-11T15:50:52.488309+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "ea67761667be32f6",
-    "title": "Wireshark 4.6.7 Released, (Sat, Jul 11th)",
-    "summary_raw": "Wireshark release 4.6.7 fixes 12 vulnerabilities and 16 bugs.&#xd;",
-    "source": "SANS Internet Storm Center",
-    "source_kind": "journalism",
-    "url": "https://isc.sans.edu/diary/rss/33146",
-    "publishedDate": "2026-07-11T09:07:06+00:00",
-    "scrapedAt": "2026-07-11T15:51:06.793024+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "440f70b0e78588e2",
-    "title": "Compromised jscrambler 8.14.0 npm Release Drops Rust Infostealer During Install",
-    "summary_raw": "The jscrambler npm package was compromised, and simply installing its&nbsp;8.14.0&nbsp;release runs an infostealer on your machine. Published on July 11, 2026, the malicious version carries a&nbsp;preinstall&nbsp;hook that drops and executes a native binary, one build each for Windows, macOS, and Linux.\n\nSocket flagged the release&nbsp;six minutes after it was published. If you or one of your",
-    "source": "The Hacker News",
-    "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
-    "publishedDate": "2026-07-11T23:29:26+05:30",
-    "scrapedAt": "2026-07-12T16:00:33.385916+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "5a78286d4eea74fb",
-    "title": "Hackers Weaponize Balochistan Police Portal in Multi-Group Espionage Campaigns",
-    "summary_raw": "Cybersecurity researchers have disclosed details of sustained cyber espionage activity against several Pakistani law enforcement organizations undertaken by suspected China- and India-aligned threat actors between February 2024 and April 2026.\n\n\"At Balochistan Police, the compromised assets included servers hosting web applications that manage police and citizen data, such as criminal and",
-    "source": "The Hacker News",
-    "source_kind": "journalism",
-    "url": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html",
-    "publishedDate": "2026-07-11T23:19:31+05:30",
-    "scrapedAt": "2026-07-12T16:00:33.386052+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "7c20169ea7d15f0e",
-    "title": "RedHook Android malware now uses Wireless ADB for shell access",
-    "summary_raw": "A new version of the RedHook Android malware abuses the Android Wireless Debugging (Wireless ADB) mechanism in a novel way to gain shell-level privileges without requiring a computer connection. [...]",
-    "source": "BleepingComputer",
-    "source_kind": "journalism",
-    "url": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/",
-    "publishedDate": "2026-07-12T10:27:32-04:00",
-    "scrapedAt": "2026-07-12T16:00:34.469408+00:00",
-    "cve_ids_scraped": []
-  },
-  {
-    "id": "31ade4353c8f766d",
-    "title": "DSA-6387-1 chromium - security update",
-    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6387-1\">https://security-tracker.debian.org/tracker/DSA-6387-1</a>",
-    "source": "Debian Security Advisories",
-    "source_kind": "advisory",
-    "url": "https://lists.debian.org/debian-security-announce/2026/msg00298.html",
-    "publishedDate": "2026-07-11T00:00:00+00:00",
-    "scrapedAt": "2026-07-12T16:01:21.394506+00:00",
+    "scrapedAt": "2026-07-12T16:01:24.856758+00:00",
     "cve_ids_scraped": []
   }
 ]
