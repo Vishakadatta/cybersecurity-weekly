@@ -1,0 +1,262 @@
+{
+  "edition": "2026-07-10",
+  "year": "2026",
+  "editionLabel": "Jul 3 \u2013 10, 2026",
+  "generatedAt": "2026-07-12T20:13:15.967312+00:00",
+  "subjectLine": "Breaking: China-Linked UAT-7810 Expands ORB Network, 15-Year-Old GhostLock Flaw Enables Root Access",
+  "weekIntro": "This week, we saw a significant surge in nation-state campaigns and critical vulnerabilities, including the expansion of the ORB network by China-linked UAT-7810 and the discovery of the 15-year-old GhostLock flaw. These threats pose a significant risk to global security and require immediate attention from security teams.",
+  "articles": [
+    {
+      "id": "b00083c733dc2411",
+      "title": "China-Linked UAT-7810 Expands ORB Network With LONGLEASH Malware",
+      "summary": "UAT-7810 threat actor expands ORB network via bespoke malware, targeting internet-facing devices",
+      "impact": "This expansion poses a significant threat to security teams, as it enables secondary threat actors to conduct malicious attacks against high-value targets. Security teams must be vigilant in detecting and mitigating these attacks.",
+      "action": "Security teams should prioritize patching known vulnerabilities in networking devices, such as Ruckus wireless routers, to prevent exploitation by UAT-7810 and associated threat actors.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/china-linked-uat-7810-expands-orb.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/china-linked-uat-7810-expands-orb.html",
+      "publishedDate": "2026-07-08T14:34:33+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Ruckus wireless routers"
+      ],
+      "threat_actor": "UAT-7810",
+      "tier": 1
+    },
+    {
+      "id": "ff55f94eaa8b8ae6",
+      "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
+      "summary": "CVE-2026-43499 allows any logged-in user to take full root control of unpatched Linux machines",
+      "impact": "This flaw affects nearly every Linux build since 2011, scoring 7.8 out of 10 in severity. Security teams must prioritize patching to prevent potential exploits.",
+      "action": "Install the current kernel patch to prevent exploitation of the GhostLock flaw.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+      "publishedDate": "2026-07-08T11:46:44+05:30",
+      "cve_ids": [
+        "CVE-2026-43499"
+      ],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "eb95a634a0340b77",
+      "title": "GigaWiper Windows Backdoor Combines Disk Wiping, Fake Ransomware, and Spyware",
+      "summary": "Microsoft analyzed GigaWiper, a Windows backdoor with disk wiping, fake ransomware, and spyware capabilities.",
+      "impact": "This malware poses a significant threat to Windows systems, allowing attackers to destroy machines or steal data. Security teams must enhance detection and backup measures to mitigate its impact.",
+      "action": "Implement early detection mechanisms and maintain clean, offline backups to defend against GigaWiper attacks.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
+      "publishedDate": "2026-07-09T23:38:07+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows"
+      ],
+      "threat_actor": "Iran-nexus group",
+      "tier": 1
+    },
+    {
+      "id": "d49881cebcbe44a1",
+      "title": "GodDamn Ransomware Employs PoisonX Driver to Evade Endpoint Defenses",
+      "summary": "GodDamn ransomware uses PoisonX kernel driver to disable security software",
+      "impact": "This ransomware poses a significant threat to security teams as it can neutralize endpoint defenses, allowing for unchecked malicious activity. The use of a malicious driver signed by Microsoft adds complexity to mitigation efforts.",
+      "action": "Security teams should immediately review their endpoint defense configurations and monitor for suspicious activity related to the PoisonX driver and GodDamn ransomware",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html",
+      "publishedDate": "2026-07-09T16:13:09+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "Hyadina",
+      "tier": 2
+    },
+    {
+      "id": "2ee03ee380e9022e",
+      "title": "Multiple Vendors Announce Clearinghouses for Open-Source Vulnerability Data",
+      "summary": "Athena clearinghouse pools pre-disclosure vulnerabilities across open-source projects",
+      "impact": "This development may lead to improved vulnerability management for security teams, but most announced clearinghouses may not significantly impact security postures. Effective clearinghouses will require comprehensive data and prompt fix shipment.",
+      "action": "Security teams should evaluate and engage with established clearinghouses like Athena to enhance their vulnerability management practices.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/summer-of-clearinghouses.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/summer-of-clearinghouses.html",
+      "publishedDate": "2026-07-09T16:30:00+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "8ff145c88e58f3bb",
+      "title": "Injective Labs SDK Compromised with Cryptocurrency Wallet Stealer",
+      "summary": "Threat actors compromised Injective Labs' GitHub repository, publishing a malicious @injectivelabs/sdk-ts package to steal cryptocurrency wallet private keys and mnemonic seed phrases.",
+      "impact": "This supply-chain attack affects developers using the Injective SDK, potentially exposing cryptocurrency wallets and related applications to theft. Security teams should be aware of the compromised package and its dependencies.",
+      "action": "Teams should immediately review their dependencies and update to a safe version of the @injectivelabs/sdk-ts package to prevent potential cryptocurrency wallet theft.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/injective-sdk-on-npm-infected-with-cryptocurrency-wallet-stealer/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html",
+      "publishedDate": "2026-07-09T16:10:00-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "@injectivelabs/sdk-ts",
+        "@injectivelabs/utils",
+        "@injectivelabs/networks",
+        "@injectivelabs/ts-types",
+        "@injectivelabs/exceptions",
+        "@injectivelabs/wallet-base",
+        "@injectivelabs/wallet-core",
+        "@injectivelabs/wallet-cosmos",
+        "@injectivelabs/wallet-private-key",
+        "@injectivelabs/wallet-evm",
+        "@injectivelabs/wallet-trezor",
+        "@injectivelabs/wallet-cosmostation",
+        "@injectivelabs/wallet-ledger",
+        "@injectivelabs/wallet-wallet-connect",
+        "@injectivelabs/wallet-magic",
+        "@injectivelabs/wallet-strategy",
+        "@injectivelabs/wallet-turnkey",
+        "@injectivelabs/wallet-cosmos-strategy"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "3876d90cd5c8f02c",
+      "title": "Six U-Boot Flaws Expose Devices to Code Execution and Crashes",
+      "summary": "Six vulnerabilities in U-Boot bootloader allow code execution and crashes during device boot.",
+      "impact": "These flaws compromise security protections and enable stealthy firmware attacks, potentially installing persistent malware. This undermines the security of devices before the operating system and its security software load.",
+      "action": "Security teams should review Binarly advisories BRLY-2026-037 through BRLY-2026-042 and apply patches to mitigate the vulnerabilities.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
+      "publishedDate": "2026-07-10T17:59:02-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "home routers",
+        "smart cameras",
+        "management chips inside data-center servers",
+        "Baseboard Management Controllers (BMCs)",
+        "networking equipment",
+        "industrial systems",
+        "IoT devices"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "44e86bfce82aee3f",
+      "title": "Threat Actor O-UNC-066 Targets Microsoft 365 Users with Fake Entra Passkey Enrollment",
+      "summary": "Threat actor O-UNC-066 uses voice-based phishing to enroll fake Entra passkeys, gaining Microsoft 365 access.",
+      "impact": "This phishing campaign poses a significant threat to organizations, allowing attackers to bypass security measures and gain unauthorized access to Microsoft 365 accounts. Security teams must be aware of this tactic to protect their users.",
+      "action": "Security teams should educate users about this phishing campaign and implement additional security measures to prevent unauthorized passkey enrollment.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html",
+      "publishedDate": "2026-07-10T16:00:20+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Microsoft 365"
+      ],
+      "threat_actor": "O-UNC-066",
+      "tier": 3
+    },
+    {
+      "id": "107733d883d24ed3",
+      "title": "Attackers Use Dormant GitHub Accounts to Enumerate Corporate Orgs",
+      "summary": "Attackers are using dormant GitHub accounts to enumerate corporate organizations, repositories, and user accounts via the GitHub API.",
+      "impact": "This technique allows threat actors to conduct reconnaissance and map out an organization's GitHub-related activity without raising red flags. Security teams should be aware of this tactic to protect their GitHub presence.",
+      "action": "Teams should monitor their GitHub accounts for suspicious activity and review their API usage to detect potential enumeration attempts.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
+      "publishedDate": "2026-07-10T00:08:49+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "0ade65d4f76df878",
+      "title": "Global Fraud Bust and Cloud Bucket Hijacking Attacks",
+      "summary": "5,811 individuals arrested in global anti-fraud operation, intercepting $293 million in illicit assets",
+      "impact": "The operation highlights the extent of social engineering scams and fraud as a major transnational threat, affecting individuals, businesses, and governments. Security teams must be vigilant against such threats.",
+      "action": "Security teams should review their systems for potential vulnerabilities and implement measures to prevent social engineering scams and fraud.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html",
+      "publishedDate": "2026-07-09T20:39:28+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "2c2f445afa8d5ffb",
+      "title": "281 Free Android VPN Apps Found to Leak Traffic, Send Unencrypted Data",
+      "summary": "29 Android VPN apps leak user traffic, 61 send data in plain text, affecting 2.4 billion installs.",
+      "impact": "This vulnerability compromises the security and privacy of users, undermining the purpose of using a VPN. Security teams must reassess their VPN app recommendations and ensure they prioritize user data protection.",
+      "action": "Security teams should immediately review and test their recommended VPN apps for traffic leaks and unencrypted data transmission.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/study-of-281-free-android-vpn-apps.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/study-of-281-free-android-vpn-apps.html",
+      "publishedDate": "2026-07-10T16:26:23+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
