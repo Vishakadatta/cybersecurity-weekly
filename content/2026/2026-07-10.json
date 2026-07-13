@@ -2,10 +2,46 @@
   "edition": "2026-07-10",
   "year": "2026",
   "editionLabel": "Jul 3 \u2013 10, 2026",
-  "generatedAt": "2026-07-12T20:13:15.967312+00:00",
-  "subjectLine": "Breaking: China-Linked UAT-7810 Expands ORB Network, 15-Year-Old GhostLock Flaw Enables Root Access",
+  "generatedAt": "2026-07-13T17:32:40.362230+00:00",
+  "subjectLine": "BREAKING: iCagenda and Balbooa Forms Joomla Flaws Reportedly Exploited + More Inside",
   "weekIntro": "This week, we saw a significant surge in nation-state campaigns and critical vulnerabilities, including the expansion of the ORB network by China-linked UAT-7810 and the discovery of the 15-year-old GhostLock flaw. These threats pose a significant risk to global security and require immediate attention from security teams.",
   "articles": [
+    {
+      "id": "cc098c939906a0d2",
+      "title": "Forg365 PhaaS Targets Microsoft 365 with Device Code and AitM Session Theft",
+      "summary": "A new phishing-as-a-service (PhaaS) operation called Forg365 is using a combination of device code phishing, adversary-in-the-middle (AitM) tactics, antibot evasion, artificial intelligence (AI)-assis",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/forg365-phaas-targets-microsoft-365.html",
+      "tier": 2,
+      "publishedDate": "2026-07-13T18:33:33+05:30"
+    },
+    {
+      "id": "b686c465336853b9",
+      "title": "New MemGhost Attack Plants Persistent False Memories in AI Agents Through One Email",
+      "summary": "Give an AI assistant a memory and access to your inbox, and you hand an attacker a way to rewrite what it thinks it knows about you. A single email can trick that agent into saving a false \"fact\" abou",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html",
+      "tier": 2,
+      "publishedDate": "2026-07-13T19:19:48+05:30"
+    },
+    {
+      "id": "7a709a882483af01",
+      "title": "CISA warns of actively exploited RCE flaws in Joomla extensions",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are exploiting vulnerabilities in the iCagenda and Balbooa Forms extensions for Joomla to achieve remote code",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-actively-exploited-rce-flaws-in-joomla-extensions/",
+      "tier": 1,
+      "publishedDate": "2026-07-13T11:20:16-04:00"
+    },
+    {
+      "id": "c1d2b64b551f5c7e",
+      "title": "iCagenda and Balbooa Forms Joomla Flaws Reportedly Exploited as Zero-Days",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two maximum-severity security flaws impacting iCagenda and Balbooa extensions for Joomla to its Known Exploited Vulnerabiliti",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html",
+      "tier": 1,
+      "publishedDate": "2026-07-13T11:06:02+05:30"
+    },
     {
       "id": "b00083c733dc2411",
       "title": "China-Linked UAT-7810 Expands ORB Network With LONGLEASH Malware",
