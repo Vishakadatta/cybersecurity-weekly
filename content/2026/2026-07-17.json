@@ -1,0 +1,294 @@
+{
+  "edition": "2026-07-17",
+  "year": "2026",
+  "editionLabel": "Jul 10 \u2013 17, 2026",
+  "generatedAt": "2026-07-19T20:14:48.024778+00:00",
+  "subjectLine": "Microsoft Patches Record 622 Security Flaws, Including Two Zero-Days, Amidst Rising Cyber Threats",
+  "weekIntro": "This week, the cybersecurity landscape saw a plethora of significant threats and updates, with Microsoft leading the charge by patching a record number of security flaws. The sheer volume of vulnerabilities, including two zero-days, underscores the escalating challenges faced by security teams. As threats evolve, it's crucial for teams to stay vigilant and proactive.",
+  "articles": [
+    {
+      "id": "b49a657379e32ffb",
+      "title": "Microsoft Patches Record 622 Security Flaws, Including Two Zero-Days",
+      "summary": "Microsoft patched 622 security flaws, including two zero-days in SharePoint and Active Directory Federation Services.",
+      "impact": "The large number of patches poses a significant challenge for security teams to prioritize and apply updates quickly. This is particularly concerning given that two of the vulnerabilities are already being exploited.",
+      "action": "Security teams should immediately prioritize and apply patches for the two exploited zero-day vulnerabilities, CVE-2026-56155 and CVE-2026-56164, as well as other critical flaws.",
+      "sources": [
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/microsoft-patches-record-622-flaws.html"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/records-broken-patch-tuesday-raises-triage-stakes"
+        },
+        {
+          "name": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-july-2026/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/cisa-adds-exploited-sharepoint-rce-zero.html"
+        }
+      ],
+      "url": "https://krebsonsecurity.com/2026/07/microsoft-patches-a-record-570-security-flaws/",
+      "publishedDate": "2026-07-14T00:00:00-05:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows",
+        "SharePoint Server",
+        "Active Directory Federation Services",
+        "Microsoft Office",
+        "Microsoft Edge",
+        "Windows BitLocker"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "88543f91771f26b0",
+      "title": "NadMesh Botnet Targets Exposed AI Services for Cloud Keys and Kubernetes Tokens",
+      "summary": "NadMesh botnet hunts exposed AI services, compromising 3,811 unique AWS keys and Kubernetes tokens.",
+      "impact": "This botnet poses a significant threat to cloud security, allowing attackers to access sensitive data and systems. Security teams must prioritize securing exposed AI services and cloud credentials.",
+      "action": "Teams should immediately review and secure their AI services, ensuring proper firewall configurations and credential management.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/new-nadmesh-botnet-hunts-exposed-ai.html",
+      "publishedDate": "2026-07-17T22:42:23+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "ComfyUI",
+        "Ollama",
+        "n8n",
+        "Open WebUI",
+        "Langflow",
+        "Gradio"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "0c63b34da7a49315",
+      "title": "Seven Malicious Vite npm Packages Deliver RAT via Blockchain C2",
+      "summary": "Seven malicious npm packages target Vite, delivering a RAT via blockchain-based C2 infrastructure.",
+      "impact": "This software supply chain attack poses a significant risk to developers using Vite, potentially leading to credential harvesting and persistent backdoor injection. Security teams must be vigilant in monitoring npm packages used in their projects.",
+      "action": "Security teams should immediately review and remove the identified malicious packages from their projects.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/seven-malicious-vite-npm-packages-use.html",
+      "publishedDate": "2026-07-18T00:24:51+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Vite"
+      ],
+      "threat_actor": "SuccessKey",
+      "tier": 2
+    },
+    {
+      "id": "3198a5fdb24da4f9",
+      "title": "ACR Stealer Malware Steals Browser Tokens and Microsoft 365 Files",
+      "summary": "ACR Stealer malware steals browser-stored passwords, authentication tokens, and sensitive documents from Microsoft 365 and OneDrive.",
+      "impact": "This malware poses a significant threat to enterprise security, allowing attackers to access sensitive information and potentially move laterally within a network. Security teams must take immediate action to protect against ACR Stealer.",
+      "action": "Revoke tokens and rotate passwords to prevent further exploitation by the ACR Stealer malware.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/acr-stealer-uses-clickfix-lures-to.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/microsoft-warns-of-surge-in-acr-stealer-attacks-on-customers/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/acr-stealer-uses-clickfix-lures-to.html",
+      "publishedDate": "2026-07-17T14:26:39+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Microsoft 365",
+        "OneDrive",
+        "Chrome",
+        "Edge"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "6eac967cdb31574a",
+      "title": "TuxBot v3 Evolution IoT Botnet Framework Uses LLM-Assisted Development",
+      "summary": "TuxBot v3 Evolution is an IoT botnet framework developed with large language model assistance, targeting over 30 IoT device families",
+      "impact": "This botnet framework poses a significant threat to IoT devices, with capabilities to brute-force Telnet access and exploit known vulnerabilities. Security teams should be aware of the potential for more polished iterations of the malware",
+      "action": "Security teams should review their IoT device security and ensure that all devices are updated with the latest patches to prevent exploitation",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html"
+        },
+        {
+          "name": "Palo Alto Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/tuxbot-v3-evolution-iot-botnet/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/tuxbot-v3-evolution-shows-signs-of-llm.html",
+      "publishedDate": "2026-07-15T10:00:54+00:00",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "19d53f59b5a41ad7",
+      "title": "Mozilla, Google, and Adobe Release Critical Security Updates",
+      "summary": "Mozilla patches two critical Firefox flaws, CVE-2026-15718 and CVE-2026-15719, with exploit code publicly available.",
+      "impact": "The vulnerabilities pose a significant risk to users, and security teams must apply updates immediately to prevent potential attacks. Multiple products from Google and Adobe are also affected.",
+      "action": "Security teams should update Firefox to version 152.0.6, Chrome to version 150.0.7871.124/.125, and apply Adobe's latest security updates.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware-updates.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/firefox-chrome-adobe-and-vmware-updates.html",
+      "publishedDate": "2026-07-15T18:48:53+05:30",
+      "cve_ids": [
+        "CVE-2026-15718",
+        "CVE-2026-15719"
+      ],
+      "affected_systems": [
+        "Firefox",
+        "Chrome",
+        "Adobe ColdFusion",
+        "Adobe Commerce",
+        "Adobe Experience Manager",
+        "Adobe Illustrator"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "2032bdb6bd2da087",
+      "title": "Zoom Patches Critical Windows Flaw for Account Takeover",
+      "summary": "Zoom fixed CVE-2026-53412, a critical flaw allowing account takeover via network access.",
+      "impact": "This vulnerability could enable unauthorized access to Zoom accounts, posing a significant risk to security. The high-severity flaws also addressed could allow privilege escalation.",
+      "action": "Security teams should apply the latest Zoom updates to protect against these vulnerabilities.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/zoom-patches-critical-windows-flaw-that.html",
+      "publishedDate": "2026-07-16T12:52:44+05:30",
+      "cve_ids": [
+        "CVE-2026-53412"
+      ],
+      "affected_systems": [
+        "Zoom Workplace for Windows",
+        "Zoom Workplace VDI Client for Windows",
+        "Zoom Rooms for Windows",
+        "Remote Control for Zoom Contact Center for Windows"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "3b955360dbc6c0e9",
+      "title": "SonicWall SMA 1000 Zero-Days Exploited",
+      "summary": "Two zero-day vulnerabilities in SonicWall SMA 1000 series appliances are being actively exploited.",
+      "impact": "These vulnerabilities could allow attackers to execute arbitrary commands or make unintended requests, posing a significant risk to security teams. Affected teams must take immediate action to patch and assess potential compromises.",
+      "action": "Security teams should apply the available patches and perform a thorough forensic analysis to determine the presence of any indicators of compromise.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html"
+        },
+        {
+          "name": "Sophos News",
+          "url": "https://www.sophos.com/en-us/blog/sonicwall-sma1000-vulnerabilities-in-active-exploitation"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/two-sonicwall-sma-1000-zero-days.html",
+      "publishedDate": "2026-07-15T00:00:00+00:00",
+      "cve_ids": [
+        "CVE-2026-15409"
+      ],
+      "affected_systems": [
+        "SonicWall SMA 1000 series appliances",
+        "SonicWall SMA1000 appliances (Models 6210, 7210, and 8200v)"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "7dc9878f07222a0c",
+      "title": "North Korean Hackers Hide Malware in SVG Images",
+      "summary": "North Korean threat actors conceal malware in SVG images via steganography in fake coding tests",
+      "impact": "This campaign targets software developers to steal sensitive data and plunder cryptocurrency wallets, highlighting the continued threat from state-sponsored hackers. Security teams must be vigilant about social engineering attacks.",
+      "action": "Security teams should educate developers about social engineering tactics and implement robust security controls to prevent malware infections",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/north-korea-linked-hackers-hide.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/north-korea-linked-hackers-hide.html",
+      "publishedDate": "2026-07-17T19:18:56+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "North Korean threat actors",
+      "tier": 3
+    },
+    {
+      "id": "96d9ebe2a900947d",
+      "title": "GoldenEyeDog Subgroup Linked to DigiCert Breach",
+      "summary": "GoldenEyeDog subgroup CylindricalCanine breached DigiCert, stealing code-signing certificates",
+      "impact": "This breach highlights the threat of Chinese cybercrime groups to the gaming and gambling sectors, and the potential for malware to compromise sensitive systems. Security teams should be aware of the modified Gh0st RAT malware used in the attack.",
+      "action": "Security teams should review their systems for signs of Golden Gh0st RAT and RONINGLOADER malware to prevent similar breaches",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/goldeneyedog-subgroup-linked-to.html",
+      "publishedDate": "2026-07-17T22:09:16+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "GoldenEyeDog",
+      "tier": 3
+    },
+    {
+      "id": "1f8fa8831f47fff5",
+      "title": "WordPress Core Vulnerability Allows Unauthenticated Code Execution",
+      "summary": "WordPress 6.9 and 7.0 sites are vulnerable to unauthenticated code execution via a REST API bug and SQL injection",
+      "impact": "This vulnerability poses a significant risk to security teams as it can be exploited by anonymous users, potentially leading to widespread attacks. Affected sites are exposed to code execution, which can result in data breaches and other malicious activities",
+      "action": "Security teams should immediately update their WordPress installations to versions 6.9.5 or 7.0.2 to patch the vulnerability",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/new-wp2shell-wordpress-core-flaw-lets.html",
+      "publishedDate": "2026-07-18T02:50:10+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "WordPress 6.8.0-6.8.5",
+        "WordPress 6.9.0-6.9.4",
+        "WordPress 7.0.0-7.0.1"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
