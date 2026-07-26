@@ -2710,5 +2710,60 @@
     "publishedDate": "2026-07-25T13:09:38+00:00",
     "scrapedAt": "2026-07-25T16:00:35.044676+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "17ff6787fa795c5a",
+    "title": "Malvertising Sends Malware in Pieces, Then Makes the Browser Build the Executable",
+    "summary_raw": "A malvertising operation dubbed SourTrade is making victims' browsers build the final Windows executable themselves, using a legitimate Bun runtime as its base instead of serving one complete malicious file from a fixed URL.\n\nConfiant, which detailed the campaign on July 23, 2026, said it has operated since late 2024 and impersonated TradingView, Solana, and Luno to target retail traders and",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/07/malvertising-sends-malware-in-pieces.html",
+    "publishedDate": "2026-07-26T00:18:44+05:30",
+    "scrapedAt": "2026-07-26T16:02:15.906785+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "5c3b2927268feb4b",
+    "title": "GitHub, PyPI add time-absed defenses against supply chain attacks",
+    "summary_raw": "GitHub and PyPI (Python Package Index) have introduced a time-based mechanism in the Dependabot dependency management tool to protect against supply-chain attacks and to limit their impact. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/github-pypi-add-time-absed-defenses-against-supply-chain-attacks/",
+    "publishedDate": "2026-07-26T10:13:39-04:00",
+    "scrapedAt": "2026-07-26T16:02:16.962727+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a7df7ffa5e05842f",
+    "title": "Steam forum ClickFix attacks infect gamers with XMRig cryptominers",
+    "summary_raw": "Steam discussion forums are being abused in ClickFix attacks that pretend to be fixes for game and computer problems but actually infect devices with cryptominers. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/steam-forum-clickfix-attacks-infect-gamers-with-xmrig-cryptominers/",
+    "publishedDate": "2026-07-25T18:37:47-04:00",
+    "scrapedAt": "2026-07-26T16:02:16.962877+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "cc793804575824f5",
+    "title": "Scans for ESAFENET CDG 3 Document Management System Weak Logins, (Sun, Jul 26th)",
+    "summary_raw": "ESAFENET&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s CDG showed up in our data before. The company focused on secure document management and data leakage prevention solutions. The \"CDG\" stands for \"Content Data Guard\", and the product appears to be mostly targeting the Chinese market &#x5b;1&#x5d;. Sadly, like so many security products, it suffers from basic security vulnerabilities like SQL Injection, XSS, and default passwords. We have seen scanning for ESAFENET CDG before, in particular after the cross-site scripting vulnerability was made public.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33184",
+    "publishedDate": "2026-07-26T15:26:14+00:00",
+    "scrapedAt": "2026-07-26T16:02:31.799863+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "2797598c72c4c2ba",
+    "title": "A Debian general resolution on LLM usage",
+    "summary_raw": "The Debian project is <a href=\"https://www.debian.org/vote/2026/vote_002\">considering a general\nresolution</a> on the use of large language models in the creation of the\ndistribution.  There are three alternatives to consider: a\ntotal ban on LLM usage, rejecting LLMs \"<q>as far as practical</q>\", or\nexplicitly allowing LLM usage subject to a set of conditions.  The\ndiscussion period has just begun; the beginning of the voting period does\nnot yet appear to have been set.  Those who want to look over the\ndiscussion ahead of the inevitable LWN article can find it <a href=\"https://lwn.net/ml/all/til24c.3ns3jl2mkmzmn@riseup.net\">over here</a>.",
+    "source": "LWN.net",
+    "source_kind": "journalism",
+    "url": "https://lwn.net/Articles/1085314/",
+    "publishedDate": "2026-07-25T23:14:16+00:00",
+    "scrapedAt": "2026-07-26T16:03:06.926406+00:00",
+    "cve_ids_scraped": []
   }
 ]
