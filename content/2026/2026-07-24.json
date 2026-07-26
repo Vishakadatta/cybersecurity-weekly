@@ -1,0 +1,226 @@
+{
+  "edition": "2026-07-24",
+  "year": "2026",
+  "editionLabel": "Jul 17 \u2013 24, 2026",
+  "generatedAt": "2026-07-26T20:17:33.387581+00:00",
+  "subjectLine": "Critical SharePoint RCE Under Active Exploitation, LG Bans Residential Proxies from Smart TV Apps, and Azure DevOps MCP Flaw Exposes Project Data",
+  "weekIntro": "This week, we saw a surge in critical vulnerabilities under active exploitation, including a SharePoint RCE flaw and an Azure DevOps MCP bug that can hijack AI review agents. Meanwhile, LG announced plans to ban residential proxies from its smart TV apps, highlighting the ongoing struggle to balance convenience and security in the IoT landscape.",
+  "articles": [
+    {
+      "id": "e654be4a6a911d35",
+      "title": "CVE-2026-50522: Critical SharePoint RCE Under Active Exploitation",
+      "summary": "CVE-2026-50522, a critical SharePoint deserialization flaw, is under active exploitation, allowing attackers to execute code remotely.",
+      "impact": "This vulnerability poses a significant risk to SharePoint deployments, enabling attackers to gain persistent access by stealing machine keys. Security teams must take immediate action to mitigate this threat.",
+      "action": "Teams should patch and rotate credentials on exposed assets to prevent further exploitation.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/check-point-patches-exploited.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/critical-sharepoint-rce-cve-2026-50522.html",
+      "publishedDate": "2026-07-21T20:27:51+05:30",
+      "cve_ids": [
+        "CVE-2026-50522"
+      ],
+      "affected_systems": [
+        "Microsoft Office SharePoint"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "8c8679da622e5e3c",
+      "title": "Azure DevOps MCP Flaw Allows Hidden Comments to Hijack AI Review Agents",
+      "summary": "A single invisible comment in Azure DevOps can turn a reviewer's AI agent against them, leaking project data.",
+      "impact": "This flaw poses a significant risk to security teams, as it allows attackers to access sensitive project data and secrets without being detected. It also highlights the importance of input validation and security measures in AI-powered tools.",
+      "action": "Security teams should immediately review their Azure DevOps configurations and update their MCP servers to prevent potential exploitation.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/microsoft-azure-devops-mcp-flaw-lets.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/microsoft-azure-devops-mcp-flaw-lets.html",
+      "publishedDate": "2026-07-22T10:27:52+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Microsoft Azure DevOps MCP server"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "3735cdeb2403e76a",
+      "title": "Russian State-Sponsored Group Exploits Zimbra Zero-Day",
+      "summary": "A Russian state-sponsored group exploited Zimbra's CVE-2025-66376 flaw to steal email and 2FA codes.",
+      "impact": "This exploit allows attackers to access sensitive information without user interaction, bypassing traditional security measures. Security teams must prioritize patching vulnerable Zimbra Collaboration Suite instances.",
+      "action": "Security teams should immediately patch their Zimbra Collaboration Suite to version 10.0.18 or 10.1.13 to prevent exploitation of the CVE-2025-66376 vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/russian-espionage-group-exploited.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/russian-hackers-exploit-zimbra-zero-click-flaw-for-email-theft/"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/cyberattacks-data-breaches/russian-hackers-zimbra-zero-day-us-ukraine-targets"
+        },
+        {
+          "name": "Palo Alto Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/russian-webmail-espionage/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/russian-espionage-group-exploited.html",
+      "publishedDate": "2026-07-23T12:49:27-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Zimbra Collaboration Suite"
+      ],
+      "threat_actor": "Laundry Bear",
+      "tier": 1
+    },
+    {
+      "id": "6d85941f139ee717",
+      "title": "Redis Releases Security Updates for Remote Code Execution Vulnerabilities",
+      "summary": "Redis shipped seven security releases to fix RCE vulnerabilities in versions 6.2.22, 7.4.9, 8.6.4, and 8.8.0.",
+      "impact": "The vulnerabilities can lead to remote code execution, allowing attackers to gain control of affected systems. Security teams should prioritize patching to prevent potential exploits.",
+      "action": "Upgrade to the fixed release for the deployed branch and restrict RESTORE from accounts that do not strictly need it.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/kimi-k3-agents-found-redis-zero-days.html",
+      "publishedDate": "2026-07-24T12:28:27+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Redis 6.2.22",
+        "Redis 7.4.9",
+        "Redis 8.6.4",
+        "Redis 8.8.0"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "127a687d7f2f13aa",
+      "title": "LG to Ban Residential Proxies from Smart TV Apps",
+      "summary": "LG plans to suspend smart TV apps that turn TVs into always-on residential proxy nodes",
+      "impact": "This move affects over 42% of games and apps on LG's webOS store, potentially mitigating unauthorized internet traffic routing. Security teams should be aware of similar risks in other smart TV platforms.",
+      "action": "Security teams should review their smart TV app permissions and monitor for suspicious traffic routing",
+      "sources": [
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/"
+        }
+      ],
+      "url": "https://krebsonsecurity.com/2026/07/lg-to-ban-residential-proxies-from-smart-tv-apps/",
+      "publishedDate": "2026-07-22T01:10:38+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "LG smart TVs",
+        "Samsung smart TVs"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "283f9b048caadb87",
+      "title": "Certighost Exploit Exposes Active Directory to Low-Privileged Attacks",
+      "summary": "Low-privileged Active Directory users can impersonate a Domain Controller using the Certighost exploit, obtaining a certificate and authenticating as that machine.",
+      "impact": "This exploit allows attackers to retrieve the krbtgt secret through DCSync, giving them directory replication rights. Security teams must act quickly to patch vulnerable systems and prevent potential attacks.",
+      "action": "Organizations should install Microsoft's July 14 updates on AD CS hosts to prevent exploitation.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/certighost-exploit-lets-low-privileged.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/certighost-exploit-lets-low-privileged.html",
+      "publishedDate": "2026-07-24T19:45:21+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Active Directory Certificate Services (AD CS)"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "d43d2a88720f40da",
+      "title": "ChatGPT Workspace Agents Vulnerable to Rogue Agent Deployment",
+      "summary": "A critical vulnerability in OpenAI's ChatGPT Workspace Agents allows phishing links to deploy autonomous AI agents",
+      "impact": "This vulnerability poses a significant risk to organizations using ChatGPT Workspace Agents, as it could lead to unauthorized access and malicious activity. Security teams must be aware of this threat to protect their systems",
+      "action": "Security teams should ensure they have updated their ChatGPT Workspace Agents to the latest version and be cautious of phishing links",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/chatgpt-agentforger-flaw-could-deploy.html",
+      "publishedDate": "2026-07-24T17:23:55+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "OpenAI's ChatGPT Workspace Agents"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "3f283ad957ed4a4e",
+      "title": "Microsoft Bing Image Search Vulnerability Allows Command Execution",
+      "summary": "Crafted SVGs can run commands as SYSTEM on Microsoft's servers, exploiting CVE-2026-32194 and CVE-2026-32191.",
+      "impact": "This vulnerability allows attackers to execute commands on Microsoft's production image-processing workers, potentially leading to significant security breaches. Security teams should be aware of the potential for similar vulnerabilities in their own image processing systems.",
+      "action": "Teams should review their image processing systems, particularly those using ImageMagick, to ensure that attacker-controlled content cannot reach a delegate-enabled path.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/bing-images-flaws-let-crafted-svgs-run.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/bing-images-flaws-let-crafted-svgs-run.html",
+      "publishedDate": "2026-07-24T17:15:17+05:30",
+      "cve_ids": [
+        "CVE-2026-32194"
+      ],
+      "affected_systems": [
+        "Microsoft Bing Image Search",
+        "ImageMagick"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "eb3d859d30acc396",
+      "title": "Windmill Vulnerability CVE-2026-29059 Exploited in the Wild",
+      "summary": "CVE-2026-29059 allows unauthenticated path traversal, enabling arbitrary file reads on Windmill servers.",
+      "impact": "This vulnerability poses a significant risk to Windmill users, potentially exposing sensitive information. Security teams must take immediate action to mitigate this threat.",
+      "action": "Update to Windmill 1.603.3 or later to patch the vulnerability",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/hackers-exploit-windmill-flaw-to-read.html",
+      "publishedDate": "2026-07-22T18:06:36+05:30",
+      "cve_ids": [
+        "CVE-2026-29059"
+      ],
+      "affected_systems": [
+        "Windmill"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
