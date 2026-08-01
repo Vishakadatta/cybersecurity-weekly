@@ -8,7 +8,10 @@
     "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
     "publishedDate": "2026-07-30T16:49:00+00:00",
     "scrapedAt": "2026-08-01T01:05:24.925399+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Low severity consumer-only story with no security event and no focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "63ae4bfd895ffdf8",
@@ -19,7 +22,9 @@
     "url": "https://thehackernews.com/2026/08/suspected-chinese-speaking-hackers.html",
     "publishedDate": "2026-08-01T00:22:04+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228002+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "Serious breach and broadly important, but a generic incident outside our Linux/OSS focus, so capped below 10."
   },
   {
     "id": "b854b6f9db795aeb",
@@ -30,7 +35,9 @@
     "url": "https://thehackernews.com/2026/07/hollowframe-loader-deploys-matryoshka.html",
     "publishedDate": "2026-07-31T22:09:31+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228125+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 10.0,
+    "discovery_reason": "High-severity backdoored OSS package with a live exploitation story - squarely in focus."
   },
   {
     "id": "8a2c99fa930a0297",
@@ -41,7 +48,9 @@
     "url": "https://thehackernews.com/2026/07/cheap-android-tv-boxes-pose-as-phones.html",
     "publishedDate": "2026-07-31T20:15:01+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228219+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 10.0,
+    "discovery_reason": "High-severity backdoored OSS package with a live exploitation story - squarely in focus."
   },
   {
     "id": "f5592a08f538ab49",
@@ -52,7 +61,10 @@
     "url": "https://thehackernews.com/2026/07/three-recent-chrome-releases-fix-1442.html",
     "publishedDate": "2026-07-31T18:21:52+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228342+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Low severity general security story with no focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "8be23122adabfc50",
@@ -63,7 +75,9 @@
     "url": "https://thehackernews.com/2026/07/researchers-report-84-flaws-in-4g-and.html",
     "publishedDate": "2026-07-31T17:25:00+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228433+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Moderate relevance: a notable security vulnerability in a non-Linux OSS component, with some practitioner impact."
   },
   {
     "id": "5538f32502a05e67",
@@ -74,7 +88,9 @@
     "url": "https://thehackernews.com/2026/07/6-reasons-why-device-code-phishing-is.html",
     "publishedDate": "2026-07-31T16:54:59+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228520+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Moderate relevance: a notable security trend with some practitioner impact, but outside our Linux/OSS focus."
   },
   {
     "id": "e6ea006c3681d918",
@@ -85,7 +101,9 @@
     "url": "https://thehackernews.com/2026/07/chinese-hacker-commands-deepseek-via.html",
     "publishedDate": "2026-07-31T16:51:27+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228601+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Moderate relevance: a notable security trend with some practitioner impact, but outside our Linux/OSS focus."
   },
   {
     "id": "82d450915eb17be1",
@@ -96,7 +114,9 @@
     "url": "https://thehackernews.com/2026/07/anthropic-says-claude-mistook-open.html",
     "publishedDate": "2026-07-31T12:11:44+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228684+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Moderate relevance: a notable security trend with some practitioner impact, but outside our Linux/OSS focus."
   },
   {
     "id": "e63683e834969b44",
@@ -107,7 +127,10 @@
     "url": "https://thehackernews.com/2026/07/dprk-linked-macos-malvertising-uses.html",
     "publishedDate": "2026-07-30T23:48:24+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228766+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Low severity general security story with no focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "c6d3aa7464e49af6",
@@ -118,7 +141,10 @@
     "url": "https://thehackernews.com/2026/07/threatsday-ai-powered-hacking-370.html",
     "publishedDate": "2026-07-30T20:55:57+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228847+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Low severity general security story with no focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "c286bac49280d314",
@@ -129,7 +155,9 @@
     "url": "https://thehackernews.com/2026/07/azure-cosmos-db-flaw-exposed-platform.html",
     "publishedDate": "2026-07-30T19:04:09+05:30",
     "scrapedAt": "2026-08-01T01:05:26.228925+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Moderate relevance: a notable security vulnerability in a non-Linux OSS component, with some practitioner impact."
   },
   {
     "id": "691699a9f32a9b7a",
@@ -140,7 +168,10 @@
     "url": "https://thehackernews.com/2026/07/microsoft-copilot-for-word-can-copy.html",
     "publishedDate": "2026-07-30T17:24:49+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229003+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "Moderate relevance: a notable security vulnerability in a non-Linux OSS component, but with limited practitioner impact.",
+    "dropped_by_discovery": true
   },
   {
     "id": "2c60365677673e8b",
@@ -151,7 +182,10 @@
     "url": "https://thehackernews.com/2026/07/the-network-has-become-control-plane.html",
     "publishedDate": "2026-07-30T17:02:46+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229082+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "Moderate relevance: a notable security trend with some practitioner impact, but outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "4e0ec4d769a524da",
@@ -162,7 +196,9 @@
     "url": "https://thehackernews.com/2026/07/hackers-exploit-anysign4pc-via-hacked.html",
     "publishedDate": "2026-07-30T16:03:15+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229160+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 10.0,
+    "discovery_reason": "High-severity backdoored OSS package with a live exploitation story - squarely in focus."
   },
   {
     "id": "81a89a30e34cda8e",
@@ -173,7 +209,10 @@
     "url": "https://thehackernews.com/2026/07/silverfox-targets-japanese-manufacturer.html",
     "publishedDate": "2026-07-30T16:02:59+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229238+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "A generic BYOVD attack targeting a Japanese manufacturer with a RAT payload is outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "08772ea58b8c9e26",
@@ -184,7 +223,10 @@
     "url": "https://thehackernews.com/2026/07/russian-hackers-exploit-microsoft-owa.html",
     "publishedDate": "2026-07-30T13:10:48+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229330+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "A Microsoft OWA flaw exploited by Russian threat actors is outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "527dcbd9b53cc56f",
@@ -195,7 +237,10 @@
     "url": "https://thehackernews.com/2026/07/fcc-blocks-new-foreign-produced-robots.html",
     "publishedDate": "2026-07-30T12:58:43+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229416+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "An FCC decision to block foreign-produced robots and power inverters over cyber risks is a regulatory story outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "c446184a12ad0dbf",
@@ -206,7 +251,9 @@
     "url": "https://thehackernews.com/2026/07/amazon-links-debug-and-chalk-npm-hijack.html",
     "publishedDate": "2026-07-30T11:35:17+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229498+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "A hijack of the npm packages debug and chalk attributed to North Korea is a notable open-source supply-chain security incident."
   },
   {
     "id": "5b323651846af4f4",
@@ -219,7 +266,10 @@
     "scrapedAt": "2026-08-01T01:05:26.229583+00:00",
     "cve_ids_scraped": [
       "CVE-2026-20316"
-    ]
+    ],
+    "discovery_score": 1.0,
+    "discovery_reason": "A Cisco FMC zero-day actively exploited is outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "5226afe42a903f3d",
@@ -232,7 +282,9 @@
     "scrapedAt": "2026-08-01T01:05:26.229665+00:00",
     "cve_ids_scraped": [
       "CVE-2026-66066"
-    ]
+    ],
+    "discovery_score": 9.0,
+    "discovery_reason": "A critical Rails flaw allowing unauthenticated attackers to read server files via image uploads is a high-severity open-source vulnerability."
   },
   {
     "id": "19447019942cf67f",
@@ -245,7 +297,9 @@
     "scrapedAt": "2026-08-01T01:05:26.229743+00:00",
     "cve_ids_scraped": [
       "CVE-2026-59726"
-    ]
+    ],
+    "discovery_score": 10.0,
+    "discovery_reason": "A maximum-severity security flaw in Ruflo allowing unauthenticated remote code execution is a high-severity open-source vulnerability."
   },
   {
     "id": "4b55974fab2d3537",
@@ -270,7 +324,10 @@
     "url": "https://thehackernews.com/2026/07/coordinated-cyberattack-targets-30.html",
     "publishedDate": "2026-07-29T19:18:36+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229901+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "A coordinated cyberattack targeting Minnesota water systems is a generic incident outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "afe089cbd0d84735",
@@ -281,7 +338,10 @@
     "url": "https://thehackernews.com/2026/07/nine-year-fraud-campaign.html",
     "publishedDate": "2026-07-29T19:12:57+05:30",
     "scrapedAt": "2026-08-01T01:05:26.229981+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "A nine-year fraud campaign cloning Russian company sites to steal advance payments is a generic incident outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "3620c89338c9555f",
@@ -292,7 +352,10 @@
     "url": "https://thehackernews.com/2026/07/mythos-asks-right-question-it-doesnt.html",
     "publishedDate": "2026-07-29T17:45:00+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230057+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "A discussion about AI compressing exploit timelines and the need to change vulnerability management playbooks is opinion with no concrete security event.",
+    "dropped_by_discovery": true
   },
   {
     "id": "aab2a0bc8fdc6bd7",
@@ -305,7 +368,9 @@
     "scrapedAt": "2026-08-01T01:05:26.230133+00:00",
     "cve_ids_scraped": [
       "CVE-2026-10702"
-    ]
+    ],
+    "discovery_score": 8.0,
+    "discovery_reason": "A single malicious webpage visit compromising Tor Browser is a notable security incident, but outside our Linux/OSS focus."
   },
   {
     "id": "2060b2a9da54527d",
@@ -316,7 +381,9 @@
     "url": "https://thehackernews.com/2026/07/73-of-organizations-say-they-are-not.html",
     "publishedDate": "2026-07-29T16:43:10+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230212+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "A survey showing 73% of organizations are not fully ready for a major cyberattack is a broadly important general security story outside our Linux/OSS focus."
   },
   {
     "id": "6ddf8b231a40e0eb",
@@ -327,7 +394,10 @@
     "url": "https://thehackernews.com/2026/07/russia-charges-telegram-founder-pavel.html",
     "publishedDate": "2026-07-29T16:30:00+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230303+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Russia charging Telegram founder Pavel Durov with aiding terrorist activity is a generic incident outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "07443345164ec12b",
@@ -340,7 +410,9 @@
     "scrapedAt": "2026-08-01T01:05:26.230386+00:00",
     "cve_ids_scraped": [
       "CVE-2026-16232"
-    ]
+    ],
+    "discovery_score": 8.0,
+    "discovery_reason": "A public PoC released for an exploited Check Point SmartConsole authentication bypass is a notable security incident, but outside our Linux/OSS focus."
   },
   {
     "id": "01627ef4584aebe7",
@@ -351,7 +423,9 @@
     "url": "https://thehackernews.com/2026/07/openai-agent-used-exposed-credentials.html",
     "publishedDate": "2026-07-29T13:21:00+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230464+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "A breach of Hugging Face's production environment is serious, but the focus is on the AI agent's actions rather than a specific OSS package or distro component."
   },
   {
     "id": "e6e8cfad2170ead0",
@@ -364,7 +438,9 @@
     "scrapedAt": "2026-08-01T01:05:26.230543+00:00",
     "cve_ids_scraped": [
       "CVE-2026-60004"
-    ]
+    ],
+    "discovery_score": 10.0,
+    "discovery_reason": "A critical RCE vulnerability in Gitea, a self-hosted Git platform, is a high-severity issue squarely in our focus."
   },
   {
     "id": "94065782ad9a3a03",
@@ -375,7 +451,10 @@
     "url": "https://thehackernews.com/2026/07/flying-eagle-android-rat-traces-found.html",
     "publishedDate": "2026-07-29T12:37:23+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230622+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "The discovery of a RAT framework's source code is a moderate relevance story, but it's more about the malware itself than a specific OSS package or distro component.",
+    "dropped_by_discovery": true
   },
   {
     "id": "42d1eedeb284c954",
@@ -386,7 +465,9 @@
     "url": "https://thehackernews.com/2026/07/two-compromised-joyfill-npm-packages.html",
     "publishedDate": "2026-07-29T09:50:57+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230711+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 10.0,
+    "discovery_reason": "Two compromised npm packages delivering a RAT is a high-severity issue squarely in our focus."
   },
   {
     "id": "834f71b07c6bedde",
@@ -397,7 +478,10 @@
     "url": "https://thehackernews.com/2026/07/claude-ai-just-cracked-post-quantum.html",
     "publishedDate": "2026-07-29T00:29:07+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230793+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 3.0,
+    "discovery_reason": "A researcher's discovery of a faster AES attack is an interesting general security story, but it's not directly related to our focus on Linux distro security and open-source/supply-chain security.",
+    "dropped_by_discovery": true
   },
   {
     "id": "25a6aa3b9fadee7c",
@@ -408,7 +492,9 @@
     "url": "https://thehackernews.com/2026/07/tengu-botnet-reboots-compromised-linux.html",
     "publishedDate": "2026-07-28T20:31:33+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230870+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "A new Mirai-derived botnet targeting Linux devices is a serious issue, but it's more about the botnet itself than a specific OSS package or distro component."
   },
   {
     "id": "81917f51ec1dcd5c",
@@ -419,7 +505,9 @@
     "url": "https://thehackernews.com/2026/07/24650-internet-exposed-bmcs-disclose.html",
     "publishedDate": "2026-07-28T20:11:36+05:30",
     "scrapedAt": "2026-08-01T01:05:26.230951+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "The discovery of internet-exposed BMCs disclosing IPMI password hashes is a moderate relevance story, but it's more about the BMCs themselves than a specific OSS package or distro component."
   },
   {
     "id": "03429ea5c1ea7e0e",
@@ -430,7 +518,9 @@
     "url": "https://thehackernews.com/2026/07/jfrog-confirms-openai-models-exploited.html",
     "publishedDate": "2026-07-28T19:03:47+05:30",
     "scrapedAt": "2026-08-01T01:05:26.231029+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "A zero-day in self-hosted Artifactory exploited by OpenAI models is a serious issue, but it's more about the Artifactory itself than a specific OSS package or distro component."
   },
   {
     "id": "507ba26671cda44a",
@@ -443,7 +533,9 @@
     "scrapedAt": "2026-08-01T01:05:26.231107+00:00",
     "cve_ids_scraped": [
       "CVE-2026-53921"
-    ]
+    ],
+    "discovery_score": 10.0,
+    "discovery_reason": "A critical DHCPv6 flaw in OpenWrt is a high-severity issue squarely in our focus."
   },
   {
     "id": "3961ed94abdabaf2",
@@ -454,7 +546,10 @@
     "url": "https://thehackernews.com/2026/07/nimbus-manticore-deploys-nightledger.html",
     "publishedDate": "2026-07-28T17:25:20+05:30",
     "scrapedAt": "2026-08-01T01:05:26.231186+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "The attribution of a hacking group to a set of attacks is a moderate relevance story, but it's more about the group itself than a specific OSS package or distro component.",
+    "dropped_by_discovery": true
   },
   {
     "id": "2669504f3fb39551",
@@ -481,7 +576,9 @@
     "scrapedAt": "2026-08-01T01:05:26.231360+00:00",
     "cve_ids_scraped": [
       "CVE-2026-53264"
-    ]
+    ],
+    "discovery_score": 7.0,
+    "discovery_reason": "A Linux kernel exploit developed with AI assistance is a serious issue, but it's more about the exploit itself than a specific OSS package or distro component."
   },
   {
     "id": "f45f0d6e0fd0ce79",
@@ -492,7 +589,10 @@
     "url": "https://thehackernews.com/2026/07/microsoft-says-new-cybersecurity-ai.html",
     "publishedDate": "2026-07-28T11:37:22+05:30",
     "scrapedAt": "2026-08-01T01:05:26.231441+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 3.0,
+    "discovery_reason": "Microsoft's announcement of a new cybersecurity AI model is an interesting general security story, but it's not directly related to our focus on Linux distro security and open-source/supply-chain secu",
+    "dropped_by_discovery": true
   },
   {
     "id": "953c9254dfa40fb0",
@@ -505,7 +605,9 @@
     "scrapedAt": "2026-08-01T01:05:26.231519+00:00",
     "cve_ids_scraped": [
       "CVE-2026-16812"
-    ]
+    ],
+    "discovery_score": 10.0,
+    "discovery_reason": "A maximum-severity security flaw in Arista VeloCloud Orchestrator is a high-severity issue squarely in our focus."
   },
   {
     "id": "47607845e1cdf882",
@@ -516,7 +618,10 @@
     "url": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html",
     "publishedDate": "2026-07-27T23:40:05+05:30",
     "scrapedAt": "2026-08-01T01:05:26.231600+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 3.0,
+    "discovery_reason": "NVIDIA's formation of an open secure AI alliance is an interesting general security story, but it's not directly related to our focus on Linux distro security and open-source/supply-chain security.",
+    "dropped_by_discovery": true
   },
   {
     "id": "a531957225398740",
@@ -527,7 +632,10 @@
     "url": "https://thehackernews.com/2026/07/dysphoria-iot-botnet-adds-blockchain-c2.html",
     "publishedDate": "2026-07-27T22:46:28+05:30",
     "scrapedAt": "2026-08-01T01:05:26.231679+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 3.0,
+    "discovery_reason": "A botnet's design changes are not directly related to Linux or open-source security, so it's a low-severity, off-topic story.",
+    "dropped_by_discovery": true
   },
   {
     "id": "5937bd850a8b331f",
@@ -538,7 +646,9 @@
     "url": "https://thehackernews.com/2026/07/public-exploit-released-for-patched.html",
     "publishedDate": "2026-07-27T20:10:00+05:30",
     "scrapedAt": "2026-08-01T01:05:26.231755+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "A public exploit for a patched vulnerability is a high-severity, in-focus story, especially since it affects a widely-used forum software."
   },
   {
     "id": "cfc6397c37eceb5f",
@@ -549,7 +659,10 @@
     "url": "https://thehackernews.com/2026/07/weekly-recap-rogue-ai-agents-check.html",
     "publishedDate": "2026-07-27T19:40:54+05:30",
     "scrapedAt": "2026-08-01T01:05:26.231831+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "A weekly recap of various security incidents is a low-severity, off-topic story with no direct relevance to Linux or open-source security.",
+    "dropped_by_discovery": true
   },
   {
     "id": "a95dd26365a570d9",
@@ -562,7 +675,9 @@
     "scrapedAt": "2026-08-01T01:05:26.231911+00:00",
     "cve_ids_scraped": [
       "CVE-2026-27577"
-    ]
+    ],
+    "discovery_score": 8.0,
+    "discovery_reason": "A high-severity vulnerability in a workflow automation platform is a moderate-severity, in-focus story, but the severity is capped below 10 since it's not a critical, actively-exploited vulnerability."
   },
   {
     "id": "3e98a5e938668834",
@@ -573,7 +688,10 @@
     "url": "https://thehackernews.com/2026/07/operation-bluedash-deploys-level-rmm.html",
     "publishedDate": "2026-07-27T18:07:49+05:30",
     "scrapedAt": "2026-08-01T01:05:26.231989+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "A phishing campaign using legitimate RMM tools is a moderate-severity, off-topic story with some relevance to security tooling.",
+    "dropped_by_discovery": true
   },
   {
     "id": "7c7cdda876d9d947",
@@ -584,7 +702,10 @@
     "url": "https://thehackernews.com/2026/07/cruciferra-crypter-uses-byovd-and.html",
     "publishedDate": "2026-07-27T16:21:45+05:30",
     "scrapedAt": "2026-08-01T01:05:26.232065+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 2.0,
+    "discovery_reason": "A crypter service used by various threat actors is a low-severity, off-topic story with no direct relevance to Linux or open-source security.",
+    "dropped_by_discovery": true
   },
   {
     "id": "e0cbfbb17f2a64cb",
@@ -595,7 +716,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/amgen-says-cloud-data-breach-exposed-patient-health-proprietary-info/",
     "publishedDate": "2026-07-31T18:16:42-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367078+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "A data breach affecting patient health and proprietary information is a serious, but off-topic story since it's a generic cloud-misconfig incident."
   },
   {
     "id": "67fd5bee3590021f",
@@ -618,7 +741,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/online-ad-firm-adforms-script-compromised-to-steal-cryptocurrency/",
     "publishedDate": "2026-07-31T17:09:25-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367292+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "A supply-chain attack delivering cryptocurrency-stealing scripts is a moderate-severity, in-focus story, but the severity is capped below 10 since it's not a critical, actively-exploited vulnerability"
   },
   {
     "id": "dd877cf580130103",
@@ -629,7 +754,10 @@
     "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-new-gpt-56-models-are-becoming-more-cost-efficient/",
     "publishedDate": "2026-07-31T14:52:44-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367390+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "OpenAI reducing the price of its GPT-5.6 models is a low-severity, off-topic story with no direct relevance to Linux or open-source security.",
+    "dropped_by_discovery": true
   },
   {
     "id": "b06dad6c3071ec1f",
@@ -640,7 +768,10 @@
     "url": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/",
     "publishedDate": "2026-07-31T13:35:35-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367478+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 2.0,
+    "discovery_reason": "A Chinese-speaking threat actor using AI to conduct autonomous cyberattacks is a low-severity, off-topic story with no direct relevance to Linux or open-source security.",
+    "dropped_by_discovery": true
   },
   {
     "id": "0bef394e8ba869a8",
@@ -651,7 +782,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-cyberattacks-disrupting-us-water-utilities/",
     "publishedDate": "2026-07-31T12:49:49-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367558+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "CISA warning of cyberattacks disrupting U.S. water utilities is a serious, but off-topic story since it's a generic threat alert."
   },
   {
     "id": "7b0535bbb7f51436",
@@ -662,7 +795,10 @@
     "url": "https://www.bleepingcomputer.com/news/security/eset-tracks-rise-in-malicious-ai-skills-and-adaptable-malware/",
     "publishedDate": "2026-07-31T10:01:11-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367641+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "ESET tracking the rise in malicious AI skills and adaptable malware is a moderate-severity, off-topic story with some relevance to security trends.",
+    "dropped_by_discovery": true
   },
   {
     "id": "65dc8ba86df182d9",
@@ -673,7 +809,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/anthropics-claude-breached-3-orgs-uploaded-pypi-malware-during-tests/",
     "publishedDate": "2026-07-30T20:57:25-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367724+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "Anthropic's Claude model breaching 3 orgs and uploading PyPI malware is a high-severity, in-focus story, especially since it affects a widely-used open-source package repository."
   },
   {
     "id": "a91a75fed4277345",
@@ -684,7 +822,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/south-korea-fines-telco-giant-kt-39-million-for-customer-data-breach/",
     "publishedDate": "2026-07-30T18:28:30-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367804+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "South Korea fining a telco giant for a customer data breach is a serious, but off-topic story since it's a generic data protection incident."
   },
   {
     "id": "d7e6c8399f800753",
@@ -695,7 +835,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/jetbrains-warns-of-critical-teamcity-remote-code-execution-flaw/",
     "publishedDate": "2026-07-30T18:01:31-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367882+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "A critical authentication bypass vulnerability in TeamCity On-Premises is a serious issue, but it's not directly related to our focus on Linux distro security and open-source/supply-chain security."
   },
   {
     "id": "0134de5ca7fd6fb4",
@@ -706,7 +848,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/amazon-links-debug-chalk-npm-supply-chain-attacks-to-north-korean-hackers/",
     "publishedDate": "2026-07-30T14:13:24-04:00",
     "scrapedAt": "2026-08-01T01:05:27.367959+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "6d59866226821ffe",
@@ -717,7 +861,10 @@
     "url": "https://www.bleepingcomputer.com/news/security/vmware-fixes-three-critical-flaws-allowing-auth-bypass-vm-escapes/",
     "publishedDate": "2026-07-30T14:00:51-04:00",
     "scrapedAt": "2026-08-01T01:05:27.368037+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "VMware fixes three critical flaws allowing auth bypass, VM escapes, but this is outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "0426967600dbf1dd",
@@ -728,7 +875,9 @@
     "url": "https://www.bleepingcomputer.com/news/google/google-says-ai-helped-chrome-fix-1-072-security-bugs-in-two-releases/",
     "publishedDate": "2026-07-30T13:00:00-04:00",
     "scrapedAt": "2026-08-01T01:05:27.368115+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "c11337c1a2f37517",
@@ -739,7 +888,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-claims-brinks-home-breach-threatens-to-leak-stolen-data/",
     "publishedDate": "2026-07-30T12:46:15-04:00",
     "scrapedAt": "2026-08-01T01:05:27.368191+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "364711796e4c94f4",
@@ -750,7 +901,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-vishing-attacks-lead-to-chaos-ransomware-attacks/",
     "publishedDate": "2026-07-30T11:56:33-04:00",
     "scrapedAt": "2026-08-01T01:05:27.368267+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "bd509bf84507638c",
@@ -761,7 +914,9 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/cisa-issues-fresh-sbom-guidance",
     "publishedDate": "2026-07-31T18:13:11+00:00",
     "scrapedAt": "2026-08-01T01:05:29.081894+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "ca0c7c6eb80c1b32",
@@ -772,7 +927,9 @@
     "url": "https://www.darkreading.com/cyber-risk/morning-after-we-pull-root-of-trust-nobody-owns-it",
     "publishedDate": "2026-07-31T14:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.081997+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "801a09c684d34cc5",
@@ -783,7 +940,9 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/interpol-leverages-global-system-curtail-fraud-payments",
     "publishedDate": "2026-07-31T13:30:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082081+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "a137b48aaadbece7",
@@ -794,7 +953,9 @@
     "url": "https://www.darkreading.com/data-privacy/drop-platform-lets-californians-ditch-their-data",
     "publishedDate": "2026-07-31T13:19:36+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082163+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "0d32e49018effd3b",
@@ -805,7 +966,9 @@
     "url": "https://www.darkreading.com/identity-access-management-security/usa-fencing-hidden-identity-challenge-amateur-sports",
     "publishedDate": "2026-07-31T13:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082242+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "8d111d76511b47d3",
@@ -816,7 +979,9 @@
     "url": "https://www.darkreading.com/ics-ot-security/minnesota-water-utility-attacks-expose-sector-cyber-risks",
     "publishedDate": "2026-07-30T21:16:13+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082335+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "ce180f4c3f1e123f",
@@ -827,7 +992,9 @@
     "url": "https://www.darkreading.com/application-security/ai-harnesses-potential-exploit-opps",
     "publishedDate": "2026-07-30T19:40:40+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082416+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "79733f3d71d3301a",
@@ -838,7 +1005,9 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/claude-mythos-hype-vs-reality",
     "publishedDate": "2026-07-30T15:28:43+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082490+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "474e0d32a02ff8f1",
@@ -849,7 +1018,9 @@
     "url": "https://www.darkreading.com/threat-intelligence/se-asian-cybercriminal-syndicates-global-power",
     "publishedDate": "2026-07-30T01:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082569+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "dc1e50989655baaf",
@@ -860,7 +1031,9 @@
     "url": "https://www.darkreading.com/endpoint-security/flying-eagle-mobile-rat-builder-china",
     "publishedDate": "2026-07-30T00:30:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082643+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "cca8f27d1856b238",
@@ -871,7 +1044,9 @@
     "url": "https://www.darkreading.com/application-security/openai-rogue-model-claims-more-victims-beyond-hugging-face",
     "publishedDate": "2026-07-29T19:48:12+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082719+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "f7255b93e8972b28",
@@ -882,7 +1057,10 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/red-agents-vs-blue-agents-make-ai-better-defense",
     "publishedDate": "2026-07-29T19:46:20+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082793+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 3.0,
+    "discovery_reason": "Low severity general security discussion with no concrete security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "9879bc2d65c8092a",
@@ -893,7 +1071,9 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/liable-ai-agents-escape-hugging-face-breach-questions",
     "publishedDate": "2026-07-29T17:43:38+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082867+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Important general security story about AI agents escaping, but outside our Linux/OSS focus."
   },
   {
     "id": "cde40df6b7d5555a",
@@ -904,7 +1084,9 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/hugging-face-hack-lessons-cyber-defenders",
     "publishedDate": "2026-07-29T17:35:23+00:00",
     "scrapedAt": "2026-08-01T01:05:29.082937+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Important general security story about AI agents escaping, but outside our Linux/OSS focus."
   },
   {
     "id": "fbaca37715764857",
@@ -915,7 +1097,9 @@
     "url": "https://www.darkreading.com/application-security/when-appsec-scanners-become-supply-chain-attack-vector",
     "publishedDate": "2026-07-29T17:06:52+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083008+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High relevance supply-chain security story about security scanners becoming an attack vector."
   },
   {
     "id": "fc37599748211d02",
@@ -926,7 +1110,9 @@
     "url": "https://www.darkreading.com/cyber-risk/patch-resistant-rufroot-flaw-malicious-ai-agent-swarms",
     "publishedDate": "2026-07-29T14:40:33+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083081+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High relevance story about a patch-resistant vulnerability in an AI hosting platform."
   },
   {
     "id": "331be888ad818330",
@@ -937,7 +1123,9 @@
     "url": "https://www.darkreading.com/cloud-security/non-human-identity-sprawl-creates-a-new-cloud-attack-path",
     "publishedDate": "2026-07-28T21:33:23+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083152+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "Moderate relevance story about dormant nonhuman identities exposing cloud systems to hidden identity risks."
   },
   {
     "id": "60d567f96e1b4560",
@@ -948,7 +1136,9 @@
     "url": "https://www.darkreading.com/cyber-risk/flaw-exposes-data-centers-server-takeover",
     "publishedDate": "2026-07-28T21:07:55+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083225+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Important general security story about thousands of data center controllers being open to takeover, but outside our Linux/OSS focus."
   },
   {
     "id": "7df0eff93528ef6f",
@@ -959,7 +1149,9 @@
     "url": "https://www.darkreading.com/application-security/ai-agents-escape-sandboxes-old-security-rules-apply",
     "publishedDate": "2026-07-28T20:27:36+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083312+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Important general security story about AI agents escaping sandboxes, but outside our Linux/OSS focus."
   },
   {
     "id": "f4b9704380706c1b",
@@ -970,7 +1162,9 @@
     "url": "https://www.darkreading.com/cybersecurity-analytics/stronger-ai-safety-requires-peeking-inside-black-box",
     "publishedDate": "2026-07-28T20:05:32+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083388+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "Moderate relevance story about stronger AI safety requiring peeking inside the 'black box', but not directly related to our focus."
   },
   {
     "id": "af56a0a4d6169e08",
@@ -981,7 +1175,9 @@
     "url": "https://www.darkreading.com/vulnerabilities-threats/certighost-flaw-microsoft-active-directory-certificates",
     "publishedDate": "2026-07-28T16:38:48+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083463+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "Serious general security story about a high-severity vulnerability in Microsoft Active Directory certificates, but outside our Linux/OSS focus."
   },
   {
     "id": "f56a835b2422fc91",
@@ -992,7 +1188,10 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/former-citigroup-ciso-blauner-great-security-leader",
     "publishedDate": "2026-07-28T12:30:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083534+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Low relevance story about a former CISO discussing their career and the evolution of the CISO role.",
+    "dropped_by_discovery": true
   },
   {
     "id": "d7bcb7e91e700eeb",
@@ -1003,7 +1202,9 @@
     "url": "https://www.darkreading.com/cyberattacks-data-breaches/ai-agent-espionage-attack-thai-ministry-finance",
     "publishedDate": "2026-07-28T01:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083608+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Important general security story about an AI agent driving an espionage attack on the Thai Ministry of Finance, but outside our Linux/OSS focus."
   },
   {
     "id": "2555666b070b93b0",
@@ -1014,7 +1215,9 @@
     "url": "https://www.darkreading.com/endpoint-security/agentic-browsers-rewind-web-security-20-years",
     "publishedDate": "2026-07-27T21:39:09+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083680+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Important general security story about agentic browsers rewinding web security by 20 years, but outside our Linux/OSS focus."
   },
   {
     "id": "c991330f722436f7",
@@ -1025,7 +1228,9 @@
     "url": "https://www.darkreading.com/cloud-security/confused-deputy-flaws-google-cloud-microsoft-azure",
     "publishedDate": "2026-07-27T20:57:26+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083755+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Important general security story about 'Confused Deputy' flaws persisting in Google Cloud and Microsoft Azure, but outside our Linux/OSS focus."
   },
   {
     "id": "9739b8d0ff90f7ac",
@@ -1036,7 +1241,9 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/fbi-breaking-affiliate-trust-lockbit-takedown",
     "publishedDate": "2026-07-27T20:33:29+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083826+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "Serious general security story about the FBI's takedown of the LockBit ransomware group, but outside our Linux/OSS focus."
   },
   {
     "id": "dab2de440b6bb0dc",
@@ -1047,7 +1254,10 @@
     "url": "https://www.darkreading.com/endpoint-security/why-resetting-passwords-no-longer-stop-attacks",
     "publishedDate": "2026-07-27T18:39:50+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083901+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "General security advice with no specific event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "e4b1545030ea9aee",
@@ -1058,7 +1268,10 @@
     "url": "https://www.darkreading.com/threat-intelligence/adversaries-do-not-need-zero-day-they-read-your-rulebook",
     "publishedDate": "2026-07-27T17:31:18+00:00",
     "scrapedAt": "2026-08-01T01:05:29.083975+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "General security advice with no specific event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "6dd271ec1ba9fb82",
@@ -1069,7 +1282,10 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/cisos-vs-boards-myth-or-misunderstanding-",
     "publishedDate": "2026-07-24T21:31:53+00:00",
     "scrapedAt": "2026-08-01T01:05:29.084049+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "General security advice with no specific event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "1d5379610f8242cc",
@@ -1080,7 +1296,9 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/incorrigible-ai-models-resist-rehabilitation",
     "publishedDate": "2026-07-24T19:45:02+00:00",
     "scrapedAt": "2026-08-01T01:05:29.084120+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Significant AI model escape incident with some focus relevance, but not directly in our beat."
   },
   {
     "id": "25d4b49dd9d7c3bd",
@@ -1091,7 +1309,9 @@
     "url": "https://www.darkreading.com/vulnerabilities-threats/vatican-official-prayer-app-leaks-700k-pii",
     "publishedDate": "2026-07-24T13:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.084195+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "Serious PII leak with some focus relevance, but not directly in our beat."
   },
   {
     "id": "0ece18eb425dfb63",
@@ -1102,7 +1322,9 @@
     "url": "https://www.darkreading.com/cloud-security/default-azure-automation-setting-cross-tenant-identity-takeover",
     "publishedDate": "2026-07-24T12:48:16+00:00",
     "scrapedAt": "2026-08-01T01:05:29.084270+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High-severity Azure Automation configuration flaw with some focus relevance."
   },
   {
     "id": "f9a5e414332e3a1e",
@@ -1113,7 +1335,10 @@
     "url": "https://www.darkreading.com/cybersecurity-operations/europes-multilingual-reality-exposes-ai-security-gaps",
     "publishedDate": "2026-07-24T07:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:29.084358+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "General security advice with no specific event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "6c03d00c607159cd",
@@ -1124,7 +1349,9 @@
     "url": "https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/",
     "publishedDate": "2026-07-31T20:39:14+00:00",
     "scrapedAt": "2026-08-01T01:05:31.222101+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Significant malicious code release and attacks with some focus relevance, but not directly in our beat."
   },
   {
     "id": "8aad25947f59566c",
@@ -1135,7 +1362,9 @@
     "url": "https://arstechnica.com/security/2026/07/kremlin-hackers-are-exploiting-exchange-flaw-to-backdoor-unpatched-networks/",
     "publishedDate": "2026-07-30T20:57:22+00:00",
     "scrapedAt": "2026-08-01T01:05:31.222210+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 10.0,
+    "discovery_reason": "Actively-exploited Exchange server flaw with high severity and direct focus relevance."
   },
   {
     "id": "7fa27db8b3a9a50c",
@@ -1146,7 +1375,9 @@
     "url": "https://arstechnica.com/security/2026/07/mythos-uncovers-crypto-weaknesses-that-went-unknown-for-years/",
     "publishedDate": "2026-07-29T22:07:06+00:00",
     "scrapedAt": "2026-08-01T01:05:31.222319+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Significant PQC algorithm candidate compromise with some focus relevance, but not directly in our beat."
   },
   {
     "id": "4a4d812ef5a7157d",
@@ -1157,7 +1388,9 @@
     "url": "https://arstechnica.com/security/2026/07/jfrog-tries-to-spin-openai-0-day-exploit-of-its-app-into-a-success-story/",
     "publishedDate": "2026-07-28T21:36:39+00:00",
     "scrapedAt": "2026-08-01T01:05:31.222408+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Significant OpenAI hacking incident with some focus relevance, but not directly in our beat."
   },
   {
     "id": "e22923011e3eed03",
@@ -1168,7 +1401,10 @@
     "url": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
     "publishedDate": "2026-07-27T21:56:14+00:00",
     "scrapedAt": "2026-08-01T01:05:31.222488+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "General security tool announcement with no specific event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "0d056b4841cb8dfc",
@@ -1179,7 +1415,9 @@
     "url": "https://twit.tv/shows/security-now/episodes/1089",
     "publishedDate": "2026-07-28T19:13:13-07:00",
     "scrapedAt": "2026-08-01T01:05:32.523102+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Significant AI model escape incident with some focus relevance, but not directly in our beat."
   },
   {
     "id": "a9b3dc2b9164cf4f",
@@ -1190,7 +1428,10 @@
     "url": "https://www.crowdstrike.com/en-us/blog/falcon-aidr-protects-copilot-studio-agents-and-claude-code/",
     "publishedDate": "2026-07-30T00:00:00-05:00",
     "scrapedAt": "2026-08-01T01:05:33.725868+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 2.0,
+    "discovery_reason": "Low-severity product announcement with no specific event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "8331da6aaf3c0b7f",
@@ -1201,7 +1442,10 @@
     "url": "https://www.crowdstrike.com/en-us/blog/inside-astaroths-new-spambot-component/",
     "publishedDate": "2026-07-29T00:00:00-05:00",
     "scrapedAt": "2026-08-01T01:05:33.725976+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 2.0,
+    "discovery_reason": "Low-severity product announcement with no specific event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "1f3daa510792505e",
@@ -1212,7 +1456,10 @@
     "url": "https://www.crowdstrike.com/en-us/blog/new-in-falcon-cloud-security-helping-security-teams-move-faster/",
     "publishedDate": "2026-07-29T00:00:00-05:00",
     "scrapedAt": "2026-08-01T01:05:33.726060+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "No security event mentioned, completely off-topic.",
+    "dropped_by_discovery": true
   },
   {
     "id": "4021a19d1b3a6294",
@@ -1223,7 +1470,10 @@
     "url": "https://www.crowdstrike.com/en-us/blog/falcon-platform-ioas-arrive-in-falcon-next-gen-siem/",
     "publishedDate": "2026-07-29T00:00:00-05:00",
     "scrapedAt": "2026-08-01T01:05:33.726140+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "No security event mentioned, completely off-topic.",
+    "dropped_by_discovery": true
   },
   {
     "id": "fe916649b2e8b664",
@@ -1234,7 +1484,10 @@
     "url": "https://www.crowdstrike.com/en-us/blog/five-high-impact-use-cases-for-falcon-onum/",
     "publishedDate": "2026-07-27T00:00:00-05:00",
     "scrapedAt": "2026-08-01T01:05:33.726219+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "No security event mentioned, completely off-topic.",
+    "dropped_by_discovery": true
   },
   {
     "id": "9b0b4d075ba5b1af",
@@ -1245,7 +1498,10 @@
     "url": "https://www.crowdstrike.com/en-us/blog/crowdstrike-joins-the-open-secure-ai-alliance/",
     "publishedDate": "2026-07-27T00:00:00-04:00",
     "scrapedAt": "2026-08-01T01:05:33.726320+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "No security event mentioned, completely off-topic.",
+    "dropped_by_discovery": true
   },
   {
     "id": "33a019a976975b05",
@@ -1256,7 +1512,9 @@
     "url": "https://unit42.paloaltonetworks.com/xcsset-v40-malware-analysis/",
     "publishedDate": "2026-07-31T10:00:18+00:00",
     "scrapedAt": "2026-08-01T01:05:37.105712+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "MacOS malware targeting developers via Xcode, a notable security event but outside our Linux/OSS focus."
   },
   {
     "id": "bf8d747b9facafcd",
@@ -1267,7 +1525,9 @@
     "url": "https://unit42.paloaltonetworks.com/autonomous-ai-cyber-attack-campaign/",
     "publishedDate": "2026-07-30T10:00:52+00:00",
     "scrapedAt": "2026-08-01T01:05:37.105823+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Autonomous AI scanning and exploitation, a serious security event but outside our Linux/OSS focus."
   },
   {
     "id": "c499258475c56157",
@@ -1290,7 +1550,10 @@
     "url": "https://www.sophos.com/en-us/blog/2607-secai",
     "publishedDate": "2026-07-27T00:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:38.256951+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "No security event mentioned, completely off-topic.",
+    "dropped_by_discovery": true
   },
   {
     "id": "fe215ebe4783a4d8",
@@ -1301,7 +1564,10 @@
     "url": "https://www.recordedfuture.com/research/iran-violent-extremism-landscape",
     "publishedDate": "2026-07-30T00:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:39.672391+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "No security event mentioned, completely off-topic.",
+    "dropped_by_discovery": true
   },
   {
     "id": "df48290d79808c3f",
@@ -1312,7 +1578,9 @@
     "url": "https://www.recordedfuture.com/blog/ai-generated-extortion",
     "publishedDate": "2026-07-30T00:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:39.672495+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "General security advice and threat intelligence, moderate relevance."
   },
   {
     "id": "abee86f2c68d59c0",
@@ -1323,7 +1591,10 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/friday-squid-blogging-squid-helps-discover-new-marine-species.html",
     "publishedDate": "2026-07-31T21:06:46+00:00",
     "scrapedAt": "2026-08-01T01:05:40.880586+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "No security event mentioned, completely off-topic.",
+    "dropped_by_discovery": true
   },
   {
     "id": "51780d4e71c2b648",
@@ -1334,7 +1605,9 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/anthropics-opus-5-is-better-at-resisting-prompt-injection.html",
     "publishedDate": "2026-07-31T17:23:16+00:00",
     "scrapedAt": "2026-08-01T01:05:40.880673+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "General AI security research, moderate relevance."
   },
   {
     "id": "c407cc881610cd63",
@@ -1345,7 +1618,9 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/facial-recognition-at-madison-square-garden.html",
     "publishedDate": "2026-07-31T11:08:44+00:00",
     "scrapedAt": "2026-08-01T01:05:40.880748+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "General security discussion, moderate relevance."
   },
   {
     "id": "439ba611ac1ce61c",
@@ -1356,7 +1631,9 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/american-being-prosecuted-for-wiping-his-phone-before-handing-it-over-to-border-officials.html",
     "publishedDate": "2026-07-30T16:20:30+00:00",
     "scrapedAt": "2026-08-01T01:05:40.880815+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "Serious security incident and broadly important, but outside our Linux/OSS focus."
   },
   {
     "id": "386408277132feb3",
@@ -1367,7 +1644,9 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/should-you-use-ai-for-a-task-heres-a-simple-way-to-decide.html",
     "publishedDate": "2026-07-30T11:01:32+00:00",
     "scrapedAt": "2026-08-01T01:05:40.880877+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "General security advice and discussion, moderate relevance."
   },
   {
     "id": "d2be0131910e4316",
@@ -1378,7 +1657,9 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/measuring-the-tendency-of-ai-agents-to-go-rogue.html",
     "publishedDate": "2026-07-29T17:07:53+00:00",
     "scrapedAt": "2026-08-01T01:05:40.880938+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "General AI security research, moderate relevance."
   },
   {
     "id": "1a9e46cd1847acc3",
@@ -1389,7 +1670,9 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/long-lived-vulnerability-in-microsoft-secure-boot.html",
     "publishedDate": "2026-07-29T11:01:09+00:00",
     "scrapedAt": "2026-08-01T01:05:40.880998+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "A long-lived vulnerability in Microsoft Secure Boot is a serious issue, but it's outside our Linux/OSS focus."
   },
   {
     "id": "2d96909279f9ab1a",
@@ -1400,7 +1683,10 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/measuring-llms-ability-to-perform-cryptanalysis.html",
     "publishedDate": "2026-07-29T01:47:05+00:00",
     "scrapedAt": "2026-08-01T01:05:40.881061+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 3.0,
+    "discovery_reason": "A benchmark measuring AI's ability to perform mathematical cryptanalysis is a general security story, but it's not directly related to Linux or OSS.",
+    "dropped_by_discovery": true
   },
   {
     "id": "32328cb9bdc077e2",
@@ -1411,7 +1697,10 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/axon-is-another-license-plate-surveillance-company.html",
     "publishedDate": "2026-07-28T11:06:30+00:00",
     "scrapedAt": "2026-08-01T01:05:40.881130+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 2.0,
+    "discovery_reason": "A story about license plate surveillance companies is a consumer-only story with no security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "42ed4032d26d95f1",
@@ -1422,7 +1711,10 @@
     "url": "https://www.schneier.com/blog/archives/2026/07/cognyte-sells-a-mobile-cell-surveillance-van.html",
     "publishedDate": "2026-07-27T11:04:30+00:00",
     "scrapedAt": "2026-08-01T01:05:40.881190+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 2.0,
+    "discovery_reason": "A story about a mass surveillance company selling spy vans is a consumer-only story with no security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "43d3bd542698cca1",
@@ -1433,7 +1725,10 @@
     "url": "https://isc.sans.edu/diary/rss/33202",
     "publishedDate": "2026-07-31T09:22:19+00:00",
     "scrapedAt": "2026-08-01T01:05:42.169354+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "A story about metadata encoding is a moderate relevance story, but it's not a critical or high-severity issue.",
+    "dropped_by_discovery": true
   },
   {
     "id": "9d1f89ee4d2f558e",
@@ -1468,7 +1763,9 @@
     "url": "https://isc.sans.edu/diary/rss/33198",
     "publishedDate": "2026-07-30T00:42:29+00:00",
     "scrapedAt": "2026-08-01T01:05:42.169624+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "A story about an SSH bot that sizes up hardware before deploying a miner is a moderate relevance story, but it's not a critical or high-severity issue."
   },
   {
     "id": "7dab014b864a21a4",
@@ -1479,7 +1776,10 @@
     "url": "https://isc.sans.edu/diary/rss/33196",
     "publishedDate": "2026-07-29T07:32:37+00:00",
     "scrapedAt": "2026-08-01T01:05:42.169702+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "A story about Apple patches is a low-severity, off-topic story with no concrete security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "2cd53c8558fd1076",
@@ -1502,7 +1802,9 @@
     "url": "https://isc.sans.edu/diary/rss/33192",
     "publishedDate": "2026-07-28T07:42:27+00:00",
     "scrapedAt": "2026-08-01T01:05:42.169855+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "A story about an AutoIT payload injector is a moderate relevance story, but it's not a critical or high-severity issue."
   },
   {
     "id": "7f12ef154626c275",
@@ -1525,7 +1827,10 @@
     "url": "https://isc.sans.edu/diary/rss/33188",
     "publishedDate": "2026-07-27T10:04:51+00:00",
     "scrapedAt": "2026-08-01T01:05:42.170001+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "A story about Java Spring Boot heapdump scans is a moderate relevance story, but it's not a critical or high-severity issue.",
+    "dropped_by_discovery": true
   },
   {
     "id": "86df8f1a30e72ace",
@@ -1536,7 +1841,10 @@
     "url": "https://isc.sans.edu/diary/rss/33186",
     "publishedDate": "2026-07-27T02:00:02+00:00",
     "scrapedAt": "2026-08-01T01:05:42.170078+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "A podcast summary is a low-severity, off-topic story with no concrete security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "14d5d41bf6d21c45",
@@ -1579,7 +1887,9 @@
     "url": "https://ubuntu.com/security/notices/USN-8625-1",
     "publishedDate": "2026-07-30T13:38:32+00:00",
     "scrapedAt": "2026-08-01T01:05:43.624672+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "A USN-8625-1 OpenSSL vulnerability is a serious issue, but it's not a critical or high-severity issue."
   },
   {
     "id": "631ae2e22ec01b87",
@@ -1590,7 +1900,9 @@
     "url": "https://ubuntu.com/security/notices/USN-8624-1",
     "publishedDate": "2026-07-29T19:09:19+00:00",
     "scrapedAt": "2026-08-01T01:05:43.624759+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "A USN-8624-1 Sinatra vulnerability is a moderate relevance story, but it's not a critical or high-severity issue."
   },
   {
     "id": "d5e3fd67eb127df8",
@@ -1619,7 +1931,9 @@
     "cve_ids_scraped": [
       "CVE-2026-53354",
       "CVE-2026-64520"
-    ]
+    ],
+    "discovery_score": 10.0,
+    "discovery_reason": "A USN-8622-1 Linux kernel vulnerability is a high-severity issue with a live distro advisory, squarely in focus."
   },
   {
     "id": "b172e56ee0b082a0",
@@ -1634,7 +1948,9 @@
       "CVE-2023-45896",
       "CVE-2025-54505",
       "CVE-2025-54518"
-    ]
+    ],
+    "discovery_score": 10.0,
+    "discovery_reason": "A USN-8620-2 Linux kernel vulnerability is a high-severity issue with a live distro advisory, squarely in focus."
   },
   {
     "id": "ea08a936d6b8ed01",
@@ -1669,7 +1985,9 @@
       "CVE-2026-46119",
       "CVE-2026-46135",
       "CVE-2026-46243"
-    ]
+    ],
+    "discovery_score": 10.0,
+    "discovery_reason": "A USN-8615-2 Linux kernel vulnerability is a high-severity issue with a live distro advisory, squarely in focus."
   },
   {
     "id": "ab0a8e9b06a393fb",
@@ -1680,7 +1998,9 @@
     "url": "https://ubuntu.com/security/notices/USN-8561-2",
     "publishedDate": "2026-07-28T18:08:13+00:00",
     "scrapedAt": "2026-08-01T01:05:43.625196+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "Moderate severity regression in FreeRDP with a distro advisory, but not a critical issue."
   },
   {
     "id": "e7bef30ed1e6559e",
@@ -1699,7 +2019,9 @@
       "CVE-2026-58222",
       "CVE-2026-58224",
       "CVE-2026-6949"
-    ]
+    ],
+    "discovery_score": 9.0,
+    "discovery_reason": "High severity vulnerabilities in Samba with a live distro advisory - squarely in focus."
   },
   {
     "id": "1e7782d8a1ec347e",
@@ -1770,7 +2092,9 @@
     "url": "https://lists.debian.org/debian-security-announce/2026/msg00313.html",
     "publishedDate": "2026-07-28T00:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:44.976881+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Important security update for hplip with a distro advisory, but no specific details provided."
   },
   {
     "id": "ed79372a874482f5",
@@ -1865,7 +2189,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:48826",
     "publishedDate": "2026-07-31T17:54:42+00:00",
     "scrapedAt": "2026-08-01T01:05:46.225727+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "Moderate severity security update for freeipmi with a distro advisory, but not a critical issue."
   },
   {
     "id": "69520aaae6cd048f",
@@ -2152,7 +2478,10 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:48845",
     "publishedDate": "2026-07-30T17:38:34+00:00",
     "scrapedAt": "2026-08-01T01:05:46.227737+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Low severity security update for OpenJDK on Windows, outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "ef2026bcd233adb4",
@@ -2163,7 +2492,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:48118",
     "publishedDate": "2026-07-30T07:44:56+00:00",
     "scrapedAt": "2026-08-01T01:05:46.227816+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "Moderate severity security update for Red Hat Build of Apache Camel, but no specific details provided."
   },
   {
     "id": "8ccb1790994992ce",
@@ -2342,7 +2673,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:48225",
     "publishedDate": "2026-07-30T00:11:53+00:00",
     "scrapedAt": "2026-08-01T01:05:46.229028+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High severity security update for perl with a live distro advisory - squarely in focus."
   },
   {
     "id": "3e7bffdadf7f11b6",
@@ -2353,7 +2686,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:47756",
     "publishedDate": "2026-07-29T23:25:37+00:00",
     "scrapedAt": "2026-08-01T01:05:46.229106+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High severity security update for openssh with a live distro advisory - squarely in focus."
   },
   {
     "id": "bdb9cb9d27e27928",
@@ -2484,7 +2819,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:47772",
     "publishedDate": "2026-07-29T21:20:07+00:00",
     "scrapedAt": "2026-08-01T01:05:46.229992+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High severity security update for mariadb-connector-c with a live distro advisory - squarely in focus."
   },
   {
     "id": "0ef39d7d489e0a81",
@@ -2507,7 +2844,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:48021",
     "publishedDate": "2026-07-29T21:19:12+00:00",
     "scrapedAt": "2026-08-01T01:05:46.230152+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High severity security update for python-pillow with a live distro advisory - squarely in focus."
   },
   {
     "id": "f8e5221f57b638d3",
@@ -2602,7 +2941,10 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:48095",
     "publishedDate": "2026-07-29T18:04:07+00:00",
     "scrapedAt": "2026-08-01T01:05:46.230797+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 4.0,
+    "discovery_reason": "Low severity bug fix and enhancement update for RHCS, outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "37a47bcf5c9aa271",
@@ -2613,7 +2955,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:48032",
     "publishedDate": "2026-07-29T17:38:46+00:00",
     "scrapedAt": "2026-08-01T01:05:46.230874+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High severity security update for nodejs-nodemon with a live distro advisory - squarely in focus."
   },
   {
     "id": "f974ed42915f7c47",
@@ -2696,7 +3040,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:47189",
     "publishedDate": "2026-07-29T14:54:22+00:00",
     "scrapedAt": "2026-08-01T01:05:46.231449+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "Moderate severity security update for Red Hat build of Quarkus, but no specific details provided."
   },
   {
     "id": "77863de58239375c",
@@ -2743,7 +3089,9 @@
     "url": "https://access.redhat.com/errata/RHSA-2026:47620",
     "publishedDate": "2026-07-29T07:50:55+00:00",
     "scrapedAt": "2026-08-01T01:05:46.231765+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "High severity kernel security update with a live distro advisory - squarely in focus."
   },
   {
     "id": "56b3d4f3fbe6bbeb",
@@ -2754,7 +3102,10 @@
     "url": "https://lwn.net/Articles/1086555/",
     "publishedDate": "2026-07-31T17:22:27+00:00",
     "scrapedAt": "2026-08-01T01:05:47.492939+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Low severity release announcement for Servo, outside our Linux/OSS focus.",
+    "dropped_by_discovery": true
   },
   {
     "id": "f73bba2c02b3a8b3",
@@ -2765,7 +3116,10 @@
     "url": "https://lwn.net/Articles/1084869/",
     "publishedDate": "2026-07-31T13:52:38+00:00",
     "scrapedAt": "2026-08-01T01:05:47.493046+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Low severity discussion of future BPF programming practices with no concrete security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "99c7667d0b7f9681",
@@ -2776,7 +3130,9 @@
     "url": "https://lwn.net/Articles/1086489/",
     "publishedDate": "2026-07-31T13:38:04+00:00",
     "scrapedAt": "2026-08-01T01:05:47.493138+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Arch Linux disabling AUR package adoption due to malicious package adoptions is a moderate-severity, in-focus story, but the severity is capped below 10 since it's not a critical, actively-exploited v"
   },
   {
     "id": "3023428b891afe96",
@@ -2799,7 +3155,9 @@
     "url": "https://lwn.net/Articles/1085617/",
     "publishedDate": "2026-07-30T14:00:40+00:00",
     "scrapedAt": "2026-08-01T01:05:47.493342+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "Discussion of a potential system call for creating and opening directories in a single, race-free call - moderate relevance to Linux kernel development."
   },
   {
     "id": "8acccac08f21cf9b",
@@ -2836,7 +3194,10 @@
     "url": "https://lwn.net/Articles/1084315/",
     "publishedDate": "2026-07-30T00:01:09+00:00",
     "scrapedAt": "2026-08-01T01:05:47.493605+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Weekly newsletter summary with no concrete security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "4f96e872f3888b14",
@@ -2847,7 +3208,9 @@
     "url": "https://lwn.net/Articles/1083985/",
     "publishedDate": "2026-07-29T18:05:21+00:00",
     "scrapedAt": "2026-08-01T01:05:47.493688+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "Discussion of BPF debugging information for inlined functions - moderate relevance to Linux kernel development."
   },
   {
     "id": "10960028f28d427c",
@@ -2858,7 +3221,9 @@
     "url": "https://lwn.net/Articles/1086047/",
     "publishedDate": "2026-07-29T17:00:36+00:00",
     "scrapedAt": "2026-08-01T01:05:47.493772+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Release of stable kernels with a single fix for a regression - a notable Linux kernel event, but not a critical security advisory."
   },
   {
     "id": "6e00cb49118bcc4c",
@@ -2869,7 +3234,10 @@
     "url": "https://lwn.net/Articles/1085609/",
     "publishedDate": "2026-07-29T15:44:01+00:00",
     "scrapedAt": "2026-08-01T01:05:47.493854+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Proposal for a smaller GRUB version with no concrete security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "101108c235898167",
@@ -2880,7 +3248,10 @@
     "url": "https://lwn.net/Articles/1086041/",
     "publishedDate": "2026-07-29T14:38:44+00:00",
     "scrapedAt": "2026-08-01T01:05:47.493937+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Announcement of an AI policy for GCC with no concrete security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "84721797ef66dbee",
@@ -2891,7 +3262,9 @@
     "url": "https://lwn.net/Articles/1086031/",
     "publishedDate": "2026-07-29T13:11:23+00:00",
     "scrapedAt": "2026-08-01T01:05:47.494024+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 9.0,
+    "discovery_reason": "Multiple distro advisories for various packages, including the kernel, with updates available - squarely in focus."
   },
   {
     "id": "612abb2d3bc382ec",
@@ -2902,7 +3275,9 @@
     "url": "https://lwn.net/Articles/1083202/",
     "publishedDate": "2026-07-28T17:40:01+00:00",
     "scrapedAt": "2026-08-01T01:05:47.494107+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 6.0,
+    "discovery_reason": "Progress toward compiling Linux with gccrs - moderate relevance to Linux kernel development."
   },
   {
     "id": "875409dfa82c3fe4",
@@ -2913,7 +3288,10 @@
     "url": "https://lwn.net/Articles/1085894/",
     "publishedDate": "2026-07-28T14:54:01+00:00",
     "scrapedAt": "2026-08-01T01:05:47.494192+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 1.0,
+    "discovery_reason": "Release of a Wayland compositor version with no concrete security event or focus relevance.",
+    "dropped_by_discovery": true
   },
   {
     "id": "4bae8ecf85631780",
@@ -2924,7 +3302,9 @@
     "url": "https://github.blog/security/supply-chain-security/tame-dependabot-group-your-updates-slow-the-cadence-keep-security-fast/",
     "publishedDate": "2026-07-29T16:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:48.627730+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 8.0,
+    "discovery_reason": "Advice on managing Dependabot updates for security - a general security story outside our Linux/OSS focus, but with some practitioner impact."
   },
   {
     "id": "4df08dafbca922d1",
@@ -2935,7 +3315,9 @@
     "url": "https://github.blog/security/supply-chain-security/disrupting-supply-chain-attacks-on-npm-and-github-actions/",
     "publishedDate": "2026-07-28T16:00:00+00:00",
     "scrapedAt": "2026-08-01T01:05:48.627839+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 10.0,
+    "discovery_reason": "Disruption of supply chain attacks on npm and GitHub Actions - a critical open-source and supply-chain security story squarely in focus."
   },
   {
     "id": "0fa86a6b2f57fc9d",
@@ -2960,7 +3342,9 @@
     "scrapedAt": "2026-08-01T15:57:33.016733+00:00",
     "cve_ids_scraped": [
       "CVE-2026-48449"
-    ]
+    ],
+    "discovery_score": 7.0,
+    "discovery_reason": "Critical vulnerability in Adobe Campaign Classic with a CVSS score of 10.0, but not directly related to Linux or open-source software."
   },
   {
     "id": "ef832fb7175ff4cb",
@@ -2971,7 +3355,10 @@
     "url": "https://thehackernews.com/2026/08/hijacked-hotel-wi-fi-pushes-fake.html",
     "publishedDate": "2026-08-01T11:59:05+05:30",
     "scrapedAt": "2026-08-01T15:57:33.016837+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 2.0,
+    "discovery_reason": "Hijacked hotel Wi-Fi used to deliver malware with no direct relevance to Linux or open-source software.",
+    "dropped_by_discovery": true
   },
   {
     "id": "e64f30381c40bc65",
@@ -2982,7 +3369,9 @@
     "url": "https://www.bleepingcomputer.com/news/security/rails-patches-critical-active-storage-flaw-with-rce-potential/",
     "publishedDate": "2026-08-01T10:20:30-04:00",
     "scrapedAt": "2026-08-01T15:57:34.147059+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 7.0,
+    "discovery_reason": "Critical vulnerability in Rails Active Storage with RCE potential, but not directly related to Linux or open-source software."
   },
   {
     "id": "61fd8596f19aa849",
@@ -2993,7 +3382,9 @@
     "url": "https://isc.sans.edu/diary/rss/33206",
     "publishedDate": "2026-08-01T07:22:32+00:00",
     "scrapedAt": "2026-08-01T15:57:48.561409+00:00",
-    "cve_ids_scraped": []
+    "cve_ids_scraped": [],
+    "discovery_score": 5.0,
+    "discovery_reason": "discovery-bad-shape-keep"
   },
   {
     "id": "b246c5dd1da042a5",

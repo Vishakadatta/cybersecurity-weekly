@@ -6,7 +6,7 @@
       "done": []
     },
     "curate": {
-      "status": "partial",
+      "status": "complete",
       "done": []
     },
     "finalize": {
@@ -17,5 +17,5 @@
     }
   },
   "token_tally": {},
-  "updated_at": "2026-08-01T16:01:33.563612+00:00"
+  "updated_at": "2026-08-01T21:53:06.980641+00:00"
 }
