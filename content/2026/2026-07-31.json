@@ -1,0 +1,298 @@
+{
+  "edition": "2026-07-31",
+  "year": "2026",
+  "editionLabel": "Jul 24 \u2013 31, 2026",
+  "generatedAt": "2026-08-02T20:18:29.630791+00:00",
+  "subjectLine": "Breaking: Active Exploitation of Cisco Secure Firewall Management Center Zero-Day, Plus 11 More Critical Cybersecurity Stories",
+  "weekIntro": "This week, we saw a surge in high-severity vulnerabilities and active exploitation attempts, including a zero-day flaw in Cisco's Secure Firewall Management Center. Nation-state campaigns and significant open-source supply-chain security incidents also made headlines, highlighting the need for vigilance and swift action from security teams.",
+  "articles": [
+    {
+      "id": "5b323651846af4f4",
+      "title": "Cisco Secure Firewall Management Center Zero-Day Exploited",
+      "summary": "CVE-2026-20316 allows unauthenticated remote attackers to log in using static credentials",
+      "impact": "This vulnerability exposes sensitive data and could be chained with other vulnerabilities to elevate privileges. Security teams should prioritize patching to prevent exploitation",
+      "action": "Apply the provided hotfix versions of Cisco Secure FMC Software to mitigate the vulnerability",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/cisco-fmc-zero-day-actively-exploited.html",
+      "publishedDate": "2026-07-30T10:38:39+05:30",
+      "cve_ids": [
+        "CVE-2026-20316"
+      ],
+      "affected_systems": [
+        "Cisco Secure Firewall Management Center (FMC) Software"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "b06dad6c3071ec1f",
+      "title": "Chinese Threat Actor Uses DeepSeek AI for Autonomous Attacks",
+      "summary": "A Chinese-speaking threat actor used DeepSeek AI to launch autonomous attacks on exposed servers via Telegram instructions.",
+      "impact": "This autonomous attack capability poses a significant threat to security teams, as it can discover, evaluate, and attack vulnerable systems with limited human involvement. The campaign's success, despite not compromising targeted servers, confirms a functional end-to-end autonomous offensive capability.",
+      "action": "Security teams should patch exposed Langflow, n8n, and Marimo systems, and remove unnecessary public access to workflow and notebook interfaces.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/chinese-hacker-commands-deepseek-via.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hacker-uses-deepseek-ai-to-autonomously-attack-vulnerable-servers/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/chinese-hacker-commands-deepseek-via.html",
+      "publishedDate": "2026-07-31T13:35:35-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Langflow",
+        "n8n",
+        "Marimo",
+        "NetScaler"
+      ],
+      "threat_actor": "knaithe/KnYuan",
+      "tier": 1
+    },
+    {
+      "id": "08772ea58b8c9e26",
+      "title": "Russian Hackers Exploit Microsoft OWA Flaw for Persistent Mailbox Access",
+      "summary": "Russian threat actors exploit Microsoft Outlook Web Access flaw to keep mailbox access after credential rotation.",
+      "impact": "This exploit allows threat actors to maintain access to sensitive information despite credential rotation, posing a significant risk to targeted entities. Security teams must prioritize patching and monitoring for suspicious activity.",
+      "action": "Security teams should immediately apply patches for the exploited vulnerability and monitor for signs of compromise.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/russian-hackers-exploit-microsoft-owa.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/russian-hackers-exploit-microsoft-owa.html",
+      "publishedDate": "2026-07-30T13:10:48+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Microsoft Outlook Web Access (OWA)",
+        "Zimbra"
+      ],
+      "threat_actor": "Laundry Bear (aka CL-STA-1114, TA488, UNK_PitStop, and Void Blizzard)",
+      "tier": 1
+    },
+    {
+      "id": "f5592a08f538ab49",
+      "title": "Google Chrome Fixes 1,442 Security Flaws Across Three Recent Releases",
+      "summary": "Google fixed 1,442 security bugs in Chrome versions 149, 150, and 151, including 7 critical vulnerabilities.",
+      "impact": "The high volume of fixes indicates an exponential surge in vulnerability discovery, putting pressure on security teams to keep up with updates. This surge is mainly fueled by the advent of large language models.",
+      "action": "Security teams should prioritize updating Chrome to the latest version to mitigate potential risks.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/three-recent-chrome-releases-fix-1442.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/three-recent-chrome-releases-fix-1442.html",
+      "publishedDate": "2026-07-31T18:21:52+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Google Chrome"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "8be23122adabfc50",
+      "title": "84 Flaws in 4G and 5G Cores Expose Networks to Session Hijacking",
+      "summary": "Researchers found 84 flaws in 4G and 5G core networks, including a session hijacking flaw.",
+      "impact": "These vulnerabilities could trigger denial-of-service attacks and session hijacking, compromising user network sessions. Security teams must assess their 4G and 5G core networks for these flaws.",
+      "action": "Security teams should immediately review their LTE and 5G implementations for the identified vulnerabilities and apply necessary patches or mitigations.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/researchers-report-84-flaws-in-4g-and.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/researchers-report-84-flaws-in-4g-and.html",
+      "publishedDate": "2026-07-31T17:25:00+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Open5GS",
+        "OpenAirInterface",
+        "free5GC",
+        "SD-Core",
+        "eUPF"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "e64f30381c40bc65",
+      "title": "Ruby on Rails Patches Critical Active Storage Vulnerability",
+      "summary": "CVE-2026-66066 allows unauthenticated attackers to read arbitrary files via crafted image uploads",
+      "impact": "This vulnerability exposes Rails process environment and secrets, potentially enabling remote code execution or lateral movement. Affected applications use libvips for Active Storage image processing and accept image uploads from untrusted users.",
+      "action": "Security teams should upgrade to Rails 7.2.3.2, 8.0.5.1, or 8.1.3.1 and rotate every secret readable by the application process",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/rails-patches-critical-active-storage-flaw-with-rce-potential/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/critical-rails-flaw-could-let.html",
+      "publishedDate": "2026-07-29T23:40:00+05:30",
+      "cve_ids": [
+        "CVE-2026-66066"
+      ],
+      "affected_systems": [
+        "Ruby on Rails 7.0.0 through 7.2.3.1",
+        "Ruby on Rails 8.0.0 through 8.0.5",
+        "Ruby on Rails 8.1.0 through 8.1.3",
+        "Rails 6.0.0 through 6.1.7.10 with Active Storage configured to use Vips"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "6ddf8b231a40e0eb",
+      "title": "Russia Charges Telegram Founder Pavel Durov With Aiding Terrorist Activity",
+      "summary": "Russia charged Telegram founder Pavel Durov for facilitating terrorist activities",
+      "impact": "This charges against Durov may impact Telegram's operations and security measures. Security teams should be aware of potential changes in the platform's policies.",
+      "action": "Security teams should monitor Telegram's response to the charges and assess potential implications for their organization's use of the platform.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/russia-charges-telegram-founder-pavel.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/russia-charges-telegram-founder-pavel.html",
+      "publishedDate": "2026-07-29T16:30:00+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "07443345164ec12b",
+      "title": "Check Point SmartConsole Authentication Bypass Vulnerability (CVE-2026-16232) Under Active Exploitation",
+      "summary": "CVE-2026-16232 allows unauthenticated remote attackers to bypass authentication and gain admin privileges",
+      "impact": "This critical vulnerability poses a significant risk to security teams, as it can be exploited to modify security policies or configurations. Active exploitation in the wild has already been observed, targeting a handful of Check Point customers.",
+      "action": "Security teams should immediately apply the patch for CVE-2026-16232 to prevent potential exploitation",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/rapid7-releases-poc-for-exploited-check.html",
+      "publishedDate": "2026-07-29T14:28:27+05:30",
+      "cve_ids": [
+        "CVE-2026-16232"
+      ],
+      "affected_systems": [
+        "Check Point Security Management Server",
+        "Check Point Multi-Domain Security Management Server (MDS)"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "fc37599748211d02",
+      "title": "Ruflo Vulnerability Allows Unauthenticated Remote Code Execution",
+      "summary": "CVE-2026-59726 allows unauthenticated attackers to execute code on Ruflo, an AI agent platform.",
+      "impact": "This vulnerability poses a significant risk to security teams, as it can lead to unauthorized access and control of AI systems. Affected systems may be compromised even after patching due to memory tampering.",
+      "action": "Security teams should immediately update Ruflo to version 3.16.3 or later to mitigate the vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/cyber-risk/patch-resistant-rufroot-flaw-malicious-ai-agent-swarms"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/ruflo-mcp-flaw-lets-unauthenticated.html",
+      "publishedDate": "2026-07-29T14:40:33+00:00",
+      "cve_ids": [
+        "CVE-2026-59726"
+      ],
+      "affected_systems": [
+        "Ruflo"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "aab2a0bc8fdc6bd7",
+      "title": "CVE-2026-10702: Firefox JIT Flaw Compromises Tor Browser",
+      "summary": "Visiting a malicious webpage can trigger CVE-2026-10702, compromising Tor Browser",
+      "impact": "This flaw provides arbitrary code execution, posing a significant risk to user anonymity and security. Security teams should prioritize updating Firefox to prevent exploitation.",
+      "action": "Update Firefox to the latest release, at least version 151.0.3, to patch the vulnerability",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/researchers-show-single-malicious.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/researchers-show-single-malicious.html",
+      "publishedDate": "2026-07-29T17:27:00+05:30",
+      "cve_ids": [
+        "CVE-2026-10702"
+      ],
+      "affected_systems": [
+        "Tor Browser",
+        "Firefox"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "e6e8cfad2170ead0",
+      "title": "Gitea Patches Critical RCE Vulnerability CVE-2026-60004",
+      "summary": "Gitea patched a critical RCE vulnerability affecting versions 1.17 to 1.27.1, allowing attackers to run shell commands.",
+      "impact": "This vulnerability poses a significant risk to Gitea users, as it can be exploited by users with ordinary repository write access. The CVSS score of 9.8 indicates a high-severity flaw.",
+      "action": "Security teams should upgrade to Gitea version 1.27.1 to fix the vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/new-gitea-rce-lets-repository-writers.html",
+      "publishedDate": "2026-07-29T13:17:19+05:30",
+      "cve_ids": [
+        "CVE-2026-60004"
+      ],
+      "affected_systems": [
+        "Gitea"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "42d1eedeb284c954",
+      "title": "Compromised joyfill npm Packages Deliver Remote Access Trojan",
+      "summary": "Two npm packages in the @joyfill namespace have been compromised to deliver a RAT associated with the DEV#POPPER malware family.",
+      "impact": "This compromise affects Node.js applications using the @joyfill/layouts and @joyfill/components packages, posing a significant risk to system security. Security teams must take immediate action to mitigate potential threats.",
+      "action": "Security teams should immediately review and update their dependencies to avoid using the compromised @joyfill/layouts@0.1.2-2773.beta.0 and @joyfill/components@4.0.0-rc24-2773-beta.4 packages.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/07/two-compromised-joyfill-npm-packages.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/07/two-compromised-joyfill-npm-packages.html",
+      "publishedDate": "2026-07-29T09:50:57+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "@joyfill/layouts@0.1.2-2773.beta.0",
+        "@joyfill/components@4.0.0-rc24-2773-beta.4"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
