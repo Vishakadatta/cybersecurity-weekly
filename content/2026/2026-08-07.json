@@ -1,0 +1,284 @@
+{
+  "edition": "2026-08-07",
+  "year": "2026",
+  "editionLabel": "Jul 31 \u2013 Aug 7, 2026",
+  "generatedAt": "2026-08-09T19:43:08.178796+00:00",
+  "subjectLine": "CVE-2026-63077 RCE Flaw in JetBrains TeamCity Under Active Exploitation; Nation-State Campaigns Evade Detection",
+  "weekIntro": "This week, we saw a surge in critical vulnerabilities and nation-state campaigns, highlighting the evolving threat landscape. From active exploitation of CVE-2026-63077 in JetBrains TeamCity to North Korean hackers evading detection with NullReceiver tactics, security teams must remain vigilant. Our top stories this week focus on the most pressing threats to security teams.",
+  "articles": [
+    {
+      "id": "0024bf7a69c1bf7d",
+      "title": "CVE-2026-63077 RCE Flaw in JetBrains TeamCity Under Active Exploitation",
+      "summary": "CVE-2026-63077 allows unauthenticated attackers to execute arbitrary OS commands on JetBrains TeamCity servers",
+      "impact": "This vulnerability poses a significant risk to security teams, as it can lead to the exposure of sensitive data and compromise the integrity of CI/CD pipelines. Affected systems are at risk of remote code execution and data breaches.",
+      "action": "Security teams should apply the latest patches to their on-premise JetBrains TeamCity servers as soon as possible",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/cisa-flags-teamcity-cve-2026-63077-rce.html",
+      "publishedDate": "2026-08-06T12:21:43+05:30",
+      "cve_ids": [
+        "CVE-2026-63077"
+      ],
+      "affected_systems": [
+        "JetBrains TeamCity"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "8347f09debcf9426",
+      "title": "SideWinder Abuses ClickOnce Files for Rust-Based Backdoors",
+      "summary": "SideWinder threat actor uses ClickOnce files in phishing PDFs to deliver Rust-based backdoors.",
+      "impact": "This attack chain poses a significant risk to security teams, as it can establish persistence and accept remote commands. Affected systems may experience unauthorized access and data breaches.",
+      "action": "Security teams should inspect ClickOnce application files and PDF documents for suspicious activity and update their threat detection systems to recognize this new attack vector.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/threatsday-odysseus-rce-samsung-one.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/threatsday-odysseus-rce-samsung-one.html",
+      "publishedDate": "2026-08-06T20:54:31+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": "SideWinder",
+      "tier": 1
+    },
+    {
+      "id": "45c69e058649c376",
+      "title": "Poison Claude Sells Illicit Access to Anthropic's AI Models",
+      "summary": "Poison Claude offers discounted access to Anthropic's large language models, including Opus and Sonnet, by exploiting free bonus credits.",
+      "impact": "This illicit access poses a significant risk to security teams, as it can lead to unauthorized use of AI models and potential data breaches. The exposure of the API's endpoint also reveals the number of active users, highlighting the scope of the issue.",
+      "action": "Security teams should monitor for suspicious activity related to AI model access and review their cloud service configurations to prevent similar exploits.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/poison-claude-sells-discounted-claude.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/poison-claude-sells-discounted-claude.html",
+      "publishedDate": "2026-08-05T21:06:03+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "66d9046cc862a966",
+      "title": "North Korean Hackers Evade Detection with NullReceiver Tactic",
+      "summary": "North Korean hackers use NullReceiver to conceal C2 server IP addresses in Ethereum transfers, affecting npm packages 'bianira-ui' and 'fluid-type-ui'.",
+      "impact": "This tactic allows threat actors to improve operational resilience and evade detection, making it challenging for security teams to identify and mitigate threats. Security teams must be aware of this evolving technique to effectively defend against such attacks.",
+      "action": "Security teams should monitor npm packages and implement robust verification processes to prevent the installation of trojanized packages.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/trojanized-npm-packages-decode-c2-ip.html",
+      "publishedDate": "2026-08-05T19:11:27+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "bianira-ui",
+        "fluid-type-ui"
+      ],
+      "threat_actor": "North Korea",
+      "tier": 2
+    },
+    {
+      "id": "58eb3ce5569a189e",
+      "title": "Canadian Man Pleads Guilty to Snowflake Cloud Data Theft",
+      "summary": "Connor Riley Moucka pleaded guilty to hacking 165 Snowflake customer accounts",
+      "impact": "This breach highlights the importance of multi-factor authentication and password rotation for cloud storage security. Security teams must prioritize these measures to prevent similar attacks.",
+      "action": "Implement multi-factor authentication and regularly rotate passwords for all cloud storage accounts",
+      "sources": [
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/snowflake-hacker-pleads-guilty-over.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/canadian-pleads-guilty-to-snowflake-cloud-data-theft-attacks/"
+        }
+      ],
+      "url": "https://krebsonsecurity.com/2026/08/canadian-man-pleads-guilty-in-snowflake-extortions/",
+      "publishedDate": "2026-08-05T17:53:26-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Snowflake"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "5e41b682e284fc8e",
+      "title": "Nearly 800 Malicious npm Packages Deliver Cross-Platform RAT and Infostealer",
+      "summary": "Nearly 800 malicious npm packages deliver a cross-platform RAT and infostealer payload to Windows, Mac, and Linux systems.",
+      "impact": "This campaign poses a significant threat to software supply chain security, potentially compromising developer systems and stealing sensitive information. Security teams must be vigilant in monitoring npm packages and dependencies.",
+      "action": "Security teams should immediately review their npm package dependencies and remove any suspicious or malicious packages to prevent potential attacks.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/18-malicious-npm-packages-deliver-cross.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/nearly-800-malicious-npm-packages.html",
+      "publishedDate": "2026-08-04T00:13:53+05:30",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "897a98755e75ee3f",
+      "title": "18-Year-Old Linux SCTP Flaw Allows Local Root Access",
+      "summary": "A use-after-free bug in Linux's SCTP code can be exploited for local root access and container escape.",
+      "impact": "This flaw poses a significant risk to systems running older Linux kernels with SCTP enabled, potentially allowing attackers to gain root access and escape containers. Affected systems include Debian 13, Ubuntu 24.04, Rocky Linux 9, RHEL 9, and OpenCloudOS.",
+      "action": "Security teams should update to stable kernels 7.1.6, 6.18.42, 6.12.101, or 6.6.148 to mitigate the vulnerability.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/18-year-old-linux-sctp-flaw-could-let.html",
+      "publishedDate": "2026-08-07T16:40:33+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Debian 13",
+        "Ubuntu 24.04",
+        "Rocky Linux 9",
+        "RHEL 9",
+        "OpenCloudOS"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "928199c4605279db",
+      "title": "Cisco Patches Critical Vulnerabilities in SD-WAN and IOS XE Software",
+      "summary": "Cisco patches 12 vulnerabilities, including 3 with 9.9 CVSS scores, in SD-WAN and IOS XE Software.",
+      "impact": "These vulnerabilities could allow attackers to gain control of affected systems, emphasizing the need for immediate patching. Security teams must prioritize updating their Cisco SD-WAN and IOS XE Software to prevent potential exploits.",
+      "action": "Security teams should apply the necessary updates for optimal protection as soon as possible.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/cisco-patches-12-sd-wan-and-ios-xe.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/cisco-patches-12-sd-wan-and-ios-xe.html",
+      "publishedDate": "2026-08-06T22:43:15+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Cisco Catalyst SD-WAN Software",
+        "Cisco IOS XE Software"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "38709a9cedbfb550",
+      "title": "WordPress Fixes Pre-Auth XSS Flaw CVE-2026-64638",
+      "summary": "WordPress fixed a pre-authentication reflected XSS flaw affecting all versions, exploitable for PHP code execution",
+      "impact": "This high-severity vulnerability allows attackers to execute PHP code on the server, posing a significant risk to security teams. The flaw can be chained into code execution when a logged-in administrator interacts with an attacker-controlled page.",
+      "action": "Security teams should update WordPress to version 7.0.3 or later, which includes the security patch for CVE-2026-64638",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/new-wordpress-pre-auth-xss-could-lead.html",
+      "publishedDate": "2026-08-07T18:26:23+05:30",
+      "cve_ids": [
+        "CVE-2026-64638"
+      ],
+      "affected_systems": [
+        "WordPress"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "73f30e8ce33026a3",
+      "title": "Apple iCloud Private Relay Exposes Real IPs Through WebKit Proxy Bypasses",
+      "summary": "Apple's iCloud Private Relay can expose users' real IP addresses due to WebKit proxy bypasses in DNS prefetching, WebAuthn, and WebTransport.",
+      "impact": "This vulnerability compromises the privacy of iCloud Private Relay users, potentially revealing their locations and identities. Security teams should be aware of this issue, as it affects not only Safari but also other WebKit-based browsers on iOS, iPadOS, and macOS.",
+      "action": "Security teams should monitor Apple's response and updates to WebKit to address these proxy bypass vulnerabilities.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/webkit-proxy-bypasses-can-expose-real.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/webkit-proxy-bypasses-can-expose-real.html",
+      "publishedDate": "2026-08-06T17:03:08+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "iOS",
+        "iPadOS",
+        "macOS",
+        "Safari",
+        "WebKit-based browsers"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "167589835478151c",
+      "title": "Attackers Exploit SQL Injection to Run khunt Toolkit from Oracle Database",
+      "summary": "Attackers exploited a SQL injection flaw to install a post-exploitation toolkit directly inside an Oracle database.",
+      "impact": "This technique allows attackers to breach corporate networks without writing executables to disk, evading endpoint detection and response products. Security teams must inspect Oracle's internals for suspicious activity.",
+      "action": "Search Oracle installations for object names beginning with Khunt and SQL logs for KHUNT% to detect potential breaches.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/attackers-compile-khunt-inside-oracle.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-run-khunt-post-exploitation-toolkit-from-oracle-database/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/attackers-compile-khunt-inside-oracle.html",
+      "publishedDate": "2026-08-05T15:55:25-04:00",
+      "cve_ids": [],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "8cfe78538442a3b7",
+      "title": "Linux Kernel Vulnerability OVSwrap Allows Local Root Access",
+      "summary": "CVE-2026-64531: Memory corruption flaw in Linux kernel's Open vSwitch datapath allows local users to gain root access",
+      "impact": "This vulnerability poses a significant risk to security teams as it allows ordinary local users to escalate privileges to root on default-configured Linux distributions. Affected systems are vulnerable to exploitation, potentially leading to unauthorized access and data breaches.",
+      "action": "Security teams should apply the upstream fix or block future module loads of the Open vSwitch kernel module until a patched vendor kernel is available",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/08/new-ovswrap-linux-kernel-flaw-lets.html",
+      "publishedDate": "2026-08-05T17:13:27+05:30",
+      "cve_ids": [
+        "CVE-2026-64531"
+      ],
+      "affected_systems": [],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
