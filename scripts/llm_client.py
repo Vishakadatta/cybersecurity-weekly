@@ -26,11 +26,13 @@ TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
         ("groq", "llama-3.1-8b-instant"),
         ("groq", "llama-3.3-70b-versatile"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.1-flash-lite"),
     ],
     "summarize": [
         ("groq", "llama-3.3-70b-versatile"),
         ("groq", "llama-3.1-8b-instant"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.1-flash-lite"),
     ],
     "editorial": [
         ("groq", "llama-3.3-70b-versatile"),
@@ -40,10 +42,12 @@ TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
     "verify": [
         ("groq", "llama-3.3-70b-versatile"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.1-flash-lite"),
     ],
     "emergency": [
         ("groq", "llama-3.3-70b-versatile"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.1-flash-lite"),
     ],
 }
 
@@ -59,7 +63,7 @@ GEMINI_MODELS = [
 
 DEFAULT_DELAY = 5
 REQUEST_DELAY = int(os.environ.get("LLM_DELAY_SECONDS", str(DEFAULT_DELAY)))
-MAX_RETRIES = int(os.environ.get("LLM_MAX_RETRIES", "2"))
+MAX_RETRIES = int(os.environ.get("LLM_MAX_RETRIES", "3"))
 
 
 class ProjectError(Exception):
@@ -134,7 +138,7 @@ def _classify_error(e: Exception) -> str:
         return "project"
     if "spending cap" in msg and "429" in msg:
         return "project"
-    if "429" in msg or "resource_exhausted" in msg or "rate limit" in msg:
+    if "429" in msg or "resource_exhausted" in msg or "rate limit" in msg or "503" in msg or "unavailable" in msg:
         if "limit: 0" in msg:
             return "model_404"
         # Check for daily exhaustion markers

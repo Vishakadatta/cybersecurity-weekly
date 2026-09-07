@@ -1,0 +1,100 @@
+name: Model health check
+
+# Probes every model in TASK_CHAINS every 15 days.
+# Opens a GitHub issue if any model has been removed (404).
+
+on:
+  schedule:
+    # 1st and 15th of each month, 6 PM UTC (11 AM PT)
+    - cron: "0 18 1,15 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  probe-models:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install groq google-genai
+
+      - name: Run model health check
+        id: health
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          cd scripts
+          python model_health.py 2>&1 | tee /tmp/health-output.txt
+          exit_code=${PIPESTATUS[0]}
+          echo "exit_code=$exit_code" >> "$GITHUB_OUTPUT"
+          exit 0
+
+      - name: Open issue on dead models
+        if: steps.health.outputs.exit_code == '1'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const output = fs.readFileSync('/tmp/health-output.txt', 'utf8');
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              labels: 'model-dead',
+            });
+            if (existing.data.length > 0) {
+              console.log(`Existing issue already open: #${existing.data[0].number}`);
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.data[0].number,
+                body: `**Health check re-run** (${new Date().toISOString()})\n\n\`\`\`\n${output}\n\`\`\``,
+              });
+              return;
+            }
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: '[pipeline] Dead model detected — update TASK_CHAINS',
+              labels: ['model-dead', 'urgent'],
+              body: [
+                '**Model health check found removed/dead models.**',
+                '',
+                'At least one model in `scripts/llm_client.py` TASK_CHAINS is no longer available.',
+                'Update the chains before the next pipeline run fails.',
+                '',
+                '```',
+                output,
+                '```',
+                '',
+                `Run: ${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`,
+              ].join('\n'),
+            });
+
+      - name: Summary
+        if: always()
+        run: |
+          exit_code="${{ steps.health.outputs.exit_code }}"
+          {
+            echo "## Model Health Check"
+            echo ""
+            cat /tmp/health-output.txt
+            echo ""
+            if [ "$exit_code" = "0" ]; then
+              echo "**Result: All models healthy**"
+            elif [ "$exit_code" = "1" ]; then
+              echo "**Result: DEAD MODELS FOUND — action required**"
+            elif [ "$exit_code" = "2" ]; then
+              echo "**Result: Warnings (transient issues)**"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
