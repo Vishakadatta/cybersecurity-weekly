@@ -24,24 +24,24 @@ import time
 TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
     "discovery": [
         ("groq", "llama-3.1-8b-instant"),
-        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+        ("groq", "openai/gpt-oss-20b"),
     ],
     "summarize": [
-        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+        ("groq", "openai/gpt-oss-20b"),
         ("groq", "llama-3.3-70b-versatile"),
     ],
     "editorial": [
         ("groq", "llama-3.3-70b-versatile"),
-        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
-        ("gemini", "gemini-3-flash"),
+        ("groq", "openai/gpt-oss-120b"),
+        ("gemini", "gemini-3.8-flash"),
     ],
     "verify": [
-        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
+        ("groq", "openai/gpt-oss-20b"),
         ("groq", "llama-3.3-70b-versatile"),
     ],
     "emergency": [
-        ("groq", "meta-llama/llama-4-scout-17b-16e-instruct"),
-        ("gemini", "gemini-3-flash"),
+        ("groq", "openai/gpt-oss-20b"),
+        ("gemini", "gemini-3.8-flash"),
     ],
 }
 
@@ -51,7 +51,7 @@ for _task in ("editorial", "verify"):
         assert "8b" not in _model.lower(), f"8B model in {_task} chain: {_model}"
 
 GEMINI_MODELS = [
-    "gemini-3-flash",
+    "gemini-3.8-flash",
     "gemini-3.1-flash-lite",
 ]
 
@@ -350,9 +350,9 @@ def generate_json(
 
 def _build_legacy_chain(backend: str) -> list[tuple[str, str]]:
     groq_models = [
-        "meta-llama/llama-4-scout-17b-16e-instruct",
-        "meta-llama/llama-4-maverick-17b-128e-instruct",
+        "openai/gpt-oss-20b",
         "llama-3.3-70b-versatile",
+        "openai/gpt-oss-120b",
         "llama-3.1-8b-instant",
     ]
     chain: list[tuple[str, str]] = []

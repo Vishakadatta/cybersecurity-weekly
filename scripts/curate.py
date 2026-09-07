@@ -87,10 +87,10 @@ def main():
     if already_curated:
         for aid, curated in already_curated.items():
             if aid in articles_by_id:
-                articles_by_id[aid].update({
-                    k: curated[k] for k in ("title", "summary", "relevance_score", "tags")
-                    if k in curated
-                })
+                # Update with ALL curated fields — not just the 4 we previously listed.
+                # The partial whitelist silently dropped cve_ids, affected_systems,
+                # threat_actor, discovery_score, etc. on every resume run.
+                articles_by_id[aid].update(curated)
 
     uncurated_all = [a for a in articles if not a.get("summary")]
 
