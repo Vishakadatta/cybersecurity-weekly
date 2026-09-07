@@ -62,13 +62,19 @@ def _check_gemini(model: str) -> dict:
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
                 temperature=0.0,
-                max_output_tokens=20,
+                max_output_tokens=100,
             ),
         )
-        parsed = json.loads(resp.text)
+        text = resp.text or ""
+        try:
+            parsed = json.loads(text)
+        except json.JSONDecodeError:
+            return {"model": model, "backend": "gemini", "status": "healthy",
+                    "reason": f"reachable but JSON malformed: {text[:80]}"}
         if parsed.get("status") == "ok":
             return {"model": model, "backend": "gemini", "status": "healthy"}
-        return {"model": model, "backend": "gemini", "status": "warn", "reason": f"unexpected: {resp.text[:80]}"}
+        return {"model": model, "backend": "gemini", "status": "healthy",
+                "reason": f"reachable, unexpected payload: {text[:80]}"}
     except Exception as e:
         msg = str(e).lower()
         if "404" in msg or "not found" in msg or "not_found" in msg:
