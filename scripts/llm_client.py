@@ -82,6 +82,7 @@ class QuotaExhausted(Exception):
 # ---------------------------------------------------------------------------
 
 _budget: dict[str, dict] = {}
+_exhausted_models: set[str] = set()
 
 
 def get_budget() -> dict[str, dict]:
@@ -140,9 +141,10 @@ def _classify_error(e: Exception) -> str:
     if "429" in msg or "resource_exhausted" in msg or "rate limit" in msg or "503" in msg or "unavailable" in msg:
         if "limit: 0" in msg:
             return "model_404"
-        # Check for daily exhaustion markers
         if any(w in msg for w in ["daily", "day", "24h"]):
             return "daily_limit"
+        if "exceeded your current quota" in msg or "quota" in msg:
+            return "quota_exhausted"
         return "rate_limit"
     if "404" in msg or "not found" in msg or "model_not_found" in msg:
         return "model_404"
@@ -175,6 +177,10 @@ def _groq_generate(prompt: str, model: str, temperature: float):
     if client is None:
         raise RuntimeError("Groq backend unavailable (no key or SDK)")
 
+    if model in _exhausted_models:
+        print(f"  [groq:{model}] skipped (quota exhausted earlier)", flush=True)
+        return None
+
     _check_budget_before_call(model)
 
     for attempt in range(MAX_RETRIES + 1):
@@ -186,7 +192,6 @@ def _groq_generate(prompt: str, model: str, temperature: float):
                 temperature=temperature,
                 response_format={"type": "json_object"},
             )
-            # Parse rate-limit headers from the raw response if available
             raw_resp = getattr(resp, "_raw_response", None) or getattr(resp, "http_response", None)
             if raw_resp and hasattr(raw_resp, "headers"):
                 _update_budget_from_headers(model, dict(raw_resp.headers))
@@ -210,6 +215,10 @@ def _groq_generate(prompt: str, model: str, temperature: float):
             if kind == "daily_limit":
                 print(f"daily quota exhausted", flush=True)
                 raise QuotaExhausted(model, "daily") from e
+            if kind == "quota_exhausted":
+                print(f"quota exhausted, skipping for rest of run", flush=True)
+                _exhausted_models.add(model)
+                return None
             if kind == "model_404":
                 print(f"not available", flush=True)
                 return None
@@ -255,6 +264,11 @@ def _gemini_generate(prompt: str, model: str, temperature: float):
     client = _get_gemini_client()
     if client is None:
         raise RuntimeError("Gemini backend unavailable (no key or SDK)")
+
+    if model in _exhausted_models:
+        print(f"  [gemini:{model}] skipped (quota exhausted earlier)", flush=True)
+        return None
+
     from google.genai import types
 
     for attempt in range(MAX_RETRIES + 1):
@@ -283,6 +297,10 @@ def _gemini_generate(prompt: str, model: str, temperature: float):
             if kind == "project":
                 print(f"\n  FATAL: {preview}", flush=True)
                 raise ProjectError(str(e)) from e
+            if kind == "quota_exhausted":
+                print(f"quota exhausted, skipping for rest of run", flush=True)
+                _exhausted_models.add(model)
+                return None
             if kind == "model_404":
                 print(f"not available", flush=True)
                 return None
