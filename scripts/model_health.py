@@ -30,7 +30,7 @@ def _check_groq(model: str) -> dict:
             messages=[{"role": "user", "content": PROBE_PROMPT}],
             temperature=0.0,
             response_format={"type": "json_object"},
-            max_tokens=20,
+            max_tokens=50,
         )
         text = resp.choices[0].message.content
         parsed = json.loads(text)

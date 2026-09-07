@@ -2,8 +2,8 @@
 Provider-agnostic LLM client with task-based model routing.
 
 Backends (Western/allied-origin only):
-- Groq (Llama 3.3 70B, Llama 3.1 8B)
-- Gemini 3.8 Flash / 3.1 Flash-Lite (last resort)
+- Gemini (3.8 Flash primary, 3.7 Flash, 3.1 Flash-Lite fallback)
+- Groq (kept as legacy path; no non-Chinese text models available as of Sep 2026)
 
 Each task maps to a specific model fallback chain. The editorial/synthesis
 chain never contains 8B — enforced by assertion.
@@ -23,30 +23,28 @@ import time
 
 TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
     "discovery": [
-        ("groq", "llama-3.1-8b-instant"),
-        ("groq", "llama-3.3-70b-versatile"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
     "summarize": [
-        ("groq", "llama-3.3-70b-versatile"),
-        ("groq", "llama-3.1-8b-instant"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
     "editorial": [
-        ("groq", "llama-3.3-70b-versatile"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
     "verify": [
-        ("groq", "llama-3.3-70b-versatile"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
     "emergency": [
-        ("groq", "llama-3.3-70b-versatile"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
 }
@@ -58,6 +56,7 @@ for _task in ("editorial", "verify"):
 
 GEMINI_MODELS = [
     "gemini-3.8-flash",
+    "gemini-3.7-flash",
     "gemini-3.1-flash-lite",
 ]
 
@@ -355,12 +354,7 @@ def generate_json(
 
 
 def _build_legacy_chain(backend: str) -> list[tuple[str, str]]:
-    groq_models = [
-        "llama-3.3-70b-versatile",
-        "llama-3.1-8b-instant",
-    ]
     chain: list[tuple[str, str]] = []
-    chain.extend(("groq", m) for m in groq_models)
     chain.extend(("gemini", m) for m in GEMINI_MODELS)
     return chain
 
