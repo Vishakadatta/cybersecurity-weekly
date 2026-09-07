@@ -39,7 +39,6 @@ TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
     ],
     "verify": [
         ("groq", "llama-3.3-70b-versatile"),
-        ("groq", "llama-3.1-8b-instant"),
         ("gemini", "gemini-3.8-flash"),
     ],
     "emergency": [
