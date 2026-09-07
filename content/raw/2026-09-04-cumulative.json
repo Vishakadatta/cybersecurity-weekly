@@ -3269,5 +3269,16 @@
     "publishedDate": "2026-09-07T00:52:57+00:00",
     "scrapedAt": "2026-09-07T17:02:22.926395+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "6c94379fcb16ef16",
+    "title": "PEEP Turns Chrome and Edge Into Post-Compromise Backdoors for Host Command Execution",
+    "summary_raw": "Cybersecurity researchers have disclosed details of a complex Chromium-based post-exploitation toolkit called PEEP that masquerades as a bookmarks extension for the web browser.\n\n\"Requiring prior administrative or code execution access, its installer injects the extension directly into Chrome/Edge profiles, bypassing Web Store checks and user prompts by forging Chromium's own Secure Preferences",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/peep-turns-chrome-and-edge-into-post.html",
+    "publishedDate": "2026-09-07T23:42:09+05:30",
+    "scrapedAt": "2026-09-07T18:53:29.140958+00:00",
+    "cve_ids_scraped": []
   }
 ]
