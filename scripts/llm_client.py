@@ -2,8 +2,8 @@
 Provider-agnostic LLM client with task-based model routing.
 
 Backends (Western/allied-origin only):
-- Groq (Meta Llama 4 Scout, Llama 3.3 70B, Llama 3.1 8B)
-- Gemini 3 Flash / 3.1 Flash-Lite (last resort)
+- Groq (Llama 3.3 70B, Llama 3.1 8B)
+- Gemini 3.8 Flash / 3.1 Flash-Lite (last resort)
 
 Each task maps to a specific model fallback chain. The editorial/synthesis
 chain never contains 8B — enforced by assertion.
@@ -24,23 +24,26 @@ import time
 TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
     "discovery": [
         ("groq", "llama-3.1-8b-instant"),
-        ("groq", "openai/gpt-oss-20b"),
+        ("groq", "llama-3.3-70b-versatile"),
+        ("gemini", "gemini-3.8-flash"),
     ],
     "summarize": [
-        ("groq", "openai/gpt-oss-20b"),
         ("groq", "llama-3.3-70b-versatile"),
+        ("groq", "llama-3.1-8b-instant"),
+        ("gemini", "gemini-3.8-flash"),
     ],
     "editorial": [
         ("groq", "llama-3.3-70b-versatile"),
-        ("groq", "openai/gpt-oss-120b"),
         ("gemini", "gemini-3.8-flash"),
+        ("gemini", "gemini-3.1-flash-lite"),
     ],
     "verify": [
-        ("groq", "openai/gpt-oss-20b"),
         ("groq", "llama-3.3-70b-versatile"),
+        ("groq", "llama-3.1-8b-instant"),
+        ("gemini", "gemini-3.8-flash"),
     ],
     "emergency": [
-        ("groq", "openai/gpt-oss-20b"),
+        ("groq", "llama-3.3-70b-versatile"),
         ("gemini", "gemini-3.8-flash"),
     ],
 }
@@ -350,9 +353,7 @@ def generate_json(
 
 def _build_legacy_chain(backend: str) -> list[tuple[str, str]]:
     groq_models = [
-        "openai/gpt-oss-20b",
         "llama-3.3-70b-versatile",
-        "openai/gpt-oss-120b",
         "llama-3.1-8b-instant",
     ]
     chain: list[tuple[str, str]] = []
