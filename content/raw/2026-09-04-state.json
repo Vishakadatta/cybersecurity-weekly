@@ -1,0 +1,27 @@
+{
+  "edition": "2026-09-04",
+  "stages": {
+    "discover": {
+      "status": "pending",
+      "done": []
+    },
+    "curate": {
+      "status": "partial",
+      "done": [
+        "8401d2e0a25ab8e6",
+        "ef8da20e7ac771c9",
+        "3680128e67e6a5f8",
+        "913cdf66682bb19c",
+        "e74c4bc78631a253"
+      ]
+    },
+    "finalize": {
+      "status": "pending",
+      "done_clusters": [],
+      "assembly_done": false,
+      "intro_done": false
+    }
+  },
+  "token_tally": {},
+  "updated_at": "2026-09-07T17:28:43.305187+00:00"
+}
