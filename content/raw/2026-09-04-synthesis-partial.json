@@ -1,0 +1,257 @@
+{
+  "982c3ec0ec53e7a7": {
+    "id": "e74c4bc78631a253",
+    "title": "Critical Integer\u2011Overflow in VMware Workstation/Fusion Enables Host Code Execution",
+    "summary": "Broadcom patched CVE\u20112026\u201159346, a critical integer\u2011overflow in VMware Workstation and Fusion (versions 25H2/26H1) that lets a locally\u2011privileged VM user execute arbitrary code on the host via the VMXNET3 adapter. The flaw scores 9.3 CVSS and has no work\u2011around.",
+    "impact": "Attackers who gain administrative rights inside a VM can break out to the hypervisor, compromising the entire host and any other VMs running on it.",
+    "action": "Apply the VMware Workstation 26H1u1 and VMware Fusion 26H1u1 updates immediately.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/critical-vmware-workstation-and-fusion.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/critical-vmware-workstation-and-fusion.html",
+    "publishedDate": "2026-09-05T21:35:08+05:30",
+    "cve_ids": [
+      "CVE-2026-59346"
+    ],
+    "affected_systems": [
+      "VMware Workstation",
+      "VMware Fusion"
+    ],
+    "threat_actor": null
+  },
+  "0c97dcbaac2a5941": {
+    "id": "913cdf66682bb19c",
+    "title": "JetBrains Cadence Compromised via Critical TeamCity Vulnerability (CVE\u20112026\u201163077)",
+    "summary": "Unpatched TeamCity allowed threat actors to exploit CVE\u20112026\u201163077, a deserialization flaw with a CVSS 9.8 score, to breach JetBrains Cadence. Attackers accessed the Cadence server, extracted AWS credentials, and copied backup data from 2024, potentially exposing current user workloads and secrets.",
+    "impact": "Security teams must treat all Cadence executions, inputs, outputs, and stored credentials as compromised, and recognize the broader risk of unpatched CI/CD tools in supply\u2011chain attacks.",
+    "action": "Immediately revoke or rotate all AWS and other credentials stored in Cadence and audit all Cadence workloads for malicious activity.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/attackers-breached-jetbrains-cadence.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/attackers-breached-jetbrains-cadence.html",
+    "publishedDate": "2026-09-05T22:22:33+05:30",
+    "cve_ids": [
+      "CVE-2026-63077"
+    ],
+    "affected_systems": [
+      "JetBrains Cadence",
+      "TeamCity"
+    ],
+    "threat_actor": null
+  },
+  "88d106f1bb825bd4": {
+    "id": "3680128e67e6a5f8",
+    "title": "Linux kernel maintainer releases multiple stable updates fixing bugs and security issues",
+    "summary": "Greg Kroah\u2011Hartman published eight new stable Linux kernels on September\u202f2 (7.2.3, 7.1.13, 6.18.49, 6.12.108, 6.6.156, 6.1.187, 5.15.220, 5.10.269) and three additional releases on September\u202f7 (7.2.4, 6.18.50, 6.12.109). Each release bundles extensive bug fixes and security patches across the tree, and 7.1.13 marks the final update for the 7.1 series.",
+    "impact": "The updates close numerous vulnerabilities and stability regressions, reducing attack surface for systems running the listed kernel versions.",
+    "action": "Upgrade all Linux hosts to the newest stable kernel for their series immediately.",
+    "sources": [
+      {
+        "name": "LWN.net",
+        "url": "https://lwn.net/Articles/1092151/"
+      },
+      {
+        "name": "LWN.net",
+        "url": "https://lwn.net/Articles/1092984/"
+      }
+    ],
+    "url": "https://lwn.net/Articles/1092151/",
+    "publishedDate": "2026-09-02T13:28:26+00:00",
+    "cve_ids": [],
+    "affected_systems": [
+      "Linux kernel 7.2.3",
+      "Linux kernel 7.1.13",
+      "Linux kernel 6.18.49",
+      "Linux kernel 6.12.108",
+      "Linux kernel 6.6.156",
+      "Linux kernel 6.1.187",
+      "Linux kernel 5.15.220",
+      "Linux kernel 5.10.269",
+      "Linux kernel 7.2.4",
+      "Linux kernel 6.18.50",
+      "Linux kernel 6.12.109"
+    ],
+    "threat_actor": null
+  },
+  "3699d96dcf48c22c": {
+    "id": "ef8da20e7ac771c9",
+    "title": "Multiple Linux Distributions Release Broad Security Updates Across Core Packages",
+    "summary": "All major Linux distributions released a wave of security patches this week, covering critical components such as dbus-broker, freerdp, nodejs, php, openssl, kernel, and graphics libraries. The updates span AlmaLinux, Debian, Fedora, Oracle Linux, and Mageia, addressing numerous vulnerabilities without referencing specific CVE identifiers.",
+    "impact": "Unpatched systems remain exposed to potential remote code execution, privilege escalation, and denial\u2011of\u2011service attacks in the affected packages. The breadth of the updates means that many production environments may be vulnerable if the patches are not applied promptly.",
+    "action": "Apply the latest security updates from your distribution\u2019s package manager without delay.",
+    "sources": [
+      {
+        "name": "LWN.net \u2013 Security updates for Wednesday",
+        "url": "https://lwn.net/Articles/1092149/"
+      },
+      {
+        "name": "LWN.net \u2013 Security updates for Thursday",
+        "url": "https://lwn.net/Articles/1092419/"
+      },
+      {
+        "name": "LWN.net \u2013 Security updates for Friday",
+        "url": "https://lwn.net/Articles/1092659/"
+      },
+      {
+        "name": "LWN.net \u2013 Security updates for Monday",
+        "url": "https://lwn.net/Articles/1092911/"
+      }
+    ],
+    "url": "https://lwn.net/Articles/1092149/",
+    "publishedDate": "2026-09-02T13:16:54+00:00",
+    "cve_ids": [],
+    "affected_systems": [
+      "Oracle",
+      "AlmaLinux",
+      "Gentoo",
+      "Fedora",
+      "Debian"
+    ],
+    "threat_actor": null
+  },
+  "dd5a568c6d3e40c6": {
+    "id": "8401d2e0a25ab8e6",
+    "title": "Grml 2026.09 Live Distribution Released with Linux 7.1.8 Kernel and exFAT Boot Support",
+    "summary": "Grml 2026.09, codenamed \u201cH\u00e4ttiwarit\u00e4tti,\u201d ships as a Debian\u2011based live distro for sysadmins, built on upcoming Debian\u202f14 (forky). It upgrades to the Linux\u202f7.1.8 kernel, adds native exFAT boot capability, and bundles GNU Screen\u202f5.0.1, delivering newer hardware support without new security advisories.",
+    "impact": "The kernel upgrade brings broader hardware compatibility and performance improvements, but introduces no immediate security patches or CVEs to address. Existing Grml deployments remain secure, but administrators should verify compatibility with their hardware and tooling.",
+    "action": "Upgrade to Grml 2026.09 after testing boot on exFAT media and confirming kernel compatibility with critical workloads.",
+    "sources": [
+      {
+        "name": "LWN.net",
+        "url": "https://lwn.net/Articles/1092660/"
+      }
+    ],
+    "url": "https://lwn.net/Articles/1092660/",
+    "publishedDate": "2026-09-04T13:30:13+00:00",
+    "cve_ids": [],
+    "affected_systems": [
+      "Grml 2026.09",
+      "Debian 14 (forky)"
+    ],
+    "threat_actor": null
+  },
+  "21263e7ebe9581a1": {
+    "id": "6df08faed0b3ab6a",
+    "title": "FBI Launches Investigation into Dark\u2011Web Service Selling 153\u202fMillion North American Driver\u2019s Licenses",
+    "summary": "A new dark\u2011web marketplace, Nexus, is offering digital scans of over 153\u202fmillion U.S. and Canadian driver\u2019s licenses, along with millions of other ID documents, sourced from a widely used identity\u2011verification provider in Louisiana. The FBI\u2019s New Orleans field office has opened a formal probe into the data breach.",
+    "impact": "Security teams must assume that personal identification data of millions of users has been compromised, increasing the risk of identity theft, fraud, and credential stuffing attacks. Any systems that ingest or validate driver\u2019s license images from the implicated provider are now exposed to potential abuse.",
+    "action": "Immediately audit and, if necessary, replace any third\u2011party identity\u2011verification services that source driver\u2019s license images from the Louisiana provider, and monitor for suspicious activity involving compromised IDs.",
+    "sources": [
+      {
+        "name": "Krebs on Security",
+        "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/"
+      }
+    ],
+    "url": "https://krebsonsecurity.com/2026/09/fbi-probes-service-selling-153m-drivers-licenses/",
+    "publishedDate": "2026-09-01T22:40:28+00:00",
+    "cve_ids": [],
+    "affected_systems": [],
+    "threat_actor": null
+  },
+  "cc32169d9af5f5da": {
+    "id": "bc441f97e571bc08",
+    "title": "Unicode\u2011Tag \u201cASCII Smuggling\u201d Powers Massive Finance\u2011Themed Phishing Campaign",
+    "summary": "Microsoft detected a high\u2011volume phishing operation that injects invisible Unicode tag characters (U+E0000\u2011U+E007F) into finance\u2011related keywords, splitting words like \u201cfunding\u201d to bypass Office 365 email filters. The campaign peaked at 2.5\u202fmillion messages per day in February, then fell sharply after mid\u2011May, but remains active.",
+    "impact": "Security teams see traditional keyword\u2011based filters rendered ineffective against this Unicode\u2011based obfuscation, while Defender for Office 365 still blocks >99\u202f% of the mail using other signals.",
+    "action": "Update email security policies to include detection of Unicode tag characters and enable Microsoft Defender for Office 365\u2019s Unicode\u2011smuggling signatures.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/phishing-campaign-sends-millions-of.html"
+      },
+      {
+        "name": "Ars Technica Security",
+        "url": "https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/"
+      },
+      {
+        "name": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/attackers-conceal-phishing-lures-using-invisible-unicode-characters/"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/phishing-campaign-sends-millions-of.html",
+    "publishedDate": "2026-09-04T17:18:12+00:00",
+    "cve_ids": [],
+    "affected_systems": [
+      "Microsoft Defender for Office 365",
+      "Microsoft 365 Exchange Online",
+      "ActiveCampaign email\u2011marketing platform"
+    ],
+    "threat_actor": null
+  },
+  "c95e648fd687a543": {
+    "id": "d7ed15b40cfe8186",
+    "title": "PostgreSQL Patches 12\u2011Year\u2011Old Logical Decoding Vulnerability (CVE\u20112026\u20116471)",
+    "summary": "PostgreSQL released updates fixing CVE\u20112026\u20116471, a critical 7.2\u2011rated flaw that lets any REPLICATION\u2011enabled account execute arbitrary OS\u2011level code via logical decoding output plugins. The bug, present since logical decoding debuted in version 9.4 (2014), is mitigated by a new whitelist parameter restricting loadable plugin libraries.",
+    "impact": "Attackers can compromise database hosts by abusing replication users in CDC, backup, or standby setups, potentially gaining full system control.",
+    "action": "Upgrade to PostgreSQL 18.6, 17.11, 16.15, 15.19, or 14.24 (or later) and verify the output_plugin_libraries whitelist is configured.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/postgresql-fixes-12-year-old-logical.html",
+    "publishedDate": "2026-09-04T20:50:19+05:30",
+    "cve_ids": [
+      "CVE-2026-6471"
+    ],
+    "affected_systems": [
+      "PostgreSQL < 18.6",
+      "PostgreSQL < 17.11",
+      "PostgreSQL < 16.15",
+      "PostgreSQL < 15.19",
+      "PostgreSQL < 14.24"
+    ],
+    "threat_actor": null
+  },
+  "018c9450de11b26e": {
+    "id": "b1ea25ffc3704bdb",
+    "title": "Ted Backdoor Embedded in Compromised HAProxy Binaries Enables Stealth Web Traffic Interception",
+    "summary": "A custom Linux toolkit named Ted was compiled into trojanized HAProxy load balancers at two South Korean firms, allowing attackers to hijack HTTP requests, serve forged pages, and exfiltrate data via hidden C2 channels that bypass backend logs and HAProxy statistics.",
+    "impact": "Security teams must treat HAProxy binaries as potential infection vectors, as the implant can silently intercept and modify traffic while evading traditional monitoring.",
+    "action": "Audit all HAProxy binaries for unauthorized modifications, verify code signatures, and redeploy from trusted sources while tightening host execution controls.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/new-ted-backdoor-hides-inside-victims.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/new-ted-backdoor-hides-inside-victims.html",
+    "publishedDate": "2026-09-04T20:21:13+05:30",
+    "cve_ids": [],
+    "affected_systems": [
+      "HAProxy"
+    ],
+    "threat_actor": "North Korean state-sponsored actors"
+  },
+  "d4908d4411cee4ef": {
+    "id": "7eb26d7003dcb87e",
+    "title": "Over 440,000 Exploit Attempts Target Critical WordPress Super Forms and Elementor Pro RCE Flaws",
+    "summary": "Threat actors have launched more than 440,000 exploit attempts against two critical WordPress plugin vulnerabilities\u2014CVE-2026-14894 in Super Forms and CVE-2026-32475 in Elementor Pro\u2014allowing unauthenticated file uploads that lead to remote code execution.",
+    "impact": "These attacks can drop PHP web shells, create admin accounts, exfiltrate data, and fully compromise WordPress sites using the vulnerable plugins.",
+    "action": "Update Super Forms to\u202f6.3.314 and Elementor Pro to\u202f4.2.2 immediately, and block malicious POST requests to admin-ajax.php.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/over-440000-exploit-attempts-target.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/over-440000-exploit-attempts-target.html",
+    "publishedDate": "2026-09-04T14:18:45+05:30",
+    "cve_ids": [
+      "CVE-2026-14894",
+      "CVE-2026-32475"
+    ],
+    "affected_systems": [
+      "WordPress Super Forms plugin",
+      "WordPress Elementor Pro plugin"
+    ],
+    "threat_actor": null
+  }
+}

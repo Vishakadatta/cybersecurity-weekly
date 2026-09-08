@@ -16,12 +16,23 @@
       ]
     },
     "finalize": {
-      "status": "pending",
-      "done_clusters": [],
+      "status": "partial",
+      "done_clusters": [
+        "982c3ec0ec53e7a7",
+        "0c97dcbaac2a5941",
+        "88d106f1bb825bd4",
+        "3699d96dcf48c22c",
+        "dd5a568c6d3e40c6",
+        "21263e7ebe9581a1",
+        "cc32169d9af5f5da",
+        "c95e648fd687a543",
+        "018c9450de11b26e",
+        "d4908d4411cee4ef"
+      ],
       "assembly_done": false,
       "intro_done": false
     }
   },
   "token_tally": {},
-  "updated_at": "2026-09-08T05:03:57.317464+00:00"
+  "updated_at": "2026-09-08T05:07:49.025127+00:00"
 }
