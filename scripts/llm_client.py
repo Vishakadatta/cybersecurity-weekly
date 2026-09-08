@@ -21,28 +21,38 @@ import time
 # Each task defines a chain of (backend, model) pairs tried in order.
 # "groq" models are tried before any "gemini" model per project policy.
 
+# Models that break under Groq's strict json_object response_format.
+NO_JSON_MODE = {"openai/gpt-oss-20b", "openai/gpt-oss-120b"}
+
 TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
     "discovery": [
+        ("groq", "openai/gpt-oss-20b"),
+        ("groq", "openai/gpt-oss-120b"),
         ("gemini", "gemini-3.8-flash"),
         ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
     "summarize": [
+        ("groq", "openai/gpt-oss-120b"),
+        ("groq", "openai/gpt-oss-20b"),
         ("gemini", "gemini-3.8-flash"),
         ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
     "editorial": [
+        ("groq", "openai/gpt-oss-120b"),
         ("gemini", "gemini-3.8-flash"),
         ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
     "verify": [
+        ("groq", "openai/gpt-oss-120b"),
         ("gemini", "gemini-3.8-flash"),
         ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
     ],
     "emergency": [
+        ("groq", "openai/gpt-oss-120b"),
         ("gemini", "gemini-3.8-flash"),
         ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
@@ -125,7 +135,46 @@ def _parse_json(text: str):
     try:
         return json.loads(cleaned)
     except json.JSONDecodeError:
+        pass
+    return _extract_json(cleaned)
+
+
+def _extract_json(text: str):
+    """Pull the first balanced {...} or [...] out of prose-wrapped output."""
+    start = min(
+        (i for i in (text.find("{"), text.find("[")) if i != -1),
+        default=-1,
+    )
+    if start == -1:
         return None
+    opener = text[start]
+    closer = "}" if opener == "{" else "]"
+    depth = 0
+    in_string = False
+    escaped = False
+    for i in range(start, len(text)):
+        ch = text[i]
+        if escaped:
+            escaped = False
+            continue
+        if ch == "\\":
+            escaped = True
+            continue
+        if ch == '"':
+            in_string = not in_string
+            continue
+        if in_string:
+            continue
+        if ch == opener:
+            depth += 1
+        elif ch == closer:
+            depth -= 1
+            if depth == 0:
+                try:
+                    return json.loads(text[start:i + 1])
+                except json.JSONDecodeError:
+                    return None
+    return None
 
 
 def _classify_error(e: Exception) -> str:
@@ -186,12 +235,16 @@ def _groq_generate(prompt: str, model: str, temperature: float):
     for attempt in range(MAX_RETRIES + 1):
         try:
             print(f"  [groq:{model} attempt {attempt + 1}/{MAX_RETRIES + 1}]", end=" ", flush=True)
-            resp = client.chat.completions.create(
-                model=model,
-                messages=[{"role": "user", "content": prompt}],
-                temperature=temperature,
-                response_format={"type": "json_object"},
-            )
+            kwargs = {
+                "model": model,
+                "messages": [{"role": "user", "content": prompt}],
+                "temperature": temperature,
+            }
+            # GPT-OSS returns 400 "Failed to validate JSON" under Groq's strict
+            # json_object mode; prompt-level JSON + _parse_json handles it fine.
+            if model not in NO_JSON_MODE:
+                kwargs["response_format"] = {"type": "json_object"}
+            resp = client.chat.completions.create(**kwargs)
             raw_resp = getattr(resp, "_raw_response", None) or getattr(resp, "http_response", None)
             if raw_resp and hasattr(raw_resp, "headers"):
                 _update_budget_from_headers(model, dict(raw_resp.headers))

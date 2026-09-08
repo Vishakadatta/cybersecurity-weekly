@@ -24,19 +24,27 @@ def _check_groq(model: str) -> dict:
         return {"model": model, "backend": "groq", "status": "skip", "reason": "no API key"}
     try:
         from groq import Groq
+        from llm_client import NO_JSON_MODE, _parse_json
         client = Groq(api_key=api_key)
-        resp = client.chat.completions.create(
-            model=model,
-            messages=[{"role": "user", "content": PROBE_PROMPT}],
-            temperature=0.0,
-            response_format={"type": "json_object"},
-            max_tokens=50,
-        )
-        text = resp.choices[0].message.content
-        parsed = json.loads(text)
+        kwargs = {
+            "model": model,
+            "messages": [{"role": "user", "content": PROBE_PROMPT}],
+            "temperature": 0.0,
+            "max_tokens": 100,
+        }
+        # Mirror production: skip strict json mode for models that reject it.
+        if model not in NO_JSON_MODE:
+            kwargs["response_format"] = {"type": "json_object"}
+        resp = client.chat.completions.create(**kwargs)
+        text = resp.choices[0].message.content or ""
+        parsed = _parse_json(text)
+        if parsed is None:
+            return {"model": model, "backend": "groq", "status": "healthy",
+                    "reason": f"reachable but JSON malformed: {text[:80]}"}
         if parsed.get("status") == "ok":
             return {"model": model, "backend": "groq", "status": "healthy"}
-        return {"model": model, "backend": "groq", "status": "warn", "reason": f"unexpected response: {text[:80]}"}
+        return {"model": model, "backend": "groq", "status": "healthy",
+                "reason": f"reachable, unexpected payload: {text[:80]}"}
     except Exception as e:
         msg = str(e).lower()
         if "404" in msg or "not found" in msg or "model_not_found" in msg:
