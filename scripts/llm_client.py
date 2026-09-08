@@ -26,8 +26,8 @@ NO_JSON_MODE = {"openai/gpt-oss-20b", "openai/gpt-oss-120b"}
 
 TASK_CHAINS: dict[str, list[tuple[str, str]]] = {
     "discovery": [
-        ("groq", "openai/gpt-oss-20b"),
         ("groq", "openai/gpt-oss-120b"),
+        ("groq", "openai/gpt-oss-20b"),
         ("gemini", "gemini-3.8-flash"),
         ("gemini", "gemini-3.7-flash"),
         ("gemini", "gemini-3.1-flash-lite"),
