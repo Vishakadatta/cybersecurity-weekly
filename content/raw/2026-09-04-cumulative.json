@@ -3544,5 +3544,16 @@
     "publishedDate": "2026-09-08T01:02:11+00:00",
     "scrapedAt": "2026-09-08T04:50:38.349394+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "5ff444a0ff33017c",
+    "title": "RHSA-2026:64817: Important: nodejs22 security update",
+    "summary_raw": "An update for nodejs22 is now available for Red Hat Enterprise Linux 10.0 Extended Update Support.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "source": "Red Hat Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://access.redhat.com/errata/RHSA-2026:64817",
+    "publishedDate": "2026-09-08T05:07:07+00:00",
+    "scrapedAt": "2026-09-08T05:10:00.851158+00:00",
+    "cve_ids_scraped": []
   }
 ]
