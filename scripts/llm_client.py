@@ -93,6 +93,7 @@ class QuotaExhausted(Exception):
 
 _budget: dict[str, dict] = {}
 _exhausted_models: set[str] = set()
+_no_reasoning_params: set[str] = set()
 
 
 def get_budget() -> dict[str, dict]:
@@ -140,13 +141,31 @@ def _parse_json(text: str):
 
 
 def _extract_json(text: str):
-    """Pull the first balanced {...} or [...] out of prose-wrapped output."""
-    start = min(
-        (i for i in (text.find("{"), text.find("[")) if i != -1),
-        default=-1,
-    )
-    if start == -1:
-        return None
+    """
+    Pull JSON out of prose-wrapped output (reasoning models emit commentary
+    around the answer). Tries every candidate opener and keeps the largest
+    valid parse, so stray braces in prose don't win over the real payload.
+    """
+    best = None
+    best_len = 0
+    for start, ch in enumerate(text):
+        if ch not in "{[":
+            continue
+        end = _match_balanced(text, start)
+        if end is None or end - start <= best_len:
+            continue
+        try:
+            candidate = json.loads(text[start:end + 1])
+        except json.JSONDecodeError:
+            continue
+        if isinstance(candidate, (dict, list)):
+            best = candidate
+            best_len = end - start
+    return best
+
+
+def _match_balanced(text: str, start: int):
+    """Index of the bracket closing text[start], or None if unbalanced."""
     opener = text[start]
     closer = "}" if opener == "{" else "]"
     depth = 0
@@ -170,10 +189,7 @@ def _extract_json(text: str):
         elif ch == closer:
             depth -= 1
             if depth == 0:
-                try:
-                    return json.loads(text[start:i + 1])
-                except json.JSONDecodeError:
-                    return None
+                return i
     return None
 
 
@@ -240,8 +256,12 @@ def _groq_generate(prompt: str, model: str, temperature: float):
                 "messages": [{"role": "user", "content": prompt}],
                 "temperature": temperature,
             }
-            # GPT-OSS returns 400 "Failed to validate JSON" under Groq's strict
-            # json_object mode; prompt-level JSON + _parse_json handles it fine.
+            # GPT-OSS is a reasoning model: without this its chain-of-thought
+            # lands in message.content ahead of the JSON. It also 400s under
+            # Groq's strict json_object mode, so JSON comes from the prompt.
+            if model in NO_JSON_MODE and model not in _no_reasoning_params:
+                kwargs["reasoning_format"] = "hidden"
+                kwargs["reasoning_effort"] = "low"
             if model not in NO_JSON_MODE:
                 kwargs["response_format"] = {"type": "json_object"}
             resp = client.chat.completions.create(**kwargs)
@@ -262,6 +282,13 @@ def _groq_generate(prompt: str, model: str, temperature: float):
         except Exception as e:
             kind = _classify_error(e)
             preview = str(e)[:150]
+            if (
+                "reasoning" in str(e).lower()
+                and model not in _no_reasoning_params
+            ):
+                print("reasoning params rejected, retrying without", flush=True)
+                _no_reasoning_params.add(model)
+                continue
             if kind == "project":
                 print(f"\n  FATAL: {preview}", flush=True)
                 raise ProjectError(str(e)) from e

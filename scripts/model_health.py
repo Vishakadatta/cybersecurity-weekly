@@ -13,7 +13,19 @@ import os
 import sys
 import time
 
-PROBE_PROMPT = 'Respond with exactly this JSON: {"status": "ok"}'
+# Mirrors the shape of real pipeline prompts (structured array out of a list
+# of inputs). A trivial "reply {\"status\":\"ok\"}" probe passes on reasoning
+# models that then fail on production prompts.
+PROBE_PROMPT = """You are a security analyst. For each article below, return a
+score from 1-10 and a one-line reason.
+
+Respond with a JSON object only:
+{"articles": [{"id": "...", "score": 0, "reason": "..."}], "status": "ok"}
+
+Articles:
+[{"id": "a1", "title": "Critical RCE in OpenSSL 3.3 actively exploited"},
+ {"id": "a2", "title": "Vendor publishes quarterly transparency report"}]
+"""
 
 CHINESE_PUBLISHERS = {"qwen", "minimax", "zhipu", "deepseek", "baichuan", "01-ai"}
 
@@ -30,18 +42,21 @@ def _check_groq(model: str) -> dict:
             "model": model,
             "messages": [{"role": "user", "content": PROBE_PROMPT}],
             "temperature": 0.0,
-            "max_tokens": 100,
+            "max_tokens": 800,
         }
         # Mirror production: skip strict json mode for models that reject it.
-        if model not in NO_JSON_MODE:
+        if model in NO_JSON_MODE:
+            kwargs["reasoning_format"] = "hidden"
+            kwargs["reasoning_effort"] = "low"
+        else:
             kwargs["response_format"] = {"type": "json_object"}
         resp = client.chat.completions.create(**kwargs)
         text = resp.choices[0].message.content or ""
         parsed = _parse_json(text)
         if parsed is None:
-            return {"model": model, "backend": "groq", "status": "healthy",
+            return {"model": model, "backend": "groq", "status": "json_broken",
                     "reason": f"reachable but JSON malformed: {text[:80]}"}
-        if parsed.get("status") == "ok":
+        if isinstance(parsed, dict) and parsed.get("status") == "ok":
             return {"model": model, "backend": "groq", "status": "healthy"}
         return {"model": model, "backend": "groq", "status": "healthy",
                 "reason": f"reachable, unexpected payload: {text[:80]}"}
@@ -70,16 +85,16 @@ def _check_gemini(model: str) -> dict:
             config=types.GenerateContentConfig(
                 response_mime_type="application/json",
                 temperature=0.0,
-                max_output_tokens=100,
+                max_output_tokens=800,
             ),
         )
         text = resp.text or ""
         try:
             parsed = json.loads(text)
         except json.JSONDecodeError:
-            return {"model": model, "backend": "gemini", "status": "healthy",
+            return {"model": model, "backend": "gemini", "status": "json_broken",
                     "reason": f"reachable but JSON malformed: {text[:80]}"}
-        if parsed.get("status") == "ok":
+        if isinstance(parsed, dict) and parsed.get("status") == "ok":
             return {"model": model, "backend": "gemini", "status": "healthy"}
         return {"model": model, "backend": "gemini", "status": "healthy",
                 "reason": f"reachable, unexpected payload: {text[:80]}"}
