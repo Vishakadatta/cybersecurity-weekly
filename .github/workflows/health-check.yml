@@ -42,7 +42,7 @@ jobs:
 
       - name: Open stale-pipeline issue
         if: steps.check.outputs.stale == 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const reason = `${{ steps.check.outputs.reason }}`;
