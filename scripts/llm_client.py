@@ -2,8 +2,8 @@
 Provider-agnostic LLM client with task-based model routing.
 
 Backends (Western/allied-origin only):
-- Gemini (3.8 Flash primary, 3.7 Flash, 3.1 Flash-Lite fallback)
-- Groq (kept as legacy path; no non-Chinese text models available as of Sep 2026)
+- Groq (GPT-OSS 120b primary, 20b secondary; Llama models removed Sep 2026)
+- Gemini (3.8 Flash, 3.7 Flash, 3.1 Flash-Lite as fallback)
 
 Each task maps to a specific model fallback chain. The editorial/synthesis
 chain never contains 8B — enforced by assertion.
@@ -94,6 +94,10 @@ class QuotaExhausted(Exception):
 _budget: dict[str, dict] = {}
 _exhausted_models: set[str] = set()
 _no_reasoning_params: set[str] = set()
+# Models whose *daily* quota is gone. Tracked separately: if a whole chain
+# fails and any member is daily-exhausted, the stage checkpoints instead of
+# recording a hard failure.
+_daily_exhausted: set[str] = set()
 
 
 def get_budget() -> dict[str, dict]:
@@ -125,7 +129,9 @@ def _check_budget_before_call(model: str, min_tokens: int = 2000):
         return
     remaining = b.get("remaining_tokens")
     if remaining is not None and remaining < min_tokens:
-        raise QuotaExhausted(model, "daily-tokens-low")
+        _exhausted_models.add(model)
+        _daily_exhausted.add(model)
+        return
 
 
 def _parse_json(text: str):
@@ -293,8 +299,10 @@ def _groq_generate(prompt: str, model: str, temperature: float):
                 print(f"\n  FATAL: {preview}", flush=True)
                 raise ProjectError(str(e)) from e
             if kind == "daily_limit":
-                print(f"daily quota exhausted", flush=True)
-                raise QuotaExhausted(model, "daily") from e
+                print(f"daily quota exhausted, trying next model", flush=True)
+                _exhausted_models.add(model)
+                _daily_exhausted.add(model)
+                return None
             if kind == "quota_exhausted":
                 print(f"quota exhausted, skipping for rest of run", flush=True)
                 _exhausted_models.add(model)
@@ -377,6 +385,11 @@ def _gemini_generate(prompt: str, model: str, temperature: float):
             if kind == "project":
                 print(f"\n  FATAL: {preview}", flush=True)
                 raise ProjectError(str(e)) from e
+            if kind == "daily_limit":
+                print(f"daily quota exhausted, trying next model", flush=True)
+                _exhausted_models.add(model)
+                _daily_exhausted.add(model)
+                return None
             if kind == "quota_exhausted":
                 print(f"quota exhausted, skipping for rest of run", flush=True)
                 _exhausted_models.add(model)
@@ -446,6 +459,12 @@ def generate_json(
         if result is not None:
             return result
         print(f"  [{be}:{model}] failed, trying next", flush=True)
+
+    # Only checkpoint the stage once the whole chain is gone. A single model
+    # hitting its daily cap must not stop a run that still has models left.
+    starved = [m for _, m in chain if m in _daily_exhausted]
+    if starved:
+        raise QuotaExhausted(starved[0], "daily")
 
     print("  WARNING: All models exhausted, returning None", file=sys.stderr, flush=True)
     return None

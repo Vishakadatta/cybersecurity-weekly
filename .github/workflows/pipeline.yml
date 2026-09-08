@@ -252,8 +252,8 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LLM_DELAY_SECONDS: "10"
-          SITE_URL: ${{ vars.SITE_URL }}
-          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
+          SITE_URL: ${{ vars.SITE_URL || secrets.SITE_URL }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL || secrets.UNSUBSCRIBE_URL }}
         run: python scripts/finalize.py
       - name: Commit
         run: |
@@ -319,8 +319,8 @@ jobs:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LLM_DELAY_SECONDS: "10"
-          SITE_URL: ${{ vars.SITE_URL }}
-          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
+          SITE_URL: ${{ vars.SITE_URL || secrets.SITE_URL }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL || secrets.UNSUBSCRIBE_URL }}
         run: python scripts/monday_check.py
       - name: Commit any emergency updates
         run: |
@@ -366,7 +366,7 @@ jobs:
           BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
           BREVO_LIST_ID: ${{ secrets.BREVO_LIST_ID }}
           SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL }}
+          UNSUBSCRIBE_URL: ${{ vars.UNSUBSCRIBE_URL || secrets.UNSUBSCRIBE_URL }}
         run: python scripts/send_newsletter.py
 
   # ─────────────────────────────────────────────────────────────────────────
@@ -396,7 +396,7 @@ jobs:
         env:
           ASTRO_TELEMETRY_DISABLED: 1
           PUBLIC_BREVO_FORM_URL: ${{ vars.PUBLIC_BREVO_FORM_URL }}
-          PUBLIC_BREVO_UNSUBSCRIBE_URL: ${{ vars.PUBLIC_BREVO_UNSUBSCRIBE_URL }}
+          PUBLIC_BREVO_UNSUBSCRIBE_URL: ${{ vars.PUBLIC_BREVO_UNSUBSCRIBE_URL || secrets.PUBLIC_BREVO_UNSUBSCRIBE_URL }}
         run: npx astro build
       - uses: actions/upload-pages-artifact@v3
         with:
