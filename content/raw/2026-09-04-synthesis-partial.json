@@ -253,5 +253,333 @@
       "WordPress Elementor Pro plugin"
     ],
     "threat_actor": null
+  },
+  "f681859afb2558e2": {
+    "id": "08f9037c31db0cc2",
+    "title": "Plex Issues Critical Patch for Multiple Undisclosed Vulnerabilities in Media Server 1.43.3 and Desktop 1.115.0",
+    "summary": "Plex released updates for Media Server 1.43.3 and Desktop 1.115.0 that fix several security flaws, prompting an immediate upgrade recommendation. While the specific issues remain undisclosed, Plex has requested CVE identifiers and references a prior high\u2011severity bug (CVE\u20112025\u201134158) that exposed admin tokens via the /myplex/account endpoint.",
+    "impact": "Unpatched Plex instances remain vulnerable to potential unauthorized access and infrastructure discovery, increasing the attack surface for media environments, especially on exposed NAS deployments.",
+    "action": "Upgrade all Plex Media Server and Desktop installations to the latest versions without delay, and manually install the packages on NAS devices if the package manager lacks the update.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/plex-urges-immediate-updates-after.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/plex-urges-immediate-updates-after.html",
+    "publishedDate": "2026-09-04T13:05:14+05:30",
+    "cve_ids": [
+      "CVE-2025-34158"
+    ],
+    "affected_systems": [
+      "Plex Media Server",
+      "Plex Desktop"
+    ],
+    "threat_actor": null
+  },
+  "b3af9547e5b871ac": {
+    "id": "dc2f42c91d091abc",
+    "title": "Google Patches Actively Exploited Chrome V8 Zero\u2011Day (CVE\u20112026\u201185046)",
+    "summary": "Google released Chrome 152.0.7977.82/.83 for Windows and macOS and 152.0.7977.82 for Linux, fixing a type\u2011confusion vulnerability in the V8 engine (CVE\u20112026\u201185046, CVSS\u202f8.8) that is confirmed to be exploited in the wild. The update also addresses 11 additional high\u2011severity bugs across Chrome components.",
+    "impact": "The flaw allowed remote code execution within Chrome\u2019s sandbox via a crafted HTML page, putting browsers and any downstream Chromium\u2011based products at immediate risk of compromise. Security teams must assume active exploitation across the enterprise.",
+    "action": "Deploy the Chrome 152.0.7977.82/.83 update immediately on all Windows, macOS, and Linux endpoints and ensure downstream Chromium browsers are patched as soon as vendors release the fix.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html"
+      },
+      {
+        "name": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/google-warns-of-new-chrome-zero-day-flaw-exploited-in-attacks/"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/google-releases-chrome-update-to-patch.html",
+    "publishedDate": "2026-09-04T12:48:47+05:30",
+    "cve_ids": [
+      "CVE-2026-85046"
+    ],
+    "affected_systems": [
+      "Google Chrome 152.0.7977.82/.83 (Windows, macOS, Linux)",
+      "Chromium\u2011based browsers (Microsoft Edge, Brave, Opera, Vivaldi) when updates are released"
+    ],
+    "threat_actor": null
+  },
+  "cc5cc22ecd29e6b7": {
+    "id": "09bf1e9a868fb64e",
+    "title": "OpenAI Unveils GPT\u20116 Astra, Achieves Perfect 100% Score on ExploitBench",
+    "summary": "OpenAI launched GPT\u20116 Astra, branding it the world\u2019s most intelligent and aligned model. Astra hit a flawless 100% on ExploitBench, surpassing GPT\u20115.6 Sol\u2019s 78.5% and demonstrating the ability to generate working exploits from recent vulnerabilities, including two zero\u2011days disclosed between June and August 2026. The model is initially limited to secure code\u2011review use cases.",
+    "impact": "Security teams must recognize that Astra can automate exploit creation at unprecedented accuracy, raising the risk of rapid weaponization of newly disclosed flaws.",
+    "action": "Begin monitoring OpenAI\u2019s API usage policies and integrate AI\u2011assisted code\u2011review tools while tightening exploit detection and response processes.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/gpt-6-astra-scores-100-on-exploitbench.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/gpt-6-astra-scores-100-on-exploitbench.html",
+    "publishedDate": "2026-09-04T12:17:52+05:30",
+    "cve_ids": [],
+    "affected_systems": [],
+    "threat_actor": null
+  },
+  "c1ee648924c4fd9c": {
+    "id": "eae08603ec40cb97",
+    "title": "Microsoft Teams Abuse Enables Human\u2011Operated Intrusions and Remote\u2011Control Malware Deployments",
+    "summary": "Microsoft reports a human\u2011operated intrusion campaign that exploits external Microsoft Teams collaboration to impersonate IT staff, trick users into granting remote sessions, and then deploys PowerShell\u2011downloaded MSI payloads that install a Node.js runtime and obfuscated JavaScript implant for persistent C2 and AD reconnaissance.",
+    "impact": "Security teams face direct interactive access by attackers who can move laterally via WinRM to high\u2011value assets such as domain controllers, bypassing traditional perimeter defenses.",
+    "action": "Implement strict verification for all Teams external\u2011collaboration invites, enforce MFA for remote session approvals, and block unauthorized MSI installations via application control policies.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/threatsday-ceo-phishing-kits-5k-dropbox.html",
+    "publishedDate": "2026-09-03T23:32:47+05:30",
+    "cve_ids": [],
+    "affected_systems": [
+      "Microsoft Teams",
+      "Windows Remote Management (WinRM)",
+      "Remote Monitoring and Management (RMM) tools",
+      "PowerShell",
+      "Windows operating system",
+      "Active Directory",
+      "Domain Controllers"
+    ],
+    "threat_actor": null
+  },
+  "e2b22f2043a179f6": {
+    "id": "10869e1cb2f94267",
+    "title": "Critical Cisco Nexus 9000 Vulnerability (CVE\u20112026\u201120212) Allows Unauthenticated Remote Code Execution as Root",
+    "summary": "Cisco patched a critical flaw in ten Silicon One\u2011based Nexus 9000 switches (CVE\u20112026\u201120212, CVSS\u202f9.8) that exposes TCP ports 43210/43211 in the default VRF, enabling unauthenticated attackers to inject crafted payloads that execute with root privileges or crash the S1HAL process. No known exploits exist, but the risk is severe.",
+    "impact": "Security teams must treat any reachable Nexus 9000 device as compromised until mitigations are applied, as attackers can gain full control without credentials.",
+    "action": "Apply Cisco\u2019s released patches immediately and block ports\u202f43210/43211 with an infrastructure ACL or Live Protect shield as a temporary control.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/critical-cisco-nexus-9000-flaw-lets.html",
+    "publishedDate": "2026-09-03T21:22:07+05:30",
+    "cve_ids": [
+      "CVE-2026-20212"
+    ],
+    "affected_systems": [
+      "N9324C-SE1U (Nexus Smart Switch)",
+      "N9348Y2C6D-SE1U (Nexus Smart Switch)",
+      "N9364E-SG2-O",
+      "N9364E-SG2-Q",
+      "N9396T12C-SE1",
+      "N9348Y12C-SE1",
+      "N9396Y12C-SE1",
+      "N9336C-SE1",
+      "N9K-C9804",
+      "N9K-C9808"
+    ],
+    "threat_actor": null
+  },
+  "65c657640f556fe0": {
+    "id": "9d9736b815d582ed",
+    "title": "BraZetsu Malware Turns Compromised Windows Hosts Into Marketplace Inventory",
+    "summary": "Researchers detail BraZetsu, a Python\u2011based Windows malware framework that enables Initial Access Brokers to monetize compromised systems via an underground marketplace, leveraging AI\u2011driven reconnaissance, CNAB financial file theft, and browser\u2011history extraction.",
+    "impact": "Security teams face a new supply\u2011chain style threat that converts any infected Windows endpoint into a sellable asset, expanding the attack surface and increasing the urgency of detection and containment.",
+    "action": "Deploy behavior\u2011based detection for BraZetsu\u2019s modular components, block its C2 domains, and audit Windows hosts for unauthorized data exfiltration of financial and browsing records.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/brazetsu-malware-turns-compromised.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/brazetsu-malware-turns-compromised.html",
+    "publishedDate": "2026-09-03T20:56:47+05:30",
+    "cve_ids": [],
+    "affected_systems": [
+      "Windows"
+    ],
+    "threat_actor": "Exilware"
+  },
+  "dcb783b33acb3d05": {
+    "id": "9fe0a5b020907206",
+    "title": "Thomson Reuters' West Publishing C\u2011Track Court Management Platform Breached, Exposing SSNs and Sealed Data",
+    "summary": "An unauthorized party accessed files from West Publishing's C\u2011Track court case management system in March 2026, compromising records from courts in 11 U.S. states, the U.S. Virgin Islands, and Ontario, Canada. Exposed data includes names, Social Security numbers, driver\u2019s license numbers, dates of birth, medical and health\u2011insurance information, and some sealed documents.",
+    "impact": "Security teams must assume that personally identifiable information (PII) from thousands of court filings is now searchable by threat actors, increasing the risk of identity theft and targeted fraud against affected individuals and legal professionals.",
+    "action": "Immediately review any integration with C\u2011Track, audit access logs for suspicious activity, and notify affected users while enrolling them in the offered credit\u2011monitoring services.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/thomson-reuters-court-software-breach.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/thomson-reuters-court-software-breach.html",
+    "publishedDate": "2026-09-03T20:09:05+05:30",
+    "cve_ids": [],
+    "affected_systems": [
+      "West Publishing C\u2011Track court case management platform"
+    ],
+    "threat_actor": null
+  },
+  "0d90c8a062a562db": {
+    "id": "54e49c42f26d7b73",
+    "title": "US Leads Global RMM Phishing Campaign Targeting 46 Countries",
+    "summary": "A remote\u2011monitoring\u2011and\u2011management (RMM) phishing operation has hit 46 nations, with 45% of activity focused on the United States. Attackers distribute fake tax forms, shipping notices and other documents to trick victims into installing legitimate RMM tools, using rapidly rotated Vercel, GitHub Pages, Netlify and cloud storage infrastructure.",
+    "impact": "Security teams must assume that any seemingly legitimate RMM installation could be malicious, and traditional IOC\u2011based detection will miss the fast\u2011changing delivery hosts.",
+    "action": "Deploy behavior\u2011based monitoring for RMM tool execution and block unauthorized remote\u2011admin connections.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/us-becomes-top-target-in-rmm-phishing.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/us-becomes-top-target-in-rmm-phishing.html",
+    "publishedDate": "2026-09-03T17:28:00+05:30",
+    "cve_ids": [],
+    "affected_systems": [],
+    "threat_actor": null
+  },
+  "b79f1fe02f7b383b": {
+    "id": "0ffead6ad9f846a1",
+    "title": "Threat Actors Abuse Legitimate Node.js Runtime to Deploy Malware in Targeted Campaigns",
+    "summary": "Since February 2026, attackers have been downloading the official Node.js installer and using the signed node.exe binary to execute malicious JavaScript, chain PowerShell commands, and install back\u2011doors such as ModeloRAT, Mistic, and GateKeeper on government, technology and hospitality targets.",
+    "impact": "Security teams face increased risk of evading signature\u2011based detection because the payload runs inside a trusted developer tool and persists via a Registry Run key.",
+    "action": "Deploy application whitelisting, monitor for unexpected node.exe executions, and enforce strict code\u2011signing verification for Node.js binaries.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/attackers-turn-trusted-nodejs-runtime.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/attackers-turn-trusted-nodejs-runtime.html",
+    "publishedDate": "2026-09-03T16:13:01+05:30",
+    "cve_ids": [],
+    "affected_systems": [
+      "Node.js runtime (node.exe)",
+      "Windows operating system"
+    ],
+    "threat_actor": "KongTuke (aka Woodgnat)"
+  },
+  "a6874e4cf62c00d4": {
+    "id": "28b73ab004907150",
+    "title": "Shai\u2011Hulud Worm Expands Credential Harvesting to 469 Locations Across DevOps and Cloud Environments",
+    "summary": "GitGuardian discovered that the latest Shai\u2011Hulud infostealer variant now scans 469 credential stores\u2014including developer workstations, CI/CD pipelines, cloud configs, and AI tool settings\u2014doubling the coverage of earlier versions and enabling attackers to hijack trusted supply\u2011chain relationships.",
+    "impact": "Security teams must treat credential leakage as the primary attack vector, as compromised tokens can cascade from source code to cloud infrastructure and package registries.",
+    "action": "Audit and rotate all secrets, enforce least\u2011privilege policies, and implement secret\u2011detection tooling across the entire development lifecycle.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/shai-huluds-reach-just-grew-to-469.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/shai-huluds-reach-just-grew-to-469.html",
+    "publishedDate": "2026-09-03T16:06:39+05:30",
+    "cve_ids": [],
+    "affected_systems": [],
+    "threat_actor": null
+  },
+  "a43d39f57668b259": {
+    "id": "b6e02e04385587bf",
+    "title": "Pegasus Zero\u2011Click iMessage Exploit Compromises Serbian Student Activist\u2019s iPhone",
+    "summary": "Citizen Lab and the SHARE Foundation confirmed that a zero\u2011click iMessage exploit was used to install NSO Group\u2019s Pegasus spyware on the iPhone of a Serbian student protest movement member, with infection dates spanning December\u202f2025 to January\u202f2026. Apple patched the flaw in iOS\u202f18.4.1 (April\u202f2025).",
+    "impact": "Security teams must assume that any iOS device that received iMessage traffic before the iOS\u202f18.4.1 patch could be silently compromised, exposing calls, messages, location, and credentials. The attack demonstrates that state\u2011level spyware can bypass user interaction entirely.",
+    "action": "Deploy Apple\u2019s iOS\u202f18.4.1 or later to all iPhones, enforce mobile device management checks for Pegasus indicators, and notify potentially affected users to review Apple\u2019s threat\u2011notification alerts.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/pegasus-zero-click-spyware-exploit.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/pegasus-zero-click-spyware-exploit.html",
+    "publishedDate": "2026-09-03T14:13:17+05:30",
+    "cve_ids": [],
+    "affected_systems": [
+      "Apple iPhone (iOS)",
+      "Apple iMessage"
+    ],
+    "threat_actor": "NSO Group"
+  },
+  "aaff398b652d04e4": {
+    "id": "beea4dd696f2ff5b",
+    "title": "CrowdStrike Falcon Sensor Privilege\u2011Escalation Zero\u2011Day \u2018FalconFlank\u2019 Enables SYSTEM Access",
+    "summary": "Researcher Nightmare Eclipse released a zero\u2011day exploit, FalconFlank, that abuses CrowdStrike Falcon\u2019s Office malicious\u2011macros remediation to spawn a SYSTEM\u2011level command prompt on fully patched Windows\u202f11\u202f25H2 and Windows\u202fServer\u202f2025 hosts.",
+    "impact": "The flaw gives attackers immediate SYSTEM privileges on any endpoint running the latest CrowdStrike Falcon sensor, bypassing existing protections and enabling full control of the host.",
+    "action": "Disable the Microsoft Office File Suspicious Macro Removal policy setting in CrowdStrike and verify protection via Cloud Anti\u2011malware for Office files.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html"
+      },
+      {
+        "name": "BleepingComputer",
+        "url": "https://www.bleepingcomputer.com/news/security/new-crowdstrike-falconflank-zero-day-grants-system-privileges/"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/researcher-releases-falconflank-poc.html",
+    "publishedDate": "2026-09-03T11:56:59+05:30",
+    "cve_ids": [],
+    "affected_systems": [
+      "CrowdStrike Falcon Sensor",
+      "Windows 11 version 25H2",
+      "Windows Server 2025"
+    ],
+    "threat_actor": null
+  },
+  "72546cef7609b95e": {
+    "id": "8071e541fd79f3e3",
+    "title": "CISA Flags Seven Actively Exploited Flaws; SonicWall SMA 1000 Zero\u2011Days Enable Unauthenticated RCE",
+    "summary": "CISA added seven vulnerabilities to its KEV catalog, including two zero\u2011day flaws in SonicWall SMA 1000 appliances (CVE\u20112026\u201183548, CVE\u20112026\u201183549) that attackers are chaining to achieve unauthenticated remote code execution, while other high\u2011severity bugs affect Sangoma Switchvox, JFrog Artifactory, Kludex Starlette, Kestra OSS, and Berri LiteLLM.",
+    "impact": "Security teams must assume these flaws are being weaponised in the wild, with the SonicWall chain providing a direct path to full system compromise and the other bugs exposing critical infrastructure to data theft and ransomware.",
+    "action": "Immediately apply SonicWall hotfixes 12.4.3\u201103526 or 12.5.0\u201102952, patch all other listed products, and scan for indicators of compromise.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html"
+      },
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/attackers-exploit-two-sonicwall-sma.html"
+      },
+      {
+        "name": "Dark Reading",
+        "url": "https://www.darkreading.com/vulnerabilities-threats/sonicwall-sma-1000-zero-days-unauthenticated-rce"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/cisa-adds-seven-exploited-flaws-as.html",
+    "publishedDate": "2026-09-02T16:23:49+05:30",
+    "cve_ids": [
+      "CVE-2026-83548",
+      "CVE-2026-83549",
+      "CVE-2026-9586",
+      "CVE-2026-82329",
+      "CVE-2026-48710",
+      "CVE-2026-49869",
+      "CVE-2026-59822"
+    ],
+    "affected_systems": [
+      "SonicWall SMA 1000 Appliances (models 6210, 7210, 8200v)",
+      "Sangoma Switchvox",
+      "JFrog Artifactory",
+      "Kludex Starlette",
+      "Kestra OSS",
+      "Berri LiteLLM Model Context Protocol (MCP) endpoint"
+    ],
+    "threat_actor": null
+  },
+  "d25c5544f172caaa": {
+    "id": "9885e3b9c4a2864e",
+    "title": "Google Launches Gemini 3.8 Flash Cyber and Fairwind Program for Trusted Defenders",
+    "summary": "Google unveiled Gemini 3.8 Flash Cyber, its most capable cybersecurity AI model, and opened it to high\u2011priority defenders through the Fairwind Program, targeting governments, healthcare, telecoms and over 650 partners including CrowdStrike, Datadog, Menlo Security, Palo Alto Networks, and Snowflake.",
+    "impact": "Security teams gain early access to a frontier\u2011level AI that excels at autonomous vulnerability discovery and fixing, giving them a measurable advantage over attackers.",
+    "action": "Enroll in the Fairwind Program or partner with Google Cloud to integrate Gemini 3.8 Flash Cyber into your vulnerability management and threat\u2011hunting workflows.",
+    "sources": [
+      {
+        "name": "The Hacker News",
+        "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html"
+      }
+    ],
+    "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
+    "publishedDate": "2026-09-02T23:57:49+05:30",
+    "cve_ids": [],
+    "affected_systems": [],
+    "threat_actor": null
   }
 }
