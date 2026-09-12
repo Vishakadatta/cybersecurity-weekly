@@ -2093,5 +2093,598 @@
     "publishedDate": "2026-09-08T13:20:02+00:00",
     "scrapedAt": "2026-09-12T01:25:58.697725+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "0ddc7c58e0413040",
+    "title": "CISA Adds 5 Actively Exploited Artifactory, ScreenConnect, and RouterOS Flaws to KEV",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added five security flaws impacting JFrog Artifactory, ConnectWise ScreenConnect, and MikroTik RouterOS to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation in the wild.\n\nDetails of the vulnerabilities are as follows -\n\n\n  CVE-2026-42016 (CVSS score: 8.1) - An incorrect authorization",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/cisa-adds-5-actively-exploited.html",
+    "publishedDate": "2026-09-12T21:24:45+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.706513+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-42016"
+    ]
+  },
+  {
+    "id": "d66479afd965673d",
+    "title": "When the Whole Company Adopts AI: What It Does to Your SOC",
+    "summary_raw": "Over the past year, we watched a new class of alert appear in enterprise security operations centers and grow faster than anything else in the stream: alerts that were triggered by AI tools and agents. Not attacks against AI, but the ordinary, everyday footprint of an organization using it, from developers running coding agents and non-technical staff signing consumer AI tools into corporate",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/when-whole-company-adopts-ai-what-it.html",
+    "publishedDate": "2026-09-12T15:54:44+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.706654+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "f05890c0a6ffeeaa",
+    "title": "OpenAI Agents Linked to RubyGems Campaign That Gained RCE on RubyDoc Servers",
+    "summary_raw": "The \"major malicious attack\" that targeted RubyGems in May 2026 was the work of a swarm of OpenAI agents, according to a new report published by researchers Spencer Kitts, Thomas Larsen, and Sydney Von Arx.\n\nOn May 12, Maciej Mensfeld, senior product manager for software supply chain security at Mend.io, disclosed details of a coordinated cyber attack that targeted the package manager for the",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/openai-agents-linked-to-rubygems.html",
+    "publishedDate": "2026-09-12T14:37:56+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.706771+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a8b89596a45d74f2",
+    "title": "GitLab CVSS 10 File-Read Flaw Draws In-the-Wild Probes After Disclosure",
+    "summary_raw": "GitLab has released patches to address multiple flaws, including a maximum-severity security vulnerability that has witnessed in-the-wild probes within hours of public disclosure.\n\nThe vulnerability in question is CVE-2026-85706 (CVSS score: 10.0), a path traversal issue in the repository commits API that could allow an unauthenticated user to read arbitrary files from the GitLab server under",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html",
+    "publishedDate": "2026-09-11T22:00:18+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.706887+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-85706"
+    ]
+  },
+  {
+    "id": "ec242e7e40e92d80",
+    "title": "Anthropic Says Seven China-Based AI Labs Ran Industrial-Scale Claude Distillation Attacks",
+    "summary_raw": "Anthropic on Thursday said it identified and disrupted industrial-scale illicit distillation attacks against Claude from seven labs based in China, including Alibaba, Moonshot, DeepSeek, Z.ai (aka Zhipu), and MiniMax.\n\nKnowledge distillation by itself is a legitimate training method. It refers to a machine learning technique where a large, powerful AI model assumes the role of a \"teacher\" to",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/anthropic-says-seven-china-based-ai.html",
+    "publishedDate": "2026-09-11T21:45:29+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707037+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "0f8accb03f1064f0",
+    "title": "Claude Used to Automate Exploitation and Data Theft Across Multiple Victims",
+    "summary_raw": "Anthropic has warned that cybercriminals and state-sponsored hackers alike are using its Claude models for cyber attacks, weapons design, propaganda, and mass surveillance between December 2025 and August 2026.\n\nThe threat actors, which the artificial intelligence (AI) company has branded Generative Threat Groups (GTGs), span state-sponsored groups, financially motivated criminals, commercial",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/claude-used-to-automate-exploitation.html",
+    "publishedDate": "2026-09-11T19:59:47+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707151+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "dae251a2004b33d7",
+    "title": "Russian State-Sponsored Hackers Use Claude to Rebuild Malware After Detection",
+    "summary_raw": "Anthropic on Thursday revealed it disrupted a campaign mounted by a Russian state-sponsored threat actor that abused Claude for developing an AI-assisted workflow to get ahead of the detection curve.\n\nThe operation has been attributed to a cyber espionage group it calls GTG-20006 (where \"GTG\" stands for Generative Threat Group), which aligns with broader reporting linking the cluster to Midnight",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/russian-state-sponsored-hackers-use.html",
+    "publishedDate": "2026-09-11T19:40:20+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707267+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "336c262bc83ef094",
+    "title": "Your Critical Vulnerabilities Might Not Be Your Biggest Risk",
+    "summary_raw": "Security teams have become exceptionally talented at finding vulnerabilities. Now, it\u2019s time to turn our attention to optimizing the process for determining which of those vulnerabilities actually create a path to compromise.\n\nA critical vulnerability may look alarming on a scanner report, but if it sits behind strong segmentation, identity controls, and other defenses that prevent an attacker",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/your-critical-vulnerabilities-might-not.html",
+    "publishedDate": "2026-09-11T17:00:00+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707377+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "6d77d0f66755e664",
+    "title": "Attackers Chain JFrog Artifactory Flaws to Gain Admin Control and Plant Backdoors",
+    "summary_raw": "Attackers have chained two flaws in JFrog Artifactory, the repository that software build pipelines pull from, to take administrator control of self-hosted servers and plant backdoors, cloud security company Wiz&nbsp;said in a report.\n\nWiz saw the attacks between August 15 and September 8. JFrog had fixed both flaws before then, so only servers that had not been updated were open to them.",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html",
+    "publishedDate": "2026-09-11T13:01:05+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707488+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "11c8b517d375b049",
+    "title": "China-Linked UNC3569 Exploited Sogou Input Method Flaw to Deploy GRAYRABBIT Backdoor",
+    "summary_raw": "A China-linked hacking group exploited a flaw in Sogou Input Method, one of the most widely used tools for typing Chinese characters on Windows, to install a backdoor on victims' computers, security company Gen Digital said in&nbsp;research published Thursday.\n\nThe attack started with a crafted link and ended with the attacker able to do anything the logged-in user could do. Tencent, which owns",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/china-linked-unc3569-exploited-sogou.html",
+    "publishedDate": "2026-09-11T12:44:09+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707598+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "af3b87dfbf9c1260",
+    "title": "PaperCut Replaces Emergency Patches With Fixes for Two Actively Exploited Flaws",
+    "summary_raw": "PaperCut on Thursday released a new security maintenance release that replaces all previously published emergency patches that were pushed to address two security flaws that have come under active exploitation.\n\nThe software development company said PaperCut NG/MF versions 26.0.5, 25.0.13 and 24.1.10 are now available for customers to download.\n\n\"These are Regular Maintenance Releases (MR) that",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/papercut-replaces-emergency-patches.html",
+    "publishedDate": "2026-09-11T12:16:18+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707706+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "788925358fae7cd2",
+    "title": "Cisco FMC Flaws Exploited to Steal Credentials and Deploy Qilin Ransomware",
+    "summary_raw": "Cisco has revealed that three distinct threat clusters linked to ransomware and state-sponsored attacks have been exploiting two recently patched Secure Firewall Management Center (FMC) vulnerabilities.\n\nThe attacks leverage CVE-2026-20079 (CVSS score: 10.0), an authentication bypass vulnerability in the web interface of FMC software that could allow an unauthenticated, remote attacker to bypass",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/cisco-fmc-flaws-exploited-to-steal.html",
+    "publishedDate": "2026-09-11T11:49:59+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707821+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-20079"
+    ]
+  },
+  {
+    "id": "69cf1fb2ff898950",
+    "title": "ThreatsDay: 200 Android Flaws, Browser-Built Phishing, 119K Scam Shops + 23 More Stories",
+    "summary_raw": "A lot of this week\u2019s security news has the same awkward answer to one question: \u201cWhy was that allowed to work?\u201d\n\nAn extension asks for access and takes too much. A trusted service becomes part of a phishing chain. An old bug still gets results. An exposed system stays exposed. A package looks useful right up until it isn\u2019t. Different stories, same basic problem: the path in was often already",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/threatsday-200-android-flaws-browser.html",
+    "publishedDate": "2026-09-10T23:17:38+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.707930+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "ec21f606522832ba",
+    "title": "Google Play Early Access Abused to Push Thousands of Deceptive Android Apps",
+    "summary_raw": "Bad actors are misusing Google Play's Early Access program to push deceptive apps that claim to offer money, rewards, casino winnings, and premium content.\n\nEarly Access apps are apps that haven't been released on the official Android app marketplace. The main idea behind the program is for developers to solicit user feedback for new applications or features they may be working on before their",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/google-play-early-access-abused-to-push.html",
+    "publishedDate": "2026-09-10T20:06:47+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708065+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "33af29f71c8c9221",
+    "title": "Check Point Discloses Two 9.8-Rated VPN Certificate Flaws Enabling Unauthenticated RCE",
+    "summary_raw": "Check Point has patched two critical vulnerabilities in the way its firewall and management products handle VPN certificates. The company says both could allow an unauthenticated remote attacker to run code, but only \"under specific conditions\" that it has not described.\n\nOne flaw affects Check Point's Security Gateways, its firewall appliances. The other affects those gateways and the Security",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/check-point-discloses-two-98-rated-vpn.html",
+    "publishedDate": "2026-09-10T17:15:05+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708174+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "cd20e349d2f5a9cf",
+    "title": "PaperCut Attacker Uses Hundreds of AI Agents to Compromise 440+ Instances",
+    "summary_raw": "A suspected Russian-speaking cyber actor has been attributed to the use of artificial intelligence (AI) to devise exploits targeting a recently disclosed pair of security flaws in PaperCut NG/MF and break into hundreds of instances.\n\nAccording to independent reports from Blackpoint Cyber and GreyNoise, the activity originates from \"45.142.193[.]132,\" an IP address that has been linked to",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html",
+    "publishedDate": "2026-09-10T17:11:53+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708282+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "4cb585b593c9dde3",
+    "title": "Gigabud Creates Android Work Profiles to Hide From Banking App Malware Checks",
+    "summary_raw": "The Gigabud banking trojan now installs a second Android app that creates a work profile on an infected phone and drops a tampered banking app inside it, security firm Group-IB said in a&nbsp;report published on September 9.\n\nA work profile is a separate space that Android typically reserves for employer apps, and what's inside it is kept separate from everything in the personal space. That",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/gigabud-creates-android-work-profiles.html",
+    "publishedDate": "2026-09-10T17:03:43+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708391+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "10251c3ec1ce997e",
+    "title": "CISA Flags Exploited Cisco, Citrix, Fortinet Flaws, Sets Sept. 12 Federal Patch Deadline",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added three flaws, each impacting Cisco, Citrix, and Fortinet, to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the patches by September 12, 2026.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-20079 (CVSS score: 10.0) - An authentication",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/cisa-flags-exploited-cisco-citrix.html",
+    "publishedDate": "2026-09-10T16:06:46+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708498+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-20079"
+    ]
+  },
+  {
+    "id": "fd5c4de796254afd",
+    "title": "Nearly 1 in 10 Exposed LiteLLM Gateways Accepted the Example \"sk-1234\" Admin Key",
+    "summary_raw": "Nearly one in ten of the internet-facing LiteLLM servers that&nbsp;Wiz Research&nbsp;scanned in February accepted&nbsp;sk-1234, the example admin key in LiteLLM's own setup guide.\n\nLiteLLM is an open-source AI gateway, the software a company puts between its applications and the model providers it pays for. That key is the gateway's administrator credential.\n\nAnyone who holds it can read every",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/nearly-1-in-10-exposed-litellm-gateways.html",
+    "publishedDate": "2026-09-10T12:42:55+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708609+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "fa7734e88a6b0bac",
+    "title": "Anthropic Discloses Fourth AI Hacking Incident Involving Claude Opus 4.6",
+    "summary_raw": "Anthropic on Wednesday disclosed a fourth incident in which its artificial intelligence (AI) model broke into real third-party systems, marking the latest in a growing list of cases that have raised concerns about the security risks posed by autonomous AI agents.\n\nThe AI company said the incident dates back to January 2026 and involved an early version of Claude Opus 4.6 that breached \"",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/anthropic-ai-models-breached-real.html",
+    "publishedDate": "2026-09-10T12:34:01+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708714+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "8df866a72a613bf8",
+    "title": "U.S. Disrupts Xinbi Guarantee Scam Marketplace, Freezes $52.8 Million in Crypto",
+    "summary_raw": "The U.S. Department of Justice (DoJ) on Wednesday announced coordinated actions aimed at an illicit online marketplace called Xinbi Guarantee that offered scam services, including seizing Telegram channels used to run the service, confiscating two cryptocurrency wallets, and deploying the Scam Center Strike Force to Madagascar to help disrupt 13 scam compounds run by Chinese organized crime",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/us-disrupts-xinbi-guarantee-scam.html",
+    "publishedDate": "2026-09-09T23:56:05+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708819+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "9927501cbbee3b72",
+    "title": "Four Spy Groups Used the Same Chrome and Windows Exploit Kit Within a Week",
+    "summary_raw": "Multiple espionage-motivated threat activity clusters have been found deploying a previously undocumented exploit kit called BlueMoon that chains together multiple vulnerabilities in Microsoft Windows and Google Chrome.\n\nThe first in-the-wild use of BlueMoon has been attributed to the China-aligned state-sponsored group tracked as APT31 (aka Bronze Vinewood, Judgement Panda, JungleBamboo,",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html",
+    "publishedDate": "2026-09-09T22:04:05+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.708926+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a7397cc291ced5fd",
+    "title": "Infostealer Logs Expose Replayable AI Tokens That Can Bypass MFA",
+    "summary_raw": "Cybercriminals are hijacking artificial intelligence (AI) user accounts via information stealer logs to create \"stolen keys\" that grant illicit access to tools from model providers like Google, Anthropic, and others.&nbsp;\n\nInformation stealers like Lumma Stealer or Vidar are equipped to harvest a wide range of data from compromised systems. This can include credential, session tokens, and API",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/infostealer-logs-expose-replayable-ai.html",
+    "publishedDate": "2026-09-09T19:53:55+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709063+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "8abca2d5974c3170",
+    "title": "Webinar: Learn How to Answer \u201cAre We Exposed?\u201d Faster After a New CVE",
+    "summary_raw": "A major vulnerability is disclosed. The alert lands immediately. Then comes the harder question: Are we actually exposed?\n\nFor many security teams, answering that means jumping between vulnerability scanners, endpoint tools, cloud inventories, SBOMs, repositories, and application data to build enough context to act.\n\nAs AI accelerates vulnerability discovery and research, that delay matters more",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/webinar-learn-how-to-answer-are-we.html",
+    "publishedDate": "2026-09-09T17:27:36+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709170+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "c33829733f1a8e1b",
+    "title": "DeepSeek Harness Flaw Let AI Agents Disable Their Own File Sandbox Without Approval",
+    "summary_raw": "A flaw in DeepSeek Harness, DeepSeek's open-source tool for running AI coding agents on a developer's machine, let a sandboxed agent turn off its own sandbox with a single command.\n\nThe tool runs an agent's commands inside an operating-system sandbox, so that an agent working on untrusted files cannot write outside its workspace. The agent could remove that limit by calling the tool's own web",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/deepseek-harness-flaw-let-ai-agents.html",
+    "publishedDate": "2026-09-09T16:47:07+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709282+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "6724d5b1aa877496",
+    "title": "Alby Hub Critical Flaw Could Let Attackers Take Over Internet-Exposed Bitcoin Wallets",
+    "summary_raw": "Bitcoin wallet company Alby has&nbsp;warned of a critical flaw&nbsp;in Alby Hub that could have let an attacker take over a wallet and send its funds, but only where the owner had made the Hub reachable from the internet.\n\nAlby Hub is a self-hosted Lightning wallet, meaning the owner runs it on their own computer or server, and it holds their bitcoin. The flaw affects versions v1.7.0 through",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/alby-hub-critical-flaw-could-let.html",
+    "publishedDate": "2026-09-09T16:13:04+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709397+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "898e89677a090ce8",
+    "title": "U.S. Agencies Accuse China AI Firms of Distilling Claude, GPT, Gemini, and Grok",
+    "summary_raw": "U.S. cybersecurity and intelligence agencies have accused China-based artificial intelligence (AI) companies of conducting \"systematic extraction\" of proprietary functionalities and capabilities of American frontier models through distillation attacks.\n\nThe activity has been described as occurring at an industrial-scale and one that forms the \"core\" of their AI development strategy, according to",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/us-agencies-accuse-china-ai-firms-of.html",
+    "publishedDate": "2026-09-09T15:02:26+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709504+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "375dd8a3b2ed53b2",
+    "title": "Chrome V8 Zero-Day Exploited in the Wild Enables Code Execution Inside Sandbox",
+    "summary_raw": "Google on Tuesday released updates to patch 230 security vulnerabilities, including one that has come under active exploitation in the wild.\n\nThe medium-severity vulnerability, assigned the CVE identifier CVE-2026-87491 (CVSS score: N/A), has been described as an out-of-bounds bug in V8, Chrome's JavaScript and WebAssembly engine.\n\n\"Out-of-bounds write in V8 in Google Chrome prior to",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/chrome-v8-zero-day-exploited-in-wild.html",
+    "publishedDate": "2026-09-09T14:41:03+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709609+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-87491"
+    ]
+  },
+  {
+    "id": "369f97b0285eecf9",
+    "title": "New cPanel Flaw Lets a Hosting Account With Mail Privileges Run Code as Root",
+    "summary_raw": "cPanel has patched a flaw that it says lets a single hosting account take control of an entire server. An authenticated account holder with mail-related privileges can create files of their choosing on the server through EmailTrack and, from there, run code as the root user.\n\ncPanel published the&nbsp;advisory on September 8&nbsp;and says every supported version of cPanel and WHM is affected.",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account.html",
+    "publishedDate": "2026-09-09T13:49:32+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709714+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "88a0315141ea3379",
+    "title": "F5 BIG-IP APM Malware Injects a PHP Web Shell Into Memory, Evading Disk Scans",
+    "summary_raw": "Malware linked to break-ins at F5 BIG-IP Access Policy Manager appliances hides a PHP web shell in memory instead of in a file on disk, Sophos said in an&nbsp;analysis published on September 7.\n\nWhen Apache loads any of the three appliances' own PHP scripts, the malware adds the web shell to the copy held in memory, so a check of the file on disk can come back clean. Those three scripts are",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html",
+    "publishedDate": "2026-09-09T13:06:49+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709816+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "b163f3fc8d811565",
+    "title": "Researcher Drops New Microsoft Defender PoC Showing ShieldBreak Patch Can Be Bypassed",
+    "summary_raw": "The security researcher known as Chaotic Eclipse has dropped a proof-of-concept (PoC) for yet another zero-day in Microsoft Defender.\n\nThe vulnerability, codenamed ShieldCrash, is assessed to be a patch bypass for CVE-2026-69414 (CVSS score: 7.8), also called ShieldBreak, which the researcher reported last month.\n\n\"Microsoft has failed to properly patch ShieldBreak CVE-2026-69414,\" Chaotic",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/researcher-drops-new-microsoft-defender.html",
+    "publishedDate": "2026-09-09T12:17:27+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.709919+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-69414"
+    ]
+  },
+  {
+    "id": "419df1f3701a7cb8",
+    "title": "SAP Patches CVSS 10.0 Kernel Flaw Enabling Unauthenticated Remote Code Execution",
+    "summary_raw": "SAP has released security updates to address multiple vulnerabilities, including a maximum-severity flaw in SAP Extended Passport (EPP) Processing that could have a severe impact on the confidentiality, integrity, and availability of the application\n\nThe vulnerability, tracked as CVE-2026-44756 (CVSS score: 10.0), has been described as a case of memory corruption. Discovered and reported by SAP",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/sap-patches-cvss-100-kernel-flaw.html",
+    "publishedDate": "2026-09-09T11:55:45+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710054+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-44756"
+    ]
+  },
+  {
+    "id": "07d47a2f7f2e3771",
+    "title": "Microsoft Patches Record 974 Flaws, Including Two Exploited Windows Zero-Days",
+    "summary_raw": "Microsoft on Tuesday broke Patch Tuesday records by addressing an earth-shattering 974 vulnerabilities spanning its software portfolio, including two flaws that it said have been actively exploited in the wild.\n\nThese include 723 flaws in Windows, 111 in Office and Office 2016, 62 in SQL, and 22 in Developer Tools. Of these, over 110 shortcomings have been assigned a critical severity rating.",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html",
+    "publishedDate": "2026-09-09T10:11:29+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710164+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "4b40f1884595f278",
+    "title": "N-able N-central Pre-Auth RCE Flaw Exploited in the Wild",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added a maximum-severity security flaw impacting N-able N-central to its Known Exploited Vulnerabilities (KEV) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by September 11, 2026.\n\nThe vulnerability in question is CVE-2026-86218 (CVSS score: 10.0), which has been described as a",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/n-able-n-central-pre-auth-rce-flaw.html",
+    "publishedDate": "2026-09-09T09:57:51+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710269+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-86218"
+    ]
+  },
+  {
+    "id": "08a6dd0842735870",
+    "title": "Slim Spider Steals Crypto Custody Secrets From Brazilian Financial Institution",
+    "summary_raw": "A previously undocumented financially motivated threat actor has been linked to attacks targeting Brazilian financial institutions since at least March 2026.\n\nCybersecurity company CrowdStrike is tracking the Brazil-based activity cluster under the name Slim Spider.\n\n\"The adversary demonstrates deep operational knowledge of Brazilian financial infrastructure, including the instant payment",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/slim-spider-steals-crypto-custody.html",
+    "publishedDate": "2026-09-08T21:50:23+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710374+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a714f833a62771f0",
+    "title": "Liquid Hackers Return 3,400 Bitcoin Taken via Elements Bug, Still Holding $47M in BTC",
+    "summary_raw": "Whoever took nearly 4,000 bitcoin from the Liquid Network on Sunday, September 6,&nbsp;returned 3,400 of it&nbsp;the next day, Bitcoin's public record shows. About 598.5 bitcoin has not come back.\n\nLiquid is a Bitcoin sidechain that holds real bitcoin to back a token called L-BTC. The network is still paused, so holders cannot turn that token back into bitcoin.\n\nThe 3,400 bitcoin was sent to a&",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/liquid-hackers-return-3400-bitcoin.html",
+    "publishedDate": "2026-09-08T20:24:30+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710478+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "7233e2d9b1b1aaba",
+    "title": "ChatGPT Flaw Let a Planted Prompt Send a Victim's Gmail Data to Another Account",
+    "summary_raw": "Check Point Research said in a&nbsp;report published today&nbsp;that a single instruction planted in a ChatGPT conversation could cause ChatGPT to quietly work for an attacker while answering the user's question as usual.\n\nIn the company's proof of concept, that hidden work read data from the user's connected Gmail account and passed it to a second ChatGPT account through a hidden channel",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/chatgpt-flaw-let-planted-prompt-send.html",
+    "publishedDate": "2026-09-08T19:49:17+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710593+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "c096727d1faeeea2",
+    "title": "Autonomous AI Agents Compromise Thousands of Credentials in Under Six Hours",
+    "summary_raw": "Threat actors are continuing to leverage artificial intelligence (AI) to streamline their operations, with one financially motivated hacking group employing an autonomous, multi-agent attack framework to carry out a large-scale credential harvesting campaign within six hours.\n\nGoogle Threat Intelligence Group (GTIG) said it has observed attackers with diverse motivations targeting proprietary AI",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/autonomous-ai-agents-compromise.html",
+    "publishedDate": "2026-09-08T19:18:16+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710701+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "9d6faaed701db5fb",
+    "title": "WeChat Zero-Click Worm Took Over Accounts on iPhone and Android via Incoming Calls",
+    "summary_raw": "Researchers at the security firm Calif have built a worm that takes over a WeChat account via an incoming call and&nbsp;demonstrated it spreading&nbsp;among three test phones.\n\nThe person being called does not have to answer or touch their phone for it to work, but the caller must already be one of their WeChat contacts. Calif reported the flaw to Tencent in July and says the company has since",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/wechat-zero-click-worm-took-over.html",
+    "publishedDate": "2026-09-08T17:24:29+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710808+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "9f18a97b3fdce7c6",
+    "title": "What It Took to Reach 1 Billion Build Manifests",
+    "summary_raw": "In the last six months, Chainguard doubled its output from 500 million to more than 1 billion container build manifests. We also surpassed 3,000 unique container images and 675,000 image versions in our catalog. Those are the headline numbers, but I want to share what's actually behind them. The number itself is less interesting than the system that produced it, and why we had to fundamentally",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/what-it-took-to-reach-1-billion-build.html",
+    "publishedDate": "2026-09-08T17:19:02+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.710910+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "9af5dfe944e1aeb4",
+    "title": "FreeIPA Flaw Chain Lets Anonymous Clients Create Reusable Administrator Credentials",
+    "summary_raw": "A flaw in FreeIPA lets a client that has never logged in create a Kerberos identity of its own choosing in the directory and end up in the administrators group, Red Hat says.\n\nFreeIPA is the system that determines who may log in across a Linux domain and maintains all identities in a 389 Directory Server database accessed via LDAP. The attack needs a second flaw in that database software.\n\nThe",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/freeipa-flaw-chain-lets-anonymous.html",
+    "publishedDate": "2026-09-08T16:52:07+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711038+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "2fdb7e2328900989",
+    "title": "Adobe Patches Magento Zero-Day Exploited to Deploy Rust Backdoor and PHP Web Shell",
+    "summary_raw": "Adobe on Monday released security patches to address a maximum-severity flaw impacting Adobe\u202fCommerce and\u202fMagento Open Source that has come under active exploitation in the wild.\n\nThe vulnerability, now tracked as CVE-2026-75650 (CVSS score: 10.0), has been codenamed StyleSmuggler by Sansec, which discovered zero-day exploitation starting September 4, 2026.\n\n\"This update resolves a critical",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+    "publishedDate": "2026-09-08T14:43:47+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711145+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-75650"
+    ]
+  },
+  {
+    "id": "640afb9db3b284d4",
+    "title": "BengalSEO Poisons Bing Search Results to Deliver MayaBot and Tech Support Scams",
+    "summary_raw": "Cybersecurity researchers have disclosed details of a sprawling search engine optimization (SEO) poisoning campaign that paves the way for malware deployment and tech support scams.\n\nThe campaign, discovered by the DFIR Report in March 2026, has been codenamed BengalSEO. It has operated out of the Indian state of Rajasthan since at least 2015, driven by two IT service providers named WeConnect",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/bengalseo-poisons-bing-search-results.html",
+    "publishedDate": "2026-09-08T14:13:51+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711252+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "86a44f9f81c5c19a",
+    "title": "Grindr to Pay \u00a326 Million to Settle U.K. Claims Over HIV Status Data Sharing",
+    "summary_raw": "Online dating app Grindr has opted to pay \u00a326 million ($35.1 million) to settle a lawsuit in the U.K. over allegations that it shared users' personal information, including their HIV status, with third-parties.\n\nGrindr, which is the largest LGBTQ+ dating app, was sued in April 2024, accusing it of violating U.K. privacy laws by sharing sensitive data for commercial purposes such as advertising.",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/grindr-to-pay-26-million-to-settle-uk.html",
+    "publishedDate": "2026-09-08T12:30:43+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711358+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "6c94379fcb16ef16",
+    "title": "PEEP Turns Chrome and Edge Into Post-Compromise Backdoors for Host Command Execution",
+    "summary_raw": "Cybersecurity researchers have disclosed details of a complex Chromium-based post-exploitation toolkit called PEEP that masquerades as a bookmarks extension for the web browser.\n\n\"Requiring prior administrative or code execution access, its installer injects the extension directly into Chrome/Edge profiles, bypassing Web Store checks and user prompts by forging Chromium's own Secure Preferences",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/peep-turns-chrome-and-edge-into-post.html",
+    "publishedDate": "2026-09-07T23:42:09+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711462+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "9c92a7066f1fef34",
+    "title": "Fake IT Calls Target Executives in Microsoft 365 Data Theft and Extortion Attacks",
+    "summary_raw": "Threat hunters have disclosed details of a widespread data theft and extortion threat cluster that's targeting Microsoft 365 and other software-as-a-service (SaaS) offerings through information technology (IT) help desk vishing, adversary-in-the-middle (AitM) token theft, and residential-proxy sign-ins.\n\nThe activity, which mainly singles out directors, vice presidents, and other executive staff",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/microsoft-365-attackers-use-help-desk.html",
+    "publishedDate": "2026-09-07T21:21:56+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711571+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "24d56919cba73a5c",
+    "title": "\u26a1 Weekly Recap: Chrome 0-Day, Router Hijacks, Coder Supply Chain Attack and More",
+    "summary_raw": "Turning off email images should at least stop the pictures. This week, attackers had a workaround: a scannable QR code built out of text. It still appears, even with images blocked. A small detail, but an annoying one if that was a precaution you were counting on.\n\nElsewhere, a trusted software source delivered code that stole credentials, and a protocol designed for secure network management",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/weekly-recap-chrome-0-day-router.html",
+    "publishedDate": "2026-09-07T20:06:07+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711674+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "c09a5ec87b1fa293",
+    "title": "Your Cloud Security Checklist Doesn't Work the Way You Think It Does",
+    "summary_raw": "If managing security across multiple cloud providers wasn't hard enough, each one fails in a different way. For the 2026 Cloud Security Index, Intruder analyzed misconfiguration data from 3,000 organizations across AWS, Azure, and Google Cloud and found that risk profiles across providers have almost nothing in common. Here\u2019s what the data looks like.\n\nHow risk differs across cloud providers",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/your-cloud-security-checklist-doesnt.html",
+    "publishedDate": "2026-09-07T17:15:00+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711781+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "3fabea4df5b35117",
+    "title": "Rogue ScreenConnect Clients Spread Four-Stage VBScript Chain to Newly Connected Hosts",
+    "summary_raw": "Cybersecurity researchers have disclosed details of worm-like activity that abuses ConnectWise ScreenConnect to distribute a malicious Visual Basic Script (VBScript) payload to newly connected systems.\n\nAccording to Huntress, three unrelated incidents have been found to use diverse initial access methods, namely a Quick Assist tech-support scam, a phishing-delivered MSI installer, and a fake",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/rogue-screenconnect-clients-spread-four.html",
+    "publishedDate": "2026-09-07T17:06:39+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.711885+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "ff2a8ecee2aa5028",
+    "title": "Telerik UI Padding-Oracle Bug Chained to Unauthenticated RCE \u2014 Public Exploit Released",
+    "summary_raw": "A TantoSec proof-of-concept turns an AES-CBC \"padding oracle\" in Telerik UI for ASP.NET AJAX into unauthenticated remote code execution \u2014 but only against applications in a specific non-default configuration, and Progress patched the chain in July. There are no confirmed reports of exploitation in the wild.\n\nSecurity firm TantoSec has published a working exploit chain targeting vulnerabilities",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/telerik-ui-padding-oracle-bug-chained.html",
+    "publishedDate": "2026-09-07T16:50:14+05:30",
+    "scrapedAt": "2026-09-12T17:38:17.712013+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "59b3d76728f85f89",
+    "title": "Dutch NCSC: Critical Check Point VPN flaws exploitation is imminent",
+    "summary_raw": "The Dutch Nationaal Cyber Security Centrum (NCSC) is warning of imminent exploitation of two critical flaws in Check Point VPN tracked as CVE-2026-85102 and CVE-2026-85103. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+    "publishedDate": "2026-09-12T10:14:32-04:00",
+    "scrapedAt": "2026-09-12T17:38:18.800626+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-85102",
+      "CVE-2026-85103"
+    ]
+  },
+  {
+    "id": "a83456ea7acda01f",
+    "title": "DSA-6496-1 nginx - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6496-1\">https://security-tracker.debian.org/tracker/DSA-6496-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00407.html",
+    "publishedDate": "2026-09-12T00:00:00+00:00",
+    "scrapedAt": "2026-09-12T17:38:35.732780+00:00",
+    "cve_ids_scraped": []
   }
 ]
