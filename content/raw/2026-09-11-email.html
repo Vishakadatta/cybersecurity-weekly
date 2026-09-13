@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft's Record 974-CVE Patch Tuesday, Check Point VPN In-The-Wild Threat, and Artifactory Exploits</title>
+</head>
+<body style="margin:0;padding:0;background-color:#020617;font-family:system-ui,-apple-system,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#020617;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #1e293b;">
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;">
+                &#128737; Cybersecurity Weekly
+              </h1>
+              <p style="margin:4px 0 0;font-size:13px;color:#64748b;">
+                Sep 4 – 11, 2026 &middot; AI-curated security intelligence
+              </p>
+            </td>
+          </tr>
+
+          <!-- Subject + Week Intro -->
+          <tr>
+            <td style="padding:32px 32px 20px;">
+              <h2 style="margin:0 0 14px;font-size:22px;font-weight:800;color:#ffffff;line-height:1.3;">
+                Microsoft's Record 974-CVE Patch Tuesday, Check Point VPN In-The-Wild Threat, and Artifactory Exploits
+              </h2>
+              
+              <p style="margin:0;font-size:14px;color:#94a3b8;line-height:1.7;border-left:3px solid #14b8a6;padding-left:14px;">
+                This week was headlined by an overwhelming Patch Tuesday from Microsoft featuring nearly a thousand resolved vulnerabilities alongside active zero-day exploitation. Enterprise edge appliances and DevOps pipelines remain prime targets, with critical remote code execution flaws under active attack across Check Point VPNs, JFrog Artifactory, and PaperCut. Systems and security engineers should urgently triage external perimeters and apply vendor hotfixes.
+              </p>
+              
+            </td>
+          </tr>
+
+          <!-- Articles -->
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/" style="color:#ffffff;text-decoration:none;">Microsoft Patch Tuesday Sets Record with 974 CVEs, Including Two Actively Exploited Zero‑Days</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Microsoft released a historic Patch Tuesday fixing 974 vulnerabilities—113 critical and two zero‑day flaws (CVE‑2026‑81963, CVE‑2026‑85880) that are already being exploited to gain SYSTEM privileges on Windows and Windows Server systems.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> The sheer volume overwhelms traditional testing pipelines and the active exploitation of the two zero‑days forces immediate remediation to prevent privilege escalation on enterprise endpoints and servers.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Prioritize deployment of the patches for CVE‑2026‑81963 and CVE‑2026‑85880, then rapidly roll out the remaining critical updates across all affected Microsoft products.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://www.darkreading.com/vulnerabilities-threats/patch-tuesday-another-record-974-cves" style="color:#64748b;text-decoration:none;margin-left:6px;">Dark Reading</a>
+                        
+                      
+                        
+                        <a href="https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-september-2026/" style="color:#64748b;text-decoration:none;margin-left:6px;">CrowdStrike Blog</a>
+                        
+                      
+                        
+                        <a href="https://isc.sans.edu/diary/rss/33320" style="color:#64748b;text-decoration:none;margin-left:6px;">SANS Internet Storm Center</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-85102</span>
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-85103</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/" style="color:#ffffff;text-decoration:none;">Dutch NCSC Flags Imminent Exploitation of Two Critical Check Point VPN Flaws</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      The Dutch Nationaal Cyber Security Centrum warns that CVE‑2026‑85102 and CVE‑2026‑85103 in Check Point VPN are likely to be actively exploited, allowing remote attackers to bypass authentication, execute arbitrary code, and gain full control of Security Gateways and Management Servers.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face the risk of complete compromise of VPN appliances, exposure of internal network data, and potential service disruption.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply Check Point’s LivePatch Take 24 or the relevant Jumbo Hotfix/ Spark updates immediately to remediate both vulnerabilities.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-42018</span>
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-42016</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/" style="color:#ffffff;text-decoration:none;">Critical JFrog Artifactory Flaws Chained to Deploy Rust Backdoor on Self‑Hosted Servers</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Attackers exploited CVE‑2026‑42018 and CVE‑2026‑42016, plus CVE‑2026‑82329, to bypass authentication, mint admin‑scoped JWTs, install malicious Groovy plugins and drop a Rust‑based backdoor on vulnerable self‑hosted Artifactory instances between August 15 and September 8, 2026.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Unpatched Artifactory servers can be fully compromised, allowing threat actors to steal repository data, add SSH keys, and maintain persistent remote access via a custom Rust C2 payload.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the latest JFrog Artifactory patches for CVE‑2026‑42018, CVE‑2026‑42016, and CVE‑2026‑82329 immediately and rotate all tokens and credentials.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/" style="color:#ffffff;text-decoration:none;">AI‑Driven Campaign Compromises 440+ PaperCut NG/MF Deployments Across 48 Countries</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A Russian‑speaking threat actor deployed hundreds of AI agents to automatically develop, test, and launch exploits for CVE‑2026‑81578 and CVE‑2026‑82078, breaching 440 PaperCut NG/MF instances in 395 organizations.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face near‑real‑time exploitation that compresses detection and response windows to minutes, exposing critical print‑management infrastructure and privileged domain credentials.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Patch both PaperCut CVEs immediately, isolate internet‑facing PaperCut servers, enforce strict network segmentation, and rotate all harvested credentials.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; APT31</span>
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-87491</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html" style="color:#ffffff;text-decoration:none;">Four China‑aligned espionage groups weaponize new BlueMoon exploit kit against Windows and Chrome</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Four state‑sponsored threat clusters deployed the previously unseen BlueMoon exploit kit, chaining three zero‑day flaws—CVE‑2026‑85046 and CVE‑2026‑87491 in Google Chrome’s V8 engine, and CVE‑2026‑85880 in Windows ALPC—to gain code execution on Windows hosts and Chrome browsers.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face immediate risk of remote code execution on unpatched Windows systems and Chrome browsers, with the vulnerabilities having been exploited before patches were widely deployed.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the September 2026 Patch Tuesday updates for Windows and the September 8, 2026 Chrome patches, and verify that all Chromium‑based browsers are running the latest stable release.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-85706</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/" style="color:#ffffff;text-decoration:none;">GitLab Critical Path‑Traversal Flaw (CVE‑2026‑85706) Triggers Immediate In‑the‑Wild Probes</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      GitLab disclosed a CVSS 10.0 path‑traversal vulnerability (CVE‑2026‑85706) in the repository commits API that lets unauthenticated attackers read arbitrary files. Within hours of disclosure, watchTowr observed active probing of Internet‑exposed GitLab instances.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams risk exposure of credentials, CI/CD secrets, and source code if any public project exists on an unpatched GitLab server.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the GitLab 19.1.8, 19.2.6, or 19.3.2 patches immediately and audit logs for POST requests to '/api/v4/projects/{id}/repository/commits/' with 'file.path' parameters.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-53010</span>
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-52999</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://ubuntu.com/security/notices/USN-8748-1" style="color:#ffffff;text-decoration:none;">Critical Linux Kernel Flaws (CVE‑2026‑52914, CVE‑2026‑52931, CVE‑2026‑52955) Enable Privilege Escalation and Remote Code Execution</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Multiple critical vulnerabilities in the Linux kernel—including hardware crypto drivers, NVIDIA Tegra support, and several network protocol stacks—allow local privilege escalation or remote code execution. Ubuntu has released a kernel update that patches CVE‑2026‑52914, CVE‑2026‑52931, CVE‑2026‑52955 and related issues.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must treat these flaws as high‑severity; an attacker who exploits them can gain root privileges or execute code remotely, compromising the confidentiality, integrity, and availability of any Linux host running the vulnerable kernel version.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Deploy the latest Ubuntu kernel package (USN‑8748‑1) across all Linux servers without delay.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://ubuntu.com/security/notices/USN-8748-1" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://access.redhat.com/errata/RHSA-2026:66248" style="color:#ffffff;text-decoration:none;">Red Hat Patches Critical RCE and Container Escape Flaws Across RHEL, OpenShift, and Ansible</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Red Hat issued widespread security updates across Red Hat Enterprise Linux, OpenShift Container Platform, and Ansible-Core.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Vulnerabilities across these core packages allow attackers to execute arbitrary code, escape container isolation, or gain root-level privileges across hybrid enterprise environments.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the relevant RHSA errata updates immediately across affected RHEL distributions, OpenShift clusters, and Ansible automation nodes.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://access.redhat.com/errata/RHSA-2026:66248" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://access.redhat.com/errata/RHSA-2026:65899" style="color:#64748b;text-decoration:none;margin-left:6px;">Red Hat Security Advisories</a>
+                        
+                      
+                        
+                        <a href="https://access.redhat.com/errata/RHSA-2026:65887" style="color:#64748b;text-decoration:none;margin-left:6px;">Red Hat Security Advisories</a>
+                        
+                      
+                        
+                        <a href="https://access.redhat.com/errata/RHSA-2026:63044" style="color:#64748b;text-decoration:none;margin-left:6px;">Red Hat Security Advisories</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html" style="color:#ffffff;text-decoration:none;">F5 BIG‑IP APM Malware Injects In‑Memory PHP Web Shell via Exploited RCE Flaw</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A supply‑chain compromise of F5 BIG‑IP Access Policy Manager appliances injects a PHP web shell directly into memory, bypassing disk‑based detection. The malware hijacks three native APM PHP scripts (apm_css.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams cannot rely on file‑integrity checks to spot the web shell, leaving the appliance vulnerable to persistent, stealthy command execution without authentication.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Deploy runtime memory monitoring or behavioral detection on BIG‑IP APM, apply F5’s latest patches for CVE‑2025‑53521, and verify that the affected PHP scripts have not been altered in memory.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-75650</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html" style="color:#ffffff;text-decoration:none;">Adobe Patches Critical Magento Zero‑Day (CVE‑2026‑75650) Exploited for Rust Backdoor and PHP Web Shell</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Adobe released emergency patches for CVE‑2026‑75650, a CVSS 10.0 template injection flaw in Adobe Commerce and Magento Open Source that attackers have been exploiting since September 4 2026 to install...
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> The vulnerability enables arbitrary code execution on e‑commerce sites, allowing threat actors to gain persistent remote access and exfiltrate data. Unpatched installations are at immediate risk of full system compromise.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the VULN‑39341 hotfix for the affected version, rotate encryption keys, and verify that no unauthorized binaries or web shells exist.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/" style="color:#ffffff;text-decoration:none;">SPIFFE/SPIRE Identity Spoofing Allows Compromised Kubernetes Nodes to Harvest Workload Credentials</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Root‑level access on a Kubernetes node can be used to tamper with cgroup metadata, tricking the SPIRE agent into issuing Verifiable Identity Documents (SVIDs) of co‑located workloads.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams can no longer rely on node trust as a boundary; a single compromised node exposes all short‑lived workload identities on that host.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Harden node access, eliminate privileged containers, enforce strict selector policies, and use tools like Spooffe to test cgroup manipulation risks.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+
+          <!-- CTA -->
+          <tr>
+            <td style="padding:32px;" align="center">
+              <a href="" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:700;color:#042f2e;background-color:#2dd4bf;border-radius:8px;text-decoration:none;">
+                View all stories on the web &rarr;
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px;border-top:1px solid #1e293b;">
+              <p style="margin:0;font-size:12px;color:#475569;line-height:1.6;text-align:center;">
+                You're receiving this because you subscribed to Cybersecurity Weekly.<br>
+                <a href="" style="color:#64748b;text-decoration:underline;">Unsubscribe</a>
+                &middot;
+                <a href="https://github.com/Vishakadatta/cybersecurity-weekly" style="color:#64748b;text-decoration:underline;">GitHub</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

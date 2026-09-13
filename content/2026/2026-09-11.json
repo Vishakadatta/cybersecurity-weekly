@@ -1,0 +1,635 @@
+{
+  "edition": "2026-09-11",
+  "year": "2026",
+  "editionLabel": "Sep 4 \u2013 11, 2026",
+  "generatedAt": "2026-09-13T21:34:54.167004+00:00",
+  "subjectLine": "Microsoft's Record 974-CVE Patch Tuesday, Check Point VPN In-The-Wild Threat, and Artifactory Exploits",
+  "weekIntro": "This week was headlined by an overwhelming Patch Tuesday from Microsoft featuring nearly a thousand resolved vulnerabilities alongside active zero-day exploitation. Enterprise edge appliances and DevOps pipelines remain prime targets, with critical remote code execution flaws under active attack across Check Point VPNs, JFrog Artifactory, and PaperCut. Systems and security engineers should urgently triage external perimeters and apply vendor hotfixes.",
+  "articles": [
+    {
+      "id": "6e80b0fb56bfd77a",
+      "title": "Microsoft Patch Tuesday Sets Record with 974 CVEs, Including Two Actively Exploited Zero\u2011Days",
+      "summary": "Microsoft released a historic Patch Tuesday fixing 974 vulnerabilities\u2014113 critical and two zero\u2011day flaws (CVE\u20112026\u201181963, CVE\u20112026\u201185880) that are already being exploited to gain SYSTEM privileges on Windows and Windows Server systems.",
+      "impact": "The sheer volume overwhelms traditional testing pipelines and the active exploitation of the two zero\u2011days forces immediate remediation to prevent privilege escalation on enterprise endpoints and servers.",
+      "action": "Prioritize deployment of the patches for CVE\u20112026\u201181963 and CVE\u20112026\u201185880, then rapidly roll out the remaining critical updates across all affected Microsoft products.",
+      "sources": [
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/patch-tuesday-another-record-974-cves"
+        },
+        {
+          "name": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-september-2026/"
+        },
+        {
+          "name": "SANS Internet Storm Center",
+          "url": "https://isc.sans.edu/diary/rss/33320"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/microsoft-patches-record-974-flaws.html"
+        }
+      ],
+      "url": "https://krebsonsecurity.com/2026/09/microsoft-plugs-nearly-1000-security-holes/",
+      "publishedDate": "2026-09-08T19:20:30+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows",
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2012",
+        "Windows Server 2015",
+        "Windows Server 2016",
+        "Windows Server 2019",
+        "Windows Server 2022",
+        "Windows Server 2025",
+        "Windows Server Core",
+        "Office",
+        "Office 2016",
+        "SQL Server",
+        "Developer Tools",
+        "SharePoint Server",
+        "Azure",
+        "RRAS",
+        "MSMQ",
+        "Skype for Business",
+        "DNS",
+        "DHCP",
+        "NFS",
+        "SSTP VPN",
+        "Netlogon",
+        "Kerberos",
+        "Hyper\u2011V"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "59b3d76728f85f89",
+      "title": "Dutch NCSC Flags Imminent Exploitation of Two Critical Check Point VPN Flaws",
+      "summary": "The Dutch Nationaal Cyber Security Centrum warns that CVE\u20112026\u201185102 and CVE\u20112026\u201185103 in Check Point VPN are likely to be actively exploited, allowing remote attackers to bypass authentication, execute arbitrary code, and gain full control of Security Gateways and Management Servers.",
+      "impact": "Security teams face the risk of complete compromise of VPN appliances, exposure of internal network data, and potential service disruption.",
+      "action": "Apply Check Point\u2019s LivePatch Take\u202f24 or the relevant Jumbo Hotfix/ Spark updates immediately to remediate both vulnerabilities.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/dutch-ncsc-critical-check-point-vpn-flaws-exploitation-is-imminent/",
+      "publishedDate": "2026-09-12T10:14:32-04:00",
+      "cve_ids": [
+        "CVE-2026-85102",
+        "CVE-2026-85103"
+      ],
+      "affected_systems": [
+        "Check Point VPN"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "a9e03aba59c7b794",
+      "title": "Critical JFrog Artifactory Flaws Chained to Deploy Rust Backdoor on Self\u2011Hosted Servers",
+      "summary": "Attackers exploited CVE\u20112026\u201142018 and CVE\u20112026\u201142016, plus CVE\u20112026\u201182329, to bypass authentication, mint admin\u2011scoped JWTs, install malicious Groovy plugins and drop a Rust\u2011based backdoor on vulnerable self\u2011hosted Artifactory instances between August\u202f15 and September\u202f8, 2026.",
+      "impact": "Unpatched Artifactory servers can be fully compromised, allowing threat actors to steal repository data, add SSH keys, and maintain persistent remote access via a custom Rust C2 payload.",
+      "action": "Apply the latest JFrog Artifactory patches for CVE\u20112026\u201142018, CVE\u20112026\u201142016, and CVE\u20112026\u201182329 immediately and rotate all tokens and credentials.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/attackers-chain-jfrog-artifactory-flaws.html"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/artifactory-flaws-chained-in-attacks-deploying-backdoor-malware/",
+      "publishedDate": "2026-09-11T12:29:44-04:00",
+      "cve_ids": [
+        "CVE-2026-42018",
+        "CVE-2026-42016"
+      ],
+      "affected_systems": [
+        "JFrog Artifactory"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "09079ade99fff94c",
+      "title": "AI\u2011Driven Campaign Compromises 440+ PaperCut NG/MF Deployments Across 48 Countries",
+      "summary": "A Russian\u2011speaking threat actor deployed hundreds of AI agents to automatically develop, test, and launch exploits for CVE\u20112026\u201181578 and CVE\u20112026\u201182078, breaching 440 PaperCut NG/MF instances in 395 organizations.",
+      "impact": "Security teams face near\u2011real\u2011time exploitation that compresses detection and response windows to minutes, exposing critical print\u2011management infrastructure and privileged domain credentials.",
+      "action": "Patch both PaperCut CVEs immediately, isolate internet\u2011facing PaperCut servers, enforce strict network segmentation, and rotate all harvested credentials.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/papercut-attacker-uses-hundreds-of-ai.html"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/ai-powered-attack-exploited-papercut-flaws-to-hack-395-organizations/",
+      "publishedDate": "2026-09-10T11:55:56-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "PaperCut NG",
+        "PaperCut MF"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "9927501cbbee3b72",
+      "title": "Four China\u2011aligned espionage groups weaponize new BlueMoon exploit kit against Windows and Chrome",
+      "summary": "Four state\u2011sponsored threat clusters deployed the previously unseen BlueMoon exploit kit, chaining three zero\u2011day flaws\u2014CVE\u20112026\u201185046 and CVE\u20112026\u201187491 in Google Chrome\u2019s V8 engine, and CVE\u20112026\u201185880 in Windows ALPC\u2014to gain code execution on Windows hosts and Chrome browsers.",
+      "impact": "Security teams face immediate risk of remote code execution on unpatched Windows systems and Chrome browsers, with the vulnerabilities having been exploited before patches were widely deployed.",
+      "action": "Apply the September\u202f2026 Patch Tuesday updates for Windows and the September\u202f8,\u202f2026 Chrome patches, and verify that all Chromium\u2011based browsers are running the latest stable release.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/four-spy-groups-used-same-chrome-and.html",
+      "publishedDate": "2026-09-09T22:04:05+05:30",
+      "cve_ids": [
+        "CVE-2026-87491"
+      ],
+      "affected_systems": [
+        "Google Chrome",
+        "Microsoft Windows"
+      ],
+      "threat_actor": "APT31",
+      "tier": 2
+    },
+    {
+      "id": "3b1ca1686e68856d",
+      "title": "GitLab Critical Path\u2011Traversal Flaw (CVE\u20112026\u201185706) Triggers Immediate In\u2011the\u2011Wild Probes",
+      "summary": "GitLab disclosed a CVSS 10.0 path\u2011traversal vulnerability (CVE\u20112026\u201185706) in the repository commits API that lets unauthenticated attackers read arbitrary files. Within hours of disclosure, watchTowr observed active probing of Internet\u2011exposed GitLab instances.",
+      "impact": "Security teams risk exposure of credentials, CI/CD secrets, and source code if any public project exists on an unpatched GitLab server.",
+      "action": "Apply the GitLab 19.1.8, 19.2.6, or 19.3.2 patches immediately and audit logs for POST requests to '/api/v4/projects/{id}/repository/commits/' with 'file.path' parameters.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/gitlab-cvss-10-file-read-flaw-draws-in.html"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/gitlab-urges-users-to-patch-max-severity-path-traversal-flaw/",
+      "publishedDate": "2026-09-11T07:15:22-04:00",
+      "cve_ids": [
+        "CVE-2026-85706"
+      ],
+      "affected_systems": [
+        "GitLab Community Edition",
+        "GitLab Enterprise Edition"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "951062aea9a8352c",
+      "title": "Critical Linux Kernel Flaws (CVE\u20112026\u201152914, CVE\u20112026\u201152931, CVE\u20112026\u201152955) Enable Privilege Escalation and Remote Code Execution",
+      "summary": "Multiple critical vulnerabilities in the Linux kernel\u2014including hardware crypto drivers, NVIDIA Tegra support, and several network protocol stacks\u2014allow local privilege escalation or remote code execution. Ubuntu has released a kernel update that patches CVE\u20112026\u201152914, CVE\u20112026\u201152931, CVE\u20112026\u201152955 and related issues.",
+      "impact": "Security teams must treat these flaws as high\u2011severity; an attacker who exploits them can gain root privileges or execute code remotely, compromising the confidentiality, integrity, and availability of any Linux host running the vulnerable kernel version.",
+      "action": "Deploy the latest Ubuntu kernel package (USN\u20118748\u20111) across all Linux servers without delay.",
+      "sources": [
+        {
+          "name": "Ubuntu Security Notices",
+          "url": "https://ubuntu.com/security/notices/USN-8748-1"
+        }
+      ],
+      "url": "https://ubuntu.com/security/notices/USN-8748-1",
+      "publishedDate": "2026-09-10T15:32:51+00:00",
+      "cve_ids": [
+        "CVE-2026-53010",
+        "CVE-2026-52999",
+        "CVE-2026-53006",
+        "CVE-2026-52914",
+        "CVE-2026-52993",
+        "CVE-2026-53002",
+        "CVE-2026-53049",
+        "CVE-2026-53246",
+        "CVE-2026-53224",
+        "CVE-2026-52958",
+        "CVE-2026-53055",
+        "CVE-2026-53151",
+        "CVE-2026-53309",
+        "CVE-2026-53043",
+        "CVE-2026-53247",
+        "CVE-2026-52986",
+        "CVE-2026-53215",
+        "CVE-2026-53046",
+        "CVE-2026-53088",
+        "CVE-2026-53045",
+        "CVE-2026-53175",
+        "CVE-2026-52931",
+        "CVE-2026-53216",
+        "CVE-2026-64531",
+        "CVE-2026-52955",
+        "CVE-2026-53260",
+        "CVE-2026-52982"
+      ],
+      "affected_systems": [
+        "Linux kernel"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "7602a7ff03a59d61",
+      "title": "Red Hat Patches Critical RCE and Container Escape Flaws Across RHEL, OpenShift, and Ansible",
+      "summary": "Red Hat issued widespread security updates across Red Hat Enterprise Linux, OpenShift Container Platform, and Ansible-Core.",
+      "impact": "Vulnerabilities across these core packages allow attackers to execute arbitrary code, escape container isolation, or gain root-level privileges across hybrid enterprise environments.",
+      "action": "Apply the relevant RHSA errata updates immediately across affected RHEL distributions, OpenShift clusters, and Ansible automation nodes.",
+      "sources": [
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66248"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65899"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65887"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:63044"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65855"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66410"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66451"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66432"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66459"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66542"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66460"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66524"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66545"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66488"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66403"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66407"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66405"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66406"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66366"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66392"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66401"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66347"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66355"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66348"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66341"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66349"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:62548"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:62549"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66336"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66325"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66323"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66324"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66327"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66282"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66281"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66180"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66179"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66016"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66026"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65993"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:66000"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65998"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65999"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65959"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65918"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65897"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65886"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65895"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65900"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65888"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65880"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65832"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65816"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65803"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65763"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65770"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65768"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65773"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65766"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65769"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65767"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65771"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65765"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65762"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65757"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65764"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65708"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65712"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:65709"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:63636"
+        }
+      ],
+      "url": "https://access.redhat.com/errata/RHSA-2026:66248",
+      "publishedDate": "2026-09-09T01:05:50+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Ansible-Core",
+        "FreeRDP",
+        "OpenShift Container Platform 4.16",
+        "OpenShift Container Platform 4.19",
+        "Red Hat AMQ Broker",
+        "Red Hat Enterprise Linux 6",
+        "Red Hat Enterprise Linux 7",
+        "Red Hat Enterprise Linux 8",
+        "Red Hat Enterprise Linux 8.4",
+        "Red Hat Enterprise Linux 8.6",
+        "Red Hat Enterprise Linux 8.8",
+        "Red Hat Enterprise Linux 9",
+        "Red Hat Enterprise Linux 9.2",
+        "Red Hat Enterprise Linux 9.4",
+        "Red Hat Enterprise Linux 9.6",
+        "Red Hat Enterprise Linux 10",
+        "Red Hat MicroShift 4.19",
+        "Red Hat OpenStack Platform 17.1",
+        "perl-DBI",
+        "postgresql16-postgis"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "88a0315141ea3379",
+      "title": "F5 BIG\u2011IP APM Malware Injects In\u2011Memory PHP Web Shell via Exploited RCE Flaw",
+      "summary": "A supply\u2011chain compromise of F5 BIG\u2011IP Access Policy Manager appliances injects a PHP web shell directly into memory, bypassing disk\u2011based detection. The malware hijacks three native APM PHP scripts (apm_css.",
+      "impact": "Security teams cannot rely on file\u2011integrity checks to spot the web shell, leaving the appliance vulnerable to persistent, stealthy command execution without authentication.",
+      "action": "Deploy runtime memory monitoring or behavioral detection on BIG\u2011IP APM, apply F5\u2019s latest patches for CVE\u20112025\u201153521, and verify that the affected PHP scripts have not been altered in memory.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/f5-big-ip-apm-malware-injects-php-web.html",
+      "publishedDate": "2026-09-09T13:06:49+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "F5 BIG\u2011IP Access Policy Manager (APM)"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "2fdb7e2328900989",
+      "title": "Adobe Patches Critical Magento Zero\u2011Day (CVE\u20112026\u201175650) Exploited for Rust Backdoor and PHP Web Shell",
+      "summary": "Adobe released emergency patches for CVE\u20112026\u201175650, a CVSS 10.0 template injection flaw in Adobe Commerce and Magento Open Source that attackers have been exploiting since September 4 2026 to install...",
+      "impact": "The vulnerability enables arbitrary code execution on e\u2011commerce sites, allowing threat actors to gain persistent remote access and exfiltrate data. Unpatched installations are at immediate risk of full system compromise.",
+      "action": "Apply the VULN\u201139341 hotfix for the affected version, rotate encryption keys, and verify that no unauthorized binaries or web shells exist.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/adobe-patches-magento-zero-day.html",
+      "publishedDate": "2026-09-08T14:43:47+05:30",
+      "cve_ids": [
+        "CVE-2026-75650"
+      ],
+      "affected_systems": [
+        "Adobe Commerce",
+        "Magento Open Source"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "1fb7fd98ae59f01c",
+      "title": "SPIFFE/SPIRE Identity Spoofing Allows Compromised Kubernetes Nodes to Harvest Workload Credentials",
+      "summary": "Root\u2011level access on a Kubernetes node can be used to tamper with cgroup metadata, tricking the SPIRE agent into issuing Verifiable Identity Documents (SVIDs) of co\u2011located workloads.",
+      "impact": "Security teams can no longer rely on node trust as a boundary; a single compromised node exposes all short\u2011lived workload identities on that host.",
+      "action": "Harden node access, eliminate privileged containers, enforce strict selector policies, and use tools like Spooffe to test cgroup manipulation risks.",
+      "sources": [
+        {
+          "name": "Palo Alto Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/"
+        }
+      ],
+      "url": "https://unit42.paloaltonetworks.com/kubernetes-spiffe-spire-identity-spoofing/",
+      "publishedDate": "2026-09-10T10:00:43+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Kubernetes",
+        "SPIRE",
+        "SPIFFE"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
