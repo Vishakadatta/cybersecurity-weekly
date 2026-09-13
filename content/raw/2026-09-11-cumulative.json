@@ -2686,5 +2686,40 @@
     "publishedDate": "2026-09-12T00:00:00+00:00",
     "scrapedAt": "2026-09-12T17:38:35.732780+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "fa59062d0b2fe8ab",
+    "title": "Attackers Use Passkey Phishing to Hijack Microsoft Cloud Accounts and Exfiltrate Data",
+    "summary_raw": "Microsoft has disclosed details of two campaigns in which threat actors are abusing third-party email delivery infrastructure to blast financial fraud scam messages and using passkey-themed social engineering to breach cloud environments.\n\nThe first campaign, per the tech giant, involved sending over a million scam emails between August 3 and 5, 2026, by masquerading as chief executive officers",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/attackers-use-passkey-phishing-to.html",
+    "publishedDate": "2026-09-13T15:41:48+05:30",
+    "scrapedAt": "2026-09-13T17:55:54.840029+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "b2a972265875efe1",
+    "title": "Hackers exploit Tencent app flaw to deploy GrayRabbit malware",
+    "summary_raw": "Threat actors linked to a China-aligned espionage group are exploiting a critical vulnerability (CVE-2026-51990) in Tencent's Sogou Input Method for Windows to deploy the GrayRabbit backdoor. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-tencent-app-flaw-to-deploy-grayrabbit-malware/",
+    "publishedDate": "2026-09-13T10:26:32-04:00",
+    "scrapedAt": "2026-09-13T17:55:55.957094+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-51990"
+    ]
+  },
+  {
+    "id": "797da0f210e5fa5f",
+    "title": "DSA-6497-1 xorg-server - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6497-1\">https://security-tracker.debian.org/tracker/DSA-6497-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00408.html",
+    "publishedDate": "2026-09-12T00:00:00+00:00",
+    "scrapedAt": "2026-09-13T17:56:13.301789+00:00",
+    "cve_ids_scraped": []
   }
 ]
