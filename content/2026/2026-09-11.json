@@ -2,10 +2,28 @@
   "edition": "2026-09-11",
   "year": "2026",
   "editionLabel": "Sep 4 \u2013 11, 2026",
-  "generatedAt": "2026-09-13T21:34:54.167004+00:00",
-  "subjectLine": "Microsoft's Record 974-CVE Patch Tuesday, Check Point VPN In-The-Wild Threat, and Artifactory Exploits",
+  "generatedAt": "2026-09-14T19:55:27.232243+00:00",
+  "subjectLine": "BREAKING: New DDRop Attack Breaks Intel TDX and AMD SEV\u2011SNP Confidenti + More Inside",
   "weekIntro": "This week was headlined by an overwhelming Patch Tuesday from Microsoft featuring nearly a thousand resolved vulnerabilities alongside active zero-day exploitation. Enterprise edge appliances and DevOps pipelines remain prime targets, with critical remote code execution flaws under active attack across Check Point VPNs, JFrog Artifactory, and PaperCut. Systems and security engineers should urgently triage external perimeters and apply vendor hotfixes.",
   "articles": [
+    {
+      "id": "09d1dd4eafdffbfc",
+      "title": "Red Heron Exploits Gitea RCE to Compromise 13 Organizations Across Six Countries",
+      "summary": "A suspected Chinese state\u2011aligned threat group, Red Heron, is rapidly weaponising a newly disclosed remote\u2011code\u2011execution vulnerability in the open\u2011source Gitea platform. The campaign has already compromised at least 13 organisations in six different nations, highlighting a nation\u2011state\u2011level supply\u2011chain threat to self\u2011hosted Git services.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/red-heron-exploits-gitea-rce-to.html",
+      "tier": 2,
+      "publishedDate": "2026-09-14T22:26:30+05:30"
+    },
+    {
+      "id": "d1e3ec21956720a9",
+      "title": "New DDRop Attack Breaks Intel TDX and AMD SEV\u2011SNP Confidential Computing",
+      "summary": "Researchers disclosed a novel hardware\u2011level attack, DDRop, that silently drops memory writes, bypassing the isolation guarantees of Intel\u2019s TDX and AMD\u2019s SEV\u2011SNP confidential\u2011computing technologies. The technique could allow attackers with low\u2011level access to extract or tamper with protected workloads, representing a critical, actively\u2011exploited zero\u2011day in widely\u2011deployed server hardware.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html",
+      "tier": 1,
+      "publishedDate": "2026-09-14T23:32:13+05:30"
+    },
     {
       "id": "6e80b0fb56bfd77a",
       "title": "Microsoft Patch Tuesday Sets Record with 974 CVEs, Including Two Actively Exploited Zero\u2011Days",
