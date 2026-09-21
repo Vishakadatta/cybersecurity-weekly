@@ -2,10 +2,28 @@
   "edition": "2026-09-18",
   "year": "2026",
   "editionLabel": "Sep 11 \u2013 18, 2026",
-  "generatedAt": "2026-09-21T06:08:43.556604+00:00",
-  "subjectLine": "Cisco ISE CVSS 10.0 Zero-Day Under Active Attack, Check Point Root RCE, and Linux Kernel Exploits",
+  "generatedAt": "2026-09-21T20:06:19.293817+00:00",
+  "subjectLine": "BREAKING: Contagious Interview Campaign Compromises 30,000 Devices, St + More Inside",
   "weekIntro": "This week, core identity and network management assets face immediate danger with an actively exploited CVSS 10.0 zero-day in Cisco ISE and a critical unauthenticated root RCE in Check Point Management Servers. Meanwhile, public exploit releases for four Linux kernel privilege escalation flaws and critical vulnerabilities across DNS resolvers and container sandboxes demand urgent patching across your infrastructure.",
   "articles": [
+    {
+      "id": "f2aa6f9693d4bf84",
+      "title": "Fake LastPass Authenticator Installer Abuses Microsoft\u2011Signed Driver to Kill Antivirus and EDR",
+      "summary": "A malicious installer masquerading as a LastPass Authenticator drops a Windows kernel driver signed by Microsoft that disables antivirus and endpoint\u2011detection\u2011and\u2011response tools before delivering a password\u2011stealer.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/fake-lastpass-authenticator-installer.html",
+      "tier": 2,
+      "publishedDate": "2026-09-21T23:01:01+05:30"
+    },
+    {
+      "id": "c533abc4730ac955",
+      "title": "Contagious Interview Campaign Compromises 30,000 Devices, Steals $10.71M in Crypto",
+      "summary": "The North Korean threat actors behind the Contagious Interview campaign have compromised at least 30,000 devices in more than 100 countries and siphoned millions of dollars in cryptocurrency and credentials.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/contagious-interview-campaign.html",
+      "tier": 2,
+      "publishedDate": "2026-09-21T22:49:00+05:30"
+    },
     {
       "id": "fefb67106246aa51",
       "title": "Cisco Issues CVE\u20112026\u201176460 Zero\u2011Day, CVSS 10.0, Actively Exploited in ISE API Authentication Bypass",
