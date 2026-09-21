@@ -1,0 +1,291 @@
+{
+  "edition": "2026-09-18",
+  "year": "2026",
+  "editionLabel": "Sep 11 \u2013 18, 2026",
+  "generatedAt": "2026-09-21T06:08:43.556604+00:00",
+  "subjectLine": "Cisco ISE CVSS 10.0 Zero-Day Under Active Attack, Check Point Root RCE, and Linux Kernel Exploits",
+  "weekIntro": "This week, core identity and network management assets face immediate danger with an actively exploited CVSS 10.0 zero-day in Cisco ISE and a critical unauthenticated root RCE in Check Point Management Servers. Meanwhile, public exploit releases for four Linux kernel privilege escalation flaws and critical vulnerabilities across DNS resolvers and container sandboxes demand urgent patching across your infrastructure.",
+  "articles": [
+    {
+      "id": "fefb67106246aa51",
+      "title": "Cisco Issues CVE\u20112026\u201176460 Zero\u2011Day, CVSS 10.0, Actively Exploited in ISE API Authentication Bypass",
+      "summary": "Cisco disclosed a critical authentication\u2011bypass zero\u2011day (CVE\u20112026\u201176460) in its Identity Services Engine (ISE) and ISE Passive Identity Connector. The flaw allows an unauthenticated remote attacker to bypass the web\u2011based management interface via an unprotected API endpoint, gaining root\u2011level command execution. Active exploitation has been confirmed.",
+      "impact": "Security teams using Cisco ISE risk unauthorized network access and full device compromise, potentially exposing the entire enterprise LAN/WAN to malicious actors.",
+      "action": "Immediately upgrade all ISE and ISE\u2011PIC nodes to the latest patched releases and audit access.log for the \u201cdummyuser\u201d indicator, re\u2011imaging any compromised devices.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/cisco-zero-day-api-endpoint-authentication-issues"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/cisco-warns-of-new-zero-day-ise-auth.html",
+      "publishedDate": "2026-09-17T12:09:40+05:30",
+      "cve_ids": [
+        "CVE-2026-76460"
+      ],
+      "affected_systems": [
+        "Cisco Identity Services Engine (ISE)",
+        "Cisco ISE Passive Identity Connector (ISE-PIC)"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "9bc8b96fcffe1f82",
+      "title": "Critical Check Point Management Server Stack Overflow Allows Unauthenticated Remote Code Execution as Root",
+      "summary": "A stack\u2011based buffer overflow in the login routine of Check Point Security Management Server and Log Server (CVE\u20112026\u201191843) lets unauthenticated attackers send an overlong username and execute arbitrary code with root privileges over the network. Check Point rates the flaw 9.8 CVSS and has issued a LivePatch fix.",
+      "impact": "Security teams face immediate risk of full system compromise on any vulnerable management or log server, regardless of configuration or VPN usage.",
+      "action": "Apply the Check Point LivePatch update (advisory SK1000155) and, if patching cannot be done immediately, restrict access to trusted IPs via the SmartConsole Trusted Clients setting.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/critical-check-point-management-server.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/check-point-warns-critical-flaw-lets-hackers-execute-code-as-root/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/critical-check-point-management-server.html",
+      "publishedDate": "2026-09-17T23:38:28+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Check Point Security Management Server",
+        "Check Point Log Server"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "3db834775cc6fd7a",
+      "title": "Active Exploitation of WSO2 API Manager JWT Bypass (CVE\u20112026\u20115430) Targets Admin Tokens",
+      "summary": "A critical JWT authentication bypass in WSO2 API Manager (CVE\u20112026\u20115430, CVSS\u202f9.8) is being actively exploited in the wild, allowing attackers to forge admin\u2011level tokens and take over accounts across multiple WSO2 products.",
+      "impact": "Security teams using vulnerable WSO2 API Manager, Control Plane, Traffic Manager, or Universal Gateway risk immediate unauthorized admin access and full system compromise.",
+      "action": "Apply the released patches for all affected WSO2 versions immediately and rotate all JWT signing keys.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/active-exploitation-attempts-target.html",
+      "publishedDate": "2026-09-16T10:48:06+05:30",
+      "cve_ids": [
+        "CVE-2026-5430"
+      ],
+      "affected_systems": [
+        "WSO2 API Control Plane 4.6.0",
+        "WSO2 API Control Plane 4.5.0",
+        "WSO2 API Manager 4.6.0",
+        "WSO2 API Manager 4.5.0",
+        "WSO2 API Manager 4.4.0",
+        "WSO2 API Manager 4.3.0",
+        "WSO2 API Manager 4.2.0",
+        "WSO2 API Manager 4.1.0",
+        "WSO2 Traffic Manager 4.6.0",
+        "WSO2 Traffic Manager 4.5.0",
+        "WSO2 Universal Gateway 4.6.0",
+        "WSO2 Universal Gateway 4.5.0"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "23227162b6f68818",
+      "title": "Public Exploits Released for Four Linux Kernel Local\u2011Root Flaws",
+      "summary": "Researcher Asim Manizada published working exploit code for four Linux kernel vulnerabilities\u2014DirtyAH6 (CVE\u20112026\u201180844), TUNderflow (CVE\u20112026\u201181000), PPPoEject, and DiagSpill\u2014after coordinated patches were released.",
+      "impact": "Any system still running a pre\u2011patched kernel is now at immediate risk of local privilege escalation, potentially allowing attackers with low\u2011privilege accounts to gain full control.",
+      "action": "Update all Linux servers and workstations to the latest kernel versions released by your distribution without delay.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/public-exploits-released-for-four-linux.html",
+      "publishedDate": "2026-09-18T23:32:24+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Linux kernel"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "4341f2269a01efb5",
+      "title": "Critical Heap Overflow in Unbound DNSSEC Validator Enables Remote Code Execution (CVE\u20112026\u201181642)",
+      "summary": "All Unbound DNS resolver releases prior to 1.26.1 contain a heap overflow in the DNSSEC validator that an attacker can trigger via a malicious DNS zone, allowing remote code execution with a network\u2011only attack vector.",
+      "impact": "Exploitable resolvers can be compromised without user interaction, risking full system takeover or service disruption for any infrastructure that relies on Unbound for DNSSEC validation.",
+      "action": "Upgrade immediately to Unbound 1.26.1 or apply the provided source patches for CVE\u20112026\u201181642.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/critical-unbound-dnssec-validator-flaw.html",
+      "publishedDate": "2026-09-17T18:00:00+05:30",
+      "cve_ids": [
+        "CVE-2026-81642"
+      ],
+      "affected_systems": [
+        "Unbound DNS resolver (versions \u2264 1.26.0)"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "c7d368380dd4413b",
+      "title": "Critical Docker Sandboxes Flaw (CVE\u20112026\u201177179) Allows Guest Code to Escape macOS Host Filesystem",
+      "summary": "Docker Sandboxes versions 0.28.0\u20110.41.x on macOS contain a critical vulnerability (CVE\u20112026\u201177179) that lets malicious code inside a sandbox VM follow symlinks via virtio\u2011fs, escape the shared project directory, and read or modify any host file with the host account\u2019s privileges.",
+      "impact": "Security teams must treat any Docker Sandboxes deployment on macOS prior to 0.42.0 as compromised if malicious code runs inside the sandbox, because an attacker can gain full host file system access and potentially execute code as the host user.",
+      "action": "Upgrade Docker Sandboxes to version\u202f0.42.0 or later immediately and audit host systems for unauthorized file changes.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/critical-docker-sandboxes-flaw-lets.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/critical-docker-sandboxes-flaw-lets.html",
+      "publishedDate": "2026-09-17T21:07:56+05:30",
+      "cve_ids": [
+        "CVE-2026-77179"
+      ],
+      "affected_systems": [
+        "Docker Sandboxes 0.28.0\u20110.41.x on macOS"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "7b88c993f3771bfa",
+      "title": "Acronis cPanel Backup Plugin Vulnerability (CVE\u20112026\u201187886) Exploited in Targeted Attacks",
+      "summary": "Acronis confirms active exploitation of CVE\u20112026\u201187886, a high\u2011severity local privilege escalation flaw in its Backup plugin for cPanel/WHM (Linux) before build 1.9.3.1021 and its Plesk extension before build 1.8.11.638. The CVSS score is 7.",
+      "impact": "Attackers with low\u2011privilege access can elevate to root on affected servers, enabling arbitrary code execution and data compromise. Ongoing targeted campaigns indicate the vulnerability is being leveraged in the wild.",
+      "action": "Apply Acronis 1.9.3\u202fHF3 (or later) immediately to all affected cPanel/WHM and Plesk installations.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/acronis-cpanel-backup-plugin.html",
+      "publishedDate": "2026-09-16T16:38:54+05:30",
+      "cve_ids": [
+        "CVE-2026-87886"
+      ],
+      "affected_systems": [
+        "Acronis Backup plugin for cPanel & WHM (Linux) before build 1.9.3.1021",
+        "Acronis Backup extension for Plesk (Linux) before build 1.8.11.638"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "6829fa0c1a468f19",
+      "title": "ISC Releases BIND\u202f9.20.29 and 9.21.26 to Patch 14 Critical Flaws, Including DoH Crash (CVE\u20112026\u201177692)",
+      "summary": "The Internet Systems Consortium has issued BIND 9.20.29 and 9.21.26, fixing fourteen vulnerabilities disclosed on 16 September.",
+      "impact": "Unauthenticated attackers can cause denial\u2011of\u2011service on DNS\u2011over\u2011HTTPS resolvers and mis\u2011configured recursive servers, potentially disrupting name resolution for entire networks.",
+      "action": "Upgrade all BIND installations to 9.20.29 (or later) or 9.21.26 immediately; migrate any remaining 9.18 deployments to a supported branch.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/bind-9-update-fixes-14-flaws-including.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/bind-9-update-fixes-14-flaws-including.html",
+      "publishedDate": "2026-09-17T13:30:29+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "BIND 9.20.29",
+        "BIND 9.21.26",
+        "BIND 9.20 branch",
+        "BIND 9.21 branch",
+        "BIND 9.18 up to 9.18.50",
+        "Debian 12 BIND package (9.18.49)"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "1963d1923e71383c",
+      "title": "PhantomRaven npm Stealer Built with LLM Targets Developers\u2019 CI/CD Secrets",
+      "summary": "CrowdStrike links a financially motivated actor, posing as a bug bounty hunter, to the PhantomRaven JavaScript stealer distributed via over 100 malicious npm packages.",
+      "impact": "Security teams must treat npm supply\u2011chain hygiene as critical, as compromised packages can silently install remote dynamic dependencies that bypass traditional scans and expose CI/CD pipelines.",
+      "action": "Audit and lock down npm dependencies, enforce strict package signing, and monitor for unauthorized token access in CI/CD environments.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/claimed-bug-bounty-hunter-likely-used.html",
+      "publishedDate": "2026-09-18T14:48:03+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "npm package registry",
+        "JavaScript runtime environments",
+        "GitHub Actions",
+        "GitLab CI",
+        "Jenkins",
+        "CircleCI"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "eb5aad65b2515888",
+      "title": "Transparent Tribe Deploys Rust\u2011Based Backdoor Using Private GitHub Repos for C2 in Operation RapidRust",
+      "summary": "Transparent Tribe (APT36/Earth Karkaddan) launched Operation RapidRust, delivering four new tools\u2014RUSTYSHADE, RUSTYMOVE, PSNATCH, and BASHNATCH\u2014against Indian and Afghan government and defense networks.",
+      "impact": "Security teams must assume that compromised GitHub credentials can provide stealthy, encrypted command\u2011and\u2011control channels, and that both Windows and Linux assets are targeted for data exfiltration and lateral movement.",
+      "action": "Audit and revoke any unused GitHub tokens, monitor for traffic to private GitHub repositories, and block known typosquatted domains used in the campaign.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/transparent-tribe-deploys-new-rust.html",
+      "publishedDate": "2026-09-18T20:54:16+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows",
+        "Linux",
+        "Government networks in India",
+        "Defense networks in India",
+        "Government networks in Afghanistan",
+        "Defense networks in Afghanistan"
+      ],
+      "threat_actor": "Transparent Tribe (APT36/Earth Karkaddan)",
+      "tier": 3
+    },
+    {
+      "id": "68651eea862d1332",
+      "title": "Plugin4Shell Vulnerability Allows Malicious Plugin Swaps in Four Major AI Coding Agents",
+      "summary": "A flaw in Anthropic Claude Code, OpenAI Codex, GitHub Copilot, and Google Gemini CLI lets repository owners replace a locked plugin with malicious code by exploiting branch names that mimic...",
+      "impact": "Security teams face a risk of credential theft and system compromise whenever an AI coding agent installs a compromised plugin, especially on self\u2011hosted Git servers or Bitbucket that permit hash\u2011like branch names.",
+      "action": "Audit all AI coding agent plugin sources, enforce repository hosting on platforms that block hash\u2011like branch names (e.g., GitHub), and apply patches from Anthropic and OpenAI immediately.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/plugin4shell-lets-repository-owners.html",
+      "publishedDate": "2026-09-18T16:31:01+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Anthropic Claude Code",
+        "OpenAI Codex",
+        "GitHub Copilot",
+        "Google Gemini CLI"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
