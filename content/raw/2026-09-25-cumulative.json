@@ -3265,5 +3265,120 @@
     "publishedDate": "2026-09-26T15:03:20+00:00",
     "scrapedAt": "2026-09-26T18:13:45.455885+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "1e494cdab5bb6307",
+    "title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
+    "summary_raw": "Two critical vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway that allow remote code execution have been exploited in the wild, Citrix confirmed on September 27. It released fixes for both, along with six other flaws. One of the two affects every deployment on an affected version, including those in the default configuration.\n\nThe bulletin came a day after security firm watchTowr",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
+    "publishedDate": "2026-09-27T13:17:57+05:30",
+    "scrapedAt": "2026-09-27T18:54:41.177347+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "9f09894f2cc84b8d",
+    "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
+    "summary_raw": "The Psychedelic Stealer malware distributed via compromised Ukrainian websites using ClickFix-style Cloudflare verification checks is part of a wider malware-as-a-service (MaaS) platform called Lunex.\n\nThe new findings come from Ontinue, which described the activity as a four-stage attack chain aimed at targeting Ukrainian-speaking users.\n\n\"The attack chain begins with a fake CAPTCHA page and",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
+    "publishedDate": "2026-09-26T23:52:52+05:30",
+    "scrapedAt": "2026-09-27T18:54:41.177488+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "0954e8dba9d8d673",
+    "title": "Citrix confirms two NetScaler RCE zero-days exploited in attacks",
+    "summary_raw": "Citrix has confirmed that two critical NetScaler remote code execution vulnerabilities, tracked as CVE-2026-88771 and CVE-2026-88772, are being exploited in attacks and that it has released security updates to fix the flaws. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/citrix-admins-warned-to-shut-down-netscalers-over-2-exploited-zero-days/",
+    "publishedDate": "2026-09-27T12:02:37-04:00",
+    "scrapedAt": "2026-09-27T18:54:42.297357+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-88771",
+      "CVE-2026-88772"
+    ]
+  },
+  {
+    "id": "cf659e9658b9aff5",
+    "title": "Cloudflare fixes Containers cross-tenant flaw exposing customer data",
+    "summary_raw": "Cloudflare has fixed a vulnerability in Containers and Sandboxes that allowed customers with a Workers Paid account to recover residual data from other customers' containers on the same physical host. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/cloudflare-fixes-containers-cross-tenant-flaw-exposing-customer-data/",
+    "publishedDate": "2026-09-27T10:13:31-04:00",
+    "scrapedAt": "2026-09-27T18:54:42.297494+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "b3dddf9b03fd17ca",
+    "title": "Anthropic turns Claude into an AI marketplace with 2,000+ plugins and connectors",
+    "summary_raw": "Anthropic has just announced a new Claude Marketplace, and it brings all AI-related tools into one place, including plugins, connectors, agents, and more. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-turns-claude-into-an-ai-marketplace-with-2-000-plus-plugins-and-connectors/",
+    "publishedDate": "2026-09-27T09:38:40-04:00",
+    "scrapedAt": "2026-09-27T18:54:42.297613+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "77ddfbcd4e34cd1f",
+    "title": "ShinyHunters uses WAF bypass trick in Oracle PeopleSoft attacks",
+    "summary_raw": "The ShinyHunters extortion gang is using a URL-encoding trick to bypass web application firewall rules that mitigate the Oracle PeopleSoft CVE-2026-35273 flaw, allowing the threat actors to resume widespread exploitation of a flaw on vulnerable servers. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-uses-waf-bypass-trick-in-oracle-peoplesoft-attacks/",
+    "publishedDate": "2026-09-26T15:03:34-04:00",
+    "scrapedAt": "2026-09-27T18:54:42.297729+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-35273"
+    ]
+  },
+  {
+    "id": "52a8258cf974a555",
+    "title": "Wireshark 4.6.9 Released, (Sun, Sep 27th)",
+    "summary_raw": "Wireshark release 4.6.9 fixes 19 vulnerabilities and 16 bugs.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33372",
+    "publishedDate": "2026-09-27T15:04:49+00:00",
+    "scrapedAt": "2026-09-27T18:54:56.678173+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "099c79de304069f0",
+    "title": "DSA-6519-1 swift - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6519-1\">https://security-tracker.debian.org/tracker/DSA-6519-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00432.html",
+    "publishedDate": "2026-09-26T00:00:00+00:00",
+    "scrapedAt": "2026-09-27T18:54:59.373564+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "4e8ddbb8fbe1f7fe",
+    "title": "DSA-6518-1 incus - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6518-1\">https://security-tracker.debian.org/tracker/DSA-6518-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00431.html",
+    "publishedDate": "2026-09-26T00:00:00+00:00",
+    "scrapedAt": "2026-09-27T18:54:59.373632+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "7d1746bb3219b4b0",
+    "title": "RHSA-2026:72199: Critical: unbound security update",
+    "summary_raw": "An update for unbound is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support.\n\nRed Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "source": "Red Hat Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://access.redhat.com/errata/RHSA-2026:72199",
+    "publishedDate": "2026-09-26T18:08:45+00:00",
+    "scrapedAt": "2026-09-27T18:55:00.466282+00:00",
+    "cve_ids_scraped": []
   }
 ]
