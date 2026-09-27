@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F5 BIG-IP and Check Point Zero-Days Under Fire, Ubuntu Kernel Container Escape Exploit Released</title>
+</head>
+<body style="margin:0;padding:0;background-color:#020617;font-family:system-ui,-apple-system,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#020617;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #1e293b;">
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;">
+                &#128737; Cybersecurity Weekly
+              </h1>
+              <p style="margin:4px 0 0;font-size:13px;color:#64748b;">
+                Sep 18 – 25, 2026 &middot; AI-curated security intelligence
+              </p>
+            </td>
+          </tr>
+
+          <!-- Subject + Week Intro -->
+          <tr>
+            <td style="padding:32px 32px 20px;">
+              <h2 style="margin:0 0 14px;font-size:22px;font-weight:800;color:#ffffff;line-height:1.3;">
+                F5 BIG-IP and Check Point Zero-Days Under Fire, Ubuntu Kernel Container Escape Exploit Released
+              </h2>
+              
+              <p style="margin:0;font-size:14px;color:#94a3b8;line-height:1.7;border-left:3px solid #14b8a6;padding-left:14px;">
+                Critical network and management perimeters are taking direct hits this week, with active exploitation of unauthenticated remote code execution flaws in F5 BIG-IP and Check Point security gateways. Meanwhile, infrastructure teams face severe host-isolation risks from a public Ubuntu container breakout alongside persistent supply-chain traps across CI/CD pipelines and Terraform registries. Prioritize external surface patching immediately and audit your build pipelines for untrusted actions and modules.
+              </p>
+              
+            </td>
+          </tr>
+
+          <!-- Articles -->
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-94127</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html" style="color:#ffffff;text-decoration:none;">Critical F5 BIG‑IP APM OAuth Server Zero‑Day (CVE‑2026‑94127) Actively Exploited for Unauthenticated RCE</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A heap‑based buffer overflow in F5 BIG‑IP Access Policy Manager when used as an OAuth authorization server (CVE‑2026‑94127) enables unauthenticated remote code execution. F5 released engineering hotfixes on September 22; CISA added the flaw to its KEV catalog and mandated remediation by September 25 for federal agencies.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Attackers can send crafted OAuth traffic to the vulnerable virtual server and gain code execution without any authentication, bypassing traditional management‑interface restrictions. All BIG‑IP deployments running APM as an OAuth authorization server are at immediate risk.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the appropriate F5 engineering hotfix for your BIG‑IP version immediately and restrict external access to any virtual server hosting the APM OAuth authorization profile.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-93616</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/check-point-warns-of-management-server.html" style="color:#ffffff;text-decoration:none;">Check Point Security Management Server Zero‑Day (CVE‑2026‑93616) Exploited in Targeted Attacks</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Check Point confirms that attackers leveraged CVE‑2026‑93616, a path‑traversal flaw in the Security Management Server’s web service, to upload and execute scripts without authentication in a series of targeted attacks on July 23. The vendor released a patch on September 22, rating the vulnerability 9.8/10 CVSS.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Unpatched Management Servers could allow adversaries to gain full control over firewall policy engines, compromising network segmentation and allowing lateral movement across protected environments.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the September 22 hotfix to all affected Management Server versions immediately and verify that LivePatch updates are current.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/check-point-warns-of-management-server.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-87902</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html" style="color:#ffffff;text-decoration:none;">Critical WordPress RCE (CVE‑2026‑87902) Exploited Within Hours of Disclosure</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      WordPress’s get_page_template() function contains a critical RCE flaw (CVE‑2026‑87902, CVSS 9.2) that lets an unauthenticated attacker include any readable local PHP file when a theme’s top‑level directory starts with “page‑”. Within hours of disclosure, threat actors launched at least 68 exploitation attempts from the United States and Indonesia, targeting /usr/local/lib/php/pearcmd.php and uploading a GitHub‑hosted web shell.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must assume active exploitation in the wild and recognize that successful attacks require specific theme naming and file‑read permissions, which many sites inadvertently meet.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the WordPress 6.5.4 (or later) patch immediately and backport fixes to all supported branches back to 4.7, then audit themes for “page‑” directories and remove or restrict access to readable PHP files.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://lwn.net/Articles/1096195/" style="color:#64748b;text-decoration:none;margin-left:6px;">LWN.net</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-80521</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html" style="color:#ffffff;text-decoration:none;">Exploit Released for Unpatched Ubuntu Kernel CVE‑2026‑80521 Enables Host‑Root Container Escape</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      DepthFirst released exploit code for CVE‑2026‑80521, a use‑after‑free in the Linux kernel AF_UNIX socket subsystem that lets a container break out and gain root on the host. Ubuntu has not yet shipped the upstream fix for its 26.04, 24.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Containers running on affected Ubuntu kernels can bypass namespace isolation, cgroup limits, and seccomp, giving attackers full host control. This exposes critical workloads in on‑prem and cloud environments to privilege escalation.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the upstream kernel patch (kernel 7.2 or 7.1.10) immediately or upgrade to a patched Ubuntu kernel release.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; Mini Shai-Hulud</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/compromised-github-actions-came-back.html" style="color:#ffffff;text-decoration:none;">Compromised GitHub Actions Re‑enabled, Restoring Mini Shai‑Hulud Malware Execution</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Two third‑party GitHub Actions (actions‑cool/issues‑helper and actions‑cool/maintain‑one‑comment) were re‑enabled on September 16, 2026 without cleaning malicious tags, causing workflows that reference them by version tag to download and execute the Mini Shai‑Hulud payload originally inserted on May 18, 2026.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Any CI/CD pipeline that references these actions with mutable version tags resumed executing credential‑stealing malware, exposing secrets and tokens across potentially thousands of dependent repositories.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Audit all workflows for references to the two actions, pin them to specific clean commits or replace them with trusted alternatives, and rotate any credentials that may have been harvested.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/compromised-github-actions-came-back.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; North Korean (DPRK) threat actors</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html" style="color:#ffffff;text-decoration:none;">Malicious Terraform Providers and Go Modules Used to Distribute Go Malware via HashiCorp Registry</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Researchers uncovered Go‑based malware hidden in two Terraform providers and two Go modules published to the HashiCorp Registry, marking the first known use of this centralized repository for malicious payload delivery.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must treat HashiCorp Registry packages as a potential attack surface, as compromised providers can infiltrate infrastructure‑as‑code pipelines and execute stealthy, targeted payloads on compromised hosts.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Audit all Terraform provider and Go module dependencies against trusted sources, enforce signed package verification, and monitor for anomalous network traffic to Ethereum testnets and Slack.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html" style="color:#ffffff;text-decoration:none;">GitLab Email Issue Addresses Expose Permanent Tokens, Enabling Unauthenticated Code Pushes and CI Execution</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      GitLab generates a per‑user email address for issue creation that embeds a non‑expiring token; anyone who obtains this address can email patches, create merge requests, push code to any branch the user can access—including main—and trigger CI jobs as that...
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face immediate risk of supply‑chain compromise, source‑code theft, and credential exposure across all public and private GitLab projects tied to the compromised token.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Audit and rotate all GitLab email work‑item addresses, remove them from public documentation, and disable the email‑to‑issue feature or enforce sender verification.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                        
+                        <a href="https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks" style="color:#64748b;text-decoration:none;margin-left:6px;">Dark Reading</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html" style="color:#ffffff;text-decoration:none;">Critical Next.js ImageResponse Vulnerability Allows Remote Code Execution via Crafted SVG</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A critical flaw (CVE‑2026‑94545) in Next.js 16.2.0‑16.3.5 enables attackers to execute arbitrary server‑side code by injecting malicious SVG into ImageResponse, the Open Graph image generator.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Servers running the vulnerable Node.js ImageResponse can be compromised, giving attackers full code execution privileges. Applications that embed user‑controlled data into SVG titles, attributes, or styles for social preview images are at risk.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Upgrade immediately to Next.js 16.3.6 (or later) or, if upgrade is not possible, ensure no attacker‑controlled input reaches SVG content in ImageResponse.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-67279</span>
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-86060</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html" style="color:#ffffff;text-decoration:none;">MikroTrick Chain Exploits Two RouterOS SSH Flaws for Password‑less Full Compromise</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Two chained RouterOS SSH vulnerabilities—CVE‑2026‑67279 (SSH state‑machine bypass) and CVE‑2026‑86060 (login argument injection)—let attackers gain full administrative control of Internet‑exposed MikroTik routers without passwords or keys, bypassing authentication entirely.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must treat any publicly reachable MikroTik router as compromised and assume attackers can execute arbitrary commands with root privileges.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Immediately upgrade all MikroTik devices to RouterOS 6.49.21, 7.23.4, or 7.24.2 (or later) and block unauthenticated SSH access from the internet.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html" style="color:#ffffff;text-decoration:none;">Cloudflare Patches Container Disk‑Residue Leak Allowing Cross‑Customer Data Exposure</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A flaw in Cloudflare Containers and Sandboxes let a paying customer read leftover disk blocks from previous containers on the same server, exposing directory structures, database pages and SQLite databases.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must recognize that shared‑infrastructure containers can unintentionally leak data from prior tenants, requiring verification of isolation guarantees. The vulnerability demonstrated that residual data can be harvested without needing to target a specific victim.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Verify that your workloads are not running on Cloudflare Containers or Sandboxes, or confirm the fix is applied; otherwise migrate to alternative isolation platforms.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account_0272795595.html" style="color:#ffffff;text-decoration:none;">cPanel Flaw Allows Any Hosting Account to Execute Code as Root and Hijack Servers</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A critical vulnerability in cPanel's CalDAV/CardDAV service (CVE-2026-87899) lets any logged‑in hosting account execute arbitrary code with root privileges, granting full server control.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Attackers can gain complete control of shared hosting servers or manipulate other customers' databases, dramatically expanding the attack surface for multi‑tenant environments.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Update cPanel/WHM to 11.134.0.57, 11.136.0.41, or 11.138.0.8+ and upgrade WP Toolkit to version 6.11.3 or later immediately.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account_0272795595.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+
+          <!-- CTA -->
+          <tr>
+            <td style="padding:32px;" align="center">
+              <a href="" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:700;color:#042f2e;background-color:#2dd4bf;border-radius:8px;text-decoration:none;">
+                View all stories on the web &rarr;
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px;border-top:1px solid #1e293b;">
+              <p style="margin:0;font-size:12px;color:#475569;line-height:1.6;text-align:center;">
+                You're receiving this because you subscribed to Cybersecurity Weekly.<br>
+                <a href="" style="color:#64748b;text-decoration:underline;">Unsubscribe</a>
+                &middot;
+                <a href="https://github.com/Vishakadatta/cybersecurity-weekly" style="color:#64748b;text-decoration:underline;">GitHub</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,295 @@
+{
+  "edition": "2026-09-25",
+  "year": "2026",
+  "editionLabel": "Sep 18 \u2013 25, 2026",
+  "generatedAt": "2026-09-27T22:07:02.698903+00:00",
+  "subjectLine": "F5 BIG-IP and Check Point Zero-Days Under Fire, Ubuntu Kernel Container Escape Exploit Released",
+  "weekIntro": "Critical network and management perimeters are taking direct hits this week, with active exploitation of unauthenticated remote code execution flaws in F5 BIG-IP and Check Point security gateways. Meanwhile, infrastructure teams face severe host-isolation risks from a public Ubuntu container breakout alongside persistent supply-chain traps across CI/CD pipelines and Terraform registries. Prioritize external surface patching immediately and audit your build pipelines for untrusted actions and modules.",
+  "articles": [
+    {
+      "id": "54af9eeed99cf723",
+      "title": "Critical F5 BIG\u2011IP APM OAuth Server Zero\u2011Day (CVE\u20112026\u201194127) Actively Exploited for Unauthenticated RCE",
+      "summary": "A heap\u2011based buffer overflow in F5 BIG\u2011IP Access Policy Manager when used as an OAuth authorization server (CVE\u20112026\u201194127) enables unauthenticated remote code execution. F5 released engineering hotfixes on September\u202f22; CISA added the flaw to its KEV catalog and mandated remediation by September\u202f25 for federal agencies.",
+      "impact": "Attackers can send crafted OAuth traffic to the vulnerable virtual server and gain code execution without any authentication, bypassing traditional management\u2011interface restrictions. All BIG\u2011IP deployments running APM as an OAuth authorization server are at immediate risk.",
+      "action": "Apply the appropriate F5 engineering hotfix for your BIG\u2011IP version immediately and restrict external access to any virtual server hosting the APM OAuth authorization profile.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/f5-patches-critical-big-ip-apm-zero-day.html",
+      "publishedDate": "2026-09-23T13:59:48+05:30",
+      "cve_ids": [
+        "CVE-2026-94127"
+      ],
+      "affected_systems": [
+        "F5 BIG\u2011IP Access Policy Manager (APM) when configured as an OAuth authorization server (versions 21.1.0, 17.5.0\u201117.5.1, 17.1.0\u201117.1.3)"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "5871a8a80040f207",
+      "title": "Check Point Security Management Server Zero\u2011Day (CVE\u20112026\u201193616) Exploited in Targeted Attacks",
+      "summary": "Check Point confirms that attackers leveraged CVE\u20112026\u201193616, a path\u2011traversal flaw in the Security Management Server\u2019s web service, to upload and execute scripts without authentication in a series of targeted attacks on July\u202f23. The vendor released a patch on September\u202f22, rating the vulnerability 9.8/10 CVSS.",
+      "impact": "Unpatched Management Servers could allow adversaries to gain full control over firewall policy engines, compromising network segmentation and allowing lateral movement across protected environments.",
+      "action": "Apply the September\u202f22 hotfix to all affected Management Server versions immediately and verify that LivePatch updates are current.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/check-point-warns-of-management-server.html",
+      "publishedDate": "2026-09-22T23:59:39+05:30",
+      "cve_ids": [
+        "CVE-2026-93616"
+      ],
+      "affected_systems": [
+        "Check Point Security Management Server R82.20 (no Jumbo Hotfix)",
+        "Check Point Security Management Server R82.10 (Jumbo Hotfix Take\u202f44 or below)",
+        "Check Point Security Management Server R82 (Jumbo Hotfix Take\u202f126 or below)",
+        "Check Point Security Management Server R81.20 (Jumbo Hotfix Take\u202f166 or below)",
+        "Check Point Security Management Server R81.10 (Jumbo Hotfix Take\u202f190 or below \u2013 end of support)",
+        "Check Point Security Management Server R81, R80.40, R80.30, R80.20, R80.10, R80 (all end of support)"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "391d2a5a41419e68",
+      "title": "Critical WordPress RCE (CVE\u20112026\u201187902) Exploited Within Hours of Disclosure",
+      "summary": "WordPress\u2019s get_page_template() function contains a critical RCE flaw (CVE\u20112026\u201187902, CVSS\u202f9.2) that lets an unauthenticated attacker include any readable local PHP file when a theme\u2019s top\u2011level directory starts with \u201cpage\u2011\u201d. Within hours of disclosure, threat actors launched at least 68 exploitation attempts from the United\u202fStates and Indonesia, targeting /usr/local/lib/php/pearcmd.php and uploading a GitHub\u2011hosted web shell.",
+      "impact": "Security teams must assume active exploitation in the wild and recognize that successful attacks require specific theme naming and file\u2011read permissions, which many sites inadvertently meet.",
+      "action": "Apply the WordPress 6.5.4 (or later) patch immediately and backport fixes to all supported branches back to 4.7, then audit themes for \u201cpage\u2011\u201d directories and remove or restrict access to readable PHP files.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html"
+        },
+        {
+          "name": "LWN.net",
+          "url": "https://lwn.net/Articles/1096195/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/attackers-exploit-wordpress-cve-2026.html",
+      "publishedDate": "2026-09-23T13:55:40+00:00",
+      "cve_ids": [
+        "CVE-2026-87902"
+      ],
+      "affected_systems": [
+        "WordPress",
+        "ClassicPress"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "a94e399780825460",
+      "title": "Exploit Released for Unpatched Ubuntu Kernel CVE\u20112026\u201180521 Enables Host\u2011Root Container Escape",
+      "summary": "DepthFirst released exploit code for CVE\u20112026\u201180521, a use\u2011after\u2011free in the Linux kernel AF_UNIX socket subsystem that lets a container break out and gain root on the host. Ubuntu has not yet shipped the upstream fix for its 26.04, 24.",
+      "impact": "Containers running on affected Ubuntu kernels can bypass namespace isolation, cgroup limits, and seccomp, giving attackers full host control. This exposes critical workloads in on\u2011prem and cloud environments to privilege escalation.",
+      "action": "Apply the upstream kernel patch (kernel\u202f7.2 or 7.1.10) immediately or upgrade to a patched Ubuntu kernel release.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/exploit-released-for-unpatched-ubuntu.html",
+      "publishedDate": "2026-09-23T16:42:18+05:30",
+      "cve_ids": [
+        "CVE-2026-80521"
+      ],
+      "affected_systems": [
+        "Ubuntu 26.04 LTS (kernel 6.10/6.1/6.6 series)",
+        "Ubuntu 24.04 LTS (kernel 6.10/6.1/6.6 series)",
+        "Ubuntu 22.04 LTS (kernel 6.10/6.1/6.6 series)",
+        "Ubuntu cloud images for AWS, Azure, and GCP using the above kernels"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "fa5c037c6dc25b42",
+      "title": "Compromised GitHub Actions Re\u2011enabled, Restoring Mini Shai\u2011Hulud Malware Execution",
+      "summary": "Two third\u2011party GitHub Actions (actions\u2011cool/issues\u2011helper and actions\u2011cool/maintain\u2011one\u2011comment) were re\u2011enabled on September 16, 2026 without cleaning malicious tags, causing workflows that reference them by version tag to download and execute the Mini Shai\u2011Hulud payload originally inserted on May 18, 2026.",
+      "impact": "Any CI/CD pipeline that references these actions with mutable version tags resumed executing credential\u2011stealing malware, exposing secrets and tokens across potentially thousands of dependent repositories.",
+      "action": "Audit all workflows for references to the two actions, pin them to specific clean commits or replace them with trusted alternatives, and rotate any credentials that may have been harvested.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/compromised-github-actions-came-back.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/github-actions-re-enabled-with-mini-shai-hulud-payload-still-active/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/compromised-github-actions-came-back.html",
+      "publishedDate": "2026-09-25T20:14:41+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "GitHub Actions \u2013 actions-cool/issues-helper",
+        "GitHub Actions \u2013 actions-cool/maintain-one-comment"
+      ],
+      "threat_actor": "Mini Shai-Hulud",
+      "tier": 2
+    },
+    {
+      "id": "d1ccb5f32ae97e15",
+      "title": "Malicious Terraform Providers and Go Modules Used to Distribute Go Malware via HashiCorp Registry",
+      "summary": "Researchers uncovered Go\u2011based malware hidden in two Terraform providers and two Go modules published to the HashiCorp Registry, marking the first known use of this centralized repository for malicious payload delivery.",
+      "impact": "Security teams must treat HashiCorp Registry packages as a potential attack surface, as compromised providers can infiltrate infrastructure\u2011as\u2011code pipelines and execute stealthy, targeted payloads on compromised hosts.",
+      "action": "Audit all Terraform provider and Go module dependencies against trusted sources, enforce signed package verification, and monitor for anomalous network traffic to Ethereum testnets and Slack.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/attackers-use-malicious-terraform.html",
+      "publishedDate": "2026-09-23T23:36:30+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "HashiCorp Terraform Registry",
+        "Go modules (gocommunity-io/dockerd, kreuzwenker/docker, gocommunity.io/orderedbtree, gogets.dev/btreex)"
+      ],
+      "threat_actor": "North Korean (DPRK) threat actors",
+      "tier": 2
+    },
+    {
+      "id": "d8d3bf9e01bca0f7",
+      "title": "GitLab Email Issue Addresses Expose Permanent Tokens, Enabling Unauthenticated Code Pushes and CI Execution",
+      "summary": "GitLab generates a per\u2011user email address for issue creation that embeds a non\u2011expiring token; anyone who obtains this address can email patches, create merge requests, push code to any branch the user can access\u2014including main\u2014and trigger CI jobs as that...",
+      "impact": "Security teams face immediate risk of supply\u2011chain compromise, source\u2011code theft, and credential exposure across all public and private GitLab projects tied to the compromised token.",
+      "action": "Audit and rotate all GitLab email work\u2011item addresses, remove them from public documentation, and disable the email\u2011to\u2011issue feature or enforce sender verification.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/exposed-gitlab-project-email-addresses-let-attackers-push-code/"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/application-security/gitlab-email-addresses-supply-chain-attacks"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/a-leaked-gitlab-issue-email-address.html",
+      "publishedDate": "2026-09-23T20:53:38+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "GitLab (self\u2011hosted and SaaS)"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "cda8fee2780106d9",
+      "title": "Critical Next.js ImageResponse Vulnerability Allows Remote Code Execution via Crafted SVG",
+      "summary": "A critical flaw (CVE\u20112026\u201194545) in Next.js 16.2.0\u201116.3.5 enables attackers to execute arbitrary server\u2011side code by injecting malicious SVG into ImageResponse, the Open Graph image generator.",
+      "impact": "Servers running the vulnerable Node.js ImageResponse can be compromised, giving attackers full code execution privileges. Applications that embed user\u2011controlled data into SVG titles, attributes, or styles for social preview images are at risk.",
+      "action": "Upgrade immediately to Next.js 16.3.6 (or later) or, if upgrade is not possible, ensure no attacker\u2011controlled input reaches SVG content in ImageResponse.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/critical-nextjs-imageresponse-flaw-can.html",
+      "publishedDate": "2026-09-23T12:34:40+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Next.js 16.2.0",
+        "Next.js 16.2.1",
+        "Next.js 16.2.2",
+        "Next.js 16.2.3",
+        "Next.js 16.2.4",
+        "Next.js 16.2.5",
+        "Next.js 16.3.0",
+        "Next.js 16.3.1",
+        "Next.js 16.3.2",
+        "Next.js 16.3.3",
+        "Next.js 16.3.4",
+        "Next.js 16.3.5"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "20d13eec11e10062",
+      "title": "MikroTrick Chain Exploits Two RouterOS SSH Flaws for Password\u2011less Full Compromise",
+      "summary": "Two chained RouterOS SSH vulnerabilities\u2014CVE\u20112026\u201167279 (SSH state\u2011machine bypass) and CVE\u20112026\u201186060 (login argument injection)\u2014let attackers gain full administrative control of Internet\u2011exposed MikroTik routers without passwords or keys, bypassing authentication entirely.",
+      "impact": "Security teams must treat any publicly reachable MikroTik router as compromised and assume attackers can execute arbitrary commands with root privileges.",
+      "action": "Immediately upgrade all MikroTik devices to RouterOS 6.49.21, 7.23.4, or 7.24.2 (or later) and block unauthenticated SSH access from the internet.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/mikrotrick-chain-let-attackers-take.html",
+      "publishedDate": "2026-09-23T21:36:41+05:30",
+      "cve_ids": [
+        "CVE-2026-67279",
+        "CVE-2026-86060"
+      ],
+      "affected_systems": [
+        "MikroTik RouterOS 6.49.21",
+        "MikroTik RouterOS 7.23.4",
+        "MikroTik RouterOS 7.24.2"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "b6378b315cd4f7db",
+      "title": "Cloudflare Patches Container Disk\u2011Residue Leak Allowing Cross\u2011Customer Data Exposure",
+      "summary": "A flaw in Cloudflare Containers and Sandboxes let a paying customer read leftover disk blocks from previous containers on the same server, exposing directory structures, database pages and SQLite databases.",
+      "impact": "Security teams must recognize that shared\u2011infrastructure containers can unintentionally leak data from prior tenants, requiring verification of isolation guarantees. The vulnerability demonstrated that residual data can be harvested without needing to target a specific victim.",
+      "action": "Verify that your workloads are not running on Cloudflare Containers or Sandboxes, or confirm the fix is applied; otherwise migrate to alternative isolation platforms.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/cloudflare-fixes-flaw-that-let-one.html",
+      "publishedDate": "2026-09-25T10:19:22+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Cloudflare Containers",
+        "Cloudflare Sandboxes"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "879d2dbbe17ddaa7",
+      "title": "cPanel Flaw Allows Any Hosting Account to Execute Code as Root and Hijack Servers",
+      "summary": "A critical vulnerability in cPanel's CalDAV/CardDAV service (CVE-2026-87899) lets any logged\u2011in hosting account execute arbitrary code with root privileges, granting full server control.",
+      "impact": "Attackers can gain complete control of shared hosting servers or manipulate other customers' databases, dramatically expanding the attack surface for multi\u2011tenant environments.",
+      "action": "Update cPanel/WHM to 11.134.0.57, 11.136.0.41, or 11.138.0.8+ and upgrade WP Toolkit to version 6.11.3 or later immediately.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account_0272795595.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/09/new-cpanel-flaw-lets-hosting-account_0272795595.html",
+      "publishedDate": "2026-09-23T17:46:00+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "cPanel & WHM (version 120 and later)",
+        "cPanel CalDAV/CardDAV service",
+        "WP Toolkit plugin (versions 6.11.2-10794 and older)"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
