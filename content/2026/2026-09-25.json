@@ -2,10 +2,28 @@
   "edition": "2026-09-25",
   "year": "2026",
   "editionLabel": "Sep 18 \u2013 25, 2026",
-  "generatedAt": "2026-09-27T22:07:02.698903+00:00",
-  "subjectLine": "F5 BIG-IP and Check Point Zero-Days Under Fire, Ubuntu Kernel Container Escape Exploit Released",
+  "generatedAt": "2026-09-28T21:21:06.457073+00:00",
+  "subjectLine": "BREAKING: CISA Says Attackers Are Exploiting Two Critical Citrix NetSc + More Inside",
   "weekIntro": "Critical network and management perimeters are taking direct hits this week, with active exploitation of unauthenticated remote code execution flaws in F5 BIG-IP and Check Point security gateways. Meanwhile, infrastructure teams face severe host-isolation risks from a public Ubuntu container breakout alongside persistent supply-chain traps across CI/CD pipelines and Terraform registries. Prioritize external surface patching immediately and audit your build pipelines for untrusted actions and modules.",
   "articles": [
+    {
+      "id": "d7aa8b8a14faa83f",
+      "title": "Threat Brief: NetScaler Zero Days CVE-2026-88771 and CVE-2026-88772 Exploited in the Wild",
+      "summary": "Unit\u202f42 reports that the two Citrix NetScaler zero\u2011days (CVE\u20112026\u201188771, CVE\u20112026\u201188772) are being actively weaponised by threat actors. Both vulnerabilities permit unauthenticated remote code execution, giving attackers the ability to take over load balancers and VPN gateways across many organisations.",
+      "source": "Palo Alto Unit 42",
+      "url": "https://unit42.paloaltonetworks.com/netscaler-zero-days-exploited/",
+      "tier": 1,
+      "publishedDate": "2026-09-28T15:02:04+00:00"
+    },
+    {
+      "id": "d10d67a734db59d5",
+      "title": "CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added two critical Citrix NetScaler ADC and Gateway vulnerabilities (CVE\u20112026\u201188771 and CVE\u20112026\u201188772) to its Known Exploited Vulnerabilities (KEV) catalog after confirming active exploitation in the wild. The flaws allow unauthenticated remote code execution and could lead to full compromise of affected enterprise gateways.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html",
+      "tier": 1,
+      "publishedDate": "2026-09-28T12:51:49+05:30"
+    },
     {
       "id": "54af9eeed99cf723",
       "title": "Critical F5 BIG\u2011IP APM OAuth Server Zero\u2011Day (CVE\u20112026\u201194127) Actively Exploited for Unauthenticated RCE",
