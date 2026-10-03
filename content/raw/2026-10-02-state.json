@@ -1,0 +1,21 @@
+{
+  "edition": "2026-10-02",
+  "stages": {
+    "discover": {
+      "status": "pending",
+      "done": []
+    },
+    "curate": {
+      "status": "complete",
+      "done": []
+    },
+    "finalize": {
+      "status": "pending",
+      "done_clusters": [],
+      "assembly_done": false,
+      "intro_done": false
+    }
+  },
+  "token_tally": {},
+  "updated_at": "2026-10-03T18:38:56.363324+00:00"
+}
