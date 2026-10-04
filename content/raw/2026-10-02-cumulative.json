@@ -2902,5 +2902,71 @@
     "publishedDate": "2026-10-03T11:21:42+00:00",
     "scrapedAt": "2026-10-03T18:29:58.502021+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "5b2c328286dbcd0b",
+    "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
+    "summary_raw": "A suspected member of the ShinyHunters digital extortion group, who goes by the online alias \"Rey,\" has been allegedly detained by authorities in Jordan, Reuters reported, citing three people familiar with the matter.\n\nRey, whose real name is Saif \u200cal-Din Khader, is said to have been brought into custody on September 29, 2026, cooperating with the U.S. Federal Bureau of Investigation (FBI) and",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+    "publishedDate": "2026-10-04T12:52:05+05:30",
+    "scrapedAt": "2026-10-04T18:32:06.120976+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "aac5cc1a7d26e13f",
+    "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+    "summary_raw": "A new China-nexus cyber espionage group known as TA419 has been attributed to multiple credential phishing campaigns targeting artificial intelligence (AI) experts working for U.S. think tanks, universities, and legal sector organizations.\n\nThe campaigns have impersonated prominent economists and AI policymakers, as well as a prominent Anthropic employee, to single out an AI policy expert at a",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+    "publishedDate": "2026-10-04T12:50:32+05:30",
+    "scrapedAt": "2026-10-04T18:32:06.121115+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "36473df9dd8c1139",
+    "title": "Anthropic asks Claude users to share voice data for AI model training",
+    "summary_raw": "Anthropic has started asking Claude users to voluntarily share their voice conversations to help train and improve its AI models. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-asks-claude-users-to-share-voice-data-for-ai-model-training/",
+    "publishedDate": "2026-10-04T06:53:21-04:00",
+    "scrapedAt": "2026-10-04T18:32:07.294605+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "4e1146b9767f9c64",
+    "title": "Google Gemini could soon get full access to your Mac\u2019s files, apps and the web",
+    "summary_raw": "Google's Gemini could soon access any file on your macOS device, open apps, browse the web, and perform actions without asking for permission every time. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/google/google-gemini-could-soon-get-full-access-to-your-macs-files-apps-and-the-web/",
+    "publishedDate": "2026-10-03T19:12:34-04:00",
+    "scrapedAt": "2026-10-04T18:32:07.294758+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a48481198b82981b",
+    "title": "ShinyHunters hacker reportedly detained in Jordan, aiding FBI",
+    "summary_raw": "A suspected ShinyHunters hacking group member known online as \"Rey\" has reportedly been detained in Jordan and is cooperating with the FBI to help locate other members of the extortion group. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/shinyhunters-hacker-reportedly-detained-in-jordan-aiding-fbi/",
+    "publishedDate": "2026-10-03T15:09:38-04:00",
+    "scrapedAt": "2026-10-04T18:32:07.294877+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "0bbd6f1a4d62d9ee",
+    "title": "User Agent Strings Curiosities, (Sun, Oct 4th)",
+    "summary_raw": "Sometimes I have to smile, or my interest is triggered, when I review new User Agent Strings in the honeypot logs.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33394",
+    "publishedDate": "2026-10-04T07:58:51+00:00",
+    "scrapedAt": "2026-10-04T18:32:24.298171+00:00",
+    "cve_ids_scraped": []
   }
 ]
