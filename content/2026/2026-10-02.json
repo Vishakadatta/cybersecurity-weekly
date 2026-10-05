@@ -2,10 +2,19 @@
   "edition": "2026-10-02",
   "year": "2026",
   "editionLabel": "Sep 25 \u2013 Oct 2, 2026",
-  "generatedAt": "2026-10-05T07:18:40.869984+00:00",
-  "subjectLine": "Critical FortiMail and Citrix NetScaler Zero-Days Under Active Exploitation",
+  "generatedAt": "2026-10-05T22:09:15.670335+00:00",
+  "subjectLine": "BREAKING: Attackers Target Rejetto HFS Flaw That Enables Admin Session + More Inside",
   "weekIntro": "This week, the threat landscape is dominated by critical, actively exploited zero-day vulnerabilities in enterprise edge infrastructure, including FortiMail and Citrix NetScaler. Additionally, we are seeing a concerning rise in AI-agentic risks and sophisticated supply-chain attacks that demand immediate attention from security teams.",
   "articles": [
+    {
+      "id": "00cd8ad7dcd1558b",
+      "title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+      "summary": "A critical security flaw impacting Rejetto HTTP File Server (HFS) is witnessing active exploitation attempts, according to VulnCheck. The vulnerability (CVE\u20112026\u201161500) has a CVSS score of 9.3 and allows attackers to forge admin sessions and execute remote code.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
+      "tier": 2,
+      "publishedDate": "2026-10-05T13:39:23+05:30"
+    },
     {
       "id": "b4ba5b4eb39d7246",
       "title": "Critical FortiMail Zero\u2011Day (CVE\u20112026\u2011104286) Actively Exploited for Unauthenticated File Writes",
