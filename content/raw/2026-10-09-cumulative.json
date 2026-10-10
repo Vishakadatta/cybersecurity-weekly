@@ -2760,5 +2760,82 @@
     "publishedDate": "2026-10-08T17:02:52+00:00",
     "scrapedAt": "2026-10-10T02:37:13.735736+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "6966a661074ee54f",
+    "title": "The Third-Party Agent Problem: Why Security Built for AI You Chose Misses the Agents You Didn't",
+    "summary_raw": "In environments studied for the 2026 State of Agent Security Report, roughly 1,280 third-party products now embed AI. About 282 of them sit behind single sign-on. The other thousand are invisible to identity infrastructure by default, not because anyone hid them, but because an identity stack can only govern what authenticates through it, and most agents never do.\n\nThat gap is the clearest",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/the-third-party-agent-problem-why.html",
+    "publishedDate": "2026-10-10T16:30:00+05:30",
+    "scrapedAt": "2026-10-10T19:05:39.673285+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "efd24bc6b14734d0",
+    "title": "Anthropic Cuts Live Internet Access for Internal AI Tests After Claude Exploits Injection Flaws",
+    "summary_raw": "Anthropic on Friday said it's cutting off live internet access for all its internal evaluations following the discovery of new incidents in which its artificial intelligence (AI) models exhibited misaligned behavior and targeted real websites.\n\nThe AI company said it identified four broad categories of unintended model actions during evaluations and internal use of Claude -\n\n\n  Claude Mythos",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/anthropic-cuts-live-internet-access-for.html",
+    "publishedDate": "2026-10-10T14:48:45+05:30",
+    "scrapedAt": "2026-10-10T19:05:39.673421+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "495445805712c77d",
+    "title": "Cyber exec arrested in case allegedly tied to ShinyHunters hackers",
+    "summary_raw": "Canadian cybersecurity executive Edward Dubrovsky has been arrested in Pennsylvania in connection with alleged extortion activity that multiple reports have linked to the FBI's ongoing crackdown on the ShinyHunters hacking group. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/cyber-exec-arrested-in-case-allegedly-tied-to-shinyhunters-hackers/",
+    "publishedDate": "2026-10-10T11:07:54-04:00",
+    "scrapedAt": "2026-10-10T19:05:40.770957+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "c1d0598b68547532",
+    "title": "ARTEX AI, Claude agents used in cyberattacks on South Korean banks",
+    "summary_raw": "The cyberattacks that shook the South Korean financial sector earlier this month were launched by a Chinese hacker using the ARTEX AI penetration testing suite and Claude agents. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/hacker-used-artex-ai-and-claude-agents-to-target-south-korean-banks/",
+    "publishedDate": "2026-10-10T10:16:17-04:00",
+    "scrapedAt": "2026-10-10T19:05:40.771087+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "b795ef5d79a95993",
+    "title": "Criminal IP Introduces AITEM as the Next Evolution of Attack Surface Management",
+    "summary_raw": "Traditional attack surface management helps organizations discover exposed assets, but visibility alone is not enough to address threats. Criminal IP introduces AITEM, an AI-powered approach that connects exposure discovery with investigation, risk prioritization, and response. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/criminal-ip-introduces-aitem-as-the-next-evolution-of-attack-surface-management/",
+    "publishedDate": "2026-10-10T08:30:39-04:00",
+    "scrapedAt": "2026-10-10T19:05:40.771202+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "22a3e2e00caf6482",
+    "title": "Why TLP should not replace your internal information classification, (Sat, Oct 10th)",
+    "summary_raw": "The Traffic Light Protocol (TLP)&#x5b;1&#x5d;, which is now in its second incarnation, is a wonderful standard that enables one to easily communicate whether information may be shared further (and if so, how far).&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33414",
+    "publishedDate": "2026-10-10T09:11:34+00:00",
+    "scrapedAt": "2026-10-10T19:05:56.842131+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "74c2f052527ecf08",
+    "title": "DSA-6550-1 ghostscript - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6550-1\">https://security-tracker.debian.org/tracker/DSA-6550-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00464.html",
+    "publishedDate": "2026-10-10T00:00:00+00:00",
+    "scrapedAt": "2026-10-10T19:05:59.713045+00:00",
+    "cve_ids_scraped": []
   }
 ]
