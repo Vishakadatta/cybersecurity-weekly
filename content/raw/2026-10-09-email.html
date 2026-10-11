@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SonicWall CVSS 10.0 Exploited in the Wild, Exchange Zero-Day Patched, Cisco Nexus Root RCEs</title>
+</head>
+<body style="margin:0;padding:0;background-color:#020617;font-family:system-ui,-apple-system,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#020617;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #1e293b;">
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;">
+                &#128737; Cybersecurity Weekly
+              </h1>
+              <p style="margin:4px 0 0;font-size:13px;color:#64748b;">
+                Oct 2 – 9, 2026 &middot; AI-curated security intelligence
+              </p>
+            </td>
+          </tr>
+
+          <!-- Subject + Week Intro -->
+          <tr>
+            <td style="padding:32px 32px 20px;">
+              <h2 style="margin:0 0 14px;font-size:22px;font-weight:800;color:#ffffff;line-height:1.3;">
+                SonicWall CVSS 10.0 Exploited in the Wild, Exchange Zero-Day Patched, Cisco Nexus Root RCEs
+              </h2>
+              
+              <p style="margin:0;font-size:14px;color:#94a3b8;line-height:1.7;border-left:3px solid #14b8a6;padding-left:14px;">
+                This week's operational threat landscape is dominated by perimeter appliance compromises, led by active exploitation of a maximum-severity flaw in SonicWall gateways and an out-of-band zero-day patch for Microsoft Exchange. Meanwhile, core infrastructure teams must urgently address root-level remote code execution across Cisco Nexus switches and extensive patch rollouts for enterprise Linux deployments. DevOps and security teams also face renewed supply-chain pressure as automated credential-harvesting campaigns target GitHub Actions workflows and npm packages.
+              </p>
+              
+            </td>
+          </tr>
+
+          <!-- Articles -->
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-102255</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html" style="color:#ffffff;text-decoration:none;">SonicWall Issues Hotfix for Critical CVE‑2026‑102255 SSRF in SMA1000 Appliances as Exploits Appear in the Wild</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      SonicWall released patches for four critical flaws in SMA1000 gateways, with CVE‑2026‑102255—a pre‑authentication SSRF in the WorkPlace portal—rated 10.0 CVSS. Within days of release, threat‑monitoring honeypots observed exploitation attempts targeting internal CouchDB services, confirming active abuse of the vulnerability.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Unauthenticated attackers can force the appliance to issue internal requests, potentially accessing sensitive services and executing unauthorized operations on any exposed SMA1000 device.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the SonicWall hotfix (12.4.3‑03670 or later, 12.5.0‑03082 or later) immediately and verify the appliance restarts successfully.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-96940</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html" style="color:#ffffff;text-decoration:none;">Microsoft Issues Out‑of‑Band Patch for Critical Exchange Server Privilege‑Escalation Flaw (CVE‑2026‑96940)</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Microsoft released an out‑of‑band update for CVE‑2026‑96940, a high‑severity Exchange Server vulnerability that lets authenticated attackers elevate privileges and read other users' mailboxes within the same organization. The flaw is actively exploited, carries an 8.8 CVSS score, and affects multiple on‑premises Exchange versions.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must assume that any compromised credential could be used to harvest internal email traffic, exposing sensitive communications and attachments. The vulnerability does not cross tenant boundaries but can compromise every mailbox on an affected server.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the October 2, 2026 Exchange Server security updates immediately to all affected on‑premises installations.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/" style="color:#ffffff;text-decoration:none;">Cisco Issues Critical NX‑OS Advisories for Five Root‑Level Exploits</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Cisco disclosed five critical vulnerabilities in NX‑OS that allow remote code execution with root privileges on Nexus 3000 and Nexus 9000 switches. Exploits target NX‑API, Next‑Generation OAM, and MPLS OAM when those features are enabled, potentially enabling full device takeover or denial‑of‑service.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Compromised switches can give attackers unrestricted control over data‑center traffic, manipulate VLANs, or disrupt services, exposing the entire fabric to breach or outage.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the latest Cisco patches immediately and disable any unused NX‑API, NGOAM, or MPLS OAM features until the fixes are in place.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html" style="color:#ffffff;text-decoration:none;">Researchers Release Working Exploit for Pre‑Auth AnyDesk Linux RCE, Patching Required</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A functional exploit named AnyPwn targets a heap buffer overflow in AnyDesk Linux 8.0.2, granting unauthenticated root access over direct TCP port 7070. AnyDesk patched the flaw in version 8.0.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Unpatched AnyDesk Linux clients can be fully compromised before any user interaction, exposing critical infrastructure to remote takeover.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Upgrade all AnyDesk Linux installations to version 8.0.3 or later immediately.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/credential-stealing-github-actions.html" style="color:#ffffff;text-decoration:none;">GhostAction Supply‑Chain Attack Injects Credential‑Stealing GitHub Actions Workflows into 340+ Repositories</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Researchers uncovered a credential‑theft campaign that compromised two high‑profile maintainer accounts to push malicious GitHub Actions workflows into more than 340 open‑source repositories, exfiltrating over 3,300 secrets—including AWS, OpenAI, and DockerHub tokens—to a hard‑coded IP via plain HTTP.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face immediate risk of secret leakage from CI pipelines and downstream services, and the compromised workflows can persist across thousands of downstream forks.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Audit all recent workflow changes, revoke and rotate exposed secrets, and enforce least‑privilege PATs with MFA for all GitHub maintainer accounts.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/credential-stealing-github-actions.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://access.redhat.com/errata/RHSA-2026:76993" style="color:#ffffff;text-decoration:none;">Red Hat Releases Broad Patch Update for RHEL, OpenShift, and Core Services</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Red Hat released a batch of Critical and Important security advisories across Red Hat Enterprise Linux 8, 9, and 10, OpenShift Container Platform, and foundational enterprise packages.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Unpatched enterprise infrastructure faces risks of unauthorized root compromise, remote code execution, container escapes, and compromised authentication services across production environments. Critical enterprise workloads, including SAP Solutions and containerized control planes, are directly vulnerable until patched.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Audit exposed hosts and cluster nodes, apply updated errata packages and kernel builds immediately, and roll out updates to OpenShift deployments.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://access.redhat.com/errata/RHSA-2026:76993" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://access.redhat.com/errata/RHSA-2026:76750" style="color:#64748b;text-decoration:none;margin-left:6px;">Red Hat Security Advisories</a>
+                        
+                      
+                        
+                        <a href="https://access.redhat.com/errata/RHSA-2026:74433" style="color:#64748b;text-decoration:none;margin-left:6px;">Red Hat Security Advisories</a>
+                        
+                      
+                        
+                        <a href="https://access.redhat.com/errata/RHSA-2026:76744" style="color:#64748b;text-decoration:none;margin-left:6px;">Red Hat Security Advisories</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; ChainDrop/Shai‑Hulud</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html" style="color:#ffffff;text-decoration:none;">Tensorlake npm SDK Compromised in ChainDrop/Shai‑Hulud Supply‑Chain Attack Delivering Credential‑Stealing Worm</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      The Tensorlake TypeScript SDK (npm package “tensorlake” version 0.5.144) was backdoored by the ChainDrop/Shai‑Hulud group. The malicious release installs a pre‑install hook that runs an obfuscated Bun‑based loader, harvesting npm, GitHub, AWS, Vault, Kubernetes, SSH, .
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face immediate risk of credential theft across CI pipelines, cloud environments, and secret stores, and attackers can retain access even after the tainted package is removed.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Remove version 0.5.144, audit all systems for leaked credentials, rotate secrets, and monitor for unauthorized package publications.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; FortiBleed</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html" style="color:#ffffff;text-decoration:none;">FBI Confirms FortiBleed Credential Harvesting Campaign Remains Active on FortiGate Firewalls and SSL VPNs</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      The FBI and Secret Service warned that the FortiBleed operation continues to harvest credentials from internet‑exposed Fortinet FortiGate firewalls and SSL VPN gateways, exploiting reused or leaked passwords stored with...
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face ongoing risk of unauthorized access to perimeter devices, enabling persistent footholds and lateral movement across networks.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Immediately enforce phishing‑resistant authentication, terminate active VPN and admin sessions, reset all Fortinet passwords, switch to PBKDF2 for credential storage, and review logs for suspicious activity.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html" style="color:#ffffff;text-decoration:none;">Critical LMCache Remote Code Execution Flaw Exposes Unauthenticated Attackers via ZeroMQ</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A critical vulnerability in LMCache (versions 0.3.9 through 0.5.5, including 0.5.6 RCs) allows unauthenticated remote code execution through a crafted ZeroMQ message that exploits unsafe pickle deserialization.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Any LMCache instance listening on a non‑localhost interface can be hijacked, executing attacker‑supplied code with the privileges of the LMCache process and potentially compromising the host running LLM workloads.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Immediately reconfigure LMCache to bind only to localhost or restrict network access, apply strict firewall rules, and monitor for suspicious ZeroMQ traffic while awaiting a patched release.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://arstechnica.com/security/2026/10/hackers-obtain-counterfeit-tls-certificates-for-google-and-other-large-services/" style="color:#ffffff;text-decoration:none;">Hackers Issue Counterfeit TLS Certificates for Google and Other Major Services via Compromised ccTLD Registries</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Attackers hijacked the .gh, .sl, and .as country‑code top‑level domains, altered DNS records, and passed domain‑validation checks to obtain unauthorized TLS certificates for multiple Google domains and other high‑profile services.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> The breach enables man‑in‑the‑middle attacks that can decrypt traffic and impersonate affected sites, exposing users and internal systems to credential theft and data exfiltration.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Security teams must continuously monitor certificate transparency logs for unexpected issuances and enforce restrictive CA authorization policies.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://arstechnica.com/security/2026/10/hackers-obtain-counterfeit-tls-certificates-for-google-and-other-large-services/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2023-20585</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://ubuntu.com/security/notices/USN-8887-3" style="color:#ffffff;text-decoration:none;">Ubuntu Patches AMD SEV-SNP Memory Isolation Flaw in Linux Kernel</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Canonical released Linux kernel security updates addressing CVE-2023-20585, a flaw where AMD processors fail to enforce Reverse Map Table checks during IOMMU accesses to host buffers.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Malicious or compromised hypervisors can bypass hardware-enforced memory encryption and integrity checks. This invalidates confidential computing isolation guarantees for workloads running in multi-tenant environments.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the latest Linux kernel updates released in USN-8887-3 to all affected Ubuntu host systems and reboot.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://ubuntu.com/security/notices/USN-8887-3" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+
+          <!-- CTA -->
+          <tr>
+            <td style="padding:32px;" align="center">
+              <a href="" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:700;color:#042f2e;background-color:#2dd4bf;border-radius:8px;text-decoration:none;">
+                View all stories on the web &rarr;
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px;border-top:1px solid #1e293b;">
+              <p style="margin:0;font-size:12px;color:#475569;line-height:1.6;text-align:center;">
+                You're receiving this because you subscribed to Cybersecurity Weekly.<br>
+                <a href="" style="color:#64748b;text-decoration:underline;">Unsubscribe</a>
+                &middot;
+                <a href="https://github.com/Vishakadatta/cybersecurity-weekly" style="color:#64748b;text-decoration:underline;">GitHub</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,579 @@
+{
+  "edition": "2026-10-09",
+  "year": "2026",
+  "editionLabel": "Oct 2 \u2013 9, 2026",
+  "generatedAt": "2026-10-11T23:22:19.477765+00:00",
+  "subjectLine": "SonicWall CVSS 10.0 Exploited in the Wild, Exchange Zero-Day Patched, Cisco Nexus Root RCEs",
+  "weekIntro": "This week's operational threat landscape is dominated by perimeter appliance compromises, led by active exploitation of a maximum-severity flaw in SonicWall gateways and an out-of-band zero-day patch for Microsoft Exchange. Meanwhile, core infrastructure teams must urgently address root-level remote code execution across Cisco Nexus switches and extensive patch rollouts for enterprise Linux deployments. DevOps and security teams also face renewed supply-chain pressure as automated credential-harvesting campaigns target GitHub Actions workflows and npm packages.",
+  "articles": [
+    {
+      "id": "6dabc0f8fb49ecb0",
+      "title": "SonicWall Issues Hotfix for Critical CVE\u20112026\u2011102255 SSRF in SMA1000 Appliances as Exploits Appear in the Wild",
+      "summary": "SonicWall released patches for four critical flaws in SMA1000 gateways, with CVE\u20112026\u2011102255\u2014a pre\u2011authentication SSRF in the WorkPlace portal\u2014rated 10.0 CVSS. Within days of release, threat\u2011monitoring honeypots observed exploitation attempts targeting internal CouchDB services, confirming active abuse of the vulnerability.",
+      "impact": "Unauthenticated attackers can force the appliance to issue internal requests, potentially accessing sensitive services and executing unauthorized operations on any exposed SMA1000 device.",
+      "action": "Apply the SonicWall hotfix (12.4.3\u201103670 or later, 12.5.0\u201103082 or later) immediately and verify the appliance restarts successfully.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/max-severity-sonicwall-sma1000-flaw-now-exploited-in-attacks/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
+      "publishedDate": "2026-10-07T21:47:44+05:30",
+      "cve_ids": [
+        "CVE-2026-102255"
+      ],
+      "affected_systems": [
+        "SonicWall SMA1000"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "00260114e73039a4",
+      "title": "Microsoft Issues Out\u2011of\u2011Band Patch for Critical Exchange Server Privilege\u2011Escalation Flaw (CVE\u20112026\u201196940)",
+      "summary": "Microsoft released an out\u2011of\u2011band update for CVE\u20112026\u201196940, a high\u2011severity Exchange Server vulnerability that lets authenticated attackers elevate privileges and read other users' mailboxes within the same organization. The flaw is actively exploited, carries an 8.8 CVSS score, and affects multiple on\u2011premises Exchange versions.",
+      "impact": "Security teams must assume that any compromised credential could be used to harvest internal email traffic, exposing sensitive communications and attachments. The vulnerability does not cross tenant boundaries but can compromise every mailbox on an affected server.",
+      "action": "Apply the October 2, 2026 Exchange Server security updates immediately to all affected on\u2011premises installations.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html",
+      "publishedDate": "2026-10-05T21:51:52+05:30",
+      "cve_ids": [
+        "CVE-2026-96940"
+      ],
+      "affected_systems": [
+        "Microsoft Exchange Server Subscription Edition RTM",
+        "Microsoft Exchange Server 2016 Cumulative Update 23",
+        "Microsoft Exchange Server 2019 Cumulative Update 15",
+        "Microsoft Exchange Server 2019 Cumulative Update 14"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "484d290f7ef10868",
+      "title": "Cisco Issues Critical NX\u2011OS Advisories for Five Root\u2011Level Exploits",
+      "summary": "Cisco disclosed five critical vulnerabilities in NX\u2011OS that allow remote code execution with root privileges on Nexus 3000 and Nexus 9000 switches. Exploits target NX\u2011API, Next\u2011Generation OAM, and MPLS OAM when those features are enabled, potentially enabling full device takeover or denial\u2011of\u2011service.",
+      "impact": "Compromised switches can give attackers unrestricted control over data\u2011center traffic, manipulate VLANs, or disrupt services, exposing the entire fabric to breach or outage.",
+      "action": "Apply the latest Cisco patches immediately and disable any unused NX\u2011API, NGOAM, or MPLS OAM features until the fixes are in place.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/",
+      "publishedDate": "2026-10-08T11:26:33-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Cisco Nexus NX\u2011OS",
+        "Cisco Nexus 3000 Series switches",
+        "Cisco Nexus 9000 Series switches"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "b8e2f39fd1297ab6",
+      "title": "Researchers Release Working Exploit for Pre\u2011Auth AnyDesk Linux RCE, Patching Required",
+      "summary": "A functional exploit named AnyPwn targets a heap buffer overflow in AnyDesk Linux 8.0.2, granting unauthenticated root access over direct TCP port 7070. AnyDesk patched the flaw in version 8.0.",
+      "impact": "Unpatched AnyDesk Linux clients can be fully compromised before any user interaction, exposing critical infrastructure to remote takeover.",
+      "action": "Upgrade all AnyDesk Linux installations to version 8.0.3 or later immediately.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/researchers-publish-working-exploit-for.html",
+      "publishedDate": "2026-10-09T18:29:22+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "AnyDesk Linux client 8.0.2",
+        "AnyDesk Linux client 8.0.3"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "bf89595af7c39e7a",
+      "title": "GhostAction Supply\u2011Chain Attack Injects Credential\u2011Stealing GitHub Actions Workflows into 340+ Repositories",
+      "summary": "Researchers uncovered a credential\u2011theft campaign that compromised two high\u2011profile maintainer accounts to push malicious GitHub Actions workflows into more than 340 open\u2011source repositories, exfiltrating over 3,300 secrets\u2014including AWS, OpenAI, and DockerHub tokens\u2014to a hard\u2011coded IP via plain HTTP.",
+      "impact": "Security teams face immediate risk of secret leakage from CI pipelines and downstream services, and the compromised workflows can persist across thousands of downstream forks.",
+      "action": "Audit all recent workflow changes, revoke and rotate exposed secrets, and enforce least\u2011privilege PATs with MFA for all GitHub maintainer accounts.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/credential-stealing-github-actions.html",
+      "publishedDate": "2026-10-10T00:44:28+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "GitHub Actions",
+        "open-source repositories"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "2534969ae8ce2565",
+      "title": "Red Hat Releases Broad Patch Update for RHEL, OpenShift, and Core Services",
+      "summary": "Red Hat released a batch of Critical and Important security advisories across Red Hat Enterprise Linux 8, 9, and 10, OpenShift Container Platform, and foundational enterprise packages.",
+      "impact": "Unpatched enterprise infrastructure faces risks of unauthorized root compromise, remote code execution, container escapes, and compromised authentication services across production environments. Critical enterprise workloads, including SAP Solutions and containerized control planes, are directly vulnerable until patched.",
+      "action": "Audit exposed hosts and cluster nodes, apply updated errata packages and kernel builds immediately, and roll out updates to OpenShift deployments.",
+      "sources": [
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76993"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76750"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:74433"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76744"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76755"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77576"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77028"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:78952"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79786"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79784"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79782"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79783"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79778"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:73864"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:73851"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:73866"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79281"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79162"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:78951"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79160"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:74797"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79371"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76739"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77689"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79122"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79177"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77690"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77534"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77020"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79121"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79113"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79119"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79120"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79010"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79112"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79028"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77648"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79011"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79012"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79009"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79027"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79217"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79118"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76781"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77396"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76918"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:79114"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77017"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77018"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77021"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77219"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77297"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77632"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77498"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76760"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77634"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77627"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77631"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:78844"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:78843"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77369"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77610"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76952"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76956"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77359"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77500"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76737"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77371"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77370"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77372"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77301"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77218"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77215"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77217"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:76777"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77216"
+        },
+        {
+          "name": "Red Hat Security Advisories",
+          "url": "https://access.redhat.com/errata/RHSA-2026:77214"
+        }
+      ],
+      "url": "https://access.redhat.com/errata/RHSA-2026:76993",
+      "publishedDate": "2026-10-07T02:20:23+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Red Hat Enterprise Linux 8",
+        "Red Hat Enterprise Linux 9",
+        "Red Hat Enterprise Linux 10",
+        "Red Hat OpenShift Container Platform",
+        "Linux kernel",
+        "OpenSSH",
+        "FreeRDP",
+        "BIND",
+        "OpenSSL",
+        "Node.js 22",
+        "Python 3.12",
+        "Python 3.14",
+        "Red Hat Directory Server",
+        "OpenTelemetry Collector"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "a947937fc68c594b",
+      "title": "Tensorlake npm SDK Compromised in ChainDrop/Shai\u2011Hulud Supply\u2011Chain Attack Delivering Credential\u2011Stealing Worm",
+      "summary": "The Tensorlake TypeScript SDK (npm package \u201ctensorlake\u201d version 0.5.144) was backdoored by the ChainDrop/Shai\u2011Hulud group. The malicious release installs a pre\u2011install hook that runs an obfuscated Bun\u2011based loader, harvesting npm, GitHub, AWS, Vault, Kubernetes, SSH, .",
+      "impact": "Security teams face immediate risk of credential theft across CI pipelines, cloud environments, and secret stores, and attackers can retain access even after the tainted package is removed.",
+      "action": "Remove version 0.5.144, audit all systems for leaked credentials, rotate secrets, and monitor for unauthorized package publications.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+      "publishedDate": "2026-10-08T11:16:20+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Tensorlake npm package"
+      ],
+      "threat_actor": "ChainDrop/Shai\u2011Hulud",
+      "tier": 2
+    },
+    {
+      "id": "98f167473783047a",
+      "title": "FBI Confirms FortiBleed Credential Harvesting Campaign Remains Active on FortiGate Firewalls and SSL VPNs",
+      "summary": "The FBI and Secret Service warned that the FortiBleed operation continues to harvest credentials from internet\u2011exposed Fortinet FortiGate firewalls and SSL VPN gateways, exploiting reused or leaked passwords stored with...",
+      "impact": "Security teams face ongoing risk of unauthorized access to perimeter devices, enabling persistent footholds and lateral movement across networks.",
+      "action": "Immediately enforce phishing\u2011resistant authentication, terminate active VPN and admin sessions, reset all Fortinet passwords, switch to PBKDF2 for credential storage, and review logs for suspicious activity.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
+      "publishedDate": "2026-10-07T17:26:56+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Fortinet SSL VPN gateways",
+        "Fortinet FortiGate firewalls"
+      ],
+      "threat_actor": "FortiBleed",
+      "tier": 3
+    },
+    {
+      "id": "4d160aba1a13f600",
+      "title": "Critical LMCache Remote Code Execution Flaw Exposes Unauthenticated Attackers via ZeroMQ",
+      "summary": "A critical vulnerability in LMCache (versions 0.3.9 through 0.5.5, including 0.5.6 RCs) allows unauthenticated remote code execution through a crafted ZeroMQ message that exploits unsafe pickle deserialization.",
+      "impact": "Any LMCache instance listening on a non\u2011localhost interface can be hijacked, executing attacker\u2011supplied code with the privileges of the LMCache process and potentially compromising the host running LLM workloads.",
+      "action": "Immediately reconfigure LMCache to bind only to localhost or restrict network access, apply strict firewall rules, and monitor for suspicious ZeroMQ traffic while awaiting a patched release.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
+      "publishedDate": "2026-10-07T21:04:53+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "LMCache"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "95ac17328033f3ed",
+      "title": "Hackers Issue Counterfeit TLS Certificates for Google and Other Major Services via Compromised ccTLD Registries",
+      "summary": "Attackers hijacked the .gh, .sl, and .as country\u2011code top\u2011level domains, altered DNS records, and passed domain\u2011validation checks to obtain unauthorized TLS certificates for multiple Google domains and other high\u2011profile services.",
+      "impact": "The breach enables man\u2011in\u2011the\u2011middle attacks that can decrypt traffic and impersonate affected sites, exposing users and internal systems to credential theft and data exfiltration.",
+      "action": "Security teams must continuously monitor certificate transparency logs for unexpected issuances and enforce restrictive CA authorization policies.",
+      "sources": [
+        {
+          "name": "Ars Technica Security",
+          "url": "https://arstechnica.com/security/2026/10/hackers-obtain-counterfeit-tls-certificates-for-google-and-other-large-services/"
+        }
+      ],
+      "url": "https://arstechnica.com/security/2026/10/hackers-obtain-counterfeit-tls-certificates-for-google-and-other-large-services/",
+      "publishedDate": "2026-10-06T19:21:14+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Google",
+        "Other large services"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "52574a1ba02c3533",
+      "title": "Ubuntu Patches AMD SEV-SNP Memory Isolation Flaw in Linux Kernel",
+      "summary": "Canonical released Linux kernel security updates addressing CVE-2023-20585, a flaw where AMD processors fail to enforce Reverse Map Table checks during IOMMU accesses to host buffers.",
+      "impact": "Malicious or compromised hypervisors can bypass hardware-enforced memory encryption and integrity checks. This invalidates confidential computing isolation guarantees for workloads running in multi-tenant environments.",
+      "action": "Apply the latest Linux kernel updates released in USN-8887-3 to all affected Ubuntu host systems and reboot.",
+      "sources": [
+        {
+          "name": "Ubuntu Security Notices",
+          "url": "https://ubuntu.com/security/notices/USN-8887-3"
+        }
+      ],
+      "url": "https://ubuntu.com/security/notices/USN-8887-3",
+      "publishedDate": "2026-10-09T08:38:46+00:00",
+      "cve_ids": [
+        "CVE-2023-20585"
+      ],
+      "affected_systems": [
+        "AMD SEV-SNP",
+        "Linux kernel",
+        "Ubuntu Linux"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
