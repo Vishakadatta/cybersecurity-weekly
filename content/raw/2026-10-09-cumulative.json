@@ -2837,5 +2837,49 @@
     "publishedDate": "2026-10-10T00:00:00+00:00",
     "scrapedAt": "2026-10-10T19:05:59.713045+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "406e1eebee8a0cab",
+    "title": "Nippon Columbia malware incident exposes 8.6 million karaoke fan records",
+    "summary_raw": "Daiichi Kosho, a major Japanese entertainment system maker, disclosed that a malware infection at its contractor, Nippon Columbia, exposed more than 8.7 million customer and employee records. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/nippon-columbia-malware-incident-exposes-86-million-karaoke-fan-records/",
+    "publishedDate": "2026-10-11T10:23:46-04:00",
+    "scrapedAt": "2026-10-11T19:22:10.005756+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "6dad02dc7cedf472",
+    "title": "DSA-6552-1 vips - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6552-1\">https://security-tracker.debian.org/tracker/DSA-6552-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00466.html",
+    "publishedDate": "2026-10-11T00:00:00+00:00",
+    "scrapedAt": "2026-10-11T19:22:28.369075+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "4f0d9cad81e0ed08",
+    "title": "DSA-6551-1 tor - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6551-1\">https://security-tracker.debian.org/tracker/DSA-6551-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00465.html",
+    "publishedDate": "2026-10-10T00:00:00+00:00",
+    "scrapedAt": "2026-10-11T19:22:28.369114+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "6af500eac39faf57",
+    "title": "Stable kernels 7.2.10 and 6.18.56",
+    "summary_raw": "The <a href=\"https://lwn.net/Articles/1099765/\">7.2.10</a> and <a href=\"https://lwn.net/Articles/1099766/\">6.18.56</a> stable kernels have been released.\nEach contains another several hundred important fixes.",
+    "source": "LWN.net",
+    "source_kind": "journalism",
+    "url": "https://lwn.net/Articles/1099764/",
+    "publishedDate": "2026-10-11T14:35:57+00:00",
+    "scrapedAt": "2026-10-11T19:22:30.939658+00:00",
+    "cve_ids_scraped": []
   }
 ]
