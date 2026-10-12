@@ -2,10 +2,28 @@
   "edition": "2026-10-09",
   "year": "2026",
   "editionLabel": "Oct 2 \u2013 9, 2026",
-  "generatedAt": "2026-10-11T23:22:19.477765+00:00",
-  "subjectLine": "SonicWall CVSS 10.0 Exploited in the Wild, Exchange Zero-Day Patched, Cisco Nexus Root RCEs",
+  "generatedAt": "2026-10-12T22:34:03.966413+00:00",
+  "subjectLine": "BREAKING: Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabl + More Inside",
   "weekIntro": "This week's operational threat landscape is dominated by perimeter appliance compromises, led by active exploitation of a maximum-severity flaw in SonicWall gateways and an out-of-band zero-day patch for Microsoft Exchange. Meanwhile, core infrastructure teams must urgently address root-level remote code execution across Cisco Nexus switches and extensive patch rollouts for enterprise Linux deployments. DevOps and security teams also face renewed supply-chain pressure as automated credential-harvesting campaigns target GitHub Actions workflows and npm packages.",
   "articles": [
+    {
+      "id": "768e82c2b3a27eb9",
+      "title": "GitLab warns of max severity code execution vulnerability",
+      "summary": "GitLab warned users to immediately patch a maximum\u2011severity vulnerability in the CI/CD Regular Expression Compiler that could let remote attackers run arbitrary code on targeted instances.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/gitlab-warns-of-max-severity-rce-flaw-in-regex-compiler-engine/",
+      "tier": 1,
+      "publishedDate": "2026-10-12T09:09:09-04:00"
+    },
+    {
+      "id": "c9dce304dcc90255",
+      "title": "Attackers Exploit CVSS 10.0 Bricksforge WordPress Flaw Enabling Unauthenticated RCE",
+      "summary": "A maximum\u2011severity security flaw impacting the Bricksforge plugin for WordPress is being actively exploited in the wild, according to Patchstack. The critical vulnerability (CVE\u2011\u2026) allows unauthenticated remote code execution.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/10/attackers-exploit-cvss-100-bricksforge.html",
+      "tier": 1,
+      "publishedDate": "2026-10-12T14:32:14+05:30"
+    },
     {
       "id": "6dabc0f8fb49ecb0",
       "title": "SonicWall Issues Hotfix for Critical CVE\u20112026\u2011102255 SSRF in SMA1000 Appliances as Exploits Appear in the Wild",
