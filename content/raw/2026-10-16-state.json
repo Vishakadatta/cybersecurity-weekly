@@ -1,0 +1,72 @@
+{
+  "edition": "2026-10-16",
+  "stages": {
+    "discover": {
+      "status": "pending",
+      "done": []
+    },
+    "curate": {
+      "status": "complete",
+      "done": [
+        "0fbd64ca10e3ba0a",
+        "ebaf37949a88c936",
+        "2f4ebff472d58347",
+        "a2dfa0394e0653a8",
+        "8bd9f38ff8ec8f34",
+        "b1e071119d1a7018",
+        "871699ef85217136",
+        "43828a09caae0630",
+        "ab68bb7b689bedcb",
+        "402aaeff71af9a09",
+        "d0b52638beda04f7",
+        "13d15f9231c43ced",
+        "05d981a16f272692",
+        "2c2810e8b4ea0e84",
+        "dce2d98112cca9f3",
+        "f459c5923c1f2f1f",
+        "ea27b5cc9be9a781",
+        "9f98c61ecb3c8b3b",
+        "3d29c827bc05744d",
+        "81cc829d876c6a2e",
+        "6888d3f1bf78a5a7",
+        "eef67d66b352919d",
+        "166fdf646185c6ed",
+        "f6df72ea2abc993d",
+        "bf40b114a657e05d",
+        "92a3eccd55c658eb",
+        "27378f9eca71377a",
+        "63b83b11b3eaa12d",
+        "29817af5c0814288",
+        "d4038aa1c65fc901",
+        "acb8dfd16f4d5560",
+        "d73bcf51f60eea74",
+        "522571e761acdc18",
+        "ec234e7f37ec6961",
+        "79aba1b981e2efa9",
+        "af0f697bdf0f2812",
+        "52574a1ba02c3533",
+        "5c44c49a27e22aa8",
+        "4f0d9cad81e0ed08",
+        "35012ff50ca69cd7",
+        "40b325ab55ec8d40",
+        "30e29d89cdfcf322",
+        "7a1b7b5782bec781",
+        "2d0bdaffae63d3e5",
+        "d45c2962ef7d67ff",
+        "1cb0edb0fc655479",
+        "7a679d710e8c186b",
+        "219fd9eab491daf6",
+        "622bd95115275933",
+        "978985bee2a5f3ab"
+      ]
+    },
+    "finalize": {
+      "status": "pending",
+      "done_clusters": [],
+      "assembly_done": false,
+      "intro_done": false
+    }
+  },
+  "token_tally": {},
+  "updated_at": "2026-10-17T17:49:22.973821+00:00"
+}
