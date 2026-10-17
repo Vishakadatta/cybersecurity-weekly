@@ -2809,5 +2809,49 @@
     "publishedDate": "2026-10-13T17:56:33+00:00",
     "scrapedAt": "2026-10-17T01:27:41.567238+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "219fd9eab491daf6",
+    "title": "MALFEX npm Package 'imgdecode' Hides Shellcode Loader in Windows Native Addon",
+    "summary_raw": "Cybersecurity researchers have discovered a malicious npm package that's part of a recently disclosed software supply chain attack campaign dubbed MALFEX.\n\nThe package, named \"imgdecode,\" was uploaded to the package registry on September 30, 2026, by a user named \"malfexteste8.\" It has been downloaded 979 times as of writing and is still available on npm as of writing. The latest version of",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/malfex-npm-package-imgdecode-hides.html",
+    "publishedDate": "2026-10-17T16:41:56+05:30",
+    "scrapedAt": "2026-10-17T17:42:13.908721+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "614eb364146c341c",
+    "title": "Hackers Use Compromised ConnectWise Credential to Sign In to 173 Microsoft 365 Tenants",
+    "summary_raw": "Cybersecurity researchers are sounding the alarm related to an active campaign in which unknown threat actors are abusing a compromised Microsoft 365 (M365) credential belonging to ConnectWise Cloud Backup (formerly SkyKick) to gain unauthorized access to customers' M365 environments.\n\nConnectWise Cloud Backup is a cloud-based backup and recovery service built for managed service providers (MSPs",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html",
+    "publishedDate": "2026-10-17T11:46:46+05:30",
+    "scrapedAt": "2026-10-17T17:42:13.908813+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "622bd95115275933",
+    "title": "Hackers breach Microsoft 365 tenants via ConnectWise supply-chain attack",
+    "summary_raw": "ConnectWise has shut down customer access to its Cloud Backup service (formerly SkyKick Cloud Backup) after hackers accessed application identities and compromised Microsoft 365 tenants. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+    "publishedDate": "2026-10-17T11:18:51-04:00",
+    "scrapedAt": "2026-10-17T17:42:14.994669+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "978985bee2a5f3ab",
+    "title": "Drupal patches critical RCE flaws, warns exploits may emerge soon",
+    "summary_raw": "Drupal has patched two critical vulnerabilities that could allow attackers to execute code remotely on websites running any supported version of the content management system. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/drupal-patches-critical-rce-flaws-warns-exploits-may-emerge-soon/",
+    "publishedDate": "2026-10-17T10:32:48-04:00",
+    "scrapedAt": "2026-10-17T17:42:14.994757+00:00",
+    "cve_ids_scraped": []
   }
 ]
