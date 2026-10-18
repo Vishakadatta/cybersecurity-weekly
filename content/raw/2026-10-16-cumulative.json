@@ -2853,5 +2853,60 @@
     "publishedDate": "2026-10-17T10:32:48-04:00",
     "scrapedAt": "2026-10-17T17:42:14.994757+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "1a74dd4c9004a299",
+    "title": "ConnectWise Suspends Cloud Backup After Attackers Compromise Microsoft 365 Tenants",
+    "summary_raw": "ConnectWise on Saturday said it has disabled seven ConnectWise application identities as it continues its investigation into an incident in which unknown threat actors obtained unauthorized access to the application identities and compromised Microsoft 365 tenants.\n\nThe disabled identities are listed below -\n\n\n  ConnectWise Cloud Backup - 506e08f9-6e9a-4da4-942b-a099a03644ae\n  ConnectWise",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html",
+    "publishedDate": "2026-10-18T13:53:02+05:30",
+    "scrapedAt": "2026-10-18T17:51:42.065122+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "de332aa1deffb510",
+    "title": "Hackers exploit SiteGuard WAF flaw to run commands as admins",
+    "summary_raw": "Attackers are targeting an OS command injection vulnerability in SiteGuard Server Edition that lets them execute commands as root or SYSTEM on affected servers. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-siteguard-waf-flaw-to-run-commands-as-system-root/",
+    "publishedDate": "2026-10-18T10:23:16-04:00",
+    "scrapedAt": "2026-10-18T17:51:43.255937+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "aea64b1b41f60719",
+    "title": "Orphaned VBA Projects Inside DWG Files: YARA Rule, (Sun, Oct 18th)",
+    "summary_raw": "Here is the YARA rule I used to detect \"Orphaned VBA Projects Inside DWG Files\".&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33434",
+    "publishedDate": "2026-10-18T12:59:30+00:00",
+    "scrapedAt": "2026-10-18T17:51:57.648586+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "cfbd53c5a2d41e2a",
+    "title": "DSA-6570-1 haproxy - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6570-1\">https://security-tracker.debian.org/tracker/DSA-6570-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00485.html",
+    "publishedDate": "2026-10-18T00:00:00+00:00",
+    "scrapedAt": "2026-10-18T17:52:00.669761+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "f5a77a4c0579bd06",
+    "title": "DSA-6567-2 cifs-utils - regression update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6567-2\">https://security-tracker.debian.org/tracker/DSA-6567-2</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00484.html",
+    "publishedDate": "2026-10-18T00:00:00+00:00",
+    "scrapedAt": "2026-10-18T17:52:00.669808+00:00",
+    "cve_ids_scraped": []
   }
 ]
