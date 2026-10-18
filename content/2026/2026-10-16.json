@@ -1,0 +1,309 @@
+{
+  "edition": "2026-10-16",
+  "year": "2026",
+  "editionLabel": "Oct 9 \u2013 16, 2026",
+  "generatedAt": "2026-10-18T21:29:28.139334+00:00",
+  "subjectLine": "Microsoft Drops Record 1,417 Patches Amid Active Zero-Days in BeyondTrust and Ivanti",
+  "weekIntro": "This week presents an unprecedented operational challenge, led by Microsoft's staggering 1,417-vulnerability Patch Tuesday alongside actively exploited zero-days targeting BeyondTrust and Ivanti edge appliances. Concurrently, high-impact pipeline and infrastructure compromises across GitLab, Linux hypervisors, and ConnectWise cloud backups require immediate cross-discipline remediation from sysadmins and DevOps engineers.",
+  "articles": [
+    {
+      "id": "0fbd64ca10e3ba0a",
+      "title": "Microsoft Patch Tuesday Shatters Record with 1,417 Fixes, Including Actively Exploited Windows Shell Bug",
+      "summary": "Microsoft released patches for 1,417 vulnerabilities\u2014the largest Patch Tuesday ever\u2014covering Windows, Office, SharePoint, SQL Server, Developer Tools and more. Seventy\u2011six flaws are rated Critical, with CVE\u20112026\u201196951 (Windows Shell security\u2011feature bypass) already exploited in the wild and CVE\u20112026\u2011108398 (.NET Framework bypass) publicly disclosed.",
+      "impact": "Security teams must prioritize testing and deployment of the critical fixes, especially the actively exploited Windows Shell bypass, to prevent remote code execution and privilege escalation across Windows 10/11, Server and related services. The sheer volume also strains patch\u2011management pipelines, demanding triage based on exploitability rather than CVE count.",
+      "action": "Immediately deploy the full Patch Tuesday bundle, fast\u2011track the critical CVEs, and validate that Windows Shell and .NET Framework mitigations are effective in your environment.",
+      "sources": [
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/microsoft-patches-record-1413-flaws.html"
+        },
+        {
+          "name": "SANS Internet Storm Center",
+          "url": "https://isc.sans.edu/diary/rss/33422"
+        }
+      ],
+      "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws/",
+      "publishedDate": "2026-10-13T04:34:43+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server",
+        "Microsoft Office",
+        "Microsoft Edge",
+        "SharePoint Server",
+        "SQL Server",
+        "Developer Tools",
+        ".NET Framework",
+        "Windows DHCP Server",
+        "Microsoft Exchange Server"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "166fdf646185c6ed",
+      "title": "Armory Castle Exploits Critical BeyondTrust Remote Support Zero\u2011Day (CVE\u20112026\u2011102764)",
+      "summary": "China\u2011linked APT Armory Castle leveraged CVE\u20112026\u2011102764, a critical remote code execution flaw in BeyondTrust Remote Support (formerly Bomgar), as a zero\u2011day from August 29, 2026. The bug bypasses authentication via improper origin validation, allowing file operations and full system compromise on both SaaS and self\u2011hosted appliances. BeyondTrust issued patches on October\u202f8 for SaaS and manual updates for on\u2011prem versions.",
+      "impact": "Security teams face immediate risk of remote takeover of support appliances and subsequent lateral movement across the network.",
+      "action": "Apply the BeyondTrust BT26\u201105\u2011RS patch immediately to all Remote Support and Privileged Remote Access installations, upgrading older self\u2011hosted versions as required.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/beyondtrust-patches-zero-day-exploited-in-attacks-since-august/"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/endpoint-security/beyondtrust-remote-support-exploited-edge-bugs"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/china-linked-hackers-exploited.html",
+      "publishedDate": "2026-10-16T06:18:08Z",
+      "cve_ids": [
+        "CVE-2026-102764"
+      ],
+      "affected_systems": [
+        "BeyondTrust Remote Support (Bomgar)",
+        "BeyondTrust Remote Support"
+      ],
+      "threat_actor": "Armory Castle",
+      "tier": 1
+    },
+    {
+      "id": "13d15f9231c43ced",
+      "title": "CISA Mandates Immediate Patch for Actively Exploited Ivanti Connect Secure Zero\u2011Day (CVE\u20112026\u2011104935)",
+      "summary": "CISA added CVE\u20112026\u2011104935, an authentication\u2011bypass and remote\u2011code\u2011execution flaw in Ivanti Connect Secure (versions\u202f25.1.1.1,\u202f25.1.2.2,\u202f22.8R2.4 and earlier), to its KEV catalog and ordered federal agencies to patch by Oct\u202f16\u202f2026. Threat actors are exploiting the zero\u2011day to steal credentials and exfiltrate data from VPN appliances.",
+      "impact": "Security teams must assume that any unpatched Ivanti Connect Secure appliance may already be compromised and that the vulnerability can be leveraged for full network intrusion. The exploit works against fully patched versions, indicating a multi\u2011stage attack chain.",
+      "action": "Deploy the latest Ivanti Connect Secure release immediately, reset all credentials and certificates, and conduct forensic analysis of affected appliances.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/ivanti-ics-zero-day-attacks-vendor-patching"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/cisa-urges-immediate-ivanti-connect.html",
+      "publishedDate": "2026-10-14T18:00:42+05:30",
+      "cve_ids": [
+        "CVE-2026-104935"
+      ],
+      "affected_systems": [
+        "Ivanti Connect Secure"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "6888d3f1bf78a5a7",
+      "title": "GitLab Patches Critical CVSS 10.0 Remote Code Execution Flaw in CI/CD",
+      "summary": "GitLab released patches for CVE\u20112026\u201197229, a CVSS 10.0 integer\u2011overflow vulnerability that lets unauthenticated attackers execute arbitrary code via a crafted regular expression in CI/CD pipelines. The fix is included in GitLab 19.4.2, 19.3.5, and 19.2.",
+      "impact": "Security teams must assume any unpatched GitLab instance is fully compromised, as attackers can gain remote code execution without authentication and potentially exfiltrate secrets from CI/CD environments.",
+      "action": "Upgrade immediately to the patched versions (19.4.2, 19.3.5, or 19.2.8) and verify that all CI/CD configurations are re\u2011validated.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/gitlab-patches-cvss-100-flaw-that-could.html",
+      "publishedDate": "2026-10-13T14:13:37+05:30",
+      "cve_ids": [
+        "CVE-2026-1234"
+      ],
+      "affected_systems": [
+        "GitLab CE",
+        "GitLab EE"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "622bd95115275933",
+      "title": "Hackers Compromise ConnectWise Cloud Backup to Infiltrate Over 170 Microsoft\u202f365 Tenants",
+      "summary": "Threat actors seized a service\u2011principal credential from ConnectWise Cloud Backup, using it to obtain Microsoft Graph tokens and gain unauthorized access to at least 173 Microsoft 365 tenants, exfiltrating mail, files and directory data and moving laterally across tenants with...",
+      "impact": "Security teams face immediate exposure of privileged data across all tenants where the ConnectWise backup app is installed, and the compromised credential enables broad read/write operations on mailboxes, OneDrive, SharePoint, Teams and Azure AD.",
+      "action": "Revoke the ConnectWise Cloud Backup service principal, rotate all affected credentials, and audit tenant logs for suspicious Graph token usage.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/hackers-use-compromised-connectwise.html"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/",
+      "publishedDate": "2026-10-17T11:18:51-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Microsoft 365",
+        "ConnectWise Cloud Backup"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "8bd9f38ff8ec8f34",
+      "title": "Critical Linux Kernel Vulnerability CVE\u20112026\u201199999 (PwnEscape) Fixed in Multiple Stable Releases",
+      "summary": "A critical flaw in the Linux kernel networking stack (CVE\u20112026\u201199999, nicknamed PwnEscape) allowed code inside a virtual machine to read, crash, or execute code on the host. The vulnerability is patched in the latest stable kernels 6.18.57, 6.12.113, 6.6.159, 6.1.",
+      "impact": "The bug enables VM\u2011to\u2011host memory leakage and remote code execution, jeopardizing isolation guarantees in cloud and on\u2011prem hypervisor environments. Any system running the affected kernel series is at risk of data exposure or host compromise.",
+      "action": "Update all Linux systems to the patched kernel versions immediately.",
+      "sources": [
+        {
+          "name": "LWN.net",
+          "url": "https://lwn.net/Articles/1100611/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/critical-pwnescape-linux-kernel.html"
+        }
+      ],
+      "url": "https://lwn.net/Articles/1100611/",
+      "publishedDate": "2026-10-15T13:01:31+00:00",
+      "cve_ids": [
+        "CVE-2026-99999"
+      ],
+      "affected_systems": [
+        "Linux kernel 6.18.x",
+        "Linux kernel 6.12.x",
+        "Linux kernel 6.6.x",
+        "Linux kernel 6.1.x",
+        "Linux kernel 5.15.x",
+        "Linux kernel 5.10.x"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "871699ef85217136",
+      "title": "GhostAction Compromises 1,900 GitHub Accounts to Harvest Secrets from 30,000 Repositories",
+      "summary": "GhostAction stole credentials from roughly 1,900 GitHub users, injected malicious GitHub Actions workflows into over 30,000 repositories, and exfiltrated more than 3,000 CI/CD secrets, cloud tokens, and AI API keys, amplifying supply\u2011chain risk for downstream projects.",
+      "impact": "Security teams must assume that any repository touched by the compromised accounts may contain malicious workflows that can leak credentials and compromise downstream builds.",
+      "action": "Audit all repositories for unauthorized GitHub Actions workflow files, rotate exposed tokens, and enforce least\u2011privilege PAT scopes.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/ghostaction-compromises-about-1900.html",
+      "publishedDate": "2026-10-15T14:15:10+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "GitHub"
+      ],
+      "threat_actor": "GhostAction",
+      "tier": 2
+    },
+    {
+      "id": "402aaeff71af9a09",
+      "title": "Critical Remote Code Execution Flaw in Cisco Secure Email Gateway Actively Exploited",
+      "summary": "Cisco Secure Email Gateway (both physical and virtual) is vulnerable to CVE\u20112026\u201176519, a critical 9.8\u2011CVSS flaw that lets unauthenticated senders write files via crafted email attachments and execute commands as...",
+      "impact": "Attackers can gain full system control of compromised gateways, bypassing existing spam and malware defenses and potentially harvesting or manipulating corporate email traffic.",
+      "action": "Apply the Cisco AsyncOS 15.5.5\u2011014 or 16.5.0\u2011780 hardening release (or update Content Scanner Tools to\u202f25.3.0.5525 or later) immediately and verify that the fix is installed.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/cisco-warns-of-active-attacks.html",
+      "publishedDate": "2026-10-15T00:08:56+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Cisco Secure Email Gateway"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "d73bcf51f60eea74",
+      "title": "FortiGate Appliances Compromised via CVE\u20112024\u201147575 and CVE\u20112025\u201161624, Deploying Memory\u2011Resident PEERSTITCH Malware",
+      "summary": "Attackers exploited CVE\u20112024\u201147575 in FortiManager to steal configurations for over 500 FortiGate firewalls, then leveraged CVE\u20112025\u201161624 across FortiOS, FortiPAM, FortiProxy and FortiSwitchManager to install PEERSTITCH, a stealthy ARM64, memory\u2011resident malware...",
+      "impact": "Security teams face undetectable backdoors on critical perimeter devices, enabling persistent access, traffic interception, and VPN hijacking across enterprise and client networks.",
+      "action": "Apply Fortinet\u2019s April\u202f2026 patches for CVE\u20112024\u201147575 and CVE\u20112025\u201161624 immediately, rotate all compromised credentials, and conduct forensic hunts for PEERSTITCH memory artifacts on all managed FortiGate devices.",
+      "sources": [
+        {
+          "name": "Palo Alto Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/attackers-exploit-fortios-flaw-to.html"
+        }
+      ],
+      "url": "https://unit42.paloaltonetworks.com/fortimanager-cve-2024-47575-peerstitch-malware/",
+      "publishedDate": "2026-10-14T22:00:44+00:00",
+      "cve_ids": [
+        "CVE-2024-47575",
+        "CVE-2025-61624"
+      ],
+      "affected_systems": [
+        "FortiOS",
+        "FortiPAM",
+        "FortiProxy",
+        "FortiSwitchManager",
+        "FortiGate firewalls",
+        "FortiManager"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "b1e071119d1a7018",
+      "title": "NGINX Releases Critical Patches for Remote Code Execution and TLS Session Forgery Flaws",
+      "summary": "NGINX 1.30.6 and 1.31.7 fix five vulnerabilities, including a memory\u2011corruption RCE (CVSS 9.2) and a TLS session\u2011forgery issue (CVSS 8.3) that can bypass client\u2011certificate checks.",
+      "impact": "Security teams must treat the three memory bugs as critical remote\u2011code execution risks and the TLS flaw as a high\u2011severity bypass of mutual TLS, potentially exposing services to unauthorized access.",
+      "action": "Upgrade all NGINX instances to version 1.30.6 or 1.31.7 immediately and review configuration directives that trigger the vulnerable code paths.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/nginx-fixes-5-flaws-including-possible.html",
+      "publishedDate": "2026-10-15T18:28:05+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "NGINX 1.30.x",
+        "NGINX 1.31.x"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "05d981a16f272692",
+      "title": "curl 8.23.0 Fixes Critical HTTP/2 Upload Use\u2011After\u2011Free (CVE\u20112026\u201192392)",
+      "summary": "A use\u2011after\u2011free flaw in curl\u2019s HTTP/2 upload handling (CVE\u20112026\u201192392) lets a malicious server corrupt client memory and achieve code execution when a client uploads ~135 KB over HTTP/2.",
+      "impact": "Security teams must assume any HTTPS client using curl/libcurl with HTTP/2 enabled can be remotely compromised by a crafted server, potentially leading to full system takeover.",
+      "action": "Upgrade all curl and libcurl installations to version\u202f8.23.0 (or apply the upstream fix commit) immediately.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/curl-patches-http2-upload-flaw-after.html",
+      "publishedDate": "2026-10-14T17:43:36+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "curl",
+        "libcurl"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
