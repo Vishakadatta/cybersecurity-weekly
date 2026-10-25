@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP2Shell Under Mass Exploitation, GitLab CVSS 10.0 RCE, and Arista Zero-Day</title>
+</head>
+<body style="margin:0;padding:0;background-color:#020617;font-family:system-ui,-apple-system,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#020617;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #1e293b;">
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;">
+                &#128737; Cybersecurity Weekly
+              </h1>
+              <p style="margin:4px 0 0;font-size:13px;color:#64748b;">
+                Oct 16 – 23, 2026 &middot; AI-curated security intelligence
+              </p>
+            </td>
+          </tr>
+
+          <!-- Subject + Week Intro -->
+          <tr>
+            <td style="padding:32px 32px 20px;">
+              <h2 style="margin:0 0 14px;font-size:22px;font-weight:800;color:#ffffff;line-height:1.3;">
+                PHP2Shell Under Mass Exploitation, GitLab CVSS 10.0 RCE, and Arista Zero-Day
+              </h2>
+              
+              <p style="margin:0;font-size:14px;color:#94a3b8;line-height:1.7;border-left:3px solid #14b8a6;padding-left:14px;">
+                This week brought a relentless barrage of critical infrastructure vulnerabilities, headlined by mass in-the-wild exploitation of PHP's runtime-level 'PHP2Shell' flaws and a maximum-severity CVSS 10.0 unauthenticated RCE spanning a decade of GitLab releases. Simultaneously, active edge-device zero-day campaigns and high-profile software supply-chain breaches reinforce the necessity of rigorous runtime patching and CI/CD credential isolation. Infrastructure teams must immediately verify edge perimeter exposures and prioritize updates across core development and hosting stacks.
+              </p>
+              
+            </td>
+          </tr>
+
+          <!-- Articles -->
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-109618</span>
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-109619</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html" style="color:#ffffff;text-decoration:none;">Emergency PHP Patches Address Critical 'PHP2Shell' Flaws as In-the-Wild Exploitation Mounts</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      The PHP project released emergency security updates fixing two critical unauthenticated remote code execution vulnerabilities, dubbed PHP2Shell (CVE-2026-109618, CVE-2026-109619). Threat actors launched millions of exploit attempts attempting to deploy Mirai malware, while a subsequent unpatched RCE risk (CVE-2026-115560) emerged affecting non-default session serialization configurations.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Unauthenticated attackers can achieve full remote code execution across any web server executing vulnerable PHP runtimes, with mod_php environments facing pre-execution arbitrary code execution. Exposure is runtime-level and independent of application frameworks or CMS plugins.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Upgrade immediately to PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35, and mitigate CVE-2026-115560 by setting session.upload_progress.enabled=0 in php.ini.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html" style="color:#ffffff;text-decoration:none;">GitLab Issues Critical CVSS 10.0 Unauthenticated RCE Vulnerability Across All Self‑Managed Versions Since 2014</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      GitLab patched a CVE‑2026‑110264 flaw that enables unauthenticated remote code execution via an integer overflow in regular‑expression compilation. The vulnerability affects every self‑managed GitLab release from 7.0 (2014) through 19.5, requiring immediate upgrades to fixed versions.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must treat this as a severe, exploitable flaw that could allow attackers to execute arbitrary code on any vulnerable GitLab server without credentials.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Upgrade all self‑managed GitLab instances to the fixed releases listed by GitLab (e.g., 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, or 18.11.13) without delay.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html" style="color:#ffffff;text-decoration:none;">Arista VeloCloud Orchestrator Zero‑Day (CVE‑2026‑114625) Actively Exploited, Critical Patch Released</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Arista Networks confirmed that a critical‑severity SQL injection zero‑day (CVE‑2026‑114625) in VeloCloud Orchestrator (VCO) is being exploited in the wild. The flaw lets any authenticated user—including read‑only accounts—escalate to operator (superuser) privileges, compromising the confidentiality, integrity and availability of SD‑WAN management.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must assume that any VCO deployment with vulnerable versions may have been fully compromised and that attackers can control the SD‑WAN fabric.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Deploy the patched VCO releases (5.2.3.18, 6.1.3.10, 6.4.2.12 or later), restrict web‑interface access to trusted networks, and monitor logs for suspicious activity and known malicious IPs.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html" style="color:#ffffff;text-decoration:none;">LiteLLM Supply‑Chain Attack Compromises v1.107.0 Package and Docker Images with Credential‑Stealing Backdoor</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      On October 21, 2026 threat actors used stolen GitHub CLI OAuth tokens to hijack LiteLLM’s release pipeline and publish a malicious v1.107.0 release to PyPI and Docker registries.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Any system that installed LiteLLM v1.107.0 via pip or pulled the compromised Docker images between 11:39 UTC and 14:20 UTC is now exposed to a persistent backdoor capable of exfiltrating secrets and executing arbitrary code.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Immediately uninstall LiteLLM v1.107.0, purge all related Docker images, rotate all cloud and GitHub credentials, and audit systems for indicators of compromise.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-111497</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html" style="color:#ffffff;text-decoration:none;">Node.js Brotli Decoder Flaw (CVE‑2026‑111497) Enables Remote Code Execution Across Multiple Runtimes</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A memory‑corruption bug in Google's Brotli decoder (CVE‑2026‑111497) allows crafted Brotli streams to trigger out‑of‑bounds writes, leading to remote code execution on unpatched Node.js 22.x, 24.x and 26.x builds and on any software that bundles the vulnerable decoder.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must treat all services that decode untrusted Brotli data as actively exploitable, because an attacker can achieve arbitrary code execution without custom builds or debuggers.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Update all affected runtimes and libraries to the patched versions released on October 21 2026 and audit applications for Brotli decoding of external input.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html" style="color:#ffffff;text-decoration:none;">Two Critical CVSS 9.0 Remote Code Execution Flaws Discovered in Linux Kernel KSMBD SMB Server</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Two remote code execution vulnerabilities (ZDI‑CAN‑33774 and ZDI‑CAN‑33549) in the Linux kernel's built‑in SMB server KSMBD have been disclosed, each scoring 9.0 on the CVSS scale.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> These flaws allow unauthenticated attackers or malicious SMB clients to execute arbitrary code on any Linux host running the KSMBD module, potentially compromising the entire system. The vulnerabilities affect all distributions that ship KSMBD in the kernel, exposing critical infrastructure such as file servers and container hosts.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Immediately disable the KSMBD kernel module on all systems and apply any available patches once they are released; monitor for suspicious SMB traffic on port 445.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; APT41</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html" style="color:#ffffff;text-decoration:none;">BlackX UEFI Bootkit Bypasses Secure Boot Using Baton Drop Flaw on Patched Windows Systems</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      The BlackX bootkit, an evolution of BlackLotus, exploits the CVE‑2022‑21894 (Baton Drop) vulnerability to enroll custom Machine Owner Keys and load a malicious kernel driver, bypassing Secure Boot on fully patched Windows 10/11 machines.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face covert, persistent footholds that evade both Microsoft’s Secure Boot and third‑party AV solutions, granting attackers long‑term control after initial privileged access.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply Microsoft’s Secure Boot revocation mitigations, add the “Windows Production PCA 2011” certificate to the DBX, and verify firmware integrity on all Windows endpoints.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html" style="color:#ffffff;text-decoration:none;">eMudhra Exits Global TLS Market After Eight Intermediate CA Keys Found Trivially Guessable</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      eMudhra will withdraw from its global SSL/TLS certificate business after researchers recovered private keys for eight intermediate CAs, some as weak as 4‑bit keys, allowing anyone to forge trusted TLS...
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> All sites and services using certificates chained to eMudhra’s compromised root are suddenly untrusted in major browsers, risking man‑in‑the‑middle attacks and service outages.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Identify and replace every eMudhra‑issued TLS certificate with a certificate from a trusted PKI before the Chrome root removal takes effect.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/" style="color:#64748b;text-decoration:none;margin-left:6px;">Ars Technica Security</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; k0t (aliases CryptoFeel, Member19, QazWsxShop)</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html" style="color:#ffffff;text-decoration:none;">k0t Threat Actor Breaches Fortinet FortiGate and Palo Alto GlobalProtect Firewalls, Exposes 70,000+ Credentials</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A coordinated campaign by the k0t group exploited internet‑exposed Fortinet FortiGate, FortiWeb and Palo Alto Networks GlobalProtect firewalls, using CVE‑2025‑64446 and other flaws to gain persistent remote access and harvest...
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face immediate risk of lateral movement, data exfiltration, and credential reuse across compromised networks.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Audit all edge firewalls and VPN appliances, apply the latest patches for CVE‑2025‑64446, revoke any harvested credentials, and enforce zero‑trust network segmentation.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-112900</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html" style="color:#ffffff;text-decoration:none;">Critical Remote Code Execution Flaw Discovered in Python Pillow Library (CVE‑2026‑112900)</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A critical RCE vulnerability (CVE‑2026‑112900) in Pillow versions 2.6.0‑12.3.0 allows attackers to execute OS commands by supplying a crafted EPS filename, which Pillow passes unchecked to Ghostscript.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Image‑handling pipelines, web upload services, avatar generators, PDF converters, and ML workloads that rely on Pillow can be compromised if they accept user‑controlled filenames on hosts with Ghostscript installed.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Upgrade Pillow to version 13.0.0 immediately and ensure any EPS processing validates or sanitizes filenames, or disable EPS support if Ghostscript is not required.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; 0xd9773325282874d18cb83f1fe50f14c39750b2ee</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html" style="color:#ffffff;text-decoration:none;">Railway PaaS Breach Exposes Encrypted Environment Variables and Leads to Crypto Theft</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Railway disclosed that an unauthorized actor accessed its environment‑variable store, decrypting sensitive keys for a subset of customers and draining cryptocurrency wallets whose private keys were stored on the platform.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must assume that API keys, database credentials, and crypto private keys stored in Railway have been compromised, potentially enabling lateral movement and unauthorized transactions.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Immediately rotate all environment variables, API keys, and private registry credentials in Railway and audit logs for suspicious activity.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+
+          <!-- CTA -->
+          <tr>
+            <td style="padding:32px;" align="center">
+              <a href="" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:700;color:#042f2e;background-color:#2dd4bf;border-radius:8px;text-decoration:none;">
+                View all stories on the web &rarr;
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px;border-top:1px solid #1e293b;">
+              <p style="margin:0;font-size:12px;color:#475569;line-height:1.6;text-align:center;">
+                You're receiving this because you subscribed to Cybersecurity Weekly.<br>
+                <a href="" style="color:#64748b;text-decoration:underline;">Unsubscribe</a>
+                &middot;
+                <a href="https://github.com/Vishakadatta/cybersecurity-weekly" style="color:#64748b;text-decoration:underline;">GitHub</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

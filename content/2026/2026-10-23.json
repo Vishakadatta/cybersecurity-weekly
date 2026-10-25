@@ -1,0 +1,395 @@
+{
+  "edition": "2026-10-23",
+  "year": "2026",
+  "editionLabel": "Oct 16 \u2013 23, 2026",
+  "generatedAt": "2026-10-25T21:44:25.423093+00:00",
+  "subjectLine": "PHP2Shell Under Mass Exploitation, GitLab CVSS 10.0 RCE, and Arista Zero-Day",
+  "weekIntro": "This week brought a relentless barrage of critical infrastructure vulnerabilities, headlined by mass in-the-wild exploitation of PHP's runtime-level 'PHP2Shell' flaws and a maximum-severity CVSS 10.0 unauthenticated RCE spanning a decade of GitLab releases. Simultaneously, active edge-device zero-day campaigns and high-profile software supply-chain breaches reinforce the necessity of rigorous runtime patching and CI/CD credential isolation. Infrastructure teams must immediately verify edge perimeter exposures and prioritize updates across core development and hosting stacks.",
+  "articles": [
+    {
+      "id": "457f80c393202662",
+      "title": "Emergency PHP Patches Address Critical 'PHP2Shell' Flaws as In-the-Wild Exploitation Mounts",
+      "summary": "The PHP project released emergency security updates fixing two critical unauthenticated remote code execution vulnerabilities, dubbed PHP2Shell (CVE-2026-109618, CVE-2026-109619). Threat actors launched millions of exploit attempts attempting to deploy Mirai malware, while a subsequent unpatched RCE risk (CVE-2026-115560) emerged affecting non-default session serialization configurations.",
+      "impact": "Unauthenticated attackers can achieve full remote code execution across any web server executing vulnerable PHP runtimes, with mod_php environments facing pre-execution arbitrary code execution. Exposure is runtime-level and independent of application frameworks or CMS plugins.",
+      "action": "Upgrade immediately to PHP 8.5.12, 8.4.27, 8.3.36, or 8.2.35, and mitigate CVE-2026-115560 by setting session.upload_progress.enabled=0 in php.ini.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/urgent-php-warns-of-another-unpatched.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-exploit-attempts-hit-millions.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/someone-tried-to-exploit-php2shell-4.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-what-actually-protects-you.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/php2shell-two-unpatched-critical-php.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/php-shares-mitigation-for-new-and-unpatched-rce-vulnerability/"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/amazon-says-php2shell-exploitation-began-4-days-before-patches/"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/application-security/exposed-php2shell-cyber-experts-advice"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/application-security/php2shell-bugs-red-alert-security-industry"
+        },
+        {
+          "name": "Ars Technica Security",
+          "url": "https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/"
+        },
+        {
+          "name": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/obstacles-to-weaponizing-php2shell-likely-confine-exploitation/"
+        },
+        {
+          "name": "Palo Alto Unit 42",
+          "url": "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/"
+        },
+        {
+          "name": "Sophos News",
+          "url": "https://www.sophos.com/en-us/blog/proof-of-concept-exploit-released-for-php-vulnerabilities-109618-109619"
+        },
+        {
+          "name": "Recorded Future",
+          "url": "https://www.recordedfuture.com/blog/php2shell-vulnerability-exploitation"
+        },
+        {
+          "name": "Schneier on Security",
+          "url": "https://www.schneier.com/blog/archives/2026/10/new-serious-php-vulnerabilities-released-and-patched.html"
+        },
+        {
+          "name": "SANS Internet Storm Center",
+          "url": "https://isc.sans.edu/diary/rss/33452"
+        },
+        {
+          "name": "SANS Internet Storm Center",
+          "url": "https://isc.sans.edu/diary/rss/33450"
+        },
+        {
+          "name": "SANS Internet Storm Center",
+          "url": "https://isc.sans.edu/diary/rss/33440"
+        },
+        {
+          "name": "Ubuntu Security Notices",
+          "url": "https://ubuntu.com/security/notices/USN-8948-2"
+        },
+        {
+          "name": "LWN.net",
+          "url": "https://lwn.net/Articles/1102060/"
+        },
+        {
+          "name": "LWN.net",
+          "url": "https://lwn.net/Articles/1102014/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/php-issues-emergency-patches-for-two.html",
+      "publishedDate": "2026-10-21T00:00:00+00:00",
+      "cve_ids": [
+        "CVE-2026-109618",
+        "CVE-2026-109619",
+        "CVE-2026-115560"
+      ],
+      "affected_systems": [
+        "PHP",
+        "Apache mod_php",
+        "PHP-FPM",
+        "php-cgi",
+        "FrankenPHP",
+        "LiteSpeed",
+        "Ubuntu Linux",
+        "Red Hat Enterprise Linux"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "6815f2a0b4a0d8cf",
+      "title": "GitLab Issues Critical CVSS 10.0 Unauthenticated RCE Vulnerability Across All Self\u2011Managed Versions Since 2014",
+      "summary": "GitLab patched a CVE\u20112026\u2011110264 flaw that enables unauthenticated remote code execution via an integer overflow in regular\u2011expression compilation. The vulnerability affects every self\u2011managed GitLab release from 7.0 (2014) through 19.5, requiring immediate upgrades to fixed versions.",
+      "impact": "Security teams must treat this as a severe, exploitable flaw that could allow attackers to execute arbitrary code on any vulnerable GitLab server without credentials.",
+      "action": "Upgrade all self\u2011managed GitLab instances to the fixed releases listed by GitLab (e.g., 19.5.1, 19.4.3, 19.3.6, 19.2.9, 19.1.9, 19.0.10, or 18.11.13) without delay.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/critical-gitlab-flaw-cvss-100-could.html",
+      "publishedDate": "2026-10-22T00:27:34+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "GitLab self\u2011managed installations (versions 7.0 through 19.5)"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "1ed4b6e940bacb9a",
+      "title": "Arista VeloCloud Orchestrator Zero\u2011Day (CVE\u20112026\u2011114625) Actively Exploited, Critical Patch Released",
+      "summary": "Arista Networks confirmed that a critical\u2011severity SQL injection zero\u2011day (CVE\u20112026\u2011114625) in VeloCloud Orchestrator (VCO) is being exploited in the wild. The flaw lets any authenticated user\u2014including read\u2011only accounts\u2014escalate to operator (superuser) privileges, compromising the confidentiality, integrity and availability of SD\u2011WAN management.",
+      "impact": "Security teams must assume that any VCO deployment with vulnerable versions may have been fully compromised and that attackers can control the SD\u2011WAN fabric.",
+      "action": "Deploy the patched VCO releases (5.2.3.18, 6.1.3.10, 6.4.2.12 or later), restrict web\u2011interface access to trusted networks, and monitor logs for suspicious activity and known malicious IPs.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/arista-patches-new-velocloud-orchestrator-zero-day-exploited-in-attacks/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/arista-warns-of-critical-velocloud-sql.html",
+      "publishedDate": "2026-10-22T13:18:22-04:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Arista VeloCloud Orchestrator (VCO) on\u2011prem deployments",
+        "Arista VeloCloud Orchestrator hosted deployments",
+        "Arista VeloCloud Orchestrator dedicated deployments"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "37f56369e2ff40e0",
+      "title": "LiteLLM Supply\u2011Chain Attack Compromises v1.107.0 Package and Docker Images with Credential\u2011Stealing Backdoor",
+      "summary": "On October 21, 2026 threat actors used stolen GitHub CLI OAuth tokens to hijack LiteLLM\u2019s release pipeline and publish a malicious v1.107.0 release to PyPI and Docker registries.",
+      "impact": "Any system that installed LiteLLM\u202fv1.107.0 via pip or pulled the compromised Docker images between 11:39\u202fUTC and 14:20\u202fUTC is now exposed to a persistent backdoor capable of exfiltrating secrets and executing arbitrary code.",
+      "action": "Immediately uninstall LiteLLM\u202fv1.107.0, purge all related Docker images, rotate all cloud and GitHub credentials, and audit systems for indicators of compromise.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/litellm-compromised-in-supply-chain.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/litellm-release-pipeline-hacked-to-distribute-info-stealer-malware/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/leaked-litellm-master-key-let-attackers.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/litellm-suspects-github-token-leak-in.html",
+      "publishedDate": "2026-10-21T23:31:57+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "LiteLLM Python package v1.107.0 (all wheels for Windows, Linux, macOS)",
+        "LiteLLM Docker images v1.107.0, latest, main\u2011latest, main\u2011stable on Docker Hub",
+        "LiteLLM Docker images v1.107.0, latest, main\u2011latest, main\u2011stable on GHCR"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "4681e139a804e148",
+      "title": "Node.js Brotli Decoder Flaw (CVE\u20112026\u2011111497) Enables Remote Code Execution Across Multiple Runtimes",
+      "summary": "A memory\u2011corruption bug in Google's Brotli decoder (CVE\u20112026\u2011111497) allows crafted Brotli streams to trigger out\u2011of\u2011bounds writes, leading to remote code execution on unpatched Node.js 22.x, 24.x and 26.x builds and on any software that bundles the vulnerable decoder.",
+      "impact": "Security teams must treat all services that decode untrusted Brotli data as actively exploitable, because an attacker can achieve arbitrary code execution without custom builds or debuggers.",
+      "action": "Update all affected runtimes and libraries to the patched versions released on October\u202f21\u202f2026 and audit applications for Brotli decoding of external input.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/nodejs-brotli-decoder-bug-could-allow.html"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/brotli-decoder-flaw-behind-nodejs-rce.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/researchers-demonstrate-node2shell-rce.html",
+      "publishedDate": "2026-10-22T13:17:22+05:30",
+      "cve_ids": [
+        "CVE-2026-111497"
+      ],
+      "affected_systems": [
+        "Google Brotli (C library) 1.0.3\u20111.2.0",
+        "Node.js 22.x, 24.x, 26.x (pre\u2011patch)",
+        "Node.js 20.x and earlier (EOL, unpatched)",
+        "Bun 1.4.3 and earlier",
+        "Envoy 1.36.11\u20111.39.2",
+        "Istio 1.29.0\u20111.31.1",
+        "Python Brotli package 1.2.0 and earlier",
+        "Python brotlicffi package 1.2.0.x and earlier"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "7c53f743c08237d2",
+      "title": "Two Critical CVSS\u202f9.0 Remote Code Execution Flaws Discovered in Linux Kernel KSMBD SMB Server",
+      "summary": "Two remote code execution vulnerabilities (ZDI\u2011CAN\u201133774 and ZDI\u2011CAN\u201133549) in the Linux kernel's built\u2011in SMB server KSMBD have been disclosed, each scoring 9.0 on the CVSS scale.",
+      "impact": "These flaws allow unauthenticated attackers or malicious SMB clients to execute arbitrary code on any Linux host running the KSMBD module, potentially compromising the entire system. The vulnerabilities affect all distributions that ship KSMBD in the kernel, exposing critical infrastructure such as file servers and container hosts.",
+      "action": "Immediately disable the KSMBD kernel module on all systems and apply any available patches once they are released; monitor for suspicious SMB traffic on port\u202f445.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/two-cvss-90-linux-ksmbd-rce-flaws.html",
+      "publishedDate": "2026-10-22T22:31:53+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Linux kernel KSMBD module",
+        "Any Linux distribution shipping KSMBD (e.g., Ubuntu, Debian, SUSE)",
+        "Systems with SMB Direct and RDMA-capable interfaces (for ZDI-CAN-33549)"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "ed9fe79f62b579cc",
+      "title": "BlackX UEFI Bootkit Bypasses Secure Boot Using Baton Drop Flaw on Patched Windows Systems",
+      "summary": "The BlackX bootkit, an evolution of BlackLotus, exploits the CVE\u20112022\u201121894 (Baton Drop) vulnerability to enroll custom Machine Owner Keys and load a malicious kernel driver, bypassing Secure Boot on fully patched Windows 10/11 machines.",
+      "impact": "Security teams face covert, persistent footholds that evade both Microsoft\u2019s Secure Boot and third\u2011party AV solutions, granting attackers long\u2011term control after initial privileged access.",
+      "action": "Apply Microsoft\u2019s Secure Boot revocation mitigations, add the \u201cWindows Production PCA 2011\u201d certificate to the DBX, and verify firmware integrity on all Windows endpoints.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/blackx-uefi-bootkit-exploits-baton-drop-flaw-to-bypass-secure-boot/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/blackx-uefi-bootkit-bypasses-secure.html",
+      "publishedDate": "2026-10-24T00:20:13+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Microsoft Windows 10",
+        "Microsoft Windows 11",
+        "UEFI firmware with Secure Boot"
+      ],
+      "threat_actor": "APT41",
+      "tier": 2
+    },
+    {
+      "id": "98516d3e7e04cfcd",
+      "title": "eMudhra Exits Global TLS Market After Eight Intermediate CA Keys Found Trivially Guessable",
+      "summary": "eMudhra will withdraw from its global SSL/TLS certificate business after researchers recovered private keys for eight intermediate CAs, some as weak as 4\u2011bit keys, allowing anyone to forge trusted TLS...",
+      "impact": "All sites and services using certificates chained to eMudhra\u2019s compromised root are suddenly untrusted in major browsers, risking man\u2011in\u2011the\u2011middle attacks and service outages.",
+      "action": "Identify and replace every eMudhra\u2011issued TLS certificate with a certificate from a trusted PKI before the Chrome root removal takes effect.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html"
+        },
+        {
+          "name": "Ars Technica Security",
+          "url": "https://arstechnica.com/security/2026/10/disgraced-emudhra-drops-out-of-tls-business-following-certificate-debacle/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/emudhra-to-exit-global-ssltls-business.html",
+      "publishedDate": "2026-10-22T20:17:52+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Google Chrome",
+        "Mozilla Firefox",
+        "TLS certificates chained to eMudhra ECC root (emSign ECC Root CA - G3)",
+        "InCommon/Internet2 certificate service"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "64b0ac9d140d1167",
+      "title": "k0t Threat Actor Breaches Fortinet FortiGate and Palo Alto GlobalProtect Firewalls, Exposes 70,000+ Credentials",
+      "summary": "A coordinated campaign by the k0t group exploited internet\u2011exposed Fortinet FortiGate, FortiWeb and Palo Alto Networks GlobalProtect firewalls, using CVE\u20112025\u201164446 and other flaws to gain persistent remote access and harvest...",
+      "impact": "Security teams face immediate risk of lateral movement, data exfiltration, and credential reuse across compromised networks.",
+      "action": "Audit all edge firewalls and VPN appliances, apply the latest patches for CVE\u20112025\u201164446, revoke any harvested credentials, and enforce zero\u2011trust network segmentation.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/hackers-breach-enterprise-firewalls-and.html",
+      "publishedDate": "2026-10-23T19:20:56+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Fortinet FortiGate",
+        "Fortinet FortiWeb",
+        "Palo Alto Networks GlobalProtect"
+      ],
+      "threat_actor": "k0t (aliases CryptoFeel, Member19, QazWsxShop)",
+      "tier": 3
+    },
+    {
+      "id": "e21e419ebac57752",
+      "title": "Critical Remote Code Execution Flaw Discovered in Python Pillow Library (CVE\u20112026\u2011112900)",
+      "summary": "A critical RCE vulnerability (CVE\u20112026\u2011112900) in Pillow versions 2.6.0\u201112.3.0 allows attackers to execute OS commands by supplying a crafted EPS filename, which Pillow passes unchecked to Ghostscript.",
+      "impact": "Image\u2011handling pipelines, web upload services, avatar generators, PDF converters, and ML workloads that rely on Pillow can be compromised if they accept user\u2011controlled filenames on hosts with Ghostscript installed.",
+      "action": "Upgrade Pillow to version\u202f13.0.0 immediately and ensure any EPS processing validates or sanitizes filenames, or disable EPS support if Ghostscript is not required.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/critical-flaw-in-pythons-popular-pillow.html",
+      "publishedDate": "2026-10-23T15:06:00+05:30",
+      "cve_ids": [
+        "CVE-2026-112900"
+      ],
+      "affected_systems": [
+        "Python Pillow library (versions 2.6.0 through 12.3.0)",
+        "Ghostscript (gs) when invoked by Pillow for EPS handling"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "b5736c37c6a72d90",
+      "title": "Railway PaaS Breach Exposes Encrypted Environment Variables and Leads to Crypto Theft",
+      "summary": "Railway disclosed that an unauthorized actor accessed its environment\u2011variable store, decrypting sensitive keys for a subset of customers and draining cryptocurrency wallets whose private keys were stored on the platform.",
+      "impact": "Security teams must assume that API keys, database credentials, and crypto private keys stored in Railway have been compromised, potentially enabling lateral movement and unauthorized transactions.",
+      "action": "Immediately rotate all environment variables, API keys, and private registry credentials in Railway and audit logs for suspicious activity.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/10/railway-says-intruder-may-have-accessed.html",
+      "publishedDate": "2026-10-22T16:45:42+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Railway PaaS environment variable storage",
+        "Railway API tokens",
+        "Railway bucket credentials"
+      ],
+      "threat_actor": "0xd9773325282874d18cb83f1fe50f14c39750b2ee",
+      "tier": 3
+    }
+  ]
+}

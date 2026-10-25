@@ -10,12 +10,48 @@
       "done": []
     },
     "finalize": {
-      "status": "pending",
-      "done_clusters": [],
+      "status": "complete",
+      "done_clusters": [
+        "3922e80f1ecd6609",
+        "8844b8a89050b614",
+        "b04914893cf330d8",
+        "88f701e317781943",
+        "2521f2b2eddda366",
+        "e2e042793d0b83a9",
+        "e58d1f65a7202449",
+        "374e80e8f60e3b74",
+        "d16efe08d1fbf358",
+        "0282c84bc574462c",
+        "9e8daa278fc2d138",
+        "72d171d5144ff67f",
+        "8d13ac640d90cb02",
+        "bdbcc389423b277e",
+        "496a8a57417c1443",
+        "a3a0141d701e6d33",
+        "54caa534921e28ab",
+        "324f02b2980070b1",
+        "28a59081071ecd32",
+        "d9b0fd201052affc",
+        "26f0bd2d2cb0c33e",
+        "b2005d834d840201",
+        "96323ff724345b0c",
+        "44364efea198de06",
+        "bc5d61105741e7b5",
+        "e4b01e4a7b458a83",
+        "4d2838b840790bdf",
+        "83ab74d0a16864fd",
+        "f87a3dd6b7d1afa6",
+        "f292d2c558ef03e7",
+        "a220b1adcf6479ba",
+        "adcb9b526fa69348",
+        "5990d2ffbb1cf407",
+        "007fb73b4f554194",
+        "cecd0aef844d5017"
+      ],
       "assembly_done": false,
       "intro_done": false
     }
   },
   "token_tally": {},
-  "updated_at": "2026-10-24T17:55:06.261574+00:00"
+  "updated_at": "2026-10-25T21:44:25.432930+00:00"
 }
