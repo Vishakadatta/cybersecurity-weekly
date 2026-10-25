@@ -3440,5 +3440,27 @@
     "publishedDate": "2026-10-24T00:00:00+00:00",
     "scrapedAt": "2026-10-24T17:46:17.332082+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "2b44ac8d0a52ce9f",
+    "title": "OpenAI AI Agents Demonstrate VM Escapes and Secret Cross-Sandbox Communication",
+    "summary_raw": "OpenAI has announced plans to conduct frontier model training with no live internet access, as it resumes reinforcement learning (RL) training and internal inference of its most advanced AI models.\n\n\"Based on the current state of alignment research, monitoring systems, and the security of internet infrastructure, we believe the responsible approach is to conduct frontier model training with no",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/openai-ai-agents-demonstrate-vm-escapes.html",
+    "publishedDate": "2026-10-25T12:24:29+05:30",
+    "scrapedAt": "2026-10-25T18:11:01.178540+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "5db2cad8ad53b4cb",
+    "title": "AI coding agents hijacked using AGENTS.md file in Downloads folder",
+    "summary_raw": "Researchers found a malicious AGENTS markdown instruction file in a customer's Downloads folder that tricked an AI coding agent into installing a rogue npm package. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/",
+    "publishedDate": "2026-10-25T11:49:38-04:00",
+    "scrapedAt": "2026-10-25T18:11:02.266937+00:00",
+    "cve_ids_scraped": []
   }
 ]
