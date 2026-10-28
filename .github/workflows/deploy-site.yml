@@ -1,0 +1,57 @@
+name: Deploy site
+
+# Builds and publishes the Astro site on demand, without running the
+# newsletter pipeline. The pipeline's own deploy_site job is chained behind
+# send_newsletter, so site-only changes (templates, styles, the signup form
+# URL) previously had to wait for a Monday send to reach production.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Serialises manual deploys. The pipeline uses its own 'pipeline' group, so a
+# pipeline deploy and a manual one can still overlap; deploy-pages resolves
+# that by publishing whichever artifact lands last.
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Install Node deps
+        run: |
+          rm -rf node_modules package-lock.json
+          npm install --no-audit --no-fund
+      - name: Build Astro site
+        env:
+          ASTRO_TELEMETRY_DISABLED: 1
+          PUBLIC_BREVO_FORM_URL: ${{ vars.PUBLIC_BREVO_FORM_URL || secrets.PUBLIC_BREVO_FORM_URL }}
+          PUBLIC_BREVO_UNSUBSCRIBE_URL: ${{ vars.PUBLIC_BREVO_UNSUBSCRIBE_URL || secrets.PUBLIC_BREVO_UNSUBSCRIBE_URL }}
+        run: npx astro build
+      - name: Verify signup form was embedded
+        run: |
+          if grep -rq "Subscribe form not configured" dist/; then
+            echo "::error::Built site still shows the signup fallback — PUBLIC_BREVO_FORM_URL resolved empty."
+            exit 1
+          fi
+          echo "Signup form embedded."
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+      - id: deployment
+        uses: actions/deploy-pages@v4
