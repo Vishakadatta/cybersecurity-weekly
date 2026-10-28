@@ -395,7 +395,7 @@ jobs:
       - name: Build Astro site
         env:
           ASTRO_TELEMETRY_DISABLED: 1
-          PUBLIC_BREVO_FORM_URL: ${{ vars.PUBLIC_BREVO_FORM_URL }}
+          PUBLIC_BREVO_FORM_URL: ${{ vars.PUBLIC_BREVO_FORM_URL || secrets.PUBLIC_BREVO_FORM_URL }}
           PUBLIC_BREVO_UNSUBSCRIBE_URL: ${{ vars.PUBLIC_BREVO_UNSUBSCRIBE_URL || secrets.PUBLIC_BREVO_UNSUBSCRIBE_URL }}
         run: npx astro build
       - uses: actions/upload-pages-artifact@v3
