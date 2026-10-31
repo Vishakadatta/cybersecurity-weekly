@@ -3475,5 +3475,141 @@
     "publishedDate": "2026-10-27T13:56:24+00:00",
     "scrapedAt": "2026-10-31T02:40:09.743528+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "b84dfe472134279a",
+    "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+    "summary_raw": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data.\n\nHowever, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens.\n\n\"This month, Chainalysis detected an external actor using offensive agentic",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+    "publishedDate": "2026-10-31T17:31:56+05:30",
+    "scrapedAt": "2026-10-31T19:00:02.004008+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "c305d693e177d5ef",
+    "title": "Attackers Chain Three Ivanti Connect Secure Flaws to Gain Unauthenticated Root Access",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Ivanti Connect Secure (ICS) to its Known Exploited Vulnerabilities (KEV) catalog, following active exploitation in the wild.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-111357 (CVSS score: 8.8) - A missing authentication for a critical function vulnerability that could allow a",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/attackers-chain-three-ivanti-connect.html",
+    "publishedDate": "2026-10-31T13:57:43+05:30",
+    "scrapedAt": "2026-10-31T19:00:02.004157+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-111357"
+    ]
+  },
+  {
+    "id": "09f142bd2640f272",
+    "title": "A Shared ChatGPT Link Could Run Attacker Code in Your Session and Read Private Chats",
+    "summary_raw": "A malicious ChatGPT share link could run an attacker's code in the logged-in session of anyone who opened it, allowing them to read their private conversations, researchers at&nbsp;the security firm Parameter&nbsp;showed.\n\nThe researchers reported the flaw through&nbsp;OpenAI's bug bounty program&nbsp;on October 18, and OpenAI fixed it eight days later and rated it P1, its most serious category.",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/a-shared-chatgpt-link-could-run.html",
+    "publishedDate": "2026-10-31T11:03:41+05:30",
+    "scrapedAt": "2026-10-31T19:00:02.004265+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "293569318dde9da7",
+    "title": "Cloudflare Reports 18.2 Million Network-Layer DDoS Attacks in Q3, Up 38%",
+    "summary_raw": "Threat actors are launching about 8,226 network-layer distributed denial-of-service (DDoS) attacks per hour, Cloudflare revealed Thursday.\n\nThe web infrastructure and security company said it autonomously mitigated 18.2 million network-layer (L3) DDoS attacks and 14.4 trillion HTTP DDoS requests in the third quarter of 2026. That amounts to 197,400 attacks per day, or one attack every 0.44",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/10/cloudflare-reports-182-million-network.html",
+    "publishedDate": "2026-10-31T10:26:12+05:30",
+    "scrapedAt": "2026-10-31T19:00:02.004365+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a4df36c045ad0e87",
+    "title": "Northflank security breach leads to abuse of customers' AI API keys",
+    "summary_raw": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys/",
+    "publishedDate": "2026-10-31T14:01:12-04:00",
+    "scrapedAt": "2026-10-31T19:00:03.181239+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "72aec30d186370a7",
+    "title": "New Android SMS of Death exploit can remotely crash unpatched phones",
+    "summary_raw": "A security researcher has released a proof-of-concept exploit for a recently patched Android vulnerability, dubbed \"SMS of Death\" and tracked as CVE-2026-58882, that lets attackers remotely disrupt cellular service or crash phones by sending a specially crafted text message. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/new-android-sms-of-death-exploit-can-remotely-crash-unpatched-phones/",
+    "publishedDate": "2026-10-31T11:35:11-04:00",
+    "scrapedAt": "2026-10-31T19:00:03.181352+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-58882"
+    ]
+  },
+  {
+    "id": "dd695362ecd889ae",
+    "title": "Reddit to lock content behind logins to fight scrapers",
+    "summary_raw": "Reddit announced in a post by co-founder Steve Huffman that the site will gradually become a \"logged-in service,\" offering limited access to visitors without accounts. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/reddit-to-lock-content-behind-logins-to-fight-scrapers/",
+    "publishedDate": "2026-10-31T10:05:15-04:00",
+    "scrapedAt": "2026-10-31T19:00:03.181449+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a7455b293ef3e34b",
+    "title": "From Beginner to Bug Hunter: Learning Cybersecurity in the AI Era.",
+    "summary_raw": "AI-generated vulnerability reports are overwhelming some bug bounty programs, making it harder for aspiring security researchers to know where to start. TryHackMe explains how beginners can build practical cybersecurity skills, use AI responsibly, and produce reproducible findings that stand up to scrutiny. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/from-beginner-to-bug-hunter-learning-cybersecurity-in-the-ai-era/",
+    "publishedDate": "2026-10-31T09:10:19-04:00",
+    "scrapedAt": "2026-10-31T19:00:03.181535+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "41cdd41993708079",
+    "title": "Chainalysis discloses data breach from \"offensive agentic techniques\"",
+    "summary_raw": "Blockchain analytics firm Chainalysis disclosed a data breach after attackers used \"offensive agentic techniques\" to access internal systems and tools, exposing customer names, email addresses, user IDs, and organizational roles. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/chainalysis-discloses-data-breach-from-offensive-agentic-techniques/",
+    "publishedDate": "2026-10-31T08:50:09-04:00",
+    "scrapedAt": "2026-10-31T19:00:03.181619+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "1ee24f3ddee579a8",
+    "title": "Wireshark 5.0.0rc1 Release, (Sat, Oct 31st)",
+    "summary_raw": "Wireshark Release Candidate 5.0.0 was published: soon we can expect a new major version of Wireshark.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33476",
+    "publishedDate": "2026-10-31T10:52:53+00:00",
+    "scrapedAt": "2026-10-31T19:00:25.715312+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "00cf2808d9fbe3f6",
+    "title": "YARA-X 1.22.1 Release, (Sat, Oct 31st)",
+    "summary_raw": "YARA-X&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s 1.22.1 is a bugfix version, it brings 2 bugfixes.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33474",
+    "publishedDate": "2026-10-31T10:48:17+00:00",
+    "scrapedAt": "2026-10-31T19:00:25.715419+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "f07eec3ca7edd7b5",
+    "title": "How We Could Have Backdoored Bash (Hacktron blog)",
+    "summary_raw": "The Hacktron blog <a href=\"https://www.hacktron.ai/blog/hacking-gnu-savannah\">documents</a> how\nthe group was able to compromise the GNU Savannah forge and could have\npushed malware into any of the projects hosted there.\n<p>\n<blockquote class=\"bq\">\n\tUsing Hacktron, we found that an email address like\n\t<tt>`touch${IFS}/tmp/savane-rce-proof`@attacker.example</tt> gave any\n\tregistered user code execution on its backend. From there, we made\n\tour account a superuser, impersonated Bash's maintainer, and\n\tconfirmed we could add an SSH key with push access to the upstream\n\tBash repository. An unpatched kernel gave us root access and access\n\tto a GNU backup server. We reported it to the FSF on May 11, 2026.\n</blockquote>",
+    "source": "LWN.net",
+    "source_kind": "journalism",
+    "url": "https://lwn.net/Articles/1104262/",
+    "publishedDate": "2026-10-31T14:00:42+00:00",
+    "scrapedAt": "2026-10-31T19:00:31.025076+00:00",
+    "cve_ids_scraped": []
   }
 ]
