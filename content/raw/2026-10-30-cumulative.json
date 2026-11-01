@@ -3611,5 +3611,126 @@
     "publishedDate": "2026-10-31T14:00:42+00:00",
     "scrapedAt": "2026-10-31T19:00:31.025076+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "47c9e2c2f127bea1",
+    "title": "CVSS 10.0 LXD, MicroCloud Flaw Lets Attackers Impersonate Trusted Clients Without a Private Key",
+    "summary_raw": "A critical flaw in Canonical's LXD and MicroCloud let an attacker log in as a trusted client without holding that client's private key. To do it, the attacker had to reach their HTTPS API over the network and have the trusted client's public certificate.\n\nOnce in, the attacker would act as that client, with access to the cluster and its virtual machines. If the impersonated account is",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/critical-lxd-and-microcloud-flaw-cvss.html",
+    "publishedDate": "2026-11-01T14:21:31+05:30",
+    "scrapedAt": "2026-11-01T19:23:06.114293+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "3c8da2a0b6d392cf",
+    "title": "Hackers Steal About $2.7 Million From Polymarket Traders via Hijacked DebugBear Script",
+    "summary_raw": "Malicious code on the website of prediction market Polymarket sold some signed-in traders' positions and moved their funds to the hackers on October 29. The code had replaced a page-speed script that the site loaded from an outside company.\n\nPolymarket says&nbsp;it is refunding about $2.7 million to 726 affected wallets.&nbsp;Blockchain records&nbsp;show crypto worth about $2.64 million reached",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/hackers-steal-about-27-million-from.html",
+    "publishedDate": "2026-11-01T12:55:40+05:30",
+    "scrapedAt": "2026-11-01T19:23:06.114368+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "e1dc1203c72851bb",
+    "title": "FBI Links North Korea's TraderTraitor to Record $6.43 Billion Binance Crypto Heist",
+    "summary_raw": "The U.S. Federal Bureau of Investigation (FBI) has officially attributed the theft of more than $6 billion in virtual assets to TraderTraitor, a North Korea-aligned elite hacking group also tracked as Jade Sleet, Pressure Chollima, PUKCHONG, Slow Pisces, and UNC4899.\n\nThe FBI, along with the U.S. Secret Service (USSS) and the Internal Revenue Service Criminal Investigation (IRS-CI), said it",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html",
+    "publishedDate": "2026-11-01T12:33:00+05:30",
+    "scrapedAt": "2026-11-01T19:23:06.114422+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "4432f1dbea0caa5b",
+    "title": "NetamLoader Malware Targets Government Windows 10 Systems in Asia via .NET Injection",
+    "summary_raw": "Cybersecurity researchers have disclosed details of what has been described as a \"highly sophisticated infection chain\" targeting government organizations in Asia.\n\nThe activity, detailed by Kaspersky this week, targeted a custom Windows 10 build used exclusively by government entities in Asia and involves the deployment of a previously undocumented .NET assembly-loading framework codenamed",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/netamloader-malware-targets-government.html",
+    "publishedDate": "2026-11-01T12:32:58+05:30",
+    "scrapedAt": "2026-11-01T19:23:06.114471+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "d6448e6ee754fd41",
+    "title": "Alpine Linux rebuilds GitLab after attempted RCE attack",
+    "summary_raw": "Hackers attempted to exploit a critical GitLab vulnerability in Alpine Linux's development infrastructure on October 20-21, prompting the open-source project to rebuild its GitLab server and reset all passwords over concerns of a possible compromise. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/alpine-linux-rebuilds-gitlab-after-attempted-rce-attack/",
+    "publishedDate": "2026-11-01T10:11:21-05:00",
+    "scrapedAt": "2026-11-01T19:23:07.305006+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a45c5035f5e72c95",
+    "title": "OpenAI says it's doubling Pro usage limits and bringing Work features to Chat",
+    "summary_raw": "OpenAI has just confirmed that it's rolling out ChatGPT Work capabilities directly into regular Chat, while also combining usage allowances across ChatGPT and Codex. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-says-its-doubling-pro-usage-limits-and-bringing-work-features-to-chat/",
+    "publishedDate": "2026-11-01T08:53:11-05:00",
+    "scrapedAt": "2026-11-01T19:23:07.305071+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "dd7879ab65bf2bdd",
+    "title": "OneNote File Extraction, (Sun, Nov 1st)",
+    "summary_raw": "Recently, I had to extract embedded files from a set of OneNote files (extension .one).&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33478",
+    "publishedDate": "2026-11-01T09:12:23+00:00",
+    "scrapedAt": "2026-11-01T19:23:21.637041+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "2db5d2e95a871776",
+    "title": "DSA-6599-1 nss - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6599-1\">https://security-tracker.debian.org/tracker/DSA-6599-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00518.html",
+    "publishedDate": "2026-10-31T00:00:00+00:00",
+    "scrapedAt": "2026-11-01T19:23:53.617023+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "f4eb6e5aec66ad2e",
+    "title": "RHSA-2026:90500: Important: java-17-openjdk security update for RHEL 9",
+    "summary_raw": "An update for java-17-openjdk is now available for Red Hat Enterprise Linux 9.2 Extended Update Support, Red Hat Enterprise Linux 9.4 Extended Update Support, Red Hat Enterprise Linux 9.6 Extended Update Support, and Red Hat Enterprise Linux 9.\n\nRed Hat Product Security has rated this update as having a security impact of Important. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "source": "Red Hat Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://access.redhat.com/errata/RHSA-2026:90500",
+    "publishedDate": "2026-10-31T22:50:24+00:00",
+    "scrapedAt": "2026-11-01T19:23:54.801505+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "17e26b522f8e8aee",
+    "title": "Final release for the 7.2 stable series",
+    "summary_raw": "<p>Greg Kroah-Hartman has announced the release of the \n<a href=\"https://lwn.net/Articles/1104628/\">7.2.15</a> kernel, with a handful of updates.</p>\n\n<blockquote class=\"bq\">\n<p>Note, this is the LAST 7.2.y kernel release.  After this one the 7.2.y kernel\ntree is end-of-life.  Please move to 7.3.y at this time.</p>\n\n<p>And yes, you aren't imagining things, this one went \"end-of-life\" a bit sooner\nthan normal.  But based on the release cycle at the moment, and the number of\npending cc: stable patches in the queue, I figured it was better this way so we\ncan focus on the latest 7.3.y release as it would require us to keep 8\ndifferent branches alive at the same moment, a taxing task under the best of\ntimes.</p>\n</blockquote>\n\n<p></p>",
+    "source": "LWN.net",
+    "source_kind": "journalism",
+    "url": "https://lwn.net/Articles/1104629/",
+    "publishedDate": "2026-11-01T15:03:40+00:00",
+    "scrapedAt": "2026-11-01T19:23:56.131227+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "02263ebcf448370e",
+    "title": "A massive pile of security updates for Saturday",
+    "summary_raw": "Security updates have been issued by <b>AlmaLinux</b> (.NET 10.0, .NET 11.0, .NET 8.0, .NET 9.0, aspell, bind, bind9.18, container-tools:1.0, container-tools:rhel8, curl, dogtag-pki, ignition, java-21-openjdk, python-pillow, tomcat, and virt:rhel, virt-devel:rhel), <b>Debian</b> (antiword, cyrus-sasl2, dovecot, dpdk, nss, python-git, and thunderbird), <b>Fedora</b> (7zip, aegisub, aom, apptainer, arm-none-eabi-binutils-cs, assimp, avr-binutils, baresip, barman, bind9-next, btrfs-backup-ng, chezmoi, chromium, cifs-utils, clevis-pin-trustee, composer, containerd, curl, docker-buildx, dotnet10.0, evolution, evolution-data-server, evolution-ews, exim, fips-provider, firefox, flare-im, forgejo, freeipa, freerdp, gcc, gegl04, ghostscript, GitPython, glib-networking, gnome-shell-extension-gsconnect, golang-x-mobile, hcloud, helix, httpd, ImageMagick, iperf3, jfrog-cli, jupyterlab, keepassxc, kernel, knot-resolver, krb5, kryoptic, libdigidocpp, libheif, libindi, libinstpatch, libpng12, libpng15, librabbitmq, libre, libXi, libzip, linux-firmware, Lmod, log4net, markdownlint-cli2, mingw-freetype, mingw-gstreamer1, mingw-gstreamer1-plugins-bad-free, mingw-gstreamer1-plugins-base, mingw-gstreamer1-plugins-good, mingw-libpng, mingw-LibRaw, mingw-python-certifi, mingw-python3, mongo-c-driver, mstflint, mutt, nant, nebula, nix, nsd, ntpsec, openbao, openjpeg, openssl3, openvpn, perl-Badger, perl-CLI-Simple, perl-Cpanel-JSON-XS, perl-CSS-Inliner, perl-Encoding-FixLatin, perl-ExtUtils-Typemaps-Default, perl-GD-SecurityImage, perl-HTML-Query, perl-libnet, perl-Markdown-Render, perl-Net-IDN-Encode, perl-Net-Whois-Raw, perl-Plack, perl-Plack-Middleware-ReverseProxy, perl-Text-CSV_XS, pgbouncer, php-getid3, php-pecl-mongodb2, python-boto3, python-botocore, python-cairosvg, python-django5, python-django6, python-jupyter-builder, python-mkdocs-rss-plugin, python-nbdime, python-nh3, python-notebook, python-pydantic-core, python-pypdf, python-uv-build, python3.10, python3.11, python3.12, py...",
+    "source": "LWN.net",
+    "source_kind": "journalism",
+    "url": "https://lwn.net/Articles/1104612/",
+    "publishedDate": "2026-10-31T22:34:30+00:00",
+    "scrapedAt": "2026-11-01T19:23:56.131294+00:00",
+    "cve_ids_scraped": []
   }
 ]
