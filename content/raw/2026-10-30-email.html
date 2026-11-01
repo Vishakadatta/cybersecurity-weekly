@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Critical GitLab RCE, North Korean $6.3B Binance Breach, and WordPress Exploitation Surge</title>
+</head>
+<body style="margin:0;padding:0;background-color:#020617;font-family:system-ui,-apple-system,sans-serif;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#020617;">
+    <tr>
+      <td align="center" style="padding:24px 16px;">
+        <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
+
+          <!-- Header -->
+          <tr>
+            <td style="padding:24px 32px;border-bottom:1px solid #1e293b;">
+              <h1 style="margin:0;font-size:20px;font-weight:700;color:#ffffff;">
+                &#128737; Cybersecurity Weekly
+              </h1>
+              <p style="margin:4px 0 0;font-size:13px;color:#64748b;">
+                Oct 23 – 30, 2026 &middot; AI-curated security intelligence
+              </p>
+            </td>
+          </tr>
+
+          <!-- Subject + Week Intro -->
+          <tr>
+            <td style="padding:32px 32px 20px;">
+              <h2 style="margin:0 0 14px;font-size:22px;font-weight:800;color:#ffffff;line-height:1.3;">
+                Critical GitLab RCE, North Korean $6.3B Binance Breach, and WordPress Exploitation Surge
+              </h2>
+              
+              <p style="margin:0;font-size:14px;color:#94a3b8;line-height:1.7;border-left:3px solid #14b8a6;padding-left:14px;">
+                This week, we are witnessing a dangerous convergence of automated AI-driven exploit chains and high-stakes infrastructure compromises. From the $6.3 billion Binance DevOps breach to widespread exploitation of critical GitLab and WordPress flaws, security teams are under immense pressure to accelerate remediation cycles.
+              </p>
+              
+            </td>
+          </tr>
+
+          <!-- Articles -->
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-97229</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html" style="color:#ffffff;text-decoration:none;">CISA Adds Critical GitLab RCE Flaw to KEV After Active Exploitation</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      CISA placed CVE-2026-97229, a CVSS 10.0 integer overflow in GitLab CE/EE that enables unauthenticated remote code execution via crafted CI/CD regular expressions, on its Known Exploited Vulnerabilities catalog. The flaw was actively probed on Alpine Linux’s GitLab instance, causing worker crashes and near‑successful exploitation attempts.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must treat this GitLab vulnerability as an immediate, high‑severity threat that can compromise any self‑hosted GitLab server lacking the required Ruby runtime patches.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Patch GitLab to version 19.4.2, 19.3.5, or 19.2.8 and upgrade the Ruby runtime to 3.3.13, 3.4.12, 4.0.9 or later.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/cisa-adds-actively-exploited-gitlab-rce.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/attacker-tried-to-exploit-alpine-linuxs.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/hackers-now-exploiting-max-severity-gitlab-flaw-in-attacks/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; TraderTraitor (Lazarus Group / APT38)</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/" style="color:#ffffff;text-decoration:none;">North Korean Hackers Steal $6.3 Billion from Binance via Compromised DevOps Laptop</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      North Korean state-sponsored threat group TraderTraitor breached Binance and drained roughly $6.3 billion across ten blockchains. Attackers compromised a DevOps engineer's endpoint to gain access to a service container, submitting unauthorized withdrawal transactions without leaking private keys. Stablecoin issuers and decentralized protocols have frozen nearly $3 billion of the illicit transfers.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> The breach highlights how administrative endpoint compromise can bypass hot-wallet isolation and directly interact with backend transaction services. Organizations face extreme blast radiuses when infrastructure controls fail to separate developer access from high-value execution containers.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Enforce strict zero-trust boundaries and multi-party authorization workflows for high-privilege service containers, ensuring administrative endpoints cannot directly trigger transaction or withdrawal pipelines.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://www.bleepingcomputer.com/news/security/binance-links-63-billion-crypto-theft-to-compromised-devops-laptop/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/binance-probes-potential-58-billion-crypto-theft-hack/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/binance-suffers-security-breach.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html" style="color:#ffffff;text-decoration:none;">WordPress Core Remote Code Execution Flaw Triggers Nearly 63,000 Exploit Attempts Within 24 Hours</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A high‑severity remote code execution flaw in WordPress Core (versions 4.7‑7.1.3) was weaponized within seconds of the October 28, 2026 patch release, generating 62,969 blocked attack attempts in a single day. The bug stems from a predictable, web‑accessible staging directory used during full‑package core upgrades, allowing unauthenticated attackers to race the unpacking process and execute arbitrary PHP code.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must assume that any site running the affected WordPress versions is actively probed and potentially compromised during upgrade windows.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Apply the October 28 patch immediately, enforce non‑web‑accessible staging paths, and monitor for requests to wp‑content/upgrade and setup‑config.php during updates.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/wordpress-rce-flaw-draws-nearly-63000.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #7f1d1d;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fca5a5;background-color:#450a0a;border-radius:4px;letter-spacing:0.05em;">
+                            &#9888; BREAKING
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-98432</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html" style="color:#ffffff;text-decoration:none;">Critical Linux Kernel TCP Flaw Enables Remote Root Execution via MPTCP</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A critical use-after-free race condition in the Linux kernel's TCP implementation, CVE-2026-98432, enables unauthenticated remote attackers to execute code as root against systems with Multipath TCP (MPTCP) listeners. Exposure is widespread because network services built with Go 1.24 or later enable MPTCP sockets by default.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Unauthenticated remote attackers can gain full root control over servers hosting MPTCP-enabled network services. Exposure extends across major enterprise distributions, including RHEL and Ubuntu installations running Go-based applications.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Upgrade to patched Linux distribution kernels immediately or disable MPTCP on affected hosts until vendor updates are applied.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/linux-kernel-tcp-flaw-with-98-cvss.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://lwn.net/Articles/1104192/" style="color:#64748b;text-decoration:none;margin-left:6px;">LWN.net</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html" style="color:#ffffff;text-decoration:none;">Trojanized Claude Code VS Code Extension Delivered via Cursor Marketplace Installs Persistent SSH Backdoor</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A malicious version of Anthropic’s Claude Code extension (v2.1.313) was published to the official Anthropic account on Cursor’s VS Code marketplace on Oct 29, 2026, and remained available for 11 hours, installing a persistent SSH key, reverse tunnel, and scheduled‑task/LaunchAgent...
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Up to 5,000 developers who installed or auto‑updated the extension now have unauthorized SSH access and potential exfiltration of source code and credentials.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Identify any machines with Cursor installed, remove version 2.1.313, delete the injected SSH key and persistence artifacts, and rotate all affected credentials.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                        
+                        <a href="https://www.bleepingcomputer.com/news/security/malicious-claude-code-extension-on-cursor-planted-ssh-backdoors/" style="color:#64748b;text-decoration:none;margin-left:6px;">BleepingComputer</a>
+                        
+                      
+                        
+                        <a href="https://www.darkreading.com/cyberattacks-data-breaches/devs-trojanized-claude-code-extension-cursor" style="color:#64748b;text-decoration:none;margin-left:6px;">Dark Reading</a>
+                        
+                      
+                        
+                        <a href="https://arstechnica.com/security/2026/10/anthropic-vs-code-extension-on-cursor-backdoored-for-nearly-12-hours/" style="color:#64748b;text-decoration:none;margin-left:6px;">Ars Technica Security</a>
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; Vapor Panda</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html" style="color:#ffffff;text-decoration:none;">Chinese State‑Sponsored Group Vapor Panda Deploys AI‑Powered ARTEX Framework in Global Campaign Against 200+ Targets</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Vapor Panda used the Go‑based AI penetration‑testing framework ARTEX to launch coordinated attacks on over 200 organizations worldwide, including foreign ministries, semiconductor firms, defense contractors, and telecom providers, achieving post‑exploitation in nine victims and deploying the BLOODALCHEMY malware variant.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams face rapid, automated reconnaissance and credential‑spraying at scale, increasing the risk of lateral movement and data exfiltration across critical sectors.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Deploy behavioral analytics to detect ARTEX activity, enforce strict credential hygiene, and isolate any indicators of BLOODALCHEMY infection.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/chinese-hackers-use-ai-powered-artex-to.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+
+                          
+                          
+                          <span style="margin-left:6px;font-size:11px;font-family:monospace;color:#64748b;background:#1e293b;padding:1px 5px;border-radius:3px;">CVE-2026-76418</span>
+                          
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html" style="color:#ffffff;text-decoration:none;">Cisco Fixes Actively Exploited ASA and FTD Remote Access VPN Flaw</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Cisco released security updates for an actively exploited high-severity flaw in Secure Firewall ASA and FTD software. Tracked as CVE-2026-76418 (CVSS 8.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Exploitation enables remote attackers to crash edge firewalls and sever VPN connectivity without credentials. Active exploitation in the wild makes exposed devices an immediate availability risk for corporate perimeters.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Upgrade Cisco ASA and FTD appliances to their corresponding fixed software releases immediately.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/cisco-patches-actively-exploited-asa.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #78350f;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#fcd34d;background-color:#451a03;border-radius:4px;letter-spacing:0.05em;">
+                            &#127919; FOCUS
+                          </span>
+                          
+
+                          
+                          <span style="margin-left:8px;font-size:11px;color:#f87171;">&#128272; Volt Typhoon</span>
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html" style="color:#ffffff;text-decoration:none;">Volt Typhoon Leveraged 'Silent Train' Botnet for Zero-Day Exploitation</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      Volt Typhoon utilized a sophisticated, now-disrupted covert access network dubbed Silent Train to conduct zero-day exploitation and strategic espionage. The infrastructure employed rotating chains of compromised SOHO and enterprise devices to target critical infrastructure, including telecommunications, defense, and energy sectors.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> This infrastructure allows attackers to bypass traditional defenses by leveraging trusted, compromised edge devices to facilitate credential theft and lateral movement into downstream networks. The focus on management platforms provides adversaries with high-level control over critical network segments.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Audit edge devices and management platforms for unauthorized access, implement strict segmentation for network management traffic, and monitor for anomalous outbound connections from SOHO and IoT infrastructure.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/volt-typhoon-used-covert-silent-train.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html" style="color:#ffffff;text-decoration:none;">Over 26,000 Active Cloud and AI Credentials Leaked in Public Gitee Repositories</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A security scan of 7.25 million public Gitee repositories revealed 26,400 active credentials exposed in commit histories.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Exposed cloud and AI tokens grant attackers immediate access to organizational infrastructure, private models, and tenant data. Hardcoded secrets persisting throughout Git commit histories bypass surface-level code cleanups and leave production environments vulnerable.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Scan public and internal code repositories across all hosting platforms for hardcoded secrets, immediately revoke exposed credentials, and implement automated pre-commit secret detection.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/26400-valid-cloud-and-ai-credentials.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/" style="color:#ffffff;text-decoration:none;">Critical EDK II UEFI Flaw Enables Pre-OS Code Execution via Network Boot</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      A 16-year-old buffer overflow vulnerability (CVE-2026-97631) in the TianoCore EDK II firmware codebase allows attackers on an adjacent network to execute arbitrary code during PXE boot.
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> This flaw allows unauthenticated remote attackers to compromise servers at the firmware level during the network boot process. Because the code executes before Secure Boot, it provides a mechanism for persistent, stealthy rootkits that evade OS-level security tools.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Monitor vendor security advisories for firmware updates and restrict PXE boot access to isolated, trusted management networks until patches are deployed.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                        <a href="https://thehackernews.com/2026/10/critical-16-year-old-uefi-flaw-can-run.html" style="color:#64748b;text-decoration:none;margin-left:6px;">The Hacker News</a>
+                        
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+          <tr>
+            <td style="padding:6px 32px;">
+              <table role="presentation" width="100%" cellpadding="0" cellspacing="0"
+                style="background-color:#0f172a;border:1px solid #1e293b;border-radius:12px;">
+                <tr>
+                  <td style="padding:20px 24px;">
+
+                    <!-- Tier badge + metadata -->
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td>
+                          
+                          <span style="display:inline-block;padding:3px 9px;font-size:11px;font-weight:700;color:#94a3b8;background-color:#1e293b;border-radius:4px;letter-spacing:0.05em;">
+                            NOTABLE
+                          </span>
+                          
+
+                          
+
+                          
+                        </td>
+                      </tr>
+                    </table>
+
+                    <!-- Title -->
+                    <h3 style="margin:10px 0 8px;font-size:16px;font-weight:700;color:#ffffff;line-height:1.4;">
+                      <a href="https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html" style="color:#ffffff;text-decoration:none;">TeamViewer Patch Closes Critical Remote‑Control Flaw Allowing Host‑To‑Viewer Code Execution</a>
+                    </h3>
+
+                    <!-- Summary -->
+                    <p style="margin:0 0 10px;font-size:14px;color:#cbd5e1;line-height:1.7;">
+                      TeamViewer released version 15.83 to fix CVE‑2026‑111585, a high‑severity (8.8) vulnerability that lets a compromised host overflow memory when reporting screen size, crashing the viewer and, on Windows, executing arbitrary...
+                    </p>
+
+                    <!-- Impact (T1 + T2) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:8px;">
+                      <tr>
+                        <td style="background-color:#0f2744;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#93c5fd;line-height:1.6;">
+                            <strong style="color:#60a5fa;">&#128200; Impact:</strong> Security teams must treat any active TeamViewer sessions as potential attack vectors, especially on Windows, where the flaw can bypass OS defenses and run malicious payloads on the viewer’s system.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Action (T1 only) -->
+                    
+                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:14px;">
+                      <tr>
+                        <td style="background-color:#052e16;border-radius:6px;padding:10px 14px;">
+                          <p style="margin:0;font-size:13px;color:#86efac;line-height:1.6;">
+                            <strong style="color:#4ade80;">&#9989; Action:</strong> Deploy TeamViewer 15.83 immediately across all endpoints and verify that the Host component is also updated.
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                    
+
+                    <!-- Sources: journalism links + advisory chips -->
+                    
+                    <p style="margin:0 0 10px;font-size:12px;color:#475569;">
+                      <a href="https://thehackernews.com/2026/10/teamviewer-flaw-lets-remote-computers.html" style="font-size:13px;font-weight:600;color:#2dd4bf;text-decoration:none;">Read full story &rarr;</a>
+                      
+                        
+                      
+                    </p>
+                    
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          
+
+          <!-- CTA -->
+          <tr>
+            <td style="padding:32px;" align="center">
+              <a href="" style="display:inline-block;padding:14px 32px;font-size:14px;font-weight:700;color:#042f2e;background-color:#2dd4bf;border-radius:8px;text-decoration:none;">
+                View all stories on the web &rarr;
+              </a>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding:24px 32px;border-top:1px solid #1e293b;">
+              <p style="margin:0;font-size:12px;color:#475569;line-height:1.6;text-align:center;">
+                You're receiving this because you subscribed to Cybersecurity Weekly.<br>
+                <a href="" style="color:#64748b;text-decoration:underline;">Unsubscribe</a>
+                &middot;
+                <a href="https://github.com/Vishakadatta/cybersecurity-weekly" style="color:#64748b;text-decoration:underline;">GitHub</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
