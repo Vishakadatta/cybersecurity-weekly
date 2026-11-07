@@ -3056,5 +3056,93 @@
     "publishedDate": "2026-11-03T16:28:40+00:00",
     "scrapedAt": "2026-11-07T03:04:25.172639+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "9989e939e148877e",
+    "title": "Claude Code's \u201cDon't Ask Again\u201d File Exposes Passwords and Keys in 1,122 Public Copies on GitHub",
+    "summary_raw": "Passwords and API keys that developers typed into commands they approved in Claude Code are sitting in public GitHub repositories, where anyone can read them.\n\nWhen a user selects \"Yes, and don't ask again,\" Anthropic's AI coding assistant can save the command, word-for-word, including the secret, in a project settings file.\n\nSoftware security company Apiiro said yesterday that 1,122 public",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html",
+    "publishedDate": "2026-11-07T12:14:17+05:30",
+    "scrapedAt": "2026-11-07T19:14:10.072658+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "afb29613d255441e",
+    "title": "Hackers pull off $133 million French bank heist via service provider",
+    "summary_raw": "French cooperative bank Cr\u00e9dit Mutuel Ark\u00e9a was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider/",
+    "publishedDate": "2026-11-07T10:25:35-05:00",
+    "scrapedAt": "2026-11-07T19:14:11.246475+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "5a763049bef06bb3",
+    "title": "CTM360 Exposes Fake Gift Card Scams Exploiting Trusted Brands",
+    "summary_raw": "Scammers are impersonating major brands and celebrities to lure consumers into fake gift card giveaways that collect personal information and trigger unwanted subscriptions. CTM360 reveals how these campaigns use deceptive verification steps and affiliate networks to generate revenue without delivering the promised rewards. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/ctm360-exposes-fake-gift-card-scams-exploiting-trusted-brands/",
+    "publishedDate": "2026-11-07T09:10:19-05:00",
+    "scrapedAt": "2026-11-07T19:14:11.246593+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "eba10704afbeb83f",
+    "title": "DSA-6613-1 zlib - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6613-1\">https://security-tracker.debian.org/tracker/DSA-6613-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00532.html",
+    "publishedDate": "2026-11-07T00:00:00+00:00",
+    "scrapedAt": "2026-11-07T19:14:30.013481+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "1bd9fd76df02085b",
+    "title": "RHSA-2026:96039: Important: Red Hat build of Keycloak 26.6.9 Images Security Update",
+    "summary_raw": "New images are available for Red Hat build of Keycloak 26.6.9 and\nRed Hat build of Keycloak 26.6.9 Operator, running on OpenShift\nContainer Platform",
+    "source": "Red Hat Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://access.redhat.com/errata/RHSA-2026:96039",
+    "publishedDate": "2026-11-07T14:49:00+00:00",
+    "scrapedAt": "2026-11-07T19:14:31.166221+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "39022930104b0888",
+    "title": "RHSA-2026:96040: Important: Red Hat build of Keycloak 26.6.9 Security Update",
+    "summary_raw": "New Red Hat build of Keycloak 26.6.9 packages are available from the Customer Portal",
+    "source": "Red Hat Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://access.redhat.com/errata/RHSA-2026:96040",
+    "publishedDate": "2026-11-07T14:47:20+00:00",
+    "scrapedAt": "2026-11-07T19:14:31.166333+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "2337a50fdb5e6f3e",
+    "title": "Asahi Linux 7.3 progress report",
+    "summary_raw": "The Asahi Linux developers have put out <a href=\"https://asahilinux.org/2026/11/progress-report-7-3/\">a new report</a>\non their progress toward a Linux distribution for Apple devices.\n<p>\n<blockquote class=\"bq\">\n\tSome time ago, we were made aware of multiple attempts to exploit\n\tour permissive licensing to hijack our work, with a direct view to\n\treplacing the project and aggressively monetising Linux on Apple\n\tSilicon. In some extreme cases, in-development feature code was\n\tbeing lifted straight out of our personal forks and published\n\twithout attribution or lazily rewritten with LLM assistance to\n\tobfuscate its origin. The MIT licence explicitly allows this, and\n\thas no carveouts to protect against bad faith actors.\n<p>\n\tAs such, we made the difficult decision to begin the process of\n\ttransitioning all of our repositories to the GNU General Public\n\tLicense version 2 or later. Going forward all Asahi Linux code will\n\tbe licenced under strong copyleft licences only. Those who do not\n\tlearn from history are doomed to repeat it.\n</blockquote>",
+    "source": "LWN.net",
+    "source_kind": "journalism",
+    "url": "https://lwn.net/Articles/1105936/",
+    "publishedDate": "2026-11-07T09:49:38+00:00",
+    "scrapedAt": "2026-11-07T19:14:32.429588+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "f4581b6141317e87",
+    "title": "Amutable Foundations: A Technical Overview",
+    "summary_raw": "Lennart Poettering, Michael Vogt, and Joaquim Rocha have put together <a href=\"https://amutable.com/blog/amutable-foundations-technical-overview\">a\ndetailed overview</a> of what the Amutable Operating System (AOS) and\nassociated infrastructure will look like.\n<p>\n<blockquote class=\"bq\">\n\tThe image-based OS approach enables us to enforce some very strict\n\tbut powerful security properties, which elevate the security\n\tposture of the system substantially above traditional Linux\n\tsystems. Specifically, let's highlight seven major essential\n\tsecurity properties of AOS here:\n<ol class=\"spacylist\">\n<li> <b>No Shell + No SSH + No Language Interpreters</b>. By default AOS\n     does not install a UNIX shell, nor makes remote access via SSH\n     available on the nodes. Moreover, we do not install any of the usual\n     language interpreters (Python, Perl, \u2026) by default. For most nodes a\n     shell or interpreted language support is not required and it removes a\n     whole class of attacks.\n<li> <b>Signed Images Only</b>. On AOS only images that come with Verity\n     data signed by a signing key listed in the Verity keyring may be\n     activated.\n<li> [...]\n</ol>\n</blockquote>",
+    "source": "LWN.net",
+    "source_kind": "journalism",
+    "url": "https://lwn.net/Articles/1105934/",
+    "publishedDate": "2026-11-07T09:32:56+00:00",
+    "scrapedAt": "2026-11-07T19:14:32.429704+00:00",
+    "cve_ids_scraped": []
   }
 ]
