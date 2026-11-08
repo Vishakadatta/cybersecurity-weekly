@@ -3144,5 +3144,62 @@
     "publishedDate": "2026-11-07T09:32:56+00:00",
     "scrapedAt": "2026-11-07T19:14:32.429704+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "f3cdbd0ed89247a3",
+    "title": "Iris Ohyama data cloud breach exposes info of 7.7 million customers",
+    "summary_raw": "Japanese manufacturer\u00a0Iris Ohyama, the operator of the Iris Plaza shopping platform,\u00a0disclosed that personal information belonging to about 7.7 million people may have been exposed after unauthorized access to a third-party cloud service the company used. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/iris-ohyama-data-cloud-breach-exposes-info-of-77-million-customers/",
+    "publishedDate": "2026-11-08T10:43:08-05:00",
+    "scrapedAt": "2026-11-08T19:21:07.839330+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "4b7df559b706314d",
+    "title": "Scans for Sshole Vulnerability (CVE-2026-123158), (Sun, Nov 8th)",
+    "summary_raw": "Our honeypots use \"Cowrie\" to collect SSH data. With the emergence of the \"sshole\" vulnerability last week, we are now seeing an increase in attempts to exploit the vulnerability. Our data is a bit limited in this respect. Our honeypots collect only the first 255 characters of SSH passwords. Longer passwords are highly unusual and not used for the usual password brute-forcing we observe.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33498",
+    "publishedDate": "2026-11-08T15:44:33+00:00",
+    "scrapedAt": "2026-11-08T19:21:23.630813+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-123158"
+    ]
+  },
+  {
+    "id": "8d57f0e74c08ed47",
+    "title": "DSA-6600-2 vim - regression update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6600-2\">https://security-tracker.debian.org/tracker/DSA-6600-2</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00535.html",
+    "publishedDate": "2026-11-08T00:00:00+00:00",
+    "scrapedAt": "2026-11-08T19:21:27.202095+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "006f7f0716f1e3a9",
+    "title": "DSA-6615-1 libreoffice - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6615-1\">https://security-tracker.debian.org/tracker/DSA-6615-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00534.html",
+    "publishedDate": "2026-11-07T00:00:00+00:00",
+    "scrapedAt": "2026-11-08T19:21:27.202133+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "60028b58cc07cd69",
+    "title": "DSA-6614-1 ruby3.3 - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6614-1\">https://security-tracker.debian.org/tracker/DSA-6614-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00533.html",
+    "publishedDate": "2026-11-07T00:00:00+00:00",
+    "scrapedAt": "2026-11-08T19:21:27.202157+00:00",
+    "cve_ids_scraped": []
   }
 ]
