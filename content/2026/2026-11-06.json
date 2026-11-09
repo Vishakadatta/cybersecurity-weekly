@@ -2,10 +2,37 @@
   "edition": "2026-11-06",
   "year": "2026",
   "editionLabel": "Oct 30 \u2013 Nov 6, 2026",
-  "generatedAt": "2026-11-08T22:53:17.863510+00:00",
-  "subjectLine": "OpenSSH '*sshole' Flaw Enables Passwordless Logins; APT Bug Yields Root RCE on Debian and Ubuntu",
+  "generatedAt": "2026-11-09T23:50:31.616625+00:00",
+  "subjectLine": "BREAKING: N-able takes cloud platform offline after 30+ \"zero-days\" pu + More Inside",
   "weekIntro": "Foundational infrastructure tools faced severe exposure this week, with critical flaws surfacing across core Linux utilities, package managers, and virtualization layers. From unauthenticated root compromise in OpenSSH and APT to cross-VM memory leakage in Xen, security and DevOps teams must prioritize patching base system components. Meanwhile, targeted supply-chain hits against server management tools and developer workstations reinforce the urgency of zero-trust verification across operational pipelines.",
   "articles": [
+    {
+      "id": "ee5e2ceda03abe1e",
+      "title": "Hackers Exploit Qubole's Trusted AWS Access to Breach Customer Accounts and Steal Data",
+      "summary": "Threat actors leveraged Qubole\u2019s privileged AWS credentials to infiltrate multiple customer accounts, exfiltrating stored secrets and data. The breach highlights a supply\u2011chain style compromise of a major cloud\u2011native data platform.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-quboles-trusted-aws.html",
+      "tier": 2,
+      "publishedDate": "2026-11-09T23:21:21+05:30"
+    },
+    {
+      "id": "4d02c260bfd3474b",
+      "title": "CISA Flags SonicWall SonicOS MFA Bypass Flaw Amid Reports of Possible Exploitation",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency added a high\u2011severity MFA\u2011bypass vulnerability in SonicWall SonicOS to its Known Exploited Vulnerabilities catalog, noting early reports of active exploitation against firewalls that protect many enterprise networks.",
+      "source": "The Hacker News",
+      "url": "https://thehackernews.com/2026/11/cisa-flags-sonicwall-sonicos-mfa-bypass.html",
+      "tier": 2,
+      "publishedDate": "2026-11-09T11:35:24+05:30"
+    },
+    {
+      "id": "e87452b09e8afa84",
+      "title": "N-able takes cloud platform offline after 30+ \"zero-days\" published",
+      "summary": "N-able shut down its hosted N\u2011central cloud service and urged on\u2011premises customers to power down their servers after a researcher disclosed more than 30 alleged zero\u2011day vulnerabilities affecting the platform, indicating a large\u2011scale, active threat to a widely used managed\u2011service provider.",
+      "source": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/n-able-takes-cloud-platform-offline-after-30-plus-zero-days-published/",
+      "tier": 1,
+      "publishedDate": "2026-11-09T16:26:25-05:00"
+    },
     {
       "id": "0104ffe0a06b05b6",
       "title": "OpenSSH \u201c*sshole\u201d Flaw Enables Password\u2011less Logins on Musl\u2011Based Linux Systems",
