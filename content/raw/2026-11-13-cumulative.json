@@ -6394,5 +6394,186 @@
     "publishedDate": "2026-11-10T18:00:00+00:00",
     "scrapedAt": "2026-11-14T03:30:35.497367+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "e577b898eca3316f",
+    "title": "Attackers Exploit UnrealIRCd Flaw That Enables Server-Level Command Injection",
+    "summary_raw": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added a high-severity security flaw impacting UnrealIRCd, an open-source Internet Relay Chat (IRC) server, to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-114713 (CVSS score: 8.6), is a case of improper neutralization of delimiters",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html",
+    "publishedDate": "2026-11-14T18:08:35+05:30",
+    "scrapedAt": "2026-11-14T19:39:31.613484+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-114713"
+    ]
+  },
+  {
+    "id": "2396f465be9396c9",
+    "title": "Cursor confirms security breach led to malicious Claude Code extension",
+    "summary_raw": "Cursor confirmed it suffered a security breach that let hackers distribute a malicious Claude Code extension through its marketplace after stealing credentials from AI infrastructure provider Fireworks AI. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/",
+    "publishedDate": "2026-11-14T12:27:25-05:00",
+    "scrapedAt": "2026-11-14T19:39:32.739244+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "0eb645ca70f53d6a",
+    "title": "US disrupts North Korean campaign behind $400 million crypto theft",
+    "summary_raw": "The U.S. government has disrupted a North Korean social engineering campaign called 'FaceStealer', responsible for stealing more than $400 million in cryptocurrency. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/",
+    "publishedDate": "2026-11-14T10:15:49-05:00",
+    "scrapedAt": "2026-11-14T19:39:32.739331+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "0aebaf67db5da9b8",
+    "title": "Inside Falcon AI Gateway: One Control Point for AI Traffic",
+    "summary_raw": "",
+    "source": "CrowdStrike Blog",
+    "source_kind": "journalism",
+    "url": "https://www.crowdstrike.com/en-us/blog/falcon-ai-gateway-one-control-point-for-ai-traffic/",
+    "publishedDate": "2026-11-13T00:00:00-06:00",
+    "scrapedAt": "2026-11-14T19:39:39.660111+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "d6d9935ddab60f0d",
+    "title": "Upcoming Speaking Engagements",
+    "summary_raw": "<p>This is a current list of where and when I am scheduled to speak:</p>\n<ul>\n<li>I\u2019m speaking at the <a href=\"https://luma.com/a3pk9zbg\">Catalyst Summit</a> in Brampton, Ontario, Canada, on Wednesday, November 18, 2026.</li>\n<li>I\u2019m speaking at <a href=\"https://queertech.org/en/events/qonference/qtq-2026\">QT Qonference 2026</a> in Toronto, Ontario, Canada, on Thursday, November 19, 2026.</li>\n</ul>\n<p>The list is maintained on <a href=\"https://www.schneier.com/events/\">this page</a>.</p>",
+    "source": "Schneier on Security",
+    "source_kind": "journalism",
+    "url": "https://www.schneier.com/blog/archives/2026/11/upcoming-speaking-engagements-62.html",
+    "publishedDate": "2026-11-14T17:02:39+00:00",
+    "scrapedAt": "2026-11-14T19:39:46.316297+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "6089808a60e475e5",
+    "title": "USN-9027-2: Linux kernel (FIPS) vulnerabilities",
+    "summary_raw": "Several security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - x86 architecture;\n  - Hardware monitoring drivers;\n  - OCFS2 file system;\n  - IPv4 networking;\n  - Ethernet bridge;\n  - Netfilter;\n  - XFRM subsystem;\n(CVE-2025-21656, CVE-2026-63940, CVE-2026-74350, CVE-2026-98432,\nCVE-2026-99999)",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9027-2",
+    "publishedDate": "2026-11-13T10:30:15+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047022+00:00",
+    "cve_ids_scraped": [
+      "CVE-2025-21656",
+      "CVE-2026-63940",
+      "CVE-2026-74350",
+      "CVE-2026-98432",
+      "CVE-2026-99999"
+    ]
+  },
+  {
+    "id": "8bf685d5c0e2ed44",
+    "title": "USN-9091-1: Linux kernel (NVIDIA Tegra) vulnerabilities",
+    "summary_raw": "It was discovered that some AMD processors did not properly perform Reverse\nMap Table (RMP) checks when the IOMMU accessed certain host buffers. A\nlocal attacker with hypervisor access could possibly use this to trigger an\nout-of-bounds condition and compromise the integrity of SEV-SNP guest\nmemory. (CVE-2023-20585)\n\nSeveral security issues were discovered in the Linux kernel.\nAn attacker could possibly use these to compromise the system.\nThis update corrects flaws in the following subsystems:\n  - USB Gadget drivers;\n  - Memory management;\n  - Network file systems library;\n  - Networking core;\n  - Stream parser;\n  - ARM32 architecture;\n  - ARM64 architecture;\n  - M68K architecture;\n  - MIPS architecture;\n  - PowerPC architecture;\n  - RISC-V architecture;\n  - S390 architecture;\n  - x86 architecture;\n  - Block layer subsystem;\n  - Cryptographic API;\n  - Intel NPU Driver;\n  - Compute Acceleration Framework;\n  - Speakup Console Speech Driver;\n  - ACPI drivers;\n  - Android drivers;\n  - Serial ATA and Parallel ATA drivers;\n  - Drivers core;\n  - Micron PCIe SSD driver;\n  - Null block device driver;\n  - Ublk userspace block driver;\n  - Compressed RAM block device driver;\n  - Bluetooth drivers;\n  - Bus devices;\n  - Cdrom driver;\n  - AMD CDX bus driver;\n  - Character device driver;\n  - Hardware random number generator core;\n  - TPM device driver;\n  - Clock framework and drivers;\n  - Clocksource drivers;\n  - Data acquisition framework and drivers;\n  - CPU frequency scaling framework;\n  - Hardware crypto device drivers;\n  - CXL (Compute Express Link) drivers;\n  - DAX dirext access to differentiated memory framework;\n  - Buffer Sharing and Synchronization framework;\n  - DMA engine subsystem;\n  - EDAC drivers;\n  - FireWire subsystem;\n  - Arm Firmware Framework for ARMv8-A(FFA);\n  - ARM SCMI message protocol;\n  - ARM SCPI message protocol;\n  - Google firmware drivers;\n  - Qualcomm firmware drivers;\n  - Intel Stratix 10 firmware drivers;\n  - FPGA Framework;\n  - GPIO subsystem;\n  - ...",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9091-1",
+    "publishedDate": "2026-11-13T10:18:40+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047117+00:00",
+    "cve_ids_scraped": [
+      "CVE-2023-20585"
+    ]
+  },
+  {
+    "id": "6cea4052ea7e5c19",
+    "title": "USN-9090-1: Apache HTTP Server vulnerabilities",
+    "summary_raw": "Zhenpeng Lin discovered that Apache HTTP Server's mod_dav module\nincorrectly calculated memory sizes when handling WebDAV locks. An attacker\nwith permission to create WebDAV locks could possibly use this issue to\ncause Apache HTTP Server to crash, resulting in a denial of service.\n(CVE-2026-42528)\n\nIt was discovered that Apache HTTP Server's mod_vhost_alias module\nincorrectly handled certain requests, leading to a one-byte stack buffer\noverflow. A remote attacker could possibly use this issue to cause Apache\nHTTP Server to crash, resulting in a denial of service, or possibly execute\narbitrary code. (CVE-2026-109163)\n\nIt was discovered that Apache HTTP Server's mod_md module incorrectly\nhandled certain conditions, leading to a NULL pointer dereference. An\nattacker could possibly use this issue to cause Apache HTTP Server to\ncrash, resulting in a denial of service. This issue only affected Ubuntu\n20.04 LTS, Ubuntu 22.04 LTS, Ubuntu 24.04 LTS, Ubuntu 26.04 LTS, and Ubuntu\n26.10. (CVE-2026-106023)\n\nIt was discovered that Apache HTTP Server's mod_http2 module incorrectly\nhandled certain request headers, leading to heap corruption. A remote\nattacker could possibly use this issue to cause Apache HTTP Server to\ncrash, resulting in a denial of service, or possibly execute arbitrary\ncode. This issue only affected Ubuntu 20.04 LTS, Ubuntu 22.04 LTS, Ubuntu\n24.04 LTS, Ubuntu 26.04 LTS, and Ubuntu 26.10. (CVE-2026-119618)\n\nFeliks Penconek, Yang Song, and JiaSheng He discovered that Apache HTTP\nServer could treat the target of some internal redirects from CGI programs\nas a CGI program. A remote attacker could possibly use this issue to\nexecute arbitrary code. This issue only affected Ubuntu 26.04 LTS and\nUbuntu 26.10. (CVE-2026-42356)",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9090-1",
+    "publishedDate": "2026-11-12T21:25:57+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047203+00:00",
+    "cve_ids_scraped": [
+      "CVE-2026-106023",
+      "CVE-2026-109163",
+      "CVE-2026-119618",
+      "CVE-2026-42356",
+      "CVE-2026-42528"
+    ]
+  },
+  {
+    "id": "53a61f14b8fe8bb1",
+    "title": "USN-9068-1: Debian-LAN vulnerability",
+    "summary_raw": "Wolfgang Schweer discovered that Debian-LAN configured overly permissive\nACLs for the Kerberos admin server. An authenticated user could possibly\nuse this issue to change the credentials of other users, leading to\nprivilege escalation.",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9068-1",
+    "publishedDate": "2026-11-12T21:02:18+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047284+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "bc7f3b9a17ba26d6",
+    "title": "USN-9089-1: x11vnc vulnerability",
+    "summary_raw": "It was discovered that x11vnc created shared memory segments with insecure\npermissions. A local attacker could possibly use this issue to obtain\nsensitive information or modify screen contents.",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9089-1",
+    "publishedDate": "2026-11-12T20:55:34+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047362+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "75c0ed80e4264c01",
+    "title": "USN-9088-1: TigerVNC vulnerability",
+    "summary_raw": "It was discovered that the TigerVNC viewer stored TLS certificate\nexceptions as trusted certificate authorities. A remote attacker could\npossibly use this issue to impersonate any VNC server after a user had\nadded a certificate exception for the attacker's server.",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9088-1",
+    "publishedDate": "2026-11-12T20:55:23+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047448+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "fc35b54a3b855754",
+    "title": "USN-9087-1: signing-party vulnerability",
+    "summary_raw": "It was discovered that the gpg-key2ps tool in signing-party did not\nproperly sanitize user IDs before passing them to a shell. If a user were\ntricked into processing a specially crafted OpenPGP key, an attacker could\npossibly use this issue to execute arbitrary commands.",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9087-1",
+    "publishedDate": "2026-11-12T20:55:13+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047511+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "21f7d310bcfca839",
+    "title": "USN-9086-1: SA-Exim vulnerability",
+    "summary_raw": "It was discovered that SA-Exim unsafely evaluated the parameters of its\ngreylisting SpamAssassin rule. An attacker able to write SpamAssassin\nconfiguration files or rules could possibly use this issue to execute\narbitrary code.",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9086-1",
+    "publishedDate": "2026-11-12T20:54:57+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047570+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "d97693c620e6070d",
+    "title": "USN-9085-1: Ruby OpenID vulnerability",
+    "summary_raw": "It was discovered that Ruby OpenID sent a request to the claimed identifier\nURL before verifying the signature of an OpenID response. A remote attacker\ncould possibly use this issue to perform server-side request forgery\nattacks.",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9085-1",
+    "publishedDate": "2026-11-12T20:54:47+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047626+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "13f06bc24e5c24a2",
+    "title": "USN-9084-1: Radicale vulnerability",
+    "summary_raw": "It was discovered that Radicale did not delay failed authentication\nattempts when using htpasswd authentication. A remote attacker could\npossibly use this issue to obtain user passwords through timing or\nbrute-force attacks.",
+    "source": "Ubuntu Security Notices",
+    "source_kind": "advisory",
+    "url": "https://ubuntu.com/security/notices/USN-9084-1",
+    "publishedDate": "2026-11-12T20:54:41+00:00",
+    "scrapedAt": "2026-11-14T19:39:49.047683+00:00",
+    "cve_ids_scraped": []
   }
 ]
