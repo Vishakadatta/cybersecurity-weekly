@@ -6575,5 +6575,93 @@
     "publishedDate": "2026-11-12T20:54:41+00:00",
     "scrapedAt": "2026-11-14T19:39:49.047683+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "dabf7b9c559f7a5e",
+    "title": "Italy Fines Meta \u20ac805 Million Over Facebook's Android Gallery Access Without Explicit Consent",
+    "summary_raw": "Meta was fined \u20ac805 million in Italy yesterday over a Facebook for Android feature that suggests photos and videos from users' phone galleries for them to post.\n\nThe Garante, Italy's data protection authority, found that the feature was enabled by default and that the app accessed Italian users' photos, videos, and related metadata without their explicit consent.\n\nThe company has 60 days to",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/italy-fines-meta-805-million-over.html",
+    "publishedDate": "2026-11-15T16:57:31+05:30",
+    "scrapedAt": "2026-11-15T20:10:27.774191+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "d5585df40181d87d",
+    "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
+    "summary_raw": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI.\n\n\"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+    "publishedDate": "2026-11-15T13:52:04+05:30",
+    "scrapedAt": "2026-11-15T20:10:27.774323+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "ddd80cd3bed8cfd4",
+    "title": "FBI warns ARTEX AI hacking tool is powering global cyberattacks",
+    "summary_raw": "The FBI is warning that hackers are using an AI-powered penetration testing framework called ARTEX to automate cyberattacks against organizations worldwide, including a recent ConnectWise supply-chain breach that compromised Microsoft 365 customer environments. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-warns-artex-ai-hacking-tool-is-powering-global-cyberattacks/",
+    "publishedDate": "2026-11-15T13:29:53-05:00",
+    "scrapedAt": "2026-11-15T20:10:28.868175+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "288ae0a72da3a810",
+    "title": "TSMC employee data breach linked to cloud provider",
+    "summary_raw": "Taiwan Semiconductor Manufacturing Company (TSMC) confirmed that personal employee data has been leaked online after a threat actor put 6.9GB of information allegedly stolen from the company up for auction. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/tsmc-employee-data-breach-linked-to-cloud-provider/",
+    "publishedDate": "2026-11-15T10:23:48-05:00",
+    "scrapedAt": "2026-11-15T20:10:28.868301+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "40c76eb04edd8ce7",
+    "title": "YARA-X 1.23.0 Release, (Sun, Nov 15th)",
+    "summary_raw": "YARA-X&&#x23&#x3b;x26&#x3b;&#x23&#x3b;39&#x3b;s 1.23.0 release brings 4 improvements and 16 bugfixes.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33496",
+    "publishedDate": "2026-11-15T18:17:27+00:00",
+    "scrapedAt": "2026-11-15T20:10:42.845000+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "37b1071613667dbc",
+    "title": "DSA-6631-1 freedombox - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6631-1\">https://security-tracker.debian.org/tracker/DSA-6631-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00551.html",
+    "publishedDate": "2026-11-15T00:00:00+00:00",
+    "scrapedAt": "2026-11-15T20:10:45.697219+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "9bee7c04e01450ea",
+    "title": "DSA-6630-1 pdns-recursor - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6630-1\">https://security-tracker.debian.org/tracker/DSA-6630-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00550.html",
+    "publishedDate": "2026-11-14T00:00:00+00:00",
+    "scrapedAt": "2026-11-15T20:10:45.697287+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "f1fe891b187f9ad9",
+    "title": "DSA-6629-1 network-manager-iodine - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6629-1\">https://security-tracker.debian.org/tracker/DSA-6629-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00549.html",
+    "publishedDate": "2026-11-15T00:00:00+00:00",
+    "scrapedAt": "2026-11-15T20:10:45.697343+00:00",
+    "cve_ids_scraped": []
   }
 ]
