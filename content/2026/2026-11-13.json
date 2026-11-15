@@ -1,0 +1,283 @@
+{
+  "edition": "2026-11-13",
+  "year": "2026",
+  "editionLabel": "Nov 6 \u2013 13, 2026",
+  "generatedAt": "2026-11-15T23:32:13.791155+00:00",
+  "subjectLine": "Apache mod_http2 RCE Under Active Attack, OpenSSH 'sshole' Exploited, and Microsoft's Record Patch Tuesday",
+  "weekIntro": "This week presents an aggressive barrage of infrastructure threats led by active in-the-wild exploitation of Apache's HTTP/2 engine and OpenSSH authentication on musl-based distributions. Simultaneously, Microsoft released a massive Patch Tuesday addressing actively targeted zero-days, while high-impact supply-chain attacks struck Red Hat Quay and thousands of GitHub CI/CD workflows. Security teams should immediately triage internet-facing endpoints, rotate exposed automation tokens, and apply pending hypervisor and runtime fixes.",
+  "articles": [
+    {
+      "id": "e1501a330e51ba12",
+      "title": "Critical Remote Code Execution Flaw in Apache HTTP Server\u2019s HTTP/2 Module Patched",
+      "summary": "Apache HTTP Server 2.4.55\u20112.4.70 with mod_http2 enabled contains a critical unauthenticated RCE vulnerability (CVE\u20112026\u2011119618) that is actively exploited; the issue is fixed in Apache 2.4.71 and corresponding distro packages.",
+      "impact": "Unauthenticated attackers can execute arbitrary code on vulnerable web servers, potentially taking full control of the server process. Exploits work against default configurations with HTTP/2 enabled, posing immediate risk to internet\u2011facing services.",
+      "action": "Upgrade to Apache HTTP Server 2.4.71 or apply the vendor\u2011specific patches (e.g., mod_http2\u20112.0.26\u20117.el9_9.1 for RHEL) and disable HTTP/2 if you cannot patch immediately.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/critical-apache-http2-flaw-could-let.html"
+        },
+        {
+          "name": "Ubuntu Security Notices",
+          "url": "https://ubuntu.com/security/notices/USN-9090-1"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/apache-http-server-patches-critical-http-2-remote-code-execution-flaw/",
+      "publishedDate": "2026-11-12T10:42:26+05:30",
+      "cve_ids": [
+        "CVE-2026-106023",
+        "CVE-2026-42356",
+        "CVE-2026-119618",
+        "CVE-2026-109163",
+        "CVE-2026-42528"
+      ],
+      "affected_systems": [
+        "Apache HTTP Server 2.4.x"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "6e299ce357456abc",
+      "title": "Microsoft November 2026 Patch Tuesday Fixes Over 1,250 Flaws, Including Actively Exploited Outlook Zero\u2011Day",
+      "summary": "Microsoft released November Patch Tuesday addressing 1,259\u20111,260 CVEs across Windows, Office, Edge, Exchange, SharePoint, LDAP, AD DS, Hyper\u2011V and .NET, with 68 critical bugs. A spoofing zero\u2011day in Outlook (CVE\u20112026\u2011124194) is already being exploited to steal NTLMv2 hashes, and multiple remote\u2011code\u2011execution flaws affect LDAP, AD DS and Hyper\u2011V.",
+      "impact": "Security teams face immediate risk of credential theft and domain\u2011wide compromise if the Outlook zero\u2011day or the LDAP/AD DS RCE bugs are not patched, while unpatched privilege\u2011escalation flaws in Hyper\u2011V and Edge could enable attacker persistence and lateral movement.",
+      "action": "Deploy the November updates across all Windows, Office, Edge, Exchange, SharePoint, LDAP, AD DS and Hyper\u2011V endpoints without delay.",
+      "sources": [
+        {
+          "name": "Krebs on Security",
+          "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/"
+        },
+        {
+          "name": "Dark Reading",
+          "url": "https://www.darkreading.com/vulnerabilities-threats/november-patch-tuesday-cornucopia-cves"
+        },
+        {
+          "name": "CrowdStrike Blog",
+          "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-november-2026/"
+        },
+        {
+          "name": "SANS Internet Storm Center",
+          "url": "https://isc.sans.edu/diary/rss/33508"
+        },
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/microsoft-patches-1259-flaws-including.html"
+        }
+      ],
+      "url": "https://krebsonsecurity.com/2026/11/microsoft-fixes-nearly-1100-security-vulnerabilities/",
+      "publishedDate": "2026-11-10T21:55:03+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Microsoft Windows",
+        "Microsoft Office",
+        "Microsoft Outlook",
+        "Microsoft Edge",
+        "Microsoft Exchange",
+        "Microsoft SharePoint",
+        "Windows Search",
+        "LDAP",
+        "Active Directory Domain Services",
+        "Hyper-V",
+        ".NET Framework",
+        "TCP/IP Stack",
+        "Microsoft Queuing and Queue Manager"
+      ],
+      "threat_actor": null,
+      "tier": 1
+    },
+    {
+      "id": "97eedb91375d7417",
+      "title": "Active Exploitation of OpenSSH \u201csshole\u201d Flaw Grants Unauthenticated Remote Access",
+      "summary": "The newly disclosed sshole vulnerability in OpenSSH, triggered by a musl library interaction, is being actively exploited to bypass authentication and obtain privileged SSH access on vulnerable Linux devices, with attacks observed in Southeast Asian honeypots.",
+      "impact": "Security teams must assume that any Linux host running OpenSSH with musl is at immediate risk of remote compromise and that attackers are already deploying a backdoor called TAC Agent for persistence.",
+      "action": "Deploy the OpenSSH patch released today and verify that musl\u2011linked binaries are updated or replaced on all affected systems.",
+      "sources": [
+        {
+          "name": "Ars Technica Security",
+          "url": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/"
+        }
+      ],
+      "url": "https://arstechnica.com/security/2026/11/vulnerability-that-lets-hackers-ssh-into-linux-devices-is-under-active-exploitation/",
+      "publishedDate": "2026-11-09T19:41:34+00:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "OpenSSH"
+      ],
+      "threat_actor": "GT10",
+      "tier": 1
+    },
+    {
+      "id": "83f9d15e0e3302c8",
+      "title": "Critical Red\u202fHat Quay Flaws Allow Unauthenticated Reading and Overwriting of Private Container Images",
+      "summary": "Two critical vulnerabilities in Red Hat Quay (CVE\u20112026\u2011123710 CVSS 9.8 and CVE\u20112026\u2011110697 CVSS 9.9) let any attacker with registry access read, delete, or overwrite private images and steal robot\u2011account tokens.",
+      "impact": "Security teams risk credential leakage, supply\u2011chain compromise, and service disruption across every environment pulling from compromised registries.",
+      "action": "Update all Quay instances to the fixed builds released by Red\u202fHat immediately and rotate all image signing keys and robot\u2011account tokens.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/11/critical-red-hat-quay-flaw-lets.html",
+      "publishedDate": "2026-11-12T21:57:01+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "Red Hat Quay"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "ec46d2ca2fd1c7f3",
+      "title": "Hijacked GitHub Accounts Deploy CI Secret Stealer Across 1,800+ Repositories",
+      "summary": "A threat group dubbed wfx-loot compromised 4,837 GitHub accounts and injected a secret\u2011stealing script into at least 1,806 repositories, harvesting CI pipeline secrets and cloud credentials.",
+      "impact": "All CI/CD secrets and cloud roles accessible to the affected workflows should be considered compromised, exposing downstream services and infrastructure to credential abuse.",
+      "action": "Audit all recent GitHub account activity, enforce MFA, rotate CI secrets, and scan repositories for unauthorized workflow or npm hook modifications.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/hackers-compromise-4-800-github-accounts-to-steal-cloud-credentials/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/11/4837-hijacked-github-accounts-ran-ci.html",
+      "publishedDate": "2026-11-12T12:12:47+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "GitHub",
+        "CI/CD pipelines"
+      ],
+      "threat_actor": "wfx-loot",
+      "tier": 2
+    },
+    {
+      "id": "97c01e9fc4639398",
+      "title": "Check Point Gateways Compromised via PHP2Shell Exploits and Gaia OS Privilege Escalation",
+      "summary": "Unpatched Check Point Security Gateways were breached using PHP2Shell flaws, followed by a local privilege escalation (CVE-2026-123039) in Gaia OS that granted root access and allowed deployment of the persistent TSGA backdoor.",
+      "impact": "Security teams must assume that any affected Check Point appliance could be fully compromised, with attackers able to install web shells, backdoors, and destructive wiper malware across the network.",
+      "action": "Apply the latest patches for the PHP2Shell and CVE-2026-123039 vulnerabilities immediately and audit all Check Point gateways for unauthorized shells and the TSGA backdoor.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html"
+        },
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/check-point-gateways-hacked-via-php2shell-to-deploy-vmware-esxi-wiper/"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/11/hackers-exploit-php2shell-flaws-in.html",
+      "publishedDate": "2026-11-13T11:21:43-05:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Check Point Security Gateway",
+        "Gaia OS"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "98e4d72a559c644f",
+      "title": "Git Fixes Critical Integer Truncation Vulnerability (CVE\u20112026\u2011111760) in 2.56.1 and Back\u2011ported Releases",
+      "summary": "Git\u2019s integer truncation flaw (CVE\u20112026\u2011111760) allowed malicious repositories to execute attacker\u2011controlled code during recursive clones and submodule fetches. The vulnerability is patched in Git\u202f2.56.1 and back\u2011ported to 2.50.2, 2.51.3, 2.52.1, 2.53.1, 2.54.1, and 2.55.1. Immediate upgrade is required.",
+      "impact": "Security teams must treat any Git clone operation as potentially hostile, especially when pulling untrusted repositories or using recursive submodule fetches, because the flaw could inject malicious hooks via crafted path names.",
+      "action": "Upgrade all Git installations to 2.56.1 or the appropriate back\u2011ported version and enforce trusted\u2011source cloning policies.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/11/git-patches-flaw-that-lets-malicious.html",
+      "publishedDate": "2026-11-11T00:53:10+05:30",
+      "cve_ids": [
+        "CVE-2026-111760"
+      ],
+      "affected_systems": [
+        "Git 2.50\u20112.55",
+        "Git 2.56.1"
+      ],
+      "threat_actor": null,
+      "tier": 2
+    },
+    {
+      "id": "1dc09f8d2480496e",
+      "title": "SignDrop Windows Zero\u2011Day Grants Full SYSTEM Privileges via Windows Defender Abuse",
+      "summary": "The SignDrop kernel vulnerability lets any local user elevate to full SYSTEM rights on Windows 10, 11, and Server 2022 by coercing Windows Defender to create a privileged CLFS log...",
+      "impact": "Security teams face immediate risk of full system compromise on affected Windows installations, with attackers able to bypass existing defenses and execute arbitrary code as SYSTEM.",
+      "action": "Deploy Microsoft\u2019s out\u2011of\u2011band patch immediately and block untrusted CLFS container creation by Windows Defender until remediation is applied.",
+      "sources": [
+        {
+          "name": "BleepingComputer",
+          "url": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/"
+        },
+        {
+          "name": "Ars Technica Security",
+          "url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"
+        }
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/new-windows-signdrop-zero-day-gives-hackers-system-privileges/",
+      "publishedDate": "2026-11-12T11:04:00-05:00",
+      "cve_ids": [],
+      "affected_systems": [
+        "Windows 10",
+        "Windows 11",
+        "Windows Server 2022"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "c776eb51cbacc6fa",
+      "title": "Critical Pre\u2011Auth Use\u2011After\u2011Free in MongoDB Can Crash Replica Set Members on Failover (CVE\u20112026\u2011118383)",
+      "summary": "MongoDB Server contains a pre\u2011authentication use\u2011after\u2011free flaw (CVE\u20112026\u2011118383) that lets an unauthenticated attacker trigger a crash during replica set failover, causing denial\u2011of\u2011service. The vulnerability scores 9.5/10 CVSS 4.",
+      "impact": "Any MongoDB deployment using replica sets, sharded clusters, or config servers is vulnerable to unexpected crashes when a compromised node is elected primary, potentially disrupting applications and data availability.",
+      "action": "Upgrade every member of each replica set to the fixed MongoDB release immediately and verify version consistency across all nodes, including containers and offline instances.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/11/critical-pre-auth-mongodb-flaw-cve-2026.html",
+      "publishedDate": "2026-11-12T14:55:00+05:30",
+      "cve_ids": [
+        "CVE-2026-118383"
+      ],
+      "affected_systems": [
+        "MongoDB Server"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    },
+    {
+      "id": "d93f5e12f3c1794f",
+      "title": "Mior and Skyfall Attacks Break AMD SEV\u2011SNP Confidential Computing",
+      "summary": "Researchers demonstrated two attacks, Mior and Skyfall, that let a rogue hypervisor read and modify memory inside AMD SEV\u2011SNP\u2011protected VMs.",
+      "impact": "These exploits defeat AMD\u2019s hardware\u2011enforced isolation, exposing secrets and allowing undetectable VM manipulation, forcing administrators to treat SEV\u2011SNP as compromised until patches are applied.",
+      "action": "Apply the BIOS and firmware updates released by AMD and your server vendor immediately and verify the integrity of SEV\u2011SNP configurations.",
+      "sources": [
+        {
+          "name": "The Hacker News",
+          "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html"
+        }
+      ],
+      "url": "https://thehackernews.com/2026/11/new-mior-and-skyfall-attacks-let-rogue.html",
+      "publishedDate": "2026-11-13T20:57:05+05:30",
+      "cve_ids": [],
+      "affected_systems": [
+        "AMD SEV\u2011SNP"
+      ],
+      "threat_actor": null,
+      "tier": 3
+    }
+  ]
+}
