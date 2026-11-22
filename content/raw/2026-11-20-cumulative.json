@@ -4060,5 +4060,126 @@
     "publishedDate": "2026-11-20T18:45:49+00:00",
     "scrapedAt": "2026-11-21T20:44:48.524903+00:00",
     "cve_ids_scraped": []
+  },
+  {
+    "id": "6d087c898942cc0c",
+    "title": "OpenRouter Drops 3 Providers After Researchers Catch Months of Prompt Theft at AI Hosting Firms",
+    "summary_raw": "Attackers stole data from inside three AI inference providers for months, and none of the three knew until researchers told them, the industrial cybersecurity company Dragos said this week.\n\nSome of the stolen requests were flagged as Zero Data Retention, the setting that is supposed to mean a prompt is never stored.\n\nOpenRouter, a gateway that routes customers' AI requests to a pool of",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/openrouter-drops-3-providers-after.html",
+    "publishedDate": "2026-11-22T10:36:55+05:30",
+    "scrapedAt": "2026-11-22T20:56:11.789905+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a3c63e958cb92eef",
+    "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+    "summary_raw": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it.\n\nGhostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly.\n\nSecurity firm pwn.ai showed this week that ordinary upload,",
+    "source": "The Hacker News",
+    "source_kind": "journalism",
+    "url": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+    "publishedDate": "2026-11-22T10:33:41+05:30",
+    "scrapedAt": "2026-11-22T20:56:11.790003+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "f7511684402b8adf",
+    "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+    "summary_raw": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+    "publishedDate": "2026-11-22T13:45:37-05:00",
+    "scrapedAt": "2026-11-22T20:56:12.897423+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "c75a4d0a4b580d8c",
+    "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+    "summary_raw": "E-commerce platform Cleverbridge is warning that hackers breached its systems and stole customers' payment card information, including credit card numbers and CVV security codes. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+    "publishedDate": "2026-11-22T10:43:04-05:00",
+    "scrapedAt": "2026-11-22T20:56:12.897510+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "daee16a474d46701",
+    "title": "Signal to block Siri, Gemini AI from capturing chats on iOS, Android",
+    "summary_raw": "Signal has announced new protections that block screenshots on iOS 27 and prevent AI assistants from capturing conversations on supported Android devices. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/",
+    "publishedDate": "2026-11-22T10:15:25-05:00",
+    "scrapedAt": "2026-11-22T20:56:12.897580+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "1fa3870c33e20a33",
+    "title": "Rackspace Spot breach let hackers access customer Kubernetes secrets",
+    "summary_raw": "Rackspace warned customers that hackers breached its Rackspace Spot cloud platform using compromised credentials, allowing them to deploy unauthorized workloads and access Kubernetes secrets in customer clusters. [...]",
+    "source": "BleepingComputer",
+    "source_kind": "journalism",
+    "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+    "publishedDate": "2026-11-21T17:59:58-05:00",
+    "scrapedAt": "2026-11-22T20:56:12.897647+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "a1fea56d8f1e82e1",
+    "title": "A brief history of syslog timestamps, (Sun, Nov 22nd)",
+    "summary_raw": "BLUF: Debian and Ubuntu dropped a config directive in the rsyslogd package in early 2023.&#xd;",
+    "source": "SANS Internet Storm Center",
+    "source_kind": "journalism",
+    "url": "https://isc.sans.edu/diary/rss/33530",
+    "publishedDate": "2026-11-22T18:40:18+00:00",
+    "scrapedAt": "2026-11-22T20:56:28.453600+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "7845bd23b1286555",
+    "title": "DSA-6648-1 python-django - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6648-1\">https://security-tracker.debian.org/tracker/DSA-6648-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00570.html",
+    "publishedDate": "2026-11-22T00:00:00+00:00",
+    "scrapedAt": "2026-11-22T20:56:31.373105+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "5e59806ab862263d",
+    "title": "DSA-6647-1 webkit2gtk - security update",
+    "summary_raw": "<a href=\"https://security-tracker.debian.org/tracker/DSA-6647-1\">https://security-tracker.debian.org/tracker/DSA-6647-1</a>",
+    "source": "Debian Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://lists.debian.org/debian-security-announce/2026/msg00569.html",
+    "publishedDate": "2026-11-22T00:00:00+00:00",
+    "scrapedAt": "2026-11-22T20:56:31.373152+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "606f29da9d880332",
+    "title": "RHSA-2026:101337: Critical: php security update",
+    "summary_raw": "An update for php is now available for Red Hat Enterprise Linux 7 Extended Lifecycle Support.\n\nRed Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "source": "Red Hat Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://access.redhat.com/errata/RHSA-2026:101337",
+    "publishedDate": "2026-11-22T03:56:40+00:00",
+    "scrapedAt": "2026-11-22T20:56:32.488203+00:00",
+    "cve_ids_scraped": []
+  },
+  {
+    "id": "05b9e553690f04f2",
+    "title": "RHSA-2026:101276: Critical: php:8.2 security, bug fix, and enhancement update",
+    "summary_raw": "An update for the php:8.2 module is now available for Red Hat Enterprise Linux 8.\n\nRed Hat Product Security has rated this update as having a security impact of Critical. A Common Vulnerability Scoring System (CVSS) base score, which gives a detailed severity rating, is available for each vulnerability from the CVE link(s) in the References section.",
+    "source": "Red Hat Security Advisories",
+    "source_kind": "advisory",
+    "url": "https://access.redhat.com/errata/RHSA-2026:101276",
+    "publishedDate": "2026-11-22T02:24:34+00:00",
+    "scrapedAt": "2026-11-22T20:56:32.488288+00:00",
+    "cve_ids_scraped": []
   }
 ]
